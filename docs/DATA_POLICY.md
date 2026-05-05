@@ -8,6 +8,9 @@ official census of Shiva temples in India.
 Google Place ID is stored as the stable external reference for each discovered
 candidate. It is used for deduplication and for later review workflows.
 
+Google Maps URI may also be stored as a convenience link for analyst review.
+The Place ID remains the stable identifier.
+
 ## Discovery Data
 
 API data is stored to help discover and review likely temple candidates. Names,

@@ -1,0 +1,532 @@
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { CSSProperties, ReactNode } from "react";
+import {
+  CircleCheck,
+  Compass,
+  Copy,
+  ExternalLink,
+  Map,
+  MapPin,
+  RotateCcw,
+  Search,
+  Upload,
+} from "lucide-react";
+import {
+  Candidate,
+  DistrictCount,
+  NationalSummary,
+  ReportData,
+  classifyReportFile,
+  loadSampleReports,
+  parseCsv,
+  toCandidate,
+  toDistrictCount,
+  toNationalSummary,
+  toStateCount,
+} from "./reportData";
+
+const emptyReports: ReportData = {
+  national: null,
+  states: [],
+  districts: [],
+  candidates: [],
+};
+
+function formatNumber(value: number | undefined): string {
+  return new Intl.NumberFormat("en-IN").format(value ?? 0);
+}
+
+function percent(part: number, total: number): number {
+  if (!total) {
+    return 0;
+  }
+  return Math.round((part / total) * 100);
+}
+
+function MetricCard({
+  label,
+  value,
+  tone,
+  icon,
+}: {
+  label: string;
+  value: number;
+  tone: "blue" | "green" | "amber" | "red" | "slate";
+  icon: ReactNode;
+}) {
+  return (
+    <section className={`metric metric-${tone}`}>
+      <div className="metric-icon">{icon}</div>
+      <div>
+        <p>{label}</p>
+        <strong>{formatNumber(value)}</strong>
+      </div>
+    </section>
+  );
+}
+
+function ConfidenceBars({ national }: { national: NationalSummary | null }) {
+  const unique = national?.unique_google_place_ids ?? 0;
+  const bars = [
+    {
+      label: "High",
+      value: national?.high_confidence_shiva ?? 0,
+      color: "var(--green)",
+    },
+    {
+      label: "Medium",
+      value: national?.medium_confidence_shiva_candidates ?? 0,
+      color: "var(--amber)",
+    },
+    {
+      label: "Low",
+      value: national?.low_confidence_possible_temples ?? 0,
+      color: "var(--red)",
+    },
+  ];
+
+  return (
+    <section className="panel confidence-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Confidence Levels</h2>
+        </div>
+      </div>
+      <div className="stacked-bars">
+        {bars.map((bar) => (
+          <div className="bar-row" key={bar.label}>
+            <div className="bar-label">
+              <span>{bar.label}</span>
+              <span>{percent(bar.value, unique)}%</span>
+            </div>
+            <div className="bar-track">
+              <div
+                className="bar-fill"
+                style={{
+                  width: `${Math.max(percent(bar.value, unique), bar.value ? 4 : 0)}%`,
+                  backgroundColor: bar.color,
+                }}
+              >
+                <span>{formatNumber(bar.value)}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function StateBars({ states }: { states: ReportData["states"] }) {
+  const sorted = [...states]
+    .sort((a, b) => b.unique_google_place_ids - a.unique_google_place_ids)
+    .slice(0, 10);
+  const max = sorted[0]?.unique_google_place_ids ?? 0;
+
+  return (
+    <section className="panel">
+      <div className="panel-heading">
+        <div>
+          <h2>States</h2>
+          <p>Top {sorted.length || 0} by unique candidates</p>
+        </div>
+        <Map size={20} />
+      </div>
+      <div className="state-bars">
+        {sorted.map((state) => (
+          <div className="state-row" key={state.state}>
+            <span>{state.state}</span>
+            <div className="state-track">
+              <div
+                className="state-fill"
+                style={{
+                  width: `${Math.max(percent(state.unique_google_place_ids, max), 3)}%`,
+                }}
+              />
+            </div>
+            <strong>{formatNumber(state.unique_google_place_ids)}</strong>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function DistrictTable({
+  districts,
+  selectedState,
+  onStateChange,
+}: {
+  districts: DistrictCount[];
+  selectedState: string;
+  onStateChange: (state: string) => void;
+}) {
+  const states = useMemo(
+    () => Array.from(new Set(districts.map((district) => district.state))).sort(),
+    [districts],
+  );
+  const visible = districts
+    .filter((district) => selectedState === "All" || district.state === selectedState)
+    .sort((a, b) => b.unique_google_place_ids - a.unique_google_place_ids)
+    .slice(0, 25);
+
+  return (
+    <section className="panel district-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Districts</h2>
+          <p>{formatNumber(visible.length)} rows shown</p>
+        </div>
+        <select value={selectedState} onChange={(event) => onStateChange(event.target.value)}>
+          <option value="All">All states</option>
+          {states.map((state) => (
+            <option key={state} value={state}>
+              {state}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>State</th>
+              <th>District</th>
+              <th>Unique</th>
+              <th>High</th>
+              <th>Medium</th>
+              <th>Low</th>
+            </tr>
+          </thead>
+          <tbody>
+            {visible.map((district) => (
+              <tr key={`${district.state}-${district.district}`}>
+                <td>{district.state}</td>
+                <td>{district.district}</td>
+                <td>{formatNumber(district.unique_google_place_ids)}</td>
+                <td>{formatNumber(district.high_confidence_shiva)}</td>
+                <td>{formatNumber(district.medium_confidence_shiva_candidates)}</td>
+                <td>{formatNumber(district.low_confidence_possible_temples)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+function confidenceRank(confidence: string): number {
+  if (confidence === "high") {
+    return 1;
+  }
+  if (confidence === "medium") {
+    return 2;
+  }
+  return 3;
+}
+
+function CandidateTable({ candidates }: { candidates: Candidate[] }) {
+  const [query, setQuery] = useState("");
+  const [confidence, setConfidence] = useState("All");
+  const [state, setState] = useState("All");
+  const [rowLimit, setRowLimit] = useState("100");
+
+  const states = useMemo(
+    () => Array.from(new Set(candidates.map((candidate) => candidate.state))).sort(),
+    [candidates],
+  );
+  const filteredCandidates = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
+    return candidates
+      .filter((candidate) => confidence === "All" || candidate.confidence === confidence)
+      .filter((candidate) => state === "All" || candidate.state === state)
+      .filter((candidate) => {
+        if (!normalizedQuery) {
+          return true;
+        }
+        return [
+          candidate.discovered_name,
+          candidate.discovered_address,
+          candidate.district,
+          candidate.state,
+          candidate.google_place_id,
+          candidate.source_query,
+          candidate.classification_reason,
+        ]
+          .join(" ")
+          .toLowerCase()
+          .includes(normalizedQuery);
+      })
+      .sort((a, b) => {
+        const rankDelta = confidenceRank(a.confidence) - confidenceRank(b.confidence);
+        if (rankDelta !== 0) {
+          return rankDelta;
+        }
+        return b.confidence_score - a.confidence_score;
+      });
+  }, [candidates, confidence, query, state]);
+  const visible = useMemo(() => {
+    if (rowLimit === "All") {
+      return filteredCandidates;
+    }
+    return filteredCandidates.slice(0, Number(rowLimit));
+  }, [filteredCandidates, rowLimit]);
+
+  return (
+    <section className="panel candidate-panel">
+      <div className="candidate-heading">
+        <div>
+          <h2>Candidates</h2>
+        </div>
+      </div>
+      <div className="candidate-toolbar">
+        <label className="search-control">
+          <Search size={18} />
+          <input
+            type="search"
+            placeholder="Search candidates"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+          />
+        </label>
+        <div className="candidate-controls">
+          <select value={confidence} onChange={(event) => setConfidence(event.target.value)}>
+            <option value="All">All confidence</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+          <select value={state} onChange={(event) => setState(event.target.value)}>
+            <option value="All">All states</option>
+            {states.map((stateName) => (
+              <option key={stateName} value={stateName}>
+                {stateName}
+              </option>
+            ))}
+          </select>
+          <select value={rowLimit} onChange={(event) => setRowLimit(event.target.value)}>
+            <option value="100">100 rows</option>
+            <option value="250">250 rows</option>
+            <option value="500">500 rows</option>
+            <option value="All">All rows</option>
+          </select>
+        </div>
+        <span className="candidate-count">
+          {formatNumber(visible.length)} of {formatNumber(filteredCandidates.length)} matching rows
+        </span>
+      </div>
+      <div className="table-wrap">
+        <table className="candidate-table">
+          <thead>
+            <tr>
+              <th>Confidence</th>
+              <th>Score</th>
+              <th>Name</th>
+              <th>State</th>
+              <th>District</th>
+              <th>Address</th>
+              <th>Maps</th>
+              <th>Place ID</th>
+              <th>Reason</th>
+            </tr>
+          </thead>
+          <tbody>
+            {visible.map((candidate) => (
+              <tr key={candidate.google_place_id}>
+                <td>
+                  <span className={`confidence-badge confidence-${candidate.confidence}`}>
+                    {candidate.confidence}
+                  </span>
+                </td>
+                <td>{candidate.confidence_score.toFixed(2)}</td>
+                <td className="strong-cell">{candidate.discovered_name}</td>
+                <td>{candidate.state}</td>
+                <td>{candidate.district}</td>
+                <td className="wide-cell">{candidate.discovered_address}</td>
+                <td>
+                  {candidate.google_maps_uri ? (
+                    <a
+                      className="map-link"
+                      href={candidate.google_maps_uri}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <ExternalLink size={14} />
+                      Open
+                    </a>
+                  ) : (
+                    <span className="muted-cell">Missing</span>
+                  )}
+                </td>
+                <td className="mono-cell">{candidate.google_place_id}</td>
+                <td className="wide-cell">{candidate.classification_reason}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+export default function App() {
+  const [reports, setReports] = useState<ReportData>(emptyReports);
+  const [selectedState, setSelectedState] = useState("All");
+  const [notice, setNotice] = useState("");
+  const inputRef = useRef<HTMLInputElement | null>(null);
+
+  useEffect(() => {
+    loadSampleReports()
+      .then(setReports)
+      .catch(() => {
+        setNotice("Sample report files could not be loaded.");
+      });
+  }, []);
+
+  const national = reports.national;
+  const qualityRatio = percent(national?.high_confidence_shiva ?? 0, national?.unique_google_place_ids ?? 0);
+  const qualityRingStyle = {
+    "--quality-deg": `${Math.min(qualityRatio, 100) * 3.6}deg`,
+  } as CSSProperties;
+
+  async function handleFiles(files: FileList | null) {
+    if (!files?.length) {
+      return;
+    }
+
+    const nextReports: ReportData = { ...reports };
+    const loaded: string[] = [];
+
+    for (const file of Array.from(files)) {
+      const rows = parseCsv(await file.text());
+      const reportType = classifyReportFile(file.name, rows);
+
+      if (reportType === "national") {
+        nextReports.national = rows.map(toNationalSummary)[0] ?? nextReports.national;
+        loaded.push("national");
+      }
+      if (reportType === "states") {
+        nextReports.states = rows.map(toStateCount);
+        loaded.push("state");
+      }
+      if (reportType === "districts") {
+        nextReports.districts = rows.map(toDistrictCount);
+        loaded.push("district");
+      }
+      if (reportType === "candidates") {
+        nextReports.candidates = rows.map(toCandidate);
+        loaded.push("candidate");
+      }
+    }
+
+    setReports(nextReports);
+    setNotice(loaded.length ? `Loaded ${Array.from(new Set(loaded)).join(", ")} reports.` : "No report CSVs recognized.");
+  }
+
+  async function loadSamples() {
+    setReports(await loadSampleReports());
+    setSelectedState("All");
+    setNotice("Sample reports restored.");
+  }
+
+  async function resetDashboard() {
+    setReports(await loadSampleReports());
+    setSelectedState("All");
+    setNotice("");
+  }
+
+  return (
+    <main className="app-shell">
+      <header className="topbar">
+        <div className="title-row">
+          <h1>Shiva Temple Discovery</h1>
+          <span className="phase-pill">Phase 1 Analysis</span>
+        </div>
+        <div className="actions">
+          <input
+            ref={inputRef}
+            className="file-input"
+            type="file"
+            accept=".csv,text/csv"
+            multiple
+            onChange={(event) => handleFiles(event.target.files)}
+          />
+          <button type="button" onClick={() => inputRef.current?.click()}>
+            <Upload size={18} />
+            Load CSV
+          </button>
+          <button type="button" className="secondary" onClick={loadSamples}>
+            Sample Reports
+          </button>
+          <button type="button" className="secondary" onClick={resetDashboard}>
+            <RotateCcw size={18} />
+            Reset
+          </button>
+        </div>
+      </header>
+
+      {notice ? <div className="notice">{notice}</div> : null}
+
+      <section className="metrics-grid">
+        <MetricCard
+          label="Discovered"
+          value={national?.total_discovered_candidates ?? 0}
+          tone="blue"
+          icon={<Compass size={22} />}
+        />
+        <MetricCard
+          label="Unique Places"
+          value={national?.unique_google_place_ids ?? 0}
+          tone="slate"
+          icon={<MapPin size={22} />}
+        />
+        <MetricCard
+          label="High Confidence"
+          value={national?.high_confidence_shiva ?? 0}
+          tone="green"
+          icon={<CircleCheck size={22} />}
+        />
+        <MetricCard
+          label="Duplicates"
+          value={national?.duplicates_removed ?? 0}
+          tone="amber"
+          icon={<Copy size={22} />}
+        />
+      </section>
+
+      <section className="overview-grid">
+        <ConfidenceBars national={national} />
+        <section className="panel quality-panel">
+          <div className="panel-heading">
+            <div>
+              <h2>Data Quality</h2>
+            </div>
+          </div>
+          <div className="quality-score">
+            <div className="quality-ring" style={qualityRingStyle}>
+              <div>
+                <strong>{qualityRatio}%</strong>
+                <span>high-confidence share</span>
+              </div>
+            </div>
+          </div>
+          <p className="status-text">{national?.status ?? "No national summary loaded"}</p>
+        </section>
+      </section>
+
+      <h2 className="section-title">Geographic Analysis & Candidate List</h2>
+
+      <section className="analysis-grid">
+        <StateBars states={reports.states} />
+        <DistrictTable
+          districts={reports.districts}
+          selectedState={selectedState}
+          onStateChange={setSelectedState}
+        />
+      </section>
+
+      <CandidateTable candidates={reports.candidates} />
+    </main>
+  );
+}

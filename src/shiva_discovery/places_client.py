@@ -110,6 +110,7 @@ def place_to_candidate(
     location = place.get("location") or {}
     return {
         "google_place_id": place.get("id"),
+        "google_maps_uri": place.get("googleMapsUri"),
         "discovered_name": display_name.get("text") or "",
         "discovered_address": place.get("formattedAddress"),
         "latitude": location.get("latitude"),

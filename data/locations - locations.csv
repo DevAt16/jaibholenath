@@ -1,0 +1,180 @@
+location_type,name,state_name,district_name,sub_district_name,state_lgd_code,district_lgd_code,sub_district_lgd_code,village_lgd_code,source
+state,Maharashtra,Maharashtra,,,,,,manual_pilot,
+district,Pune,Maharashtra,Pune,,,,,,manual_pilot
+district,Nashik,Maharashtra,Nashik,,,,,,manual_pilot
+district,Aurangabad,Maharashtra,Aurangabad,,,,,,manual_pilot
+district,Ahmednagar,Maharashtra,Ahmednagar,,,,,,manual_pilot
+district,Akola,Maharashtra,Akola,,,,,,manual_pilot
+district,Amravati,Maharashtra,Amravati,,,,,,manual_pilot
+district,Beed,Maharashtra,Beed,,,,,,manual_pilot
+district,Bhandara,Maharashtra,Bhandara,,,,,,manual_pilot
+district,Buldhana,Maharashtra,Buldhana,,,,,,manual_pilot
+district,Chandrapur,Maharashtra,Chandrapur,,,,,,manual_pilot
+district,Dhule,Maharashtra,Dhule,,,,,,manual_pilot
+district,Gadchiroli,Maharashtra,Gadchiroli,,,,,,manual_pilot
+district,Gondia,Maharashtra,Gondia,,,,,,manual_pilot
+district,Hingoli,Maharashtra,Hingoli,,,,,,manual_pilot
+district,Jalgaon,Maharashtra,Jalgaon,,,,,,manual_pilot
+district,Jalna,Maharashtra,Jalna,,,,,,manual_pilot
+district,Kolhapur,Maharashtra,Kolhapur,,,,,,manual_pilot
+district,Latur,Maharashtra,Latur,,,,,,manual_pilot
+district,Mumbai City,Maharashtra,Mumbai City,,,,,,manual_pilot
+district,Mumbai Suburban,Maharashtra,Mumbai Suburban,,,,,,manual_pilot
+district,Nagpur,Maharashtra,Nagpur,,,,,,manual_pilot
+district,Nanded,Maharashtra,Nanded,,,,,,manual_pilot
+district,Nandurbar,Maharashtra,Nandurbar,,,,,,manual_pilot
+district,Osmanabad,Maharashtra,Osmanabad,,,,,,manual_pilot
+district,Palghar,Maharashtra,Palghar,,,,,,manual_pilot
+district,Parbhani,Maharashtra,Parbhani,,,,,,manual_pilot
+district,Raigad,Maharashtra,Raigad,,,,,,manual_pilot
+district,Ratnagiri,Maharashtra,Ratnagiri,,,,,,manual_pilot
+district,Sangli,Maharashtra,Sangli,,,,,,manual_pilot
+district,Satara,Maharashtra,Satara,,,,,,manual_pilot
+district,Sindhudurg,Maharashtra,Sindhudurg,,,,,,manual_pilot
+district,Solapur,Maharashtra,Solapur,,,,,,manual_pilot
+district,Thane,Maharashtra,Thane,,,,,,manual_pilot
+district,Wardha,Maharashtra,Wardha,,,,,,manual_pilot
+district,Washim,Maharashtra,Washim,,,,,,manual_pilot
+district,Yavatmal,Maharashtra,Yavatmal,,,,,,manual_pilot
+town,Alandi,Maharashtra,Pune,Haveli,,,,,manual_pilot
+town,Dehu,Maharashtra,Pune,Haveli,,,,,manual_pilot
+town,Junnar,Maharashtra,Pune,Junnar,,,,,manual_pilot
+town,Saswad,Maharashtra,Pune,Purandhar,,,,,manual_pilot
+town,Trimbak,Maharashtra,Nashik,Trimbakeshwar,,,,,manual_pilot
+town,Sinnar,Maharashtra,Nashik,Sinnar,,,,,manual_pilot
+town,Yeola,Maharashtra,Nashik,Yeola,,,,,manual_pilot
+town,Paithan,Maharashtra,Aurangabad,Paithan,,,,,manual_pilot
+town,Khultabad,Maharashtra,Aurangabad,Khultabad,,,,,manual_pilot
+town,Shirdi,Maharashtra,Ahmednagar,Rahata,,,,,manual_pilot
+state,Madhya Pradesh,Madhya Pradesh,,,,,,,manual_pilot
+district,Agar Malwa,Madhya Pradesh,Agar Malwa,,,,,,manual_pilot
+district,Alirajpur,Madhya Pradesh,Alirajpur,,,,,,manual_pilot
+district,Anuppur,Madhya Pradesh,Anuppur,,,,,,manual_pilot
+district,Ashoknagar,Madhya Pradesh,Ashoknagar,,,,,,manual_pilot
+district,Balaghat,Madhya Pradesh,Balaghat,,,,,,manual_pilot
+district,Barwani,Madhya Pradesh,Barwani,,,,,,manual_pilot
+district,Betul,Madhya Pradesh,Betul,,,,,,manual_pilot
+district,Bhind,Madhya Pradesh,Bhind,,,,,,manual_pilot
+district,Bhopal,Madhya Pradesh,Bhopal,,,,,,manual_pilot
+district,Burhanpur,Madhya Pradesh,Burhanpur,,,,,,manual_pilot
+district,Chhatarpur,Madhya Pradesh,Chhatarpur,,,,,,manual_pilot
+district,Chhindwara,Madhya Pradesh,Chhindwara,,,,,,manual_pilot
+district,Damoh,Madhya Pradesh,Damoh,,,,,,manual_pilot
+district,Datia,Madhya Pradesh,Datia,,,,,,manual_pilot
+district,Dewas,Madhya Pradesh,Dewas,,,,,,manual_pilot
+district,Dhar,Madhya Pradesh,Dhar,,,,,,manual_pilot
+district,Dindori,Madhya Pradesh,Dindori,,,,,,manual_pilot
+district,Guna,Madhya Pradesh,Guna,,,,,,manual_pilot
+district,Gwalior,Madhya Pradesh,Gwalior,,,,,,manual_pilot
+district,Harda,Madhya Pradesh,Harda,,,,,,manual_pilot
+district,Narmadapuram,Madhya Pradesh,Narmadapuram,,,,,,manual_pilot
+district,Indore,Madhya Pradesh,Indore,,,,,,manual_pilot
+district,Jabalpur,Madhya Pradesh,Jabalpur,,,,,,manual_pilot
+district,Jhabua,Madhya Pradesh,Jhabua,,,,,,manual_pilot
+district,Katni,Madhya Pradesh,Katni,,,,,,manual_pilot
+district,Khandwa,Madhya Pradesh,Khandwa,,,,,,manual_pilot
+district,Khargone,Madhya Pradesh,Khargone,,,,,,manual_pilot
+district,Maihar,Madhya Pradesh,Maihar,,,,,,manual_pilot
+district,Mandla,Madhya Pradesh,Mandla,,,,,,manual_pilot
+district,Mandsaur,Madhya Pradesh,Mandsaur,,,,,,manual_pilot
+district,Mauganj,Madhya Pradesh,Mauganj,,,,,,manual_pilot
+district,Morena,Madhya Pradesh,Morena,,,,,,manual_pilot
+district,Narsinghpur,Madhya Pradesh,Narsinghpur,,,,,,manual_pilot
+district,Neemuch,Madhya Pradesh,Neemuch,,,,,,manual_pilot
+district,Niwari,Madhya Pradesh,Niwari,,,,,,manual_pilot
+district,Pandhurna,Madhya Pradesh,Pandhurna,,,,,,manual_pilot
+district,Panna,Madhya Pradesh,Panna,,,,,,manual_pilot
+district,Raisen,Madhya Pradesh,Raisen,,,,,,manual_pilot
+district,Rajgarh,Madhya Pradesh,Rajgarh,,,,,,manual_pilot
+district,Ratlam,Madhya Pradesh,Ratlam,,,,,,manual_pilot
+district,Rewa,Madhya Pradesh,Rewa,,,,,,manual_pilot
+district,Sagar,Madhya Pradesh,Sagar,,,,,,manual_pilot
+district,Satna,Madhya Pradesh,Satna,,,,,,manual_pilot
+district,Sehore,Madhya Pradesh,Sehore,,,,,,manual_pilot
+district,Seoni,Madhya Pradesh,Seoni,,,,,,manual_pilot
+district,Shahdol,Madhya Pradesh,Shahdol,,,,,,manual_pilot
+district,Shajapur,Madhya Pradesh,Shajapur,,,,,,manual_pilot
+district,Sheopur,Madhya Pradesh,Sheopur,,,,,,manual_pilot
+district,Shivpuri,Madhya Pradesh,Shivpuri,,,,,,manual_pilot
+district,Sidhi,Madhya Pradesh,Sidhi,,,,,,manual_pilot
+district,Singrauli,Madhya Pradesh,Singrauli,,,,,,manual_pilot
+district,Tikamgarh,Madhya Pradesh,Tikamgarh,,,,,,manual_pilot
+district,Ujjain,Madhya Pradesh,Ujjain,,,,,,manual_pilot
+district,Umaria,Madhya Pradesh,Umaria,,,,,,manual_pilot
+district,Vidisha,Madhya Pradesh,Vidisha,,,,,,manual_pilot
+state,Uttar Pradesh,Uttar Pradesh,,,,,,,manual_pilot
+district,Agra,Uttar Pradesh,Agra,,,,,,manual_pilot
+district,Aligarh,Uttar Pradesh,Aligarh,,,,,,manual_pilot
+district,Ambedkar Nagar,Uttar Pradesh,Ambedkar Nagar,,,,,,manual_pilot
+district,Amethi,Uttar Pradesh,Amethi,,,,,,manual_pilot
+district,Amroha,Uttar Pradesh,Amroha,,,,,,manual_pilot
+district,Auraiya,Uttar Pradesh,Auraiya,,,,,,manual_pilot
+district,Ayodhya,Uttar Pradesh,Ayodhya,,,,,,manual_pilot
+district,Azamgarh,Uttar Pradesh,Azamgarh,,,,,,manual_pilot
+district,Badaun,Uttar Pradesh,Badaun,,,,,,manual_pilot
+district,Bagpat,Uttar Pradesh,Bagpat,,,,,,manual_pilot
+district,Bahraich,Uttar Pradesh,Bahraich,,,,,,manual_pilot
+district,Ballia,Uttar Pradesh,Ballia,,,,,,manual_pilot
+district,Balrampur,Uttar Pradesh,Balrampur,,,,,,manual_pilot
+district,Banda,Uttar Pradesh,Banda,,,,,,manual_pilot
+district,Barabanki,Uttar Pradesh,Barabanki,,,,,,manual_pilot
+district,Bareilly,Uttar Pradesh,Bareilly,,,,,,manual_pilot
+district,Basti,Uttar Pradesh,Basti,,,,,,manual_pilot
+district,Bhadohi,Uttar Pradesh,Bhadohi,,,,,,manual_pilot
+district,Bijnor,Uttar Pradesh,Bijnor,,,,,,manual_pilot
+district,Bulandshahr,Uttar Pradesh,Bulandshahr,,,,,,manual_pilot
+district,Chandauli,Uttar Pradesh,Chandauli,,,,,,manual_pilot
+district,Chitrakoot,Uttar Pradesh,Chitrakoot,,,,,,manual_pilot
+district,Deoria,Uttar Pradesh,Deoria,,,,,,manual_pilot
+district,Etah,Uttar Pradesh,Etah,,,,,,manual_pilot
+district,Etawah,Uttar Pradesh,Etawah,,,,,,manual_pilot
+district,Farrukhabad,Uttar Pradesh,Farrukhabad,,,,,,manual_pilot
+district,Fatehpur,Uttar Pradesh,Fatehpur,,,,,,manual_pilot
+district,Firozabad,Uttar Pradesh,Firozabad,,,,,,manual_pilot
+district,Gautam Buddha Nagar,Uttar Pradesh,Gautam Buddha Nagar,,,,,,manual_pilot
+district,Ghaziabad,Uttar Pradesh,Ghaziabad,,,,,,manual_pilot
+district,Ghazipur,Uttar Pradesh,Ghazipur,,,,,,manual_pilot
+district,Gonda,Uttar Pradesh,Gonda,,,,,,manual_pilot
+district,Gorakhpur,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+district,Hamirpur,Uttar Pradesh,Hamirpur,,,,,,manual_pilot
+district,Hapur,Uttar Pradesh,Hapur,,,,,,manual_pilot
+district,Hardoi,Uttar Pradesh,Hardoi,,,,,,manual_pilot
+district,Hathras,Uttar Pradesh,Hathras,,,,,,manual_pilot
+district,Jalaun,Uttar Pradesh,Jalaun,,,,,,manual_pilot
+district,Jaunpur,Uttar Pradesh,Jaunpur,,,,,,manual_pilot
+district,Jhansi,Uttar Pradesh,Jhansi,,,,,,manual_pilot
+district,Kannauj,Uttar Pradesh,Kannauj,,,,,,manual_pilot
+district,Kanpur Dehat,Uttar Pradesh,Kanpur Dehat,,,,,,manual_pilot
+district,Kanpur Nagar,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+district,Kasganj,Uttar Pradesh,Kasganj,,,,,,manual_pilot
+district,Kaushambi,Uttar Pradesh,Kaushambi,,,,,,manual_pilot
+district,Kushinagar,Uttar Pradesh,Kushinagar,,,,,,manual_pilot
+district,Lakhimpur Kheri,Uttar Pradesh,Lakhimpur Kheri,,,,,,manual_pilot
+district,Lalitpur,Uttar Pradesh,Lalitpur,,,,,,manual_pilot
+district,Lucknow,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+district,Maharajganj,Uttar Pradesh,Maharajganj,,,,,,manual_pilot
+district,Mahoba,Uttar Pradesh,Mahoba,,,,,,manual_pilot
+district,Mainpuri,Uttar Pradesh,Mainpuri,,,,,,manual_pilot
+district,Mathura,Uttar Pradesh,Mathura,,,,,,manual_pilot
+district,Mau,Uttar Pradesh,Mau,,,,,,manual_pilot
+district,Meerut,Uttar Pradesh,Meerut,,,,,,manual_pilot
+district,Mirzapur,Uttar Pradesh,Mirzapur,,,,,,manual_pilot
+district,Moradabad,Uttar Pradesh,Moradabad,,,,,,manual_pilot
+district,Muzaffarnagar,Uttar Pradesh,Muzaffarnagar,,,,,,manual_pilot
+district,Pilibhit,Uttar Pradesh,Pilibhit,,,,,,manual_pilot
+district,Pratapgarh,Uttar Pradesh,Pratapgarh,,,,,,manual_pilot
+district,Prayagraj,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+district,Rae Bareli,Uttar Pradesh,Rae Bareli,,,,,,manual_pilot
+district,Rampur,Uttar Pradesh,Rampur,,,,,,manual_pilot
+district,Saharanpur,Uttar Pradesh,Saharanpur,,,,,,manual_pilot
+district,Sambhal,Uttar Pradesh,Sambhal,,,,,,manual_pilot
+district,Sant Kabir Nagar,Uttar Pradesh,Sant Kabir Nagar,,,,,,manual_pilot
+district,Shahjahanpur,Uttar Pradesh,Shahjahanpur,,,,,,manual_pilot
+district,Shamli,Uttar Pradesh,Shamli,,,,,,manual_pilot
+district,Shravasti,Uttar Pradesh,Shravasti,,,,,,manual_pilot
+district,Siddharthnagar,Uttar Pradesh,Siddharthnagar,,,,,,manual_pilot
+district,Sitapur,Uttar Pradesh,Sitapur,,,,,,manual_pilot
+district,Sonbhadra,Uttar Pradesh,Sonbhadra,,,,,,manual_pilot
+district,Sultanpur,Uttar Pradesh,Sultanpur,,,,,,manual_pilot
+district,Unnao,Uttar Pradesh,Unnao,,,,,,manual_pilot
+district,Varanasi,Uttar Pradesh,Varanasi,,,,,,manual_pilot

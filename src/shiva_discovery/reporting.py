@@ -62,6 +62,36 @@ GROUP BY COALESCE(state, 'Unknown'), COALESCE(district, 'Unknown')
 ORDER BY state, district;
 """
 
+CANDIDATE_EXPORT_SQL = """
+SELECT
+    google_place_id,
+    google_maps_uri,
+    discovered_name,
+    discovered_address,
+    latitude,
+    longitude,
+    COALESCE(state, 'Unknown') AS state,
+    COALESCE(district, 'Unknown') AS district,
+    source_query,
+    confidence,
+    confidence_score,
+    classification_reason,
+    first_seen_at,
+    last_seen_at
+FROM temple_candidates
+ORDER BY
+    CASE confidence
+        WHEN 'high' THEN 1
+        WHEN 'medium' THEN 2
+        ELSE 3
+    END,
+    confidence_score DESC,
+    state,
+    district,
+    discovered_name
+LIMIT %s;
+"""
+
 
 def cursor_rows_as_dicts(cursor) -> list[dict[str, object]]:
     columns = [description[0] for description in cursor.description]
@@ -77,7 +107,12 @@ def write_csv(path: Path, rows: Iterable[dict[str, object]], fieldnames: Sequenc
             writer.writerow(row)
 
 
-def run_report_queries(conn) -> dict[str, list[dict[str, object]]]:
+def run_report_queries(
+    conn,
+    *,
+    include_candidates: bool = False,
+    candidate_limit: int = 5000,
+) -> dict[str, list[dict[str, object]]]:
     reports: dict[str, list[dict[str, object]]] = {}
     with conn.cursor() as cursor:
         cursor.execute(NATIONAL_SUMMARY_SQL)
@@ -88,5 +123,9 @@ def run_report_queries(conn) -> dict[str, list[dict[str, object]]]:
 
         cursor.execute(DISTRICT_COUNTS_SQL)
         reports["district_counts"] = cursor_rows_as_dicts(cursor)
+
+        if include_candidates:
+            cursor.execute(CANDIDATE_EXPORT_SQL, (candidate_limit,))
+            reports["candidate_review"] = cursor_rows_as_dicts(cursor)
 
     return reports

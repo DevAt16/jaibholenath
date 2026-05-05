@@ -304,6 +304,7 @@ def upsert_candidate(conn, candidate: Mapping[str, Any]) -> int:
     classification = classify_candidate_name(str(candidate.get("discovered_name") or ""))
     params = {
         "google_place_id": candidate["google_place_id"],
+        "google_maps_uri": candidate.get("google_maps_uri"),
         "discovered_name": candidate.get("discovered_name"),
         "discovered_address": candidate.get("discovered_address"),
         "latitude": candidate.get("latitude"),
@@ -322,6 +323,7 @@ def upsert_candidate(conn, candidate: Mapping[str, Any]) -> int:
             """
             INSERT INTO temple_candidates (
                 google_place_id,
+                google_maps_uri,
                 discovered_name,
                 discovered_address,
                 latitude,
@@ -336,6 +338,7 @@ def upsert_candidate(conn, candidate: Mapping[str, Any]) -> int:
             )
             VALUES (
                 %(google_place_id)s,
+                %(google_maps_uri)s,
                 %(discovered_name)s,
                 %(discovered_address)s,
                 %(latitude)s,
@@ -349,7 +352,8 @@ def upsert_candidate(conn, candidate: Mapping[str, Any]) -> int:
                 %(classification_reason)s
             )
             ON CONFLICT (google_place_id) DO UPDATE
-            SET discovered_name = EXCLUDED.discovered_name,
+            SET google_maps_uri = COALESCE(EXCLUDED.google_maps_uri, temple_candidates.google_maps_uri),
+                discovered_name = EXCLUDED.discovered_name,
                 discovered_address = EXCLUDED.discovered_address,
                 latitude = EXCLUDED.latitude,
                 longitude = EXCLUDED.longitude,

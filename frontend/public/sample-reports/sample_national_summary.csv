@@ -1,0 +1,2 @@
+country,source,total_discovered_candidates,unique_google_place_ids,high_confidence_shiva,medium_confidence_shiva_candidates,low_confidence_possible_temples,duplicates_removed,status
+India,Google Places API,9,4,2,1,1,5,discovery_count_not_final_cultural_count

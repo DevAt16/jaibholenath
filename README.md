@@ -58,6 +58,7 @@ python scripts/init_db.py
 Schema migration:
 
 - `migrations/001_phase1_schema.sql`
+- `migrations/002_add_google_maps_uri.sql`
 
 ## Import Locations
 
@@ -166,17 +167,25 @@ High-confidence terms include `shiva`, `shiv`, `mahadev`, `vishwanath`, `kedarna
 python scripts/report_counts.py
 ```
 
+Export candidate rows for UI review:
+
+```powershell
+python scripts/report_counts.py --include-candidates --candidate-limit 5000
+```
+
 Generated files:
 
 - `reports/national_summary.csv`
 - `reports/state_counts.csv`
 - `reports/district_counts.csv`
+- `reports/candidate_review.csv` when `--include-candidates` is used
 
 Sample report files are included:
 
 - `reports/sample_national_summary.csv`
 - `reports/sample_state_counts.csv`
 - `reports/sample_district_counts.csv`
+- `reports/sample_candidate_review.csv`
 
 Reports include:
 
@@ -190,6 +199,29 @@ Reports include:
 - district-wise counts
 
 These are discovery counts, not exact real-world counts and not an official temple census.
+
+## Analysis UI
+
+A React dashboard is available for Phase 1 report analysis only. It is not the
+final public website and it is not an admin panel.
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite. The dashboard starts with sample report CSVs
+and can load generated files from `reports/`:
+
+- `reports/national_summary.csv`
+- `reports/state_counts.csv`
+- `reports/district_counts.csv`
+- `reports/candidate_review.csv`
+
+Candidate rows include `google_maps_uri` when Google returns it, and the UI
+shows it as an external Maps link. `google_place_id` remains the stable external
+reference for deduplication.
 
 ## Tests
 

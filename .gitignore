@@ -2,9 +2,14 @@
 .venv/
 __pycache__/
 .pytest_cache/
+.codex-logs/
 *.pyc
+node_modules/
+frontend/node_modules/
+frontend/dist/
 
 # Generated report outputs. Sample report files are intentionally tracked.
 reports/national_summary.csv
 reports/state_counts.csv
 reports/district_counts.csv
+reports/candidate_review.csv
