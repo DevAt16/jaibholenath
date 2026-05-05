@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shiva-temple-discovery"
+version = "0.1.0"
+description = "Phase 1 discovery tooling for likely Shiva temple candidates in India."
+requires-python = ">=3.10"
+dependencies = [
+    "psycopg[binary]>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

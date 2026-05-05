@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Generated report outputs. Sample report files are intentionally tracked.
+reports/national_summary.csv
+reports/state_counts.csv
+reports/district_counts.csv

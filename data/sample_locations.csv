@@ -1,0 +1,6 @@
+location_type,name,state_name,district_name,sub_district_name,state_lgd_code,district_lgd_code,sub_district_lgd_code,village_lgd_code,source
+state,Maharashtra,Maharashtra,,,27,,,,sample
+district,Pune,Maharashtra,Pune,,27,521,,,sample
+town,Alandi,Maharashtra,Pune,Haveli,27,521,4201,,sample
+urban_local_body,Pune Municipal Corporation,Maharashtra,Pune,,27,521,,,sample
+village,Sample Village,Maharashtra,Pune,Haveli,27,521,4201,999999,sample
