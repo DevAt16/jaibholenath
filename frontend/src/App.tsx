@@ -450,17 +450,38 @@ function CandidateTable({ candidates }: { candidates: Candidate[] }) {
   const [query, setQuery] = useState("");
   const [confidence, setConfidence] = useState("All");
   const [state, setState] = useState("All");
+  const [district, setDistrict] = useState("All");
   const [rowLimit, setRowLimit] = useState("100");
 
   const states = useMemo(
     () => Array.from(new Set(candidates.map((candidate) => candidate.state))).sort(),
     [candidates],
   );
+  const districts = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          candidates
+            .filter((candidate) => state === "All" || candidate.state === state)
+            .map((candidate) => candidate.district)
+            .filter(Boolean),
+        ),
+      ).sort(),
+    [candidates, state],
+  );
+
+  useEffect(() => {
+    if (district !== "All" && !districts.includes(district)) {
+      setDistrict("All");
+    }
+  }, [district, districts]);
+
   const filteredCandidates = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return candidates
       .filter((candidate) => confidence === "All" || candidate.confidence === confidence)
       .filter((candidate) => state === "All" || candidate.state === state)
+      .filter((candidate) => district === "All" || candidate.district === district)
       .filter((candidate) => {
         if (!normalizedQuery) {
           return true;
@@ -485,7 +506,7 @@ function CandidateTable({ candidates }: { candidates: Candidate[] }) {
         }
         return b.confidence_score - a.confidence_score;
       });
-  }, [candidates, confidence, query, state]);
+  }, [candidates, confidence, district, query, state]);
   const visible = useMemo(() => {
     if (rowLimit === "All") {
       return filteredCandidates;
@@ -525,7 +546,16 @@ function CandidateTable({ candidates }: { candidates: Candidate[] }) {
               </option>
             ))}
           </select>
+          <select value={district} onChange={(event) => setDistrict(event.target.value)}>
+            <option value="All">All districts</option>
+            {districts.map((districtName) => (
+              <option key={districtName} value={districtName}>
+                {districtName}
+              </option>
+            ))}
+          </select>
           <select value={rowLimit} onChange={(event) => setRowLimit(event.target.value)}>
+            <option value="50">50 rows</option>
             <option value="100">100 rows</option>
             <option value="250">250 rows</option>
             <option value="500">500 rows</option>
