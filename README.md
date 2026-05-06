@@ -212,7 +212,8 @@ npm run dev
 ```
 
 Open the local URL printed by Vite. The dashboard starts with sample report CSVs
-and can load generated files from `reports/`:
+on the Discovery Search page. Use the `Insights` button to open the analysis
+dashboard, which can load generated files from `reports/`:
 
 - `reports/national_summary.csv`
 - `reports/state_counts.csv`
@@ -242,3 +243,5 @@ Covered areas:
 ## Data Policy
 
 Read `docs/DATA_POLICY.md` before publishing or interpreting any report output. Google Places is a discovery source, and final temple knowledge should be verified later from multiple sources.
+
+For the command-by-command pipeline, read `docs/FUNCTIONAL_FLOW.md`.

@@ -5,10 +5,12 @@ import {
   Compass,
   Copy,
   ExternalLink,
-  Map,
+  Landmark,
+  Map as MapIcon,
   MapPin,
   RotateCcw,
   Search,
+  Sparkles,
   Upload,
 } from "lucide-react";
 import {
@@ -130,7 +132,7 @@ function StateBars({ states }: { states: ReportData["states"] }) {
           <h2>States</h2>
           <p>Top {sorted.length || 0} by unique candidates</p>
         </div>
-        <Map size={20} />
+        <MapIcon size={20} />
       </div>
       <div className="state-bars">
         {sorted.map((state) => (
@@ -224,6 +226,224 @@ function confidenceRank(confidence: string): number {
     return 2;
   }
   return 3;
+}
+
+function searchCandidates(candidates: Candidate[], query: string): Candidate[] {
+  const normalizedQuery = query.trim().toLowerCase();
+  if (!normalizedQuery) {
+    return [];
+  }
+
+  return candidates
+    .filter((candidate) =>
+      [
+        candidate.discovered_name,
+        candidate.discovered_address,
+        candidate.district,
+        candidate.state,
+        candidate.source_query,
+        candidate.classification_reason,
+      ]
+        .join(" ")
+        .toLowerCase()
+        .includes(normalizedQuery),
+    )
+    .sort((a, b) => {
+      const rankDelta = confidenceRank(a.confidence) - confidenceRank(b.confidence);
+      if (rankDelta !== 0) {
+        return rankDelta;
+      }
+      return b.confidence_score - a.confidence_score;
+    })
+    .slice(0, 8);
+}
+
+function trendingTerms(candidates: Candidate[]): string[] {
+  const counts = new Map<string, number>();
+  const add = (value: string) => {
+    const clean = value.trim();
+    if (!clean || clean === "Unknown") {
+      return;
+    }
+    counts.set(clean, (counts.get(clean) ?? 0) + 1);
+  };
+
+  candidates.forEach((candidate) => {
+    add(candidate.state);
+    add(candidate.district);
+  });
+
+  const terms = Array.from(counts.entries())
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([term]) => term)
+    .slice(0, 3);
+
+  return terms.length ? terms : ["Tamil Nadu", "Uttarakhand", "Varanasi"];
+}
+
+function SearchHome({
+  candidates,
+  onShowInsights,
+  onLoadFiles,
+  onReset,
+}: {
+  candidates: Candidate[];
+  onShowInsights: () => void;
+  onLoadFiles: (files: FileList | null) => void;
+  onReset: () => void;
+}) {
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState<Candidate[]>([]);
+  const [searched, setSearched] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const trending = useMemo(() => trendingTerms(candidates), [candidates]);
+
+  function runSearch(nextQuery = query) {
+    setQuery(nextQuery);
+    setResults(searchCandidates(candidates, nextQuery));
+    setSearched(Boolean(nextQuery.trim()));
+  }
+
+  function spiritualSearch() {
+    const bestCandidate = [...candidates].sort((a, b) => {
+      const rankDelta = confidenceRank(a.confidence) - confidenceRank(b.confidence);
+      if (rankDelta !== 0) {
+        return rankDelta;
+      }
+      return b.confidence_score - a.confidence_score;
+    })[0];
+
+    if (bestCandidate) {
+      runSearch(bestCandidate.district || bestCandidate.state || bestCandidate.discovered_name);
+    }
+  }
+
+  function resetSearch() {
+    setQuery("");
+    setResults([]);
+    setSearched(false);
+    onReset();
+  }
+
+  return (
+    <main className="search-page">
+      <nav className="search-nav">
+        <span className="candidate-data-pill">{formatNumber(candidates.length)} candidates</span>
+        <input
+          ref={fileInputRef}
+          className="file-input"
+          type="file"
+          accept=".csv,text/csv"
+          multiple
+          onChange={(event) => onLoadFiles(event.target.files)}
+        />
+        <button
+          type="button"
+          className="search-nav-link"
+          onClick={() => fileInputRef.current?.click()}
+        >
+          Load CSV
+        </button>
+        <button type="button" className="search-nav-link" onClick={onShowInsights}>
+          Insights
+        </button>
+        <button type="button" className="profile-button" aria-label="Reset" onClick={resetSearch}>
+          <RotateCcw size={20} />
+        </button>
+      </nav>
+
+      <section className="search-hero">
+        <div className="temple-mark" aria-hidden="true">
+          <Landmark size={150} strokeWidth={1.1} />
+        </div>
+        <form
+          className="temple-search-form"
+          onSubmit={(event) => {
+            event.preventDefault();
+            runSearch();
+          }}
+        >
+          <label className="temple-search-box">
+            <Search size={28} />
+            <input
+              type="search"
+              placeholder="Search Shiva Temples"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+          </label>
+          <div className="search-actions">
+            <button type="submit" className="search-soft-button">
+              Temple Search
+            </button>
+            <button type="button" className="search-soft-button" onClick={spiritualSearch}>
+              <Sparkles size={18} />
+              I'm Feeling Spiritual
+            </button>
+          </div>
+        </form>
+
+        <div className="trending-discoveries">
+          <strong>Trending Discoveries</strong>
+          <div>
+            {trending.map((item) => (
+              <button
+                key={item}
+                type="button"
+                className="trend-chip"
+                onClick={() => runSearch(item)}
+              >
+                {item}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {searched ? (
+          <section className="search-results">
+            <div className="search-results-heading">
+              <h2>Discovery Results</h2>
+              <button type="button" className="search-nav-link" onClick={onShowInsights}>
+                Open Insights
+              </button>
+            </div>
+            {results.length ? (
+              <div className="result-list">
+                {results.map((candidate) => (
+                  <article className="result-item" key={candidate.google_place_id}>
+                    <div>
+                      <h3>{candidate.discovered_name}</h3>
+                      <p>
+                        {[candidate.district, candidate.state]
+                          .filter(Boolean)
+                          .join(", ")}
+                      </p>
+                    </div>
+                    <span className={`confidence-badge confidence-${candidate.confidence}`}>
+                      {candidate.confidence}
+                    </span>
+                    {candidate.google_maps_uri ? (
+                      <a
+                        className="map-link"
+                        href={candidate.google_maps_uri}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <ExternalLink size={14} />
+                        Open
+                      </a>
+                    ) : null}
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <p className="empty-results">No matching candidates found.</p>
+            )}
+          </section>
+        ) : null}
+      </section>
+    </main>
+  );
 }
 
 function CandidateTable({ candidates }: { candidates: Candidate[] }) {
@@ -372,6 +592,7 @@ function CandidateTable({ candidates }: { candidates: Candidate[] }) {
 
 export default function App() {
   const [reports, setReports] = useState<ReportData>(emptyReports);
+  const [view, setView] = useState<"search" | "insights">("search");
   const [selectedState, setSelectedState] = useState("All");
   const [notice, setNotice] = useState("");
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -436,6 +657,17 @@ export default function App() {
     setNotice("");
   }
 
+  if (view === "search") {
+    return (
+      <SearchHome
+        candidates={reports.candidates}
+        onShowInsights={() => setView("insights")}
+        onLoadFiles={handleFiles}
+        onReset={resetDashboard}
+      />
+    );
+  }
+
   return (
     <main className="app-shell">
       <header className="topbar">
@@ -444,6 +676,10 @@ export default function App() {
           <span className="phase-pill">Phase 1 Analysis</span>
         </div>
         <div className="actions">
+          <button type="button" className="secondary" onClick={() => setView("search")}>
+            <Search size={18} />
+            Discovery Search
+          </button>
           <input
             ref={inputRef}
             className="file-input"

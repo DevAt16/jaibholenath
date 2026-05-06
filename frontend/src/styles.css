@@ -655,6 +655,217 @@ tbody tr:last-child td {
   font-size: 14px;
 }
 
+.search-page {
+  min-height: 100vh;
+  padding: 26px 36px 56px;
+  background: #ffffff;
+}
+
+.search-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-nav-link,
+.profile-button,
+.search-soft-button,
+.trend-chip {
+  min-height: auto;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: none;
+  color: #111827;
+}
+
+.search-nav-link {
+  padding: 8px 4px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.search-nav-link:hover {
+  background: transparent;
+  color: var(--blue);
+}
+
+.candidate-data-pill {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0 12px;
+  background: #f1f3f5;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profile-button {
+  gap: 4px;
+  padding: 6px;
+}
+
+.profile-button:hover {
+  background: #f1f3f5;
+}
+
+.search-hero {
+  display: grid;
+  width: min(720px, 100%);
+  margin: 62px auto 0;
+  justify-items: center;
+}
+
+.temple-mark {
+  height: 168px;
+  color: rgba(12, 23, 42, 0.13);
+}
+
+.temple-search-form {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  gap: 20px;
+}
+
+.temple-search-box {
+  display: flex;
+  width: min(640px, 100%);
+  min-height: 60px;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0 18px;
+  color: #5f6368;
+  background: #ffffff;
+  box-shadow:
+    0 3px 9px rgba(60, 64, 67, 0.16),
+    0 12px 22px rgba(60, 64, 67, 0.1);
+}
+
+.temple-search-box input {
+  color: #2f3338;
+  font-size: 22px;
+}
+
+.temple-search-box input::placeholder {
+  color: #6e6e6e;
+}
+
+.search-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.search-soft-button {
+  min-height: 42px;
+  padding: 0 18px;
+  background: #eef0f2;
+  color: #4a4f55;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-soft-button:hover {
+  background: #e3e6e8;
+  color: #202124;
+}
+
+.trending-discoveries {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  margin-top: 44px;
+}
+
+.trending-discoveries strong {
+  color: #111827;
+  font-size: 18px;
+}
+
+.trending-discoveries div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+}
+
+.trend-chip {
+  min-height: 30px;
+  border-radius: 999px;
+  padding: 0 12px;
+  background: #eef0f2;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.trend-chip:hover {
+  background: #e1e5e8;
+}
+
+.search-results {
+  width: min(760px, 100%);
+  margin-top: 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(20, 35, 58, 0.09);
+}
+
+.search-results-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.search-results-heading h2 {
+  font-size: 20px;
+}
+
+.result-list {
+  display: grid;
+}
+
+.result-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.result-item:last-child {
+  border-bottom: 0;
+}
+
+.result-item h3 {
+  margin: 0 0 4px;
+  color: var(--ink);
+  font-size: 17px;
+}
+
+.result-item p,
+.empty-results {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.empty-results {
+  padding: 20px;
+}
+
 @media (max-width: 1080px) {
   .app-shell {
     width: min(100% - 40px, 1376px);
@@ -681,6 +892,11 @@ tbody tr:last-child td {
 
   .candidate-controls {
     justify-content: flex-start;
+  }
+
+  .search-page {
+    padding-right: 22px;
+    padding-left: 22px;
   }
 }
 
@@ -721,5 +937,26 @@ tbody tr:last-child td {
 
   .bar-track {
     height: 38px;
+  }
+
+  .search-nav {
+    gap: 12px;
+  }
+
+  .search-hero {
+    margin-top: 40px;
+  }
+
+  .temple-search-box {
+    min-height: 56px;
+  }
+
+  .temple-search-box input {
+    font-size: 18px;
+  }
+
+  .result-item {
+    grid-template-columns: 1fr;
+    justify-items: start;
   }
 }
