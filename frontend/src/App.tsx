@@ -1,17 +1,17 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
 import {
+  ChevronDown,
   CircleCheck,
-  Compass,
   Copy,
   ExternalLink,
-  Landmark,
   Map as MapIcon,
   MapPin,
   RotateCcw,
   Search,
   Sparkles,
   Upload,
+  X,
 } from "lucide-react";
 import {
   Candidate,
@@ -33,6 +33,71 @@ const emptyReports: ReportData = {
   districts: [],
   candidates: [],
 };
+
+type ViewMode = "search" | "insights";
+type DataSourceStatus = {
+  label: string;
+  detail: string;
+  tone: "sample" | "uploaded" | "empty";
+};
+
+const loadingDataSource: DataSourceStatus = {
+  label: "Loading reports",
+  detail: "Preparing discovery data",
+  tone: "empty",
+};
+
+const sampleDataSource: DataSourceStatus = {
+  label: "Sample reports",
+  detail: "CSV demo data loaded",
+  tone: "sample",
+};
+
+type TempleIconProps = {
+  size?: number;
+  strokeWidth?: number;
+  className?: string;
+};
+
+function TempleIcon({
+  size = 24,
+  strokeWidth = 1.8,
+  className,
+}: TempleIconProps) {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      aria-hidden="true"
+    >
+      <path d="M4 21h16" />
+      <path d="M6.5 21V11.5L12 3l5.5 8.5V21" />
+      <path d="M8.5 11.5h7" />
+      <path d="M9.5 8.5h5" />
+      <path d="M11 5.5h2" />
+      <path d="M12 3V1.8" />
+      <path d="M9.5 21v-5.2a2.5 2.5 0 0 1 5 0V21" />
+      <path d="M7.8 15h1.4" />
+      <path d="M14.8 15h1.4" />
+    </svg>
+  );
+}
+
+function TempleMetricIcon({ badge }: { badge?: ReactNode }) {
+  return (
+    <span className="temple-metric-symbol">
+      <TempleIcon size={27} strokeWidth={1.7} />
+      {badge ? <span className="temple-metric-badge">{badge}</span> : null}
+    </span>
+  );
+}
 
 function formatNumber(value: number | undefined): string {
   return new Intl.NumberFormat("en-IN").format(value ?? 0);
@@ -135,20 +200,24 @@ function StateBars({ states }: { states: ReportData["states"] }) {
         <MapIcon size={20} />
       </div>
       <div className="state-bars">
-        {sorted.map((state) => (
-          <div className="state-row" key={state.state}>
-            <span>{state.state}</span>
-            <div className="state-track">
-              <div
-                className="state-fill"
-                style={{
-                  width: `${Math.max(percent(state.unique_google_place_ids, max), 3)}%`,
-                }}
-              />
+        {sorted.length ? (
+          sorted.map((state) => (
+            <div className="state-row" key={state.state}>
+              <span>{state.state}</span>
+              <div className="state-track">
+                <div
+                  className="state-fill"
+                  style={{
+                    width: `${Math.max(percent(state.unique_google_place_ids, max), 3)}%`,
+                  }}
+                />
+              </div>
+              <strong>{formatNumber(state.unique_google_place_ids)}</strong>
             </div>
-            <strong>{formatNumber(state.unique_google_place_ids)}</strong>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p className="empty-panel">No state report loaded yet.</p>
+        )}
       </div>
     </section>
   );
@@ -201,20 +270,37 @@ function DistrictTable({
             </tr>
           </thead>
           <tbody>
-            {visible.map((district) => (
-              <tr key={`${district.state}-${district.district}`}>
-                <td>{district.state}</td>
-                <td>{district.district}</td>
-                <td>{formatNumber(district.unique_google_place_ids)}</td>
-                <td>{formatNumber(district.high_confidence_shiva)}</td>
-                <td>{formatNumber(district.medium_confidence_shiva_candidates)}</td>
-                <td>{formatNumber(district.low_confidence_possible_temples)}</td>
+            {visible.length ? (
+              visible.map((district) => (
+                <tr key={`${district.state}-${district.district}`}>
+                  <td>{district.state}</td>
+                  <td>{district.district}</td>
+                  <td>{formatNumber(district.unique_google_place_ids)}</td>
+                  <td>{formatNumber(district.high_confidence_shiva)}</td>
+                  <td>{formatNumber(district.medium_confidence_shiva_candidates)}</td>
+                  <td>{formatNumber(district.low_confidence_possible_temples)}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan={6} className="empty-table-cell">
+                  No district report rows match this filter.
+                </td>
               </tr>
-            ))}
+            )}
           </tbody>
         </table>
       </div>
     </section>
+  );
+}
+
+function SourcePill({ source }: { source: DataSourceStatus }) {
+  return (
+    <span className={`source-pill source-pill-${source.tone}`}>
+      <strong>{source.label}</strong>
+      <span>{source.detail}</span>
+    </span>
   );
 }
 
@@ -283,11 +369,13 @@ function trendingTerms(candidates: Candidate[]): string[] {
 
 function SearchHome({
   candidates,
+  dataSource,
   onShowInsights,
   onLoadFiles,
   onReset,
 }: {
   candidates: Candidate[];
+  dataSource: DataSourceStatus;
   onShowInsights: () => void;
   onLoadFiles: (files: FileList | null) => void;
   onReset: () => void;
@@ -328,33 +416,40 @@ function SearchHome({
   return (
     <main className="search-page">
       <nav className="search-nav">
-        <span className="candidate-data-pill">{formatNumber(candidates.length)} candidates</span>
-        <input
-          ref={fileInputRef}
-          className="file-input"
-          type="file"
-          accept=".csv,text/csv"
-          multiple
-          onChange={(event) => onLoadFiles(event.target.files)}
-        />
-        <button
-          type="button"
-          className="search-nav-link"
-          onClick={() => fileInputRef.current?.click()}
-        >
-          Load CSV
-        </button>
-        <button type="button" className="search-nav-link" onClick={onShowInsights}>
-          Insights
-        </button>
-        <button type="button" className="profile-button" aria-label="Reset" onClick={resetSearch}>
-          <RotateCcw size={20} />
-        </button>
+        <div className="portal-brand">
+          <TempleIcon size={25} />
+          <span>Shiva Temple Discovery</span>
+        </div>
+        <div className="search-nav-actions">
+          <SourcePill source={dataSource} />
+          <span className="candidate-data-pill">{formatNumber(candidates.length)} candidates</span>
+          <input
+            ref={fileInputRef}
+            className="file-input"
+            type="file"
+            accept=".csv,text/csv"
+            multiple
+            onChange={(event) => onLoadFiles(event.target.files)}
+          />
+          <button
+            type="button"
+            className="search-nav-link"
+            onClick={() => fileInputRef.current?.click()}
+          >
+            Load CSV
+          </button>
+          <button type="button" className="search-nav-link" onClick={onShowInsights}>
+            Insights
+          </button>
+          <button type="button" className="profile-button" aria-label="Reset" onClick={resetSearch}>
+            <RotateCcw size={20} />
+          </button>
+        </div>
       </nav>
 
       <section className="search-hero">
         <div className="temple-mark" aria-hidden="true">
-          <Landmark size={150} strokeWidth={1.1} />
+          <TempleIcon size={168} strokeWidth={0.85} />
         </div>
         <form
           className="temple-search-form"
@@ -399,6 +494,13 @@ function SearchHome({
           </div>
         </div>
 
+        {!candidates.length && !searched ? (
+          <section className="search-empty-state">
+            <strong>No candidate data loaded yet</strong>
+            <p>Load candidate reports to search discovered temple candidates.</p>
+          </section>
+        ) : null}
+
         {searched ? (
           <section className="search-results">
             <div className="search-results-heading">
@@ -417,6 +519,10 @@ function SearchHome({
                         {[candidate.district, candidate.state]
                           .filter(Boolean)
                           .join(", ")}
+                      </p>
+                      <p className="result-meta">
+                        Score {candidate.confidence_score.toFixed(2)}
+                        {candidate.source_query ? ` · ${candidate.source_query}` : ""}
                       </p>
                     </div>
                     <span className={`confidence-badge confidence-${candidate.confidence}`}>
@@ -437,7 +543,9 @@ function SearchHome({
                 ))}
               </div>
             ) : (
-              <p className="empty-results">No matching candidates found.</p>
+              <p className="empty-results">
+                No matching candidates found. Try a district, state, temple name, or source query.
+              </p>
             )}
           </section>
         ) : null}
@@ -452,6 +560,7 @@ function CandidateTable({ candidates }: { candidates: Candidate[] }) {
   const [state, setState] = useState("All");
   const [district, setDistrict] = useState("All");
   const [rowLimit, setRowLimit] = useState("100");
+  const [expandedPlaceId, setExpandedPlaceId] = useState<string | null>(null);
 
   const states = useMemo(
     () => Array.from(new Set(candidates.map((candidate) => candidate.state))).sort(),
@@ -513,6 +622,19 @@ function CandidateTable({ candidates }: { candidates: Candidate[] }) {
     }
     return filteredCandidates.slice(0, Number(rowLimit));
   }, [filteredCandidates, rowLimit]);
+  const activeFilters = [
+    query.trim() ? { label: `Search: ${query.trim()}`, clear: () => setQuery("") } : null,
+    confidence !== "All" ? { label: `Confidence: ${confidence}`, clear: () => setConfidence("All") } : null,
+    state !== "All" ? { label: `State: ${state}`, clear: () => setState("All") } : null,
+    district !== "All" ? { label: `District: ${district}`, clear: () => setDistrict("All") } : null,
+  ].filter(Boolean) as Array<{ label: string; clear: () => void }>;
+
+  function clearFilters() {
+    setQuery("");
+    setConfidence("All");
+    setState("All");
+    setDistrict("All");
+  }
 
   return (
     <section className="panel candidate-panel">
@@ -566,53 +688,125 @@ function CandidateTable({ candidates }: { candidates: Candidate[] }) {
           {formatNumber(visible.length)} of {formatNumber(filteredCandidates.length)} matching rows
         </span>
       </div>
+      {activeFilters.length ? (
+        <div className="filter-chip-row">
+          {activeFilters.map((filter) => (
+            <button key={filter.label} type="button" className="filter-chip" onClick={filter.clear}>
+              {filter.label}
+              <X size={14} />
+            </button>
+          ))}
+          <button type="button" className="clear-filter-button" onClick={clearFilters}>
+            Clear all
+          </button>
+        </div>
+      ) : null}
       <div className="table-wrap">
         <table className="candidate-table">
           <thead>
             <tr>
+              <th>Details</th>
               <th>Confidence</th>
               <th>Score</th>
               <th>Name</th>
               <th>State</th>
               <th>District</th>
-              <th>Address</th>
               <th>Maps</th>
               <th>Place ID</th>
-              <th>Reason</th>
             </tr>
           </thead>
           <tbody>
-            {visible.map((candidate) => (
-              <tr key={candidate.google_place_id}>
-                <td>
-                  <span className={`confidence-badge confidence-${candidate.confidence}`}>
-                    {candidate.confidence}
-                  </span>
+            {visible.length ? (
+              visible.map((candidate) => {
+                const expanded = expandedPlaceId === candidate.google_place_id;
+                return (
+                  <Fragment key={candidate.google_place_id}>
+                    <tr key={candidate.google_place_id}>
+                      <td>
+                        <button
+                          type="button"
+                          className="row-detail-button"
+                          aria-label={`Toggle details for ${candidate.discovered_name}`}
+                          aria-expanded={expanded}
+                          onClick={() =>
+                            setExpandedPlaceId(expanded ? null : candidate.google_place_id)
+                          }
+                        >
+                          <ChevronDown size={16} />
+                        </button>
+                      </td>
+                      <td>
+                        <span className={`confidence-badge confidence-${candidate.confidence}`}>
+                          {candidate.confidence}
+                        </span>
+                      </td>
+                      <td>{candidate.confidence_score.toFixed(2)}</td>
+                      <td className="strong-cell">{candidate.discovered_name}</td>
+                      <td>{candidate.state}</td>
+                      <td>{candidate.district}</td>
+                      <td>
+                        {candidate.google_maps_uri ? (
+                          <a
+                            className="map-link"
+                            href={candidate.google_maps_uri}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <ExternalLink size={14} />
+                            Open
+                          </a>
+                        ) : (
+                          <span className="muted-cell">Missing</span>
+                        )}
+                      </td>
+                      <td className="mono-cell">{candidate.google_place_id}</td>
+                    </tr>
+                    {expanded ? (
+                      <tr className="candidate-detail-row">
+                        <td colSpan={8}>
+                          <div className="candidate-detail-grid">
+                            <div>
+                              <span>Address</span>
+                              <strong>{candidate.discovered_address || "Unknown"}</strong>
+                            </div>
+                            <div>
+                              <span>Source Query</span>
+                              <strong>{candidate.source_query || "Unknown"}</strong>
+                            </div>
+                            <div>
+                              <span>Classification Reason</span>
+                              <strong>{candidate.classification_reason || "Unknown"}</strong>
+                            </div>
+                            <div>
+                              <span>Coordinates</span>
+                              <strong>
+                                {candidate.latitude && candidate.longitude
+                                  ? `${candidate.latitude.toFixed(5)}, ${candidate.longitude.toFixed(5)}`
+                                  : "Unknown"}
+                              </strong>
+                            </div>
+                            <div>
+                              <span>First Seen</span>
+                              <strong>{candidate.first_seen_at || "Unknown"}</strong>
+                            </div>
+                            <div>
+                              <span>Last Seen</span>
+                              <strong>{candidate.last_seen_at || "Unknown"}</strong>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    ) : null}
+                  </Fragment>
+                );
+              })
+            ) : (
+              <tr>
+                <td colSpan={8} className="empty-table-cell">
+                  No candidates match the current filters.
                 </td>
-                <td>{candidate.confidence_score.toFixed(2)}</td>
-                <td className="strong-cell">{candidate.discovered_name}</td>
-                <td>{candidate.state}</td>
-                <td>{candidate.district}</td>
-                <td className="wide-cell">{candidate.discovered_address}</td>
-                <td>
-                  {candidate.google_maps_uri ? (
-                    <a
-                      className="map-link"
-                      href={candidate.google_maps_uri}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <ExternalLink size={14} />
-                      Open
-                    </a>
-                  ) : (
-                    <span className="muted-cell">Missing</span>
-                  )}
-                </td>
-                <td className="mono-cell">{candidate.google_place_id}</td>
-                <td className="wide-cell">{candidate.classification_reason}</td>
               </tr>
-            ))}
+            )}
           </tbody>
         </table>
       </div>
@@ -622,16 +816,25 @@ function CandidateTable({ candidates }: { candidates: Candidate[] }) {
 
 export default function App() {
   const [reports, setReports] = useState<ReportData>(emptyReports);
-  const [view, setView] = useState<"search" | "insights">("search");
+  const [view, setView] = useState<ViewMode>("search");
   const [selectedState, setSelectedState] = useState("All");
   const [notice, setNotice] = useState("");
+  const [dataSource, setDataSource] = useState<DataSourceStatus>(loadingDataSource);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
     loadSampleReports()
-      .then(setReports)
+      .then((sampleReports) => {
+        setReports(sampleReports);
+        setDataSource(sampleDataSource);
+      })
       .catch(() => {
         setNotice("Sample report files could not be loaded.");
+        setDataSource({
+          label: "No reports loaded",
+          detail: "Load CSV reports to begin",
+          tone: "empty",
+        });
       });
   }, []);
 
@@ -673,17 +876,26 @@ export default function App() {
 
     setReports(nextReports);
     setNotice(loaded.length ? `Loaded ${Array.from(new Set(loaded)).join(", ")} reports.` : "No report CSVs recognized.");
+    if (loaded.length) {
+      setDataSource({
+        label: "Uploaded CSV",
+        detail: `${Array.from(new Set(loaded)).join(", ")} reports loaded`,
+        tone: "uploaded",
+      });
+    }
   }
 
   async function loadSamples() {
     setReports(await loadSampleReports());
     setSelectedState("All");
+    setDataSource(sampleDataSource);
     setNotice("Sample reports restored.");
   }
 
   async function resetDashboard() {
     setReports(await loadSampleReports());
     setSelectedState("All");
+    setDataSource(sampleDataSource);
     setNotice("");
   }
 
@@ -691,6 +903,7 @@ export default function App() {
     return (
       <SearchHome
         candidates={reports.candidates}
+        dataSource={dataSource}
         onShowInsights={() => setView("insights")}
         onLoadFiles={handleFiles}
         onReset={resetDashboard}
@@ -704,6 +917,7 @@ export default function App() {
         <div className="title-row">
           <h1>Shiva Temple Discovery</h1>
           <span className="phase-pill">Phase 1 Analysis</span>
+          <SourcePill source={dataSource} />
         </div>
         <div className="actions">
           <button type="button" className="secondary" onClick={() => setView("search")}>
@@ -739,25 +953,25 @@ export default function App() {
           label="Discovered"
           value={national?.total_discovered_candidates ?? 0}
           tone="blue"
-          icon={<Compass size={22} />}
+          icon={<TempleMetricIcon badge={<Search size={12} strokeWidth={2.6} />} />}
         />
         <MetricCard
           label="Unique Places"
           value={national?.unique_google_place_ids ?? 0}
           tone="slate"
-          icon={<MapPin size={22} />}
+          icon={<TempleMetricIcon badge={<MapPin size={12} strokeWidth={2.6} />} />}
         />
         <MetricCard
           label="High Confidence"
           value={national?.high_confidence_shiva ?? 0}
           tone="green"
-          icon={<CircleCheck size={22} />}
+          icon={<TempleMetricIcon badge={<CircleCheck size={12} strokeWidth={2.6} />} />}
         />
         <MetricCard
           label="Duplicates"
           value={national?.duplicates_removed ?? 0}
           tone="amber"
-          icon={<Copy size={22} />}
+          icon={<TempleMetricIcon badge={<Copy size={12} strokeWidth={2.6} />} />}
         />
       </section>
 
@@ -766,7 +980,8 @@ export default function App() {
         <section className="panel quality-panel">
           <div className="panel-heading">
             <div>
-              <h2>Data Quality</h2>
+              <h2>High-Confidence Share</h2>
+              <p>Share of unique candidates classified as high confidence</p>
             </div>
           </div>
           <div className="quality-score">
