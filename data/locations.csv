@@ -1,142 +1,142 @@
 location_type,name,state_name,district_name,sub_district_name,state_lgd_code,district_lgd_code,sub_district_lgd_code,village_lgd_code,source
-town,Alandi,Maharashtra,Pune,Haveli,,,,,manual_pilot
-town,Dehu,Maharashtra,Pune,Haveli,,,,,manual_pilot
-town,Junnar,Maharashtra,Pune,Junnar,,,,,manual_pilot
-town,Saswad,Maharashtra,Pune,Purandhar,,,,,manual_pilot
-town,Trimbak,Maharashtra,Nashik,Trimbakeshwar,,,,,manual_pilot
-town,Sinnar,Maharashtra,Nashik,Sinnar,,,,,manual_pilot
-town,Yeola,Maharashtra,Nashik,Yeola,,,,,manual_pilot
-town,Paithan,Maharashtra,Aurangabad,Paithan,,,,,manual_pilot
-town,Khultabad,Maharashtra,Aurangabad,Khultabad,,,,,manual_pilot
-town,Shirdi,Maharashtra,Ahmednagar,Rahata,,,,,manual_pilot
-town,Susner,Madhya Pradesh,Agar Malwa,Susner,,,,,manual_pilot
-town,Nalkheda,Madhya Pradesh,Agar Malwa,Nalkheda,,,,,manual_pilot
-town,Badod,Madhya Pradesh,Agar Malwa,Badod,,,,,manual_pilot
-town,Agar,Madhya Pradesh,Agar Malwa,Agar,,,,,manual_pilot
-town,Soyatkalan,Madhya Pradesh,Agar Malwa,Susner,,,,,manual_pilot
-town,Kanad,Madhya Pradesh,Agar Malwa,Agar,,,,,manual_pilot
-town,Pidawa,Madhya Pradesh,Agar Malwa,Agar,,,,,manual_pilot
-town,Kothadi,Madhya Pradesh,Agar Malwa,Agar,,,,,manual_pilot
-town,Bijalgaon,Madhya Pradesh,Agar Malwa,Agar,,,,,manual_pilot
-town,Pipalon,Madhya Pradesh,Agar Malwa,Agar,,,,,manual_pilot
-town,Jobat,Madhya Pradesh,Alirajpur,Jobat,,,,,manual_pilot
-town,Bhabra,Madhya Pradesh,Alirajpur,Bhabra,,,,,manual_pilot
-town,Sondwa,Madhya Pradesh,Alirajpur,Sondwa,,,,,manual_pilot
-town,Alirajpur,Madhya Pradesh,Alirajpur,Alirajpur,,,,,manual_pilot
-town,Katthiwada,Madhya Pradesh,Alirajpur,Katthiwada,,,,,manual_pilot
-town,Udaygarh,Madhya Pradesh,Alirajpur,Udaygarh,,,,,manual_pilot
-town,Chandpur,Madhya Pradesh,Alirajpur,Alirajpur,,,,,manual_pilot
-town,Sorwa,Madhya Pradesh,Alirajpur,Alirajpur,,,,,manual_pilot
-town,Chhaktala,Madhya Pradesh,Alirajpur,Sondwa,,,,,manual_pilot
-town,Walpur,Madhya Pradesh,Alirajpur,Sondwa,,,,,manual_pilot
-town,Kotma,Madhya Pradesh,Anuppur,Kotma,,,,,manual_pilot
-town,Jaithari,Madhya Pradesh,Anuppur,Jaithari,,,,,manual_pilot
-town,Pushprajgarh,Madhya Pradesh,Anuppur,Pushprajgarh,,,,,manual_pilot
-town,Anuppur,Madhya Pradesh,Anuppur,Anuppur,,,,,manual_pilot
-town,Bijuri,Madhya Pradesh,Anuppur,Kotma,,,,,manual_pilot
-town,Rajendragram,Madhya Pradesh,Anuppur,Pushprajgarh,,,,,manual_pilot
-town,Bhalumada,Madhya Pradesh,Anuppur,Kotma,,,,,manual_pilot
-town,Dola,Madhya Pradesh,Anuppur,Kotma,,,,,manual_pilot
-town,Dumarkachar,Madhya Pradesh,Anuppur,Kotma,,,,,manual_pilot
-town,Pasad,Madhya Pradesh,Anuppur,Kotma,,,,,manual_pilot
-town,Chanderi,Madhya Pradesh,Ashoknagar,Chanderi,,,,,manual_pilot
-town,Mungaoli,Madhya Pradesh,Ashoknagar,Mungaoli,,,,,manual_pilot
-town,Isagarh,Madhya Pradesh,Ashoknagar,Isagarh,,,,,manual_pilot
-town,Ashoknagar,Madhya Pradesh,Ashoknagar,Ashoknagar,,,,,manual_pilot
-town,Shadora,Madhya Pradesh,Ashoknagar,Ashoknagar,,,,,manual_pilot
-town,Piparai,Madhya Pradesh,Ashoknagar,Mungaoli,,,,,manual_pilot
-town,Bahadurpur,Madhya Pradesh,Ashoknagar,Mungaoli,,,,,manual_pilot
-town,Nai Saray,Madhya Pradesh,Ashoknagar,Isagarh,,,,,manual_pilot
-town,Athai Kheda,Madhya Pradesh,Ashoknagar,Mungaoli,,,,,manual_pilot
-town,Mahidpur,Madhya Pradesh,Ashoknagar,Ashoknagar,,,,,manual_pilot
-town,Waraseoni,Madhya Pradesh,Balaghat,Waraseoni,,,,,manual_pilot
-town,Baihar,Madhya Pradesh,Balaghat,Baihar,,,,,manual_pilot
-town,Lanji,Madhya Pradesh,Balaghat,Lanji,,,,,manual_pilot
-town,Balaghat,Madhya Pradesh,Balaghat,Balaghat,,,,,manual_pilot
-town,Katangi,Madhya Pradesh,Balaghat,Katangi,,,,,manual_pilot
-town,Khairlanji,Madhya Pradesh,Balaghat,Khairlanji,,,,,manual_pilot
-town,Kirnapur,Madhya Pradesh,Balaghat,Kirnapur,,,,,manual_pilot
-town,Lalburra,Madhya Pradesh,Balaghat,Lalburra,,,,,manual_pilot
-town,Paraswada,Madhya Pradesh,Balaghat,Paraswada,,,,,manual_pilot
-town,Tirodi,Madhya Pradesh,Balaghat,Tirodi,,,,,manual_pilot
-town,Sendhwa,Madhya Pradesh,Barwani,Sendhwa,,,,,manual_pilot
-town,Rajpur,Madhya Pradesh,Barwani,Rajpur,,,,,manual_pilot
-town,Anjad,Madhya Pradesh,Barwani,Rajpur,,,,,manual_pilot
-town,Barwani,Madhya Pradesh,Barwani,Barwani,,,,,manual_pilot
-town,Bawangaja,Madhya Pradesh,Barwani,Barwani,,,,,manual_pilot
-town,Khetia,Madhya Pradesh,Barwani,Pansemal,,,,,manual_pilot
-town,Pansemal,Madhya Pradesh,Barwani,Pansemal,,,,,manual_pilot
-town,Thikri,Madhya Pradesh,Barwani,Thikri,,,,,manual_pilot
-town,Pati,Madhya Pradesh,Barwani,Pati,,,,,manual_pilot
-town,Niwali,Madhya Pradesh,Barwani,Niwali,,,,,manual_pilot
-town,Amla,Madhya Pradesh,Betul,Amla,,,,,manual_pilot
-town,Athner,Madhya Pradesh,Betul,Athner,,,,,manual_pilot
-town,Betul-Bazar,Madhya Pradesh,Betul,Betul,,,,,manual_pilot
-town,Betul,Madhya Pradesh,Betul,Betul,,,,,manual_pilot
-town,Bhainsdehi,Madhya Pradesh,Betul,Bhainsdehi,,,,,manual_pilot
-town,Bhimpur,Madhya Pradesh,Betul,Bhimpur,,,,,manual_pilot
-town,Pathakhera,Madhya Pradesh,Betul,Ghoradongari,,,,,manual_pilot
-town,Prabhat Pattan,Madhya Pradesh,Betul,Multai,,,,,manual_pilot
-town,Sarni,Madhya Pradesh,Betul,Ghoradongari,,,,,manual_pilot
-town,Shahpur,Madhya Pradesh,Betul,Shahpur,,,,,manual_pilot
-town,Bhind,Madhya Pradesh,Bhind,Bhind,,,,,manual_pilot
-town,Gohad,Madhya Pradesh,Bhind,Gohad,,,,,manual_pilot
-town,Lahar,Madhya Pradesh,Bhind,Lahar,,,,,manual_pilot
-town,Mehgaon,Madhya Pradesh,Bhind,Mehgaon,,,,,manual_pilot
-town,Gormi,Madhya Pradesh,Bhind,Mehgaon,,,,,manual_pilot
-town,Mau,Madhya Pradesh,Bhind,Gohad,,,,,manual_pilot
-town,Daboh,Madhya Pradesh,Bhind,Lahar,,,,,manual_pilot
-town,Mihona,Madhya Pradesh,Bhind,Lahar,,,,,manual_pilot
-town,Phuphkalan,Madhya Pradesh,Bhind,Bhind,,,,,manual_pilot
-town,Akoda,Madhya Pradesh,Bhind,Bhind,,,,,manual_pilot
-town,Bairagarh,Madhya Pradesh,Bhopal,Huzur,,,,,manual_pilot
-town,Berasia,Madhya Pradesh,Bhopal,Berasia,,,,,manual_pilot
-town,Kolar,Madhya Pradesh,Bhopal,Huzur,,,,,manual_pilot
-town,Huzur,Madhya Pradesh,Bhopal,Huzur,,,,,manual_pilot
-town,Kolar Road,Madhya Pradesh,Bhopal,Huzur,,,,,manual_pilot
-town,Govindpura,Madhya Pradesh,Bhopal,Huzur,,,,,manual_pilot
-town,BHEL,Madhya Pradesh,Bhopal,Huzur,,,,,manual_pilot
-town,Piplani,Madhya Pradesh,Bhopal,Huzur,,,,,manual_pilot
-town,Misrod,Madhya Pradesh,Bhopal,Huzur,,,,,manual_pilot
-town,Bairagarh Kalan,Madhya Pradesh,Bhopal,Huzur,,,,,manual_pilot
-town,Nepanagar,Madhya Pradesh,Burhanpur,Nepanagar,,,,,manual_pilot
-town,Khaknar,Madhya Pradesh,Burhanpur,Khaknar,,,,,manual_pilot
-town,Shahpur,Madhya Pradesh,Burhanpur,Burhanpur,,,,,manual_pilot
-town,Burhanpur,Madhya Pradesh,Burhanpur,Burhanpur,,,,,manual_pilot
-town,Asirgarh,Madhya Pradesh,Burhanpur,Burhanpur,,,,,manual_pilot
-town,Dedtalai,Madhya Pradesh,Burhanpur,Khaknar,,,,,manual_pilot
-town,Bodarli,Madhya Pradesh,Burhanpur,Burhanpur,,,,,manual_pilot
-town,Nimbola,Madhya Pradesh,Burhanpur,Burhanpur,,,,,manual_pilot
-town,Daryapur,Madhya Pradesh,Burhanpur,Burhanpur,,,,,manual_pilot
-town,Bodia,Madhya Pradesh,Burhanpur,Burhanpur,,,,,manual_pilot
-town,Nowgong,Madhya Pradesh,Chhatarpur,Nowgong,,,,,manual_pilot
-town,Rajnagar,Madhya Pradesh,Chhatarpur,Rajnagar,,,,,manual_pilot
-town,Bijawar,Madhya Pradesh,Chhatarpur,Bijawar,,,,,manual_pilot
-town,Bada Malhera,Madhya Pradesh,Chhatarpur,Bada Malhera,,,,,manual_pilot
-town,Maharajpur,Madhya Pradesh,Chhatarpur,Maharajpur,,,,,manual_pilot
-town,Chandla,Madhya Pradesh,Chhatarpur,Chandla,,,,,manual_pilot
-town,Gaurihar,Madhya Pradesh,Chhatarpur,Gaurihar,,,,,manual_pilot
-town,Buxwaha,Madhya Pradesh,Chhatarpur,Buxwaha,,,,,manual_pilot
-town,Laundi,Madhya Pradesh,Chhatarpur,Laundi,,,,,manual_pilot
-town,Ghuwara,Madhya Pradesh,Chhatarpur,Bada Malhera,,,,,manual_pilot
-town,Amarwara,Madhya Pradesh,Chhindwara,Amarwara,,,,,manual_pilot
-town,Ambada,Madhya Pradesh,Chhindwara,Junnardeo,,,,,manual_pilot
-town,Badkuhi,Madhya Pradesh,Chhindwara,Parasia,,,,,manual_pilot
-town,Barkuhi,Madhya Pradesh,Chhindwara,Parasia,,,,,manual_pilot
-town,Bhamodi,Madhya Pradesh,Chhindwara,Parasia,,,,,manual_pilot
-town,Bichhua,Madhya Pradesh,Chhindwara,Bichhua,,,,,manual_pilot
-town,Bijawar,Madhya Pradesh,Chhindwara,Chhindwara,,,,,manual_pilot
-town,Borgaon,Madhya Pradesh,Chhindwara,Sausar,,,,,manual_pilot
-town,Chaand,Madhya Pradesh,Chhindwara,Chaurai,,,,,manual_pilot
-town,Chhindwara,Madhya Pradesh,Chhindwara,Chhindwara,,,,,manual_pilot
-town,Aslana,Madhya Pradesh,Damoh,Damoh,,,,,manual_pilot
-town,Bandakpur,Madhya Pradesh,Damoh,Damoh,,,,,manual_pilot
-town,Ganeshganj,Madhya Pradesh,Damoh,Damoh,,,,,manual_pilot
-town,Lidhora Khurd,Madhya Pradesh,Damoh,Damoh,,,,,manual_pilot
-town,Madhiyadoh,Madhya Pradesh,Damoh,Hatta,,,,,manual_pilot
-town,Narsinghgarh,Madhya Pradesh,Damoh,Damoh,,,,,manual_pilot
-town,Nohta,Madhya Pradesh,Damoh,Damoh,,,,,manual_pilot
-town,Singrampur,Madhya Pradesh,Damoh,Jabera,,,,,manual_pilot
+town,Achhnera,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Agra,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Akola,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Azizpur,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Bah,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Bateshwar,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Fatehabad,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Fatehpur Sikri,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Jagner,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Jaitpura Kalan,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Khandauli,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Kheragarh,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Kiraoli,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Shamsabad,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Swamibagh,Uttar Pradesh,Agra,,,,,,manual_pilot
+town,Amethi,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Bakshi Ka Talab,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Chinahat,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Gosainganj,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Itaunja,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Kakori,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Kalli Pashchim,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Lucknow,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Mahona,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Malihabad,Uttar Pradesh,Lucknow,,,,,,manual_pilot
+town,Araul,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Armapur Estate,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Bhimsen,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Bhitargaon,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Bidhnu,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Bilhaur,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Binaur,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Bithoor,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Chakeri,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Choubepur Kalan,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Gangupur,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Ghatampur,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Kalyanpur,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Kanpur Cantonment,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Karbigwan,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Maharajpur,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Makanpur,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,New Kanpur City,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Northern Railway Colony,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Padri Lalpur,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Patara,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Sarh,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Sarsaul,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Shivrajpur,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot
+town,Varanasi,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Ramnagar,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Lohta,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Phulwaria,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Shivdaspur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Suzabad,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Kotwa,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Maruadih Railway Settlement,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Benipur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Chhitpur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Kandwa,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Baragaon,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Sir Gobardhan,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Maruadih,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Susuwahi,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Salarpur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Birbhanpur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Harpalpur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Gangapur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Kakarmatta,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Bhagawanpur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Lerhupur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Amara Khaira Chak,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Umarha,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Chandpur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Dindaspur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Kallipur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Chhitauni,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Asapur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Jalal Patti,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Kachnar,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Maheshpur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Kesaripur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Parmanandpur,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Lahartara,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Sarai Mohana,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Gaura Kala,Uttar Pradesh,Varanasi,,,,,,manual_pilot
+town,Allengunj,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Alopibagh,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Atala,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Attarsuiya,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Bahadurgunj,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Bai-Ka-Bagh,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Bairahana,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Beli Colony,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Benigunj,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Bharadwaj Puram,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Chatham Lines,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Chowk,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Civil Lines,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Colonelgunj,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Daraganj,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Darbhanga,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Dhoomangunj,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Georgetown,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Govindpur,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Johnstongunj,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Kareli,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Katra,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Khuldabad,Uttar Pradesh,Prayagraj,,,,,,manual_pilot
+town,Mawana,Uttar Pradesh,Meerut,,,,,,manual_pilot
+town,Sardhana,Uttar Pradesh,Meerut,,,,,,manual_pilot
+town,Hastinapur,Uttar Pradesh,Meerut,,,,,,manual_pilot
+town,Daurala,Uttar Pradesh,Meerut,,,,,,manual_pilot
+town,Phalawda,Uttar Pradesh,Meerut,,,,,,manual_pilot
+town,Kithaur,Uttar Pradesh,Meerut,,,,,,manual_pilot
+town,Parikshitgarh,Uttar Pradesh,Meerut,,,,,,manual_pilot
+town,Kharkhoda,Uttar Pradesh,Meerut,,,,,,manual_pilot
+town,Loni,Uttar Pradesh,Ghaziabad,,,,,,manual_pilot
+town,Muradnagar,Uttar Pradesh,Ghaziabad,,,,,,manual_pilot
+town,Modinagar,Uttar Pradesh,Ghaziabad,,,,,,manual_pilot
+town,Dasna,Uttar Pradesh,Ghaziabad,,,,,,manual_pilot
+town,Patala,Uttar Pradesh,Ghaziabad,,,,,,manual_pilot
+town,Niwari,Uttar Pradesh,Ghaziabad,,,,,,manual_pilot
+town,Faridnagar,Uttar Pradesh,Ghaziabad,,,,,,manual_pilot
+town,Bansgaon,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+town,Pipiganj,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+town,Pipraich,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+town,Gola Bazar,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+town,Mundera Bazar,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+town,Sahjanwa,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+town,Kasba Sangrampur urf Unwal,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+town,Barhalganj,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+town,Chaumukha,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot
+town,Aonla,Uttar Pradesh,Bareilly,,,,,,manual_pilot
+town,Baheri,Uttar Pradesh,Bareilly,,,,,,manual_pilot
+town,Faridpur,Uttar Pradesh,Bareilly,,,,,,manual_pilot
+town,Meerganj,Uttar Pradesh,Bareilly,,,,,,manual_pilot
+town,Nawabganj,Uttar Pradesh,Bareilly,,,,,,manual_pilot
 town,Damoh,Madhya Pradesh,Damoh,Damoh,,,,,manual_pilot
 town,Hatta,Madhya Pradesh,Damoh,Hatta,,,,,manual_pilot
 town,Badoni,Madhya Pradesh,Datia,Datia,,,,,manual_pilot
