@@ -108,6 +108,13 @@ Default task generation uses districts, towns, and urban local bodies only:
 python scripts/generate_search_tasks.py --limit 100
 ```
 
+Generate Phase 1.1 district-only baseline tasks:
+
+```powershell
+python scripts/generate_search_tasks.py --district-only --dry-run
+python scripts/generate_search_tasks.py --district-only
+```
+
 Preview without inserting:
 
 ```powershell
@@ -185,6 +192,28 @@ Export candidate rows for UI review:
 python scripts/report_counts.py --include-candidates --candidate-limit 5000
 ```
 
+Export a strict Phase 1.1 district-only baseline report set:
+
+```powershell
+python scripts/report_counts.py `
+  --district-only `
+  --output-dir reports/phase_1_1_district_baseline `
+  --include-candidates `
+  --candidate-limit 100000
+```
+
+Generate the Phase 1.1 methodology/work report:
+
+```powershell
+python scripts/generate_phase1_1_work_report.py
+```
+
+Generate shareable Phase 1.1 social cards:
+
+```powershell
+python scripts/generate_phase1_1_social_cards.py
+```
+
 Generated files:
 
 - `reports/national_summary.csv`
@@ -211,6 +240,11 @@ Reports include:
 - district-wise counts
 
 These are discovery counts, not exact real-world counts and not an official temple census.
+
+For scoped reports, candidate rows are filtered by their current
+`source_location_id` location type. This is suitable for the Phase 1.1 district
+baseline, but a future discovery-history table would be needed for full
+multi-source attribution.
 
 ## Analysis UI
 

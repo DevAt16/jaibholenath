@@ -11,6 +11,11 @@ from shiva_discovery.repositories import create_search_task, fetch_locations_for
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate Google Places temple search tasks.")
+    parser.add_argument(
+        "--district-only",
+        action="store_true",
+        help="Generate tasks for active district rows only. Use for Phase 1.1 baseline runs.",
+    )
     parser.add_argument("--include-cities", action="store_true", help="Also generate city tasks.")
     parser.add_argument(
         "--include-villages",
@@ -20,8 +25,11 @@ def main() -> int:
     parser.add_argument("--limit", type=int, help="Maximum locations to read before keyword expansion.")
     parser.add_argument("--dry-run", action="store_true", help="Print counts without inserting tasks.")
     args = parser.parse_args()
+    if args.district_only and (args.include_cities or args.include_villages):
+        parser.error("--district-only cannot be combined with --include-cities or --include-villages.")
 
     location_types = eligible_location_types(
+        district_only=args.district_only,
         include_cities=args.include_cities,
         include_villages=args.include_villages,
     )

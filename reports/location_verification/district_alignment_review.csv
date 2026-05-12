@@ -1,0 +1,808 @@
+match_status,match_method,match_score,review_reason,db_id,db_state_name,db_district_name,db_state_lgd_code,db_district_lgd_code,db_source,lgd_state_name,lgd_district_name,lgd_state_lgd_code,lgd_district_lgd_code,lgd_source
+auto,exact_name,1.000,State and district names match exactly after normalization.,478,Kerala,Alappuzha,,,manual_pilot,Kerala,Alappuzha,32,554,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,113,Uttar Pradesh,Ambedkar Nagar,,,manual_pilot,Uttar Pradesh,Ambedkar Nagar,9,121,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,583,Punjab,Amritsar,,,manual_pilot,Punjab,Amritsar,3,27,lgd
+auto,fuzzy_high,0.933,High similarity within the same state.,354,Gujarat,Aravalli,,,manual_pilot,Gujarat,Arvalli,24,672,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,276,Bihar,Arwal,,,manual_pilot,Bihar,Arwal,10,611,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,277,Bihar,Aurangabad,,,manual_pilot,Bihar,Aurangabad,10,189,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,121,Uttar Pradesh,Bahraich,,,manual_pilot,Uttar Pradesh,Bahraich,9,125,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,314,Chhattisgarh,Balod,,,manual_pilot,Chhattisgarh,Balod,22,646,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,123,Uttar Pradesh,Balrampur,,,manual_pilot,Uttar Pradesh,Balrampur,9,127,lgd
+review,fuzzy_review,0.900,Possible match; needs manual review.,316,Chhattisgarh,Balrampur,,,manual_pilot,Chhattisgarh,Balrampur-Ramanujganj,22,649,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,808,Jammu and Kashmir,Bandipora,,,manual_pilot,Jammu And Kashmir,Bandipora,1,623,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,24,Maharashtra,Beed,,,manual_pilot,Maharashtra,Beed,27,470,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,318,Chhattisgarh,Bemetara,,,manual_pilot,Chhattisgarh,Bemetara,22,650,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,450,Karnataka,Bengaluru Urban,,,manual_pilot,Karnataka,Bengaluru Urban,29,525,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,128,Uttar Pradesh,Bhadohi,,,manual_pilot,Uttar Pradesh,Bhadohi,9,179,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,25,Maharashtra,Bhandara,,,manual_pilot,Maharashtra,Bhandara,27,471,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,62,Madhya Pradesh,Bhind,,,manual_pilot,Madhya Pradesh,Bhind,23,395,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,319,Chhattisgarh,Bijapur,,,manual_pilot,Chhattisgarh,Bijapur,22,636,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,358,Gujarat,Botad,,,manual_pilot,Gujarat,Botad,24,676,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,749,Uttarakhand,Chamoli,,,manual_pilot,Uttarakhand,Chamoli,5,47,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,131,Uttar Pradesh,Chandauli,,,manual_pilot,Uttar Pradesh,Chandauli,9,135,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,494,Manipur,Chandel,,,manual_pilot,Manipur,Chandel,14,253,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,27,Maharashtra,Chandrapur,,,manual_pilot,Maharashtra,Chandrapur,27,473,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,65,Madhya Pradesh,Chhatarpur,,,manual_pilot,Madhya Pradesh,Chhatarpur,23,398,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,359,Gujarat,Chhota Udaipur,,,manual_pilot,Gujarat,Chhotaudepur,24,668,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,360,Gujarat,Dahod,,,manual_pilot,Gujarat,Dahod,24,445,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,765,West Bengal,Dakshin Dinajpur,,,manual_pilot,West Bengal,Dakshin Dinajpur,19,310,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,67,Madhya Pradesh,Damoh,,,manual_pilot,Madhya Pradesh,Damoh,23,400,lgd
+review,fuzzy_review,0.889,Possible match; needs manual review.,361,Gujarat,Dang,,,manual_pilot,Gujarat,Dangs,24,444,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,766,West Bengal,Darjeeling,,,manual_pilot,West Bengal,Darjeeling,19,309,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,457,Karnataka,Davangere,,,manual_pilot,Karnataka,Davangere,29,535,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,738,Tripura,Dhalai,,,manual_pilot,Tripura,Dhalai,16,269,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,560,Odisha,Dhenkanal,,,manual_pilot,Odisha,Dhenkanal,21,352,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,71,Madhya Pradesh,Dindori,,,manual_pilot,Madhya Pradesh,Dindori,23,404,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,625,Rajasthan,Dudu,,,manual_pilot,Rajasthan,Dudu,8,769,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,511,Meghalaya,East Jaintia Hills,,,manual_pilot,Meghalaya,East Jaintia Hills,17,657,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,194,Andhra Pradesh,Eluru,,,manual_pilot,Andhra Pradesh,Eluru,28,748,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,672,Tamil Nadu,Erode,,,manual_pilot,Tamil Nadu,Erode,33,573,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,588,Punjab,Fazilka,,,manual_pilot,Punjab,Fazilka,3,651,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,589,Punjab,Ferozepur,,,manual_pilot,Punjab,Ferozepur,3,31,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,363,Gujarat,Gandhinagar,,,manual_pilot,Gujarat,Gandhinagar,24,446,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,427,Jharkhand,Garhwa,,,manual_pilot,Jharkhand,Garhwa,20,328,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,324,Chhattisgarh,Gariaband,,,manual_pilot,Chhattisgarh,Gariyaband,22,645,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,285,Bihar,Gaya,,,manual_pilot,Bihar,Gaya,10,196,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,739,Tripura,Gomati,,,manual_pilot,Tripura,Gomati,16,654,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,430,Jharkhand,Gumla,,,manual_pilot,Jharkhand,Gumla,20,331,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,410,Himachal Pradesh,Hamirpur,,,manual_pilot,Himachal Pradesh,Hamirpur,2,17,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,706,Telangana,Hanumakonda,,,manual_pilot,Telangana,Hanumakonda,36,686,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,74,Madhya Pradesh,Harda,,,manual_pilot,Madhya Pradesh,Harda,23,408,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,752,Uttarakhand,Haridwar,,,manual_pilot,Uttarakhand,Haridwar,5,50,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,460,Karnataka,Hassan,,,manual_pilot,Karnataka,Hassan,29,539,lgd
+auto,fuzzy_high,0.963,High similarity within the same state.,563,Odisha,Jagatsinghpur,,,manual_pilot,Odisha,Jagatsinghapur,21,355,lgd
+review,exact_name,1.000,Multiple LGD districts matched the same existing DB row.,630,Rajasthan,Jaipur,,,manual_pilot,Rajasthan,Jaipur,8,102,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,633,Rajasthan,Jalore,,,manual_pilot,Rajasthan,Jalore,8,104,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,769,West Bengal,Jalpaiguri,,,manual_pilot,West Bengal,Jalpaiguri,19,314,lgd
+auto,fuzzy_high,0.979,High similarity within the same state.,710,Telangana,Jayashankar Bhupalpally,,,manual_pilot,Telangana,Jayashankar Bhupalapally,36,687,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,634,Rajasthan,Jhalawar,,,manual_pilot,Rajasthan,Jhalawar,8,105,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,150,Uttar Pradesh,Jhansi,,,manual_pilot,Uttar Pradesh,Jhansi,9,153,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,565,Odisha,Jharsuguda,,,manual_pilot,Odisha,Jharsuguda,21,357,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,328,Chhattisgarh,Kabirdham,,,manual_pilot,Chhattisgarh,Kabeerdham,22,382,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,771,West Bengal,Kalimpong,,,manual_pilot,West Bengal,Kalimpong,19,702,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,152,Uttar Pradesh,Kanpur Dehat,,,manual_pilot,Uttar Pradesh,Kanpur Dehat,9,156,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,638,Rajasthan,Karauli,,,manual_pilot,Rajasthan,Karauli,8,108,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,713,Telangana,Karimnagar,,,manual_pilot,Telangana,Karimnagar,36,508,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,290,Bihar,Katihar,,,manual_pilot,Bihar,Katihar,10,201,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,568,Odisha,Kendrapara,,,manual_pilot,Odisha,Kendrapara,21,360,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,81,Madhya Pradesh,Khargone,,,manual_pilot,Madhya Pradesh,Khargone (West Nimar),23,414,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,367,Gujarat,Kheda,,,manual_pilot,Gujarat,Kheda,24,450,lgd
+review,fuzzy_review,0.900,Possible match; needs manual review.,157,Uttar Pradesh,Lakhimpur Kheri,,,manual_pilot,Uttar Pradesh,Kheri,9,159,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,740,Tripura,Khowai,,,manual_pilot,Tripura,Khowai,16,652,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,433,Jharkhand,Khunti,,,manual_pilot,Jharkhand,Khunti,20,606,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,815,Jammu and Kashmir,Kishtwar,,,manual_pilot,Jammu And Kashmir,Kishtwar,1,620,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,527,Mizoram,Kolasib,,,manual_pilot,Mizoram,Kolasib,15,263,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,772,West Bengal,Kolkata,,,manual_pilot,West Bengal,Kolkata,19,315,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,483,Kerala,Kollam,,,manual_pilot,Kerala,Kollam,32,559,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,641,Rajasthan,Kota,,,manual_pilot,Rajasthan,Kota,8,109,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,156,Uttar Pradesh,Kushinagar,,,manual_pilot,Uttar Pradesh,Kushinagar,9,160,lgd
+missing_in_db,none,0.000,No safe candidate above review threshold.,,,,,,,Lakshadweep,Lakshadweep District,31,553,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,158,Uttar Pradesh,Lalitpur,,,manual_pilot,Uttar Pradesh,Lalitpur,9,161,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,435,Jharkhand,Latehar,,,manual_pilot,Jharkhand,Latehar,20,335,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,224,Arunachal Pradesh,Lohit,,,manual_pilot,Arunachal Pradesh,Lohit,12,234,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,539,Nagaland,Longleng,,,manual_pilot,Nagaland,Longleng,13,615,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,295,Bihar,Madhubani,,,manual_pilot,Bihar,Madhubani,10,206,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,678,Tamil Nadu,Madurai,,,manual_pilot,Tamil Nadu,Madurai,33,578,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,397,Haryana,Mahendragarh,,,manual_pilot,Haryana,Mahendragarh,6,69,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,369,Gujarat,Mahisagar,,,manual_pilot,Gujarat,Mahisagar,24,669,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,82,Madhya Pradesh,Maihar,,,manual_pilot,Madhya Pradesh,Maihar,23,784,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,162,Uttar Pradesh,Mainpuri,,,manual_pilot,Uttar Pradesh,Mainpuri,9,166,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,264,Assam,Majuli,,,manual_pilot,Assam,Majuli,18,706,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,486,Kerala,Malappuram,,,manual_pilot,Kerala,Malappuram,32,562,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,773,West Bengal,Malda,,,manual_pilot,West Bengal,Malda,19,316,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,572,Odisha,Malkangiri,,,manual_pilot,Odisha,Malkangiri,21,364,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,718,Telangana,Mancherial,,,manual_pilot,Telangana,Mancherial,36,684,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,164,Uttar Pradesh,Mau,,,manual_pilot,Uttar Pradesh,Mau,9,168,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,541,Nagaland,Mon,,,manual_pilot,Nagaland,Mon,13,247,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,721,Telangana,Mulugu,,,manual_pilot,Telangana,Mulugu,36,720,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,296,Bihar,Munger,,,manual_pilot,Bihar,Munger,10,207,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,467,Karnataka,Mysuru,,,manual_pilot,Karnataka,Mysuru,29,545,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,680,Tamil Nadu,Nagapattinam,,,manual_pilot,Tamil Nadu,Nagapattinam,33,579,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,38,Maharashtra,Nagpur,,,manual_pilot,Maharashtra,Nagpur,27,484,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,753,Uttarakhand,Nainital,,,manual_pilot,Uttarakhand,Nainital,5,51,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,75,Madhya Pradesh,Narmadapuram,,,manual_pilot,Madhya Pradesh,Narmadapuram,23,409,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,6,Maharashtra,Nashik,,,manual_pilot,Maharashtra,Nashik,27,487,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,373,Gujarat,Navsari,,,manual_pilot,Gujarat,Navsari,24,453,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,502,Manipur,Noney,,,manual_pilot,Manipur,Noney,14,714,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,799,Delhi,North East Delhi,,,manual_pilot,Delhi,North East,7,81,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,741,Tripura,North Tripura,,,manual_pilot,Tripura,North Tripura,16,270,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,201,Andhra Pradesh,NTR,,,manual_pilot,Andhra Pradesh,Ntr,28,749,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,487,Kerala,Palakkad,,,manual_pilot,Kerala,Palakkad,32,563,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,438,Jharkhand,Palamu,,,manual_pilot,Jharkhand,Palamu,20,338,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,42,Maharashtra,Palghar,,,manual_pilot,Maharashtra,Palghar,27,665,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,400,Haryana,Panchkula,,,manual_pilot,Haryana,Panchkula,6,70,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,401,Haryana,Panipat,,,manual_pilot,Haryana,Panipat,6,71,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,203,Andhra Pradesh,Parvathipuram Manyam,,,manual_pilot,Andhra Pradesh,Parvathipuram Manyam,28,743,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,600,Punjab,Pathankot,,,manual_pilot,Punjab,Pathankot,3,662,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,755,Uttarakhand,Pithoragarh,,,manual_pilot,Uttarakhand,Pithoragarh,5,53,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,284,Bihar,East Champaran,,,manual_pilot,Bihar,Purbi Champaran,10,213,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,577,Odisha,Puri,,,manual_pilot,Odisha,Puri,21,369,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,92,Madhya Pradesh,Raisen,,,manual_pilot,Madhya Pradesh,Raisen,23,421,lgd
+auto,fuzzy_high,0.952,High similarity within the same state.,729,Telangana,Rangareddy,,,manual_pilot,Telangana,Ranga Reddy,36,518,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,822,Jammu and Kashmir,Reasi,,,manual_pilot,Jammu And Kashmir,Reasi,1,627,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,96,Madhya Pradesh,Sagar,,,manual_pilot,Madhya Pradesh,Sagar,23,425,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,304,Bihar,Samastipur,,,manual_pilot,Bihar,Samastipur,10,217,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,604,Punjab,Sangrur,,,manual_pilot,Punjab,Sangrur,3,43,lgd
+missing_in_db,none,0.595,No safe candidate above review threshold.,,,,,,,Punjab,S.A.S Nagar,3,608,lgd
+missing_in_db,none,0.784,No safe candidate above review threshold.,,,,,,,Punjab,Shahid Bhagat Singh Nagar,3,40,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,180,Uttar Pradesh,Siddharthnagar,,,manual_pilot,Uttar Pradesh,Siddharthnagar,9,182,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,653,Rajasthan,Sikar,,,manual_pilot,Rajasthan,Sikar,8,114,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,48,Maharashtra,Sindhudurg,,,manual_pilot,Maharashtra,Sindhudurg,27,495,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,654,Rajasthan,Sirohi,,,manual_pilot,Rajasthan,Sirohi,8,115,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,404,Haryana,Sirsa,,,manual_pilot,Haryana,Sirsa,6,74,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,688,Tamil Nadu,Sivaganga,,,manual_pilot,Tamil Nadu,Sivaganga,33,585,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,182,Uttar Pradesh,Sonbhadra,,,manual_pilot,Uttar Pradesh,Sonbhadra,9,184,lgd
+missing_in_db,none,0.588,No safe candidate above review threshold.,,,,,,,Odisha,Sonepur,21,372,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,782,West Bengal,South 24 Parganas,,,manual_pilot,West Bengal,South 24 Parganas,19,304,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,349,Goa,South Goa,,,manual_pilot,Goa,South Goa,30,552,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,732,Telangana,Suryapet,,,manual_pilot,Telangana,Suryapet,36,696,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,506,Manipur,Tengnoupal,,,manual_pilot,Manipur,Tengnoupal,14,716,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,691,Tamil Nadu,Theni,,,manual_pilot,Tamil Nadu,Theni,33,588,lgd
+auto,fuzzy_high,0.947,High similarity within the same state.,699,Tamil Nadu,Tiruvarur,,,manual_pilot,Tamil Nadu,Thiruvarur,33,590,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,106,Madhya Pradesh,Tikamgarh,,,manual_pilot,Madhya Pradesh,Tikamgarh,23,434,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,744,Tripura,Unakoti,,,manual_pilot,Tripura,Unakoti,16,655,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,237,Arunachal Pradesh,Upper Subansiri,,,manual_pilot,Arunachal Pradesh,Upper Subansiri,12,241,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,185,Uttar Pradesh,Varanasi,,,manual_pilot,Uttar Pradesh,Varanasi,9,187,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,702,Tamil Nadu,Virudhunagar,,,manual_pilot,Tamil Nadu,Virudhunagar,33,597,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,51,Maharashtra,Wardha,,,manual_pilot,Maharashtra,Wardha,27,498,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,520,Meghalaya,West Khasi Hills,,,manual_pilot,Meghalaya,West Khasi Hills,17,279,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,745,Tripura,West Tripura,,,manual_pilot,Tripura,West Tripura,16,272,lgd
+review,fuzzy_review,0.900,Possible match; needs manual review.,212,Andhra Pradesh,Y.S.R. Kadapa,,,manual_pilot,Andhra Pradesh,Y.S.R.,28,504,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,55,Madhya Pradesh,Agar Malwa,,,manual_pilot,Madhya Pradesh,Agar-Malwa,23,667,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,111,Uttar Pradesh,Agra,,,manual_pilot,Uttar Pradesh,Agra,9,118,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,607,Rajasthan,Ajmer,,,manual_pilot,Rajasthan,Ajmer,8,86,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,761,West Bengal,Alipurduar,,,manual_pilot,West Bengal,Alipurduar,19,664,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,747,Uttarakhand,Almora,,,manual_pilot,Uttarakhand,Almora,5,45,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,385,Haryana,Ambala,,,manual_pilot,Haryana,Ambala,6,58,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,23,Maharashtra,Amravati,,,manual_pilot,Maharashtra,Amravati,27,468,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,352,Gujarat,Amreli,,,manual_pilot,Gujarat,Amreli,24,439,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,807,Jammu and Kashmir,Anantnag,,,manual_pilot,Jammu And Kashmir,Anantnag,1,1,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,190,Andhra Pradesh,Annamayya,,,manual_pilot,Andhra Pradesh,Annamayya,28,753,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,241,Assam,Baksa,,,manual_pilot,Assam,Baksa,18,616,lgd
+missing_in_db,none,0.588,No safe candidate above review threshold.,,,,,,,Odisha,Baleshwar,21,346,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,122,Uttar Pradesh,Ballia,,,manual_pilot,Uttar Pradesh,Ballia,9,126,lgd
+missing_in_db,none,0.900,No safe candidate above review threshold.,,,,,,,Chhattisgarh,Balodabazar-Bhatapara,22,644,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,124,Uttar Pradesh,Banda,,,manual_pilot,Uttar Pradesh,Banda,9,128,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,278,Bihar,Banka,,,manual_pilot,Bihar,Banka,10,190,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,762,West Bengal,Bankura,,,manual_pilot,West Bengal,Bankura,19,305,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,809,Jammu and Kashmir,Baramulla,,,manual_pilot,Jammu And Kashmir,Baramulla,1,3,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,126,Uttar Pradesh,Bareilly,,,manual_pilot,Uttar Pradesh,Bareilly,9,130,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,60,Madhya Pradesh,Barwani,,,manual_pilot,Madhya Pradesh,Barwani,23,393,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,585,Punjab,Bathinda,,,manual_pilot,Punjab,Bathinda,3,28,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,279,Bihar,Begusarai,,,manual_pilot,Bihar,Begusarai,10,191,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,448,Karnataka,Belagavi,,,manual_pilot,Karnataka,Belagavi,29,527,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,280,Bihar,Bhagalpur,,,manual_pilot,Bihar,Bhagalpur,10,192,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,320,Chhattisgarh,Bilaspur,,,manual_pilot,Chhattisgarh,Bilaspur,22,375,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,493,Manipur,Bishnupur,,,manual_pilot,Manipur,Bishnupur,14,252,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,243,Assam,Biswanath,,,manual_pilot,Assam,Biswanath,18,705,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,119,Uttar Pradesh,Badaun,,,manual_pilot,Uttar Pradesh,Budaun,9,133,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,130,Uttar Pradesh,Bulandshahr,,,manual_pilot,Uttar Pradesh,Bulandshahr,9,134,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,618,Rajasthan,Bundi,,,manual_pilot,Rajasthan,Bundi,8,94,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,245,Assam,Cachar,,,manual_pilot,Assam,Cachar,18,282,lgd
+auto,fuzzy_high,0.933,High similarity within the same state.,452,Karnataka,Chamarajanagar,,,manual_pilot,Karnataka,Chamarajanagara,29,531,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,750,Uttarakhand,Champawat,,,manual_pilot,Uttarakhand,Champawat,5,48,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,246,Assam,Charaideo,,,manual_pilot,Assam,Charaideo,18,708,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,667,Tamil Nadu,Chennai,,,manual_pilot,Tamil Nadu,Chennai,33,568,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,247,Assam,Chirang,,,manual_pilot,Assam,Chirang,18,612,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,668,Tamil Nadu,Coimbatore,,,manual_pilot,Tamil Nadu,Coimbatore,33,569,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,68,Madhya Pradesh,Datia,,,manual_pilot,Madhya Pradesh,Datia,23,401,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,424,Jharkhand,Dhanbad,,,manual_pilot,Jharkhand,Dhanbad,20,325,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,670,Tamil Nadu,Dharmapuri,,,manual_pilot,Tamil Nadu,Dharmapuri,33,571,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,458,Karnataka,Dharwad,,,manual_pilot,Karnataka,Dharwad,29,536,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,623,Rajasthan,Dholpur,,,manual_pilot,Rajasthan,Dholpur,8,98,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,251,Assam,Dibrugarh,,,manual_pilot,Assam,Dibrugarh,18,286,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,323,Chhattisgarh,Durg,,,manual_pilot,Chhattisgarh,Durg,22,378,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,510,Meghalaya,East Garo Hills,,,manual_pilot,Meghalaya,East Garo Hills,17,273,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,586,Punjab,Faridkot,,,manual_pilot,Punjab,Faridkot,3,29,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,587,Punjab,Fatehgarh Sahib,,,manual_pilot,Punjab,Fatehgarh Sahib,3,30,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,562,Odisha,Ganjam,,,manual_pilot,Odisha,Ganjam,21,354,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,139,Uttar Pradesh,Gautam Buddha Nagar,,,manual_pilot,Uttar Pradesh,Gautam Buddha Nagar,9,144,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,141,Uttar Pradesh,Ghazipur,,,manual_pilot,Uttar Pradesh,Ghazipur,9,146,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,429,Jharkhand,Godda,,,manual_pilot,Jharkhand,Godda,20,330,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,390,Haryana,Gurugram,,,manual_pilot,Haryana,Gurugram,6,62,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,145,Uttar Pradesh,Hapur,,,manual_pilot,Uttar Pradesh,Hapur,9,661,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,147,Uttar Pradesh,Hathras,,,manual_pilot,Uttar Pradesh,Hathras,9,163,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,461,Karnataka,Haveri,,,manual_pilot,Karnataka,Haveri,29,540,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,391,Haryana,Hisar,,,manual_pilot,Haryana,Hisar,6,63,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,525,Mizoram,Hnahthial,,,manual_pilot,Mizoram,Hnahthial,15,726,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,707,Telangana,Hyderabad,,,manual_pilot,Telangana,Hyderabad,36,507,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,148,Uttar Pradesh,Jalaun,,,manual_pilot,Uttar Pradesh,Jalaun,9,151,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,33,Maharashtra,Jalna,,,manual_pilot,Maharashtra,Jalna,27,479,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,365,Gujarat,Jamnagar,,,manual_pilot,Gujarat,Jamnagar,24,447,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,327,Chhattisgarh,Jashpur,,,manual_pilot,Chhattisgarh,Jashpur,22,380,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,78,Madhya Pradesh,Jhabua,,,manual_pilot,Madhya Pradesh,Jhabua,23,412,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,393,Haryana,Jind,,,manual_pilot,Haryana,Jind,6,65,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,498,Manipur,Jiribam,,,manual_pilot,Manipur,Jiribam,14,713,lgd
+review,exact_name,1.000,Multiple LGD districts matched the same existing DB row.,636,Rajasthan,Jodhpur,,,manual_pilot,Rajasthan,Jodhpur,8,107,lgd
+review,canonical_name,1.000,Multiple LGD districts matched the same existing DB row.,636,Rajasthan,Jodhpur,,,manual_pilot,Rajasthan,Jodhpur (Gramin),8,778,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,257,Assam,Jorhat,,,manual_pilot,Assam,Jorhat,18,290,lgd
+missing_in_db,none,0.500,No safe candidate above review threshold.,,,,,,,Gujarat,Kachchh,24,449,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,196,Andhra Pradesh,Kakinada,,,manual_pilot,Andhra Pradesh,Kakinada,28,746,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,566,Odisha,Kalahandi,,,manual_pilot,Odisha,Kalahandi,21,358,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,673,Tamil Nadu,Kallakurichi,,,manual_pilot,Tamil Nadu,Kallakurichi,33,729,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,712,Telangana,Kamareddy,,,manual_pilot,Telangana,Kamareddy,36,685,lgd
+missing_in_db,none,0.900,No safe candidate above review threshold.,,,,,,,Assam,Kamrup Metro,18,618,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,481,Kerala,Kannur,,,manual_pilot,Kerala,Kannur,32,557,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,153,Uttar Pradesh,Kanpur Nagar,,,manual_pilot,Uttar Pradesh,Kanpur Nagar,9,157,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,593,Punjab,Kapurthala,,,manual_pilot,Punjab,Kapurthala,3,35,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,828,Ladakh,Kargil,,,manual_pilot,Ladakh,Kargil,37,6,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,676,Tamil Nadu,Karur,,,manual_pilot,Tamil Nadu,Karur,33,576,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,814,Jammu and Kashmir,Kathua,,,manual_pilot,Jammu And Kashmir,Kathua,1,7,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,640,Rajasthan,Khairthal-Tijara,,,manual_pilot,Rajasthan,Khairthal-Tijara,8,770,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,80,Madhya Pradesh,Khandwa,,,manual_pilot,Madhya Pradesh,Khandwa (East Nimar),23,405,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,464,Karnataka,Kolar,,,manual_pilot,Karnataka,Kolar,29,542,lgd
+review,fuzzy_review,0.900,Possible match; needs manual review.,715,Telangana,Kumuram Bheem,,,manual_pilot,Telangana,Kumuram Bheem Asifabad,36,699,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,528,Mizoram,Lawngtlai,,,manual_pilot,Mizoram,Lawngtlai,15,264,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,436,Jharkhand,Lohardaga,,,manual_pilot,Jharkhand,Lohardaga,20,336,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,226,Arunachal Pradesh,Lower Dibang Valley,,,manual_pilot,Arunachal Pradesh,Lower Dibang Valley,12,235,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,227,Arunachal Pradesh,Lower Siang,,,manual_pilot,Arunachal Pradesh,Lower Siang,12,719,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,161,Uttar Pradesh,Mahoba,,,manual_pilot,Uttar Pradesh,Mahoba,9,165,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,83,Madhya Pradesh,Mandla,,,manual_pilot,Madhya Pradesh,Mandla,23,415,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,679,Tamil Nadu,Mayiladuthurai,,,manual_pilot,Tamil Nadu,Mayiladuthurai,33,735,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,719,Telangana,Medak,,,manual_pilot,Telangana,Medak,36,513,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,166,Uttar Pradesh,Mirzapur,,,manual_pilot,Uttar Pradesh,Mirzapur,9,170,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,540,Nagaland,Mokokchung,,,manual_pilot,Nagaland,Mokokchung,13,246,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,167,Uttar Pradesh,Moradabad,,,manual_pilot,Uttar Pradesh,Moradabad,9,171,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,371,Gujarat,Morbi,,,manual_pilot,Gujarat,Morbi,24,673,lgd
+missing_in_db,none,0.900,No safe candidate above review threshold.,,,,,,,Maharashtra,Mumbai,27,482,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,37,Maharashtra,Mumbai Suburban,,,manual_pilot,Maharashtra,Mumbai Suburban,27,483,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,722,Telangana,Nagarkurnool,,,manual_pilot,Telangana,Nagarkurnool,36,694,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,298,Bihar,Nalanda,,,manual_pilot,Bihar,Nalanda,10,209,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,723,Telangana,Nalgonda,,,manual_pilot,Telangana,Nalgonda,36,514,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,299,Bihar,Nawada,,,manual_pilot,Bihar,Nawada,10,210,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,798,Delhi,North Delhi,,,manual_pilot,Delhi,North,7,80,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,800,Delhi,North West Delhi,,,manual_pilot,Delhi,North West,7,82,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,231,Arunachal Pradesh,Papum Pare,,,manual_pilot,Arunachal Pradesh,Papum Pare,12,237,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,488,Kerala,Pathanamthitta,,,manual_pilot,Kerala,Pathanamthitta,32,564,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,376,Gujarat,Porbandar,,,manual_pilot,Gujarat,Porbandar,24,456,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,171,Uttar Pradesh,Prayagraj,,,manual_pilot,Uttar Pradesh,Prayagraj,9,120,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,172,Uttar Pradesh,Rae Bareli,,,manual_pilot,Uttar Pradesh,Rae Bareli,9,175,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,468,Karnataka,Raichur,,,manual_pilot,Karnataka,Raichur,29,546,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,728,Telangana,Rajanna Sircilla,,,manual_pilot,Telangana,Rajanna Sircilla,36,683,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,821,Jammu and Kashmir,Ramban,,,manual_pilot,Jammu And Kashmir,Ramban,1,621,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,94,Madhya Pradesh,Ratlam,,,manual_pilot,Madhya Pradesh,Ratlam,23,423,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,402,Haryana,Rewari,,,manual_pilot,Haryana,Rewari,6,72,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,514,Meghalaya,Ri Bhoi,,,manual_pilot,Meghalaya,Ri Bhoi,17,276,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,403,Haryana,Rohtak,,,manual_pilot,Haryana,Rohtak,6,73,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,823,Jammu and Kashmir,Samba,,,manual_pilot,Jammu And Kashmir,Samba,1,624,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,579,Odisha,Sambalpur,,,manual_pilot,Odisha,Sambalpur,21,371,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,46,Maharashtra,Sangli,,,manual_pilot,Maharashtra,Sangli,27,493,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,98,Madhya Pradesh,Sehore,,,manual_pilot,Madhya Pradesh,Sehore,23,427,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,504,Manipur,Senapati,,,manual_pilot,Manipur,Senapati,14,257,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,652,Rajasthan,Shahpura,,,manual_pilot,Rajasthan,Shahpura,8,780,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,306,Bihar,Sheikhpura,,,manual_pilot,Bihar,Sheikhpura,10,219,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,233,Arunachal Pradesh,Siang,,,manual_pilot,Arunachal Pradesh,Siang,12,679,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,731,Telangana,Siddipet,,,manual_pilot,Telangana,Siddipet,36,692,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,417,Himachal Pradesh,Sirmaur,,,manual_pilot,Himachal Pradesh,Sirmaur,2,24,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,268,Assam,Sivasagar,,,manual_pilot,Assam,Sivasagar,18,300,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,269,Assam,Sonitpur,,,manual_pilot,Assam,Sonitpur,18,301,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,743,Tripura,South Tripura,,,manual_pilot,Tripura,South Tripura,16,271,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,183,Uttar Pradesh,Sultanpur,,,manual_pilot,Uttar Pradesh,Sultanpur,9,185,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,581,Odisha,Sundargarh,,,manual_pilot,Odisha,Sundargarh,21,373,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,379,Gujarat,Surat,,,manual_pilot,Gujarat,Surat,24,459,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,380,Gujarat,Surendranagar,,,manual_pilot,Gujarat,Surendranagar,24,460,lgd
+auto,fuzzy_high,0.957,High similarity within the same state.,692,Tamil Nadu,Thoothukudi,,,manual_pilot,Tamil Nadu,Thoothukkudi,33,594,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,490,Kerala,Thrissur,,,manual_pilot,Kerala,Thrissur,32,566,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,208,Andhra Pradesh,Tirupati,,,manual_pilot,Andhra Pradesh,Tirupati,28,752,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,547,Nagaland,Tuensang,,,manual_pilot,Nagaland,Tuensang,13,249,lgd
+auto,fuzzy_high,0.970,High similarity within the same state.,758,Uttarakhand,Udham Singh Nagar,,,manual_pilot,Uttarakhand,Udam Singh Nagar,5,56,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,826,Jammu and Kashmir,Udhampur,,,manual_pilot,Jammu And Kashmir,Udhampur,1,14,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,107,Madhya Pradesh,Ujjain,,,manual_pilot,Madhya Pradesh,Ujjain,23,435,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,184,Uttar Pradesh,Unnao,,,manual_pilot,Uttar Pradesh,Unnao,9,186,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,783,West Bengal,Uttar Dinajpur,,,manual_pilot,West Bengal,Uttar Dinajpur,19,311,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,700,Tamil Nadu,Vellore,,,manual_pilot,Tamil Nadu,Vellore,33,595,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,734,Telangana,Wanaparthy,,,manual_pilot,Telangana,Wanaparthy,36,693,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,211,Andhra Pradesh,West Godavari,,,manual_pilot,Andhra Pradesh,West Godavari,28,523,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,238,Arunachal Pradesh,West Kameng,,,manual_pilot,Arunachal Pradesh,West Kameng,12,242,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,406,Haryana,Yamunanagar,,,manual_pilot,Haryana,Yamunanagar,6,76,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,53,Maharashtra,Yavatmal,,,manual_pilot,Maharashtra,Yavatmal,27,500,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,8,Maharashtra,Ahmednagar,,,manual_pilot,Maharashtra,Ahmednagar,27,466,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,187,Andhra Pradesh,Alluri Sitharama Raju,,,manual_pilot,Andhra Pradesh,Alluri Sitharama Raju,28,745,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,115,Uttar Pradesh,Amroha,,,manual_pilot,Uttar Pradesh,Amroha,9,154,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,188,Andhra Pradesh,Anakapalli,,,manual_pilot,Andhra Pradesh,Anakapalli,28,744,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,214,Arunachal Pradesh,Anjaw,,,manual_pilot,Arunachal Pradesh,Anjaw,12,628,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,609,Rajasthan,Anupgarh,,,manual_pilot,Rajasthan,Anupgarh,8,776,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,116,Uttar Pradesh,Auraiya,,,manual_pilot,Uttar Pradesh,Auraiya,9,122,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,117,Uttar Pradesh,Ayodhya,,,manual_pilot,Uttar Pradesh,Ayodhya,9,140,lgd
+missing_in_db,none,0.667,No safe candidate above review threshold.,,,,,,,Assam,Bajali,18,739,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,553,Odisha,Balangir,,,manual_pilot,Odisha,Balangir,21,345,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,125,Uttar Pradesh,Barabanki,,,manual_pilot,Uttar Pradesh,Bara Banki,9,129,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,705,Telangana,Bhadradri Kothagudem,,,manual_pilot,Telangana,Bhadradri Kothagudem,36,690,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,615,Rajasthan,Bharatpur,,,manual_pilot,Rajasthan,Bharatpur,8,91,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,281,Bihar,Bhojpur,,,manual_pilot,Bihar,Bhojpur,10,193,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,617,Rajasthan,Bikaner,,,manual_pilot,Rajasthan,Bikaner,8,93,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,763,West Bengal,Birbhum,,,manual_pilot,West Bengal,Birbhum,19,307,lgd
+auto,fuzzy_high,0.960,High similarity within the same state.,387,Haryana,Charkhi Dadri,,,manual_pilot,Haryana,Charki Dadri,6,701,lgd
+review,fuzzy_review,0.889,Possible match; needs manual review.,453,Karnataka,Chikballapur,,,manual_pilot,Karnataka,Chikkaballapura,29,630,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,192,Andhra Pradesh,Chittoor,,,manual_pilot,Andhra Pradesh,Chittoor,28,503,lgd
+missing_in_db,none,0.900,No safe candidate above review threshold.,,,,,,,Chhattisgarh,Dakshin Bastar Dantewada,22,376,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,248,Assam,Darrang,,,manual_pilot,Assam,Darrang,18,283,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,751,Uttarakhand,Dehradun,,,manual_pilot,Uttarakhand,Dehradun,5,49,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,559,Odisha,Deogarh,,,manual_pilot,Odisha,Deogarh,21,351,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,249,Assam,Dhemaji,,,manual_pilot,Assam,Dhemaji,18,284,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,250,Assam,Dhubri,,,manual_pilot,Assam,Dhubri,18,285,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,216,Arunachal Pradesh,Dibang Valley,,,manual_pilot,Arunachal Pradesh,Dibang Valley,12,230,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,624,Rajasthan,Didwana-Kuchaman,,,manual_pilot,Rajasthan,Didwana-Kuchaman,8,768,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,536,Nagaland,Dimapur,,,manual_pilot,Nagaland,Dimapur,13,244,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,671,Tamil Nadu,Dindigul,,,manual_pilot,Tamil Nadu,Dindigul,33,572,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,793,Dadra and Nagar Haveli and Daman and Diu,Diu,,,manual_pilot,The Dadra And Nagar Haveli And Daman And Diu,Diu,38,464,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,811,Jammu and Kashmir,Doda,,,manual_pilot,Jammu And Kashmir,Doda,1,4,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,626,Rajasthan,Dungarpur,,,manual_pilot,Rajasthan,Dungarpur,8,99,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,218,Arunachal Pradesh,East Siang,,,manual_pilot,Arunachal Pradesh,East Siang,12,232,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,479,Kerala,Ernakulam,,,manual_pilot,Kerala,Ernakulam,32,555,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,134,Uttar Pradesh,Etah,,,manual_pilot,Uttar Pradesh,Etah,9,138,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,136,Uttar Pradesh,Farrukhabad,,,manual_pilot,Uttar Pradesh,Farrukhabad,9,141,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,389,Haryana,Fatehabad,,,manual_pilot,Haryana,Fatehabad,6,61,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,137,Uttar Pradesh,Fatehpur,,,manual_pilot,Uttar Pradesh,Fatehpur,9,142,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,459,Karnataka,Gadag,,,manual_pilot,Karnataka,Gadag,29,537,lgd
+auto,fuzzy_high,0.960,High similarity within the same state.,628,Rajasthan,Gangapur City,,,manual_pilot,Rajasthan,Gangapurcity,8,771,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,658,Sikkim,Gangtok,,,manual_pilot,Sikkim,Gangtok,11,225,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,140,Uttar Pradesh,Ghaziabad,,,manual_pilot,Uttar Pradesh,Ghaziabad,9,145,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,142,Uttar Pradesh,Gonda,,,manual_pilot,Uttar Pradesh,Gonda,9,147,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,286,Bihar,Gopalganj,,,manual_pilot,Bihar,Gopalganj,10,197,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,590,Punjab,Gurdaspur,,,manual_pilot,Punjab,Gurdaspur,3,32,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,73,Madhya Pradesh,Gwalior,,,manual_pilot,Madhya Pradesh,Gwalior,23,407,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,255,Assam,Hailakandi,,,manual_pilot,Assam,Hailakandi,18,289,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,629,Rajasthan,Hanumangarh,,,manual_pilot,Rajasthan,Hanumangarh,8,101,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,146,Uttar Pradesh,Hardoi,,,manual_pilot,Uttar Pradesh,Hardoi,9,150,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,431,Jharkhand,Hazaribagh,,,manual_pilot,Jharkhand,Hazaribagh,20,332,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,31,Maharashtra,Hingoli,,,manual_pilot,Maharashtra,Hingoli,27,477,lgd
+auto,fuzzy_high,0.933,High similarity within the same state.,708,Telangana,Jagtial,,,manual_pilot,Telangana,Jagitial,36,681,lgd
+review,fuzzy_review,0.923,Possible match; needs manual review.,564,Odisha,Jajpur,,,manual_pilot,Odisha,Jajapur,21,356,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,432,Jharkhand,Jamtara,,,manual_pilot,Jharkhand,Jamtara,20,333,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,287,Bihar,Jamui,,,manual_pilot,Bihar,Jamui,10,198,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,326,Chhattisgarh,Janjgir-Champa,,,manual_pilot,Chhattisgarh,Janjgir-Champa,22,379,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,288,Bihar,Jehanabad,,,manual_pilot,Bihar,Jehanabad,10,199,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,770,West Bengal,Jhargram,,,manual_pilot,West Bengal,Jhargram,19,703,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,289,Bihar,Kaimur,,,manual_pilot,Bihar,Kaimur (Bhabua),10,200,lgd
+review,fuzzy_review,0.870,Possible match; needs manual review.,674,Tamil Nadu,Kanchipuram,,,manual_pilot,Tamil Nadu,Kancheepuram,33,574,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,567,Odisha,Kandhamal,,,manual_pilot,Odisha,Kandhamal,21,359,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,411,Himachal Pradesh,Kangra,,,manual_pilot,Himachal Pradesh,Kangra,2,18,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,151,Uttar Pradesh,Kannauj,,,manual_pilot,Uttar Pradesh,Kannauj,9,155,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,395,Haryana,Karnal,,,manual_pilot,Haryana,Karnal,6,67,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,154,Uttar Pradesh,Kasganj,,,manual_pilot,Uttar Pradesh,Kasganj,9,633,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,79,Madhya Pradesh,Katni,,,manual_pilot,Madhya Pradesh,Katni,23,413,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,291,Bihar,Khagaria,,,manual_pilot,Bihar,Khagaria,10,202,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,412,Himachal Pradesh,Kinnaur,,,manual_pilot,Himachal Pradesh,Kinnaur,2,19,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,537,Nagaland,Kiphire,,,manual_pilot,Nagaland,Kiphire,13,614,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,292,Bihar,Kishanganj,,,manual_pilot,Bihar,Kishanganj,10,203,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,434,Jharkhand,Koderma,,,manual_pilot,Jharkhand,Koderma,20,334,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,465,Karnataka,Koppal,,,manual_pilot,Karnataka,Koppal,29,543,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,642,Rajasthan,Kotputli-Behror,,,manual_pilot,Rajasthan,Kotputli-Behror,8,782,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,484,Kerala,Kottayam,,,manual_pilot,Kerala,Kottayam,32,560,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,485,Kerala,Kozhikode,,,manual_pilot,Kerala,Kozhikode,32,561,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,198,Andhra Pradesh,Krishna,,,manual_pilot,Andhra Pradesh,Krishna,28,510,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,816,Jammu and Kashmir,Kulgam,,,manual_pilot,Jammu And Kashmir,Kulgam,1,622,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,817,Jammu and Kashmir,Kupwara,,,manual_pilot,Jammu And Kashmir,Kupwara,1,8,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,199,Andhra Pradesh,Kurnool,,,manual_pilot,Andhra Pradesh,Kurnool,28,511,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,293,Bihar,Lakhisarai,,,manual_pilot,Bihar,Lakhisarai,10,204,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,35,Maharashtra,Latur,,,manual_pilot,Maharashtra,Latur,27,481,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,529,Mizoram,Lunglei,,,manual_pilot,Mizoram,Lunglei,15,265,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,716,Telangana,Mahabubabad,,,manual_pilot,Telangana,Mahabubabad,36,688,lgd
+missing_in_db,none,0.800,No safe candidate above review threshold.,,,,,,,Gujarat,Mahesana,24,451,lgd
+auto,fuzzy_high,0.952,High similarity within the same state.,160,Uttar Pradesh,Maharajganj,,,manual_pilot,Uttar Pradesh,Mahrajganj,9,164,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,530,Mizoram,Mamit,,,manual_pilot,Mizoram,Mamit,15,266,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,415,Himachal Pradesh,Mandi,,,manual_pilot,Himachal Pradesh,Mandi,2,22,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,334,Chhattisgarh,Manendragarh-Chirmiri-Bharatpur,,,manual_pilot,Chhattisgarh,Manendragarh-Chirmiri-Bharatpur(M C B),22,760,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,573,Odisha,Mayurbhanj,,,manual_pilot,Odisha,Mayurbhanj,21,365,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,720,Telangana,Medchal-Malkajgiri,,,manual_pilot,Telangana,Medchal Malkajgiri,36,700,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,86,Madhya Pradesh,Morena,,,manual_pilot,Madhya Pradesh,Morena,23,417,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,774,West Bengal,Murshidabad,,,manual_pilot,West Bengal,Murshidabad,19,319,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,574,Odisha,Nabarangpur,,,manual_pilot,Odisha,Nabarangpur,21,366,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,775,West Bengal,Nadia,,,manual_pilot,West Bengal,Nadia,19,320,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,39,Maharashtra,Nanded,,,manual_pilot,Maharashtra,Nanded,27,485,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,40,Maharashtra,Nandurbar,,,manual_pilot,Maharashtra,Nandurbar,27,486,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,724,Telangana,Narayanpet,,,manual_pilot,Telangana,Narayanpet,36,721,lgd
+missing_in_db,none,0.818,No safe candidate above review threshold.,,,,,,,Madhya Pradesh,Narsimhapur,23,418,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,88,Madhya Pradesh,Neemuch,,,manual_pilot,Madhya Pradesh,Neemuch,23,419,lgd
+review,fuzzy_review,0.900,Possible match; needs manual review.,785,Andaman and Nicobar Islands,Nicobar,,,manual_pilot,Andaman And Nicobar Islands,Nicobars,35,603,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,725,Telangana,Nirmal,,,manual_pilot,Telangana,Nirmal,36,680,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,89,Madhya Pradesh,Niwari,,,manual_pilot,Madhya Pradesh,Niwari,23,722,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,726,Telangana,Nizamabad,,,manual_pilot,Telangana,Nizamabad,36,516,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,543,Nagaland,Noklak,,,manual_pilot,Nagaland,Noklak,13,736,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,348,Goa,North Goa,,,manual_pilot,Goa,North Goa,30,551,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,230,Arunachal Pradesh,Pakke Kessang,,,manual_pilot,Arunachal Pradesh,Pakke Kessang,12,723,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,437,Jharkhand,Pakur,,,manual_pilot,Jharkhand,Pakur,20,337,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,90,Madhya Pradesh,Pandhurna,,,manual_pilot,Madhya Pradesh,Pandhurna,23,785,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,43,Maharashtra,Parbhani,,,manual_pilot,Maharashtra,Parbhani,27,489,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,777,West Bengal,Paschim Bardhaman,,,manual_pilot,West Bengal,Paschim Bardhaman,19,704,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,778,West Bengal,Paschim Medinipur,,,manual_pilot,West Bengal,Paschim Medinipur,19,318,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,601,Punjab,Patiala,,,manual_pilot,Punjab,Patiala,3,41,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,300,Bihar,Patna,,,manual_pilot,Bihar,Patna,10,212,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,727,Telangana,Peddapalli,,,manual_pilot,Telangana,Peddapalli,36,682,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,818,Jammu and Kashmir,Poonch,,,manual_pilot,Jammu And Kashmir,Poonch,1,10,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,170,Uttar Pradesh,Pratapgarh,,,manual_pilot,Uttar Pradesh,Pratapgarh,9,174,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,835,Puducherry,Puducherry,,,manual_pilot,Puducherry,Puducherry,34,600,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,819,Jammu and Kashmir,Pulwama,,,manual_pilot,Jammu And Kashmir,Pulwama,1,11,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,2,Maharashtra,Pune,,,manual_pilot,Maharashtra,Pune,27,490,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,44,Maharashtra,Raigad,,,manual_pilot,Maharashtra,Raigad,27,491,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,338,Chhattisgarh,Raigarh,,,manual_pilot,Chhattisgarh,Raigarh,22,386,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,339,Chhattisgarh,Raipur,,,manual_pilot,Chhattisgarh,Raipur,22,387,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,93,Madhya Pradesh,Rajgarh,,,manual_pilot,Madhya Pradesh,Rajgarh,23,422,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,820,Jammu and Kashmir,Rajouri,,,manual_pilot,Jammu And Kashmir,Rajouri,1,12,lgd
+auto,fuzzy_high,0.957,High similarity within the same state.,756,Uttarakhand,Rudraprayag,,,manual_pilot,Uttarakhand,Rudra Prayag,5,54,lgd
+auto,fuzzy_high,0.957,High similarity within the same state.,378,Gujarat,Sabarkantha,,,manual_pilot,Gujarat,Sabar Kantha,24,458,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,174,Uttar Pradesh,Saharanpur,,,manual_pilot,Uttar Pradesh,Saharanpur,9,177,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,532,Mizoram,Saitual,,,manual_pilot,Mizoram,Saitual,15,727,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,687,Tamil Nadu,Salem,,,manual_pilot,Tamil Nadu,Salem,33,584,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,649,Rajasthan,Salumbar,,,manual_pilot,Rajasthan,Salumbar,8,777,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,175,Uttar Pradesh,Sambhal,,,manual_pilot,Uttar Pradesh,Sambhal,9,659,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,730,Telangana,Sangareddy,,,manual_pilot,Telangana,Sangareddy,36,691,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,305,Bihar,Saran,,,manual_pilot,Bihar,Saran,10,218,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,343,Chhattisgarh,Sarangarh-Bilaigarh,,,manual_pilot,Chhattisgarh,Sarangarh-Bilaigarh,22,763,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,97,Madhya Pradesh,Satna,,,manual_pilot,Madhya Pradesh,Satna,23,426,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,801,Delhi,Shahdara,,,manual_pilot,Delhi,Shahdara,7,671,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,546,Nagaland,Shamator,,,manual_pilot,Nagaland,Shamator,13,765,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,178,Uttar Pradesh,Shamli,,,manual_pilot,Uttar Pradesh,Shamli,9,660,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,416,Himachal Pradesh,Shimla,,,manual_pilot,Himachal Pradesh,Shimla,2,23,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,470,Karnataka,Shivamogga,,,manual_pilot,Karnataka,Shivamogga,29,547,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,232,Arunachal Pradesh,Shi Yomi,,,manual_pilot,Arunachal Pradesh,Shi Yomi,12,725,lgd
+missing_in_db,none,0.800,No safe candidate above review threshold.,,,,,,,Mizoram,Siaha,15,267,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,308,Bihar,Sitamarhi,,,manual_pilot,Bihar,Sitamarhi,10,221,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,405,Haryana,Sonipat,,,manual_pilot,Haryana,Sonipat,6,75,lgd
+review,fuzzy_review,0.929,Possible match; needs manual review.,787,Andaman and Nicobar Islands,South Andaman,,,manual_pilot,Andaman And Nicobar Islands,South Andamans,35,602,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,515,Meghalaya,South Garo Hills,,,manual_pilot,Meghalaya,South Garo Hills,17,277,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,517,Meghalaya,South West Khasi Hills,,,manual_pilot,Meghalaya,South West Khasi Hills,17,658,lgd
+review,fuzzy_review,0.900,Possible match; needs manual review.,598,Punjab,Muktsar,,,manual_pilot,Punjab,Sri Muktsar Sahib,3,39,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,825,Jammu and Kashmir,Srinagar,,,manual_pilot,Jammu And Kashmir,Srinagar,1,13,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,205,Andhra Pradesh,Sri Potti Sriramulu Nellore,,,manual_pilot,Andhra Pradesh,Sri Potti Sriramulu Nellore,28,515,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,206,Andhra Pradesh,Sri Sathya Sai,,,manual_pilot,Andhra Pradesh,Sri Sathya Sai,28,754,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,381,Gujarat,Tapi,,,manual_pilot,Gujarat,Tapi,24,641,lgd
+auto,fuzzy_high,0.952,High similarity within the same state.,697,Tamil Nadu,Tiruvallur,,,manual_pilot,Tamil Nadu,Thiruvallur,33,589,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,507,Manipur,Thoubal,,,manual_pilot,Manipur,Thoubal,14,259,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,694,Tamil Nadu,Tirunelveli,,,manual_pilot,Tamil Nadu,Tirunelveli,33,592,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,548,Nagaland,Tseminyu,,,manual_pilot,Nagaland,Tseminyu,13,757,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,471,Karnataka,Tumakuru,,,manual_pilot,Karnataka,Tumakuru,29,548,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,108,Madhya Pradesh,Umaria,,,manual_pilot,Madhya Pradesh,Umaria,23,436,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,382,Gujarat,Vadodara,,,manual_pilot,Gujarat,Vadodara,24,461,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,311,Bihar,Vaishali,,,manual_pilot,Bihar,Vaishali,10,224,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,383,Gujarat,Valsad,,,manual_pilot,Gujarat,Valsad,24,462,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,701,Tamil Nadu,Viluppuram,,,manual_pilot,Tamil Nadu,Viluppuram,33,596,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,209,Andhra Pradesh,Visakhapatnam,,,manual_pilot,Andhra Pradesh,Visakhapatnam,28,520,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,210,Andhra Pradesh,Vizianagaram,,,manual_pilot,Andhra Pradesh,Vizianagaram,28,521,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,805,Delhi,West Delhi,,,manual_pilot,Delhi,West,7,85,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,353,Gujarat,Anand,,,manual_pilot,Gujarat,Anand,24,440,lgd
+missing_in_db,none,0.818,No safe candidate above review threshold.,,,,,,,Andhra Pradesh,Ananthapuramu,28,502,lgd
+review,fuzzy_review,0.909,Possible match; needs manual review.,552,Odisha,Angul,,,manual_pilot,Odisha,Anugul,21,344,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,57,Madhya Pradesh,Anuppur,,,manual_pilot,Madhya Pradesh,Anuppur,23,390,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,275,Bihar,Araria,,,manual_pilot,Bihar,Araria,10,188,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,665,Tamil Nadu,Ariyalur,,,manual_pilot,Tamil Nadu,Ariyalur,33,610,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,58,Madhya Pradesh,Ashoknagar,,,manual_pilot,Madhya Pradesh,Ashoknagar,23,391,lgd
+review,fuzzy_review,0.923,Possible match; needs manual review.,120,Uttar Pradesh,Bagpat,,,manual_pilot,Uttar Pradesh,Baghpat,9,124,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,59,Madhya Pradesh,Balaghat,,,manual_pilot,Madhya Pradesh,Balaghat,23,392,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,610,Rajasthan,Balotra,,,manual_pilot,Rajasthan,Balotra,8,775,lgd
+auto,fuzzy_high,0.957,High similarity within the same state.,355,Gujarat,Banaskantha,,,manual_pilot,Gujarat,Banas Kantha,24,441,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,611,Rajasthan,Banswara,,,manual_pilot,Rajasthan,Banswara,8,88,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,612,Rajasthan,Baran,,,manual_pilot,Rajasthan,Baran,8,89,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,555,Odisha,Bargarh,,,manual_pilot,Odisha,Bargarh,21,347,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,127,Uttar Pradesh,Basti,,,manual_pilot,Uttar Pradesh,Basti,9,131,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,614,Rajasthan,Beawar,,,manual_pilot,Rajasthan,Beawar,8,774,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,449,Karnataka,Bengaluru Rural,,,manual_pilot,Karnataka,Bengaluru Rural,29,526,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,356,Gujarat,Bharuch,,,manual_pilot,Gujarat,Bharuch,24,442,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,63,Madhya Pradesh,Bhopal,,,manual_pilot,Madhya Pradesh,Bhopal,23,396,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,557,Odisha,Boudh,,,manual_pilot,Odisha,Boudh,21,349,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,26,Maharashtra,Buldhana,,,manual_pilot,Maharashtra,Buldhana,27,472,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,64,Madhya Pradesh,Burhanpur,,,manual_pilot,Madhya Pradesh,Burhanpur,23,397,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,215,Arunachal Pradesh,Changlang,,,manual_pilot,Arunachal Pradesh,Changlang,12,229,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,422,Jharkhand,Chatra,,,manual_pilot,Jharkhand,Chatra,20,323,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,454,Karnataka,Chikkamagaluru,,,manual_pilot,Karnataka,Chikkamagaluru,29,532,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,455,Karnataka,Chitradurga,,,manual_pilot,Karnataka,Chitradurga,29,533,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,619,Rajasthan,Chittorgarh,,,manual_pilot,Rajasthan,Chittorgarh,8,95,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,535,Nagaland,Chümoukedima,,,manual_pilot,Nagaland,Chumoukedima,13,758,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,620,Rajasthan,Churu,,,manual_pilot,Rajasthan,Churu,8,96,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,764,West Bengal,Cooch Behar,,,manual_pilot,West Bengal,Cooch Behar,19,308,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,791,Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli,,,manual_pilot,The Dadra And Nagar Haveli And Daman And Diu,Dadra And Nagar Haveli,38,465,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,423,Jharkhand,Deoghar,,,manual_pilot,Jharkhand,Deoghar,20,324,lgd
+review,fuzzy_review,0.903,Possible match; needs manual review.,362,Gujarat,Devbhoomi Dwarka,,,manual_pilot,Gujarat,Devbhumi Dwarka,24,674,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,322,Chhattisgarh,Dhamtari,,,manual_pilot,Chhattisgarh,Dhamtari,22,377,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,252,Assam,Dima Hasao,,,manual_pilot,Assam,Dima Hasao,18,299,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,425,Jharkhand,Dumka,,,manual_pilot,Jharkhand,Dumka,20,326,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,796,Delhi,East Delhi,,,manual_pilot,Delhi,East,7,78,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,521,Meghalaya,Eastern West Khasi Hills,,,manual_pilot,Meghalaya,Eastern West Khasi Hills,17,740,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,193,Andhra Pradesh,East Godavari,,,manual_pilot,Andhra Pradesh,East Godavari,28,505,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,512,Meghalaya,East Khasi Hills,,,manual_pilot,Meghalaya,East Khasi Hills,17,274,lgd
+auto,fuzzy_high,0.963,High similarity within the same state.,426,Jharkhand,East Singhbhum,,,manual_pilot,Jharkhand,East Singhbum,20,327,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,29,Maharashtra,Gadchiroli,,,manual_pilot,Maharashtra,Gadchiroli,27,475,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,561,Odisha,Gajapati,,,manual_pilot,Odisha,Gajapati,21,353,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,812,Jammu and Kashmir,Ganderbal,,,manual_pilot,Jammu And Kashmir,Ganderbal,1,626,lgd
+auto,fuzzy_high,0.978,High similarity within the same state.,325,Chhattisgarh,Gaurella-Pendra-Marwahi,,,manual_pilot,Chhattisgarh,Gaurela-Pendra-Marwahi,22,734,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,428,Jharkhand,Giridih,,,manual_pilot,Jharkhand,Giridih,20,329,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,364,Gujarat,Gir Somnath,,,manual_pilot,Gujarat,Gir Somnath,24,675,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,253,Assam,Goalpara,,,manual_pilot,Assam,Goalpara,18,287,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,30,Maharashtra,Gondia,,,manual_pilot,Maharashtra,Gondia,27,476,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,195,Andhra Pradesh,Guntur,,,manual_pilot,Andhra Pradesh,Guntur,28,506,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,256,Assam,Hojai,,,manual_pilot,Assam,Hojai,18,709,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,767,West Bengal,Hooghly,,,manual_pilot,West Bengal,Hooghly,19,312,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,591,Punjab,Hoshiarpur,,,manual_pilot,Punjab,Hoshiarpur,3,33,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,768,West Bengal,Howrah,,,manual_pilot,West Bengal,Howrah,19,313,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,497,Manipur,Imphal West,,,manual_pilot,Manipur,Imphal West,14,256,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,77,Madhya Pradesh,Jabalpur,,,manual_pilot,Madhya Pradesh,Jabalpur,23,411,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,592,Punjab,Jalandhar,,,manual_pilot,Punjab,Jalandhar,3,34,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,32,Maharashtra,Jalgaon,,,manual_pilot,Maharashtra,Jalgaon,27,478,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,813,Jammu and Kashmir,Jammu,,,manual_pilot,Jammu And Kashmir,Jammu,1,5,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,635,Rajasthan,Jhunjhunu,,,manual_pilot,Rajasthan,Jhunjhunu,8,106,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,711,Telangana,Jogulamba Gadwal,,,manual_pilot,Telangana,Jogulamba Gadwal,36,695,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,499,Manipur,Kakching,,,manual_pilot,Manipur,Kakching,14,711,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,462,Karnataka,Kalaburagi,,,manual_pilot,Karnataka,Kalaburagi,29,538,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,500,Manipur,Kamjong,,,manual_pilot,Manipur,Kamjong,14,717,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,258,Assam,Kamrup,,,manual_pilot,Assam,Kamrup,18,291,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,501,Manipur,Kangpokpi,,,manual_pilot,Manipur,Kangpokpi,14,712,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,260,Assam,Karbi Anglong,,,manual_pilot,Assam,Karbi Anglong,18,292,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,482,Kerala,Kasaragod,,,manual_pilot,Kerala,Kasaragod,32,558,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,714,Telangana,Khammam,,,manual_pilot,Telangana,Khammam,36,509,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,526,Mizoram,Khawzawl,,,manual_pilot,Mizoram,Khawzawl,15,728,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,570,Odisha,Khordha,,,manual_pilot,Odisha,Khordha,21,362,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,463,Karnataka,Kodagu,,,manual_pilot,Karnataka,Kodagu,29,541,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,571,Odisha,Koraput,,,manual_pilot,Odisha,Koraput,21,363,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,331,Chhattisgarh,Korba,,,manual_pilot,Chhattisgarh,Korba,22,383,lgd
+missing_in_db,none,0.800,No safe candidate above review threshold.,,,,,,,Chhattisgarh,Korea,22,384,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,221,Arunachal Pradesh,Kra Daadi,,,manual_pilot,Arunachal Pradesh,Kra Daadi,12,677,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,677,Tamil Nadu,Krishnagiri,,,manual_pilot,Tamil Nadu,Krishnagiri,33,577,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,396,Haryana,Kurukshetra,,,manual_pilot,Haryana,Kurukshetra,6,68,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,414,Himachal Pradesh,Lahaul and Spiti,,,manual_pilot,Himachal Pradesh,Lahaul And Spiti,2,21,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,263,Assam,Lakhimpur,,,manual_pilot,Assam,Lakhimpur,18,295,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,223,Arunachal Pradesh,Lepa Rada,,,manual_pilot,Arunachal Pradesh,Leparada,12,724,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,225,Arunachal Pradesh,Longding,,,manual_pilot,Arunachal Pradesh,Longding,12,666,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,228,Arunachal Pradesh,Lower Subansiri,,,manual_pilot,Arunachal Pradesh,Lower Subansiri,12,236,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,594,Punjab,Ludhiana,,,manual_pilot,Punjab,Ludhiana,3,36,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,717,Telangana,Mahabubnagar,,,manual_pilot,Telangana,Mahabubnagar,36,512,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,333,Chhattisgarh,Mahasamund,,,manual_pilot,Chhattisgarh,Mahasamund,22,385,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,834,Puducherry,Mahe,,,manual_pilot,Puducherry,Mahe,34,599,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,84,Madhya Pradesh,Mandsaur,,,manual_pilot,Madhya Pradesh,Mandsaur,23,416,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,466,Karnataka,Mandya,,,manual_pilot,Karnataka,Mandya,29,544,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,85,Madhya Pradesh,Mauganj,,,manual_pilot,Madhya Pradesh,MAUGANJ,23,766,lgd
+auto,fuzzy_high,0.964,High similarity within the same state.,335,Chhattisgarh,Mohla-Manpur-Ambagarh Chowki,,,manual_pilot,Chhattisgarh,Mohla-Manpur-Ambagarh Chouki,22,761,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,266,Assam,Nagaon,,,manual_pilot,Assam,Nagaon,18,297,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,267,Assam,Nalbari,,,manual_pilot,Assam,Nalbari,18,298,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,681,Tamil Nadu,Namakkal,,,manual_pilot,Tamil Nadu,Namakkal,33,580,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,229,Arunachal Pradesh,Namsai,,,manual_pilot,Arunachal Pradesh,Namsai,12,678,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,200,Andhra Pradesh,Nandyal,,,manual_pilot,Andhra Pradesh,Nandyal,28,755,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,644,Rajasthan,Neem Ka Thana,,,manual_pilot,Rajasthan,Neem Ka Thana,8,773,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,797,Delhi,New Delhi,,,manual_pilot,Delhi,New Delhi,7,79,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,576,Odisha,Nuapada,,,manual_pilot,Odisha,Nuapada,21,368,lgd
+review,fuzzy_review,0.909,Possible match; needs manual review.,374,Gujarat,Panchmahal,,,manual_pilot,Gujarat,Panch Mahals,24,454,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,312,Bihar,West Champaran,,,manual_pilot,Bihar,Pashchim Champaran,10,211,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,375,Gujarat,Patan,,,manual_pilot,Gujarat,Patan,24,455,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,683,Tamil Nadu,Perambalur,,,manual_pilot,Tamil Nadu,Perambalur,33,581,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,544,Nagaland,Peren,,,manual_pilot,Nagaland,Peren,13,613,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,545,Nagaland,Phek,,,manual_pilot,Nagaland,Phek,13,248,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,503,Manipur,Pherzawl,,,manual_pilot,Manipur,Pherzawl,14,715,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,204,Andhra Pradesh,Prakasam,,,manual_pilot,Andhra Pradesh,Prakasam,28,517,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,647,Rajasthan,Pratapgarh,,,manual_pilot,Rajasthan,Pratapgarh,8,629,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,684,Tamil Nadu,Pudukkottai,,,manual_pilot,Tamil Nadu,Pudukkottai,33,582,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,780,West Bengal,Purba Medinipur,,,manual_pilot,West Bengal,Purba Medinipur,19,317,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,301,Bihar,Purnia,,,manual_pilot,Bihar,Purnia,10,214,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,781,West Bengal,Purulia,,,manual_pilot,West Bengal,Purulia,19,321,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,340,Chhattisgarh,Rajnandgaon,,,manual_pilot,Chhattisgarh,Rajnandgaon,22,388,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,648,Rajasthan,Rajsamand,,,manual_pilot,Rajasthan,Rajsamand,8,112,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,685,Tamil Nadu,Ramanathapuram,,,manual_pilot,Tamil Nadu,Ramanathapuram,33,583,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,440,Jharkhand,Ranchi,,,manual_pilot,Jharkhand,Ranchi,20,339,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,45,Maharashtra,Ratnagiri,,,manual_pilot,Maharashtra,Ratnagiri,27,492,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,578,Odisha,Rayagada,,,manual_pilot,Odisha,Rayagada,21,370,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,303,Bihar,Saharsa,,,manual_pilot,Bihar,Saharsa,10,216,lgd
+review,fuzzy_review,0.889,Possible match; needs manual review.,441,Jharkhand,Sahibganj,,,manual_pilot,Jharkhand,Sahebganj,20,340,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,342,Chhattisgarh,Sakti,,,manual_pilot,Chhattisgarh,Sakti,22,762,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,176,Uttar Pradesh,Sant Kabir Nagar,,,manual_pilot,Uttar Pradesh,Sant Kabir Nagar,9,178,lgd
+auto,fuzzy_high,0.947,High similarity within the same state.,442,Jharkhand,Seraikela Kharsawan,,,manual_pilot,Jharkhand,Saraikela Kharsawan,20,341,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,651,Rajasthan,Sawai Madhopur,,,manual_pilot,Rajasthan,Sawai Madhopur,8,113,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,742,Tripura,Sepahijala,,,manual_pilot,Tripura,Sepahijala,16,653,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,533,Mizoram,Serchhip,,,manual_pilot,Mizoram,Serchhip,15,268,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,100,Madhya Pradesh,Shahdol,,,manual_pilot,Madhya Pradesh,Shahdol,23,429,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,307,Bihar,Sheohar,,,manual_pilot,Bihar,Sheohar,10,220,lgd
+review,fuzzy_review,0.889,Possible match; needs manual review.,179,Uttar Pradesh,Shravasti,,,manual_pilot,Uttar Pradesh,Shrawasti,9,181,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,443,Jharkhand,Simdega,,,manual_pilot,Jharkhand,Simdega,20,342,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,309,Bihar,Siwan,,,manual_pilot,Bihar,Siwan,10,222,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,418,Himachal Pradesh,Solan,,,manual_pilot,Himachal Pradesh,Solan,2,25,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,803,Delhi,South East Delhi,,,manual_pilot,Delhi,South East,7,670,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,804,Delhi,South West Delhi,,,manual_pilot,Delhi,South West,7,84,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,345,Chhattisgarh,Surajpur,,,manual_pilot,Chhattisgarh,Surajpur,22,648,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,346,Chhattisgarh,Surguja,,,manual_pilot,Chhattisgarh,Surguja,22,389,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,505,Manipur,Tamenglong,,,manual_pilot,Manipur,Tamenglong,14,258,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,605,Punjab,Tarn Taran,,,manual_pilot,Punjab,Tarn Taran,3,609,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,234,Arunachal Pradesh,Tawang,,,manual_pilot,Arunachal Pradesh,Tawang,12,238,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,689,Tamil Nadu,Tenkasi,,,manual_pilot,Tamil Nadu,Tenkasi,33,733,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,690,Tamil Nadu,Thanjavur,,,manual_pilot,Tamil Nadu,Thanjavur,33,586,lgd
+review,fuzzy_review,0.900,Possible match; needs manual review.,682,Tamil Nadu,Nilgiris,,,manual_pilot,Tamil Nadu,The Nilgiris,33,587,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,271,Assam,Tinsukia,,,manual_pilot,Assam,Tinsukia,18,302,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,235,Arunachal Pradesh,Tirap,,,manual_pilot,Arunachal Pradesh,Tirap,12,239,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,695,Tamil Nadu,Tirupathur,,,manual_pilot,Tamil Nadu,Tirupathur,33,732,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,655,Rajasthan,Tonk,,,manual_pilot,Rajasthan,Tonk,8,116,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,472,Karnataka,Udupi,,,manual_pilot,Karnataka,Udupi,29,549,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,508,Manipur,Ukhrul,,,manual_pilot,Manipur,Ukhrul,14,260,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,419,Himachal Pradesh,Una,,,manual_pilot,Himachal Pradesh,Una,2,26,lgd
+missing_in_db,none,0.900,No safe candidate above review threshold.,,,,,,,Chhattisgarh,Uttar Bastar Kanker,22,381,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,109,Madhya Pradesh,Vidisha,,,manual_pilot,Madhya Pradesh,Vidisha,23,437,lgd
+review,fuzzy_review,0.917,Possible match; needs manual review.,476,Karnataka,Vijayanagara,,,manual_pilot,Karnataka,Vijayanagar,29,738,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,474,Karnataka,Vijayapura,,,manual_pilot,Karnataka,Vijayapura,29,530,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,733,Telangana,Vikarabad,,,manual_pilot,Telangana,Vikarabad,36,698,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,52,Maharashtra,Washim,,,manual_pilot,Maharashtra,Washim,27,499,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,273,Assam,West Karbi Anglong,,,manual_pilot,Assam,West Karbi Anglong,18,710,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,549,Nagaland,Wokha,,,manual_pilot,Nagaland,Wokha,13,250,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,704,Telangana,Adilabad,,,manual_pilot,Telangana,Adilabad,36,501,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,351,Gujarat,Ahmedabad,,,manual_pilot,Gujarat,Ahmedabad,24,438,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,523,Mizoram,Aizawl,,,manual_pilot,Mizoram,Aizawl,15,261,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,22,Maharashtra,Akola,,,manual_pilot,Maharashtra,Akola,27,467,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,112,Uttar Pradesh,Aligarh,,,manual_pilot,Uttar Pradesh,Aligarh,9,119,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,56,Madhya Pradesh,Alirajpur,,,manual_pilot,Madhya Pradesh,Alirajpur,23,639,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,608,Rajasthan,Alwar,,,manual_pilot,Rajasthan,Alwar,8,87,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,114,Uttar Pradesh,Amethi,,,manual_pilot,Uttar Pradesh,Amethi,9,640,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,118,Uttar Pradesh,Azamgarh,,,manual_pilot,Uttar Pradesh,Azamgarh,9,123,lgd
+review,fuzzy_review,0.900,Possible match; needs manual review.,446,Karnataka,Bagalkot,,,manual_pilot,Karnataka,Bagalkote,29,524,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,748,Uttarakhand,Bageshwar,,,manual_pilot,Uttarakhand,Bageshwar,5,46,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,447,Karnataka,Ballari,,,manual_pilot,Karnataka,Ballari,29,528,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,191,Andhra Pradesh,Bapatla,,,manual_pilot,Andhra Pradesh,Bapatla,28,750,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,613,Rajasthan,Barmer,,,manual_pilot,Rajasthan,Barmer,8,90,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,584,Punjab,Barnala,,,manual_pilot,Punjab,Barnala,3,605,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,242,Assam,Barpeta,,,manual_pilot,Assam,Barpeta,18,280,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,317,Chhattisgarh,Bastar,,,manual_pilot,Chhattisgarh,Bastar,22,374,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,61,Madhya Pradesh,Betul,,,manual_pilot,Madhya Pradesh,Betul,23,394,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,556,Odisha,Bhadrak,,,manual_pilot,Odisha,Bhadrak,21,348,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,357,Gujarat,Bhavnagar,,,manual_pilot,Gujarat,Bhavnagar,24,443,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,616,Rajasthan,Bhilwara,,,manual_pilot,Rajasthan,Bhilwara,8,92,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,386,Haryana,Bhiwani,,,manual_pilot,Haryana,Bhiwani,6,59,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,451,Karnataka,Bidar,,,manual_pilot,Karnataka,Bidar,29,529,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,129,Uttar Pradesh,Bijnor,,,manual_pilot,Uttar Pradesh,Bijnor,9,132,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,408,Himachal Pradesh,Bilaspur,,,manual_pilot,Himachal Pradesh,Bilaspur,2,15,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,421,Jharkhand,Bokaro,,,manual_pilot,Jharkhand,Bokaro,20,322,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,244,Assam,Bongaigaon,,,manual_pilot,Assam,Bongaigaon,18,281,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,810,Jammu and Kashmir,Budgam,,,manual_pilot,Jammu And Kashmir,Budgam,1,2,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,282,Bihar,Buxar,,,manual_pilot,Bihar,Buxar,10,194,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,795,Delhi,Central Delhi,,,manual_pilot,Delhi,Central,7,77,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,409,Himachal Pradesh,Chamba,,,manual_pilot,Himachal Pradesh,Chamba,2,16,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,524,Mizoram,Champhai,,,manual_pilot,Mizoram,Champhai,15,262,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,789,Chandigarh,Chandigarh,,,manual_pilot,Chandigarh,Chandigarh,4,44,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,666,Tamil Nadu,Chengalpattu,,,manual_pilot,Tamil Nadu,Chengalpattu,33,730,lgd
+missing_in_db,none,0.400,No safe candidate above review threshold.,,,,,,,Maharashtra,Chhatrapati Sambhajinagar,27,469,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,66,Madhya Pradesh,Chhindwara,,,manual_pilot,Madhya Pradesh,Chhindwara,23,399,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,132,Uttar Pradesh,Chitrakoot,,,manual_pilot,Uttar Pradesh,Chitrakoot,9,136,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,495,Manipur,Churachandpur,,,manual_pilot,Manipur,Churachandpur,14,254,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,669,Tamil Nadu,Cuddalore,,,manual_pilot,Tamil Nadu,Cuddalore,33,570,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,558,Odisha,Cuttack,,,manual_pilot,Odisha,Cuttack,21,350,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,456,Karnataka,Dakshina Kannada,,,manual_pilot,Karnataka,Dakshina Kannada,29,534,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,792,Dadra and Nagar Haveli and Daman and Diu,Daman,,,manual_pilot,The Dadra And Nagar Haveli And Daman And Diu,Daman,38,463,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,283,Bihar,Darbhanga,,,manual_pilot,Bihar,Darbhanga,10,195,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,621,Rajasthan,Dausa,,,manual_pilot,Rajasthan,Dausa,8,97,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,622,Rajasthan,Deeg,,,manual_pilot,Rajasthan,Deeg,8,767,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,133,Uttar Pradesh,Deoria,,,manual_pilot,Uttar Pradesh,Deoria,9,137,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,69,Madhya Pradesh,Dewas,,,manual_pilot,Madhya Pradesh,Dewas,23,402,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,70,Madhya Pradesh,Dhar,,,manual_pilot,Madhya Pradesh,Dhar,23,403,lgd
+missing_in_db,none,0.533,No safe candidate above review threshold.,,,,,,,Maharashtra,Dharashiv,27,488,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,28,Maharashtra,Dhule,,,manual_pilot,Maharashtra,Dhule,27,474,lgd
+review,fuzzy_review,0.900,Possible match; needs manual review.,197,Andhra Pradesh,Konaseema,,,manual_pilot,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,28,747,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,217,Arunachal Pradesh,East Kameng,,,manual_pilot,Arunachal Pradesh,East Kameng,12,231,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,135,Uttar Pradesh,Etawah,,,manual_pilot,Uttar Pradesh,Etawah,9,139,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,388,Haryana,Faridabad,,,manual_pilot,Haryana,Faridabad,6,60,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,138,Uttar Pradesh,Firozabad,,,manual_pilot,Uttar Pradesh,Firozabad,9,143,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,627,Rajasthan,Ganganagar,,,manual_pilot,Rajasthan,Ganganagar,8,100,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,254,Assam,Golaghat,,,manual_pilot,Assam,Golaghat,18,288,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,143,Uttar Pradesh,Gorakhpur,,,manual_pilot,Uttar Pradesh,Gorakhpur,9,148,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,72,Madhya Pradesh,Guna,,,manual_pilot,Madhya Pradesh,Guna,23,406,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,659,Sikkim,Gyalshing,,,manual_pilot,Sikkim,Gyalshing,11,228,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,144,Uttar Pradesh,Hamirpur,,,manual_pilot,Uttar Pradesh,Hamirpur,9,149,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,480,Kerala,Idukki,,,manual_pilot,Kerala,Idukki,32,556,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,496,Manipur,Imphal East,,,manual_pilot,Manipur,Imphal East,14,255,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,76,Madhya Pradesh,Indore,,,manual_pilot,Madhya Pradesh,Indore,23,410,lgd
+review,canonical_name,1.000,Multiple LGD districts matched the same existing DB row.,630,Rajasthan,Jaipur,,,manual_pilot,Rajasthan,Jaipur (Gramin),8,783,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,632,Rajasthan,Jaisalmer,,,manual_pilot,Rajasthan,Jaisalmer,8,103,lgd
+review,fuzzy_review,0.857,Possible match; needs manual review.,709,Telangana,Jangaon,,,manual_pilot,Telangana,Jangoan,36,689,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,149,Uttar Pradesh,Jaunpur,,,manual_pilot,Uttar Pradesh,Jaunpur,9,152,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,392,Haryana,Jhajjar,,,manual_pilot,Haryana,Jhajjar,6,64,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,366,Gujarat,Junagadh,,,manual_pilot,Gujarat,Junagadh,24,448,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,394,Haryana,Kaithal,,,manual_pilot,Haryana,Kaithal,6,66,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,220,Arunachal Pradesh,Kamle,,,manual_pilot,Arunachal Pradesh,Kamle,12,718,lgd
+review,fuzzy_review,0.917,Possible match; needs manual review.,675,Tamil Nadu,Kanyakumari,,,manual_pilot,Tamil Nadu,Kanniyakumari,33,575,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,833,Puducherry,Karaikal,,,manual_pilot,Puducherry,Karaikal,34,598,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,261,Assam,Karimganj,,,manual_pilot,Assam,Karimganj,18,293,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,155,Uttar Pradesh,Kaushambi,,,manual_pilot,Uttar Pradesh,Kaushambi,9,158,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,639,Rajasthan,Kekri,,,manual_pilot,Rajasthan,Kekri,8,781,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,569,Odisha,Kendujhar,,,manual_pilot,Odisha,Kendujhar,21,361,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,341,Chhattisgarh,Khairagarh-Chhuikhadan-Gandai,,,manual_pilot,Chhattisgarh,Khairagarh-Chhuikhadan-Gandai,22,759,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,538,Nagaland,Kohima,,,manual_pilot,Nagaland,Kohima,13,245,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,262,Assam,Kokrajhar,,,manual_pilot,Assam,Kokrajhar,18,294,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,34,Maharashtra,Kolhapur,,,manual_pilot,Maharashtra,Kolhapur,27,480,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,330,Chhattisgarh,Kondagaon,,,manual_pilot,Chhattisgarh,Kondagaon,22,643,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,413,Himachal Pradesh,Kullu,,,manual_pilot,Himachal Pradesh,Kullu,2,20,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,222,Arunachal Pradesh,Kurung Kumey,,,manual_pilot,Arunachal Pradesh,Kurung Kumey,12,233,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,829,Ladakh,Leh,,,manual_pilot,Ladakh,Leh Ladakh,37,9,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,159,Uttar Pradesh,Lucknow,,,manual_pilot,Uttar Pradesh,Lucknow,9,162,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,294,Bihar,Madhepura,,,manual_pilot,Bihar,Madhepura,10,205,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,595,Punjab,Malerkotla,,,manual_pilot,Punjab,Malerkotla,3,737,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,660,Sikkim,Mangan,,,manual_pilot,Sikkim,Mangan,11,226,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,596,Punjab,Mansa,,,manual_pilot,Punjab,Mansa,3,37,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,265,Assam,Morigaon,,,manual_pilot,Assam,Marigaon,18,296,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,163,Uttar Pradesh,Mathura,,,manual_pilot,Uttar Pradesh,Mathura,9,167,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,165,Uttar Pradesh,Meerut,,,manual_pilot,Uttar Pradesh,Meerut,9,169,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,597,Punjab,Moga,,,manual_pilot,Punjab,Moga,3,38,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,336,Chhattisgarh,Mungeli,,,manual_pilot,Chhattisgarh,Mungeli,22,647,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,168,Uttar Pradesh,Muzaffarnagar,,,manual_pilot,Uttar Pradesh,Muzaffarnagar,9,172,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,297,Bihar,Muzaffarpur,,,manual_pilot,Bihar,Muzaffarpur,10,208,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,643,Rajasthan,Nagaur,,,manual_pilot,Rajasthan,Nagaur,8,110,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,661,Sikkim,Namchi,,,manual_pilot,Sikkim,Namchi,11,227,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,337,Chhattisgarh,Narayanpur,,,manual_pilot,Chhattisgarh,Narayanpur,22,637,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,372,Gujarat,Narmada,,,manual_pilot,Gujarat,Narmada,24,452,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,575,Odisha,Nayagarh,,,manual_pilot,Odisha,Nayagarh,21,367,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,542,Nagaland,Niuland,,,manual_pilot,Nagaland,Niuland,13,764,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,776,West Bengal,North 24 Parganas,,,manual_pilot,West Bengal,North 24 Parganas,19,303,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,786,Andaman and Nicobar Islands,North and Middle Andaman,,,manual_pilot,Andaman And Nicobar Islands,North And Middle Andaman,35,632,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,513,Meghalaya,North Garo Hills,,,manual_pilot,Meghalaya,North Garo Hills,17,656,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,398,Haryana,Nuh,,,manual_pilot,Haryana,Nuh,6,604,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,662,Sikkim,Pakyong,,,manual_pilot,Sikkim,Pakyong,11,741,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,645,Rajasthan,Pali,,,manual_pilot,Rajasthan,Pali,8,111,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,202,Andhra Pradesh,Palnadu,,,manual_pilot,Andhra Pradesh,Palnadu,28,751,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,399,Haryana,Palwal,,,manual_pilot,Haryana,Palwal,6,619,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,91,Madhya Pradesh,Panna,,,manual_pilot,Madhya Pradesh,Panna,23,420,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,754,Uttarakhand,Pauri Garhwal,,,manual_pilot,Uttarakhand,Pauri Garhwal,5,52,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,646,Rajasthan,Phalodi,,,manual_pilot,Rajasthan,Phalodi,8,772,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,169,Uttar Pradesh,Pilibhit,,,manual_pilot,Uttar Pradesh,Pilibhit,9,173,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,779,West Bengal,Purba Bardhaman,,,manual_pilot,West Bengal,Purba Bardhaman,19,306,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,377,Gujarat,Rajkot,,,manual_pilot,Gujarat,Rajkot,24,457,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,469,Karnataka,Ramanagara,,,manual_pilot,Karnataka,Ramanagara,29,631,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,439,Jharkhand,Ramgarh,,,manual_pilot,Jharkhand,Ramgarh,20,607,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,173,Uttar Pradesh,Rampur,,,manual_pilot,Uttar Pradesh,Rampur,9,176,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,686,Tamil Nadu,Ranipet,,,manual_pilot,Tamil Nadu,Ranipet,33,731,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,95,Madhya Pradesh,Rewa,,,manual_pilot,Madhya Pradesh,Rewa,23,424,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,302,Bihar,Rohtas,,,manual_pilot,Bihar,Rohtas,10,215,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,602,Punjab,Rupnagar,,,manual_pilot,Punjab,Rupnagar,3,42,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,650,Rajasthan,Sanchore,,,manual_pilot,Rajasthan,Sanchore,8,779,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,47,Maharashtra,Satara,,,manual_pilot,Maharashtra,Satara,27,494,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,99,Madhya Pradesh,Seoni,,,manual_pilot,Madhya Pradesh,Seoni,23,428,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,177,Uttar Pradesh,Shahjahanpur,,,manual_pilot,Uttar Pradesh,Shahjahanpur,9,180,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,101,Madhya Pradesh,Shajapur,,,manual_pilot,Madhya Pradesh,Shajapur,23,430,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,102,Madhya Pradesh,Sheopur,,,manual_pilot,Madhya Pradesh,Sheopur,23,431,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,103,Madhya Pradesh,Shivpuri,,,manual_pilot,Madhya Pradesh,Shivpuri,23,432,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,824,Jammu and Kashmir,Shopian,,,manual_pilot,Jammu And Kashmir,Shopian,1,625,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,104,Madhya Pradesh,Sidhi,,,manual_pilot,Madhya Pradesh,Sidhi,23,433,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,105,Madhya Pradesh,Singrauli,,,manual_pilot,Madhya Pradesh,Singrauli,23,638,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,181,Uttar Pradesh,Sitapur,,,manual_pilot,Uttar Pradesh,Sitapur,9,183,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,49,Maharashtra,Solapur,,,manual_pilot,Maharashtra,Solapur,27,496,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,663,Sikkim,Soreng,,,manual_pilot,Sikkim,Soreng,11,742,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,802,Delhi,South Delhi,,,manual_pilot,Delhi,South,7,83,lgd
+auto,canonical_name,1.000,Names match after canonical district-name cleanup.,270,Assam,South Salmara-Mankachar,,,manual_pilot,Assam,South Salmara Mancachar,18,707,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,516,Meghalaya,South West Garo Hills,,,manual_pilot,Meghalaya,South West Garo Hills,17,663,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,207,Andhra Pradesh,Srikakulam,,,manual_pilot,Andhra Pradesh,Srikakulam,28,519,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,344,Chhattisgarh,Sukma,,,manual_pilot,Chhattisgarh,Sukma,22,642,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,310,Bihar,Supaul,,,manual_pilot,Bihar,Supaul,10,223,lgd
+missing_in_db,none,0.588,No safe candidate above review threshold.,,,,,,,Assam,Tamulpur,18,756,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,757,Uttarakhand,Tehri Garhwal,,,manual_pilot,Uttarakhand,Tehri Garhwal,5,55,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,50,Maharashtra,Thane,,,manual_pilot,Maharashtra,Thane,27,497,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,489,Kerala,Thiruvananthapuram,,,manual_pilot,Kerala,Thiruvananthapuram,32,565,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,693,Tamil Nadu,Tiruchirappalli,,,manual_pilot,Tamil Nadu,Tiruchirappalli,33,591,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,696,Tamil Nadu,Tiruppur,,,manual_pilot,Tamil Nadu,Tiruppur,33,634,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,698,Tamil Nadu,Tiruvannamalai,,,manual_pilot,Tamil Nadu,Tiruvannamalai,33,593,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,656,Rajasthan,Udaipur,,,manual_pilot,Rajasthan,Udaipur,8,117,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,272,Assam,Udalguri,,,manual_pilot,Assam,Udalguri,18,617,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,236,Arunachal Pradesh,Upper Siang,,,manual_pilot,Arunachal Pradesh,Upper Siang,12,240,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,473,Karnataka,Uttara Kannada,,,manual_pilot,Karnataka,Uttara Kannada,29,550,lgd
+missing_in_db,none,0.571,No safe candidate above review threshold.,,,,,,,Uttarakhand,Uttar Kashi,5,57,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,735,Telangana,Warangal,,,manual_pilot,Telangana,Warangal,36,522,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,491,Kerala,Wayanad,,,manual_pilot,Kerala,Wayanad,32,567,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,518,Meghalaya,West Garo Hills,,,manual_pilot,Meghalaya,West Garo Hills,17,278,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,519,Meghalaya,West Jaintia Hills,,,manual_pilot,Meghalaya,West Jaintia Hills,17,275,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,239,Arunachal Pradesh,West Siang,,,manual_pilot,Arunachal Pradesh,West Siang,12,243,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,444,Jharkhand,West Singhbhum,,,manual_pilot,Jharkhand,West Singhbhum,20,343,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,736,Telangana,Yadadri Bhuvanagiri,,,manual_pilot,Telangana,Yadadri Bhuvanagiri,36,697,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,475,Karnataka,Yadgir,,,manual_pilot,Karnataka,Yadgir,29,635,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,836,Puducherry,Yanam,,,manual_pilot,Puducherry,Yanam,34,601,lgd
+auto,exact_name,1.000,State and district names match exactly after normalization.,550,Nagaland,Zunheboto,,,manual_pilot,Nagaland,Zunheboto,13,251,lgd
+db_only,none,0.000,Existing DB district did not match an LGD district.,189,Andhra Pradesh,Anantapur,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,219,Arunachal Pradesh,Itanagar Capital Complex,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,259,Assam,Kamrup Metropolitan,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,315,Chhattisgarh,Baloda Bazar,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,321,Chhattisgarh,Dantewada,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,329,Chhattisgarh,Kanker,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,332,Chhattisgarh,Koriya,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,368,Gujarat,Kutch,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,370,Gujarat,Mehsana,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,831,Lakshadweep,Lakshadweep,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,87,Madhya Pradesh,Narsinghpur,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,7,Maharashtra,Aurangabad,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,36,Maharashtra,Mumbai City,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,41,Maharashtra,Osmanabad,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,531,Mizoram,Saiha,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,554,Odisha,Balasore,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,580,Odisha,Subarnapur,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,599,Punjab,Nawanshahr,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,603,Punjab,Sahibzada Ajit Singh Nagar,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,631,Rajasthan,Jaipur Rural,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,637,Rajasthan,Jodhpur Rural,,,manual_pilot,,,,,
+db_only,none,0.000,Existing DB district did not match an LGD district.,759,Uttarakhand,Uttarkashi,,,manual_pilot,,,,,

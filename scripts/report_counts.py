@@ -5,7 +5,7 @@ from pathlib import Path
 
 import _bootstrap  # noqa: F401
 from shiva_discovery.db import connect
-from shiva_discovery.reporting import run_report_queries, write_csv
+from shiva_discovery.reporting import REPORT_LOCATION_TYPES, run_report_queries, write_csv
 
 
 FIELDNAMES = {
@@ -68,9 +68,23 @@ def main() -> int:
         default=5000,
         help="Maximum candidates to export when --include-candidates is used.",
     )
+    parser.add_argument(
+        "--location-type",
+        choices=sorted(REPORT_LOCATION_TYPES),
+        help="Restrict reports to candidates and tasks attributed to one active location type.",
+    )
+    parser.add_argument(
+        "--district-only",
+        action="store_true",
+        help="Shortcut for --location-type district, used for the Phase 1.1 district baseline.",
+    )
     args = parser.parse_args()
     if args.candidate_limit < 1:
         parser.error("--candidate-limit must be at least 1.")
+    if args.district_only and args.location_type and args.location_type != "district":
+        parser.error("--district-only cannot be combined with a non-district --location-type.")
+
+    location_type = "district" if args.district_only else args.location_type
 
     output_dir = Path(args.output_dir)
     with connect() as conn:
@@ -78,6 +92,7 @@ def main() -> int:
             conn,
             include_candidates=args.include_candidates,
             candidate_limit=args.candidate_limit,
+            location_type=location_type,
         )
 
     for report_name, rows in reports.items():
@@ -90,6 +105,8 @@ def main() -> int:
         print("National discovery summary:")
         for key in FIELDNAMES["national_summary"]:
             print(f"- {key}: {summary.get(key)}")
+        if location_type:
+            print(f"Report scope: active {location_type} locations only")
 
     return 0
 

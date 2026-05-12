@@ -54,9 +54,13 @@ def build_search_query(keyword: str, location: Mapping[str, object]) -> str:
 
 def eligible_location_types(
     *,
+    district_only: bool = False,
     include_cities: bool = False,
     include_villages: bool = False,
 ) -> tuple[str, ...]:
+    if district_only:
+        return ("district",)
+
     types = list(DEFAULT_TASK_LOCATION_TYPES)
     if include_cities:
         types.extend(OPTIONAL_CITY_TASK_TYPES)

@@ -248,6 +248,10 @@ def _metric_card(label: str, value: str, note: str) -> str:
     """
 
 
+def _multiline_html(text: str) -> str:
+    return "<br>".join(escape(line) for line in text.splitlines())
+
+
 def _table(headers: list[str], rows: list[list[object]], classes: str = "") -> str:
     head = "".join(f"<th>{escape(header)}</th>" for header in headers)
     body_rows = []
@@ -264,8 +268,20 @@ def _keyword_rows(data: ReportData, limit: int = 9) -> list[dict[str, object]]:
     ]
 
 
-def render_html(data: ReportData) -> str:
+def render_html(
+    data: ReportData,
+    *,
+    report_kicker: str = "Phase 1 Discovery Report",
+    report_title: str = "Shiva Temple Discovery\nConsolidated Insights",
+    report_subtitle: str | None = None,
+) -> str:
     summary = data.summary
+    if report_subtitle is None:
+        report_subtitle = (
+            "A single report generated from the non-sample CSV exports in reports/, "
+            "summarizing Google Places discovery output, deduplication, confidence "
+            "classification, and geographic concentration."
+        )
     total = _as_int(summary["total_discovered_candidates"])
     unique = _as_int(summary["unique_google_place_ids"])
     duplicates = _as_int(summary["duplicates_removed"])
@@ -465,9 +481,9 @@ li {{ margin-bottom: 2mm; }}
 <section class="page cover">
     <div>
         <div class="cover-band"></div>
-        <div class="kicker">Phase 1 Discovery Report</div>
-        <h1>Shiva Temple Discovery<br>Consolidated Insights</h1>
-        <p class="subtitle">A single report generated from the non-sample CSV exports in <strong>reports/</strong>, summarizing Google Places discovery output, deduplication, confidence classification, and geographic concentration.</p>
+        <div class="kicker">{escape(report_kicker)}</div>
+        <h1>{_multiline_html(report_title)}</h1>
+        <p class="subtitle">{escape(report_subtitle)}</p>
         <div class="notice"><strong>Important:</strong> these are discovery counts from Google Places API and name-based classification, not exact real-world temple counts or an official cultural census.</div>
     </div>
     <div>
@@ -476,7 +492,7 @@ li {{ margin-bottom: 2mm; }}
             {_metric_card("High-confidence Shiva", _fmt_int(high), f"{_fmt_pct(shares['high'])} of unique candidates")}
             {_metric_card("High + Medium Signal", _fmt_int(signal), f"{_fmt_pct(signal_share)} of unique candidates")}
         </div>
-        <p class="source-line">Generated: {escape(generated_label)} | Source file status: {escape(summary.get("status", ""))}</p>
+        <p class="source-line">Generated: {escape(generated_label)} | Source: {escape(summary.get("source", ""))} | Status: {escape(summary.get("status", ""))}</p>
     </div>
 </section>
 
@@ -664,6 +680,20 @@ def main() -> int:
         default="reports/consolidated_phase1_discovery_report.pdf",
         help="PDF output path.",
     )
+    parser.add_argument(
+        "--report-kicker",
+        default="Phase 1 Discovery Report",
+        help="Short label shown above the report title.",
+    )
+    parser.add_argument(
+        "--report-title",
+        default="Shiva Temple Discovery\nConsolidated Insights",
+        help="Report title. Use newline characters for title line breaks.",
+    )
+    parser.add_argument(
+        "--report-subtitle",
+        help="Optional report subtitle shown on the cover page.",
+    )
     args = parser.parse_args()
 
     report_dir = Path(args.report_dir)
@@ -672,7 +702,15 @@ def main() -> int:
     data = load_report_data(report_dir)
     html_path.parent.mkdir(parents=True, exist_ok=True)
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
-    html_path.write_text(render_html(data), encoding="utf-8")
+    html_path.write_text(
+        render_html(
+            data,
+            report_kicker=args.report_kicker,
+            report_title=args.report_title,
+            report_subtitle=args.report_subtitle,
+        ),
+        encoding="utf-8",
+    )
     print(f"Wrote {html_path}")
 
     if write_pdf_with_chrome(html_path, pdf_path):

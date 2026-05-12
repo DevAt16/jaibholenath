@@ -1,0 +1,4 @@
+match_status,match_method,match_score,review_reason,db_id,db_state_name,db_district_name,db_state_lgd_code,db_district_lgd_code,db_source,lgd_state_name,lgd_district_name,lgd_state_lgd_code,lgd_district_lgd_code,lgd_source
+missing_in_db,none,0.667,No safe candidate above review threshold.,,,,,,,Assam,Bajali,18,739,lgd
+missing_in_db,none,0.588,No safe candidate above review threshold.,,,,,,,Assam,Tamulpur,18,756,lgd
+db_only,none,0.000,Existing DB district did not match an LGD district.,219,Arunachal Pradesh,Itanagar Capital Complex,,,manual_pilot,,,,,

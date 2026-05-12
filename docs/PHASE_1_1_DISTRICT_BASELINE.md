@@ -193,6 +193,82 @@ We need to identify:
 - District rows with missing `state_name`.
 - LGD code mismatches where codes are available.
 
+Use:
+
+```powershell
+python scripts/align_lgd_districts.py `
+  --lgd-districts data/prepared_locations_lgd_districts.csv `
+  --output reports/location_verification/district_alignment_review.csv
+```
+
+This writes a review CSV with:
+
+```text
+auto
+review
+missing_in_db
+db_only
+```
+
+Only apply auto-safe alignments after reviewing the summary:
+
+```powershell
+python scripts/align_lgd_districts.py `
+  --lgd-districts data/prepared_locations_lgd_districts.csv `
+  --output reports/location_verification/district_alignment_review.csv `
+  --apply-auto
+```
+
+Before the first apply, export a district snapshot for audit/rollback:
+
+```text
+reports/location_verification/db_districts_before_lgd_alignment.csv
+```
+
+Alignment result after applying auto-safe rows:
+
+```text
+LGD district rows: 785
+DB district rows: 784
+DB district rows with LGD codes: 783
+remaining LGD missing in DB: 2
+remaining DB-only districts: 1
+manual review rows: 0
+```
+
+Remaining manual decisions:
+
+```text
+LGD-only: Assam / Bajali
+LGD-only: Assam / Tamulpur
+DB-only: Arunachal Pradesh / Itanagar Capital Complex
+```
+
+These should be handled deliberately before declaring Phase 1.1 district
+coverage complete.
+
+Final manual exception handling completed:
+
+```text
+Inserted LGD-only: Assam / Bajali
+Inserted LGD-only: Assam / Tamulpur
+Marked inactive: Arunachal Pradesh / Itanagar Capital Complex
+```
+
+Final active district coverage:
+
+```text
+LGD district rows: 785
+active DB district rows: 785
+active DB district rows with LGD codes: 785
+LGD districts missing from active DB rows: 0
+active DB districts not in LGD: 0
+```
+
+The inactive `Itanagar Capital Complex` row is retained for audit/history, but
+it is outside the LGD district baseline and should not be used for Phase 1.1 task
+generation.
+
 ### 4. Import Verified Districts
 
 After review:
@@ -203,17 +279,28 @@ python scripts/import_locations.py data/prepared_locations_lgd_districts.csv --s
 
 ### 5. Generate Phase 1.1 District Tasks Only
 
-The current generator defaults to district, town, and urban local body. For a
-strict Phase 1.1 run, add or use a district-only generation option before
-creating tasks.
+The default generator still supports the broader Phase 1 scope: district, town,
+and urban local body. For a strict Phase 1.1 run, use `--district-only`.
 
 Target behavior:
 
 ```text
-district locations × 9 Phase 1 keywords
+district locations x 9 Phase 1 keywords
 ```
 
 No town or ULB tasks should be included in the Phase 1.1 baseline.
+
+Preview:
+
+```powershell
+python scripts/generate_search_tasks.py --district-only --dry-run
+```
+
+Insert missing district-only tasks:
+
+```powershell
+python scripts/generate_search_tasks.py --district-only
+```
 
 ### 6. Run Discovery With Safe Limits
 
@@ -228,8 +315,23 @@ Increase gradually only after reviewing result quality and API costs.
 ### 7. Generate Reports
 
 ```powershell
-python scripts/report_counts.py --output-dir reports --include-candidates --candidate-limit 5000
-python scripts/generate_consolidated_pdf_report.py
+python scripts/report_counts.py `
+  --district-only `
+  --output-dir reports/phase_1_1_district_baseline `
+  --include-candidates `
+  --candidate-limit 100000
+
+python scripts/generate_consolidated_pdf_report.py `
+  --report-dir reports/phase_1_1_district_baseline `
+  --html-output reports/phase_1_1_district_baseline/consolidated_phase1_1_district_baseline_report.html `
+  --pdf-output reports/phase_1_1_district_baseline/consolidated_phase1_1_district_baseline_report.pdf `
+  --report-kicker "Phase 1.1 District Baseline" `
+  --report-title "Shiva Temple Discovery`nDistrict Baseline Insights" `
+  --report-subtitle "A district-only baseline generated from active LGD district locations, Google Places discovery output, deduplication, and Shiva-confidence classification."
+
+python scripts/generate_phase1_1_work_report.py
+
+python scripts/generate_phase1_1_social_cards.py
 ```
 
 All Phase 1.1 reports must clearly say:
@@ -237,6 +339,12 @@ All Phase 1.1 reports must clearly say:
 ```text
 discovery counts, not exact real-world temple counts
 ```
+
+Current scoped reports filter candidate rows by each candidate's current
+`source_location_id`. This is appropriate for the Phase 1.1 district baseline
+after district discovery runs, but it is not a full multi-source attribution
+ledger. If later phases need to answer every location type that rediscovered the
+same Google Place ID, add a candidate discovery history table.
 
 ## Wording For External Use
 

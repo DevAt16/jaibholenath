@@ -1,0 +1,94 @@
+state_name,district_name,state_lgd_code,district_lgd_code,source
+Andaman And Nicobar Islands,Nicobars,35,603,lgd
+Andaman And Nicobar Islands,South Andamans,35,602,lgd
+Andhra Pradesh,Ananthapuramu,28,502,lgd
+Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,28,747,lgd
+Andhra Pradesh,Y.S.R.,28,504,lgd
+Arunachal Pradesh,Leparada,12,724,lgd
+Assam,Bajali,18,739,lgd
+Assam,Kamrup Metro,18,618,lgd
+Assam,Marigaon,18,296,lgd
+Assam,South Salmara Mancachar,18,707,lgd
+Assam,Tamulpur,18,756,lgd
+Bihar,Kaimur (Bhabua),10,200,lgd
+Bihar,Pashchim Champaran,10,211,lgd
+Bihar,Purbi Champaran,10,213,lgd
+Chhattisgarh,Balodabazar-Bhatapara,22,644,lgd
+Chhattisgarh,Balrampur-Ramanujganj,22,649,lgd
+Chhattisgarh,Dakshin Bastar Dantewada,22,376,lgd
+Chhattisgarh,Gariyaband,22,645,lgd
+Chhattisgarh,Gaurela-Pendra-Marwahi,22,734,lgd
+Chhattisgarh,Kabeerdham,22,382,lgd
+Chhattisgarh,Korea,22,384,lgd
+Chhattisgarh,Manendragarh-Chirmiri-Bharatpur(M C B),22,760,lgd
+Chhattisgarh,Mohla-Manpur-Ambagarh Chouki,22,761,lgd
+Chhattisgarh,Uttar Bastar Kanker,22,381,lgd
+Delhi,Central,7,77,lgd
+Delhi,East,7,78,lgd
+Delhi,North,7,80,lgd
+Delhi,North East,7,81,lgd
+Delhi,North West,7,82,lgd
+Delhi,South,7,83,lgd
+Delhi,South East,7,670,lgd
+Delhi,South West,7,84,lgd
+Delhi,West,7,85,lgd
+Gujarat,Arvalli,24,672,lgd
+Gujarat,Banas Kantha,24,441,lgd
+Gujarat,Chhotaudepur,24,668,lgd
+Gujarat,Dangs,24,444,lgd
+Gujarat,Devbhumi Dwarka,24,674,lgd
+Gujarat,Kachchh,24,449,lgd
+Gujarat,Mahesana,24,451,lgd
+Gujarat,Panch Mahals,24,454,lgd
+Gujarat,Sabar Kantha,24,458,lgd
+Haryana,Charki Dadri,6,701,lgd
+Jharkhand,East Singhbum,20,327,lgd
+Jharkhand,Sahebganj,20,340,lgd
+Jharkhand,Saraikela Kharsawan,20,341,lgd
+Karnataka,Bagalkote,29,524,lgd
+Karnataka,Chamarajanagara,29,531,lgd
+Karnataka,Chikkaballapura,29,630,lgd
+Karnataka,Vijayanagar,29,738,lgd
+Ladakh,Leh Ladakh,37,9,lgd
+Lakshadweep,Lakshadweep District,31,553,lgd
+Madhya Pradesh,Khandwa (East Nimar),23,405,lgd
+Madhya Pradesh,Khargone (West Nimar),23,414,lgd
+Madhya Pradesh,Narsimhapur,23,418,lgd
+Maharashtra,Chhatrapati Sambhajinagar,27,469,lgd
+Maharashtra,Dharashiv,27,488,lgd
+Maharashtra,Mumbai,27,482,lgd
+Mizoram,Siaha,15,267,lgd
+Odisha,Anugul,21,344,lgd
+Odisha,Baleshwar,21,346,lgd
+Odisha,Jagatsinghapur,21,355,lgd
+Odisha,Jajapur,21,356,lgd
+Odisha,Sonepur,21,372,lgd
+Punjab,S.A.S Nagar,3,608,lgd
+Punjab,Shahid Bhagat Singh Nagar,3,40,lgd
+Punjab,Sri Muktsar Sahib,3,39,lgd
+Rajasthan,Gangapurcity,8,771,lgd
+Rajasthan,Jaipur (Gramin),8,783,lgd
+Rajasthan,Jodhpur (Gramin),8,778,lgd
+Tamil Nadu,Kancheepuram,33,574,lgd
+Tamil Nadu,Kanniyakumari,33,575,lgd
+Tamil Nadu,The Nilgiris,33,587,lgd
+Tamil Nadu,Thiruvallur,33,589,lgd
+Tamil Nadu,Thiruvarur,33,590,lgd
+Tamil Nadu,Thoothukkudi,33,594,lgd
+Telangana,Jagitial,36,681,lgd
+Telangana,Jangoan,36,689,lgd
+Telangana,Jayashankar Bhupalapally,36,687,lgd
+Telangana,Kumuram Bheem Asifabad,36,699,lgd
+Telangana,Ranga Reddy,36,518,lgd
+The Dadra And Nagar Haveli And Daman And Diu,Dadra And Nagar Haveli,38,465,lgd
+The Dadra And Nagar Haveli And Daman And Diu,Daman,38,463,lgd
+The Dadra And Nagar Haveli And Daman And Diu,Diu,38,464,lgd
+Uttar Pradesh,Baghpat,9,124,lgd
+Uttar Pradesh,Bara Banki,9,129,lgd
+Uttar Pradesh,Budaun,9,133,lgd
+Uttar Pradesh,Kheri,9,159,lgd
+Uttar Pradesh,Mahrajganj,9,164,lgd
+Uttar Pradesh,Shrawasti,9,181,lgd
+Uttarakhand,Rudra Prayag,5,54,lgd
+Uttarakhand,Udam Singh Nagar,5,56,lgd
+Uttarakhand,Uttar Kashi,5,57,lgd

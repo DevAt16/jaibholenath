@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Where review could start first</title>
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1080px; height: 1080px; overflow: hidden; }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17212b;
+    background: #f6f3eb;
+}
+.card {
+    width: 1080px;
+    height: 1080px;
+    padding: var(--pad);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,.95), rgba(251,250,247,.96)),
+        radial-gradient(circle at 9% 12%, rgba(191,81,59,.14), transparent 28%),
+        radial-gradient(circle at 92% 82%, rgba(33,138,106,.14), transparent 30%);
+    border: 0;
+    position: relative;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    left: var(--pad);
+    right: var(--pad);
+    top: var(--pad);
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #bf513b, #d7a23a, #218a6a, #4f6fa9);
+}
+.content { position: relative; z-index: 1; padding-top: 24px; }
+.kicker {
+    color: #bf513b;
+    font-size: var(--kicker);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 18px;
+}
+h1 {
+    font-size: var(--title);
+    line-height: .98;
+    letter-spacing: 0;
+    max-width: 930px;
+    margin: 0 0 var(--title-gap);
+}
+.metric-grid { display: grid; gap: var(--gap); }
+.metric-grid.three { grid-template-columns: repeat(3, 1fr); }
+.metric {
+    background: #fff;
+    border: 1px solid #dae2ea;
+    border-radius: 14px;
+    padding: var(--box-pad);
+    min-height: var(--metric-min);
+    box-shadow: 0 16px 36px rgba(23,33,43,.08);
+}
+.metric-label {
+    color: #607085;
+    font-size: var(--small);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+.metric-value {
+    font-size: var(--metric-value);
+    font-weight: 900;
+    margin: 6px 0 4px;
+}
+.metric-note, .bar-detail, .flow-step span, .pill span, .funnel em, .signal-number em {
+    color: #607085;
+    font-size: var(--small);
+    font-style: normal;
+}
+.statement {
+    margin-top: var(--gap);
+    background: #fff4ee;
+    border-left: 6px solid #bf513b;
+    padding: var(--box-pad);
+    border-radius: 12px;
+    font-size: var(--statement);
+    font-weight: 800;
+}
+.statement.small { font-size: var(--body); font-weight: 700; }
+.flow-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap); }
+.flow-step {
+    display: grid;
+    grid-template-columns: var(--step) 1fr;
+    gap: 16px;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dae2ea;
+    border-radius: 14px;
+    padding: var(--box-pad);
+}
+.step-index {
+    width: var(--step);
+    height: var(--step);
+    border-radius: 50%;
+    background: #17212b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: var(--body);
+}
+.flow-step strong { display: block; font-size: var(--body); margin-bottom: 4px; }
+.truth-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap); }
+.pill {
+    background: #fff;
+    border: 1px solid #dae2ea;
+    border-radius: 14px;
+    padding: var(--box-pad);
+}
+.pill span { display: block; text-transform: uppercase; font-weight: 800; letter-spacing: .05em; }
+.pill strong { display: block; font-size: var(--body); margin-top: 6px; }
+.split { display: grid; grid-template-columns: .9fr 1.1fr; gap: var(--gap); align-items: stretch; }
+.signal-number {
+    background: #17212b;
+    color: #fff;
+    border-radius: 16px;
+    padding: var(--box-pad);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signal-number span { color: #d7a23a; font-size: var(--small); font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.signal-number strong { font-size: var(--hero-number); line-height: .95; margin: 10px 0; }
+.signal-number em { color: #dfe7ee; }
+.bars { display: grid; gap: 14px; }
+.bar-row { display: grid; gap: 7px; }
+.bar-label { display: flex; justify-content: space-between; gap: 16px; font-size: var(--small); font-weight: 800; }
+.bar-track { height: var(--bar); background: #e8edf2; border-radius: 999px; overflow: hidden; }
+.bar-fill { height: 100%; background: linear-gradient(90deg, #218a6a, #d7a23a); border-radius: 999px; }
+.funnel { display: grid; gap: var(--gap); }
+.funnel div {
+    background: #fff;
+    border: 1px solid #dae2ea;
+    border-left: 9px solid #4f6fa9;
+    border-radius: 14px;
+    padding: var(--box-pad);
+}
+.funnel span { display: block; color: #607085; font-size: var(--small); font-weight: 800; text-transform: uppercase; letter-spacing: .05em; }
+.funnel strong { display: block; font-size: var(--metric-value); margin: 4px 0; }
+.funnel em { display: block; }
+.geo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); }
+.geo-grid h2 { margin: 0 0 12px; font-size: var(--body); }
+.footer {
+    color: #607085;
+    border-top: 1px solid #d9e1ea;
+    padding-top: 14px;
+    font-size: var(--footer);
+    font-weight: 700;
+}
+body.square {
+    --pad: 66px;
+    --title: 72px;
+    --title-gap: 46px;
+    --kicker: 21px;
+    --body: 25px;
+    --small: 18px;
+    --statement: 30px;
+    --metric-value: 47px;
+    --hero-number: 86px;
+    --gap: 22px;
+    --box-pad: 24px;
+    --step: 50px;
+    --bar: 18px;
+    --metric-min: 174px;
+    --footer: 18px;
+}
+body.linkedin {
+    --pad: 44px;
+    --title: 47px;
+    --title-gap: 26px;
+    --kicker: 15px;
+    --body: 18px;
+    --small: 13px;
+    --statement: 22px;
+    --metric-value: 34px;
+    --hero-number: 63px;
+    --gap: 15px;
+    --box-pad: 17px;
+    --step: 38px;
+    --bar: 12px;
+    --metric-min: 110px;
+    --footer: 13px;
+}
+body.linkedin h1 { max-width: 1030px; }
+body.linkedin .content { padding-top: 16px; }
+body.linkedin .flow-grid { grid-template-columns: repeat(3, 1fr); }
+body.linkedin .truth-grid { grid-template-columns: repeat(5, 1fr); }
+body.linkedin .metric-grid.three { grid-template-columns: repeat(3, 1fr); }
+body.linkedin .statement { margin-top: 15px; }
+body.linkedin .funnel { grid-template-columns: repeat(3, 1fr); }
+body.linkedin .geo-grid h2 { margin-bottom: 8px; }
+</style>
+</head>
+<body class="square">
+<main class="card">
+    <section class="content">
+        <div class="kicker">Geographic Signal</div>
+        <h1>Where review could start first</h1>
+        
+                <div class="geo-grid">
+                    <div>
+                        <h2>Top states</h2>
+                        
+        <div class="bar-row">
+            <div class="bar-label"><span>Uttar Pradesh</span><strong>8,493</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:100.000%"></div></div>
+            <div class="bar-detail">5,727 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>Rajasthan</span><strong>5,345</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:62.934%"></div></div>
+            <div class="bar-detail">3,640 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>Bihar</span><strong>5,241</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:61.710%"></div></div>
+            <div class="bar-detail">3,394 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>Maharashtra</span><strong>4,784</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:56.329%"></div></div>
+            <div class="bar-detail">2,936 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>Gujarat</span><strong>4,341</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:51.113%"></div></div>
+            <div class="bar-detail">3,135 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>Tamil Nadu</span><strong>4,029</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:47.439%"></div></div>
+            <div class="bar-detail">962 high</div>
+        </div>
+    
+                    </div>
+                    <div>
+                        <h2>Top districts</h2>
+                        
+        <div class="bar-row">
+            <div class="bar-label"><span>Uttara Kannada, Karnataka</span><strong>237</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:100.000%"></div></div>
+            <div class="bar-detail">107 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>South 24 Parganas, West Bengal</span><strong>229</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:96.624%"></div></div>
+            <div class="bar-detail">144 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>Surendranagar, Gujarat</span><strong>225</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:94.937%"></div></div>
+            <div class="bar-detail">142 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>Saran, Bihar</span><strong>218</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:91.983%"></div></div>
+            <div class="bar-detail">140 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>Jaunpur, Uttar Pradesh</span><strong>211</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:89.030%"></div></div>
+            <div class="bar-detail">144 high</div>
+        </div>
+    
+        <div class="bar-row">
+            <div class="bar-label"><span>Samastipur, Bihar</span><strong>209</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width:88.186%"></div></div>
+            <div class="bar-detail">140 high</div>
+        </div>
+    
+                    </div>
+                </div>
+            
+    </section>
+    <footer class="footer">Use as prioritization signals for manual verification, not as final rankings</footer>
+</main>
+</body>
+</html>

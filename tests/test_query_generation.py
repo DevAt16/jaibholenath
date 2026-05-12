@@ -37,3 +37,12 @@ def test_default_eligible_locations_do_not_include_villages_or_cities():
         "city",
         "village",
     )
+
+
+def test_district_only_eligible_locations_exclude_default_expansion_types():
+    assert eligible_location_types(district_only=True) == ("district",)
+    assert eligible_location_types(
+        district_only=True,
+        include_cities=True,
+        include_villages=True,
+    ) == ("district",)
