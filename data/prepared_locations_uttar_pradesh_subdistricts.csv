@@ -1,0 +1,351 @@
+location_type,name,state_name,district_name,sub_district_name,state_lgd_code,district_lgd_code,sub_district_lgd_code,village_lgd_code,source
+sub_district,Agra,Uttar Pradesh,Agra,Agra,9,118,766,,lgd
+sub_district,Etmadpur,Uttar Pradesh,Agra,Etmadpur,9,118,765,,lgd
+sub_district,Bah,Uttar Pradesh,Agra,Bah,9,118,770,,lgd
+sub_district,Fatehabad,Uttar Pradesh,Agra,Fatehabad,9,118,769,,lgd
+sub_district,Kheragarh,Uttar Pradesh,Agra,Kheragarh,9,118,768,,lgd
+sub_district,Kiraoli,Uttar Pradesh,Agra,Kiraoli,9,118,767,,lgd
+sub_district,Iglas,Uttar Pradesh,Aligarh,Iglas,9,119,756,,lgd
+sub_district,Atrauli,Uttar Pradesh,Aligarh,Atrauli,9,119,754,,lgd
+sub_district,Khair,Uttar Pradesh,Aligarh,Khair,9,119,752,,lgd
+sub_district,Gabhana,Uttar Pradesh,Aligarh,Gabhana,9,119,753,,lgd
+sub_district,Koil,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+sub_district,Akbarpur,Uttar Pradesh,Ambedkar Nagar,Akbarpur,9,121,910,,lgd
+sub_district,Tanda,Uttar Pradesh,Ambedkar Nagar,Tanda,9,121,907,,lgd
+sub_district,Allapur,Uttar Pradesh,Ambedkar Nagar,Allapur,9,121,908,,lgd
+sub_district,Bhiti,Uttar Pradesh,Ambedkar Nagar,Bhiti,9,121,911,,lgd
+sub_district,Jalalpur,Uttar Pradesh,Ambedkar Nagar,Jalalpur,9,121,909,,lgd
+sub_district,Tiloi,Uttar Pradesh,Amethi,Tiloi,9,640,824,,lgd
+sub_district,Gauriganj,Uttar Pradesh,Amethi,Gauriganj,9,640,913,,lgd
+sub_district,Musafirkhana,Uttar Pradesh,Amethi,Musafirkhana,9,640,912,,lgd
+sub_district,Amethi,Uttar Pradesh,Amethi,Amethi,9,640,914,,lgd
+sub_district,Hasanpur,Uttar Pradesh,Amroha,Hasanpur,9,154,731,,lgd
+sub_district,Naugawan Sadat,Uttar Pradesh,Amroha,Naugawan Sadat,9,154,6831,,lgd
+sub_district,Amroha,Uttar Pradesh,Amroha,Amroha,9,154,730,,lgd
+sub_district,Dhanaura,Uttar Pradesh,Amroha,Dhanaura,9,154,729,,lgd
+sub_district,Auraiya,Uttar Pradesh,Auraiya,Auraiya,9,122,842,,lgd
+sub_district,Ajitmal,Uttar Pradesh,Auraiya,Ajitmal,9,122,6877,,lgd
+sub_district,Bidhuna,Uttar Pradesh,Auraiya,Bidhuna,9,122,841,,lgd
+sub_district,Rudauli,Uttar Pradesh,Ayodhya,Rudauli,9,140,902,,lgd
+sub_district,Sohawal,Uttar Pradesh,Ayodhya,Sohawal,9,140,904,,lgd
+sub_district,Faizabad,Uttar Pradesh,Ayodhya,Faizabad,9,140,905,,lgd
+sub_district,Bikapur,Uttar Pradesh,Ayodhya,Bikapur,9,140,906,,lgd
+sub_district,Milkipur,Uttar Pradesh,Ayodhya,Milkipur,9,140,903,,lgd
+sub_district,Burhanpur,Uttar Pradesh,Azamgarh,Burhanpur,9,123,964,,lgd
+sub_district,Lalganj,Uttar Pradesh,Azamgarh,Lalganj,9,123,969,,lgd
+sub_district,Martinganjon,Uttar Pradesh,Azamgarh,Martinganjon,9,123,6165,,lgd
+sub_district,Sagri,Uttar Pradesh,Azamgarh,Sagri,9,123,965,,lgd
+sub_district,Azamgarh,Uttar Pradesh,Azamgarh,Azamgarh,9,123,966,,lgd
+sub_district,Mehnagar,Uttar Pradesh,Azamgarh,Mehnagar,9,123,970,,lgd
+sub_district,Phulpur,Uttar Pradesh,Azamgarh,Phulpur,9,123,968,,lgd
+sub_district,Nizamabad,Uttar Pradesh,Azamgarh,Nizamabad,9,123,967,,lgd
+sub_district,Baraut,Uttar Pradesh,Baghpat,Baraut,9,124,735,,lgd
+sub_district,Khekada,Uttar Pradesh,Baghpat,Khekada,9,124,737,,lgd
+sub_district,Baghpat,Uttar Pradesh,Baghpat,Baghpat,9,124,736,,lgd
+sub_district,Kaiserganj,Uttar Pradesh,Bahraich,Kaiserganj,9,125,922,,lgd
+sub_district,Mihinpurwa Motipur,Uttar Pradesh,Bahraich,Mihinpurwa Motipur,9,125,6862,,lgd
+sub_district,Nanpara,Uttar Pradesh,Bahraich,Nanpara,9,125,919,,lgd
+sub_district,Payagpur,Uttar Pradesh,Bahraich,Payagpur,9,125,6861,,lgd
+sub_district,Bahraich,Uttar Pradesh,Bahraich,Bahraich,9,125,921,,lgd
+sub_district,Mahasi,Uttar Pradesh,Bahraich,Mahasi,9,125,920,,lgd
+sub_district,Ballia,Uttar Pradesh,Ballia,Ballia,9,126,978,,lgd
+sub_district,Rasra,Uttar Pradesh,Ballia,Rasra,9,126,977,,lgd
+sub_district,Belthara Road,Uttar Pradesh,Ballia,Belthara Road,9,126,975,,lgd
+sub_district,Bairia,Uttar Pradesh,Ballia,Bairia,9,126,980,,lgd
+sub_district,Bansdih,Uttar Pradesh,Ballia,Bansdih,9,126,979,,lgd
+sub_district,Sikanderpur,Uttar Pradesh,Ballia,Sikanderpur,9,126,976,,lgd
+sub_district,Utraula,Uttar Pradesh,Balrampur,Utraula,9,127,927,,lgd
+sub_district,Tulsipur,Uttar Pradesh,Balrampur,Tulsipur,9,127,926,,lgd
+sub_district,Balrampur,Uttar Pradesh,Balrampur,Balrampur,9,127,925,,lgd
+sub_district,Atarra,Uttar Pradesh,Banda,Atarra,9,128,873,,lgd
+sub_district,Pailani,Uttar Pradesh,Banda,Pailani,9,128,6157,,lgd
+sub_district,Naraini,Uttar Pradesh,Banda,Naraini,9,128,874,,lgd
+sub_district,Baberu,Uttar Pradesh,Banda,Baberu,9,128,872,,lgd
+sub_district,Banda,Uttar Pradesh,Banda,Banda,9,128,871,,lgd
+sub_district,Ramsanehighat,Uttar Pradesh,Bara Banki,Ramsanehighat,9,129,900,,lgd
+sub_district,Haidergarh,Uttar Pradesh,Bara Banki,Haidergarh,9,129,901,,lgd
+sub_district,Ramnagar,Uttar Pradesh,Bara Banki,Ramnagar,9,129,897,,lgd
+sub_district,Sirauli Gauspur,Uttar Pradesh,Bara Banki,Sirauli Gauspur,9,129,899,,lgd
+sub_district,Fatehpur,Uttar Pradesh,Bara Banki,Fatehpur,9,129,896,,lgd
+sub_district,Nawabganj,Uttar Pradesh,Bara Banki,Nawabganj,9,129,898,,lgd
+sub_district,Nawabganj,Uttar Pradesh,Bareilly,Nawabganj,9,130,788,,lgd
+sub_district,Aonla,Uttar Pradesh,Bareilly,Aonla,9,130,786,,lgd
+sub_district,Faridpur,Uttar Pradesh,Bareilly,Faridpur,9,130,789,,lgd
+sub_district,Meerganj,Uttar Pradesh,Bareilly,Meerganj,9,130,785,,lgd
+sub_district,Bareilly,Uttar Pradesh,Bareilly,Bareilly,9,130,787,,lgd
+sub_district,Baheri,Uttar Pradesh,Bareilly,Baheri,9,130,784,,lgd
+sub_district,Basti,Uttar Pradesh,Basti,Basti,9,131,939,,lgd
+sub_district,Rudhauli,Uttar Pradesh,Basti,Rudhauli,9,131,940,,lgd
+sub_district,Harraiya,Uttar Pradesh,Basti,Harraiya,9,131,938,,lgd
+sub_district,Bhanpur,Uttar Pradesh,Basti,Bhanpur,9,131,937,,lgd
+sub_district,Bhadohi,Uttar Pradesh,Bhadohi,Bhadohi,9,179,997,,lgd
+sub_district,Gyanpur,Uttar Pradesh,Bhadohi,Gyanpur,9,179,998,,lgd
+sub_district,Aurai,Uttar Pradesh,Bhadohi,Aurai,9,179,999,,lgd
+sub_district,Chandpur,Uttar Pradesh,Bijnor,Chandpur,9,132,716,,lgd
+sub_district,Dhampur,Uttar Pradesh,Bijnor,Dhampur,9,132,715,,lgd
+sub_district,Nagina,Uttar Pradesh,Bijnor,Nagina,9,132,714,,lgd
+sub_district,Najibabad,Uttar Pradesh,Bijnor,Najibabad,9,132,712,,lgd
+sub_district,Bijnor,Uttar Pradesh,Bijnor,Bijnor,9,132,713,,lgd
+sub_district,Dataganj,Uttar Pradesh,Budaun,Dataganj,9,133,783,,lgd
+sub_district,Bilsi,Uttar Pradesh,Budaun,Bilsi,9,133,780,,lgd
+sub_district,Bisauli,Uttar Pradesh,Budaun,Bisauli,9,133,779,,lgd
+sub_district,Budaun,Uttar Pradesh,Budaun,Budaun,9,133,782,,lgd
+sub_district,Sahaswan,Uttar Pradesh,Budaun,Sahaswan,9,133,781,,lgd
+sub_district,Anupshahr,Uttar Pradesh,Bulandshahr,Anupshahr,9,134,748,,lgd
+sub_district,Sikandrabad,Uttar Pradesh,Bulandshahr,Sikandrabad,9,134,745,,lgd
+sub_district,Bulandshahr,Uttar Pradesh,Bulandshahr,Bulandshahr,9,134,746,,lgd
+sub_district,Debai,Uttar Pradesh,Bulandshahr,Debai,9,134,749,,lgd
+sub_district,Khurja,Uttar Pradesh,Bulandshahr,Khurja,9,134,751,,lgd
+sub_district,Shikarpur,Uttar Pradesh,Bulandshahr,Shikarpur,9,134,750,,lgd
+sub_district,Siana,Uttar Pradesh,Bulandshahr,Siana,9,134,747,,lgd
+sub_district,Chakia,Uttar Pradesh,Chandauli,Chakia,9,135,994,,lgd
+sub_district,Naugarh,Uttar Pradesh,Chandauli,Naugarh,9,135,6870,,lgd
+sub_district,Chandauli,Uttar Pradesh,Chandauli,Chandauli,9,135,993,,lgd
+sub_district,Pandit Deendayal Upadhyay Nagar,Uttar Pradesh,Chandauli,Pandit Deendayal Upadhyay Nagar,9,135,6869,,lgd
+sub_district,Sakaldiha,Uttar Pradesh,Chandauli,Sakaldiha,9,135,992,,lgd
+sub_district,Manikpur,Uttar Pradesh,Chitrakoot,Manikpur,9,136,5930,,lgd
+sub_district,Mau,Uttar Pradesh,Chitrakoot,Mau,9,136,876,,lgd
+sub_district,Rajapur,Uttar Pradesh,Chitrakoot,Rajapur,9,136,6156,,lgd
+sub_district,Karwi,Uttar Pradesh,Chitrakoot,Karwi,9,136,875,,lgd
+sub_district,Bhatpar Rani,Uttar Pradesh,Deoria,Bhatpar Rani,9,137,963,,lgd
+sub_district,Rudrapur,Uttar Pradesh,Deoria,Rudrapur,9,137,960,,lgd
+sub_district,Salempur,Uttar Pradesh,Deoria,Salempur,9,137,962,,lgd
+sub_district,Barhaj,Uttar Pradesh,Deoria,Barhaj,9,137,961,,lgd
+sub_district,Deoria,Uttar Pradesh,Deoria,Deoria,9,137,959,,lgd
+sub_district,Etah,Uttar Pradesh,Etah,Etah,9,138,1008,,lgd
+sub_district,Jalesar,Uttar Pradesh,Etah,Jalesar,9,138,1009,,lgd
+sub_district,Aliganj,Uttar Pradesh,Etah,Aliganj,9,138,1007,,lgd
+sub_district,Bharthana,Uttar Pradesh,Etawah,Bharthana,9,139,839,,lgd
+sub_district,Saifai,Uttar Pradesh,Etawah,Saifai,9,139,837,,lgd
+sub_district,Chakarnagar,Uttar Pradesh,Etawah,Chakarnagar,9,139,840,,lgd
+sub_district,Etawah,Uttar Pradesh,Etawah,Etawah,9,139,838,,lgd
+sub_district,Jaswantnagar,Uttar Pradesh,Etawah,Jaswantnagar,9,139,836,,lgd
+sub_district,Takha,Uttar Pradesh,Etawah,Takha,9,139,6158,,lgd
+sub_district,Amritpur,Uttar Pradesh,Farrukhabad,Amritpur,9,141,831,,lgd
+sub_district,Farrukhabad,Uttar Pradesh,Farrukhabad,Farrukhabad,9,141,832,,lgd
+sub_district,Kaimganj,Uttar Pradesh,Farrukhabad,Kaimganj,9,141,830,,lgd
+sub_district,Bindki,Uttar Pradesh,Fatehpur,Bindki,9,142,877,,lgd
+sub_district,Khaga,Uttar Pradesh,Fatehpur,Khaga,9,142,879,,lgd
+sub_district,Fatehpur,Uttar Pradesh,Fatehpur,Fatehpur,9,142,878,,lgd
+sub_district,Shikohabad,Uttar Pradesh,Firozabad,Shikohabad,9,143,774,,lgd
+sub_district,Sirsaganj,Uttar Pradesh,Firozabad,Sirsaganj,9,143,6161,,lgd
+sub_district,Firozabad,Uttar Pradesh,Firozabad,Firozabad,9,143,772,,lgd
+sub_district,Jasrana,Uttar Pradesh,Firozabad,Jasrana,9,143,773,,lgd
+sub_district,Tundla,Uttar Pradesh,Firozabad,Tundla,9,143,771,,lgd
+sub_district,Gautam Buddha Nagar,Uttar Pradesh,Gautam Buddha Nagar,Gautam Buddha Nagar,9,144,743,,lgd
+sub_district,Dadri,Uttar Pradesh,Gautam Buddha Nagar,Dadri,9,144,742,,lgd
+sub_district,Jewar,Uttar Pradesh,Gautam Buddha Nagar,Jewar,9,144,744,,lgd
+sub_district,Modinagar,Uttar Pradesh,Ghaziabad,Modinagar,9,145,738,,lgd
+sub_district,Loni,Uttar Pradesh,Ghaziabad,Loni,9,145,6089,,lgd
+sub_district,Ghaziabad,Uttar Pradesh,Ghaziabad,Ghaziabad,9,145,739,,lgd
+sub_district,Jakhania,Uttar Pradesh,Ghazipur,Jakhania,9,146,987,,lgd
+sub_district,Mohammadabad,Uttar Pradesh,Ghazipur,Mohammadabad,9,146,990,,lgd
+sub_district,Sewarai,Uttar Pradesh,Ghazipur,Sewarai,9,146,6835,,lgd
+sub_district,Ghazipur,Uttar Pradesh,Ghazipur,Ghazipur,9,146,989,,lgd
+sub_district,Kasimabad,Uttar Pradesh,Ghazipur,Kasimabad,9,146,6834,,lgd
+sub_district,Zamania,Uttar Pradesh,Ghazipur,Zamania,9,146,991,,lgd
+sub_district,Saidpur,Uttar Pradesh,Ghazipur,Saidpur,9,146,988,,lgd
+sub_district,Gonda,Uttar Pradesh,Gonda,Gonda,9,147,928,,lgd
+sub_district,Tarabganj,Uttar Pradesh,Gonda,Tarabganj,9,147,930,,lgd
+sub_district,Colonelganj,Uttar Pradesh,Gonda,Colonelganj,9,147,929,,lgd
+sub_district,Mankapur,Uttar Pradesh,Gonda,Mankapur,9,147,931,,lgd
+sub_district,Campierganj,Uttar Pradesh,Gorakhpur,Campierganj,9,148,948,,lgd
+sub_district,Chauri Chaura,Uttar Pradesh,Gorakhpur,Chauri Chaura,9,148,951,,lgd
+sub_district,Gola,Uttar Pradesh,Gorakhpur,Gola,9,148,954,,lgd
+sub_district,Khajni,Uttar Pradesh,Gorakhpur,Khajni,9,148,953,,lgd
+sub_district,Sahjanwa,Uttar Pradesh,Gorakhpur,Sahjanwa,9,148,949,,lgd
+sub_district,Bansgaon,Uttar Pradesh,Gorakhpur,Bansgaon,9,148,952,,lgd
+sub_district,Gorakhpur,Uttar Pradesh,Gorakhpur,Gorakhpur,9,148,950,,lgd
+sub_district,Hamirpur,Uttar Pradesh,Hamirpur,Hamirpur,9,149,864,,lgd
+sub_district,Sarila,Uttar Pradesh,Hamirpur,Sarila,9,149,866,,lgd
+sub_district,Rath,Uttar Pradesh,Hamirpur,Rath,9,149,865,,lgd
+sub_district,Maudaha,Uttar Pradesh,Hamirpur,Maudaha,9,149,867,,lgd
+sub_district,Dhaulana,Uttar Pradesh,Hapur,Dhaulana,9,661,6032,,lgd
+sub_district,Hapur,Uttar Pradesh,Hapur,Hapur,9,661,740,,lgd
+sub_district,Garhmukteshwar,Uttar Pradesh,Hapur,Garhmukteshwar,9,661,741,,lgd
+sub_district,Bilgram,Uttar Pradesh,Hardoi,Bilgram,9,150,812,,lgd
+sub_district,Hardoi,Uttar Pradesh,Hardoi,Hardoi,9,150,811,,lgd
+sub_district,Shahabad,Uttar Pradesh,Hardoi,Shahabad,9,150,809,,lgd
+sub_district,Sandila,Uttar Pradesh,Hardoi,Sandila,9,150,813,,lgd
+sub_district,Sawayajpur,Uttar Pradesh,Hardoi,Sawayajpur,9,150,810,,lgd
+sub_district,Sadabad,Uttar Pradesh,Hathras,Sadabad,9,163,760,,lgd
+sub_district,Hathras,Uttar Pradesh,Hathras,Hathras,9,163,759,,lgd
+sub_district,Sasni,Uttar Pradesh,Hathras,Sasni,9,163,757,,lgd
+sub_district,Sikandra Rao,Uttar Pradesh,Hathras,Sikandra Rao,9,163,758,,lgd
+sub_district,Konch,Uttar Pradesh,Jalaun,Konch,9,151,855,,lgd
+sub_district,Orai,Uttar Pradesh,Jalaun,Orai,9,151,854,,lgd
+sub_district,Jalaun,Uttar Pradesh,Jalaun,Jalaun,9,151,852,,lgd
+sub_district,Kalpi,Uttar Pradesh,Jalaun,Kalpi,9,151,853,,lgd
+sub_district,Madhogarh,Uttar Pradesh,Jalaun,Madhogarh,9,151,851,,lgd
+sub_district,Machhlishahr,Uttar Pradesh,Jaunpur,Machhlishahr,9,152,983,,lgd
+sub_district,Badlapur,Uttar Pradesh,Jaunpur,Badlapur,9,152,982,,lgd
+sub_district,Shahganj,Uttar Pradesh,Jaunpur,Shahganj,9,152,981,,lgd
+sub_district,Kerakat,Uttar Pradesh,Jaunpur,Kerakat,9,152,986,,lgd
+sub_district,Jaunpur,Uttar Pradesh,Jaunpur,Jaunpur,9,152,984,,lgd
+sub_district,Mariahu,Uttar Pradesh,Jaunpur,Mariahu,9,152,985,,lgd
+sub_district,Tahrauli,Uttar Pradesh,Jhansi,Tahrauli,9,153,858,,lgd
+sub_district,Mauranipur,Uttar Pradesh,Jhansi,Mauranipur,9,153,859,,lgd
+sub_district,Moth,Uttar Pradesh,Jhansi,Moth,9,153,856,,lgd
+sub_district,Garautha,Uttar Pradesh,Jhansi,Garautha,9,153,857,,lgd
+sub_district,Jhansi,Uttar Pradesh,Jhansi,Jhansi,9,153,860,,lgd
+sub_district,Chhibramau,Uttar Pradesh,Kannauj,Chhibramau,9,155,833,,lgd
+sub_district,Kannauj,Uttar Pradesh,Kannauj,Kannauj,9,155,834,,lgd
+sub_district,Tirwa,Uttar Pradesh,Kannauj,Tirwa,9,155,835,,lgd
+sub_district,Bhognipur,Uttar Pradesh,Kanpur Dehat,Bhognipur,9,156,846,,lgd
+sub_district,Derapur,Uttar Pradesh,Kanpur Dehat,Derapur,9,156,844,,lgd
+sub_district,Maitha,Uttar Pradesh,Kanpur Dehat,Maitha,9,156,6871,,lgd
+sub_district,Sikandra,Uttar Pradesh,Kanpur Dehat,Sikandra,9,156,847,,lgd
+sub_district,Akbarpur,Uttar Pradesh,Kanpur Dehat,Akbarpur,9,156,845,,lgd
+sub_district,Rasulabad,Uttar Pradesh,Kanpur Dehat,Rasulabad,9,156,843,,lgd
+sub_district,Bilhaur,Uttar Pradesh,Kanpur Nagar,Bilhaur,9,157,848,,lgd
+sub_district,Ghatampur,Uttar Pradesh,Kanpur Nagar,Ghatampur,9,157,850,,lgd
+sub_district,Kanpur,Uttar Pradesh,Kanpur Nagar,Kanpur,9,157,849,,lgd
+sub_district,Narwal,Uttar Pradesh,Kanpur Nagar,Narwal,9,157,6163,,lgd
+sub_district,Kasganj,Uttar Pradesh,Kasganj,Kasganj,9,633,1010,,lgd
+sub_district,Patiyali,Uttar Pradesh,Kasganj,Patiyali,9,633,1012,,lgd
+sub_district,Sahawar,Uttar Pradesh,Kasganj,Sahawar,9,633,1011,,lgd
+sub_district,Chail,Uttar Pradesh,Kaushambi,Chail,9,158,887,,lgd
+sub_district,Manjhanpur,Uttar Pradesh,Kaushambi,Manjhanpur,9,158,886,,lgd
+sub_district,Sirathu,Uttar Pradesh,Kaushambi,Sirathu,9,158,885,,lgd
+sub_district,Palia,Uttar Pradesh,Kheri,Palia,9,159,798,,lgd
+sub_district,Gola Gokaran Nath,Uttar Pradesh,Kheri,Gola Gokaran Nath,9,159,799,,lgd
+sub_district,Lakhimpur,Uttar Pradesh,Kheri,Lakhimpur,9,159,801,,lgd
+sub_district,Nighasan,Uttar Pradesh,Kheri,Nighasan,9,159,797,,lgd
+sub_district,Mitauli,Uttar Pradesh,Kheri,Mitauli,9,159,6875,,lgd
+sub_district,Mohammdi,Uttar Pradesh,Kheri,Mohammdi,9,159,800,,lgd
+sub_district,Dhaurahara,Uttar Pradesh,Kheri,Dhaurahara,9,159,802,,lgd
+sub_district,Khadda,Uttar Pradesh,Kushinagar,Khadda,9,160,6878,,lgd
+sub_district,Padrauna,Uttar Pradesh,Kushinagar,Padrauna,9,160,955,,lgd
+sub_district,Kaptanganj,Uttar Pradesh,Kushinagar,Kaptanganj,9,160,6879,,lgd
+sub_district,Hata,Uttar Pradesh,Kushinagar,Hata,9,160,956,,lgd
+sub_district,Kasya,Uttar Pradesh,Kushinagar,Kasya,9,160,957,,lgd
+sub_district,Tamkuhi Raj,Uttar Pradesh,Kushinagar,Tamkuhi Raj,9,160,958,,lgd
+sub_district,Mahroni,Uttar Pradesh,Lalitpur,Mahroni,9,161,863,,lgd
+sub_district,Mdawara,Uttar Pradesh,Lalitpur,Mdawara,9,161,6369,,lgd
+sub_district,Talbehat,Uttar Pradesh,Lalitpur,Talbehat,9,161,861,,lgd
+sub_district,Lalitpur,Uttar Pradesh,Lalitpur,Lalitpur,9,161,862,,lgd
+sub_district,Pali,Uttar Pradesh,Lalitpur,Pali,9,161,6881,,lgd
+sub_district,Sarojani Nagar,Uttar Pradesh,Lucknow,Sarojani Nagar,9,162,6094,,lgd
+sub_district,Sadar,Uttar Pradesh,Lucknow,Sadar,9,162,821,,lgd
+sub_district,Bakshi Ka Talab,Uttar Pradesh,Lucknow,Bakshi Ka Talab,9,162,820,,lgd
+sub_district,Malihabad,Uttar Pradesh,Lucknow,Malihabad,9,162,819,,lgd
+sub_district,Mohanlalganj,Uttar Pradesh,Lucknow,Mohanlalganj,9,162,822,,lgd
+sub_district,Charkhari,Uttar Pradesh,Mahoba,Charkhari,9,165,869,,lgd
+sub_district,Mahoba,Uttar Pradesh,Mahoba,Mahoba,9,165,870,,lgd
+sub_district,Kulpahar,Uttar Pradesh,Mahoba,Kulpahar,9,165,868,,lgd
+sub_district,Pharenda,Uttar Pradesh,Mahrajganj,Pharenda,9,164,946,,lgd
+sub_district,Maharajganj,Uttar Pradesh,Mahrajganj,Maharajganj,9,164,947,,lgd
+sub_district,Nautanwa,Uttar Pradesh,Mahrajganj,Nautanwa,9,164,944,,lgd
+sub_district,Nichlaul,Uttar Pradesh,Mahrajganj,Nichlaul,9,164,945,,lgd
+sub_district,Ghiror,Uttar Pradesh,Mainpuri,Ghiror,9,166,6873,,lgd
+sub_district,Kishni,Uttar Pradesh,Mainpuri,Kishni,9,166,6872,,lgd
+sub_district,Kurawali,Uttar Pradesh,Mainpuri,Kurawali,9,166,6874,,lgd
+sub_district,Mainpuri,Uttar Pradesh,Mainpuri,Mainpuri,9,166,775,,lgd
+sub_district,Bhogaon,Uttar Pradesh,Mainpuri,Bhogaon,9,166,777,,lgd
+sub_district,Karhal,Uttar Pradesh,Mainpuri,Karhal,9,166,776,,lgd
+sub_district,Mat,Uttar Pradesh,Mathura,Mat,9,167,762,,lgd
+sub_district,Govardhan,Uttar Pradesh,Mathura,Govardhan,9,167,6832,,lgd
+sub_district,Chhata,Uttar Pradesh,Mathura,Chhata,9,167,761,,lgd
+sub_district,Mahavan,Uttar Pradesh,Mathura,Mahavan,9,167,763,,lgd
+sub_district,Mathura,Uttar Pradesh,Mathura,Mathura,9,167,764,,lgd
+sub_district,Ghosi,Uttar Pradesh,Mau,Ghosi,9,168,971,,lgd
+sub_district,Maunath Bhanjan,Uttar Pradesh,Mau,Maunath Bhanjan,9,168,973,,lgd
+sub_district,Muhammadabad Gohna,Uttar Pradesh,Mau,Muhammadabad Gohna,9,168,974,,lgd
+sub_district,Madhuban,Uttar Pradesh,Mau,Madhuban,9,168,972,,lgd
+sub_district,Mawana,Uttar Pradesh,Meerut,Mawana,9,169,733,,lgd
+sub_district,Meerut,Uttar Pradesh,Meerut,Meerut,9,169,734,,lgd
+sub_district,Sardhana,Uttar Pradesh,Meerut,Sardhana,9,169,732,,lgd
+sub_district,Mirzapur,Uttar Pradesh,Mirzapur,Mirzapur,9,170,1000,,lgd
+sub_district,Lalganj,Uttar Pradesh,Mirzapur,Lalganj,9,170,1001,,lgd
+sub_district,Chunar,Uttar Pradesh,Mirzapur,Chunar,9,170,1003,,lgd
+sub_district,Marihan,Uttar Pradesh,Mirzapur,Marihan,9,170,1002,,lgd
+sub_district,Moradabad,Uttar Pradesh,Moradabad,Moradabad,9,171,719,,lgd
+sub_district,Bilari,Uttar Pradesh,Moradabad,Bilari,9,171,720,,lgd
+sub_district,Kanth,Uttar Pradesh,Moradabad,Kanth,9,171,718,,lgd
+sub_district,Thakurdwara,Uttar Pradesh,Moradabad,Thakurdwara,9,171,717,,lgd
+sub_district,Khatauli,Uttar Pradesh,Muzaffarnagar,Khatauli,9,172,710,,lgd
+sub_district,Jansath,Uttar Pradesh,Muzaffarnagar,Jansath,9,172,711,,lgd
+sub_district,Muzaffarnagar,Uttar Pradesh,Muzaffarnagar,Muzaffarnagar,9,172,708,,lgd
+sub_district,Budhana,Uttar Pradesh,Muzaffarnagar,Budhana,9,172,709,,lgd
+sub_district,Pilibhit,Uttar Pradesh,Pilibhit,Pilibhit,9,173,790,,lgd
+sub_district,Puranpur,Uttar Pradesh,Pilibhit,Puranpur,9,173,792,,lgd
+sub_district,Amariya,Uttar Pradesh,Pilibhit,Amariya,9,173,6867,,lgd
+sub_district,Bisalpur,Uttar Pradesh,Pilibhit,Bisalpur,9,173,791,,lgd
+sub_district,Kalinagar,Uttar Pradesh,Pilibhit,Kalinagar,9,173,6866,,lgd
+sub_district,Kunda,Uttar Pradesh,Pratapgarh,Kunda,9,174,881,,lgd
+sub_district,Raniganj,Uttar Pradesh,Pratapgarh,Raniganj,9,174,884,,lgd
+sub_district,Lalganj,Uttar Pradesh,Pratapgarh,Lalganj,9,174,880,,lgd
+sub_district,Patti,Uttar Pradesh,Pratapgarh,Patti,9,174,883,,lgd
+sub_district,Pratapgarh,Uttar Pradesh,Pratapgarh,Pratapgarh,9,174,882,,lgd
+sub_district,Allahabad,Uttar Pradesh,Prayagraj,Allahabad,9,120,890,,lgd
+sub_district,Koraon,Uttar Pradesh,Prayagraj,Koraon,9,120,895,,lgd
+sub_district,Soraon,Uttar Pradesh,Prayagraj,Soraon,9,120,888,,lgd
+sub_district,Bara,Uttar Pradesh,Prayagraj,Bara,9,120,891,,lgd
+sub_district,Karchhana,Uttar Pradesh,Prayagraj,Karchhana,9,120,892,,lgd
+sub_district,Meja,Uttar Pradesh,Prayagraj,Meja,9,120,894,,lgd
+sub_district,Handia,Uttar Pradesh,Prayagraj,Handia,9,120,893,,lgd
+sub_district,Phulpur,Uttar Pradesh,Prayagraj,Phulpur,9,120,889,,lgd
+sub_district,Maharajganj,Uttar Pradesh,Rae Bareli,Maharajganj,9,175,823,,lgd
+sub_district,Rae Bareli,Uttar Pradesh,Rae Bareli,Rae Bareli,9,175,825,,lgd
+sub_district,Salon,Uttar Pradesh,Rae Bareli,Salon,9,175,829,,lgd
+sub_district,Unchahar,Uttar Pradesh,Rae Bareli,Unchahar,9,175,828,,lgd
+sub_district,Dalmau,Uttar Pradesh,Rae Bareli,Dalmau,9,175,827,,lgd
+sub_district,Lalganj,Uttar Pradesh,Rae Bareli,Lalganj,9,175,826,,lgd
+sub_district,Shahabad,Uttar Pradesh,Rampur,Shahabad,9,176,727,,lgd
+sub_district,Bilaspur,Uttar Pradesh,Rampur,Bilaspur,9,176,725,,lgd
+sub_district,Milak,Uttar Pradesh,Rampur,Milak,9,176,728,,lgd
+sub_district,Suar,Uttar Pradesh,Rampur,Suar,9,176,723,,lgd
+sub_district,Rampur,Uttar Pradesh,Rampur,Rampur,9,176,726,,lgd
+sub_district,Tanda,Uttar Pradesh,Rampur,Tanda,9,176,724,,lgd
+sub_district,Behat,Uttar Pradesh,Saharanpur,Behat,9,177,701,,lgd
+sub_district,Rampur Maniharan,Uttar Pradesh,Saharanpur,Rampur Maniharan,9,177,705,,lgd
+sub_district,Saharanpur,Uttar Pradesh,Saharanpur,Saharanpur,9,177,702,,lgd
+sub_district,Deoband,Uttar Pradesh,Saharanpur,Deoband,9,177,704,,lgd
+sub_district,Nakur,Uttar Pradesh,Saharanpur,Nakur,9,177,703,,lgd
+sub_district,Sambhal,Uttar Pradesh,Sambhal,Sambhal,9,659,721,,lgd
+sub_district,Chandausi,Uttar Pradesh,Sambhal,Chandausi,9,659,722,,lgd
+sub_district,Gunnaur,Uttar Pradesh,Sambhal,Gunnaur,9,659,778,,lgd
+sub_district,Ghanghata,Uttar Pradesh,Sant Kabir Nagar,Ghanghata,9,178,943,,lgd
+sub_district,Mehdawal,Uttar Pradesh,Sant Kabir Nagar,Mehdawal,9,178,941,,lgd
+sub_district,Khalilabad,Uttar Pradesh,Sant Kabir Nagar,Khalilabad,9,178,942,,lgd
+sub_district,Tilhar,Uttar Pradesh,Shahjahanpur,Tilhar,9,180,794,,lgd
+sub_district,Jalalabad,Uttar Pradesh,Shahjahanpur,Jalalabad,9,180,796,,lgd
+sub_district,Shahjahanpur,Uttar Pradesh,Shahjahanpur,Shahjahanpur,9,180,795,,lgd
+sub_district,Kalan,Uttar Pradesh,Shahjahanpur,Kalan,9,180,6882,,lgd
+sub_district,Powayan,Uttar Pradesh,Shahjahanpur,Powayan,9,180,793,,lgd
+sub_district,Kairana,Uttar Pradesh,Shamli,Kairana,9,660,706,,lgd
+sub_district,Un,Uttar Pradesh,Shamli,Un,9,660,6159,,lgd
+sub_district,Shamli,Uttar Pradesh,Shamli,Shamli,9,660,707,,lgd
+sub_district,Ikauna,Uttar Pradesh,Shrawasti,Ikauna,9,181,924,,lgd
+sub_district,Jamunaha,Uttar Pradesh,Shrawasti,Jamunaha,9,181,6164,,lgd
+sub_district,Bhinga,Uttar Pradesh,Shrawasti,Bhinga,9,181,923,,lgd
+sub_district,Naugarh,Uttar Pradesh,Siddharthnagar,Naugarh,9,182,933,,lgd
+sub_district,Bansi,Uttar Pradesh,Siddharthnagar,Bansi,9,182,934,,lgd
+sub_district,Shohratgarh,Uttar Pradesh,Siddharthnagar,Shohratgarh,9,182,932,,lgd
+sub_district,Domariyaganj,Uttar Pradesh,Siddharthnagar,Domariyaganj,9,182,936,,lgd
+sub_district,Itwa,Uttar Pradesh,Siddharthnagar,Itwa,9,182,935,,lgd
+sub_district,Laharpur,Uttar Pradesh,Sitapur,Laharpur,9,183,805,,lgd
+sub_district,Misrikh,Uttar Pradesh,Sitapur,Misrikh,9,183,803,,lgd
+sub_district,Sidhauli,Uttar Pradesh,Sitapur,Sidhauli,9,183,808,,lgd
+sub_district,Mahmudabad,Uttar Pradesh,Sitapur,Mahmudabad,9,183,807,,lgd
+sub_district,Maholi,Uttar Pradesh,Sitapur,Maholi,9,183,6880,,lgd
+sub_district,Sitapur,Uttar Pradesh,Sitapur,Sitapur,9,183,804,,lgd
+sub_district,Biswan,Uttar Pradesh,Sitapur,Biswan,9,183,806,,lgd
+sub_district,Obra,Uttar Pradesh,Sonbhadra,Obra,9,184,7127,,lgd
+sub_district,Robertsganj,Uttar Pradesh,Sonbhadra,Robertsganj,9,184,1005,,lgd
+sub_district,Dudhi,Uttar Pradesh,Sonbhadra,Dudhi,9,184,1006,,lgd
+sub_district,Ghorawal,Uttar Pradesh,Sonbhadra,Ghorawal,9,184,1004,,lgd
+sub_district,Baldirai,Uttar Pradesh,Sultanpur,Baldirai,9,185,6868,,lgd
+sub_district,Jaisinghpur,Uttar Pradesh,Sultanpur,Jaisinghpur,9,185,916,,lgd
+sub_district,Kadipur,Uttar Pradesh,Sultanpur,Kadipur,9,185,918,,lgd
+sub_district,Lambhua,Uttar Pradesh,Sultanpur,Lambhua,9,185,917,,lgd
+sub_district,Sultanpur,Uttar Pradesh,Sultanpur,Sultanpur,9,185,915,,lgd
+sub_district,Bangarmau,Uttar Pradesh,Unnao,Bangarmau,9,186,6160,,lgd
+sub_district,Bighapur,Uttar Pradesh,Unnao,Bighapur,9,186,818,,lgd
+sub_district,Hasanganj,Uttar Pradesh,Unnao,Hasanganj,9,186,815,,lgd
+sub_district,Purwa,Uttar Pradesh,Unnao,Purwa,9,186,817,,lgd
+sub_district,Unnao,Uttar Pradesh,Unnao,Unnao,9,186,816,,lgd
+sub_district,Safipur,Uttar Pradesh,Unnao,Safipur,9,186,814,,lgd
+sub_district,Pindra,Uttar Pradesh,Varanasi,Pindra,9,187,995,,lgd
+sub_district,Rajatalab,Uttar Pradesh,Varanasi,Rajatalab,9,187,6093,,lgd
+sub_district,Varanasi Sadar,Uttar Pradesh,Varanasi,Varanasi Sadar,9,187,996,,lgd

@@ -1,0 +1,771 @@
+location_type,name,state_name,district_name,sub_district_name,state_lgd_code,district_lgd_code,sub_district_lgd_code,village_lgd_code,source
+urban_local_body,Agra,Uttar Pradesh,,Agra,9,,766,,lgd
+urban_local_body,Aligarh,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Ayodhya,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bareilly,Uttar Pradesh,Bareilly,Bareilly,9,130,787,,lgd
+urban_local_body,Firozabad,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Ghaziabad,Uttar Pradesh,,Ghaziabad,9,,739,,lgd
+urban_local_body,Gorakhpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Jhansi,Uttar Pradesh,Jhansi,Jhansi,9,153,860,,lgd
+urban_local_body,Kanpur,Uttar Pradesh,,Ghatampur,9,,850,,lgd
+urban_local_body,Lucknow,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Mathura-Vrindavan,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Meerut,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Moradabad,Uttar Pradesh,Moradabad,Moradabad,9,171,719,,lgd
+urban_local_body,Prayagraj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Saharanpur,Uttar Pradesh,Saharanpur,Saharanpur,9,177,702,,lgd
+urban_local_body,Shahjahanpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Varanasi,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Achhnera,Uttar Pradesh,Agra,Kiraoli,9,118,767,,lgd
+urban_local_body,Afzalgarh,Uttar Pradesh,Bijnor,Dhampur,9,132,715,,lgd
+urban_local_body,Ahraura,Uttar Pradesh,Mirzapur,Chunar,9,170,1003,,lgd
+urban_local_body,Akbarpur,Uttar Pradesh,,Akbarpur,9,,910,,lgd
+urban_local_body,Aliganj,Uttar Pradesh,Etah,Aliganj,9,138,1007,,lgd
+urban_local_body,Amroha,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Anupshahr,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Aonla,Uttar Pradesh,Bareilly,,9,130,,,lgd
+urban_local_body,Atarra,Uttar Pradesh,Banda,Atarra,9,128,873,,lgd
+urban_local_body,Atrauli,Uttar Pradesh,Aligarh,Atrauli,9,119,754,,lgd
+urban_local_body,Auraiya,Uttar Pradesh,Auraiya,Auraiya,9,122,842,,lgd
+urban_local_body,Azamgarh,Uttar Pradesh,,Azamgarh,9,,966,,lgd
+urban_local_body,Baansi,Uttar Pradesh,Siddharthnagar,Bansi,9,182,934,,lgd
+urban_local_body,Bachhraon,Uttar Pradesh,Amroha,,9,154,,,lgd
+urban_local_body,Baghpat,Uttar Pradesh,Baghpat,Baghpat,9,124,736,,lgd
+urban_local_body,Bah,Uttar Pradesh,Agra,Bah,9,118,770,,lgd
+urban_local_body,Bahedi,Uttar Pradesh,Bareilly,Baheri,9,130,784,,lgd
+urban_local_body,Bahjoi,Uttar Pradesh,,Chandausi,9,,722,,lgd
+urban_local_body,Bahraich,Uttar Pradesh,Bahraich,Bahraich,9,125,921,,lgd
+urban_local_body,Ballia,Uttar Pradesh,Ballia,Ballia,9,126,978,,lgd
+urban_local_body,Balrampur,Uttar Pradesh,Balrampur,Balrampur,9,127,925,,lgd
+urban_local_body,Banda,Uttar Pradesh,,Banda,9,,871,,lgd
+urban_local_body,Baraut,Uttar Pradesh,,Baraut,9,,735,,lgd
+urban_local_body,Barua Sagar,Uttar Pradesh,Jhansi,Jhansi,9,153,860,,lgd
+urban_local_body,Basti,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Belha,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bhadohi,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bharwari(Kaushambi),Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bhinga,Uttar Pradesh,,Bhinga,9,,923,,lgd
+urban_local_body,Bijnor,Uttar Pradesh,Bijnor,,9,132,,,lgd
+urban_local_body,Bilari,Uttar Pradesh,Moradabad,Bilari,9,171,720,,lgd
+urban_local_body,Bilariaganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bilaspur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bilgram,Uttar Pradesh,Hardoi,Bilgram,9,150,812,,lgd
+urban_local_body,Bilhaur,Uttar Pradesh,,Bilhaur,9,,848,,lgd
+urban_local_body,Bilsi,Uttar Pradesh,Budaun,Bilsi,9,133,780,,lgd
+urban_local_body,Bindki,Uttar Pradesh,Fatehpur,Bindki,9,142,877,,lgd
+urban_local_body,Bisalpur,Uttar Pradesh,Pilibhit,Bisalpur,9,173,791,,lgd
+urban_local_body,Bisauli,Uttar Pradesh,Budaun,Bisauli,9,133,779,,lgd
+urban_local_body,Biswan,Uttar Pradesh,Sitapur,Biswan,9,183,806,,lgd
+urban_local_body,Budaun,Uttar Pradesh,Budaun,Budaun,9,133,782,,lgd
+urban_local_body,Bulandshahr,Uttar Pradesh,Bulandshahr,Bulandshahr,9,134,746,,lgd
+urban_local_body,Chandausi,Uttar Pradesh,Sambhal,Chandausi,9,659,722,,lgd
+urban_local_body,Chandpur,Uttar Pradesh,Bijnor,Chandpur,9,132,716,,lgd
+urban_local_body,Charkhari,Uttar Pradesh,Mahoba,Charkhari,9,165,869,,lgd
+urban_local_body,Chhibramau,Uttar Pradesh,,Chhibramau,9,,833,,lgd
+urban_local_body,Chirgaon,Uttar Pradesh,Jhansi,Moth,9,153,856,,lgd
+urban_local_body,Chitrakoot Dham - Karwi,Uttar Pradesh,,Karwi,9,,875,,lgd
+urban_local_body,Chunar,Uttar Pradesh,Mirzapur,Chunar,9,170,1003,,lgd
+urban_local_body,Colonelganj,Uttar Pradesh,,Colonelganj,9,,929,,lgd
+urban_local_body,Dadri,Uttar Pradesh,Gautam Buddha Nagar,Dadri,9,144,742,,lgd
+urban_local_body,Debai,Uttar Pradesh,Bulandshahr,Debai,9,134,749,,lgd
+urban_local_body,Deoband,Uttar Pradesh,Saharanpur,Deoband,9,177,704,,lgd
+urban_local_body,Deoria,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Dhampur,Uttar Pradesh,Bijnor,Dhampur,9,132,715,,lgd
+urban_local_body,Dhanaura,Uttar Pradesh,Amroha,Dhanaura,9,154,729,,lgd
+urban_local_body,Etah,Uttar Pradesh,Etah,Etah,9,138,1008,,lgd
+urban_local_body,Etawah,Uttar Pradesh,,Etawah,9,,838,,lgd
+urban_local_body,Etmadpur,Uttar Pradesh,Agra,Etmadpur,9,118,765,,lgd
+urban_local_body,Faridpur,Uttar Pradesh,Bareilly,Faridpur,9,130,789,,lgd
+urban_local_body,Farrukhabad,Uttar Pradesh,,Farrukhabad,9,,832,,lgd
+urban_local_body,Fatehpur(Fatehpur),Uttar Pradesh,Fatehpur,Fatehpur,9,142,878,,lgd
+urban_local_body,Fatehpur Sikri,Uttar Pradesh,Agra,Kiraoli,9,118,767,,lgd
+urban_local_body,Gajralua,Uttar Pradesh,Amroha,,9,154,,,lgd
+urban_local_body,Gangoh,Uttar Pradesh,Saharanpur,Nakur,9,177,703,,lgd
+urban_local_body,Ganj Dundwara,Uttar Pradesh,Kasganj,Patiyali,9,633,1012,,lgd
+urban_local_body,Garhmukteshwar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Gaura Barhaj,Uttar Pradesh,,Barhaj,9,,961,,lgd
+urban_local_body,Gauriganj,Uttar Pradesh,Amethi,Gauriganj,9,640,913,,lgd
+urban_local_body,Ghatampur,Uttar Pradesh,Kanpur Nagar,Ghatampur,9,157,850,,lgd
+urban_local_body,Ghazipur,Uttar Pradesh,Ghazipur,Ghazipur,9,146,989,,lgd
+urban_local_body,Gola Gokarannath,Uttar Pradesh,Kheri,Gola Gokaran Nath,9,159,799,,lgd
+urban_local_body,Gonda,Uttar Pradesh,Gonda,Gonda,9,147,928,,lgd
+urban_local_body,Gopi Ganj,Uttar Pradesh,Bhadohi,Gyanpur,9,179,998,,lgd
+urban_local_body,Gulaothi,Uttar Pradesh,Bulandshahr,Bulandshahr,9,134,746,,lgd
+urban_local_body,Gursahaiganj,Uttar Pradesh,Kannauj,Chhibramau,9,155,833,,lgd
+urban_local_body,Gursarai,Uttar Pradesh,Jhansi,Garautha,9,153,857,,lgd
+urban_local_body,Haldaur,Uttar Pradesh,Bijnor,Bijnor,9,132,713,,lgd
+urban_local_body,Hamirpur,Uttar Pradesh,Hamirpur,,9,149,,,lgd
+urban_local_body,Hapur,Uttar Pradesh,,Hapur,9,,740,,lgd
+urban_local_body,Hardoi,Uttar Pradesh,Hardoi,Hardoi,9,150,811,,lgd
+urban_local_body,Hasanpur,Uttar Pradesh,Amroha,,9,154,,,lgd
+urban_local_body,Hata,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Hathras,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Jahangirabad,Uttar Pradesh,Bulandshahr,Anupshahr,9,134,748,,lgd
+urban_local_body,Jalalabad,Uttar Pradesh,Shahjahanpur,Jalalabad,9,180,796,,lgd
+urban_local_body,Jalalpur,Uttar Pradesh,Ambedkar Nagar,,9,121,,,lgd
+urban_local_body,Jalaun,Uttar Pradesh,Jalaun,Jalaun,9,151,852,,lgd
+urban_local_body,Jalesar,Uttar Pradesh,Etah,Jalesar,9,138,1009,,lgd
+urban_local_body,Jaswantnagar,Uttar Pradesh,Etawah,,9,139,,,lgd
+urban_local_body,Jaunpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Jhinjhak,Uttar Pradesh,,Derapur,9,,844,,lgd
+urban_local_body,Kaasganj,Uttar Pradesh,Kasganj,Kasganj,9,633,1010,,lgd
+urban_local_body,Kaimganj,Uttar Pradesh,Farrukhabad,Kaimganj,9,141,830,,lgd
+urban_local_body,Kakrala,Uttar Pradesh,Budaun,Dataganj,9,133,783,,lgd
+urban_local_body,Kalpi,Uttar Pradesh,Jalaun,Kalpi,9,151,853,,lgd
+urban_local_body,Khair,Uttar Pradesh,Aligarh,Khair,9,119,752,,lgd
+urban_local_body,Khairabad,Uttar Pradesh,Sitapur,Sitapur,9,183,804,,lgd
+urban_local_body,Khalilabad,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Khatauli,Uttar Pradesh,,Khatauli,9,,710,,lgd
+urban_local_body,Khekada,Uttar Pradesh,Baghpat,,9,124,,,lgd
+urban_local_body,Khoda Makanpur,Uttar Pradesh,,Ghaziabad,9,,739,,lgd
+urban_local_body,Khurja,Uttar Pradesh,Bulandshahr,Khurja,9,134,751,,lgd
+urban_local_body,Kiratpur,Uttar Pradesh,Bijnor,Najibabad,9,132,712,,lgd
+urban_local_body,Konch,Uttar Pradesh,Jalaun,Konch,9,151,855,,lgd
+urban_local_body,Kosi Kalan,Uttar Pradesh,Mathura,Chhata,9,167,761,,lgd
+urban_local_body,Kushinagar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Laharpur,Uttar Pradesh,Sitapur,Laharpur,9,183,805,,lgd
+urban_local_body,Lakhimpur,Uttar Pradesh,Kheri,Lakhimpur,9,159,801,,lgd
+urban_local_body,Lalitpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Loni,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Maharajganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Mahmudabad,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Mahoba,Uttar Pradesh,,Mahoba,9,,870,,lgd
+urban_local_body,Mainpuri,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Manjhanpur,Uttar Pradesh,,Sirathu,9,,885,,lgd
+urban_local_body,Marehra,Uttar Pradesh,Etah,,9,138,,,lgd
+urban_local_body,Maudaha,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Maunath Bhanjan,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Mauranipur,Uttar Pradesh,Jhansi,Mauranipur,9,153,859,,lgd
+urban_local_body,Mawana,Uttar Pradesh,,Mawana,9,,733,,lgd
+urban_local_body,Milak,Uttar Pradesh,,Milak,9,,728,,lgd
+urban_local_body,Mirzapur-Cum-Vindhyachal,Uttar Pradesh,Mirzapur,Mirzapur,9,170,1000,,lgd
+urban_local_body,Misrikh Cum Neemsar,Uttar Pradesh,Sitapur,Misrikh,9,183,803,,lgd
+urban_local_body,Modinagar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Mohammadabad(Gazipur),Uttar Pradesh,Ghazipur,Mohammadabad,9,146,990,,lgd
+urban_local_body,Mohammadi,Uttar Pradesh,Kheri,,9,159,,,lgd
+urban_local_body,Mubarakpur,Uttar Pradesh,,Azamgarh,9,,966,,lgd
+urban_local_body,Mungra Badshahpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Muradnagar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Muzaffarnagar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Nagina,Uttar Pradesh,Bijnor,Nagina,9,132,714,,lgd
+urban_local_body,Najibabad,Uttar Pradesh,Bijnor,Najibabad,9,132,712,,lgd
+urban_local_body,Nakur,Uttar Pradesh,Saharanpur,Nakur,9,177,703,,lgd
+urban_local_body,Nanpara,Uttar Pradesh,Bahraich,Nanpara,9,125,919,,lgd
+urban_local_body,Nautanwa,Uttar Pradesh,Mahrajganj,Nautanwa,9,164,944,,lgd
+urban_local_body,Nawabganj (Bara Banki),Uttar Pradesh,Bara Banki,,9,129,,,lgd
+urban_local_body,Nawabganj(Bareilly),Uttar Pradesh,Bareilly,,9,130,,,lgd
+urban_local_body,Nawabganj(Gonda),Uttar Pradesh,Gonda,Tarabganj,9,147,930,,lgd
+urban_local_body,Nehtaur,Uttar Pradesh,Bijnor,Dhampur,9,132,715,,lgd
+urban_local_body,Noorpur,Uttar Pradesh,Bijnor,Chandpur,9,132,716,,lgd
+urban_local_body,Orai,Uttar Pradesh,Jalaun,,9,151,,,lgd
+urban_local_body,Padrauna,Uttar Pradesh,Kushinagar,,9,160,,,lgd
+urban_local_body,Palia Kalan,Uttar Pradesh,Kheri,Palia,9,159,798,,lgd
+urban_local_body,Pihani,Uttar Pradesh,Hardoi,Shahabad,9,150,809,,lgd
+urban_local_body,Pilibhit,Uttar Pradesh,,Pilibhit,9,,790,,lgd
+urban_local_body,Pilkhuwa,Uttar Pradesh,Hapur,Hapur,9,661,740,,lgd
+urban_local_body,Powayan,Uttar Pradesh,Shahjahanpur,Powayan,9,180,793,,lgd
+urban_local_body,Pt Deen Dayal Nagar(Mughalsarai),Uttar Pradesh,Chandauli,Chandauli,9,135,993,,lgd
+urban_local_body,Pukhrayan,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Puranpur,Uttar Pradesh,Pilibhit,Puranpur,9,173,792,,lgd
+urban_local_body,Rae Bareli,Uttar Pradesh,,Rae Bareli,9,,825,,lgd
+urban_local_body,Rampur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Rasra,Uttar Pradesh,Ballia,Rasra,9,126,977,,lgd
+urban_local_body,Rath,Uttar Pradesh,,Rath,9,,865,,lgd
+urban_local_body,Robertsganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Rudauli,Uttar Pradesh,Ayodhya,,9,140,,,lgd
+urban_local_body,Sahaswan,Uttar Pradesh,Budaun,Sahaswan,9,133,781,,lgd
+urban_local_body,Sambhal,Uttar Pradesh,Sambhal,Sambhal,9,659,721,,lgd
+urban_local_body,Samthar,Uttar Pradesh,Jhansi,Moth,9,153,856,,lgd
+urban_local_body,Sandi,Uttar Pradesh,Hardoi,Bilgram,9,150,812,,lgd
+urban_local_body,Sardhana,Uttar Pradesh,Meerut,Sardhana,9,169,732,,lgd
+urban_local_body,Sarsawan,Uttar Pradesh,Saharanpur,Nakur,9,177,703,,lgd
+urban_local_body,Seohara,Uttar Pradesh,Bijnor,Dhampur,9,132,715,,lgd
+urban_local_body,Shahabad,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Shahganj,Uttar Pradesh,Jaunpur,Shahganj,9,152,981,,lgd
+urban_local_body,Shamsabad,Uttar Pradesh,Agra,Fatehabad,9,118,769,,lgd
+urban_local_body,Sherkot,Uttar Pradesh,Bijnor,Dhampur,9,132,715,,lgd
+urban_local_body,Shikarpur,Uttar Pradesh,Bulandshahr,Shikarpur,9,134,750,,lgd
+urban_local_body,Siana,Uttar Pradesh,Bulandshahr,Siana,9,134,747,,lgd
+urban_local_body,Siddharth Nagar (Tetri Bazar),Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Sikandrabad,Uttar Pradesh,Bulandshahr,Sikandrabad,9,134,745,,lgd
+urban_local_body,Sikandra Rao,Uttar Pradesh,Hathras,Sikandra Rao,9,163,758,,lgd
+urban_local_body,Siswa Bazar,Uttar Pradesh,,Nichlaul,9,,945,,lgd
+urban_local_body,Sitapur,Uttar Pradesh,Sitapur,Sitapur,9,183,804,,lgd
+urban_local_body,Soron,Uttar Pradesh,Kasganj,Kasganj,9,633,1010,,lgd
+urban_local_body,Suar,Uttar Pradesh,Rampur,,9,176,,,lgd
+urban_local_body,Sultanpur,Uttar Pradesh,Sultanpur,Sultanpur,9,185,915,,lgd
+urban_local_body,Tanda,Uttar Pradesh,Rampur,,9,176,,,lgd
+urban_local_body,Tanda (Ambedkar Nagar),Uttar Pradesh,Ambedkar Nagar,Tanda,9,121,907,,lgd
+urban_local_body,Thakurdwara,Uttar Pradesh,Moradabad,Thakurdwara,9,171,717,,lgd
+urban_local_body,Tilhar,Uttar Pradesh,Shahjahanpur,Tilhar,9,180,794,,lgd
+urban_local_body,Ujhani,Uttar Pradesh,Budaun,Budaun,9,133,782,,lgd
+urban_local_body,Unnao,Uttar Pradesh,Unnao,Unnao,9,186,816,,lgd
+urban_local_body,Utraula,Uttar Pradesh,Balrampur,Utraula,9,127,927,,lgd
+urban_local_body,Zamania,Uttar Pradesh,Ghazipur,Zamania,9,146,991,,lgd
+urban_local_body,Banaras Locomotive Works,Uttar Pradesh,Varanasi,,9,187,,,lgd
+urban_local_body,Gnida,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Grasim Industries Ltd,Uttar Pradesh,Sonbhadra,,9,184,,,lgd
+urban_local_body,Hindalco Industries Ltd. Renukoot,Uttar Pradesh,Sonbhadra,,9,184,,,lgd
+urban_local_body,Jhansi Railway Settlement,Uttar Pradesh,Jhansi,,9,153,,,lgd
+urban_local_body,Noida,Uttar Pradesh,Gautam Buddha Nagar,,9,144,,,lgd
+urban_local_body,Pt. Deen Dayal Upadhyaya Nagar,Uttar Pradesh,Chandauli,Pandit Deendayal Upadhyay Nagar,9,135,6869,,lgd
+urban_local_body,Yeida,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Achal Ganj,Uttar Pradesh,,Unnao,9,,816,,lgd
+urban_local_body,Achhalda,Uttar Pradesh,Auraiya,Bidhuna,9,122,841,,lgd
+urban_local_body,Adari,Uttar Pradesh,Mau,Maunath Bhanjan,9,168,973,,lgd
+urban_local_body,Agarwal Mandi,Uttar Pradesh,,Baghpat,9,,736,,lgd
+urban_local_body,Agawanpur,Uttar Pradesh,Moradabad,Moradabad,9,171,719,,lgd
+urban_local_body,Ait,Uttar Pradesh,Jalaun,,9,151,,,lgd
+urban_local_body,Ajhuwa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Akbarpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Allahganj,Uttar Pradesh,Shahjahanpur,,9,180,,,lgd
+urban_local_body,Allapur,Uttar Pradesh,Budaun,Dataganj,9,133,783,,lgd
+urban_local_body,Amanpur,Uttar Pradesh,Kasganj,Sahawar,9,633,1011,,lgd
+urban_local_body,Ambehta,Uttar Pradesh,Saharanpur,Nakur,9,177,703,,lgd
+urban_local_body,Amethi(Amethi),Uttar Pradesh,,Amethi,9,,914,,lgd
+urban_local_body,Amethi(Lucknow),Uttar Pradesh,Lucknow,,9,162,,,lgd
+urban_local_body,Amila,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Aminagar Sarai,Uttar Pradesh,,Baghpat,9,,736,,lgd
+urban_local_body,Amraudhaa,Uttar Pradesh,,Bhognipur,9,,846,,lgd
+urban_local_body,Anandnagar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Anpara,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Antu,Uttar Pradesh,Pratapgarh,,9,174,,,lgd
+urban_local_body,Ashrafpur Kichhauchha,Uttar Pradesh,Ambedkar Nagar,Tanda,9,121,907,,lgd
+urban_local_body,Asothar,Uttar Pradesh,,Fatehpur,9,,878,,lgd
+urban_local_body,Atasu,Uttar Pradesh,Auraiya,Auraiya,9,122,842,,lgd
+urban_local_body,Atraulia,Uttar Pradesh,Azamgarh,Burhanpur,9,123,964,,lgd
+urban_local_body,Aurangabad,Uttar Pradesh,Bulandshahr,Bulandshahr,9,134,746,,lgd
+urban_local_body,Auras,Uttar Pradesh,Unnao,Hasanganj,9,186,815,,lgd
+urban_local_body,Awagarh,Uttar Pradesh,Etah,Jalesar,9,138,1009,,lgd
+urban_local_body,Azmatgarh,Uttar Pradesh,,Sagri,9,,965,,lgd
+urban_local_body,Babarpur Ajitmal,Uttar Pradesh,Auraiya,Auraiya,9,122,842,,lgd
+urban_local_body,Baberu,Uttar Pradesh,Banda,Baberu,9,128,872,,lgd
+urban_local_body,Babhnan Bazar,Uttar Pradesh,Basti,,9,131,,,lgd
+urban_local_body,Babralaa,Uttar Pradesh,Sambhal,Gunnaur,9,659,778,,lgd
+urban_local_body,Bachhrawan,Uttar Pradesh,Rae Bareli,Maharajganj,9,175,823,,lgd
+urban_local_body,Bada Gaon,Uttar Pradesh,Jhansi,Jhansi,9,153,860,,lgd
+urban_local_body,Badhani Bazar,Uttar Pradesh,Deoria,Salempur,9,137,962,,lgd
+urban_local_body,Badhani Chafa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Badlapur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Baghnagar Urf Bakhira,Uttar Pradesh,Sant Kabir Nagar,,9,178,,,lgd
+urban_local_body,Bahadurganj,Uttar Pradesh,Ghazipur,Mohammadabad,9,146,990,,lgd
+urban_local_body,Bahsuma,Uttar Pradesh,Meerut,,9,169,,,lgd
+urban_local_body,Bahuwa,Uttar Pradesh,Fatehpur,Fatehpur,9,142,878,,lgd
+urban_local_body,Bairia,Uttar Pradesh,Ballia,Bairia,9,126,980,,lgd
+urban_local_body,Baitalpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bajna,Uttar Pradesh,,Mat,9,,762,,lgd
+urban_local_body,Baldeo,Uttar Pradesh,Mathura,Mahavan,9,167,763,,lgd
+urban_local_body,Banda,Uttar Pradesh,Shahjahanpur,,9,180,,,lgd
+urban_local_body,Banki,Uttar Pradesh,Bara Banki,,9,129,,,lgd
+urban_local_body,Bankti,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bansdih,Uttar Pradesh,Ballia,Bansdih,9,126,979,,lgd
+urban_local_body,Bansgaon,Uttar Pradesh,Gorakhpur,Bansgaon,9,148,952,,lgd
+urban_local_body,Banthra,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Barauli,Uttar Pradesh,Aligarh,,9,119,,,lgd
+urban_local_body,Barbar,Uttar Pradesh,Kheri,Mohammdi,9,159,800,,lgd
+urban_local_body,Barhalganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Barhni Bazar,Uttar Pradesh,Siddharthnagar,Shohratgarh,9,182,932,,lgd
+urban_local_body,Bariyarpur,Uttar Pradesh,,Deoria,9,,959,,lgd
+urban_local_body,Barkhera,Uttar Pradesh,Pilibhit,Bisalpur,9,173,791,,lgd
+urban_local_body,Barnahal,Uttar Pradesh,,Karhal,9,,776,,lgd
+urban_local_body,Barsana,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Behat,Uttar Pradesh,,Behat,9,,701,,lgd
+urban_local_body,Belhara,Uttar Pradesh,Bara Banki,,9,129,,,lgd
+urban_local_body,Belhar Kala,Uttar Pradesh,Sant Kabir Nagar,,9,178,,,lgd
+urban_local_body,Belsar,Uttar Pradesh,,Tarabganj,9,,930,,lgd
+urban_local_body,Belthara Road,Uttar Pradesh,Ballia,Belthara Road,9,126,975,,lgd
+urban_local_body,Beniganj,Uttar Pradesh,Hardoi,Sandila,9,150,813,,lgd
+urban_local_body,Beswan,Uttar Pradesh,Aligarh,Iglas,9,119,756,,lgd
+urban_local_body,Bewar,Uttar Pradesh,Mainpuri,Bhogaon,9,166,777,,lgd
+urban_local_body,Bhadarsa,Uttar Pradesh,Ayodhya,,9,140,,,lgd
+urban_local_body,Bhagwant Nagar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bhaluani,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bhanpur Kaswa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bharatbhari,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Bharatganj,Uttar Pradesh,Prayagraj,Meja,9,120,894,,lgd
+urban_local_body,Bhargain,Uttar Pradesh,Kasganj,,9,633,,,lgd
+urban_local_body,Bhatpar Rani,Uttar Pradesh,,Bhatpar Rani,9,,963,,lgd
+urban_local_body,Bhawan Bahadur Nagar,Uttar Pradesh,Bulandshahr,,9,134,,,lgd
+urban_local_body,Bhira,Uttar Pradesh,,Palia,9,,798,,lgd
+urban_local_body,Bhogaon,Uttar Pradesh,Mainpuri,Bhogaon,9,166,777,,lgd
+urban_local_body,Bhojpur Dharampur,Uttar Pradesh,Moradabad,Moradabad,9,171,719,,lgd
+urban_local_body,Bhokarhedi,Uttar Pradesh,,Jansath,9,,711,,lgd
+urban_local_body,Bidhuna,Uttar Pradesh,Auraiya,Bidhuna,9,122,841,,lgd
+urban_local_body,Bighapur,Uttar Pradesh,,Bighapur,9,,818,,lgd
+urban_local_body,Bikapur,Uttar Pradesh,Ayodhya,,9,140,,,lgd
+urban_local_body,Bilaspur,Uttar Pradesh,Gautam Buddha Nagar,Gautam Buddha Nagar,9,144,743,,lgd
+urban_local_body,Bilram,Uttar Pradesh,Kasganj,Kasganj,9,633,1010,,lgd
+urban_local_body,Bilsanda,Uttar Pradesh,Pilibhit,Bisalpur,9,173,791,,lgd
+urban_local_body,Bisanda Buzurg,Uttar Pradesh,Banda,Atarra,9,128,873,,lgd
+urban_local_body,Bisharatganj,Uttar Pradesh,Bareilly,Aonla,9,130,786,,lgd
+urban_local_body,Biskohar,Uttar Pradesh,,Bansi,9,,934,,lgd
+urban_local_body,Bithoor,Uttar Pradesh,Kanpur Nagar,Kanpur,9,157,849,,lgd
+urban_local_body,Bkt,Uttar Pradesh,,Bakshi Ka Talab,9,,820,,lgd
+urban_local_body,Boodhanpur,Uttar Pradesh,Azamgarh,,9,123,,,lgd
+urban_local_body,Brijmanganj,Uttar Pradesh,Mahrajganj,,9,164,,,lgd
+urban_local_body,Budhana,Uttar Pradesh,Muzaffarnagar,Budhana,9,172,709,,lgd
+urban_local_body,Bugrasi,Uttar Pradesh,Bulandshahr,,9,134,,,lgd
+urban_local_body,Campierganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Chail,Uttar Pradesh,,Chail,9,,887,,lgd
+urban_local_body,Chakia,Uttar Pradesh,Chandauli,Chakia,9,135,994,,lgd
+urban_local_body,Chandauli,Uttar Pradesh,Chandauli,Chandauli,9,135,993,,lgd
+urban_local_body,Chandaus,Uttar Pradesh,Aligarh,,9,119,,,lgd
+urban_local_body,Charthaval,Uttar Pradesh,Muzaffarnagar,Muzaffarnagar,9,172,708,,lgd
+urban_local_body,Charwa,Uttar Pradesh,Kaushambi,Chail,9,158,887,,lgd
+urban_local_body,Chauk,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Chaumuha,Uttar Pradesh,Mathura,Chhata,9,167,761,,lgd
+urban_local_body,Chhaprauli,Uttar Pradesh,,Baraut,9,,735,,lgd
+urban_local_body,Chharra Rafatpur,Uttar Pradesh,Aligarh,Atrauli,9,119,754,,lgd
+urban_local_body,Chhata,Uttar Pradesh,Mathura,Chhata,9,167,761,,lgd
+urban_local_body,Chhatari,Uttar Pradesh,Bulandshahr,Shikarpur,9,134,750,,lgd
+urban_local_body,Chhitauni,Uttar Pradesh,,Khadda,9,,6878,,lgd
+urban_local_body,Chhutmalpura,Uttar Pradesh,,Behat,9,,701,,lgd
+urban_local_body,Chirayakot,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Chitbara Gaon,Uttar Pradesh,Ballia,Ballia,9,126,978,,lgd
+urban_local_body,Chopan,Uttar Pradesh,Sonbhadra,Robertsganj,9,184,1005,,lgd
+urban_local_body,Chukradhumra,Uttar Pradesh,Sonbhadra,Robertsganj,9,184,1005,,lgd
+urban_local_body,Dadiyal,Uttar Pradesh,,Tanda,9,,724,,lgd
+urban_local_body,Dahagwan,Uttar Pradesh,Budaun,,9,133,,,lgd
+urban_local_body,Dalmau,Uttar Pradesh,Rae Bareli,Dalmau,9,175,827,,lgd
+urban_local_body,Dankaur,Uttar Pradesh,Gautam Buddha Nagar,Gautam Buddha Nagar,9,144,743,,lgd
+urban_local_body,Daranagar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Dariyabad,Uttar Pradesh,Bara Banki,Ramsanehighat,9,129,900,,lgd
+urban_local_body,Daurala,Uttar Pradesh,Meerut,,9,169,,,lgd
+urban_local_body,Dayalbagh,Uttar Pradesh,Agra,Agra,9,118,766,,lgd
+urban_local_body,Deoranian,Uttar Pradesh,,Baheri,9,,784,,lgd
+urban_local_body,Derapur,Uttar Pradesh,,Derapur,9,,844,,lgd
+urban_local_body,Derva(Pratapgarh),Uttar Pradesh,,Kunda,9,,881,,lgd
+urban_local_body,Dewa,Uttar Pradesh,Bara Banki,Nawabganj,9,129,898,,lgd
+urban_local_body,Dhakia,Uttar Pradesh,,Thakurdwara,9,,717,,lgd
+urban_local_body,Dhakwa (Pratapgarh),Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Dhanepur,Uttar Pradesh,,Gonda,9,,928,,lgd
+urban_local_body,Dharamsinghwa,Uttar Pradesh,Sant Kabir Nagar,,9,178,,,lgd
+urban_local_body,Dhaurahara,Uttar Pradesh,,Dhaurahara,9,,802,,lgd
+urban_local_body,Dhaura Tanda,Uttar Pradesh,Bareilly,Bareilly,9,130,787,,lgd
+urban_local_body,Dibiyapur,Uttar Pradesh,Auraiya,Auraiya,9,122,842,,lgd
+urban_local_body,Dildarnagar Fatehpur Bazar,Uttar Pradesh,Ghazipur,Zamania,9,146,991,,lgd
+urban_local_body,Doghat,Uttar Pradesh,,Baraut,9,,735,,lgd
+urban_local_body,Dohrighat,Uttar Pradesh,Mau,Ghosi,9,168,971,,lgd
+urban_local_body,Domariyaganj,Uttar Pradesh,Siddharthnagar,Domariyaganj,9,182,936,,lgd
+urban_local_body,Dostpur,Uttar Pradesh,Sultanpur,Kadipur,9,185,918,,lgd
+urban_local_body,Duddhi,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Dudhi,Uttar Pradesh,Sonbhadra,Dudhi,9,184,1006,,lgd
+urban_local_body,Eka,Uttar Pradesh,Firozabad,Jasrana,9,143,773,,lgd
+urban_local_body,Ekdil,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Erich,Uttar Pradesh,Jhansi,Garautha,9,153,857,,lgd
+urban_local_body,Faizganj,Uttar Pradesh,Budaun,Bisauli,9,133,779,,lgd
+urban_local_body,Farah,Uttar Pradesh,Mathura,Mathura,9,167,764,,lgd
+urban_local_body,Faridpur(Bareilly),Uttar Pradesh,Bareilly,Baheri,9,130,784,,lgd
+urban_local_body,Fariha,Uttar Pradesh,Firozabad,Jasrana,9,143,773,,lgd
+urban_local_body,Fatehabad,Uttar Pradesh,Agra,Fatehabad,9,118,769,,lgd
+urban_local_body,Fatehganj Pashchimi,Uttar Pradesh,Bareilly,,9,130,,,lgd
+urban_local_body,Fatehganj Purvi,Uttar Pradesh,Bareilly,Faridpur,9,130,789,,lgd
+urban_local_body,Fatehpur(Barabanki),Uttar Pradesh,Bara Banki,,9,129,,,lgd
+urban_local_body,Fazilnagar,Uttar Pradesh,Kushinagar,,9,160,,,lgd
+urban_local_body,Gaayghat,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Gabhana,Uttar Pradesh,Aligarh,,9,119,,,lgd
+urban_local_body,Gaisari,Uttar Pradesh,Balrampur,,9,127,,,lgd
+urban_local_body,Ganeshpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Garautha,Uttar Pradesh,Jhansi,Garautha,9,153,857,,lgd
+urban_local_body,Garwara,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Gaurabadshahpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Gauri Bazar,Uttar Pradesh,Deoria,Deoria,9,137,959,,lgd
+urban_local_body,Gawan,Uttar Pradesh,Sambhal,Gunnaur,9,659,778,,lgd
+urban_local_body,Ghaghsarabazar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Ghiraur,Uttar Pradesh,Mainpuri,Mainpuri,9,166,775,,lgd
+urban_local_body,Ghorawal,Uttar Pradesh,Sonbhadra,Ghorawal,9,184,1004,,lgd
+urban_local_body,Ghosi,Uttar Pradesh,Mau,Ghosi,9,168,971,,lgd
+urban_local_body,Ghosia Bazar,Uttar Pradesh,,Aurai,9,,999,,lgd
+urban_local_body,Ghughuli,Uttar Pradesh,Mahrajganj,Maharajganj,9,164,947,,lgd
+urban_local_body,Gohand,Uttar Pradesh,Hamirpur,Rath,9,149,865,,lgd
+urban_local_body,Gokul,Uttar Pradesh,Mathura,Mahavan,9,167,763,,lgd
+urban_local_body,Gola Bazar,Uttar Pradesh,,Gola,9,,954,,lgd
+urban_local_body,Gosainganj (Ayodhya),Uttar Pradesh,Lucknow,Mohanlalganj,9,162,822,,lgd
+urban_local_body,Gosainganj (Lucknow),Uttar Pradesh,Ayodhya,Faizabad,9,140,905,,lgd
+urban_local_body,Govardhan,Uttar Pradesh,Mathura,,9,167,,,lgd
+urban_local_body,Gularia Bhindara,Uttar Pradesh,Pilibhit,Pilibhit,9,173,790,,lgd
+urban_local_body,Gunnaur,Uttar Pradesh,Sambhal,Gunnaur,9,659,778,,lgd
+urban_local_body,Gyanpur,Uttar Pradesh,Bhadohi,,9,179,,,lgd
+urban_local_body,Hainsar Bazar Dhanghata,Uttar Pradesh,,Ghanghata,9,,943,,lgd
+urban_local_body,Handia,Uttar Pradesh,Prayagraj,Handia,9,120,893,,lgd
+urban_local_body,Harduaganj,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Hargaon,Uttar Pradesh,,Sitapur,9,,804,,lgd
+urban_local_body,Hariharpur,Uttar Pradesh,,Ghanghata,9,,943,,lgd
+urban_local_body,Harra,Uttar Pradesh,Meerut,Sardhana,9,169,732,,lgd
+urban_local_body,Harraiya,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Hasayan,Uttar Pradesh,Hathras,,9,163,,,lgd
+urban_local_body,Hastinapur,Uttar Pradesh,,Mawana,9,,733,,lgd
+urban_local_body,Hathgam,Uttar Pradesh,Fatehpur,Khaga,9,142,879,,lgd
+urban_local_body,Heeraganj Bazaar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Hetimpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Hyderabad,Uttar Pradesh,Unnao,Hasanganj,9,186,815,,lgd
+urban_local_body,Iglas,Uttar Pradesh,Aligarh,Iglas,9,119,756,,lgd
+urban_local_body,Ikauna,Uttar Pradesh,Shrawasti,Ikauna,9,181,924,,lgd
+urban_local_body,Iltifatganj Bazar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Islamnagar,Uttar Pradesh,Budaun,Bisauli,9,133,779,,lgd
+urban_local_body,Itaunja,Uttar Pradesh,,Bakshi Ka Talab,9,,820,,lgd
+urban_local_body,Itwa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Jagner,Uttar Pradesh,Agra,Kheragarh,9,118,768,,lgd
+urban_local_body,Jahagirganj,Uttar Pradesh,,Allapur,9,,908,,lgd
+urban_local_body,Jahanabad,Uttar Pradesh,Pilibhit,Pilibhit,9,173,790,,lgd
+urban_local_body,Jahanaganj,Uttar Pradesh,Azamgarh,,9,123,,,lgd
+urban_local_body,Jahangirpur,Uttar Pradesh,Gautam Buddha Nagar,Jewar,9,144,744,,lgd
+urban_local_body,Jaithara,Uttar Pradesh,Etah,Aliganj,9,138,1007,,lgd
+urban_local_body,Jalalabad(Shamli),Uttar Pradesh,Bijnor,Najibabad,9,132,712,,lgd
+urban_local_body,Jalali,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Jangipur,Uttar Pradesh,Ghazipur,Ghazipur,9,146,989,,lgd
+urban_local_body,Jansath,Uttar Pradesh,Muzaffarnagar,Jansath,9,172,711,,lgd
+urban_local_body,Jarwal,Uttar Pradesh,Bahraich,Kaiserganj,9,125,922,,lgd
+urban_local_body,Jasrana,Uttar Pradesh,Firozabad,Jasrana,9,143,773,,lgd
+urban_local_body,Jatari,Uttar Pradesh,Aligarh,Khair,9,119,752,,lgd
+urban_local_body,Jawan Sikandpur,Uttar Pradesh,Aligarh,,9,119,,,lgd
+urban_local_body,Jewar,Uttar Pradesh,Gautam Buddha Nagar,Jewar,9,144,744,,lgd
+urban_local_body,Jhalu,Uttar Pradesh,Bijnor,Bijnor,9,132,713,,lgd
+urban_local_body,Jiyanpur,Uttar Pradesh,Azamgarh,Sagri,9,123,965,,lgd
+urban_local_body,Joya,Uttar Pradesh,Amroha,Amroha,9,154,730,,lgd
+urban_local_body,Jyoti Khuria,Uttar Pradesh,Mainpuri,Mainpuri,9,166,775,,lgd
+urban_local_body,Kabrai,Uttar Pradesh,Mahoba,Mahoba,9,165,870,,lgd
+urban_local_body,Kachgaon,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Kachhauna Patseni,Uttar Pradesh,Hardoi,Sandila,9,150,813,,lgd
+urban_local_body,Kachhla,Uttar Pradesh,Budaun,Budaun,9,133,782,,lgd
+urban_local_body,Kachhwa,Uttar Pradesh,Mirzapur,Mirzapur,9,170,1000,,lgd
+urban_local_body,Kadaura,Uttar Pradesh,Jalaun,Kalpi,9,151,853,,lgd
+urban_local_body,Kadipur,Uttar Pradesh,Sultanpur,Kadipur,9,185,918,,lgd
+urban_local_body,Kaisharganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Kakod,Uttar Pradesh,Bulandshahr,Sikandrabad,9,134,745,,lgd
+urban_local_body,Kalan,Uttar Pradesh,,Kalan,9,,6882,,lgd
+urban_local_body,Kalinagar,Uttar Pradesh,Pilibhit,Puranpur,9,173,792,,lgd
+urban_local_body,Kamalganj,Uttar Pradesh,Farrukhabad,Farrukhabad,9,141,832,,lgd
+urban_local_body,Kampil,Uttar Pradesh,Farrukhabad,,9,141,,,lgd
+urban_local_body,Kanchausi,Uttar Pradesh,,Derapur,9,,844,,lgd
+urban_local_body,Kanth(Moradabad),Uttar Pradesh,,Kanth,9,,718,,lgd
+urban_local_body,Kanth(Shahjhanpur),Uttar Pradesh,Shahjahanpur,Shahjahanpur,9,180,795,,lgd
+urban_local_body,Kaptanganj,Uttar Pradesh,Kushinagar,Hata,9,160,956,,lgd
+urban_local_body,Kaptanganj Basti,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Karari,Uttar Pradesh,Kaushambi,Manjhanpur,9,158,886,,lgd
+urban_local_body,Karhal,Uttar Pradesh,Mainpuri,Karhal,9,166,776,,lgd
+urban_local_body,Karikan Dhata,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Karnawal,Uttar Pradesh,,Sardhana,9,,732,,lgd
+urban_local_body,Kasba Sangrampur Urf Unwal,Uttar Pradesh,,Bansgaon,9,,952,,lgd
+urban_local_body,Katghar Lalganj,Uttar Pradesh,Azamgarh,,9,123,,,lgd
+urban_local_body,Kathera,Uttar Pradesh,Jhansi,Mauranipur,9,153,859,,lgd
+urban_local_body,Katra,Uttar Pradesh,Shahjahanpur,Tilhar,9,180,794,,lgd
+urban_local_body,Katra Bazar,Uttar Pradesh,Gonda,,9,147,,,lgd
+urban_local_body,Katra Gulab Singh,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Katra Medniganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Kauriaganj,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Kemri,Uttar Pradesh,Rampur,Bilaspur,9,176,725,,lgd
+urban_local_body,Kerakat,Uttar Pradesh,Jaunpur,Kerakat,9,152,986,,lgd
+urban_local_body,Khaga,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Khairragarh,Uttar Pradesh,Agra,,9,118,,,lgd
+urban_local_body,Khakhareru,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Khamaria,Uttar Pradesh,,Aurai,9,,999,,lgd
+urban_local_body,Khanpur,Uttar Pradesh,Bulandshahr,Siana,9,134,747,,lgd
+urban_local_body,Kharela,Uttar Pradesh,Mahoba,Charkhari,9,165,869,,lgd
+urban_local_body,Gangaghat,Uttar Pradesh,Unnao,,9,186,,,lgd
+urban_local_body,Khargupur,Uttar Pradesh,Gonda,Gonda,9,147,928,,lgd
+urban_local_body,Kharkhoda,Uttar Pradesh,,Meerut,9,,734,,lgd
+urban_local_body,Kheri,Uttar Pradesh,Kheri,Lakhimpur,9,159,801,,lgd
+urban_local_body,Kheta Sarai,Uttar Pradesh,,Shahganj,9,,981,,lgd
+urban_local_body,Khimsepur,Uttar Pradesh,,Farrukhabad,9,,832,,lgd
+urban_local_body,Khirauni(Suchittaganj),Uttar Pradesh,,Sohawal,9,,904,,lgd
+urban_local_body,Khiwai,Uttar Pradesh,Meerut,,9,169,,,lgd
+urban_local_body,Khudaganj,Uttar Pradesh,Shahjahanpur,,9,180,,,lgd
+urban_local_body,Khutar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Kiraoli,Uttar Pradesh,Agra,,9,118,,,lgd
+urban_local_body,Kishni,Uttar Pradesh,,Bhogaon,9,,777,,lgd
+urban_local_body,Kishunpur,Uttar Pradesh,Fatehpur,Khaga,9,142,879,,lgd
+urban_local_body,Kithaur,Uttar Pradesh,Meerut,Mawana,9,169,733,,lgd
+urban_local_body,Koeripur,Uttar Pradesh,Sultanpur,Lambhua,9,185,917,,lgd
+urban_local_body,Kohdaur,Uttar Pradesh,Pratapgarh,,9,174,,,lgd
+urban_local_body,Kopaganj,Uttar Pradesh,,Maunath Bhanjan,9,,973,,lgd
+urban_local_body,Kora Jahanabad,Uttar Pradesh,,Bindki,9,,877,,lgd
+urban_local_body,Koraon,Uttar Pradesh,Prayagraj,Koraon,9,120,895,,lgd
+urban_local_body,Kotra,Uttar Pradesh,Jalaun,Orai,9,151,854,,lgd
+urban_local_body,Kulpahar,Uttar Pradesh,Mahoba,Kulpahar,9,165,868,,lgd
+urban_local_body,Kumarganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Kunda,Uttar Pradesh,Pratapgarh,Kunda,9,174,881,,lgd
+urban_local_body,Kundarki,Uttar Pradesh,Moradabad,Bilari,9,171,720,,lgd
+urban_local_body,Kunwargaon,Uttar Pradesh,Budaun,Budaun,9,133,782,,lgd
+urban_local_body,Kuraoli,Uttar Pradesh,Mainpuri,Mainpuri,9,166,775,,lgd
+urban_local_body,Kurara,Uttar Pradesh,Hamirpur,Hamirpur,9,149,864,,lgd
+urban_local_body,Kursath (Hardoi),Uttar Pradesh,Unnao,Safipur,9,186,814,,lgd
+urban_local_body,Kursath (Unnao),Uttar Pradesh,Hardoi,Bilgram,9,150,812,,lgd
+urban_local_body,Kurthijafarpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Kusmara,Uttar Pradesh,Mainpuri,Bhogaon,9,166,777,,lgd
+urban_local_body,Laalganj,Uttar Pradesh,Rae Bareli,Lalganj,9,175,826,,lgd
+urban_local_body,Lalganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Lal Gopal Ganj,Uttar Pradesh,Prayagraj,Soraon,9,120,888,,lgd
+urban_local_body,Lambhua,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Lar,Uttar Pradesh,Deoria,Salempur,9,137,962,,lgd
+urban_local_body,Lawar,Uttar Pradesh,Meerut,Sardhana,9,169,732,,lgd
+urban_local_body,Maa Kamakhya,Uttar Pradesh,Ayodhya,,9,140,,,lgd
+urban_local_body,Machhlishahr,Uttar Pradesh,Jaunpur,,9,152,,,lgd
+urban_local_body,Madanpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Madhoganj,Uttar Pradesh,Hardoi,Bilgram,9,150,812,,lgd
+urban_local_body,Madhogarh,Uttar Pradesh,Jalaun,Madhogarh,9,151,851,,lgd
+urban_local_body,Madhuban,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Madrak,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Maghar,Uttar Pradesh,Sant Kabir Nagar,Khalilabad,9,178,942,,lgd
+urban_local_body,Mahaban,Uttar Pradesh,Mathura,Mahavan,9,167,763,,lgd
+urban_local_body,Maharajganj(Azamgarh),Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Maharajganj(Raibareilly),Uttar Pradesh,Rae Bareli,Maharajganj,9,175,823,,lgd
+urban_local_body,Mahmoodpur Mafi,Uttar Pradesh,,Bilari,9,,720,,lgd
+urban_local_body,Maholi,Uttar Pradesh,Sitapur,,9,183,,,lgd
+urban_local_body,Mahona,Uttar Pradesh,,Bakshi Ka Talab,9,,820,,lgd
+urban_local_body,Mahul,Uttar Pradesh,Azamgarh,,9,123,,,lgd
+urban_local_body,Mailani,Uttar Pradesh,Kheri,Gola Gokaran Nath,9,159,799,,lgd
+urban_local_body,Majhauliraj,Uttar Pradesh,Deoria,Salempur,9,137,962,,lgd
+urban_local_body,Makkhanpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Malihabad,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Mandawar,Uttar Pradesh,Bijnor,Bijnor,9,132,713,,lgd
+urban_local_body,Mandhata(Pratapgarh),Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Manikpur(Pratapgarh),Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Manikpur Sarhat (Chitrakoot),Uttar Pradesh,Chitrakoot,Karwi,9,136,875,,lgd
+urban_local_body,Maniyar,Uttar Pradesh,Ballia,Bansdih,9,126,979,,lgd
+urban_local_body,Mankapur,Uttar Pradesh,Gonda,Mankapur,9,147,931,,lgd
+urban_local_body,Mariahu,Uttar Pradesh,Jaunpur,Mariahu,9,152,985,,lgd
+urban_local_body,Martinganj,Uttar Pradesh,Azamgarh,,9,123,,,lgd
+urban_local_body,Maswasi,Uttar Pradesh,Rampur,Suar,9,176,723,,lgd
+urban_local_body,Mataundh,Uttar Pradesh,Banda,Banda,9,128,871,,lgd
+urban_local_body,Mathauli,Uttar Pradesh,,Hata,9,,956,,lgd
+urban_local_body,Mau Aima,Uttar Pradesh,Prayagraj,Soraon,9,120,888,,lgd
+urban_local_body,Mau Mustkil,Uttar Pradesh,Chitrakoot,,9,136,,,lgd
+urban_local_body,Maurawan,Uttar Pradesh,Unnao,Purwa,9,186,817,,lgd
+urban_local_body,Meerapur,Uttar Pradesh,Muzaffarnagar,Jansath,9,172,711,,lgd
+urban_local_body,Bangarmau,Uttar Pradesh,,Safipur,9,,814,,lgd
+urban_local_body,Mehdawal,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Mehnagar,Uttar Pradesh,,Mehnagar,9,,970,,lgd
+urban_local_body,Mendu,Uttar Pradesh,,Hathras,9,,759,,lgd
+urban_local_body,Mihinpurwa,Uttar Pradesh,Bahraich,,9,125,,,lgd
+urban_local_body,Mirganj,Uttar Pradesh,Bareilly,,9,130,,,lgd
+urban_local_body,Mirhachi,Uttar Pradesh,,Etah,9,,1008,,lgd
+urban_local_body,Mohammadabad (Farrukhabad),Uttar Pradesh,Farrukhabad,,9,141,,,lgd
+urban_local_body,Mohammadabad Gohna,Uttar Pradesh,Farrukhabad,Farrukhabad,9,141,832,,lgd
+urban_local_body,Mohan,Uttar Pradesh,Unnao,Hasanganj,9,186,815,,lgd
+urban_local_body,Mohanlalganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Mohanpur,Uttar Pradesh,Kasganj,Patiyali,9,633,1012,,lgd
+urban_local_body,Moth,Uttar Pradesh,Jhansi,Moth,9,153,856,,lgd
+urban_local_body,Mundera Bazar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Munderwa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Mundia,Uttar Pradesh,Budaun,Bisauli,9,133,779,,lgd
+urban_local_body,Mursan,Uttar Pradesh,,Hathras,9,,759,,lgd
+urban_local_body,Musanagar,Uttar Pradesh,,Bhognipur,9,,846,,lgd
+urban_local_body,Nadigaon,Uttar Pradesh,Jalaun,Konch,9,151,855,,lgd
+urban_local_body,Nagar Bazar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Nagra,Uttar Pradesh,Ballia,,9,126,,,lgd
+urban_local_body,Nagram,Uttar Pradesh,Lucknow,,9,162,,,lgd
+urban_local_body,Nai Bazar,Uttar Pradesh,,Bhadohi,9,,997,,lgd
+urban_local_body,Nanauta,Uttar Pradesh,Saharanpur,Rampur Maniharan,9,177,705,,lgd
+urban_local_body,Nandgaon,Uttar Pradesh,Mathura,Chhata,9,167,761,,lgd
+urban_local_body,Naraini,Uttar Pradesh,Banda,,9,128,,,lgd
+urban_local_body,Narauli,Uttar Pradesh,Sambhal,Chandausi,9,659,722,,lgd
+urban_local_body,Bharthana,Uttar Pradesh,,Bharthana,9,,839,,lgd
+urban_local_body,Naraura,Uttar Pradesh,Bulandshahr,,9,134,,,lgd
+urban_local_body,Narpat Nagar Doondawala,Uttar Pradesh,Rampur,,9,176,,,lgd
+urban_local_body,Naugawan Sadat,Uttar Pradesh,Amroha,Amroha,9,154,730,,lgd
+urban_local_body,Nawabganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Nawabganj (Unnao),Uttar Pradesh,Unnao,Hasanganj,9,186,815,,lgd
+urban_local_body,Nichlaul,Uttar Pradesh,Mahrajganj,Nichlaul,9,164,945,,lgd
+urban_local_body,Nidhauli Kalan,Uttar Pradesh,Etah,Etah,9,138,1008,,lgd
+urban_local_body,Nighasan,Uttar Pradesh,Kheri,,9,159,,,lgd
+urban_local_body,Nigohi,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Nizamabad,Uttar Pradesh,,Nizamabad,9,,967,,lgd
+urban_local_body,Nyoria Husainpur,Uttar Pradesh,Pilibhit,Pilibhit,9,173,790,,lgd
+urban_local_body,Nyotini,Uttar Pradesh,Unnao,Hasanganj,9,186,815,,lgd
+urban_local_body,Obra,Uttar Pradesh,Sonbhadra,Robertsganj,9,184,1005,,lgd
+urban_local_body,Oel Dhakwa,Uttar Pradesh,Kheri,Lakhimpur,9,159,801,,lgd
+urban_local_body,Oran,Uttar Pradesh,Banda,Atarra,9,128,873,,lgd
+urban_local_body,Pachperwa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Pahasu,Uttar Pradesh,Bulandshahr,Shikarpur,9,134,750,,lgd
+urban_local_body,Sandila,Uttar Pradesh,,Sandila,9,,813,,lgd
+urban_local_body,Paintepur,Uttar Pradesh,Sitapur,Mahmudabad,9,183,807,,lgd
+urban_local_body,Pakadia Naugawa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Pakbara,Uttar Pradesh,Moradabad,,9,171,,,lgd
+urban_local_body,Pali (Hardoi),Uttar Pradesh,,Shahabad,9,,809,,lgd
+urban_local_body,Pali (Lalitpur),Uttar Pradesh,Lalitpur,Lalitpur,9,161,862,,lgd
+urban_local_body,Paniyara,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Paraspur,Uttar Pradesh,Gonda,,9,147,,,lgd
+urban_local_body,Parikshitgarh,Uttar Pradesh,Meerut,Mawana,9,169,733,,lgd
+urban_local_body,Parsadepur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Partawal,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Pathardewa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Patiyali,Uttar Pradesh,Kasganj,Patiyali,9,633,1012,,lgd
+urban_local_body,Patla,Uttar Pradesh,Ghaziabad,Modinagar,9,145,738,,lgd
+urban_local_body,Patti,Uttar Pradesh,Pratapgarh,Patti,9,174,883,,lgd
+urban_local_body,Payagpur,Uttar Pradesh,,Bahraich,9,,921,,lgd
+urban_local_body,Phalauda,Uttar Pradesh,Meerut,Mawana,9,169,733,,lgd
+urban_local_body,Phaphund,Uttar Pradesh,Auraiya,,9,122,,,lgd
+urban_local_body,Phoolpur,Uttar Pradesh,Azamgarh,Phulpur,9,123,968,,lgd
+urban_local_body,Phulpur,Uttar Pradesh,Prayagraj,Phulpur,9,120,889,,lgd
+urban_local_body,Pilkhana,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Pinahat,Uttar Pradesh,Agra,Bah,9,118,770,,lgd
+urban_local_body,Pipiganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Pipraich,Uttar Pradesh,Gorakhpur,,9,148,,,lgd
+urban_local_body,Pipri,Uttar Pradesh,Sonbhadra,Dudhi,9,184,1006,,lgd
+urban_local_body,Pisawa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Poorav Pashchim Shareera,Uttar Pradesh,Kaushambi,,9,158,,,lgd
+urban_local_body,Pratapgarh City,Uttar Pradesh,Pratapgarh,Pratapgarh,9,174,882,,lgd
+urban_local_body,Tundla,Uttar Pradesh,,Tundla,9,,771,,lgd
+urban_local_body,Dataganj,Uttar Pradesh,Budaun,,9,133,,,lgd
+urban_local_body,Prithviganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Purdilnagar,Uttar Pradesh,Hathras,,9,163,,,lgd
+urban_local_body,Purquazi,Uttar Pradesh,Muzaffarnagar,Muzaffarnagar,9,172,708,,lgd
+urban_local_body,Purwa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Rabupura,Uttar Pradesh,Gautam Buddha Nagar,Jewar,9,144,744,,lgd
+urban_local_body,Radhakund,Uttar Pradesh,Mathura,,9,167,,,lgd
+urban_local_body,Raja Ka Rampur,Uttar Pradesh,Etah,Aliganj,9,138,1007,,lgd
+urban_local_body,Rajapur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Rajesultanpur,Uttar Pradesh,,Allapur,9,,908,,lgd
+urban_local_body,Rajpur,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Ramganj (Pratapgarh),Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Ramkola,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Ramnagar,Uttar Pradesh,Bara Banki,,9,129,,,lgd
+urban_local_body,Rampura,Uttar Pradesh,Jalaun,Madhogarh,9,151,851,,lgd
+urban_local_body,Rampur (Jaunpur),Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Rampur Karkhana,Uttar Pradesh,Deoria,Deoria,9,137,959,,lgd
+urban_local_body,Rampur Maniharan,Uttar Pradesh,,Rampur Maniharan,9,,705,,lgd
+urban_local_body,Ram Sanehi Ghat,Uttar Pradesh,,Ramsanehighat,9,,900,,lgd
+urban_local_body,Raniganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Ranipur,Uttar Pradesh,Jhansi,Mauranipur,9,153,859,,lgd
+urban_local_body,Raniya,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Rasulabaad(Kanpur Dehat),Uttar Pradesh,Kanpur Dehat,Rasulabad,9,156,843,,lgd
+urban_local_body,Rasulabaad(Unnao),Uttar Pradesh,Unnao,Hasanganj,9,186,815,,lgd
+urban_local_body,Rataul,Uttar Pradesh,,Khekada,9,,737,,lgd
+urban_local_body,Ratsar Kala,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Raya,Uttar Pradesh,Mathura,Mahavan,9,167,763,,lgd
+urban_local_body,Reoti,Uttar Pradesh,Ballia,Bansdih,9,126,979,,lgd
+urban_local_body,Richha,Uttar Pradesh,Bareilly,Baheri,9,130,784,,lgd
+urban_local_body,Risia Bazar,Uttar Pradesh,Bahraich,Bahraich,9,125,921,,lgd
+urban_local_body,Rithora,Uttar Pradesh,Bareilly,Bareilly,9,130,787,,lgd
+urban_local_body,Rudayan,Uttar Pradesh,Budaun,Bilsi,9,133,780,,lgd
+urban_local_body,Rudhauli Bazar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Rudrapur,Uttar Pradesh,Deoria,Rudrapur,9,137,960,,lgd
+urban_local_body,Rupaideeha,Uttar Pradesh,Bahraich,,9,125,,,lgd
+urban_local_body,Rura,Uttar Pradesh,Kanpur Dehat,Akbarpur,9,156,845,,lgd
+urban_local_body,Sadabad,Uttar Pradesh,,Sadabad,9,,760,,lgd
+urban_local_body,Sadat,Uttar Pradesh,Ghazipur,Jakhania,9,146,987,,lgd
+urban_local_body,Sahanpur,Uttar Pradesh,Bijnor,Najibabad,9,132,712,,lgd
+urban_local_body,Sahaspur,Uttar Pradesh,Bijnor,Dhampur,9,132,715,,lgd
+urban_local_body,Sahatwar,Uttar Pradesh,Ballia,Bansdih,9,126,979,,lgd
+urban_local_body,Sahawar,Uttar Pradesh,Kasganj,Sahawar,9,633,1011,,lgd
+urban_local_body,Jais,Uttar Pradesh,,Tiloi,9,,824,,lgd
+urban_local_body,Sahjanwa,Uttar Pradesh,Gorakhpur,Sahjanwa,9,148,949,,lgd
+urban_local_body,Sahpau,Uttar Pradesh,Hathras,,9,163,,,lgd
+urban_local_body,Said Nagli,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Saidpur(Badaun),Uttar Pradesh,Budaun,Bisauli,9,133,779,,lgd
+urban_local_body,Saidpur(Gazipur),Uttar Pradesh,Ghazipur,Saidpur,9,146,988,,lgd
+urban_local_body,Saifani,Uttar Pradesh,Rampur,,9,176,,,lgd
+urban_local_body,Sainthal,Uttar Pradesh,Bareilly,Nawabganj,9,130,788,,lgd
+urban_local_body,Saiyad Raja,Uttar Pradesh,Chandauli,Chandauli,9,135,993,,lgd
+urban_local_body,Sakhanu,Uttar Pradesh,Budaun,Budaun,9,133,782,,lgd
+urban_local_body,Sakit,Uttar Pradesh,Etah,Etah,9,138,1008,,lgd
+urban_local_body,Salempur,Uttar Pradesh,,Salempur,9,,962,,lgd
+urban_local_body,Salon,Uttar Pradesh,,Salon,9,,829,,lgd
+urban_local_body,Samdhan,Uttar Pradesh,Kannauj,Chhibramau,9,155,833,,lgd
+urban_local_body,Sankisa Basantpur,Uttar Pradesh,,Farrukhabad,9,,832,,lgd
+urban_local_body,Sarai Aquil,Uttar Pradesh,,Chail,9,,887,,lgd
+urban_local_body,Sarila,Uttar Pradesh,Hamirpur,Sarila,9,149,866,,lgd
+urban_local_body,Sasni,Uttar Pradesh,Hathras,Sasni,9,163,757,,lgd
+urban_local_body,Satrikh,Uttar Pradesh,Bara Banki,Nawabganj,9,129,898,,lgd
+urban_local_body,Saunkh,Uttar Pradesh,Mathura,Mathura,9,167,764,,lgd
+urban_local_body,Saurikh,Uttar Pradesh,Kannauj,Chhibramau,9,155,833,,lgd
+urban_local_body,Sewalkhas,Uttar Pradesh,,Meerut,9,,734,,lgd
+urban_local_body,Sewarhi,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Shahbad,Uttar Pradesh,Rampur,,9,176,,,lgd
+urban_local_body,Shahi,Uttar Pradesh,Bareilly,,9,130,,,lgd
+urban_local_body,Shahjaganpur,Uttar Pradesh,Meerut,,9,169,,,lgd
+urban_local_body,Shahpur,Uttar Pradesh,Muzaffarnagar,Budhana,9,172,709,,lgd
+urban_local_body,Shamshabad,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Shankargarh,Uttar Pradesh,Prayagraj,Bara,9,120,891,,lgd
+urban_local_body,Kairana,Uttar Pradesh,,Kairana,9,,706,,lgd
+urban_local_body,Shergarh,Uttar Pradesh,Bareilly,Baheri,9,130,784,,lgd
+urban_local_body,Shishgarh,Uttar Pradesh,Bareilly,Meerganj,9,130,785,,lgd
+urban_local_body,Kandhla,Uttar Pradesh,,Kairana,9,,706,,lgd
+urban_local_body,Kannauj,Uttar Pradesh,,Kannauj,9,,834,,lgd
+urban_local_body,Shivgarh,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Shivli,Uttar Pradesh,Kanpur Dehat,Akbarpur,9,156,845,,lgd
+urban_local_body,Shivrajpur,Uttar Pradesh,,Bilhaur,9,,848,,lgd
+urban_local_body,Shohratgarh,Uttar Pradesh,,Shohratgarh,9,,932,,lgd
+urban_local_body,Siddhaur,Uttar Pradesh,Bara Banki,Haidergarh,9,129,901,,lgd
+urban_local_body,Sidhauli,Uttar Pradesh,Sitapur,Sidhauli,9,183,808,,lgd
+urban_local_body,Sidhpura,Uttar Pradesh,Kasganj,,9,633,,,lgd
+urban_local_body,Sikandara,Uttar Pradesh,Kanpur Dehat,Sikandra,9,156,847,,lgd
+urban_local_body,Sikanderpur (Ballia),Uttar Pradesh,Ballia,Sikanderpur,9,126,976,,lgd
+urban_local_body,Sikanderpur (Kannauj),Uttar Pradesh,Kannauj,Chhibramau,9,155,833,,lgd
+urban_local_body,Singahi Bhiraura,Uttar Pradesh,Kheri,Nighasan,9,159,797,,lgd
+urban_local_body,Sirathu,Uttar Pradesh,Kaushambi,,9,158,,,lgd
+urban_local_body,Sirauli,Uttar Pradesh,Bareilly,Aonla,9,130,786,,lgd
+urban_local_body,Sirsa,Uttar Pradesh,Prayagraj,Meja,9,120,894,,lgd
+urban_local_body,Sirsi,Uttar Pradesh,Sambhal,Sambhal,9,659,721,,lgd
+urban_local_body,Sisauli,Uttar Pradesh,,Budhana,9,,709,,lgd
+urban_local_body,Sirsaganj,Uttar Pradesh,,Shikohabad,9,,774,,lgd
+urban_local_body,Sonauli,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Subeha,Uttar Pradesh,Bara Banki,Haidergarh,9,129,901,,lgd
+urban_local_body,Sukrauli,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Sultanpur Chilkana,Uttar Pradesh,Saharanpur,Nakur,9,177,703,,lgd
+urban_local_body,Sumerpur,Uttar Pradesh,,Hamirpur,9,,864,,lgd
+urban_local_body,Suriyawan,Uttar Pradesh,Bhadohi,Bhadohi,9,179,997,,lgd
+urban_local_body,Suwansa Bazar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Swamibagh,Uttar Pradesh,Agra,Agra,9,118,766,,lgd
+urban_local_body,Talbehat,Uttar Pradesh,Lalitpur,Talbehat,9,161,861,,lgd
+urban_local_body,Talgram,Uttar Pradesh,Kannauj,Chhibramau,9,155,833,,lgd
+urban_local_body,Tambaur Cum Ahmadabad,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Tamkuhi Raj,Uttar Pradesh,Kushinagar,,9,160,,,lgd
+urban_local_body,Tarabganj,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Tarkulwa,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Thiriya Nizamat Khan,Uttar Pradesh,Bareilly,Bareilly,9,130,787,,lgd
+urban_local_body,Tikait Nagar,Uttar Pradesh,Bara Banki,Sirauli Gauspur,9,129,899,,lgd
+urban_local_body,Tikri,Uttar Pradesh,,Baraut,9,,735,,lgd
+urban_local_body,Tindwari,Uttar Pradesh,Banda,Banda,9,128,871,,lgd
+urban_local_body,Tirwaganj,Uttar Pradesh,Kannauj,Tirwa,9,155,835,,lgd
+urban_local_body,Titron,Uttar Pradesh,Saharanpur,Nakur,9,177,703,,lgd
+urban_local_body,Tondi Fatehpur,Uttar Pradesh,Jhansi,Tahrauli,9,153,858,,lgd
+urban_local_body,Tulsipur,Uttar Pradesh,Balrampur,,9,127,,,lgd
+urban_local_body,Ugu,Uttar Pradesh,,Safipur,9,,814,,lgd
+urban_local_body,Ujhari,Uttar Pradesh,Amroha,,9,154,,,lgd
+urban_local_body,Umri,Uttar Pradesh,Jalaun,,9,151,,,lgd
+urban_local_body,Umri Kalan,Uttar Pradesh,Moradabad,Kanth,9,171,718,,lgd
+urban_local_body,Unchahar,Uttar Pradesh,Rae Bareli,Unchahar,9,175,828,,lgd
+urban_local_body,Unn,Uttar Pradesh,Shamli,Kairana,9,660,706,,lgd
+urban_local_body,Mallawan,Uttar Pradesh,,Bilgram,9,,812,,lgd
+urban_local_body,Uruwa Bazar,Uttar Pradesh,,,9,,,,lgd
+urban_local_body,Usawan,Uttar Pradesh,Budaun,Dataganj,9,133,783,,lgd
+urban_local_body,Usehat,Uttar Pradesh,Budaun,Dataganj,9,133,783,,lgd
+urban_local_body,Uska Bazar,Uttar Pradesh,Siddharthnagar,Naugarh,9,182,933,,lgd
+urban_local_body,Vijaigarh,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Walidpur,Uttar Pradesh,,Muhammadabad Gohna,9,,974,,lgd
+urban_local_body,Warhapur,Uttar Pradesh,Bijnor,Nagina,9,132,714,,lgd
+urban_local_body,Wazirganj,Uttar Pradesh,Budaun,Bisauli,9,133,779,,lgd
+urban_local_body,Zaidpur,Uttar Pradesh,,Nawabganj,9,,898,,lgd
+urban_local_body,Shamli,Uttar Pradesh,,Shamli,9,,707,,lgd
+urban_local_body,Shikohabad,Uttar Pradesh,,Shikohabad,9,,774,,lgd
+urban_local_body,Ailum,Uttar Pradesh,,Shamli,9,,707,,lgd
+urban_local_body,Babugarh,Uttar Pradesh,,Hapur,9,,740,,lgd
+urban_local_body,Gulariya,Uttar Pradesh,Budaun,Budaun,9,133,782,,lgd
+urban_local_body,Jalalabad(Bijnor),Uttar Pradesh,Shamli,Shamli,9,660,707,,lgd
+urban_local_body,Bakewar,Uttar Pradesh,,Bharthana,9,,839,,lgd
+urban_local_body,Banat,Uttar Pradesh,,Shamli,9,,707,,lgd
+urban_local_body,Dala Bazar,Uttar Pradesh,Sonbhadra,,9,184,,,lgd
+urban_local_body,Dasna,Uttar Pradesh,,Ghaziabad,9,,739,,lgd
+urban_local_body,Faridnagar,Uttar Pradesh,,Modinagar,9,,738,,lgd
+urban_local_body,Fatehpur Chaurasi,Uttar Pradesh,,Safipur,9,,814,,lgd
+urban_local_body,Gangapur,Uttar Pradesh,,Varanasi Sadar,9,,996,,lgd
+urban_local_body,Ganj Muradabad,Uttar Pradesh,,Safipur,9,,814,,lgd
+urban_local_body,Garhi Pukhta,Uttar Pradesh,,Shamli,9,,707,,lgd
+urban_local_body,Mahroni,Uttar Pradesh,,Mahroni,9,,863,,lgd
+urban_local_body,Gopamau,Uttar Pradesh,,Hardoi,9,,811,,lgd
+urban_local_body,Haidergarh,Uttar Pradesh,Bara Banki,,9,129,,,lgd
+urban_local_body,Jhinjhana,Uttar Pradesh,,Kairana,9,,706,,lgd
+urban_local_body,Kakori,Uttar Pradesh,,Sadar,9,,821,,lgd
+urban_local_body,Kapilavastu,Uttar Pradesh,Siddharthnagar,,9,182,,,lgd
+urban_local_body,Khadda,Uttar Pradesh,Kushinagar,,9,160,,,lgd
+urban_local_body,Lakhna,Uttar Pradesh,,Bharthana,9,,839,,lgd
+urban_local_body,Musafirkhana,Uttar Pradesh,,Musafirkhana,9,,912,,lgd
+urban_local_body,Nasirabad,Uttar Pradesh,Rae Bareli,,9,175,,,lgd
+urban_local_body,Niwari,Uttar Pradesh,,Modinagar,9,,738,,lgd
+urban_local_body,Renukoot,Uttar Pradesh,,Dudhi,9,,1006,,lgd
+urban_local_body,Safipur,Uttar Pradesh,,Safipur,9,,814,,lgd
+urban_local_body,Sarai Mir,Uttar Pradesh,,Nizamabad,9,,967,,lgd
+urban_local_body,Thana Bhawan,Uttar Pradesh,,Shamli,9,,707,,lgd
+urban_local_body,Zafrabad,Uttar Pradesh,Jaunpur,,9,152,,,lgd

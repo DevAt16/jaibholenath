@@ -88,6 +88,18 @@ Supported location types:
 - `village`
 - `urban_local_body`
 
+Normalize official LGD/Census files into the project format before importing:
+
+```powershell
+python scripts/prepare_location_sources.py --state "Uttar Pradesh" --census-towns data/source/census_towns_2011.csv --output data/prepared_locations_uttar_pradesh.csv
+python scripts/import_locations.py data/prepared_locations_uttar_pradesh.csv --source official_location_sources
+```
+
+For source guidance and append-safe examples, see `docs/LOCATION_SOURCES.md`.
+
+For the district-only Phase 1.1 baseline plan, see
+`docs/PHASE_1_1_DISTRICT_BASELINE.md`.
+
 ## Generate Search Tasks
 
 Default task generation uses districts, towns, and urban local bodies only:

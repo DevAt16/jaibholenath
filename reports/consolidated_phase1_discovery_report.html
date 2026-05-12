@@ -34,7 +34,7 @@ p { margin: 0 0 3.4mm; }
 .muted { color: #617085; }
 .legend { display: flex; gap: 5mm; flex-wrap: wrap; margin: 2mm 0 4mm; color: #617085; font-size: 8.8pt; }
 .legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; background: var(--c); }
-.stacked-total { display: grid; grid-template-columns: 55.7% 9.5% 34.8%; width: 100%; height: 16mm; border-radius: 6px; overflow: hidden; border: 1px solid #d9e0e8; margin: 4mm 0; }
+.stacked-total { display: grid; grid-template-columns: 55.5% 9.3% 35.2%; width: 100%; height: 16mm; border-radius: 6px; overflow: hidden; border: 1px solid #d9e0e8; margin: 4mm 0; }
 .stack-high { background: #1f9d73; }
 .stack-medium { background: #d18b12; }
 .stack-low { background: #5969b2; }
@@ -113,26 +113,26 @@ li { margin-bottom: 2mm; }
             
         <div class="metric-card">
             <div class="metric-label">Unique Google Place IDs</div>
-            <div class="metric-value">95,231</div>
+            <div class="metric-value">98,144</div>
             <div class="metric-note">Deduplicated candidate records</div>
         </div>
     
             
         <div class="metric-card">
             <div class="metric-label">High-confidence Shiva</div>
-            <div class="metric-value">53,051</div>
-            <div class="metric-note">55.7% of unique candidates</div>
+            <div class="metric-value">54,502</div>
+            <div class="metric-note">55.5% of unique candidates</div>
         </div>
     
             
         <div class="metric-card">
             <div class="metric-label">High + Medium Signal</div>
-            <div class="metric-value">62,080</div>
-            <div class="metric-note">65.2% of unique candidates</div>
+            <div class="metric-value">63,624</div>
+            <div class="metric-note">64.8% of unique candidates</div>
         </div>
     
         </div>
-        <p class="source-line">Generated: May 11, 2026 01:04 PM | Source file status: discovery_count_not_final_cultural_count</p>
+        <p class="source-line">Generated: May 11, 2026 06:25 PM | Source file status: discovery_count_not_final_cultural_count</p>
     </div>
 </section>
 
@@ -142,21 +142,21 @@ li { margin-bottom: 2mm; }
         
         <div class="metric-card">
             <div class="metric-label">Discovered Occurrences</div>
-            <div class="metric-value">325,670</div>
+            <div class="metric-value">345,533</div>
             <div class="metric-note">Raw result-count total from completed search tasks</div>
         </div>
     
         
         <div class="metric-card">
             <div class="metric-label">Duplicates Removed</div>
-            <div class="metric-value">230,439</div>
-            <div class="metric-note">70.8% of discovered occurrences</div>
+            <div class="metric-value">247,389</div>
+            <div class="metric-note">71.6% of discovered occurrences</div>
         </div>
     
         
         <div class="metric-card">
             <div class="metric-label">Candidate Export Rows</div>
-            <div class="metric-value">95,231</div>
+            <div class="metric-value">98,144</div>
             <div class="metric-note">Rows in candidate_review.csv</div>
         </div>
     
@@ -177,8 +177,8 @@ li { margin-bottom: 2mm; }
         
         <div class="metric-card">
             <div class="metric-label">Low-confidence Possible Temples</div>
-            <div class="metric-value">33,151</div>
-            <div class="metric-note">34.8% of unique candidates</div>
+            <div class="metric-value">34,520</div>
+            <div class="metric-note">35.2% of unique candidates</div>
         </div>
     
     </div>
@@ -186,23 +186,23 @@ li { margin-bottom: 2mm; }
         <div class="panel">
             <h3>What The Data Says</h3>
             <ul>
-                <li>The pipeline reduced <strong>325,670</strong> discovered occurrences to <strong>95,231</strong> unique Google Place IDs, which is a strong signal that cross-query deduplication is doing real work.</li>
-                <li><strong>62,080</strong> candidates are high or medium confidence by name classification, representing <strong>65.2%</strong> of the unique candidate set.</li>
-                <li>The top five states by unique discovered candidates account for <strong>49.8%</strong> of the current candidate set; the top ten account for <strong>69.4%</strong>.</li>
+                <li>The pipeline reduced <strong>345,533</strong> discovered occurrences to <strong>98,144</strong> unique Google Place IDs, which is a strong signal that cross-query deduplication is doing real work.</li>
+                <li><strong>63,624</strong> candidates are high or medium confidence by name classification, representing <strong>64.8%</strong> of the unique candidate set.</li>
+                <li>The top five states by unique discovered candidates account for <strong>51.4%</strong> of the current candidate set; the top ten account for <strong>70.4%</strong>.</li>
                 <li><strong>Uttar Pradesh</strong> currently has the largest unique candidate volume, while <strong>Uttar Pradesh</strong> has the largest high-confidence count.</li>
             </ul>
         </div>
         <div class="panel">
             <h3>Confidence Mix</h3>
             <div class="legend">
-                <span style="--c: #1f9d73">High 55.7%</span>
-                <span style="--c: #d18b12">Medium 9.5%</span>
-                <span style="--c: #5969b2">Low 34.8%</span>
+                <span style="--c: #1f9d73">High 55.5%</span>
+                <span style="--c: #d18b12">Medium 9.3%</span>
+                <span style="--c: #5969b2">Low 35.2%</span>
             </div>
             <div class="stacked-total"><div class="stack-high"></div><div class="stack-medium"></div><div class="stack-low"></div></div>
             <div class="callout">
-                <div><span class="big-number">53,051</span><br><span class="muted">High-confidence names</span></div>
-                <div><span class="big-number">9,029</span><br><span class="muted">Medium-confidence names</span></div>
+                <div><span class="big-number">54,502</span><br><span class="muted">High-confidence names</span></div>
+                <div><span class="big-number">9,122</span><br><span class="muted">Medium-confidence names</span></div>
             </div>
             <p class="muted">Low confidence is a review queue, not a negative label. It means the candidate name did not match the configured Shiva terms strongly enough.</p>
         </div>
@@ -221,76 +221,76 @@ li { margin-bottom: 2mm; }
         <svg class="chart" width="760" height="388" viewBox="0 0 760 388" role="img">
 <text x="0" y="26" class="chart-label">Uttar Pradesh</text>
 <rect x="190" y="13" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="13" width="301" height="15" fill="#1f9d73" />
-<rect x="491" y="13" width="45" height="15" fill="#d18b12" />
-<rect x="536" y="13" width="143" height="15" fill="#5969b2" />
-<text x="692" y="26" class="chart-value">16,369</text>
+<rect x="190" y="13" width="292" height="15" fill="#1f9d73" />
+<rect x="482" y="13" width="41" height="15" fill="#d18b12" />
+<rect x="523" y="13" width="155" height="15" fill="#5969b2" />
+<text x="692" y="26" class="chart-value">19,443</text>
 <text x="0" y="57" class="chart-label">Madhya Pradesh</text>
 <rect x="190" y="44" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="44" width="180" height="15" fill="#1f9d73" />
-<rect x="370" y="44" width="34" height="15" fill="#d18b12" />
-<rect x="404" y="44" width="237" height="15" fill="#5969b2" />
-<text x="692" y="57" class="chart-value">15,101</text>
-<text x="0" y="88" class="chart-label">Rajasthan</text>
+<rect x="190" y="44" width="151" height="15" fill="#1f9d73" />
+<rect x="341" y="44" width="27" height="15" fill="#d18b12" />
+<rect x="368" y="44" width="199" height="15" fill="#5969b2" />
+<text x="692" y="57" class="chart-value">15,037</text>
+<text x="0" y="88" class="chart-label">Maharashtra</text>
 <rect x="190" y="75" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="75" width="109" height="15" fill="#1f9d73" />
-<rect x="299" y="75" width="7" height="15" fill="#d18b12" />
-<rect x="306" y="75" width="43" height="15" fill="#5969b2" />
-<text x="692" y="88" class="chart-value">5,363</text>
-<text x="0" y="119" class="chart-label">Maharashtra</text>
+<rect x="190" y="75" width="81" height="15" fill="#1f9d73" />
+<rect x="271" y="75" width="24" height="15" fill="#d18b12" />
+<rect x="295" y="75" width="29" height="15" fill="#5969b2" />
+<text x="692" y="88" class="chart-value">5,360</text>
+<text x="0" y="119" class="chart-label">Rajasthan</text>
 <rect x="190" y="106" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="106" width="96" height="15" fill="#1f9d73" />
-<rect x="286" y="106" width="29" height="15" fill="#d18b12" />
-<rect x="315" y="106" width="34" height="15" fill="#5969b2" />
-<text x="692" y="119" class="chart-value">5,361</text>
+<rect x="190" y="106" width="91" height="15" fill="#1f9d73" />
+<rect x="281" y="106" width="6" height="15" fill="#d18b12" />
+<rect x="287" y="106" width="36" height="15" fill="#5969b2" />
+<text x="692" y="119" class="chart-value">5,345</text>
 <text x="0" y="150" class="chart-label">Bihar</text>
 <rect x="190" y="137" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="137" width="101" height="15" fill="#1f9d73" />
-<rect x="291" y="137" width="15" height="15" fill="#d18b12" />
-<rect x="306" y="137" width="39" height="15" fill="#5969b2" />
-<text x="692" y="150" class="chart-value">5,248</text>
+<rect x="190" y="137" width="85" height="15" fill="#1f9d73" />
+<rect x="275" y="137" width="12" height="15" fill="#d18b12" />
+<rect x="287" y="137" width="33" height="15" fill="#5969b2" />
+<text x="692" y="150" class="chart-value">5,241</text>
 <text x="0" y="181" class="chart-label">Gujarat</text>
 <rect x="190" y="168" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="168" width="93" height="15" fill="#1f9d73" />
-<rect x="283" y="168" width="8" height="15" fill="#d18b12" />
-<rect x="291" y="168" width="27" height="15" fill="#5969b2" />
-<text x="692" y="181" class="chart-value">4,344</text>
+<rect x="190" y="168" width="79" height="15" fill="#1f9d73" />
+<rect x="269" y="168" width="7" height="15" fill="#d18b12" />
+<rect x="276" y="168" width="23" height="15" fill="#5969b2" />
+<text x="692" y="181" class="chart-value">4,341</text>
 <text x="0" y="212" class="chart-label">Tamil Nadu</text>
 <rect x="190" y="199" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="199" width="28" height="15" fill="#1f9d73" />
-<rect x="218" y="199" width="19" height="15" fill="#d18b12" />
-<rect x="237" y="199" width="72" height="15" fill="#5969b2" />
-<text x="692" y="212" class="chart-value">4,030</text>
+<rect x="190" y="199" width="24" height="15" fill="#1f9d73" />
+<rect x="214" y="199" width="16" height="15" fill="#d18b12" />
+<rect x="230" y="199" width="60" height="15" fill="#5969b2" />
+<text x="692" y="212" class="chart-value">4,029</text>
 <text x="0" y="243" class="chart-label">Karnataka</text>
 <rect x="190" y="230" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="230" width="43" height="15" fill="#1f9d73" />
-<rect x="233" y="230" width="39" height="15" fill="#d18b12" />
-<rect x="272" y="230" width="28" height="15" fill="#5969b2" />
-<text x="692" y="243" class="chart-value">3,705</text>
+<rect x="190" y="230" width="36" height="15" fill="#1f9d73" />
+<rect x="226" y="230" width="32" height="15" fill="#d18b12" />
+<rect x="258" y="230" width="23" height="15" fill="#5969b2" />
+<text x="692" y="243" class="chart-value">3,704</text>
 <text x="0" y="274" class="chart-label">Odisha</text>
 <rect x="190" y="261" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="261" width="62" height="15" fill="#1f9d73" />
-<rect x="252" y="261" width="8" height="15" fill="#d18b12" />
-<rect x="260" y="261" width="29" height="15" fill="#5969b2" />
+<rect x="190" y="261" width="52" height="15" fill="#1f9d73" />
+<rect x="242" y="261" width="7" height="15" fill="#d18b12" />
+<rect x="249" y="261" width="24" height="15" fill="#5969b2" />
 <text x="692" y="274" class="chart-value">3,371</text>
 <text x="0" y="305" class="chart-label">Chhattisgarh</text>
 <rect x="190" y="292" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="292" width="59" height="15" fill="#1f9d73" />
-<rect x="249" y="292" width="6" height="15" fill="#d18b12" />
-<rect x="255" y="292" width="29" height="15" fill="#5969b2" />
+<rect x="190" y="292" width="50" height="15" fill="#1f9d73" />
+<rect x="240" y="292" width="5" height="15" fill="#d18b12" />
+<rect x="245" y="292" width="25" height="15" fill="#5969b2" />
 <text x="692" y="305" class="chart-value">3,225</text>
 <text x="0" y="336" class="chart-label">Telangana</text>
 <rect x="190" y="323" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="323" width="45" height="15" fill="#1f9d73" />
-<rect x="235" y="323" width="11" height="15" fill="#d18b12" />
-<rect x="246" y="323" width="36" height="15" fill="#5969b2" />
-<text x="692" y="336" class="chart-value">3,120</text>
+<rect x="190" y="323" width="38" height="15" fill="#1f9d73" />
+<rect x="228" y="323" width="9" height="15" fill="#d18b12" />
+<rect x="237" y="323" width="30" height="15" fill="#5969b2" />
+<text x="692" y="336" class="chart-value">3,118</text>
 <text x="0" y="367" class="chart-label">West Bengal</text>
 <rect x="190" y="354" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="354" width="63" height="15" fill="#1f9d73" />
-<rect x="253" y="354" width="5" height="15" fill="#d18b12" />
-<rect x="258" y="354" width="21" height="15" fill="#5969b2" />
-<text x="692" y="367" class="chart-value">3,006</text>
+<rect x="190" y="354" width="53" height="15" fill="#1f9d73" />
+<rect x="243" y="354" width="4" height="15" fill="#d18b12" />
+<rect x="247" y="354" width="17" height="15" fill="#5969b2" />
+<text x="692" y="367" class="chart-value">3,005</text>
 </svg>
     </div>
     <div class="panel keep-together">
@@ -299,58 +299,58 @@ li { margin-bottom: 2mm; }
 <text x="0" y="26" class="chart-label">Uttar Pradesh</text>
 <rect x="190" y="13" width="490" height="14" rx="7" class="bar-bg" />
 <rect x="190" y="13" width="490" height="14" rx="7" fill="#1f9d73" />
-<text x="692" y="26" class="chart-value">10,067</text>
+<text x="692" y="26" class="chart-value">11,604</text>
 <text x="0" y="56" class="chart-label">Madhya Pradesh</text>
 <rect x="190" y="43" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="43" width="293" height="14" rx="7" fill="#1f9d73" />
-<text x="692" y="56" class="chart-value">6,040</text>
+<rect x="190" y="43" width="253" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="56" class="chart-value">6,012</text>
 <text x="0" y="86" class="chart-label">Rajasthan</text>
 <rect x="190" y="73" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="73" width="177" height="14" rx="7" fill="#1f9d73" />
-<text x="692" y="86" class="chart-value">3,655</text>
+<rect x="190" y="73" width="153" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="86" class="chart-value">3,640</text>
 <text x="0" y="116" class="chart-label">Bihar</text>
 <rect x="190" y="103" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="103" width="165" height="14" rx="7" fill="#1f9d73" />
-<text x="692" y="116" class="chart-value">3,398</text>
+<rect x="190" y="103" width="143" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="116" class="chart-value">3,394</text>
 <text x="0" y="146" class="chart-label">Maharashtra</text>
 <rect x="190" y="133" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="133" width="156" height="14" rx="7" fill="#1f9d73" />
-<text x="692" y="146" class="chart-value">3,217</text>
+<rect x="190" y="133" width="135" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="146" class="chart-value">3,216</text>
 <text x="0" y="176" class="chart-label">Gujarat</text>
 <rect x="190" y="163" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="163" width="152" height="14" rx="7" fill="#1f9d73" />
-<text x="692" y="176" class="chart-value">3,138</text>
+<rect x="190" y="163" width="132" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="176" class="chart-value">3,135</text>
 <text x="0" y="206" class="chart-label">West Bengal</text>
 <rect x="190" y="193" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="193" width="103" height="14" rx="7" fill="#1f9d73" />
+<rect x="190" y="193" width="89" height="14" rx="7" fill="#1f9d73" />
 <text x="692" y="206" class="chart-value">2,129</text>
 <text x="0" y="236" class="chart-label">Odisha</text>
 <rect x="190" y="223" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="223" width="102" height="14" rx="7" fill="#1f9d73" />
+<rect x="190" y="223" width="88" height="14" rx="7" fill="#1f9d73" />
 <text x="692" y="236" class="chart-value">2,096</text>
 <text x="0" y="266" class="chart-label">Chhattisgarh</text>
 <rect x="190" y="253" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="253" width="97" height="14" rx="7" fill="#1f9d73" />
+<rect x="190" y="253" width="84" height="14" rx="7" fill="#1f9d73" />
 <text x="692" y="266" class="chart-value">2,002</text>
 <text x="0" y="296" class="chart-label">Jharkhand</text>
 <rect x="190" y="283" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="283" width="93" height="14" rx="7" fill="#1f9d73" />
-<text x="692" y="296" class="chart-value">1,924</text>
+<rect x="190" y="283" width="81" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="296" class="chart-value">1,923</text>
 <text x="0" y="326" class="chart-label">Assam</text>
 <rect x="190" y="313" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="313" width="90" height="14" rx="7" fill="#1f9d73" />
+<rect x="190" y="313" width="78" height="14" rx="7" fill="#1f9d73" />
 <text x="692" y="326" class="chart-value">1,851</text>
 <text x="0" y="356" class="chart-label">Haryana</text>
 <rect x="190" y="343" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="343" width="89" height="14" rx="7" fill="#1f9d73" />
-<text x="692" y="356" class="chart-value">1,842</text>
+<rect x="190" y="343" width="77" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="356" class="chart-value">1,834</text>
 </svg>
     </div>
 </section>
 
 <section class="page">
     <h3>State Ranking Detail</h3>
-    <table class=""><thead><tr><th>State / UT</th><th>Unique</th><th>High</th><th>Medium</th><th>High+Medium Share</th></tr></thead><tbody><tr><td>Uttar Pradesh</td><td>16,369</td><td>10,067</td><td>1,506</td><td>70.7%</td></tr><tr><td>Madhya Pradesh</td><td>15,101</td><td>6,040</td><td>1,136</td><td>47.5%</td></tr><tr><td>Rajasthan</td><td>5,363</td><td>3,655</td><td>243</td><td>72.7%</td></tr><tr><td>Maharashtra</td><td>5,361</td><td>3,217</td><td>979</td><td>78.3%</td></tr><tr><td>Bihar</td><td>5,248</td><td>3,398</td><td>516</td><td>74.6%</td></tr><tr><td>Gujarat</td><td>4,344</td><td>3,138</td><td>283</td><td>78.8%</td></tr><tr><td>Tamil Nadu</td><td>4,030</td><td>962</td><td>652</td><td>40.0%</td></tr><tr><td>Karnataka</td><td>3,705</td><td>1,455</td><td>1,306</td><td>74.5%</td></tr><tr><td>Odisha</td><td>3,371</td><td>2,096</td><td>289</td><td>70.8%</td></tr><tr><td>Chhattisgarh</td><td>3,225</td><td>2,002</td><td>224</td><td>69.0%</td></tr><tr><td>Telangana</td><td>3,120</td><td>1,511</td><td>379</td><td>60.6%</td></tr><tr><td>West Bengal</td><td>3,006</td><td>2,129</td><td>169</td><td>76.4%</td></tr><tr><td>Assam</td><td>2,978</td><td>1,851</td><td>133</td><td>66.6%</td></tr><tr><td>Haryana</td><td>2,913</td><td>1,842</td><td>154</td><td>68.5%</td></tr><tr><td>Jharkhand</td><td>2,821</td><td>1,924</td><td>158</td><td>73.8%</td></tr></tbody></table>
+    <table class=""><thead><tr><th>State / UT</th><th>Unique</th><th>High</th><th>Medium</th><th>High+Medium Share</th></tr></thead><tbody><tr><td>Uttar Pradesh</td><td>19,443</td><td>11,604</td><td>1,649</td><td>68.2%</td></tr><tr><td>Madhya Pradesh</td><td>15,037</td><td>6,012</td><td>1,109</td><td>47.4%</td></tr><tr><td>Maharashtra</td><td>5,360</td><td>3,216</td><td>979</td><td>78.3%</td></tr><tr><td>Rajasthan</td><td>5,345</td><td>3,640</td><td>242</td><td>72.6%</td></tr><tr><td>Bihar</td><td>5,241</td><td>3,394</td><td>514</td><td>74.6%</td></tr><tr><td>Gujarat</td><td>4,341</td><td>3,135</td><td>283</td><td>78.7%</td></tr><tr><td>Tamil Nadu</td><td>4,029</td><td>962</td><td>652</td><td>40.1%</td></tr><tr><td>Karnataka</td><td>3,704</td><td>1,454</td><td>1,306</td><td>74.5%</td></tr><tr><td>Odisha</td><td>3,371</td><td>2,096</td><td>289</td><td>70.8%</td></tr><tr><td>Chhattisgarh</td><td>3,225</td><td>2,002</td><td>224</td><td>69.0%</td></tr><tr><td>Telangana</td><td>3,118</td><td>1,511</td><td>377</td><td>60.6%</td></tr><tr><td>West Bengal</td><td>3,005</td><td>2,129</td><td>169</td><td>76.5%</td></tr><tr><td>Assam</td><td>2,978</td><td>1,851</td><td>133</td><td>66.6%</td></tr><tr><td>Haryana</td><td>2,899</td><td>1,834</td><td>150</td><td>68.4%</td></tr><tr><td>Jharkhand</td><td>2,820</td><td>1,923</td><td>158</td><td>73.8%</td></tr></tbody></table>
 </section>
 
 <section class="page">
@@ -360,94 +360,94 @@ li { margin-bottom: 2mm; }
         <svg class="chart" width="760" height="481" viewBox="0 0 760 481" role="img">
 <text x="0" y="26" class="chart-label">Uttar Pradesh, Varanasi</text>
 <rect x="190" y="13" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="13" width="223" height="15" fill="#1f9d73" />
-<rect x="413" y="13" width="39" height="15" fill="#d18b12" />
-<rect x="452" y="13" width="227" height="15" fill="#5969b2" />
-<text x="692" y="26" class="chart-value">1,136</text>
+<rect x="190" y="13" width="220" height="15" fill="#1f9d73" />
+<rect x="410" y="13" width="39" height="15" fill="#d18b12" />
+<rect x="449" y="13" width="229" height="15" fill="#5969b2" />
+<text x="692" y="26" class="chart-value">1,226</text>
 <text x="0" y="57" class="chart-label">Uttar Pradesh, Kanpur Nagar</text>
 <rect x="190" y="44" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="44" width="197" height="15" fill="#1f9d73" />
-<rect x="387" y="44" width="59" height="15" fill="#d18b12" />
-<rect x="446" y="44" width="177" height="15" fill="#5969b2" />
-<text x="692" y="57" class="chart-value">1,009</text>
+<rect x="190" y="44" width="180" height="15" fill="#1f9d73" />
+<rect x="370" y="44" width="55" height="15" fill="#d18b12" />
+<rect x="425" y="44" width="165" height="15" fill="#5969b2" />
+<text x="692" y="57" class="chart-value">1,005</text>
 <text x="0" y="88" class="chart-label">Uttar Pradesh, Agra</text>
 <rect x="190" y="75" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="75" width="228" height="15" fill="#1f9d73" />
-<rect x="418" y="75" width="24" height="15" fill="#d18b12" />
-<rect x="442" y="75" width="174" height="15" fill="#5969b2" />
-<text x="692" y="88" class="chart-value">991</text>
+<rect x="190" y="75" width="206" height="15" fill="#1f9d73" />
+<rect x="396" y="75" width="19" height="15" fill="#d18b12" />
+<rect x="415" y="75" width="159" height="15" fill="#5969b2" />
+<text x="692" y="88" class="chart-value">965</text>
 <text x="0" y="119" class="chart-label">Uttar Pradesh, Aligarh</text>
 <rect x="190" y="106" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="106" width="247" height="15" fill="#1f9d73" />
-<rect x="437" y="106" width="12" height="15" fill="#d18b12" />
-<rect x="449" y="106" width="92" height="15" fill="#5969b2" />
-<text x="692" y="119" class="chart-value">819</text>
-<text x="0" y="150" class="chart-label">Uttar Pradesh, Prayagraj</text>
+<rect x="190" y="106" width="252" height="15" fill="#1f9d73" />
+<rect x="442" y="106" width="12" height="15" fill="#d18b12" />
+<rect x="454" y="106" width="111" height="15" fill="#5969b2" />
+<text x="692" y="119" class="chart-value">944</text>
+<text x="0" y="150" class="chart-label">Uttar Pradesh, Mathura</text>
 <rect x="190" y="137" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="137" width="137" height="15" fill="#1f9d73" />
-<rect x="327" y="137" width="31" height="15" fill="#d18b12" />
-<rect x="358" y="137" width="135" height="15" fill="#5969b2" />
-<text x="692" y="150" class="chart-value">706</text>
-<text x="0" y="181" class="chart-label">Uttar Pradesh, Lucknow</text>
+<rect x="190" y="137" width="189" height="15" fill="#1f9d73" />
+<rect x="379" y="137" width="19" height="15" fill="#d18b12" />
+<rect x="398" y="137" width="152" height="15" fill="#5969b2" />
+<text x="692" y="150" class="chart-value">904</text>
+<text x="0" y="181" class="chart-label">Uttar Pradesh, Bareilly</text>
 <rect x="190" y="168" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="168" width="185" height="15" fill="#1f9d73" />
-<rect x="375" y="168" width="27" height="15" fill="#d18b12" />
-<rect x="402" y="168" width="87" height="15" fill="#5969b2" />
-<text x="692" y="181" class="chart-value">698</text>
-<text x="0" y="212" class="chart-label">Uttar Pradesh, Ghaziabad</text>
+<rect x="190" y="168" width="207" height="15" fill="#1f9d73" />
+<rect x="397" y="168" width="21" height="15" fill="#d18b12" />
+<rect x="418" y="168" width="103" height="15" fill="#5969b2" />
+<text x="692" y="181" class="chart-value">834</text>
+<text x="0" y="212" class="chart-label">Uttar Pradesh, Saharanpur</text>
 <rect x="190" y="199" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="199" width="186" height="15" fill="#1f9d73" />
-<rect x="376" y="199" width="18" height="15" fill="#d18b12" />
-<rect x="394" y="199" width="84" height="15" fill="#5969b2" />
-<text x="692" y="212" class="chart-value">672</text>
-<text x="0" y="243" class="chart-label">Madhya Pradesh, Narmadapuram</text>
+<rect x="190" y="199" width="185" height="15" fill="#1f9d73" />
+<rect x="375" y="199" width="13" height="15" fill="#d18b12" />
+<rect x="388" y="199" width="86" height="15" fill="#5969b2" />
+<text x="692" y="212" class="chart-value">715</text>
+<text x="0" y="243" class="chart-label">Uttar Pradesh, Jhansi</text>
 <rect x="190" y="230" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="230" width="103" height="15" fill="#1f9d73" />
-<rect x="293" y="230" width="39" height="15" fill="#d18b12" />
-<rect x="332" y="230" width="141" height="15" fill="#5969b2" />
-<text x="692" y="243" class="chart-value">659</text>
-<text x="0" y="274" class="chart-label">Madhya Pradesh, Bhopal</text>
+<rect x="190" y="230" width="99" height="15" fill="#1f9d73" />
+<rect x="289" y="230" width="31" height="15" fill="#d18b12" />
+<rect x="320" y="230" width="151" height="15" fill="#5969b2" />
+<text x="692" y="243" class="chart-value">710</text>
+<text x="0" y="274" class="chart-label">Uttar Pradesh, Prayagraj</text>
 <rect x="190" y="261" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="261" width="146" height="15" fill="#1f9d73" />
-<rect x="336" y="261" width="18" height="15" fill="#d18b12" />
-<rect x="354" y="261" width="99" height="15" fill="#5969b2" />
-<text x="692" y="274" class="chart-value">614</text>
-<text x="0" y="305" class="chart-label">Uttar Pradesh, Meerut</text>
+<rect x="190" y="261" width="124" height="15" fill="#1f9d73" />
+<rect x="314" y="261" width="27" height="15" fill="#d18b12" />
+<rect x="341" y="261" width="124" height="15" fill="#5969b2" />
+<text x="692" y="274" class="chart-value">693</text>
+<text x="0" y="305" class="chart-label">Uttar Pradesh, Lucknow</text>
 <rect x="190" y="292" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="292" width="173" height="15" fill="#1f9d73" />
-<rect x="363" y="292" width="12" height="15" fill="#d18b12" />
-<rect x="375" y="292" width="70" height="15" fill="#5969b2" />
-<text x="692" y="305" class="chart-value">595</text>
-<text x="0" y="336" class="chart-label">Madhya Pradesh, Ujjain</text>
+<rect x="190" y="292" width="167" height="15" fill="#1f9d73" />
+<rect x="357" y="292" width="24" height="15" fill="#d18b12" />
+<rect x="381" y="292" width="80" height="15" fill="#5969b2" />
+<text x="692" y="305" class="chart-value">680</text>
+<text x="0" y="336" class="chart-label">Madhya Pradesh, Narmadapuram</text>
 <rect x="190" y="323" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="323" width="113" height="15" fill="#1f9d73" />
-<rect x="303" y="323" width="18" height="15" fill="#d18b12" />
-<rect x="321" y="323" width="111" height="15" fill="#5969b2" />
-<text x="692" y="336" class="chart-value">564</text>
-<text x="0" y="367" class="chart-label">Madhya Pradesh, Narsinghpur</text>
+<rect x="190" y="323" width="96" height="15" fill="#1f9d73" />
+<rect x="286" y="323" width="35" height="15" fill="#d18b12" />
+<rect x="321" y="323" width="130" height="15" fill="#5969b2" />
+<text x="692" y="336" class="chart-value">655</text>
+<text x="0" y="367" class="chart-label">Uttar Pradesh, Ghaziabad</text>
 <rect x="190" y="354" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="354" width="85" height="15" fill="#1f9d73" />
-<rect x="275" y="354" width="36" height="15" fill="#d18b12" />
-<rect x="311" y="354" width="119" height="15" fill="#5969b2" />
-<text x="692" y="367" class="chart-value">561</text>
-<text x="0" y="398" class="chart-label">Madhya Pradesh, Khargone</text>
+<rect x="190" y="354" width="165" height="15" fill="#1f9d73" />
+<rect x="355" y="354" width="16" height="15" fill="#d18b12" />
+<rect x="371" y="354" width="75" height="15" fill="#5969b2" />
+<text x="692" y="367" class="chart-value">646</text>
+<text x="0" y="398" class="chart-label">Madhya Pradesh, Bhopal</text>
 <rect x="190" y="385" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="385" width="97" height="15" fill="#1f9d73" />
-<rect x="287" y="385" width="29" height="15" fill="#d18b12" />
-<rect x="316" y="385" width="106" height="15" fill="#5969b2" />
-<text x="692" y="398" class="chart-value">543</text>
-<text x="0" y="429" class="chart-label">Madhya Pradesh, Neemuch</text>
+<rect x="190" y="385" width="135" height="15" fill="#1f9d73" />
+<rect x="325" y="385" width="17" height="15" fill="#d18b12" />
+<rect x="342" y="385" width="92" height="15" fill="#5969b2" />
+<text x="692" y="398" class="chart-value">614</text>
+<text x="0" y="429" class="chart-label">Madhya Pradesh, Ujjain</text>
 <rect x="190" y="416" width="490" height="15" rx="7.5" class="bar-bg" />
-<rect x="190" y="416" width="77" height="15" fill="#1f9d73" />
-<rect x="267" y="416" width="13" height="15" fill="#d18b12" />
-<rect x="280" y="416" width="138" height="15" fill="#5969b2" />
-<text x="692" y="429" class="chart-value">532</text>
-<text x="0" y="460" class="chart-label">Madhya Pradesh, Gwalior</text>
+<rect x="190" y="416" width="105" height="15" fill="#1f9d73" />
+<rect x="295" y="416" width="16" height="15" fill="#d18b12" />
+<rect x="311" y="416" width="102" height="15" fill="#5969b2" />
+<text x="692" y="429" class="chart-value">561</text>
+<text x="0" y="460" class="chart-label">Madhya Pradesh, Narsinghpur</text>
 <rect x="190" y="447" width="490" height="15" rx="7.5" class="bar-bg" />
 <rect x="190" y="447" width="78" height="15" fill="#1f9d73" />
-<rect x="268" y="447" width="12" height="15" fill="#d18b12" />
-<rect x="280" y="447" width="134" height="15" fill="#5969b2" />
-<text x="692" y="460" class="chart-value">523</text>
+<rect x="268" y="447" width="32" height="15" fill="#d18b12" />
+<rect x="300" y="447" width="111" height="15" fill="#5969b2" />
+<text x="692" y="460" class="chart-value">557</text>
 </svg>
     </div>
 </section>
@@ -460,63 +460,63 @@ li { margin-bottom: 2mm; }
 <text x="0" y="26" class="chart-label">Uttar Pradesh, Aligarh</text>
 <rect x="190" y="13" width="490" height="14" rx="7" class="bar-bg" />
 <rect x="190" y="13" width="490" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="26" class="chart-value">574</text>
-<text x="0" y="56" class="chart-label">Uttar Pradesh, Agra</text>
+<text x="692" y="26" class="chart-value">633</text>
+<text x="0" y="56" class="chart-label">Uttar Pradesh, Varanasi</text>
 <rect x="190" y="43" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="43" width="452" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="56" class="chart-value">530</text>
-<text x="0" y="86" class="chart-label">Uttar Pradesh, Varanasi</text>
+<rect x="190" y="43" width="426" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="56" class="chart-value">551</text>
+<text x="0" y="86" class="chart-label">Uttar Pradesh, Bareilly</text>
 <rect x="190" y="73" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="73" width="442" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="86" class="chart-value">518</text>
-<text x="0" y="116" class="chart-label">Uttar Pradesh, Kanpur Nagar</text>
+<rect x="190" y="73" width="402" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="86" class="chart-value">520</text>
+<text x="0" y="116" class="chart-label">Uttar Pradesh, Agra</text>
 <rect x="190" y="103" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="103" width="391" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="116" class="chart-value">459</text>
-<text x="0" y="146" class="chart-label">Uttar Pradesh, Ghaziabad</text>
+<rect x="190" y="103" width="399" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="116" class="chart-value">516</text>
+<text x="0" y="146" class="chart-label">Uttar Pradesh, Mathura</text>
 <rect x="190" y="133" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="133" width="368" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="146" class="chart-value">432</text>
-<text x="0" y="176" class="chart-label">Uttar Pradesh, Lucknow</text>
+<rect x="190" y="133" width="366" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="146" class="chart-value">474</text>
+<text x="0" y="176" class="chart-label">Uttar Pradesh, Saharanpur</text>
 <rect x="190" y="163" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="163" width="367" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="176" class="chart-value">430</text>
-<text x="0" y="206" class="chart-label">Uttar Pradesh, Meerut</text>
+<rect x="190" y="163" width="359" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="176" class="chart-value">465</text>
+<text x="0" y="206" class="chart-label">Uttar Pradesh, Kanpur Nagar</text>
 <rect x="190" y="193" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="193" width="344" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="206" class="chart-value">403</text>
-<text x="0" y="236" class="chart-label">Madhya Pradesh, Bhopal</text>
+<rect x="190" y="193" width="349" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="206" class="chart-value">452</text>
+<text x="0" y="236" class="chart-label">Uttar Pradesh, Lucknow</text>
 <rect x="190" y="223" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="223" width="289" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="236" class="chart-value">339</text>
-<text x="0" y="266" class="chart-label">Uttar Pradesh, Prayagraj</text>
+<rect x="190" y="223" width="323" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="236" class="chart-value">418</text>
+<text x="0" y="266" class="chart-label">Uttar Pradesh, Ghaziabad</text>
 <rect x="190" y="253" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="253" width="271" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="266" class="chart-value">318</text>
-<text x="0" y="296" class="chart-label">Madhya Pradesh, Ujjain</text>
+<rect x="190" y="253" width="320" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="266" class="chart-value">414</text>
+<text x="0" y="296" class="chart-label">Uttar Pradesh, Meerut</text>
 <rect x="190" y="283" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="283" width="225" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="296" class="chart-value">264</text>
-<text x="0" y="326" class="chart-label">Madhya Pradesh, Indore</text>
+<rect x="190" y="283" width="282" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="296" class="chart-value">365</text>
+<text x="0" y="326" class="chart-label">Uttar Pradesh, Moradabad</text>
 <rect x="190" y="313" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="313" width="224" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="326" class="chart-value">263</text>
-<text x="0" y="356" class="chart-label">Madhya Pradesh, Narmadapuram</text>
+<rect x="190" y="313" width="268" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="326" class="chart-value">347</text>
+<text x="0" y="356" class="chart-label">Madhya Pradesh, Bhopal</text>
 <rect x="190" y="343" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="343" width="205" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="356" class="chart-value">241</text>
-<text x="0" y="386" class="chart-label">Maharashtra, Pune</text>
+<rect x="190" y="343" width="262" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="356" class="chart-value">339</text>
+<text x="0" y="386" class="chart-label">Uttar Pradesh, Prayagraj</text>
 <rect x="190" y="373" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="373" width="200" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="386" class="chart-value">235</text>
-<text x="0" y="416" class="chart-label">Madhya Pradesh, Khargone</text>
+<rect x="190" y="373" width="241" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="386" class="chart-value">312</text>
+<text x="0" y="416" class="chart-label">Madhya Pradesh, Indore</text>
 <rect x="190" y="403" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="403" width="193" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="416" class="chart-value">227</text>
-<text x="0" y="446" class="chart-label">Uttar Pradesh, Gorakhpur</text>
+<rect x="190" y="403" width="203" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="416" class="chart-value">263</text>
+<text x="0" y="446" class="chart-label">Madhya Pradesh, Ujjain</text>
 <rect x="190" y="433" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="433" width="192" height="14" rx="7" fill="#c74f35" />
-<text x="692" y="446" class="chart-value">225</text>
+<rect x="190" y="433" width="203" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="446" class="chart-value">263</text>
 </svg>
     </div>
 </section>
@@ -524,13 +524,13 @@ li { margin-bottom: 2mm; }
 <section class="page">
     <h2>District Detail</h2>
     <h3>Highest Unique Candidate Volumes</h3>
-    <table class="district-table"><thead><tr><th>State</th><th>District</th><th>Unique</th><th>High</th><th>High+Medium Share</th></tr></thead><tbody><tr><td>Uttar Pradesh</td><td>Varanasi</td><td>1,136</td><td>518</td><td>53.6%</td></tr><tr><td>Uttar Pradesh</td><td>Kanpur Nagar</td><td>1,009</td><td>459</td><td>59.3%</td></tr><tr><td>Uttar Pradesh</td><td>Agra</td><td>991</td><td>530</td><td>59.2%</td></tr><tr><td>Uttar Pradesh</td><td>Aligarh</td><td>819</td><td>574</td><td>73.7%</td></tr><tr><td>Uttar Pradesh</td><td>Prayagraj</td><td>706</td><td>318</td><td>55.4%</td></tr><tr><td>Uttar Pradesh</td><td>Lucknow</td><td>698</td><td>430</td><td>70.8%</td></tr><tr><td>Uttar Pradesh</td><td>Ghaziabad</td><td>672</td><td>432</td><td>70.7%</td></tr><tr><td>Madhya Pradesh</td><td>Narmadapuram</td><td>659</td><td>241</td><td>50.4%</td></tr><tr><td>Madhya Pradesh</td><td>Bhopal</td><td>614</td><td>339</td><td>62.4%</td></tr><tr><td>Uttar Pradesh</td><td>Meerut</td><td>595</td><td>403</td><td>72.6%</td></tr><tr><td>Madhya Pradesh</td><td>Ujjain</td><td>564</td><td>264</td><td>54.3%</td></tr><tr><td>Madhya Pradesh</td><td>Narsinghpur</td><td>561</td><td>198</td><td>50.4%</td></tr><tr><td>Madhya Pradesh</td><td>Khargone</td><td>543</td><td>227</td><td>54.3%</td></tr><tr><td>Madhya Pradesh</td><td>Neemuch</td><td>532</td><td>179</td><td>39.7%</td></tr><tr><td>Madhya Pradesh</td><td>Gwalior</td><td>523</td><td>183</td><td>40.3%</td></tr><tr><td>Madhya Pradesh</td><td>Dhar</td><td>481</td><td>207</td><td>48.0%</td></tr><tr><td>Madhya Pradesh</td><td>Indore</td><td>478</td><td>263</td><td>63.0%</td></tr><tr><td>Madhya Pradesh</td><td>Morena</td><td>477</td><td>195</td><td>45.9%</td></tr></tbody></table>
+    <table class="district-table"><thead><tr><th>State</th><th>District</th><th>Unique</th><th>High</th><th>High+Medium Share</th></tr></thead><tbody><tr><td>Uttar Pradesh</td><td>Varanasi</td><td>1,226</td><td>551</td><td>53.1%</td></tr><tr><td>Uttar Pradesh</td><td>Kanpur Nagar</td><td>1,005</td><td>452</td><td>58.9%</td></tr><tr><td>Uttar Pradesh</td><td>Agra</td><td>965</td><td>516</td><td>58.5%</td></tr><tr><td>Uttar Pradesh</td><td>Aligarh</td><td>944</td><td>633</td><td>70.4%</td></tr><tr><td>Uttar Pradesh</td><td>Mathura</td><td>904</td><td>474</td><td>57.7%</td></tr><tr><td>Uttar Pradesh</td><td>Bareilly</td><td>834</td><td>520</td><td>68.9%</td></tr><tr><td>Uttar Pradesh</td><td>Saharanpur</td><td>715</td><td>465</td><td>69.7%</td></tr><tr><td>Uttar Pradesh</td><td>Jhansi</td><td>710</td><td>250</td><td>46.5%</td></tr><tr><td>Uttar Pradesh</td><td>Prayagraj</td><td>693</td><td>312</td><td>55.1%</td></tr><tr><td>Uttar Pradesh</td><td>Lucknow</td><td>680</td><td>418</td><td>70.4%</td></tr><tr><td>Madhya Pradesh</td><td>Narmadapuram</td><td>655</td><td>241</td><td>50.2%</td></tr><tr><td>Uttar Pradesh</td><td>Ghaziabad</td><td>646</td><td>414</td><td>70.6%</td></tr><tr><td>Madhya Pradesh</td><td>Bhopal</td><td>614</td><td>339</td><td>62.4%</td></tr><tr><td>Madhya Pradesh</td><td>Ujjain</td><td>561</td><td>263</td><td>54.2%</td></tr><tr><td>Madhya Pradesh</td><td>Narsinghpur</td><td>557</td><td>197</td><td>50.1%</td></tr><tr><td>Uttar Pradesh</td><td>Meerut</td><td>548</td><td>365</td><td>71.0%</td></tr><tr><td>Madhya Pradesh</td><td>Khargone</td><td>540</td><td>225</td><td>54.1%</td></tr><tr><td>Madhya Pradesh</td><td>Neemuch</td><td>532</td><td>179</td><td>39.7%</td></tr></tbody></table>
 </section>
 
 <section class="page">
     <h2>District Detail</h2>
     <h3>Highest High-Confidence Volumes</h3>
-    <table class="district-table"><thead><tr><th>State</th><th>District</th><th>High</th><th>High Share</th><th>Unique</th></tr></thead><tbody><tr><td>Uttar Pradesh</td><td>Aligarh</td><td>574</td><td>70.1%</td><td>819</td></tr><tr><td>Uttar Pradesh</td><td>Agra</td><td>530</td><td>53.5%</td><td>991</td></tr><tr><td>Uttar Pradesh</td><td>Varanasi</td><td>518</td><td>45.6%</td><td>1,136</td></tr><tr><td>Uttar Pradesh</td><td>Kanpur Nagar</td><td>459</td><td>45.5%</td><td>1,009</td></tr><tr><td>Uttar Pradesh</td><td>Ghaziabad</td><td>432</td><td>64.3%</td><td>672</td></tr><tr><td>Uttar Pradesh</td><td>Lucknow</td><td>430</td><td>61.6%</td><td>698</td></tr><tr><td>Uttar Pradesh</td><td>Meerut</td><td>403</td><td>67.7%</td><td>595</td></tr><tr><td>Madhya Pradesh</td><td>Bhopal</td><td>339</td><td>55.2%</td><td>614</td></tr><tr><td>Uttar Pradesh</td><td>Prayagraj</td><td>318</td><td>45.0%</td><td>706</td></tr><tr><td>Madhya Pradesh</td><td>Ujjain</td><td>264</td><td>46.8%</td><td>564</td></tr><tr><td>Madhya Pradesh</td><td>Indore</td><td>263</td><td>55.0%</td><td>478</td></tr><tr><td>Madhya Pradesh</td><td>Narmadapuram</td><td>241</td><td>36.6%</td><td>659</td></tr><tr><td>Maharashtra</td><td>Pune</td><td>235</td><td>56.6%</td><td>415</td></tr><tr><td>Madhya Pradesh</td><td>Khargone</td><td>227</td><td>41.8%</td><td>543</td></tr><tr><td>Uttar Pradesh</td><td>Gorakhpur</td><td>225</td><td>48.8%</td><td>461</td></tr></tbody></table>
+    <table class="district-table"><thead><tr><th>State</th><th>District</th><th>High</th><th>High Share</th><th>Unique</th></tr></thead><tbody><tr><td>Uttar Pradesh</td><td>Aligarh</td><td>633</td><td>67.1%</td><td>944</td></tr><tr><td>Uttar Pradesh</td><td>Varanasi</td><td>551</td><td>44.9%</td><td>1,226</td></tr><tr><td>Uttar Pradesh</td><td>Bareilly</td><td>520</td><td>62.4%</td><td>834</td></tr><tr><td>Uttar Pradesh</td><td>Agra</td><td>516</td><td>53.5%</td><td>965</td></tr><tr><td>Uttar Pradesh</td><td>Mathura</td><td>474</td><td>52.4%</td><td>904</td></tr><tr><td>Uttar Pradesh</td><td>Saharanpur</td><td>465</td><td>65.0%</td><td>715</td></tr><tr><td>Uttar Pradesh</td><td>Kanpur Nagar</td><td>452</td><td>45.0%</td><td>1,005</td></tr><tr><td>Uttar Pradesh</td><td>Lucknow</td><td>418</td><td>61.5%</td><td>680</td></tr><tr><td>Uttar Pradesh</td><td>Ghaziabad</td><td>414</td><td>64.1%</td><td>646</td></tr><tr><td>Uttar Pradesh</td><td>Meerut</td><td>365</td><td>66.6%</td><td>548</td></tr><tr><td>Uttar Pradesh</td><td>Moradabad</td><td>347</td><td>68.6%</td><td>506</td></tr><tr><td>Madhya Pradesh</td><td>Bhopal</td><td>339</td><td>55.2%</td><td>614</td></tr><tr><td>Uttar Pradesh</td><td>Prayagraj</td><td>312</td><td>45.0%</td><td>693</td></tr><tr><td>Madhya Pradesh</td><td>Indore</td><td>263</td><td>55.3%</td><td>476</td></tr><tr><td>Madhya Pradesh</td><td>Ujjain</td><td>263</td><td>46.9%</td><td>561</td></tr></tbody></table>
 </section>
 
 <section class="page">
@@ -541,39 +541,39 @@ li { margin-bottom: 2mm; }
 <text x="0" y="26" class="chart-label">Mahadev Mandir</text>
 <rect x="190" y="13" width="490" height="14" rx="7" class="bar-bg" />
 <rect x="190" y="13" width="490" height="14" rx="7" fill="#d6a63f" />
-<text x="692" y="26" class="chart-value">25,928</text>
+<text x="692" y="26" class="chart-value">26,502</text>
 <text x="0" y="56" class="chart-label">Shiva temple</text>
 <rect x="190" y="43" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="43" width="320" height="14" rx="7" fill="#d6a63f" />
-<text x="692" y="56" class="chart-value">16,984</text>
+<rect x="190" y="43" width="331" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="56" class="chart-value">17,932</text>
 <text x="0" y="86" class="chart-label">Shankar Mandir</text>
 <rect x="190" y="73" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="73" width="236" height="14" rx="7" fill="#d6a63f" />
-<text x="692" y="86" class="chart-value">12,521</text>
+<rect x="190" y="73" width="235" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="86" class="chart-value">12,727</text>
 <text x="0" y="116" class="chart-label">Mahadev temple</text>
 <rect x="190" y="103" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="103" width="221" height="14" rx="7" fill="#d6a63f" />
-<text x="692" y="116" class="chart-value">11,704</text>
+<rect x="190" y="103" width="222" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="116" class="chart-value">12,052</text>
 <text x="0" y="146" class="chart-label">Shiv Mandir</text>
 <rect x="190" y="133" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="133" width="193" height="14" rx="7" fill="#d6a63f" />
-<text x="692" y="146" class="chart-value">10,257</text>
+<rect x="190" y="133" width="200" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="146" class="chart-value">10,864</text>
 <text x="0" y="176" class="chart-label">Rudreshwar temple</text>
 <rect x="190" y="163" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="163" width="150" height="14" rx="7" fill="#d6a63f" />
-<text x="692" y="176" class="chart-value">7,956</text>
+<rect x="190" y="163" width="148" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="176" class="chart-value">8,010</text>
 <text x="0" y="206" class="chart-label">Lingeshwar temple</text>
 <rect x="190" y="193" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="193" width="73" height="14" rx="7" fill="#d6a63f" />
-<text x="692" y="206" class="chart-value">3,865</text>
+<rect x="190" y="193" width="72" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="206" class="chart-value">3,945</text>
 <text x="0" y="236" class="chart-label">Someshwar temple</text>
 <rect x="190" y="223" width="490" height="14" rx="7" class="bar-bg" />
 <rect x="190" y="223" width="60" height="14" rx="7" fill="#d6a63f" />
-<text x="692" y="236" class="chart-value">3,194</text>
+<text x="692" y="236" class="chart-value">3,250</text>
 <text x="0" y="266" class="chart-label">Vishwanath temple</text>
 <rect x="190" y="253" width="490" height="14" rx="7" class="bar-bg" />
-<rect x="190" y="253" width="53" height="14" rx="7" fill="#d6a63f" />
-<text x="692" y="266" class="chart-value">2,822</text>
+<rect x="190" y="253" width="52" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="266" class="chart-value">2,862</text>
 </svg>
     </div>
     <div class="panel keep-together">
@@ -581,7 +581,7 @@ li { margin-bottom: 2mm; }
         <p>The keyword distribution comes from <strong>candidate_review.csv</strong>. Because candidates are deduplicated by Google Place ID and rediscovery can update the stored source query, this is best read as the latest recorded query signal for unique candidate rows, not as full attribution across every API occurrence.</p>
         <p>The strongest keyword signals in this export are direct Shiva and Mahadev variants, followed by Shankar and other configured Phase 1 terms.</p>
     </div>
-    <table class="keyword-table"><thead><tr><th>Keyword</th><th>Candidate Rows</th><th>Share Of Unique</th></tr></thead><tbody><tr><td>Mahadev Mandir</td><td>25,928</td><td>27.2%</td></tr><tr><td>Shiva temple</td><td>16,984</td><td>17.8%</td></tr><tr><td>Shankar Mandir</td><td>12,521</td><td>13.1%</td></tr><tr><td>Mahadev temple</td><td>11,704</td><td>12.3%</td></tr><tr><td>Shiv Mandir</td><td>10,257</td><td>10.8%</td></tr><tr><td>Rudreshwar temple</td><td>7,956</td><td>8.4%</td></tr><tr><td>Lingeshwar temple</td><td>3,865</td><td>4.1%</td></tr><tr><td>Someshwar temple</td><td>3,194</td><td>3.4%</td></tr><tr><td>Vishwanath temple</td><td>2,822</td><td>3.0%</td></tr></tbody></table>
+    <table class="keyword-table"><thead><tr><th>Keyword</th><th>Candidate Rows</th><th>Share Of Unique</th></tr></thead><tbody><tr><td>Mahadev Mandir</td><td>26,502</td><td>27.0%</td></tr><tr><td>Shiva temple</td><td>17,932</td><td>18.3%</td></tr><tr><td>Shankar Mandir</td><td>12,727</td><td>13.0%</td></tr><tr><td>Mahadev temple</td><td>12,052</td><td>12.3%</td></tr><tr><td>Shiv Mandir</td><td>10,864</td><td>11.1%</td></tr><tr><td>Rudreshwar temple</td><td>8,010</td><td>8.2%</td></tr><tr><td>Lingeshwar temple</td><td>3,945</td><td>4.0%</td></tr><tr><td>Someshwar temple</td><td>3,250</td><td>3.3%</td></tr><tr><td>Vishwanath temple</td><td>2,862</td><td>2.9%</td></tr></tbody></table>
 </section>
 
 <section class="page">
