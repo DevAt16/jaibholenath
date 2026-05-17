@@ -300,6 +300,125 @@ def complete_task(
         )
 
 
+def build_candidate_discovery_event(
+    *,
+    candidate_id: int,
+    candidate: Mapping[str, Any],
+    task: Mapping[str, Any],
+    result_position: int | None,
+) -> dict[str, Any]:
+    google_place_id = str(candidate.get("google_place_id") or "").strip()
+    if not google_place_id:
+        raise ValueError("candidate google_place_id is required for discovery events.")
+    if result_position is not None and result_position < 1:
+        raise ValueError("result_position must be at least 1 when provided.")
+
+    return {
+        "candidate_id": candidate_id,
+        "google_place_id": google_place_id,
+        "search_task_id": task.get("id"),
+        "source_location_id": candidate.get("source_location_id") or task.get("location_id"),
+        "source_location_type": task.get("location_type"),
+        "source_location_name": task.get("location_name"),
+        "state_name": candidate.get("state") or task.get("state_name"),
+        "district_name": candidate.get("district") or task.get("district_name"),
+        "keyword": task.get("keyword"),
+        "search_query": candidate.get("source_query") or task.get("search_query"),
+        "search_level": task.get("search_level"),
+        "result_position": result_position,
+        "discovered_name": candidate.get("discovered_name") or "",
+        "discovered_address": candidate.get("discovered_address"),
+        "latitude": candidate.get("latitude"),
+        "longitude": candidate.get("longitude"),
+        "google_maps_uri": candidate.get("google_maps_uri"),
+    }
+
+
+def record_candidate_discovery_event(
+    conn,
+    *,
+    candidate_id: int,
+    candidate: Mapping[str, Any],
+    task: Mapping[str, Any],
+    result_position: int | None,
+) -> int:
+    event = build_candidate_discovery_event(
+        candidate_id=candidate_id,
+        candidate=candidate,
+        task=task,
+        result_position=result_position,
+    )
+
+    with conn.cursor() as cursor:
+        cursor.execute(
+            """
+            INSERT INTO candidate_discovery_events (
+                candidate_id,
+                google_place_id,
+                search_task_id,
+                source_location_id,
+                source_location_type,
+                source_location_name,
+                state_name,
+                district_name,
+                keyword,
+                search_query,
+                search_level,
+                result_position,
+                discovered_name,
+                discovered_address,
+                latitude,
+                longitude,
+                google_maps_uri
+            )
+            VALUES (
+                %(candidate_id)s,
+                %(google_place_id)s,
+                %(search_task_id)s,
+                %(source_location_id)s,
+                %(source_location_type)s,
+                %(source_location_name)s,
+                %(state_name)s,
+                %(district_name)s,
+                %(keyword)s,
+                %(search_query)s,
+                %(search_level)s,
+                %(result_position)s,
+                %(discovered_name)s,
+                %(discovered_address)s,
+                %(latitude)s,
+                %(longitude)s,
+                %(google_maps_uri)s
+            )
+            ON CONFLICT (search_task_id, google_place_id)
+                WHERE search_task_id IS NOT NULL
+            DO UPDATE
+            SET candidate_id = EXCLUDED.candidate_id,
+                source_location_id = EXCLUDED.source_location_id,
+                source_location_type = EXCLUDED.source_location_type,
+                source_location_name = EXCLUDED.source_location_name,
+                state_name = EXCLUDED.state_name,
+                district_name = EXCLUDED.district_name,
+                keyword = EXCLUDED.keyword,
+                search_query = EXCLUDED.search_query,
+                search_level = EXCLUDED.search_level,
+                result_position = EXCLUDED.result_position,
+                discovered_name = EXCLUDED.discovered_name,
+                discovered_address = EXCLUDED.discovered_address,
+                latitude = EXCLUDED.latitude,
+                longitude = EXCLUDED.longitude,
+                google_maps_uri = COALESCE(
+                    EXCLUDED.google_maps_uri,
+                    candidate_discovery_events.google_maps_uri
+                ),
+                observed_at = NOW()
+            RETURNING id;
+            """,
+            event,
+        )
+        return int(cursor.fetchone()[0])
+
+
 def upsert_candidate(conn, candidate: Mapping[str, Any]) -> int:
     classification = classify_candidate_name(str(candidate.get("discovered_name") or ""))
     params = {

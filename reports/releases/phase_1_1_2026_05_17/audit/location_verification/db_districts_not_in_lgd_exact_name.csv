@@ -1,0 +1,93 @@
+id,state_name,district_name,name,state_lgd_code,district_lgd_code,source,is_active
+785,Andaman and Nicobar Islands,Nicobar,Nicobar,,,manual_pilot,True
+787,Andaman and Nicobar Islands,South Andaman,South Andaman,,,manual_pilot,True
+189,Andhra Pradesh,Anantapur,Anantapur,,,manual_pilot,True
+197,Andhra Pradesh,Konaseema,Konaseema,,,manual_pilot,True
+212,Andhra Pradesh,Y.S.R. Kadapa,Y.S.R. Kadapa,,,manual_pilot,True
+219,Arunachal Pradesh,Itanagar Capital Complex,Itanagar Capital Complex,,,manual_pilot,True
+223,Arunachal Pradesh,Lepa Rada,Lepa Rada,,,manual_pilot,True
+259,Assam,Kamrup Metropolitan,Kamrup Metropolitan,,,manual_pilot,True
+265,Assam,Morigaon,Morigaon,,,manual_pilot,True
+270,Assam,South Salmara-Mankachar,South Salmara-Mankachar,,,manual_pilot,True
+284,Bihar,East Champaran,East Champaran,,,manual_pilot,True
+289,Bihar,Kaimur,Kaimur,,,manual_pilot,True
+312,Bihar,West Champaran,West Champaran,,,manual_pilot,True
+315,Chhattisgarh,Baloda Bazar,Baloda Bazar,,,manual_pilot,True
+316,Chhattisgarh,Balrampur,Balrampur,,,manual_pilot,True
+321,Chhattisgarh,Dantewada,Dantewada,,,manual_pilot,True
+324,Chhattisgarh,Gariaband,Gariaband,,,manual_pilot,True
+325,Chhattisgarh,Gaurella-Pendra-Marwahi,Gaurella-Pendra-Marwahi,,,manual_pilot,True
+328,Chhattisgarh,Kabirdham,Kabirdham,,,manual_pilot,True
+329,Chhattisgarh,Kanker,Kanker,,,manual_pilot,True
+332,Chhattisgarh,Koriya,Koriya,,,manual_pilot,True
+334,Chhattisgarh,Manendragarh-Chirmiri-Bharatpur,Manendragarh-Chirmiri-Bharatpur,,,manual_pilot,True
+335,Chhattisgarh,Mohla-Manpur-Ambagarh Chowki,Mohla-Manpur-Ambagarh Chowki,,,manual_pilot,True
+791,Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli,Dadra and Nagar Haveli,,,manual_pilot,True
+792,Dadra and Nagar Haveli and Daman and Diu,Daman,Daman,,,manual_pilot,True
+793,Dadra and Nagar Haveli and Daman and Diu,Diu,Diu,,,manual_pilot,True
+795,Delhi,Central Delhi,Central Delhi,,,manual_pilot,True
+796,Delhi,East Delhi,East Delhi,,,manual_pilot,True
+798,Delhi,North Delhi,North Delhi,,,manual_pilot,True
+799,Delhi,North East Delhi,North East Delhi,,,manual_pilot,True
+800,Delhi,North West Delhi,North West Delhi,,,manual_pilot,True
+802,Delhi,South Delhi,South Delhi,,,manual_pilot,True
+803,Delhi,South East Delhi,South East Delhi,,,manual_pilot,True
+804,Delhi,South West Delhi,South West Delhi,,,manual_pilot,True
+805,Delhi,West Delhi,West Delhi,,,manual_pilot,True
+354,Gujarat,Aravalli,Aravalli,,,manual_pilot,True
+355,Gujarat,Banaskantha,Banaskantha,,,manual_pilot,True
+359,Gujarat,Chhota Udaipur,Chhota Udaipur,,,manual_pilot,True
+361,Gujarat,Dang,Dang,,,manual_pilot,True
+362,Gujarat,Devbhoomi Dwarka,Devbhoomi Dwarka,,,manual_pilot,True
+368,Gujarat,Kutch,Kutch,,,manual_pilot,True
+370,Gujarat,Mehsana,Mehsana,,,manual_pilot,True
+374,Gujarat,Panchmahal,Panchmahal,,,manual_pilot,True
+378,Gujarat,Sabarkantha,Sabarkantha,,,manual_pilot,True
+387,Haryana,Charkhi Dadri,Charkhi Dadri,,,manual_pilot,True
+426,Jharkhand,East Singhbhum,East Singhbhum,,,manual_pilot,True
+441,Jharkhand,Sahibganj,Sahibganj,,,manual_pilot,True
+442,Jharkhand,Seraikela Kharsawan,Seraikela Kharsawan,,,manual_pilot,True
+446,Karnataka,Bagalkot,Bagalkot,,,manual_pilot,True
+452,Karnataka,Chamarajanagar,Chamarajanagar,,,manual_pilot,True
+453,Karnataka,Chikballapur,Chikballapur,,,manual_pilot,True
+476,Karnataka,Vijayanagara,Vijayanagara,,,manual_pilot,True
+829,Ladakh,Leh,Leh,,,manual_pilot,True
+831,Lakshadweep,Lakshadweep,Lakshadweep,,,manual_pilot,True
+80,Madhya Pradesh,Khandwa,Khandwa,,,manual_pilot,True
+81,Madhya Pradesh,Khargone,Khargone,,,manual_pilot,True
+87,Madhya Pradesh,Narsinghpur,Narsinghpur,,,manual_pilot,True
+7,Maharashtra,Aurangabad,Aurangabad,,,manual_pilot,True
+36,Maharashtra,Mumbai City,Mumbai City,,,manual_pilot,True
+41,Maharashtra,Osmanabad,Osmanabad,,,manual_pilot,True
+531,Mizoram,Saiha,Saiha,,,manual_pilot,True
+552,Odisha,Angul,Angul,,,manual_pilot,True
+554,Odisha,Balasore,Balasore,,,manual_pilot,True
+563,Odisha,Jagatsinghpur,Jagatsinghpur,,,manual_pilot,True
+564,Odisha,Jajpur,Jajpur,,,manual_pilot,True
+580,Odisha,Subarnapur,Subarnapur,,,manual_pilot,True
+598,Punjab,Muktsar,Muktsar,,,manual_pilot,True
+599,Punjab,Nawanshahr,Nawanshahr,,,manual_pilot,True
+603,Punjab,Sahibzada Ajit Singh Nagar,Sahibzada Ajit Singh Nagar,,,manual_pilot,True
+628,Rajasthan,Gangapur City,Gangapur City,,,manual_pilot,True
+631,Rajasthan,Jaipur Rural,Jaipur Rural,,,manual_pilot,True
+637,Rajasthan,Jodhpur Rural,Jodhpur Rural,,,manual_pilot,True
+674,Tamil Nadu,Kanchipuram,Kanchipuram,,,manual_pilot,True
+675,Tamil Nadu,Kanyakumari,Kanyakumari,,,manual_pilot,True
+682,Tamil Nadu,Nilgiris,Nilgiris,,,manual_pilot,True
+692,Tamil Nadu,Thoothukudi,Thoothukudi,,,manual_pilot,True
+697,Tamil Nadu,Tiruvallur,Tiruvallur,,,manual_pilot,True
+699,Tamil Nadu,Tiruvarur,Tiruvarur,,,manual_pilot,True
+708,Telangana,Jagtial,Jagtial,,,manual_pilot,True
+709,Telangana,Jangaon,Jangaon,,,manual_pilot,True
+710,Telangana,Jayashankar Bhupalpally,Jayashankar Bhupalpally,,,manual_pilot,True
+715,Telangana,Kumuram Bheem,Kumuram Bheem,,,manual_pilot,True
+729,Telangana,Rangareddy,Rangareddy,,,manual_pilot,True
+119,Uttar Pradesh,Badaun,Badaun,,,manual_pilot,True
+120,Uttar Pradesh,Bagpat,Bagpat,,,manual_pilot,True
+125,Uttar Pradesh,Barabanki,Barabanki,,,manual_pilot,True
+157,Uttar Pradesh,Lakhimpur Kheri,Lakhimpur Kheri,,,manual_pilot,True
+160,Uttar Pradesh,Maharajganj,Maharajganj,,,manual_pilot,True
+179,Uttar Pradesh,Shravasti,Shravasti,,,manual_pilot,True
+756,Uttarakhand,Rudraprayag,Rudraprayag,,,manual_pilot,True
+758,Uttarakhand,Udham Singh Nagar,Udham Singh Nagar,,,manual_pilot,True
+759,Uttarakhand,Uttarkashi,Uttarkashi,,,manual_pilot,True

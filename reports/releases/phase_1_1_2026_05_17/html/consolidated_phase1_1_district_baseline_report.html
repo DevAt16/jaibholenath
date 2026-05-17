@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Phase 1 Shiva Temple Discovery Consolidated Report</title>
+<style>
+@page { size: A4; margin: 16mm 15mm; }
+* { box-sizing: border-box; }
+html { color: #17212b; font-family: Arial, Helvetica, sans-serif; }
+body { margin: 0; background: #fbfaf7; font-size: 10.2pt; line-height: 1.44; }
+.page { page-break-after: always; min-height: 245mm; padding: 0; }
+.page:last-child { page-break-after: auto; }
+.cover { display: flex; flex-direction: column; justify-content: space-between; min-height: 265mm; }
+.kicker { color: #c74f35; font-size: 10pt; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+h1 { font-size: 36pt; line-height: 1.02; margin: 15mm 0 5mm; letter-spacing: 0; }
+h2 { font-size: 18pt; margin: 0 0 5mm; letter-spacing: 0; }
+h3 { font-size: 12pt; margin: 8mm 0 3mm; letter-spacing: 0; }
+p { margin: 0 0 3.4mm; }
+.subtitle { font-size: 13pt; max-width: 150mm; color: #617085; }
+.notice { border-left: 4px solid #c74f35; padding: 3mm 4mm; background: #fff5ee; color: #5a2a1f; margin: 5mm 0; }
+.source-line { color: #617085; font-size: 9.4pt; }
+.metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin: 7mm 0 5mm; }
+.metric-card { background: #ffffff; border: 1px solid #d9e0e8; border-radius: 5px; padding: 4mm; min-height: 29mm; }
+.metric-label { color: #617085; font-size: 8.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.metric-value { font-size: 21pt; font-weight: 800; margin: 1mm 0; letter-spacing: 0; }
+.metric-note { color: #617085; font-size: 8.7pt; }
+.split { display: grid; grid-template-columns: 1.05fr .95fr; gap: 7mm; align-items: start; }
+.panel { background: #ffffff; border: 1px solid #d9e0e8; border-radius: 5px; padding: 5mm; margin: 0 0 5mm; }
+.panel h3 { margin-top: 0; }
+.keep-together { break-inside: avoid; page-break-inside: avoid; }
+.callout { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin: 4mm 0; }
+.callout div { border-top: 3px solid #d6a63f; background: #fff; padding: 3mm; }
+.big-number { font-size: 17pt; font-weight: 800; }
+.muted { color: #617085; }
+.legend { display: flex; gap: 5mm; flex-wrap: wrap; margin: 2mm 0 4mm; color: #617085; font-size: 8.8pt; }
+.legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; background: var(--c); }
+.stacked-total { display: grid; grid-template-columns: 59.2% 9.9% 30.9%; width: 100%; height: 16mm; border-radius: 6px; overflow: hidden; border: 1px solid #d9e0e8; margin: 4mm 0; }
+.stack-high { background: #1f9d73; }
+.stack-medium { background: #d18b12; }
+.stack-low { background: #5969b2; }
+.chart { width: 100%; max-width: 100%; height: auto; }
+.chart-label { font-size: 10px; fill: #17212b; }
+.chart-value { font-size: 10px; fill: #617085; font-weight: 700; }
+.bar-bg { fill: #edf1f5; }
+table { width: 100%; border-collapse: collapse; background: #fff; font-size: 8.8pt; }
+th { text-align: left; color: #617085; font-size: 7.8pt; text-transform: uppercase; letter-spacing: .04em; border-bottom: 1px solid #d9e0e8; padding: 2.2mm 2mm; }
+td { border-bottom: 1px solid #edf1f5; padding: 2mm; vertical-align: top; }
+td:nth-child(n+2):not(:first-child), th:nth-child(n+2):not(:first-child) { text-align: right; }
+.district-table td:nth-child(1), .district-table td:nth-child(2), .district-table th:nth-child(1), .district-table th:nth-child(2) { text-align: left; }
+.keyword-table td:nth-child(1), .keyword-table th:nth-child(1) { text-align: left; }
+.footer-note { margin-top: 5mm; color: #617085; font-size: 8.8pt; }
+ul { margin: 2mm 0 0 5mm; padding: 0 0 0 4mm; }
+li { margin-bottom: 2mm; }
+.cover-band { height: 13mm; background: linear-gradient(90deg, #c74f35, #d6a63f 45%, #1f9d73); border-radius: 8px; }
+@media screen {
+    body {
+        background: #e8edf2;
+        padding: 18px 0 36px;
+    }
+    .page {
+        width: min(210mm, calc(100% - 32px));
+        min-height: 297mm;
+        margin: 24px auto;
+        padding: 16mm 15mm;
+        background: #fbfaf7;
+        border: 1px solid #d4dce6;
+        border-radius: 6px;
+        box-shadow: 0 18px 55px rgba(23, 33, 43, 0.13);
+        overflow: hidden;
+        page-break-after: auto;
+    }
+    .page:last-child {
+        margin-bottom: 0;
+    }
+    .cover {
+        min-height: 297mm;
+    }
+}
+@media screen and (max-width: 760px) {
+    body {
+        padding: 10px 0 24px;
+    }
+    .page {
+        width: calc(100% - 20px);
+        min-height: auto;
+        padding: 8mm 5mm;
+    }
+    .cover {
+        min-height: auto;
+    }
+    .metric-grid,
+    .split,
+    .callout {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 30pt;
+    }
+}
+</style>
+</head>
+<body>
+<section class="page cover">
+    <div>
+        <div class="cover-band"></div>
+        <div class="kicker">Phase 1.1 District Baseline</div>
+        <h1>Shiva Temple Discovery<br>District Baseline Insights</h1>
+        <p class="subtitle">A district-only baseline generated from active LGD district locations, Google Places discovery output, deduplication, and Shiva-confidence classification.</p>
+        <div class="notice"><strong>Important:</strong> these are discovery counts from Google Places API and name-based classification, not exact real-world temple counts or an official cultural census.</div>
+    </div>
+    <div>
+        <div class="metric-grid">
+            
+        <div class="metric-card">
+            <div class="metric-label">Unique Google Place IDs</div>
+            <div class="metric-value">74,117</div>
+            <div class="metric-note">Deduplicated candidate records</div>
+        </div>
+    
+            
+        <div class="metric-card">
+            <div class="metric-label">High-confidence Shiva</div>
+            <div class="metric-value">43,877</div>
+            <div class="metric-note">59.2% of unique candidates</div>
+        </div>
+    
+            
+        <div class="metric-card">
+            <div class="metric-label">High + Medium Signal</div>
+            <div class="metric-value">51,243</div>
+            <div class="metric-note">69.1% of unique candidates</div>
+        </div>
+    
+        </div>
+        <p class="source-line">Generated: May 17, 2026 02:24 PM | Source: Google Places API (district active locations only) | Status: district_level_discovery_count_not_final_cultural_count</p>
+    </div>
+</section>
+
+<section class="page">
+    <h2>Executive Summary</h2>
+    <div class="metric-grid">
+        
+        <div class="metric-card">
+            <div class="metric-label">Discovered Occurrences</div>
+            <div class="metric-value">229,495</div>
+            <div class="metric-note">Raw result-count total from completed search tasks</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Duplicates Removed</div>
+            <div class="metric-value">155,378</div>
+            <div class="metric-note">67.7% of discovered occurrences</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Candidate Export Rows</div>
+            <div class="metric-value">74,117</div>
+            <div class="metric-note">Rows in candidate_review.csv</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">States / UTs</div>
+            <div class="metric-value">36</div>
+            <div class="metric-note">Rows in state_counts.csv</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">District Rows</div>
+            <div class="metric-value">772</div>
+            <div class="metric-note">Rows in district_counts.csv</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Low-confidence Possible Temples</div>
+            <div class="metric-value">22,874</div>
+            <div class="metric-note">30.9% of unique candidates</div>
+        </div>
+    
+    </div>
+    <div class="split">
+        <div class="panel">
+            <h3>What The Data Says</h3>
+            <ul>
+                <li>The pipeline reduced <strong>229,495</strong> discovered occurrences to <strong>74,117</strong> unique Google Place IDs, which is a strong signal that cross-query deduplication is doing real work.</li>
+                <li><strong>51,243</strong> candidates are high or medium confidence by name classification, representing <strong>69.1%</strong> of the unique candidate set.</li>
+                <li>The top five states by unique discovered candidates account for <strong>38.1%</strong> of the current candidate set; the top ten account for <strong>61.6%</strong>.</li>
+                <li><strong>Uttar Pradesh</strong> currently has the largest unique candidate volume, while <strong>Uttar Pradesh</strong> has the largest high-confidence count.</li>
+            </ul>
+        </div>
+        <div class="panel">
+            <h3>Confidence Mix</h3>
+            <div class="legend">
+                <span style="--c: #1f9d73">High 59.2%</span>
+                <span style="--c: #d18b12">Medium 9.9%</span>
+                <span style="--c: #5969b2">Low 30.9%</span>
+            </div>
+            <div class="stacked-total"><div class="stack-high"></div><div class="stack-medium"></div><div class="stack-low"></div></div>
+            <div class="callout">
+                <div><span class="big-number">43,877</span><br><span class="muted">High-confidence names</span></div>
+                <div><span class="big-number">7,366</span><br><span class="muted">Medium-confidence names</span></div>
+            </div>
+            <p class="muted">Low confidence is a review queue, not a negative label. It means the candidate name did not match the configured Shiva terms strongly enough.</p>
+        </div>
+    </div>
+</section>
+
+<section class="page">
+    <h2>State-Level Patterns</h2>
+    <div class="panel keep-together">
+        <h3>Top States By Unique Candidate Volume</h3>
+        <div class="legend">
+            <span style="--c: #1f9d73">High</span>
+            <span style="--c: #d18b12">Medium</span>
+            <span style="--c: #5969b2">Low</span>
+        </div>
+        <svg class="chart" width="760" height="388" viewBox="0 0 760 388" role="img">
+<text x="0" y="26" class="chart-label">Uttar Pradesh</text>
+<rect x="190" y="13" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="13" width="330" height="15" fill="#1f9d73" />
+<rect x="520" y="13" width="51" height="15" fill="#d18b12" />
+<rect x="571" y="13" width="108" height="15" fill="#5969b2" />
+<text x="692" y="26" class="chart-value">8,493</text>
+<text x="0" y="57" class="chart-label">Rajasthan</text>
+<rect x="190" y="44" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="44" width="210" height="15" fill="#1f9d73" />
+<rect x="400" y="44" width="13" height="15" fill="#d18b12" />
+<rect x="413" y="44" width="84" height="15" fill="#5969b2" />
+<text x="692" y="57" class="chart-value">5,345</text>
+<text x="0" y="88" class="chart-label">Bihar</text>
+<rect x="190" y="75" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="75" width="195" height="15" fill="#1f9d73" />
+<rect x="385" y="75" width="29" height="15" fill="#d18b12" />
+<rect x="414" y="75" width="76" height="15" fill="#5969b2" />
+<text x="692" y="88" class="chart-value">5,241</text>
+<text x="0" y="119" class="chart-label">Maharashtra</text>
+<rect x="190" y="106" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="106" width="169" height="15" fill="#1f9d73" />
+<rect x="359" y="106" width="51" height="15" fill="#d18b12" />
+<rect x="410" y="106" width="55" height="15" fill="#5969b2" />
+<text x="692" y="119" class="chart-value">4,784</text>
+<text x="0" y="150" class="chart-label">Gujarat</text>
+<rect x="190" y="137" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="137" width="180" height="15" fill="#1f9d73" />
+<rect x="370" y="137" width="16" height="15" fill="#d18b12" />
+<rect x="386" y="137" width="53" height="15" fill="#5969b2" />
+<text x="692" y="150" class="chart-value">4,341</text>
+<text x="0" y="181" class="chart-label">Tamil Nadu</text>
+<rect x="190" y="168" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="168" width="55" height="15" fill="#1f9d73" />
+<rect x="245" y="168" width="37" height="15" fill="#d18b12" />
+<rect x="282" y="168" width="139" height="15" fill="#5969b2" />
+<text x="692" y="181" class="chart-value">4,029</text>
+<text x="0" y="212" class="chart-label">Karnataka</text>
+<rect x="190" y="199" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="199" width="83" height="15" fill="#1f9d73" />
+<rect x="273" y="199" width="75" height="15" fill="#d18b12" />
+<rect x="348" y="199" width="54" height="15" fill="#5969b2" />
+<text x="692" y="212" class="chart-value">3,704</text>
+<text x="0" y="243" class="chart-label">Odisha</text>
+<rect x="190" y="230" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="230" width="120" height="15" fill="#1f9d73" />
+<rect x="310" y="230" width="16" height="15" fill="#d18b12" />
+<rect x="326" y="230" width="56" height="15" fill="#5969b2" />
+<text x="692" y="243" class="chart-value">3,371</text>
+<text x="0" y="274" class="chart-label">Chhattisgarh</text>
+<rect x="190" y="261" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="261" width="115" height="15" fill="#1f9d73" />
+<rect x="305" y="261" width="12" height="15" fill="#d18b12" />
+<rect x="317" y="261" width="57" height="15" fill="#5969b2" />
+<text x="692" y="274" class="chart-value">3,225</text>
+<text x="0" y="305" class="chart-label">Telangana</text>
+<rect x="190" y="292" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="292" width="87" height="15" fill="#1f9d73" />
+<rect x="277" y="292" width="21" height="15" fill="#d18b12" />
+<rect x="298" y="292" width="70" height="15" fill="#5969b2" />
+<text x="692" y="305" class="chart-value">3,118</text>
+<text x="0" y="336" class="chart-label">Assam</text>
+<rect x="190" y="323" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="323" width="108" height="15" fill="#1f9d73" />
+<rect x="298" y="323" width="8" height="15" fill="#d18b12" />
+<rect x="306" y="323" width="58" height="15" fill="#5969b2" />
+<text x="692" y="336" class="chart-value">3,035</text>
+<text x="0" y="367" class="chart-label">West Bengal</text>
+<rect x="190" y="354" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="354" width="122" height="15" fill="#1f9d73" />
+<rect x="312" y="354" width="9" height="15" fill="#d18b12" />
+<rect x="321" y="354" width="40" height="15" fill="#5969b2" />
+<text x="692" y="367" class="chart-value">3,005</text>
+</svg>
+    </div>
+    <div class="panel keep-together">
+        <h3>Top States By High-Confidence Candidates</h3>
+        <svg class="chart" width="760" height="376" viewBox="0 0 760 376" role="img">
+<text x="0" y="26" class="chart-label">Uttar Pradesh</text>
+<rect x="190" y="13" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="13" width="490" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="26" class="chart-value">5,727</text>
+<text x="0" y="56" class="chart-label">Rajasthan</text>
+<rect x="190" y="43" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="43" width="311" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="56" class="chart-value">3,640</text>
+<text x="0" y="86" class="chart-label">Bihar</text>
+<rect x="190" y="73" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="73" width="290" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="86" class="chart-value">3,394</text>
+<text x="0" y="116" class="chart-label">Gujarat</text>
+<rect x="190" y="103" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="103" width="268" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="116" class="chart-value">3,135</text>
+<text x="0" y="146" class="chart-label">Maharashtra</text>
+<rect x="190" y="133" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="133" width="251" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="146" class="chart-value">2,936</text>
+<text x="0" y="176" class="chart-label">West Bengal</text>
+<rect x="190" y="163" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="163" width="182" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="176" class="chart-value">2,129</text>
+<text x="0" y="206" class="chart-label">Odisha</text>
+<rect x="190" y="193" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="193" width="179" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="206" class="chart-value">2,096</text>
+<text x="0" y="236" class="chart-label">Chhattisgarh</text>
+<rect x="190" y="223" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="223" width="171" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="236" class="chart-value">2,002</text>
+<text x="0" y="266" class="chart-label">Jharkhand</text>
+<rect x="190" y="253" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="253" width="164" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="266" class="chart-value">1,923</text>
+<text x="0" y="296" class="chart-label">Assam</text>
+<rect x="190" y="283" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="283" width="161" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="296" class="chart-value">1,887</text>
+<text x="0" y="326" class="chart-label">Haryana</text>
+<rect x="190" y="313" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="313" width="156" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="326" class="chart-value">1,834</text>
+<text x="0" y="356" class="chart-label">Madhya Pradesh</text>
+<rect x="190" y="343" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="343" width="129" height="14" rx="7" fill="#1f9d73" />
+<text x="692" y="356" class="chart-value">1,516</text>
+</svg>
+    </div>
+</section>
+
+<section class="page">
+    <h3>State Ranking Detail</h3>
+    <table class=""><thead><tr><th>State / UT</th><th>Unique</th><th>High</th><th>Medium</th><th>High+Medium Share</th></tr></thead><tbody><tr><td>Uttar Pradesh</td><td>8,493</td><td>5,727</td><td>887</td><td>77.9%</td></tr><tr><td>Rajasthan</td><td>5,345</td><td>3,640</td><td>242</td><td>72.6%</td></tr><tr><td>Bihar</td><td>5,241</td><td>3,394</td><td>514</td><td>74.6%</td></tr><tr><td>Maharashtra</td><td>4,784</td><td>2,936</td><td>886</td><td>79.9%</td></tr><tr><td>Gujarat</td><td>4,341</td><td>3,135</td><td>283</td><td>78.7%</td></tr><tr><td>Tamil Nadu</td><td>4,029</td><td>962</td><td>652</td><td>40.1%</td></tr><tr><td>Karnataka</td><td>3,704</td><td>1,454</td><td>1,306</td><td>74.5%</td></tr><tr><td>Odisha</td><td>3,371</td><td>2,096</td><td>289</td><td>70.8%</td></tr><tr><td>Chhattisgarh</td><td>3,225</td><td>2,002</td><td>224</td><td>69.0%</td></tr><tr><td>Telangana</td><td>3,118</td><td>1,511</td><td>377</td><td>60.6%</td></tr><tr><td>Assam</td><td>3,035</td><td>1,887</td><td>140</td><td>66.8%</td></tr><tr><td>West Bengal</td><td>3,005</td><td>2,129</td><td>169</td><td>76.5%</td></tr><tr><td>Haryana</td><td>2,899</td><td>1,834</td><td>150</td><td>68.4%</td></tr><tr><td>Jharkhand</td><td>2,820</td><td>1,923</td><td>158</td><td>73.8%</td></tr><tr><td>Madhya Pradesh</td><td>2,494</td><td>1,516</td><td>201</td><td>68.8%</td></tr></tbody></table>
+</section>
+
+<section class="page">
+    <h2>District Hotspots</h2>
+    <div class="panel keep-together">
+        <h3>Top Districts By Unique Candidate Volume</h3>
+        <svg class="chart" width="760" height="481" viewBox="0 0 760 481" role="img">
+<text x="0" y="26" class="chart-label">Karnataka, Uttara Kannada</text>
+<rect x="190" y="13" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="13" width="221" height="15" fill="#1f9d73" />
+<rect x="411" y="13" width="231" height="15" fill="#d18b12" />
+<rect x="642" y="13" width="37" height="15" fill="#5969b2" />
+<text x="692" y="26" class="chart-value">237</text>
+<text x="0" y="57" class="chart-label">West Bengal, South 24 Parganas</text>
+<rect x="190" y="44" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="44" width="297" height="15" fill="#1f9d73" />
+<rect x="487" y="44" width="59" height="15" fill="#d18b12" />
+<rect x="546" y="44" width="115" height="15" fill="#5969b2" />
+<text x="692" y="57" class="chart-value">229</text>
+<text x="0" y="88" class="chart-label">Gujarat, Surendranagar</text>
+<rect x="190" y="75" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="75" width="293" height="15" fill="#1f9d73" />
+<rect x="483" y="75" width="76" height="15" fill="#d18b12" />
+<rect x="559" y="75" width="95" height="15" fill="#5969b2" />
+<text x="692" y="88" class="chart-value">225</text>
+<text x="0" y="119" class="chart-label">Bihar, Saran</text>
+<rect x="190" y="106" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="106" width="287" height="15" fill="#1f9d73" />
+<rect x="477" y="106" width="68" height="15" fill="#d18b12" />
+<rect x="545" y="106" width="93" height="15" fill="#5969b2" />
+<text x="692" y="119" class="chart-value">217</text>
+<text x="0" y="150" class="chart-label">Uttar Pradesh, Jaunpur</text>
+<rect x="190" y="137" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="137" width="297" height="15" fill="#1f9d73" />
+<rect x="487" y="137" width="57" height="15" fill="#d18b12" />
+<rect x="544" y="137" width="80" height="15" fill="#5969b2" />
+<text x="692" y="150" class="chart-value">211</text>
+<text x="0" y="181" class="chart-label">Bihar, Samastipur</text>
+<rect x="190" y="168" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="168" width="289" height="15" fill="#1f9d73" />
+<rect x="479" y="168" width="55" height="15" fill="#d18b12" />
+<rect x="534" y="168" width="86" height="15" fill="#5969b2" />
+<text x="692" y="181" class="chart-value">209</text>
+<text x="0" y="212" class="chart-label">Tamil Nadu, Krishnagiri</text>
+<rect x="190" y="199" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="199" width="167" height="15" fill="#1f9d73" />
+<rect x="357" y="199" width="119" height="15" fill="#d18b12" />
+<rect x="476" y="199" width="138" height="15" fill="#5969b2" />
+<text x="692" y="212" class="chart-value">206</text>
+<text x="0" y="243" class="chart-label">Andhra Pradesh, West Godavari</text>
+<rect x="190" y="230" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="230" width="138" height="15" fill="#1f9d73" />
+<rect x="328" y="230" width="26" height="15" fill="#d18b12" />
+<rect x="354" y="230" width="258" height="15" fill="#5969b2" />
+<text x="692" y="243" class="chart-value">205</text>
+<text x="0" y="274" class="chart-label">Karnataka, Tumakuru</text>
+<rect x="190" y="261" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="261" width="148" height="15" fill="#1f9d73" />
+<rect x="338" y="261" width="171" height="15" fill="#d18b12" />
+<rect x="509" y="261" width="101" height="15" fill="#5969b2" />
+<text x="692" y="274" class="chart-value">204</text>
+<text x="0" y="305" class="chart-label">Rajasthan, Nagaur</text>
+<rect x="190" y="292" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="292" width="225" height="15" fill="#1f9d73" />
+<rect x="415" y="292" width="35" height="15" fill="#d18b12" />
+<rect x="450" y="292" width="157" height="15" fill="#5969b2" />
+<text x="692" y="305" class="chart-value">202</text>
+<text x="0" y="336" class="chart-label">Uttar Pradesh, Sitapur</text>
+<rect x="190" y="323" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="323" width="241" height="15" fill="#1f9d73" />
+<rect x="431" y="323" width="86" height="15" fill="#d18b12" />
+<rect x="517" y="323" width="86" height="15" fill="#5969b2" />
+<text x="692" y="336" class="chart-value">201</text>
+<text x="0" y="367" class="chart-label">Gujarat, Sabarkantha</text>
+<rect x="190" y="354" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="354" width="303" height="15" fill="#1f9d73" />
+<rect x="493" y="354" width="31" height="15" fill="#d18b12" />
+<rect x="524" y="354" width="70" height="15" fill="#5969b2" />
+<text x="692" y="367" class="chart-value">196</text>
+<text x="0" y="398" class="chart-label">Uttar Pradesh, Sultanpur</text>
+<rect x="190" y="385" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="385" width="260" height="15" fill="#1f9d73" />
+<rect x="450" y="385" width="64" height="15" fill="#d18b12" />
+<rect x="514" y="385" width="76" height="15" fill="#5969b2" />
+<text x="692" y="398" class="chart-value">194</text>
+<text x="0" y="429" class="chart-label">Maharashtra, Sindhudurg</text>
+<rect x="190" y="416" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="416" width="130" height="15" fill="#1f9d73" />
+<rect x="320" y="416" width="159" height="15" fill="#d18b12" />
+<rect x="479" y="416" width="107" height="15" fill="#5969b2" />
+<text x="692" y="429" class="chart-value">192</text>
+<text x="0" y="460" class="chart-label">Bihar, West Champaran</text>
+<rect x="190" y="447" width="490" height="15" rx="7.5" class="bar-bg" />
+<rect x="190" y="447" width="264" height="15" fill="#1f9d73" />
+<rect x="454" y="447" width="59" height="15" fill="#d18b12" />
+<rect x="513" y="447" width="62" height="15" fill="#5969b2" />
+<text x="692" y="460" class="chart-value">187</text>
+</svg>
+    </div>
+</section>
+
+<section class="page">
+    <h2>District Hotspots</h2>
+    <div class="panel keep-together">
+        <h3>Top Districts By High-Confidence Candidates</h3>
+        <svg class="chart" width="760" height="466" viewBox="0 0 760 466" role="img">
+<text x="0" y="26" class="chart-label">Uttarakhand, Udham Singh Nagar</text>
+<rect x="190" y="13" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="13" width="490" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="26" class="chart-value">150</text>
+<text x="0" y="56" class="chart-label">Gujarat, Sabarkantha</text>
+<rect x="190" y="43" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="43" width="480" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="56" class="chart-value">147</text>
+<text x="0" y="86" class="chart-label">Uttar Pradesh, Jaunpur</text>
+<rect x="190" y="73" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="73" width="470" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="86" class="chart-value">144</text>
+<text x="0" y="116" class="chart-label">West Bengal, South 24 Parganas</text>
+<rect x="190" y="103" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="103" width="470" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="116" class="chart-value">144</text>
+<text x="0" y="146" class="chart-label">Gujarat, Surendranagar</text>
+<rect x="190" y="133" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="133" width="463" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="146" class="chart-value">142</text>
+<text x="0" y="176" class="chart-label">Bihar, Samastipur</text>
+<rect x="190" y="163" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="163" width="457" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="176" class="chart-value">140</text>
+<text x="0" y="206" class="chart-label">Bihar, Saran</text>
+<rect x="190" y="193" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="193" width="454" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="206" class="chart-value">139</text>
+<text x="0" y="236" class="chart-label">Maharashtra, Pune</text>
+<rect x="190" y="223" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="223" width="441" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="236" class="chart-value">135</text>
+<text x="0" y="266" class="chart-label">Uttar Pradesh, Ambedkar Nagar</text>
+<rect x="190" y="253" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="253" width="437" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="266" class="chart-value">134</text>
+<text x="0" y="296" class="chart-label">Uttar Pradesh, Siddharthnagar</text>
+<rect x="190" y="283" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="283" width="437" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="296" class="chart-value">134</text>
+<text x="0" y="326" class="chart-label">Gujarat, Kheda</text>
+<rect x="190" y="313" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="313" width="424" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="326" class="chart-value">130</text>
+<text x="0" y="356" class="chart-label">Rajasthan, Ajmer</text>
+<rect x="190" y="343" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="343" width="424" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="356" class="chart-value">130</text>
+<text x="0" y="386" class="chart-label">Maharashtra, Jalgaon</text>
+<rect x="190" y="373" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="373" width="421" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="386" class="chart-value">129</text>
+<text x="0" y="416" class="chart-label">Bihar, Bhojpur</text>
+<rect x="190" y="403" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="403" width="418" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="416" class="chart-value">128</text>
+<text x="0" y="446" class="chart-label">Bihar, Madhubani</text>
+<rect x="190" y="433" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="433" width="418" height="14" rx="7" fill="#c74f35" />
+<text x="692" y="446" class="chart-value">128</text>
+</svg>
+    </div>
+</section>
+
+<section class="page">
+    <h2>District Detail</h2>
+    <h3>Highest Unique Candidate Volumes</h3>
+    <table class="district-table"><thead><tr><th>State</th><th>District</th><th>Unique</th><th>High</th><th>High+Medium Share</th></tr></thead><tbody><tr><td>Karnataka</td><td>Uttara Kannada</td><td>237</td><td>107</td><td>92.4%</td></tr><tr><td>West Bengal</td><td>South 24 Parganas</td><td>229</td><td>144</td><td>75.5%</td></tr><tr><td>Gujarat</td><td>Surendranagar</td><td>225</td><td>142</td><td>79.6%</td></tr><tr><td>Bihar</td><td>Saran</td><td>217</td><td>139</td><td>79.3%</td></tr><tr><td>Uttar Pradesh</td><td>Jaunpur</td><td>211</td><td>144</td><td>81.5%</td></tr><tr><td>Bihar</td><td>Samastipur</td><td>209</td><td>140</td><td>79.9%</td></tr><tr><td>Tamil Nadu</td><td>Krishnagiri</td><td>206</td><td>81</td><td>67.5%</td></tr><tr><td>Andhra Pradesh</td><td>West Godavari</td><td>205</td><td>67</td><td>39.0%</td></tr><tr><td>Karnataka</td><td>Tumakuru</td><td>204</td><td>72</td><td>76.0%</td></tr><tr><td>Rajasthan</td><td>Nagaur</td><td>202</td><td>109</td><td>62.4%</td></tr><tr><td>Uttar Pradesh</td><td>Sitapur</td><td>201</td><td>117</td><td>79.1%</td></tr><tr><td>Gujarat</td><td>Sabarkantha</td><td>196</td><td>147</td><td>82.7%</td></tr><tr><td>Uttar Pradesh</td><td>Sultanpur</td><td>194</td><td>126</td><td>80.9%</td></tr><tr><td>Maharashtra</td><td>Sindhudurg</td><td>192</td><td>63</td><td>72.9%</td></tr><tr><td>Bihar</td><td>West Champaran</td><td>187</td><td>128</td><td>84.0%</td></tr><tr><td>Maharashtra</td><td>Jalgaon</td><td>187</td><td>129</td><td>84.5%</td></tr><tr><td>Maharashtra</td><td>Mumbai Suburban</td><td>187</td><td>121</td><td>92.0%</td></tr><tr><td>Maharashtra</td><td>Yavatmal</td><td>187</td><td>128</td><td>85.6%</td></tr></tbody></table>
+</section>
+
+<section class="page">
+    <h2>District Detail</h2>
+    <h3>Highest High-Confidence Volumes</h3>
+    <table class="district-table"><thead><tr><th>State</th><th>District</th><th>High</th><th>High Share</th><th>Unique</th></tr></thead><tbody><tr><td>Uttarakhand</td><td>Udham Singh Nagar</td><td>150</td><td>82.9%</td><td>181</td></tr><tr><td>Gujarat</td><td>Sabarkantha</td><td>147</td><td>75.0%</td><td>196</td></tr><tr><td>Uttar Pradesh</td><td>Jaunpur</td><td>144</td><td>68.2%</td><td>211</td></tr><tr><td>West Bengal</td><td>South 24 Parganas</td><td>144</td><td>62.9%</td><td>229</td></tr><tr><td>Gujarat</td><td>Surendranagar</td><td>142</td><td>63.1%</td><td>225</td></tr><tr><td>Bihar</td><td>Samastipur</td><td>140</td><td>67.0%</td><td>209</td></tr><tr><td>Bihar</td><td>Saran</td><td>139</td><td>64.1%</td><td>217</td></tr><tr><td>Maharashtra</td><td>Pune</td><td>135</td><td>73.0%</td><td>185</td></tr><tr><td>Uttar Pradesh</td><td>Ambedkar Nagar</td><td>134</td><td>78.4%</td><td>171</td></tr><tr><td>Uttar Pradesh</td><td>Siddharthnagar</td><td>134</td><td>72.4%</td><td>185</td></tr><tr><td>Gujarat</td><td>Kheda</td><td>130</td><td>82.8%</td><td>157</td></tr><tr><td>Rajasthan</td><td>Ajmer</td><td>130</td><td>81.2%</td><td>160</td></tr><tr><td>Maharashtra</td><td>Jalgaon</td><td>129</td><td>69.0%</td><td>187</td></tr><tr><td>Bihar</td><td>Bhojpur</td><td>128</td><td>82.1%</td><td>156</td></tr><tr><td>Bihar</td><td>Madhubani</td><td>128</td><td>69.6%</td><td>184</td></tr></tbody></table>
+</section>
+
+<section class="page">
+    <h2>Query Signal</h2>
+    <div class="panel keep-together">
+        <h3>Last Recorded Source Query Keywords</h3>
+        <svg class="chart" width="760" height="286" viewBox="0 0 760 286" role="img">
+<text x="0" y="26" class="chart-label">Mahadev Mandir</text>
+<rect x="190" y="13" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="13" width="490" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="26" class="chart-value">21,571</text>
+<text x="0" y="56" class="chart-label">Shankar Mandir</text>
+<rect x="190" y="43" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="43" width="231" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="56" class="chart-value">10,189</text>
+<text x="0" y="86" class="chart-label">Shiva temple</text>
+<rect x="190" y="73" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="73" width="230" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="86" class="chart-value">10,140</text>
+<text x="0" y="116" class="chart-label">Mahadev temple</text>
+<rect x="190" y="103" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="103" width="226" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="116" class="chart-value">9,972</text>
+<text x="0" y="146" class="chart-label">Shiv Mandir</text>
+<rect x="190" y="133" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="133" width="180" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="146" class="chart-value">7,935</text>
+<text x="0" y="176" class="chart-label">Rudreshwar temple</text>
+<rect x="190" y="163" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="163" width="152" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="176" class="chart-value">6,695</text>
+<text x="0" y="206" class="chart-label">Lingeshwar temple</text>
+<rect x="190" y="193" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="193" width="66" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="206" class="chart-value">2,932</text>
+<text x="0" y="236" class="chart-label">Someshwar temple</text>
+<rect x="190" y="223" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="223" width="53" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="236" class="chart-value">2,348</text>
+<text x="0" y="266" class="chart-label">Vishwanath temple</text>
+<rect x="190" y="253" width="490" height="14" rx="7" class="bar-bg" />
+<rect x="190" y="253" width="53" height="14" rx="7" fill="#d6a63f" />
+<text x="692" y="266" class="chart-value">2,335</text>
+</svg>
+    </div>
+    <div class="panel keep-together">
+        <h3>How To Read This</h3>
+        <p>The keyword distribution comes from <strong>candidate_review.csv</strong>. Because candidates are deduplicated by Google Place ID and rediscovery can update the stored source query, this is best read as the latest recorded query signal for unique candidate rows, not as full attribution across every API occurrence.</p>
+        <p>The strongest keyword signals in this export are direct Shiva and Mahadev variants, followed by Shankar and other configured Phase 1 terms.</p>
+    </div>
+    <table class="keyword-table"><thead><tr><th>Keyword</th><th>Candidate Rows</th><th>Share Of Unique</th></tr></thead><tbody><tr><td>Mahadev Mandir</td><td>21,571</td><td>29.1%</td></tr><tr><td>Shankar Mandir</td><td>10,189</td><td>13.7%</td></tr><tr><td>Shiva temple</td><td>10,140</td><td>13.7%</td></tr><tr><td>Mahadev temple</td><td>9,972</td><td>13.5%</td></tr><tr><td>Shiv Mandir</td><td>7,935</td><td>10.7%</td></tr><tr><td>Rudreshwar temple</td><td>6,695</td><td>9.0%</td></tr><tr><td>Lingeshwar temple</td><td>2,932</td><td>4.0%</td></tr><tr><td>Someshwar temple</td><td>2,348</td><td>3.2%</td></tr><tr><td>Vishwanath temple</td><td>2,335</td><td>3.2%</td></tr></tbody></table>
+</section>
+
+<section class="page">
+    <h2>Interpretation Notes</h2>
+    <div class="panel">
+        <h3>What This Report Is Good For</h3>
+        <ul>
+            <li>Prioritizing states and districts for manual review.</li>
+            <li>Spotting where duplicate discovery is heavy and deduplication is valuable.</li>
+            <li>Understanding how much of the current candidate set has strong Shiva-name evidence.</li>
+            <li>Choosing the next controlled Google Places discovery batches.</li>
+        </ul>
+    </div>
+    <div class="panel">
+        <h3>Limits And Caveats</h3>
+        <ul>
+            <li>Google Places is a discovery source only. The output should be verified with additional sources before publication.</li>
+            <li>Confidence is based primarily on discovered names. A low-confidence row may still be a Shiva temple.</li>
+            <li>Google Place IDs help deduplicate API results, but they do not prove cultural completeness or canonical temple identity.</li>
+            <li>Counts can change when more search tasks are run, when Google updates Places data, or when classification terms are refined.</li>
+        </ul>
+    </div>
+    <div class="panel">
+        <h3>Suggested Next Moves</h3>
+        <ul>
+            <li>Review the highest-volume districts first, especially where high+medium share is strong.</li>
+            <li>Sample low-confidence rows in high-volume states to improve classification terms.</li>
+            <li>Run remaining pending search tasks in small batches and regenerate this PDF after each batch.</li>
+            <li>Keep village-level expansion separate and intentional because it will rapidly increase task volume.</li>
+        </ul>
+    </div>
+    <p class="footer-note">Input files: national_summary.csv, state_counts.csv, district_counts.csv, candidate_review.csv. Sample CSV files were intentionally excluded.</p>
+</section>
+</body>
+</html>

@@ -59,6 +59,7 @@ Schema migration:
 
 - `migrations/001_phase1_schema.sql`
 - `migrations/002_add_google_maps_uri.sql`
+- `migrations/003_candidate_discovery_events.sql`
 
 ## Import Locations
 
@@ -164,6 +165,19 @@ Google Places Text Search request settings:
 
 The client uses the API key from `GOOGLE_PLACES_API_KEY`.
 
+Each newly discovered place observation is also written to
+`candidate_discovery_events`. The `temple_candidates` table remains the deduped
+latest candidate view, while `candidate_discovery_events` records which task,
+query, keyword, and source location observed the Google Place ID.
+
+Backfill the current candidate view into the event ledger as latest-known
+attribution events:
+
+```powershell
+python scripts/backfill_discovery_events.py --district-only --dry-run
+python scripts/backfill_discovery_events.py --district-only --all
+```
+
 ## Classify Candidates
 
 Classify names without touching the database:
@@ -214,6 +228,13 @@ Generate shareable Phase 1.1 social cards:
 python scripts/generate_phase1_1_social_cards.py
 ```
 
+Freeze Phase 1.1 as a dated release by copying the final CSVs, PDFs, social
+cards, and audit files into:
+
+```text
+reports/releases/phase_1_1_2026_05_17/
+```
+
 Generated files:
 
 - `reports/national_summary.csv`
@@ -241,10 +262,9 @@ Reports include:
 
 These are discovery counts, not exact real-world counts and not an official temple census.
 
-For scoped reports, candidate rows are filtered by their current
-`source_location_id` location type. This is suitable for the Phase 1.1 district
-baseline, but a future discovery-history table would be needed for full
-multi-source attribution.
+For scoped reports, candidate rows are still exported from the deduped latest
+candidate view. Use `candidate_discovery_events` for multi-query and
+multi-location attribution analysis.
 
 ## Analysis UI
 

@@ -340,11 +340,79 @@ All Phase 1.1 reports must clearly say:
 discovery counts, not exact real-world temple counts
 ```
 
-Current scoped reports filter candidate rows by each candidate's current
-`source_location_id`. This is appropriate for the Phase 1.1 district baseline
-after district discovery runs, but it is not a full multi-source attribution
-ledger. If later phases need to answer every location type that rediscovered the
-same Google Place ID, add a candidate discovery history table.
+### 8. Maintain Discovery Attribution History
+
+The deduped `temple_candidates` table stores the latest candidate view. The
+`candidate_discovery_events` table stores the query-to-place ledger:
+
+```text
+candidate
+Google Place ID
+search task
+keyword
+search query
+source location
+source location type
+result position
+observed place name/address/coordinates
+```
+
+New discovery runs write to this table automatically.
+
+Backfill the Phase 1.1 district baseline as latest-known attribution events:
+
+```powershell
+python scripts/backfill_discovery_events.py --district-only --dry-run
+python scripts/backfill_discovery_events.py --district-only --all
+```
+
+Current Phase 1.1 attribution result after the Rohtas retry:
+
+```text
+district discovery events: 74,137
+distinct district-attributed candidates: 74,117
+events linked to search tasks: 74,137
+district source locations with at least one candidate event: 772
+```
+
+Use `candidate_discovery_events` for multi-query and multi-location attribution
+analysis. Keep `temple_candidates` as the deduped latest candidate table.
+
+## Phase 1.1 Freeze Status
+
+As of May 17, 2026, Phase 1.1 is ready to freeze as a district-only release:
+
+```text
+active LGD district rows: 785
+active districts with LGD codes: 785
+district search tasks completed: 7,065 / 7,065
+failed active district tasks: 0
+raw district-level discovered occurrences: 229,495
+unique district-attributed Google Place IDs: 74,117
+high-confidence Shiva candidates: 43,877
+medium-confidence Shiva candidates: 7,366
+low-confidence possible temple candidates: 22,874
+district discovery events: 74,137
+```
+
+The previous failed task for:
+
+```text
+Mahadev temple in Rohtas district, Bihar, India
+```
+
+was rerun successfully on May 17, 2026 and returned:
+
+```text
+20 raw results
+20 response-unique results
+```
+
+The frozen release artifacts should be copied under:
+
+```text
+reports/releases/phase_1_1_2026_05_17/
+```
 
 ## Wording For External Use
 
@@ -364,19 +432,12 @@ official census of temples
 complete temple database
 ```
 
-## Immediate Next Step
+## Next Step After Freeze
 
-Download from Data.gov.in:
-
-```text
-Local Government Directory (LGD) - Districts
-```
-
-Save it as:
+Start Phase 1.2 as a separate scoped expansion:
 
 ```text
-data/source/lgd_districts.csv
+town + urban local body discovery
 ```
 
-Then run the district normalization dry-run and compare the results before
-importing.
+Do not mix Phase 1.2 outputs into the frozen Phase 1.1 district baseline.

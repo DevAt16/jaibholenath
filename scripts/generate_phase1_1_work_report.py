@@ -58,6 +58,9 @@ class WorkReportData:
     district_task_status: dict[str, int]
     district_task_results: dict[str, int]
     confidence_counts: dict[str, int]
+    discovery_events: int
+    discovery_events_with_task: int
+    discovery_event_locations: int
     first_alignment_status: dict[str, int]
     alias_alignment_status: dict[str, int]
     final_alignment_status: dict[str, int]
@@ -124,6 +127,9 @@ def _fetch_db_stats() -> dict[str, Any]:
         "district_task_status": {},
         "district_task_results": {},
         "confidence_counts": {},
+        "discovery_events": 0,
+        "discovery_events_with_task": 0,
+        "discovery_event_locations": 0,
     }
     try:
         with connect() as conn:
@@ -177,6 +183,21 @@ def _fetch_db_stats() -> dict[str, Any]:
                 )
                 for confidence, count in cursor.fetchall():
                     stats["confidence_counts"][str(confidence)] = int(count or 0)
+
+                cursor.execute(
+                    """
+                    SELECT
+                        COUNT(*),
+                        COUNT(*) FILTER (WHERE search_task_id IS NOT NULL),
+                        COUNT(DISTINCT source_location_id)
+                    FROM candidate_discovery_events
+                    WHERE search_level = 'district';
+                    """
+                )
+                row = cursor.fetchone()
+                stats["discovery_events"] = int(row[0] or 0)
+                stats["discovery_events_with_task"] = int(row[1] or 0)
+                stats["discovery_event_locations"] = int(row[2] or 0)
     except Exception as exc:  # pragma: no cover - report should still render from CSVs
         print(f"Database stats unavailable; using CSV fallback where possible: {exc}")
 
@@ -221,6 +242,9 @@ def load_report_data(
         district_task_status=dict(db_stats["district_task_status"]),
         district_task_results=dict(db_stats["district_task_results"]),
         confidence_counts=confidence_counts,
+        discovery_events=int(db_stats["discovery_events"] or 0),
+        discovery_events_with_task=int(db_stats["discovery_events_with_task"] or 0),
+        discovery_event_locations=int(db_stats["discovery_event_locations"] or 0),
         first_alignment_status=_group_status(verification_dir / "district_alignment_review.csv"),
         alias_alignment_status=_group_status(
             verification_dir / "district_alignment_review_after_aliases.csv"
@@ -597,6 +621,11 @@ td:nth-child(n+2), th:nth-child(n+2) {{ text-align: right; }}
         {_metric_card("Duplicates Removed", _fmt_int(duplicates), f"{_fmt_pct(_pct(duplicates, total))} of raw occurrences")}
         {_metric_card("High + Medium Signal", _fmt_int(signal), f"{_fmt_pct(_pct(signal, unique))} of unique candidates")}
     </div>
+    <div class="metric-grid">
+        {_metric_card("Discovery Events", _fmt_int(data.discovery_events), "Query-to-place attribution records")}
+        {_metric_card("Events Linked To Tasks", _fmt_int(data.discovery_events_with_task), "Backfilled or newly observed task links")}
+        {_metric_card("Districts With Events", _fmt_int(data.discovery_event_locations), "District locations with at least one candidate event")}
+    </div>
     <div class="panel">
         <h3>Confidence Mix</h3>
         {confidence_bar}
@@ -654,7 +683,7 @@ td:nth-child(n+2), th:nth-child(n+2) {{ text-align: right; }}
             <li>Candidate names are Google Places display names, not verified canonical temple names.</li>
             <li>Some real temples may not be in Google Places, may be typed differently, or may not match the selected keywords.</li>
             <li>Some candidates may be non-Shiva temples whose names contain overlapping terms, or Shiva temples whose names do not contain configured terms.</li>
-            <li>The report filters candidates by current source_location_id. A future candidate-discovery history table is needed for complete multi-query attribution.</li>
+            <li>The candidate-discovery event ledger now records query-to-place attribution. Historical backfill captures each candidate's latest known source attribution; future discovery runs record new observations automatically.</li>
         </ul>
     </div>
 </section>
@@ -666,7 +695,7 @@ td:nth-child(n+2), th:nth-child(n+2) {{ text-align: right; }}
         <ul>
             <li>Rerun or inspect the one failed district task and document the outcome.</li>
             <li>Sample high, medium, and low confidence candidates across top and low-volume districts.</li>
-            <li>Add a candidate discovery history table to retain every query-to-place observation.</li>
+            <li>Use the candidate-discovery event ledger to analyze repeated discoveries across keywords, districts, towns, and future location layers.</li>
             <li>Create a manual review protocol with fields for canonical name, deity verification, source URL, verifier, and confidence notes.</li>
             <li>Keep Phase 1.2 town and ULB expansion as a separate scoped report, not mixed into Phase 1.1.</li>
         </ul>

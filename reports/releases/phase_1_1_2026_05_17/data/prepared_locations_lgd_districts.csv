@@ -1,0 +1,786 @@
+location_type,name,state_name,district_name,sub_district_name,state_lgd_code,district_lgd_code,sub_district_lgd_code,village_lgd_code,source
+district,Alappuzha,Kerala,Alappuzha,,32,554,,,lgd
+district,Ambedkar Nagar,Uttar Pradesh,Ambedkar Nagar,,9,121,,,lgd
+district,Amritsar,Punjab,Amritsar,,3,27,,,lgd
+district,Arvalli,Gujarat,Arvalli,,24,672,,,lgd
+district,Arwal,Bihar,Arwal,,10,611,,,lgd
+district,Aurangabad,Bihar,Aurangabad,,10,189,,,lgd
+district,Bahraich,Uttar Pradesh,Bahraich,,9,125,,,lgd
+district,Balod,Chhattisgarh,Balod,,22,646,,,lgd
+district,Balrampur,Uttar Pradesh,Balrampur,,9,127,,,lgd
+district,Balrampur-Ramanujganj,Chhattisgarh,Balrampur-Ramanujganj,,22,649,,,lgd
+district,Bandipora,Jammu And Kashmir,Bandipora,,1,623,,,lgd
+district,Beed,Maharashtra,Beed,,27,470,,,lgd
+district,Bemetara,Chhattisgarh,Bemetara,,22,650,,,lgd
+district,Bengaluru Urban,Karnataka,Bengaluru Urban,,29,525,,,lgd
+district,Bhadohi,Uttar Pradesh,Bhadohi,,9,179,,,lgd
+district,Bhandara,Maharashtra,Bhandara,,27,471,,,lgd
+district,Bhind,Madhya Pradesh,Bhind,,23,395,,,lgd
+district,Bijapur,Chhattisgarh,Bijapur,,22,636,,,lgd
+district,Botad,Gujarat,Botad,,24,676,,,lgd
+district,Chamoli,Uttarakhand,Chamoli,,5,47,,,lgd
+district,Chandauli,Uttar Pradesh,Chandauli,,9,135,,,lgd
+district,Chandel,Manipur,Chandel,,14,253,,,lgd
+district,Chandrapur,Maharashtra,Chandrapur,,27,473,,,lgd
+district,Chhatarpur,Madhya Pradesh,Chhatarpur,,23,398,,,lgd
+district,Chhotaudepur,Gujarat,Chhotaudepur,,24,668,,,lgd
+district,Dahod,Gujarat,Dahod,,24,445,,,lgd
+district,Dakshin Dinajpur,West Bengal,Dakshin Dinajpur,,19,310,,,lgd
+district,Damoh,Madhya Pradesh,Damoh,,23,400,,,lgd
+district,Dangs,Gujarat,Dangs,,24,444,,,lgd
+district,Darjeeling,West Bengal,Darjeeling,,19,309,,,lgd
+district,Davangere,Karnataka,Davangere,,29,535,,,lgd
+district,Dhalai,Tripura,Dhalai,,16,269,,,lgd
+district,Dhenkanal,Odisha,Dhenkanal,,21,352,,,lgd
+district,Dindori,Madhya Pradesh,Dindori,,23,404,,,lgd
+district,Dudu,Rajasthan,Dudu,,8,769,,,lgd
+district,East Jaintia Hills,Meghalaya,East Jaintia Hills,,17,657,,,lgd
+district,Eluru,Andhra Pradesh,Eluru,,28,748,,,lgd
+district,Erode,Tamil Nadu,Erode,,33,573,,,lgd
+district,Fazilka,Punjab,Fazilka,,3,651,,,lgd
+district,Ferozepur,Punjab,Ferozepur,,3,31,,,lgd
+district,Gandhinagar,Gujarat,Gandhinagar,,24,446,,,lgd
+district,Garhwa,Jharkhand,Garhwa,,20,328,,,lgd
+district,Gariyaband,Chhattisgarh,Gariyaband,,22,645,,,lgd
+district,Gaya,Bihar,Gaya,,10,196,,,lgd
+district,Gomati,Tripura,Gomati,,16,654,,,lgd
+district,Gumla,Jharkhand,Gumla,,20,331,,,lgd
+district,Hamirpur,Himachal Pradesh,Hamirpur,,2,17,,,lgd
+district,Hanumakonda,Telangana,Hanumakonda,,36,686,,,lgd
+district,Harda,Madhya Pradesh,Harda,,23,408,,,lgd
+district,Haridwar,Uttarakhand,Haridwar,,5,50,,,lgd
+district,Hassan,Karnataka,Hassan,,29,539,,,lgd
+district,Jagatsinghapur,Odisha,Jagatsinghapur,,21,355,,,lgd
+district,Jaipur,Rajasthan,Jaipur,,8,102,,,lgd
+district,Jalore,Rajasthan,Jalore,,8,104,,,lgd
+district,Jalpaiguri,West Bengal,Jalpaiguri,,19,314,,,lgd
+district,Jayashankar Bhupalapally,Telangana,Jayashankar Bhupalapally,,36,687,,,lgd
+district,Jhalawar,Rajasthan,Jhalawar,,8,105,,,lgd
+district,Jhansi,Uttar Pradesh,Jhansi,,9,153,,,lgd
+district,Jharsuguda,Odisha,Jharsuguda,,21,357,,,lgd
+district,Kabeerdham,Chhattisgarh,Kabeerdham,,22,382,,,lgd
+district,Kalimpong,West Bengal,Kalimpong,,19,702,,,lgd
+district,Kanpur Dehat,Uttar Pradesh,Kanpur Dehat,,9,156,,,lgd
+district,Karauli,Rajasthan,Karauli,,8,108,,,lgd
+district,Karimnagar,Telangana,Karimnagar,,36,508,,,lgd
+district,Katihar,Bihar,Katihar,,10,201,,,lgd
+district,Kendrapara,Odisha,Kendrapara,,21,360,,,lgd
+district,Khargone (West Nimar),Madhya Pradesh,Khargone (West Nimar),,23,414,,,lgd
+district,Kheda,Gujarat,Kheda,,24,450,,,lgd
+district,Kheri,Uttar Pradesh,Kheri,,9,159,,,lgd
+district,Khowai,Tripura,Khowai,,16,652,,,lgd
+district,Khunti,Jharkhand,Khunti,,20,606,,,lgd
+district,Kishtwar,Jammu And Kashmir,Kishtwar,,1,620,,,lgd
+district,Kolasib,Mizoram,Kolasib,,15,263,,,lgd
+district,Kolkata,West Bengal,Kolkata,,19,315,,,lgd
+district,Kollam,Kerala,Kollam,,32,559,,,lgd
+district,Kota,Rajasthan,Kota,,8,109,,,lgd
+district,Kushinagar,Uttar Pradesh,Kushinagar,,9,160,,,lgd
+district,Lakshadweep District,Lakshadweep,Lakshadweep District,,31,553,,,lgd
+district,Lalitpur,Uttar Pradesh,Lalitpur,,9,161,,,lgd
+district,Latehar,Jharkhand,Latehar,,20,335,,,lgd
+district,Lohit,Arunachal Pradesh,Lohit,,12,234,,,lgd
+district,Longleng,Nagaland,Longleng,,13,615,,,lgd
+district,Madhubani,Bihar,Madhubani,,10,206,,,lgd
+district,Madurai,Tamil Nadu,Madurai,,33,578,,,lgd
+district,Mahendragarh,Haryana,Mahendragarh,,6,69,,,lgd
+district,Mahisagar,Gujarat,Mahisagar,,24,669,,,lgd
+district,Maihar,Madhya Pradesh,Maihar,,23,784,,,lgd
+district,Mainpuri,Uttar Pradesh,Mainpuri,,9,166,,,lgd
+district,Majuli,Assam,Majuli,,18,706,,,lgd
+district,Malappuram,Kerala,Malappuram,,32,562,,,lgd
+district,Malda,West Bengal,Malda,,19,316,,,lgd
+district,Malkangiri,Odisha,Malkangiri,,21,364,,,lgd
+district,Mancherial,Telangana,Mancherial,,36,684,,,lgd
+district,Mau,Uttar Pradesh,Mau,,9,168,,,lgd
+district,Mon,Nagaland,Mon,,13,247,,,lgd
+district,Mulugu,Telangana,Mulugu,,36,720,,,lgd
+district,Munger,Bihar,Munger,,10,207,,,lgd
+district,Mysuru,Karnataka,Mysuru,,29,545,,,lgd
+district,Nagapattinam,Tamil Nadu,Nagapattinam,,33,579,,,lgd
+district,Nagpur,Maharashtra,Nagpur,,27,484,,,lgd
+district,Nainital,Uttarakhand,Nainital,,5,51,,,lgd
+district,Narmadapuram,Madhya Pradesh,Narmadapuram,,23,409,,,lgd
+district,Nashik,Maharashtra,Nashik,,27,487,,,lgd
+district,Navsari,Gujarat,Navsari,,24,453,,,lgd
+district,Noney,Manipur,Noney,,14,714,,,lgd
+district,North East,Delhi,North East,,7,81,,,lgd
+district,North Tripura,Tripura,North Tripura,,16,270,,,lgd
+district,Ntr,Andhra Pradesh,Ntr,,28,749,,,lgd
+district,Palakkad,Kerala,Palakkad,,32,563,,,lgd
+district,Palamu,Jharkhand,Palamu,,20,338,,,lgd
+district,Palghar,Maharashtra,Palghar,,27,665,,,lgd
+district,Panchkula,Haryana,Panchkula,,6,70,,,lgd
+district,Panipat,Haryana,Panipat,,6,71,,,lgd
+district,Parvathipuram Manyam,Andhra Pradesh,Parvathipuram Manyam,,28,743,,,lgd
+district,Pathankot,Punjab,Pathankot,,3,662,,,lgd
+district,Pithoragarh,Uttarakhand,Pithoragarh,,5,53,,,lgd
+district,Purbi Champaran,Bihar,Purbi Champaran,,10,213,,,lgd
+district,Puri,Odisha,Puri,,21,369,,,lgd
+district,Raisen,Madhya Pradesh,Raisen,,23,421,,,lgd
+district,Ranga Reddy,Telangana,Ranga Reddy,,36,518,,,lgd
+district,Reasi,Jammu And Kashmir,Reasi,,1,627,,,lgd
+district,Sagar,Madhya Pradesh,Sagar,,23,425,,,lgd
+district,Samastipur,Bihar,Samastipur,,10,217,,,lgd
+district,Sangrur,Punjab,Sangrur,,3,43,,,lgd
+district,S.A.S Nagar,Punjab,S.A.S Nagar,,3,608,,,lgd
+district,Shahid Bhagat Singh Nagar,Punjab,Shahid Bhagat Singh Nagar,,3,40,,,lgd
+district,Siddharthnagar,Uttar Pradesh,Siddharthnagar,,9,182,,,lgd
+district,Sikar,Rajasthan,Sikar,,8,114,,,lgd
+district,Sindhudurg,Maharashtra,Sindhudurg,,27,495,,,lgd
+district,Sirohi,Rajasthan,Sirohi,,8,115,,,lgd
+district,Sirsa,Haryana,Sirsa,,6,74,,,lgd
+district,Sivaganga,Tamil Nadu,Sivaganga,,33,585,,,lgd
+district,Sonbhadra,Uttar Pradesh,Sonbhadra,,9,184,,,lgd
+district,Sonepur,Odisha,Sonepur,,21,372,,,lgd
+district,South 24 Parganas,West Bengal,South 24 Parganas,,19,304,,,lgd
+district,South Goa,Goa,South Goa,,30,552,,,lgd
+district,Suryapet,Telangana,Suryapet,,36,696,,,lgd
+district,Tengnoupal,Manipur,Tengnoupal,,14,716,,,lgd
+district,Theni,Tamil Nadu,Theni,,33,588,,,lgd
+district,Thiruvarur,Tamil Nadu,Thiruvarur,,33,590,,,lgd
+district,Tikamgarh,Madhya Pradesh,Tikamgarh,,23,434,,,lgd
+district,Unakoti,Tripura,Unakoti,,16,655,,,lgd
+district,Upper Subansiri,Arunachal Pradesh,Upper Subansiri,,12,241,,,lgd
+district,Varanasi,Uttar Pradesh,Varanasi,,9,187,,,lgd
+district,Virudhunagar,Tamil Nadu,Virudhunagar,,33,597,,,lgd
+district,Wardha,Maharashtra,Wardha,,27,498,,,lgd
+district,West Khasi Hills,Meghalaya,West Khasi Hills,,17,279,,,lgd
+district,West Tripura,Tripura,West Tripura,,16,272,,,lgd
+district,Y.S.R.,Andhra Pradesh,Y.S.R.,,28,504,,,lgd
+district,Agar-Malwa,Madhya Pradesh,Agar-Malwa,,23,667,,,lgd
+district,Agra,Uttar Pradesh,Agra,,9,118,,,lgd
+district,Ajmer,Rajasthan,Ajmer,,8,86,,,lgd
+district,Alipurduar,West Bengal,Alipurduar,,19,664,,,lgd
+district,Almora,Uttarakhand,Almora,,5,45,,,lgd
+district,Ambala,Haryana,Ambala,,6,58,,,lgd
+district,Amravati,Maharashtra,Amravati,,27,468,,,lgd
+district,Amreli,Gujarat,Amreli,,24,439,,,lgd
+district,Anantnag,Jammu And Kashmir,Anantnag,,1,1,,,lgd
+district,Annamayya,Andhra Pradesh,Annamayya,,28,753,,,lgd
+district,Baksa,Assam,Baksa,,18,616,,,lgd
+district,Baleshwar,Odisha,Baleshwar,,21,346,,,lgd
+district,Ballia,Uttar Pradesh,Ballia,,9,126,,,lgd
+district,Balodabazar-Bhatapara,Chhattisgarh,Balodabazar-Bhatapara,,22,644,,,lgd
+district,Banda,Uttar Pradesh,Banda,,9,128,,,lgd
+district,Banka,Bihar,Banka,,10,190,,,lgd
+district,Bankura,West Bengal,Bankura,,19,305,,,lgd
+district,Baramulla,Jammu And Kashmir,Baramulla,,1,3,,,lgd
+district,Bareilly,Uttar Pradesh,Bareilly,,9,130,,,lgd
+district,Barwani,Madhya Pradesh,Barwani,,23,393,,,lgd
+district,Bathinda,Punjab,Bathinda,,3,28,,,lgd
+district,Begusarai,Bihar,Begusarai,,10,191,,,lgd
+district,Belagavi,Karnataka,Belagavi,,29,527,,,lgd
+district,Bhagalpur,Bihar,Bhagalpur,,10,192,,,lgd
+district,Bilaspur,Chhattisgarh,Bilaspur,,22,375,,,lgd
+district,Bishnupur,Manipur,Bishnupur,,14,252,,,lgd
+district,Biswanath,Assam,Biswanath,,18,705,,,lgd
+district,Budaun,Uttar Pradesh,Budaun,,9,133,,,lgd
+district,Bulandshahr,Uttar Pradesh,Bulandshahr,,9,134,,,lgd
+district,Bundi,Rajasthan,Bundi,,8,94,,,lgd
+district,Cachar,Assam,Cachar,,18,282,,,lgd
+district,Chamarajanagara,Karnataka,Chamarajanagara,,29,531,,,lgd
+district,Champawat,Uttarakhand,Champawat,,5,48,,,lgd
+district,Charaideo,Assam,Charaideo,,18,708,,,lgd
+district,Chennai,Tamil Nadu,Chennai,,33,568,,,lgd
+district,Chirang,Assam,Chirang,,18,612,,,lgd
+district,Coimbatore,Tamil Nadu,Coimbatore,,33,569,,,lgd
+district,Datia,Madhya Pradesh,Datia,,23,401,,,lgd
+district,Dhanbad,Jharkhand,Dhanbad,,20,325,,,lgd
+district,Dharmapuri,Tamil Nadu,Dharmapuri,,33,571,,,lgd
+district,Dharwad,Karnataka,Dharwad,,29,536,,,lgd
+district,Dholpur,Rajasthan,Dholpur,,8,98,,,lgd
+district,Dibrugarh,Assam,Dibrugarh,,18,286,,,lgd
+district,Durg,Chhattisgarh,Durg,,22,378,,,lgd
+district,East Garo Hills,Meghalaya,East Garo Hills,,17,273,,,lgd
+district,Faridkot,Punjab,Faridkot,,3,29,,,lgd
+district,Fatehgarh Sahib,Punjab,Fatehgarh Sahib,,3,30,,,lgd
+district,Ganjam,Odisha,Ganjam,,21,354,,,lgd
+district,Gautam Buddha Nagar,Uttar Pradesh,Gautam Buddha Nagar,,9,144,,,lgd
+district,Ghazipur,Uttar Pradesh,Ghazipur,,9,146,,,lgd
+district,Godda,Jharkhand,Godda,,20,330,,,lgd
+district,Gurugram,Haryana,Gurugram,,6,62,,,lgd
+district,Hapur,Uttar Pradesh,Hapur,,9,661,,,lgd
+district,Hathras,Uttar Pradesh,Hathras,,9,163,,,lgd
+district,Haveri,Karnataka,Haveri,,29,540,,,lgd
+district,Hisar,Haryana,Hisar,,6,63,,,lgd
+district,Hnahthial,Mizoram,Hnahthial,,15,726,,,lgd
+district,Hyderabad,Telangana,Hyderabad,,36,507,,,lgd
+district,Jalaun,Uttar Pradesh,Jalaun,,9,151,,,lgd
+district,Jalna,Maharashtra,Jalna,,27,479,,,lgd
+district,Jamnagar,Gujarat,Jamnagar,,24,447,,,lgd
+district,Jashpur,Chhattisgarh,Jashpur,,22,380,,,lgd
+district,Jhabua,Madhya Pradesh,Jhabua,,23,412,,,lgd
+district,Jind,Haryana,Jind,,6,65,,,lgd
+district,Jiribam,Manipur,Jiribam,,14,713,,,lgd
+district,Jodhpur,Rajasthan,Jodhpur,,8,107,,,lgd
+district,Jodhpur (Gramin),Rajasthan,Jodhpur (Gramin),,8,778,,,lgd
+district,Jorhat,Assam,Jorhat,,18,290,,,lgd
+district,Kachchh,Gujarat,Kachchh,,24,449,,,lgd
+district,Kakinada,Andhra Pradesh,Kakinada,,28,746,,,lgd
+district,Kalahandi,Odisha,Kalahandi,,21,358,,,lgd
+district,Kallakurichi,Tamil Nadu,Kallakurichi,,33,729,,,lgd
+district,Kamareddy,Telangana,Kamareddy,,36,685,,,lgd
+district,Kamrup Metro,Assam,Kamrup Metro,,18,618,,,lgd
+district,Kannur,Kerala,Kannur,,32,557,,,lgd
+district,Kanpur Nagar,Uttar Pradesh,Kanpur Nagar,,9,157,,,lgd
+district,Kapurthala,Punjab,Kapurthala,,3,35,,,lgd
+district,Kargil,Ladakh,Kargil,,37,6,,,lgd
+district,Karur,Tamil Nadu,Karur,,33,576,,,lgd
+district,Kathua,Jammu And Kashmir,Kathua,,1,7,,,lgd
+district,Khairthal-Tijara,Rajasthan,Khairthal-Tijara,,8,770,,,lgd
+district,Khandwa (East Nimar),Madhya Pradesh,Khandwa (East Nimar),,23,405,,,lgd
+district,Kolar,Karnataka,Kolar,,29,542,,,lgd
+district,Kumuram Bheem Asifabad,Telangana,Kumuram Bheem Asifabad,,36,699,,,lgd
+district,Lawngtlai,Mizoram,Lawngtlai,,15,264,,,lgd
+district,Lohardaga,Jharkhand,Lohardaga,,20,336,,,lgd
+district,Lower Dibang Valley,Arunachal Pradesh,Lower Dibang Valley,,12,235,,,lgd
+district,Lower Siang,Arunachal Pradesh,Lower Siang,,12,719,,,lgd
+district,Mahoba,Uttar Pradesh,Mahoba,,9,165,,,lgd
+district,Mandla,Madhya Pradesh,Mandla,,23,415,,,lgd
+district,Mayiladuthurai,Tamil Nadu,Mayiladuthurai,,33,735,,,lgd
+district,Medak,Telangana,Medak,,36,513,,,lgd
+district,Mirzapur,Uttar Pradesh,Mirzapur,,9,170,,,lgd
+district,Mokokchung,Nagaland,Mokokchung,,13,246,,,lgd
+district,Moradabad,Uttar Pradesh,Moradabad,,9,171,,,lgd
+district,Morbi,Gujarat,Morbi,,24,673,,,lgd
+district,Mumbai,Maharashtra,Mumbai,,27,482,,,lgd
+district,Mumbai Suburban,Maharashtra,Mumbai Suburban,,27,483,,,lgd
+district,Nagarkurnool,Telangana,Nagarkurnool,,36,694,,,lgd
+district,Nalanda,Bihar,Nalanda,,10,209,,,lgd
+district,Nalgonda,Telangana,Nalgonda,,36,514,,,lgd
+district,Nawada,Bihar,Nawada,,10,210,,,lgd
+district,North,Delhi,North,,7,80,,,lgd
+district,North West,Delhi,North West,,7,82,,,lgd
+district,Papum Pare,Arunachal Pradesh,Papum Pare,,12,237,,,lgd
+district,Pathanamthitta,Kerala,Pathanamthitta,,32,564,,,lgd
+district,Porbandar,Gujarat,Porbandar,,24,456,,,lgd
+district,Prayagraj,Uttar Pradesh,Prayagraj,,9,120,,,lgd
+district,Rae Bareli,Uttar Pradesh,Rae Bareli,,9,175,,,lgd
+district,Raichur,Karnataka,Raichur,,29,546,,,lgd
+district,Rajanna Sircilla,Telangana,Rajanna Sircilla,,36,683,,,lgd
+district,Ramban,Jammu And Kashmir,Ramban,,1,621,,,lgd
+district,Ratlam,Madhya Pradesh,Ratlam,,23,423,,,lgd
+district,Rewari,Haryana,Rewari,,6,72,,,lgd
+district,Ri Bhoi,Meghalaya,Ri Bhoi,,17,276,,,lgd
+district,Rohtak,Haryana,Rohtak,,6,73,,,lgd
+district,Samba,Jammu And Kashmir,Samba,,1,624,,,lgd
+district,Sambalpur,Odisha,Sambalpur,,21,371,,,lgd
+district,Sangli,Maharashtra,Sangli,,27,493,,,lgd
+district,Sehore,Madhya Pradesh,Sehore,,23,427,,,lgd
+district,Senapati,Manipur,Senapati,,14,257,,,lgd
+district,Shahpura,Rajasthan,Shahpura,,8,780,,,lgd
+district,Sheikhpura,Bihar,Sheikhpura,,10,219,,,lgd
+district,Siang,Arunachal Pradesh,Siang,,12,679,,,lgd
+district,Siddipet,Telangana,Siddipet,,36,692,,,lgd
+district,Sirmaur,Himachal Pradesh,Sirmaur,,2,24,,,lgd
+district,Sivasagar,Assam,Sivasagar,,18,300,,,lgd
+district,Sonitpur,Assam,Sonitpur,,18,301,,,lgd
+district,South Tripura,Tripura,South Tripura,,16,271,,,lgd
+district,Sultanpur,Uttar Pradesh,Sultanpur,,9,185,,,lgd
+district,Sundargarh,Odisha,Sundargarh,,21,373,,,lgd
+district,Surat,Gujarat,Surat,,24,459,,,lgd
+district,Surendranagar,Gujarat,Surendranagar,,24,460,,,lgd
+district,Thoothukkudi,Tamil Nadu,Thoothukkudi,,33,594,,,lgd
+district,Thrissur,Kerala,Thrissur,,32,566,,,lgd
+district,Tirupati,Andhra Pradesh,Tirupati,,28,752,,,lgd
+district,Tuensang,Nagaland,Tuensang,,13,249,,,lgd
+district,Udam Singh Nagar,Uttarakhand,Udam Singh Nagar,,5,56,,,lgd
+district,Udhampur,Jammu And Kashmir,Udhampur,,1,14,,,lgd
+district,Ujjain,Madhya Pradesh,Ujjain,,23,435,,,lgd
+district,Unnao,Uttar Pradesh,Unnao,,9,186,,,lgd
+district,Uttar Dinajpur,West Bengal,Uttar Dinajpur,,19,311,,,lgd
+district,Vellore,Tamil Nadu,Vellore,,33,595,,,lgd
+district,Wanaparthy,Telangana,Wanaparthy,,36,693,,,lgd
+district,West Godavari,Andhra Pradesh,West Godavari,,28,523,,,lgd
+district,West Kameng,Arunachal Pradesh,West Kameng,,12,242,,,lgd
+district,Yamunanagar,Haryana,Yamunanagar,,6,76,,,lgd
+district,Yavatmal,Maharashtra,Yavatmal,,27,500,,,lgd
+district,Ahmednagar,Maharashtra,Ahmednagar,,27,466,,,lgd
+district,Alluri Sitharama Raju,Andhra Pradesh,Alluri Sitharama Raju,,28,745,,,lgd
+district,Amroha,Uttar Pradesh,Amroha,,9,154,,,lgd
+district,Anakapalli,Andhra Pradesh,Anakapalli,,28,744,,,lgd
+district,Anjaw,Arunachal Pradesh,Anjaw,,12,628,,,lgd
+district,Anupgarh,Rajasthan,Anupgarh,,8,776,,,lgd
+district,Auraiya,Uttar Pradesh,Auraiya,,9,122,,,lgd
+district,Ayodhya,Uttar Pradesh,Ayodhya,,9,140,,,lgd
+district,Bajali,Assam,Bajali,,18,739,,,lgd
+district,Balangir,Odisha,Balangir,,21,345,,,lgd
+district,Bara Banki,Uttar Pradesh,Bara Banki,,9,129,,,lgd
+district,Bhadradri Kothagudem,Telangana,Bhadradri Kothagudem,,36,690,,,lgd
+district,Bharatpur,Rajasthan,Bharatpur,,8,91,,,lgd
+district,Bhojpur,Bihar,Bhojpur,,10,193,,,lgd
+district,Bikaner,Rajasthan,Bikaner,,8,93,,,lgd
+district,Birbhum,West Bengal,Birbhum,,19,307,,,lgd
+district,Charki Dadri,Haryana,Charki Dadri,,6,701,,,lgd
+district,Chikkaballapura,Karnataka,Chikkaballapura,,29,630,,,lgd
+district,Chittoor,Andhra Pradesh,Chittoor,,28,503,,,lgd
+district,Dakshin Bastar Dantewada,Chhattisgarh,Dakshin Bastar Dantewada,,22,376,,,lgd
+district,Darrang,Assam,Darrang,,18,283,,,lgd
+district,Dehradun,Uttarakhand,Dehradun,,5,49,,,lgd
+district,Deogarh,Odisha,Deogarh,,21,351,,,lgd
+district,Dhemaji,Assam,Dhemaji,,18,284,,,lgd
+district,Dhubri,Assam,Dhubri,,18,285,,,lgd
+district,Dibang Valley,Arunachal Pradesh,Dibang Valley,,12,230,,,lgd
+district,Didwana-Kuchaman,Rajasthan,Didwana-Kuchaman,,8,768,,,lgd
+district,Dimapur,Nagaland,Dimapur,,13,244,,,lgd
+district,Dindigul,Tamil Nadu,Dindigul,,33,572,,,lgd
+district,Diu,The Dadra And Nagar Haveli And Daman And Diu,Diu,,38,464,,,lgd
+district,Doda,Jammu And Kashmir,Doda,,1,4,,,lgd
+district,Dungarpur,Rajasthan,Dungarpur,,8,99,,,lgd
+district,East Siang,Arunachal Pradesh,East Siang,,12,232,,,lgd
+district,Ernakulam,Kerala,Ernakulam,,32,555,,,lgd
+district,Etah,Uttar Pradesh,Etah,,9,138,,,lgd
+district,Farrukhabad,Uttar Pradesh,Farrukhabad,,9,141,,,lgd
+district,Fatehabad,Haryana,Fatehabad,,6,61,,,lgd
+district,Fatehpur,Uttar Pradesh,Fatehpur,,9,142,,,lgd
+district,Gadag,Karnataka,Gadag,,29,537,,,lgd
+district,Gangapurcity,Rajasthan,Gangapurcity,,8,771,,,lgd
+district,Gangtok,Sikkim,Gangtok,,11,225,,,lgd
+district,Ghaziabad,Uttar Pradesh,Ghaziabad,,9,145,,,lgd
+district,Gonda,Uttar Pradesh,Gonda,,9,147,,,lgd
+district,Gopalganj,Bihar,Gopalganj,,10,197,,,lgd
+district,Gurdaspur,Punjab,Gurdaspur,,3,32,,,lgd
+district,Gwalior,Madhya Pradesh,Gwalior,,23,407,,,lgd
+district,Hailakandi,Assam,Hailakandi,,18,289,,,lgd
+district,Hanumangarh,Rajasthan,Hanumangarh,,8,101,,,lgd
+district,Hardoi,Uttar Pradesh,Hardoi,,9,150,,,lgd
+district,Hazaribagh,Jharkhand,Hazaribagh,,20,332,,,lgd
+district,Hingoli,Maharashtra,Hingoli,,27,477,,,lgd
+district,Jagitial,Telangana,Jagitial,,36,681,,,lgd
+district,Jajapur,Odisha,Jajapur,,21,356,,,lgd
+district,Jamtara,Jharkhand,Jamtara,,20,333,,,lgd
+district,Jamui,Bihar,Jamui,,10,198,,,lgd
+district,Janjgir-Champa,Chhattisgarh,Janjgir-Champa,,22,379,,,lgd
+district,Jehanabad,Bihar,Jehanabad,,10,199,,,lgd
+district,Jhargram,West Bengal,Jhargram,,19,703,,,lgd
+district,Kaimur (Bhabua),Bihar,Kaimur (Bhabua),,10,200,,,lgd
+district,Kancheepuram,Tamil Nadu,Kancheepuram,,33,574,,,lgd
+district,Kandhamal,Odisha,Kandhamal,,21,359,,,lgd
+district,Kangra,Himachal Pradesh,Kangra,,2,18,,,lgd
+district,Kannauj,Uttar Pradesh,Kannauj,,9,155,,,lgd
+district,Karnal,Haryana,Karnal,,6,67,,,lgd
+district,Kasganj,Uttar Pradesh,Kasganj,,9,633,,,lgd
+district,Katni,Madhya Pradesh,Katni,,23,413,,,lgd
+district,Khagaria,Bihar,Khagaria,,10,202,,,lgd
+district,Kinnaur,Himachal Pradesh,Kinnaur,,2,19,,,lgd
+district,Kiphire,Nagaland,Kiphire,,13,614,,,lgd
+district,Kishanganj,Bihar,Kishanganj,,10,203,,,lgd
+district,Koderma,Jharkhand,Koderma,,20,334,,,lgd
+district,Koppal,Karnataka,Koppal,,29,543,,,lgd
+district,Kotputli-Behror,Rajasthan,Kotputli-Behror,,8,782,,,lgd
+district,Kottayam,Kerala,Kottayam,,32,560,,,lgd
+district,Kozhikode,Kerala,Kozhikode,,32,561,,,lgd
+district,Krishna,Andhra Pradesh,Krishna,,28,510,,,lgd
+district,Kulgam,Jammu And Kashmir,Kulgam,,1,622,,,lgd
+district,Kupwara,Jammu And Kashmir,Kupwara,,1,8,,,lgd
+district,Kurnool,Andhra Pradesh,Kurnool,,28,511,,,lgd
+district,Lakhisarai,Bihar,Lakhisarai,,10,204,,,lgd
+district,Latur,Maharashtra,Latur,,27,481,,,lgd
+district,Lunglei,Mizoram,Lunglei,,15,265,,,lgd
+district,Mahabubabad,Telangana,Mahabubabad,,36,688,,,lgd
+district,Mahesana,Gujarat,Mahesana,,24,451,,,lgd
+district,Mahrajganj,Uttar Pradesh,Mahrajganj,,9,164,,,lgd
+district,Mamit,Mizoram,Mamit,,15,266,,,lgd
+district,Mandi,Himachal Pradesh,Mandi,,2,22,,,lgd
+district,Manendragarh-Chirmiri-Bharatpur(M C B),Chhattisgarh,Manendragarh-Chirmiri-Bharatpur(M C B),,22,760,,,lgd
+district,Mayurbhanj,Odisha,Mayurbhanj,,21,365,,,lgd
+district,Medchal Malkajgiri,Telangana,Medchal Malkajgiri,,36,700,,,lgd
+district,Morena,Madhya Pradesh,Morena,,23,417,,,lgd
+district,Murshidabad,West Bengal,Murshidabad,,19,319,,,lgd
+district,Nabarangpur,Odisha,Nabarangpur,,21,366,,,lgd
+district,Nadia,West Bengal,Nadia,,19,320,,,lgd
+district,Nanded,Maharashtra,Nanded,,27,485,,,lgd
+district,Nandurbar,Maharashtra,Nandurbar,,27,486,,,lgd
+district,Narayanpet,Telangana,Narayanpet,,36,721,,,lgd
+district,Narsimhapur,Madhya Pradesh,Narsimhapur,,23,418,,,lgd
+district,Neemuch,Madhya Pradesh,Neemuch,,23,419,,,lgd
+district,Nicobars,Andaman And Nicobar Islands,Nicobars,,35,603,,,lgd
+district,Nirmal,Telangana,Nirmal,,36,680,,,lgd
+district,Niwari,Madhya Pradesh,Niwari,,23,722,,,lgd
+district,Nizamabad,Telangana,Nizamabad,,36,516,,,lgd
+district,Noklak,Nagaland,Noklak,,13,736,,,lgd
+district,North Goa,Goa,North Goa,,30,551,,,lgd
+district,Pakke Kessang,Arunachal Pradesh,Pakke Kessang,,12,723,,,lgd
+district,Pakur,Jharkhand,Pakur,,20,337,,,lgd
+district,Pandhurna,Madhya Pradesh,Pandhurna,,23,785,,,lgd
+district,Parbhani,Maharashtra,Parbhani,,27,489,,,lgd
+district,Paschim Bardhaman,West Bengal,Paschim Bardhaman,,19,704,,,lgd
+district,Paschim Medinipur,West Bengal,Paschim Medinipur,,19,318,,,lgd
+district,Patiala,Punjab,Patiala,,3,41,,,lgd
+district,Patna,Bihar,Patna,,10,212,,,lgd
+district,Peddapalli,Telangana,Peddapalli,,36,682,,,lgd
+district,Poonch,Jammu And Kashmir,Poonch,,1,10,,,lgd
+district,Pratapgarh,Uttar Pradesh,Pratapgarh,,9,174,,,lgd
+district,Puducherry,Puducherry,Puducherry,,34,600,,,lgd
+district,Pulwama,Jammu And Kashmir,Pulwama,,1,11,,,lgd
+district,Pune,Maharashtra,Pune,,27,490,,,lgd
+district,Raigad,Maharashtra,Raigad,,27,491,,,lgd
+district,Raigarh,Chhattisgarh,Raigarh,,22,386,,,lgd
+district,Raipur,Chhattisgarh,Raipur,,22,387,,,lgd
+district,Rajgarh,Madhya Pradesh,Rajgarh,,23,422,,,lgd
+district,Rajouri,Jammu And Kashmir,Rajouri,,1,12,,,lgd
+district,Rudra Prayag,Uttarakhand,Rudra Prayag,,5,54,,,lgd
+district,Sabar Kantha,Gujarat,Sabar Kantha,,24,458,,,lgd
+district,Saharanpur,Uttar Pradesh,Saharanpur,,9,177,,,lgd
+district,Saitual,Mizoram,Saitual,,15,727,,,lgd
+district,Salem,Tamil Nadu,Salem,,33,584,,,lgd
+district,Salumbar,Rajasthan,Salumbar,,8,777,,,lgd
+district,Sambhal,Uttar Pradesh,Sambhal,,9,659,,,lgd
+district,Sangareddy,Telangana,Sangareddy,,36,691,,,lgd
+district,Saran,Bihar,Saran,,10,218,,,lgd
+district,Sarangarh-Bilaigarh,Chhattisgarh,Sarangarh-Bilaigarh,,22,763,,,lgd
+district,Satna,Madhya Pradesh,Satna,,23,426,,,lgd
+district,Shahdara,Delhi,Shahdara,,7,671,,,lgd
+district,Shamator,Nagaland,Shamator,,13,765,,,lgd
+district,Shamli,Uttar Pradesh,Shamli,,9,660,,,lgd
+district,Shimla,Himachal Pradesh,Shimla,,2,23,,,lgd
+district,Shivamogga,Karnataka,Shivamogga,,29,547,,,lgd
+district,Shi Yomi,Arunachal Pradesh,Shi Yomi,,12,725,,,lgd
+district,Siaha,Mizoram,Siaha,,15,267,,,lgd
+district,Sitamarhi,Bihar,Sitamarhi,,10,221,,,lgd
+district,Sonipat,Haryana,Sonipat,,6,75,,,lgd
+district,South Andamans,Andaman And Nicobar Islands,South Andamans,,35,602,,,lgd
+district,South Garo Hills,Meghalaya,South Garo Hills,,17,277,,,lgd
+district,South West Khasi Hills,Meghalaya,South West Khasi Hills,,17,658,,,lgd
+district,Sri Muktsar Sahib,Punjab,Sri Muktsar Sahib,,3,39,,,lgd
+district,Srinagar,Jammu And Kashmir,Srinagar,,1,13,,,lgd
+district,Sri Potti Sriramulu Nellore,Andhra Pradesh,Sri Potti Sriramulu Nellore,,28,515,,,lgd
+district,Sri Sathya Sai,Andhra Pradesh,Sri Sathya Sai,,28,754,,,lgd
+district,Tapi,Gujarat,Tapi,,24,641,,,lgd
+district,Thiruvallur,Tamil Nadu,Thiruvallur,,33,589,,,lgd
+district,Thoubal,Manipur,Thoubal,,14,259,,,lgd
+district,Tirunelveli,Tamil Nadu,Tirunelveli,,33,592,,,lgd
+district,Tseminyu,Nagaland,Tseminyu,,13,757,,,lgd
+district,Tumakuru,Karnataka,Tumakuru,,29,548,,,lgd
+district,Umaria,Madhya Pradesh,Umaria,,23,436,,,lgd
+district,Vadodara,Gujarat,Vadodara,,24,461,,,lgd
+district,Vaishali,Bihar,Vaishali,,10,224,,,lgd
+district,Valsad,Gujarat,Valsad,,24,462,,,lgd
+district,Viluppuram,Tamil Nadu,Viluppuram,,33,596,,,lgd
+district,Visakhapatnam,Andhra Pradesh,Visakhapatnam,,28,520,,,lgd
+district,Vizianagaram,Andhra Pradesh,Vizianagaram,,28,521,,,lgd
+district,West,Delhi,West,,7,85,,,lgd
+district,Anand,Gujarat,Anand,,24,440,,,lgd
+district,Ananthapuramu,Andhra Pradesh,Ananthapuramu,,28,502,,,lgd
+district,Anugul,Odisha,Anugul,,21,344,,,lgd
+district,Anuppur,Madhya Pradesh,Anuppur,,23,390,,,lgd
+district,Araria,Bihar,Araria,,10,188,,,lgd
+district,Ariyalur,Tamil Nadu,Ariyalur,,33,610,,,lgd
+district,Ashoknagar,Madhya Pradesh,Ashoknagar,,23,391,,,lgd
+district,Baghpat,Uttar Pradesh,Baghpat,,9,124,,,lgd
+district,Balaghat,Madhya Pradesh,Balaghat,,23,392,,,lgd
+district,Balotra,Rajasthan,Balotra,,8,775,,,lgd
+district,Banas Kantha,Gujarat,Banas Kantha,,24,441,,,lgd
+district,Banswara,Rajasthan,Banswara,,8,88,,,lgd
+district,Baran,Rajasthan,Baran,,8,89,,,lgd
+district,Bargarh,Odisha,Bargarh,,21,347,,,lgd
+district,Basti,Uttar Pradesh,Basti,,9,131,,,lgd
+district,Beawar,Rajasthan,Beawar,,8,774,,,lgd
+district,Bengaluru Rural,Karnataka,Bengaluru Rural,,29,526,,,lgd
+district,Bharuch,Gujarat,Bharuch,,24,442,,,lgd
+district,Bhopal,Madhya Pradesh,Bhopal,,23,396,,,lgd
+district,Boudh,Odisha,Boudh,,21,349,,,lgd
+district,Buldhana,Maharashtra,Buldhana,,27,472,,,lgd
+district,Burhanpur,Madhya Pradesh,Burhanpur,,23,397,,,lgd
+district,Changlang,Arunachal Pradesh,Changlang,,12,229,,,lgd
+district,Chatra,Jharkhand,Chatra,,20,323,,,lgd
+district,Chikkamagaluru,Karnataka,Chikkamagaluru,,29,532,,,lgd
+district,Chitradurga,Karnataka,Chitradurga,,29,533,,,lgd
+district,Chittorgarh,Rajasthan,Chittorgarh,,8,95,,,lgd
+district,Chumoukedima,Nagaland,Chumoukedima,,13,758,,,lgd
+district,Churu,Rajasthan,Churu,,8,96,,,lgd
+district,Cooch Behar,West Bengal,Cooch Behar,,19,308,,,lgd
+district,Dadra And Nagar Haveli,The Dadra And Nagar Haveli And Daman And Diu,Dadra And Nagar Haveli,,38,465,,,lgd
+district,Deoghar,Jharkhand,Deoghar,,20,324,,,lgd
+district,Devbhumi Dwarka,Gujarat,Devbhumi Dwarka,,24,674,,,lgd
+district,Dhamtari,Chhattisgarh,Dhamtari,,22,377,,,lgd
+district,Dima Hasao,Assam,Dima Hasao,,18,299,,,lgd
+district,Dumka,Jharkhand,Dumka,,20,326,,,lgd
+district,East,Delhi,East,,7,78,,,lgd
+district,Eastern West Khasi Hills,Meghalaya,Eastern West Khasi Hills,,17,740,,,lgd
+district,East Godavari,Andhra Pradesh,East Godavari,,28,505,,,lgd
+district,East Khasi Hills,Meghalaya,East Khasi Hills,,17,274,,,lgd
+district,East Singhbum,Jharkhand,East Singhbum,,20,327,,,lgd
+district,Gadchiroli,Maharashtra,Gadchiroli,,27,475,,,lgd
+district,Gajapati,Odisha,Gajapati,,21,353,,,lgd
+district,Ganderbal,Jammu And Kashmir,Ganderbal,,1,626,,,lgd
+district,Gaurela-Pendra-Marwahi,Chhattisgarh,Gaurela-Pendra-Marwahi,,22,734,,,lgd
+district,Giridih,Jharkhand,Giridih,,20,329,,,lgd
+district,Gir Somnath,Gujarat,Gir Somnath,,24,675,,,lgd
+district,Goalpara,Assam,Goalpara,,18,287,,,lgd
+district,Gondia,Maharashtra,Gondia,,27,476,,,lgd
+district,Guntur,Andhra Pradesh,Guntur,,28,506,,,lgd
+district,Hojai,Assam,Hojai,,18,709,,,lgd
+district,Hooghly,West Bengal,Hooghly,,19,312,,,lgd
+district,Hoshiarpur,Punjab,Hoshiarpur,,3,33,,,lgd
+district,Howrah,West Bengal,Howrah,,19,313,,,lgd
+district,Imphal West,Manipur,Imphal West,,14,256,,,lgd
+district,Jabalpur,Madhya Pradesh,Jabalpur,,23,411,,,lgd
+district,Jalandhar,Punjab,Jalandhar,,3,34,,,lgd
+district,Jalgaon,Maharashtra,Jalgaon,,27,478,,,lgd
+district,Jammu,Jammu And Kashmir,Jammu,,1,5,,,lgd
+district,Jhunjhunu,Rajasthan,Jhunjhunu,,8,106,,,lgd
+district,Jogulamba Gadwal,Telangana,Jogulamba Gadwal,,36,695,,,lgd
+district,Kakching,Manipur,Kakching,,14,711,,,lgd
+district,Kalaburagi,Karnataka,Kalaburagi,,29,538,,,lgd
+district,Kamjong,Manipur,Kamjong,,14,717,,,lgd
+district,Kamrup,Assam,Kamrup,,18,291,,,lgd
+district,Kangpokpi,Manipur,Kangpokpi,,14,712,,,lgd
+district,Karbi Anglong,Assam,Karbi Anglong,,18,292,,,lgd
+district,Kasaragod,Kerala,Kasaragod,,32,558,,,lgd
+district,Khammam,Telangana,Khammam,,36,509,,,lgd
+district,Khawzawl,Mizoram,Khawzawl,,15,728,,,lgd
+district,Khordha,Odisha,Khordha,,21,362,,,lgd
+district,Kodagu,Karnataka,Kodagu,,29,541,,,lgd
+district,Koraput,Odisha,Koraput,,21,363,,,lgd
+district,Korba,Chhattisgarh,Korba,,22,383,,,lgd
+district,Korea,Chhattisgarh,Korea,,22,384,,,lgd
+district,Kra Daadi,Arunachal Pradesh,Kra Daadi,,12,677,,,lgd
+district,Krishnagiri,Tamil Nadu,Krishnagiri,,33,577,,,lgd
+district,Kurukshetra,Haryana,Kurukshetra,,6,68,,,lgd
+district,Lahaul And Spiti,Himachal Pradesh,Lahaul And Spiti,,2,21,,,lgd
+district,Lakhimpur,Assam,Lakhimpur,,18,295,,,lgd
+district,Leparada,Arunachal Pradesh,Leparada,,12,724,,,lgd
+district,Longding,Arunachal Pradesh,Longding,,12,666,,,lgd
+district,Lower Subansiri,Arunachal Pradesh,Lower Subansiri,,12,236,,,lgd
+district,Ludhiana,Punjab,Ludhiana,,3,36,,,lgd
+district,Mahabubnagar,Telangana,Mahabubnagar,,36,512,,,lgd
+district,Mahasamund,Chhattisgarh,Mahasamund,,22,385,,,lgd
+district,Mahe,Puducherry,Mahe,,34,599,,,lgd
+district,Mandsaur,Madhya Pradesh,Mandsaur,,23,416,,,lgd
+district,Mandya,Karnataka,Mandya,,29,544,,,lgd
+district,MAUGANJ,Madhya Pradesh,MAUGANJ,,23,766,,,lgd
+district,Mohla-Manpur-Ambagarh Chouki,Chhattisgarh,Mohla-Manpur-Ambagarh Chouki,,22,761,,,lgd
+district,Nagaon,Assam,Nagaon,,18,297,,,lgd
+district,Nalbari,Assam,Nalbari,,18,298,,,lgd
+district,Namakkal,Tamil Nadu,Namakkal,,33,580,,,lgd
+district,Namsai,Arunachal Pradesh,Namsai,,12,678,,,lgd
+district,Nandyal,Andhra Pradesh,Nandyal,,28,755,,,lgd
+district,Neem Ka Thana,Rajasthan,Neem Ka Thana,,8,773,,,lgd
+district,New Delhi,Delhi,New Delhi,,7,79,,,lgd
+district,Nuapada,Odisha,Nuapada,,21,368,,,lgd
+district,Panch Mahals,Gujarat,Panch Mahals,,24,454,,,lgd
+district,Pashchim Champaran,Bihar,Pashchim Champaran,,10,211,,,lgd
+district,Patan,Gujarat,Patan,,24,455,,,lgd
+district,Perambalur,Tamil Nadu,Perambalur,,33,581,,,lgd
+district,Peren,Nagaland,Peren,,13,613,,,lgd
+district,Phek,Nagaland,Phek,,13,248,,,lgd
+district,Pherzawl,Manipur,Pherzawl,,14,715,,,lgd
+district,Prakasam,Andhra Pradesh,Prakasam,,28,517,,,lgd
+district,Pratapgarh,Rajasthan,Pratapgarh,,8,629,,,lgd
+district,Pudukkottai,Tamil Nadu,Pudukkottai,,33,582,,,lgd
+district,Purba Medinipur,West Bengal,Purba Medinipur,,19,317,,,lgd
+district,Purnia,Bihar,Purnia,,10,214,,,lgd
+district,Purulia,West Bengal,Purulia,,19,321,,,lgd
+district,Rajnandgaon,Chhattisgarh,Rajnandgaon,,22,388,,,lgd
+district,Rajsamand,Rajasthan,Rajsamand,,8,112,,,lgd
+district,Ramanathapuram,Tamil Nadu,Ramanathapuram,,33,583,,,lgd
+district,Ranchi,Jharkhand,Ranchi,,20,339,,,lgd
+district,Ratnagiri,Maharashtra,Ratnagiri,,27,492,,,lgd
+district,Rayagada,Odisha,Rayagada,,21,370,,,lgd
+district,Saharsa,Bihar,Saharsa,,10,216,,,lgd
+district,Sahebganj,Jharkhand,Sahebganj,,20,340,,,lgd
+district,Sakti,Chhattisgarh,Sakti,,22,762,,,lgd
+district,Sant Kabir Nagar,Uttar Pradesh,Sant Kabir Nagar,,9,178,,,lgd
+district,Saraikela Kharsawan,Jharkhand,Saraikela Kharsawan,,20,341,,,lgd
+district,Sawai Madhopur,Rajasthan,Sawai Madhopur,,8,113,,,lgd
+district,Sepahijala,Tripura,Sepahijala,,16,653,,,lgd
+district,Serchhip,Mizoram,Serchhip,,15,268,,,lgd
+district,Shahdol,Madhya Pradesh,Shahdol,,23,429,,,lgd
+district,Sheohar,Bihar,Sheohar,,10,220,,,lgd
+district,Shrawasti,Uttar Pradesh,Shrawasti,,9,181,,,lgd
+district,Simdega,Jharkhand,Simdega,,20,342,,,lgd
+district,Siwan,Bihar,Siwan,,10,222,,,lgd
+district,Solan,Himachal Pradesh,Solan,,2,25,,,lgd
+district,South East,Delhi,South East,,7,670,,,lgd
+district,South West,Delhi,South West,,7,84,,,lgd
+district,Surajpur,Chhattisgarh,Surajpur,,22,648,,,lgd
+district,Surguja,Chhattisgarh,Surguja,,22,389,,,lgd
+district,Tamenglong,Manipur,Tamenglong,,14,258,,,lgd
+district,Tarn Taran,Punjab,Tarn Taran,,3,609,,,lgd
+district,Tawang,Arunachal Pradesh,Tawang,,12,238,,,lgd
+district,Tenkasi,Tamil Nadu,Tenkasi,,33,733,,,lgd
+district,Thanjavur,Tamil Nadu,Thanjavur,,33,586,,,lgd
+district,The Nilgiris,Tamil Nadu,The Nilgiris,,33,587,,,lgd
+district,Tinsukia,Assam,Tinsukia,,18,302,,,lgd
+district,Tirap,Arunachal Pradesh,Tirap,,12,239,,,lgd
+district,Tirupathur,Tamil Nadu,Tirupathur,,33,732,,,lgd
+district,Tonk,Rajasthan,Tonk,,8,116,,,lgd
+district,Udupi,Karnataka,Udupi,,29,549,,,lgd
+district,Ukhrul,Manipur,Ukhrul,,14,260,,,lgd
+district,Una,Himachal Pradesh,Una,,2,26,,,lgd
+district,Uttar Bastar Kanker,Chhattisgarh,Uttar Bastar Kanker,,22,381,,,lgd
+district,Vidisha,Madhya Pradesh,Vidisha,,23,437,,,lgd
+district,Vijayanagar,Karnataka,Vijayanagar,,29,738,,,lgd
+district,Vijayapura,Karnataka,Vijayapura,,29,530,,,lgd
+district,Vikarabad,Telangana,Vikarabad,,36,698,,,lgd
+district,Washim,Maharashtra,Washim,,27,499,,,lgd
+district,West Karbi Anglong,Assam,West Karbi Anglong,,18,710,,,lgd
+district,Wokha,Nagaland,Wokha,,13,250,,,lgd
+district,Adilabad,Telangana,Adilabad,,36,501,,,lgd
+district,Ahmedabad,Gujarat,Ahmedabad,,24,438,,,lgd
+district,Aizawl,Mizoram,Aizawl,,15,261,,,lgd
+district,Akola,Maharashtra,Akola,,27,467,,,lgd
+district,Aligarh,Uttar Pradesh,Aligarh,,9,119,,,lgd
+district,Alirajpur,Madhya Pradesh,Alirajpur,,23,639,,,lgd
+district,Alwar,Rajasthan,Alwar,,8,87,,,lgd
+district,Amethi,Uttar Pradesh,Amethi,,9,640,,,lgd
+district,Azamgarh,Uttar Pradesh,Azamgarh,,9,123,,,lgd
+district,Bagalkote,Karnataka,Bagalkote,,29,524,,,lgd
+district,Bageshwar,Uttarakhand,Bageshwar,,5,46,,,lgd
+district,Ballari,Karnataka,Ballari,,29,528,,,lgd
+district,Bapatla,Andhra Pradesh,Bapatla,,28,750,,,lgd
+district,Barmer,Rajasthan,Barmer,,8,90,,,lgd
+district,Barnala,Punjab,Barnala,,3,605,,,lgd
+district,Barpeta,Assam,Barpeta,,18,280,,,lgd
+district,Bastar,Chhattisgarh,Bastar,,22,374,,,lgd
+district,Betul,Madhya Pradesh,Betul,,23,394,,,lgd
+district,Bhadrak,Odisha,Bhadrak,,21,348,,,lgd
+district,Bhavnagar,Gujarat,Bhavnagar,,24,443,,,lgd
+district,Bhilwara,Rajasthan,Bhilwara,,8,92,,,lgd
+district,Bhiwani,Haryana,Bhiwani,,6,59,,,lgd
+district,Bidar,Karnataka,Bidar,,29,529,,,lgd
+district,Bijnor,Uttar Pradesh,Bijnor,,9,132,,,lgd
+district,Bilaspur,Himachal Pradesh,Bilaspur,,2,15,,,lgd
+district,Bokaro,Jharkhand,Bokaro,,20,322,,,lgd
+district,Bongaigaon,Assam,Bongaigaon,,18,281,,,lgd
+district,Budgam,Jammu And Kashmir,Budgam,,1,2,,,lgd
+district,Buxar,Bihar,Buxar,,10,194,,,lgd
+district,Central,Delhi,Central,,7,77,,,lgd
+district,Chamba,Himachal Pradesh,Chamba,,2,16,,,lgd
+district,Champhai,Mizoram,Champhai,,15,262,,,lgd
+district,Chandigarh,Chandigarh,Chandigarh,,4,44,,,lgd
+district,Chengalpattu,Tamil Nadu,Chengalpattu,,33,730,,,lgd
+district,Chhatrapati Sambhajinagar,Maharashtra,Chhatrapati Sambhajinagar,,27,469,,,lgd
+district,Chhindwara,Madhya Pradesh,Chhindwara,,23,399,,,lgd
+district,Chitrakoot,Uttar Pradesh,Chitrakoot,,9,136,,,lgd
+district,Churachandpur,Manipur,Churachandpur,,14,254,,,lgd
+district,Cuddalore,Tamil Nadu,Cuddalore,,33,570,,,lgd
+district,Cuttack,Odisha,Cuttack,,21,350,,,lgd
+district,Dakshina Kannada,Karnataka,Dakshina Kannada,,29,534,,,lgd
+district,Daman,The Dadra And Nagar Haveli And Daman And Diu,Daman,,38,463,,,lgd
+district,Darbhanga,Bihar,Darbhanga,,10,195,,,lgd
+district,Dausa,Rajasthan,Dausa,,8,97,,,lgd
+district,Deeg,Rajasthan,Deeg,,8,767,,,lgd
+district,Deoria,Uttar Pradesh,Deoria,,9,137,,,lgd
+district,Dewas,Madhya Pradesh,Dewas,,23,402,,,lgd
+district,Dhar,Madhya Pradesh,Dhar,,23,403,,,lgd
+district,Dharashiv,Maharashtra,Dharashiv,,27,488,,,lgd
+district,Dhule,Maharashtra,Dhule,,27,474,,,lgd
+district,Dr. B.R. Ambedkar Konaseema,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,,28,747,,,lgd
+district,East Kameng,Arunachal Pradesh,East Kameng,,12,231,,,lgd
+district,Etawah,Uttar Pradesh,Etawah,,9,139,,,lgd
+district,Faridabad,Haryana,Faridabad,,6,60,,,lgd
+district,Firozabad,Uttar Pradesh,Firozabad,,9,143,,,lgd
+district,Ganganagar,Rajasthan,Ganganagar,,8,100,,,lgd
+district,Golaghat,Assam,Golaghat,,18,288,,,lgd
+district,Gorakhpur,Uttar Pradesh,Gorakhpur,,9,148,,,lgd
+district,Guna,Madhya Pradesh,Guna,,23,406,,,lgd
+district,Gyalshing,Sikkim,Gyalshing,,11,228,,,lgd
+district,Hamirpur,Uttar Pradesh,Hamirpur,,9,149,,,lgd
+district,Idukki,Kerala,Idukki,,32,556,,,lgd
+district,Imphal East,Manipur,Imphal East,,14,255,,,lgd
+district,Indore,Madhya Pradesh,Indore,,23,410,,,lgd
+district,Jaipur (Gramin),Rajasthan,Jaipur (Gramin),,8,783,,,lgd
+district,Jaisalmer,Rajasthan,Jaisalmer,,8,103,,,lgd
+district,Jangoan,Telangana,Jangoan,,36,689,,,lgd
+district,Jaunpur,Uttar Pradesh,Jaunpur,,9,152,,,lgd
+district,Jhajjar,Haryana,Jhajjar,,6,64,,,lgd
+district,Junagadh,Gujarat,Junagadh,,24,448,,,lgd
+district,Kaithal,Haryana,Kaithal,,6,66,,,lgd
+district,Kamle,Arunachal Pradesh,Kamle,,12,718,,,lgd
+district,Kanniyakumari,Tamil Nadu,Kanniyakumari,,33,575,,,lgd
+district,Karaikal,Puducherry,Karaikal,,34,598,,,lgd
+district,Karimganj,Assam,Karimganj,,18,293,,,lgd
+district,Kaushambi,Uttar Pradesh,Kaushambi,,9,158,,,lgd
+district,Kekri,Rajasthan,Kekri,,8,781,,,lgd
+district,Kendujhar,Odisha,Kendujhar,,21,361,,,lgd
+district,Khairagarh-Chhuikhadan-Gandai,Chhattisgarh,Khairagarh-Chhuikhadan-Gandai,,22,759,,,lgd
+district,Kohima,Nagaland,Kohima,,13,245,,,lgd
+district,Kokrajhar,Assam,Kokrajhar,,18,294,,,lgd
+district,Kolhapur,Maharashtra,Kolhapur,,27,480,,,lgd
+district,Kondagaon,Chhattisgarh,Kondagaon,,22,643,,,lgd
+district,Kullu,Himachal Pradesh,Kullu,,2,20,,,lgd
+district,Kurung Kumey,Arunachal Pradesh,Kurung Kumey,,12,233,,,lgd
+district,Leh Ladakh,Ladakh,Leh Ladakh,,37,9,,,lgd
+district,Lucknow,Uttar Pradesh,Lucknow,,9,162,,,lgd
+district,Madhepura,Bihar,Madhepura,,10,205,,,lgd
+district,Malerkotla,Punjab,Malerkotla,,3,737,,,lgd
+district,Mangan,Sikkim,Mangan,,11,226,,,lgd
+district,Mansa,Punjab,Mansa,,3,37,,,lgd
+district,Marigaon,Assam,Marigaon,,18,296,,,lgd
+district,Mathura,Uttar Pradesh,Mathura,,9,167,,,lgd
+district,Meerut,Uttar Pradesh,Meerut,,9,169,,,lgd
+district,Moga,Punjab,Moga,,3,38,,,lgd
+district,Mungeli,Chhattisgarh,Mungeli,,22,647,,,lgd
+district,Muzaffarnagar,Uttar Pradesh,Muzaffarnagar,,9,172,,,lgd
+district,Muzaffarpur,Bihar,Muzaffarpur,,10,208,,,lgd
+district,Nagaur,Rajasthan,Nagaur,,8,110,,,lgd
+district,Namchi,Sikkim,Namchi,,11,227,,,lgd
+district,Narayanpur,Chhattisgarh,Narayanpur,,22,637,,,lgd
+district,Narmada,Gujarat,Narmada,,24,452,,,lgd
+district,Nayagarh,Odisha,Nayagarh,,21,367,,,lgd
+district,Niuland,Nagaland,Niuland,,13,764,,,lgd
+district,North 24 Parganas,West Bengal,North 24 Parganas,,19,303,,,lgd
+district,North And Middle Andaman,Andaman And Nicobar Islands,North And Middle Andaman,,35,632,,,lgd
+district,North Garo Hills,Meghalaya,North Garo Hills,,17,656,,,lgd
+district,Nuh,Haryana,Nuh,,6,604,,,lgd
+district,Pakyong,Sikkim,Pakyong,,11,741,,,lgd
+district,Pali,Rajasthan,Pali,,8,111,,,lgd
+district,Palnadu,Andhra Pradesh,Palnadu,,28,751,,,lgd
+district,Palwal,Haryana,Palwal,,6,619,,,lgd
+district,Panna,Madhya Pradesh,Panna,,23,420,,,lgd
+district,Pauri Garhwal,Uttarakhand,Pauri Garhwal,,5,52,,,lgd
+district,Phalodi,Rajasthan,Phalodi,,8,772,,,lgd
+district,Pilibhit,Uttar Pradesh,Pilibhit,,9,173,,,lgd
+district,Purba Bardhaman,West Bengal,Purba Bardhaman,,19,306,,,lgd
+district,Rajkot,Gujarat,Rajkot,,24,457,,,lgd
+district,Ramanagara,Karnataka,Ramanagara,,29,631,,,lgd
+district,Ramgarh,Jharkhand,Ramgarh,,20,607,,,lgd
+district,Rampur,Uttar Pradesh,Rampur,,9,176,,,lgd
+district,Ranipet,Tamil Nadu,Ranipet,,33,731,,,lgd
+district,Rewa,Madhya Pradesh,Rewa,,23,424,,,lgd
+district,Rohtas,Bihar,Rohtas,,10,215,,,lgd
+district,Rupnagar,Punjab,Rupnagar,,3,42,,,lgd
+district,Sanchore,Rajasthan,Sanchore,,8,779,,,lgd
+district,Satara,Maharashtra,Satara,,27,494,,,lgd
+district,Seoni,Madhya Pradesh,Seoni,,23,428,,,lgd
+district,Shahjahanpur,Uttar Pradesh,Shahjahanpur,,9,180,,,lgd
+district,Shajapur,Madhya Pradesh,Shajapur,,23,430,,,lgd
+district,Sheopur,Madhya Pradesh,Sheopur,,23,431,,,lgd
+district,Shivpuri,Madhya Pradesh,Shivpuri,,23,432,,,lgd
+district,Shopian,Jammu And Kashmir,Shopian,,1,625,,,lgd
+district,Sidhi,Madhya Pradesh,Sidhi,,23,433,,,lgd
+district,Singrauli,Madhya Pradesh,Singrauli,,23,638,,,lgd
+district,Sitapur,Uttar Pradesh,Sitapur,,9,183,,,lgd
+district,Solapur,Maharashtra,Solapur,,27,496,,,lgd
+district,Soreng,Sikkim,Soreng,,11,742,,,lgd
+district,South,Delhi,South,,7,83,,,lgd
+district,South Salmara Mancachar,Assam,South Salmara Mancachar,,18,707,,,lgd
+district,South West Garo Hills,Meghalaya,South West Garo Hills,,17,663,,,lgd
+district,Srikakulam,Andhra Pradesh,Srikakulam,,28,519,,,lgd
+district,Sukma,Chhattisgarh,Sukma,,22,642,,,lgd
+district,Supaul,Bihar,Supaul,,10,223,,,lgd
+district,Tamulpur,Assam,Tamulpur,,18,756,,,lgd
+district,Tehri Garhwal,Uttarakhand,Tehri Garhwal,,5,55,,,lgd
+district,Thane,Maharashtra,Thane,,27,497,,,lgd
+district,Thiruvananthapuram,Kerala,Thiruvananthapuram,,32,565,,,lgd
+district,Tiruchirappalli,Tamil Nadu,Tiruchirappalli,,33,591,,,lgd
+district,Tiruppur,Tamil Nadu,Tiruppur,,33,634,,,lgd
+district,Tiruvannamalai,Tamil Nadu,Tiruvannamalai,,33,593,,,lgd
+district,Udaipur,Rajasthan,Udaipur,,8,117,,,lgd
+district,Udalguri,Assam,Udalguri,,18,617,,,lgd
+district,Upper Siang,Arunachal Pradesh,Upper Siang,,12,240,,,lgd
+district,Uttara Kannada,Karnataka,Uttara Kannada,,29,550,,,lgd
+district,Uttar Kashi,Uttarakhand,Uttar Kashi,,5,57,,,lgd
+district,Warangal,Telangana,Warangal,,36,522,,,lgd
+district,Wayanad,Kerala,Wayanad,,32,567,,,lgd
+district,West Garo Hills,Meghalaya,West Garo Hills,,17,278,,,lgd
+district,West Jaintia Hills,Meghalaya,West Jaintia Hills,,17,275,,,lgd
+district,West Siang,Arunachal Pradesh,West Siang,,12,243,,,lgd
+district,West Singhbhum,Jharkhand,West Singhbhum,,20,343,,,lgd
+district,Yadadri Bhuvanagiri,Telangana,Yadadri Bhuvanagiri,,36,697,,,lgd
+district,Yadgir,Karnataka,Yadgir,,29,635,,,lgd
+district,Yanam,Puducherry,Yanam,,34,601,,,lgd
+district,Zunheboto,Nagaland,Zunheboto,,13,251,,,lgd

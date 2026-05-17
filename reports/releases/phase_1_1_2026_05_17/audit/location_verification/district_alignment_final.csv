@@ -1,0 +1,787 @@
+match_status,match_method,match_score,review_reason,db_id,db_state_name,db_district_name,db_state_lgd_code,db_district_lgd_code,db_source,lgd_state_name,lgd_district_name,lgd_state_lgd_code,lgd_district_lgd_code,lgd_source
+auto,code,1.000,District LGD code already matches.,478,Kerala,Alappuzha,32,554,lgd,Kerala,Alappuzha,32,554,lgd
+auto,code,1.000,District LGD code already matches.,113,Uttar Pradesh,Ambedkar Nagar,9,121,lgd,Uttar Pradesh,Ambedkar Nagar,9,121,lgd
+auto,code,1.000,District LGD code already matches.,583,Punjab,Amritsar,3,27,lgd,Punjab,Amritsar,3,27,lgd
+auto,code,1.000,District LGD code already matches.,354,Gujarat,Arvalli,24,672,lgd,Gujarat,Arvalli,24,672,lgd
+auto,code,1.000,District LGD code already matches.,276,Bihar,Arwal,10,611,lgd,Bihar,Arwal,10,611,lgd
+auto,code,1.000,District LGD code already matches.,277,Bihar,Aurangabad,10,189,lgd,Bihar,Aurangabad,10,189,lgd
+auto,code,1.000,District LGD code already matches.,121,Uttar Pradesh,Bahraich,9,125,lgd,Uttar Pradesh,Bahraich,9,125,lgd
+auto,code,1.000,District LGD code already matches.,314,Chhattisgarh,Balod,22,646,lgd,Chhattisgarh,Balod,22,646,lgd
+auto,code,1.000,District LGD code already matches.,123,Uttar Pradesh,Balrampur,9,127,lgd,Uttar Pradesh,Balrampur,9,127,lgd
+auto,code,1.000,District LGD code already matches.,316,Chhattisgarh,Balrampur-Ramanujganj,22,649,lgd,Chhattisgarh,Balrampur-Ramanujganj,22,649,lgd
+auto,code,1.000,District LGD code already matches.,808,Jammu And Kashmir,Bandipora,1,623,lgd,Jammu And Kashmir,Bandipora,1,623,lgd
+auto,code,1.000,District LGD code already matches.,24,Maharashtra,Beed,27,470,lgd,Maharashtra,Beed,27,470,lgd
+auto,code,1.000,District LGD code already matches.,318,Chhattisgarh,Bemetara,22,650,lgd,Chhattisgarh,Bemetara,22,650,lgd
+auto,code,1.000,District LGD code already matches.,450,Karnataka,Bengaluru Urban,29,525,lgd,Karnataka,Bengaluru Urban,29,525,lgd
+auto,code,1.000,District LGD code already matches.,128,Uttar Pradesh,Bhadohi,9,179,lgd,Uttar Pradesh,Bhadohi,9,179,lgd
+auto,code,1.000,District LGD code already matches.,25,Maharashtra,Bhandara,27,471,lgd,Maharashtra,Bhandara,27,471,lgd
+auto,code,1.000,District LGD code already matches.,62,Madhya Pradesh,Bhind,23,395,lgd,Madhya Pradesh,Bhind,23,395,lgd
+auto,code,1.000,District LGD code already matches.,319,Chhattisgarh,Bijapur,22,636,lgd,Chhattisgarh,Bijapur,22,636,lgd
+auto,code,1.000,District LGD code already matches.,358,Gujarat,Botad,24,676,lgd,Gujarat,Botad,24,676,lgd
+auto,code,1.000,District LGD code already matches.,749,Uttarakhand,Chamoli,5,47,lgd,Uttarakhand,Chamoli,5,47,lgd
+auto,code,1.000,District LGD code already matches.,131,Uttar Pradesh,Chandauli,9,135,lgd,Uttar Pradesh,Chandauli,9,135,lgd
+auto,code,1.000,District LGD code already matches.,494,Manipur,Chandel,14,253,lgd,Manipur,Chandel,14,253,lgd
+auto,code,1.000,District LGD code already matches.,27,Maharashtra,Chandrapur,27,473,lgd,Maharashtra,Chandrapur,27,473,lgd
+auto,code,1.000,District LGD code already matches.,65,Madhya Pradesh,Chhatarpur,23,398,lgd,Madhya Pradesh,Chhatarpur,23,398,lgd
+auto,code,1.000,District LGD code already matches.,359,Gujarat,Chhotaudepur,24,668,lgd,Gujarat,Chhotaudepur,24,668,lgd
+auto,code,1.000,District LGD code already matches.,360,Gujarat,Dahod,24,445,lgd,Gujarat,Dahod,24,445,lgd
+auto,code,1.000,District LGD code already matches.,765,West Bengal,Dakshin Dinajpur,19,310,lgd,West Bengal,Dakshin Dinajpur,19,310,lgd
+auto,code,1.000,District LGD code already matches.,67,Madhya Pradesh,Damoh,23,400,lgd,Madhya Pradesh,Damoh,23,400,lgd
+auto,code,1.000,District LGD code already matches.,361,Gujarat,Dangs,24,444,lgd,Gujarat,Dangs,24,444,lgd
+auto,code,1.000,District LGD code already matches.,766,West Bengal,Darjeeling,19,309,lgd,West Bengal,Darjeeling,19,309,lgd
+auto,code,1.000,District LGD code already matches.,457,Karnataka,Davangere,29,535,lgd,Karnataka,Davangere,29,535,lgd
+auto,code,1.000,District LGD code already matches.,738,Tripura,Dhalai,16,269,lgd,Tripura,Dhalai,16,269,lgd
+auto,code,1.000,District LGD code already matches.,560,Odisha,Dhenkanal,21,352,lgd,Odisha,Dhenkanal,21,352,lgd
+auto,code,1.000,District LGD code already matches.,71,Madhya Pradesh,Dindori,23,404,lgd,Madhya Pradesh,Dindori,23,404,lgd
+auto,code,1.000,District LGD code already matches.,625,Rajasthan,Dudu,8,769,lgd,Rajasthan,Dudu,8,769,lgd
+auto,code,1.000,District LGD code already matches.,511,Meghalaya,East Jaintia Hills,17,657,lgd,Meghalaya,East Jaintia Hills,17,657,lgd
+auto,code,1.000,District LGD code already matches.,194,Andhra Pradesh,Eluru,28,748,lgd,Andhra Pradesh,Eluru,28,748,lgd
+auto,code,1.000,District LGD code already matches.,672,Tamil Nadu,Erode,33,573,lgd,Tamil Nadu,Erode,33,573,lgd
+auto,code,1.000,District LGD code already matches.,588,Punjab,Fazilka,3,651,lgd,Punjab,Fazilka,3,651,lgd
+auto,code,1.000,District LGD code already matches.,589,Punjab,Ferozepur,3,31,lgd,Punjab,Ferozepur,3,31,lgd
+auto,code,1.000,District LGD code already matches.,363,Gujarat,Gandhinagar,24,446,lgd,Gujarat,Gandhinagar,24,446,lgd
+auto,code,1.000,District LGD code already matches.,427,Jharkhand,Garhwa,20,328,lgd,Jharkhand,Garhwa,20,328,lgd
+auto,code,1.000,District LGD code already matches.,324,Chhattisgarh,Gariyaband,22,645,lgd,Chhattisgarh,Gariyaband,22,645,lgd
+auto,code,1.000,District LGD code already matches.,285,Bihar,Gaya,10,196,lgd,Bihar,Gaya,10,196,lgd
+auto,code,1.000,District LGD code already matches.,739,Tripura,Gomati,16,654,lgd,Tripura,Gomati,16,654,lgd
+auto,code,1.000,District LGD code already matches.,430,Jharkhand,Gumla,20,331,lgd,Jharkhand,Gumla,20,331,lgd
+auto,code,1.000,District LGD code already matches.,410,Himachal Pradesh,Hamirpur,2,17,lgd,Himachal Pradesh,Hamirpur,2,17,lgd
+auto,code,1.000,District LGD code already matches.,706,Telangana,Hanumakonda,36,686,lgd,Telangana,Hanumakonda,36,686,lgd
+auto,code,1.000,District LGD code already matches.,74,Madhya Pradesh,Harda,23,408,lgd,Madhya Pradesh,Harda,23,408,lgd
+auto,code,1.000,District LGD code already matches.,752,Uttarakhand,Haridwar,5,50,lgd,Uttarakhand,Haridwar,5,50,lgd
+auto,code,1.000,District LGD code already matches.,460,Karnataka,Hassan,29,539,lgd,Karnataka,Hassan,29,539,lgd
+auto,code,1.000,District LGD code already matches.,563,Odisha,Jagatsinghapur,21,355,lgd,Odisha,Jagatsinghapur,21,355,lgd
+auto,code,1.000,District LGD code already matches.,630,Rajasthan,Jaipur,8,102,lgd,Rajasthan,Jaipur,8,102,lgd
+auto,code,1.000,District LGD code already matches.,633,Rajasthan,Jalore,8,104,lgd,Rajasthan,Jalore,8,104,lgd
+auto,code,1.000,District LGD code already matches.,769,West Bengal,Jalpaiguri,19,314,lgd,West Bengal,Jalpaiguri,19,314,lgd
+auto,code,1.000,District LGD code already matches.,710,Telangana,Jayashankar Bhupalapally,36,687,lgd,Telangana,Jayashankar Bhupalapally,36,687,lgd
+auto,code,1.000,District LGD code already matches.,634,Rajasthan,Jhalawar,8,105,lgd,Rajasthan,Jhalawar,8,105,lgd
+auto,code,1.000,District LGD code already matches.,150,Uttar Pradesh,Jhansi,9,153,lgd,Uttar Pradesh,Jhansi,9,153,lgd
+auto,code,1.000,District LGD code already matches.,565,Odisha,Jharsuguda,21,357,lgd,Odisha,Jharsuguda,21,357,lgd
+auto,code,1.000,District LGD code already matches.,328,Chhattisgarh,Kabeerdham,22,382,lgd,Chhattisgarh,Kabeerdham,22,382,lgd
+auto,code,1.000,District LGD code already matches.,771,West Bengal,Kalimpong,19,702,lgd,West Bengal,Kalimpong,19,702,lgd
+auto,code,1.000,District LGD code already matches.,152,Uttar Pradesh,Kanpur Dehat,9,156,lgd,Uttar Pradesh,Kanpur Dehat,9,156,lgd
+auto,code,1.000,District LGD code already matches.,638,Rajasthan,Karauli,8,108,lgd,Rajasthan,Karauli,8,108,lgd
+auto,code,1.000,District LGD code already matches.,713,Telangana,Karimnagar,36,508,lgd,Telangana,Karimnagar,36,508,lgd
+auto,code,1.000,District LGD code already matches.,290,Bihar,Katihar,10,201,lgd,Bihar,Katihar,10,201,lgd
+auto,code,1.000,District LGD code already matches.,568,Odisha,Kendrapara,21,360,lgd,Odisha,Kendrapara,21,360,lgd
+auto,code,1.000,District LGD code already matches.,81,Madhya Pradesh,Khargone (West Nimar),23,414,lgd,Madhya Pradesh,Khargone (West Nimar),23,414,lgd
+auto,code,1.000,District LGD code already matches.,367,Gujarat,Kheda,24,450,lgd,Gujarat,Kheda,24,450,lgd
+auto,code,1.000,District LGD code already matches.,157,Uttar Pradesh,Kheri,9,159,lgd,Uttar Pradesh,Kheri,9,159,lgd
+auto,code,1.000,District LGD code already matches.,740,Tripura,Khowai,16,652,lgd,Tripura,Khowai,16,652,lgd
+auto,code,1.000,District LGD code already matches.,433,Jharkhand,Khunti,20,606,lgd,Jharkhand,Khunti,20,606,lgd
+auto,code,1.000,District LGD code already matches.,815,Jammu And Kashmir,Kishtwar,1,620,lgd,Jammu And Kashmir,Kishtwar,1,620,lgd
+auto,code,1.000,District LGD code already matches.,527,Mizoram,Kolasib,15,263,lgd,Mizoram,Kolasib,15,263,lgd
+auto,code,1.000,District LGD code already matches.,772,West Bengal,Kolkata,19,315,lgd,West Bengal,Kolkata,19,315,lgd
+auto,code,1.000,District LGD code already matches.,483,Kerala,Kollam,32,559,lgd,Kerala,Kollam,32,559,lgd
+auto,code,1.000,District LGD code already matches.,641,Rajasthan,Kota,8,109,lgd,Rajasthan,Kota,8,109,lgd
+auto,code,1.000,District LGD code already matches.,156,Uttar Pradesh,Kushinagar,9,160,lgd,Uttar Pradesh,Kushinagar,9,160,lgd
+auto,code,1.000,District LGD code already matches.,831,Lakshadweep,Lakshadweep District,31,553,lgd,Lakshadweep,Lakshadweep District,31,553,lgd
+auto,code,1.000,District LGD code already matches.,158,Uttar Pradesh,Lalitpur,9,161,lgd,Uttar Pradesh,Lalitpur,9,161,lgd
+auto,code,1.000,District LGD code already matches.,435,Jharkhand,Latehar,20,335,lgd,Jharkhand,Latehar,20,335,lgd
+auto,code,1.000,District LGD code already matches.,224,Arunachal Pradesh,Lohit,12,234,lgd,Arunachal Pradesh,Lohit,12,234,lgd
+auto,code,1.000,District LGD code already matches.,539,Nagaland,Longleng,13,615,lgd,Nagaland,Longleng,13,615,lgd
+auto,code,1.000,District LGD code already matches.,295,Bihar,Madhubani,10,206,lgd,Bihar,Madhubani,10,206,lgd
+auto,code,1.000,District LGD code already matches.,678,Tamil Nadu,Madurai,33,578,lgd,Tamil Nadu,Madurai,33,578,lgd
+auto,code,1.000,District LGD code already matches.,397,Haryana,Mahendragarh,6,69,lgd,Haryana,Mahendragarh,6,69,lgd
+auto,code,1.000,District LGD code already matches.,369,Gujarat,Mahisagar,24,669,lgd,Gujarat,Mahisagar,24,669,lgd
+auto,code,1.000,District LGD code already matches.,82,Madhya Pradesh,Maihar,23,784,lgd,Madhya Pradesh,Maihar,23,784,lgd
+auto,code,1.000,District LGD code already matches.,162,Uttar Pradesh,Mainpuri,9,166,lgd,Uttar Pradesh,Mainpuri,9,166,lgd
+auto,code,1.000,District LGD code already matches.,264,Assam,Majuli,18,706,lgd,Assam,Majuli,18,706,lgd
+auto,code,1.000,District LGD code already matches.,486,Kerala,Malappuram,32,562,lgd,Kerala,Malappuram,32,562,lgd
+auto,code,1.000,District LGD code already matches.,773,West Bengal,Malda,19,316,lgd,West Bengal,Malda,19,316,lgd
+auto,code,1.000,District LGD code already matches.,572,Odisha,Malkangiri,21,364,lgd,Odisha,Malkangiri,21,364,lgd
+auto,code,1.000,District LGD code already matches.,718,Telangana,Mancherial,36,684,lgd,Telangana,Mancherial,36,684,lgd
+auto,code,1.000,District LGD code already matches.,164,Uttar Pradesh,Mau,9,168,lgd,Uttar Pradesh,Mau,9,168,lgd
+auto,code,1.000,District LGD code already matches.,541,Nagaland,Mon,13,247,lgd,Nagaland,Mon,13,247,lgd
+auto,code,1.000,District LGD code already matches.,721,Telangana,Mulugu,36,720,lgd,Telangana,Mulugu,36,720,lgd
+auto,code,1.000,District LGD code already matches.,296,Bihar,Munger,10,207,lgd,Bihar,Munger,10,207,lgd
+auto,code,1.000,District LGD code already matches.,467,Karnataka,Mysuru,29,545,lgd,Karnataka,Mysuru,29,545,lgd
+auto,code,1.000,District LGD code already matches.,680,Tamil Nadu,Nagapattinam,33,579,lgd,Tamil Nadu,Nagapattinam,33,579,lgd
+auto,code,1.000,District LGD code already matches.,38,Maharashtra,Nagpur,27,484,lgd,Maharashtra,Nagpur,27,484,lgd
+auto,code,1.000,District LGD code already matches.,753,Uttarakhand,Nainital,5,51,lgd,Uttarakhand,Nainital,5,51,lgd
+auto,code,1.000,District LGD code already matches.,75,Madhya Pradesh,Narmadapuram,23,409,lgd,Madhya Pradesh,Narmadapuram,23,409,lgd
+auto,code,1.000,District LGD code already matches.,6,Maharashtra,Nashik,27,487,lgd,Maharashtra,Nashik,27,487,lgd
+auto,code,1.000,District LGD code already matches.,373,Gujarat,Navsari,24,453,lgd,Gujarat,Navsari,24,453,lgd
+auto,code,1.000,District LGD code already matches.,502,Manipur,Noney,14,714,lgd,Manipur,Noney,14,714,lgd
+auto,code,1.000,District LGD code already matches.,799,Delhi,North East,7,81,lgd,Delhi,North East,7,81,lgd
+auto,code,1.000,District LGD code already matches.,741,Tripura,North Tripura,16,270,lgd,Tripura,North Tripura,16,270,lgd
+auto,code,1.000,District LGD code already matches.,201,Andhra Pradesh,Ntr,28,749,lgd,Andhra Pradesh,Ntr,28,749,lgd
+auto,code,1.000,District LGD code already matches.,487,Kerala,Palakkad,32,563,lgd,Kerala,Palakkad,32,563,lgd
+auto,code,1.000,District LGD code already matches.,438,Jharkhand,Palamu,20,338,lgd,Jharkhand,Palamu,20,338,lgd
+auto,code,1.000,District LGD code already matches.,42,Maharashtra,Palghar,27,665,lgd,Maharashtra,Palghar,27,665,lgd
+auto,code,1.000,District LGD code already matches.,400,Haryana,Panchkula,6,70,lgd,Haryana,Panchkula,6,70,lgd
+auto,code,1.000,District LGD code already matches.,401,Haryana,Panipat,6,71,lgd,Haryana,Panipat,6,71,lgd
+auto,code,1.000,District LGD code already matches.,203,Andhra Pradesh,Parvathipuram Manyam,28,743,lgd,Andhra Pradesh,Parvathipuram Manyam,28,743,lgd
+auto,code,1.000,District LGD code already matches.,600,Punjab,Pathankot,3,662,lgd,Punjab,Pathankot,3,662,lgd
+auto,code,1.000,District LGD code already matches.,755,Uttarakhand,Pithoragarh,5,53,lgd,Uttarakhand,Pithoragarh,5,53,lgd
+auto,code,1.000,District LGD code already matches.,284,Bihar,Purbi Champaran,10,213,lgd,Bihar,Purbi Champaran,10,213,lgd
+auto,code,1.000,District LGD code already matches.,577,Odisha,Puri,21,369,lgd,Odisha,Puri,21,369,lgd
+auto,code,1.000,District LGD code already matches.,92,Madhya Pradesh,Raisen,23,421,lgd,Madhya Pradesh,Raisen,23,421,lgd
+auto,code,1.000,District LGD code already matches.,729,Telangana,Ranga Reddy,36,518,lgd,Telangana,Ranga Reddy,36,518,lgd
+auto,code,1.000,District LGD code already matches.,822,Jammu And Kashmir,Reasi,1,627,lgd,Jammu And Kashmir,Reasi,1,627,lgd
+auto,code,1.000,District LGD code already matches.,96,Madhya Pradesh,Sagar,23,425,lgd,Madhya Pradesh,Sagar,23,425,lgd
+auto,code,1.000,District LGD code already matches.,304,Bihar,Samastipur,10,217,lgd,Bihar,Samastipur,10,217,lgd
+auto,code,1.000,District LGD code already matches.,604,Punjab,Sangrur,3,43,lgd,Punjab,Sangrur,3,43,lgd
+auto,code,1.000,District LGD code already matches.,603,Punjab,S.A.S Nagar,3,608,lgd,Punjab,S.A.S Nagar,3,608,lgd
+auto,code,1.000,District LGD code already matches.,599,Punjab,Shahid Bhagat Singh Nagar,3,40,lgd,Punjab,Shahid Bhagat Singh Nagar,3,40,lgd
+auto,code,1.000,District LGD code already matches.,180,Uttar Pradesh,Siddharthnagar,9,182,lgd,Uttar Pradesh,Siddharthnagar,9,182,lgd
+auto,code,1.000,District LGD code already matches.,653,Rajasthan,Sikar,8,114,lgd,Rajasthan,Sikar,8,114,lgd
+auto,code,1.000,District LGD code already matches.,48,Maharashtra,Sindhudurg,27,495,lgd,Maharashtra,Sindhudurg,27,495,lgd
+auto,code,1.000,District LGD code already matches.,654,Rajasthan,Sirohi,8,115,lgd,Rajasthan,Sirohi,8,115,lgd
+auto,code,1.000,District LGD code already matches.,404,Haryana,Sirsa,6,74,lgd,Haryana,Sirsa,6,74,lgd
+auto,code,1.000,District LGD code already matches.,688,Tamil Nadu,Sivaganga,33,585,lgd,Tamil Nadu,Sivaganga,33,585,lgd
+auto,code,1.000,District LGD code already matches.,182,Uttar Pradesh,Sonbhadra,9,184,lgd,Uttar Pradesh,Sonbhadra,9,184,lgd
+auto,code,1.000,District LGD code already matches.,580,Odisha,Sonepur,21,372,lgd,Odisha,Sonepur,21,372,lgd
+auto,code,1.000,District LGD code already matches.,782,West Bengal,South 24 Parganas,19,304,lgd,West Bengal,South 24 Parganas,19,304,lgd
+auto,code,1.000,District LGD code already matches.,349,Goa,South Goa,30,552,lgd,Goa,South Goa,30,552,lgd
+auto,code,1.000,District LGD code already matches.,732,Telangana,Suryapet,36,696,lgd,Telangana,Suryapet,36,696,lgd
+auto,code,1.000,District LGD code already matches.,506,Manipur,Tengnoupal,14,716,lgd,Manipur,Tengnoupal,14,716,lgd
+auto,code,1.000,District LGD code already matches.,691,Tamil Nadu,Theni,33,588,lgd,Tamil Nadu,Theni,33,588,lgd
+auto,code,1.000,District LGD code already matches.,699,Tamil Nadu,Thiruvarur,33,590,lgd,Tamil Nadu,Thiruvarur,33,590,lgd
+auto,code,1.000,District LGD code already matches.,106,Madhya Pradesh,Tikamgarh,23,434,lgd,Madhya Pradesh,Tikamgarh,23,434,lgd
+auto,code,1.000,District LGD code already matches.,744,Tripura,Unakoti,16,655,lgd,Tripura,Unakoti,16,655,lgd
+auto,code,1.000,District LGD code already matches.,237,Arunachal Pradesh,Upper Subansiri,12,241,lgd,Arunachal Pradesh,Upper Subansiri,12,241,lgd
+auto,code,1.000,District LGD code already matches.,185,Uttar Pradesh,Varanasi,9,187,lgd,Uttar Pradesh,Varanasi,9,187,lgd
+auto,code,1.000,District LGD code already matches.,702,Tamil Nadu,Virudhunagar,33,597,lgd,Tamil Nadu,Virudhunagar,33,597,lgd
+auto,code,1.000,District LGD code already matches.,51,Maharashtra,Wardha,27,498,lgd,Maharashtra,Wardha,27,498,lgd
+auto,code,1.000,District LGD code already matches.,520,Meghalaya,West Khasi Hills,17,279,lgd,Meghalaya,West Khasi Hills,17,279,lgd
+auto,code,1.000,District LGD code already matches.,745,Tripura,West Tripura,16,272,lgd,Tripura,West Tripura,16,272,lgd
+auto,code,1.000,District LGD code already matches.,212,Andhra Pradesh,Y.S.R.,28,504,lgd,Andhra Pradesh,Y.S.R.,28,504,lgd
+auto,code,1.000,District LGD code already matches.,55,Madhya Pradesh,Agar-Malwa,23,667,lgd,Madhya Pradesh,Agar-Malwa,23,667,lgd
+auto,code,1.000,District LGD code already matches.,111,Uttar Pradesh,Agra,9,118,lgd,Uttar Pradesh,Agra,9,118,lgd
+auto,code,1.000,District LGD code already matches.,607,Rajasthan,Ajmer,8,86,lgd,Rajasthan,Ajmer,8,86,lgd
+auto,code,1.000,District LGD code already matches.,761,West Bengal,Alipurduar,19,664,lgd,West Bengal,Alipurduar,19,664,lgd
+auto,code,1.000,District LGD code already matches.,747,Uttarakhand,Almora,5,45,lgd,Uttarakhand,Almora,5,45,lgd
+auto,code,1.000,District LGD code already matches.,385,Haryana,Ambala,6,58,lgd,Haryana,Ambala,6,58,lgd
+auto,code,1.000,District LGD code already matches.,23,Maharashtra,Amravati,27,468,lgd,Maharashtra,Amravati,27,468,lgd
+auto,code,1.000,District LGD code already matches.,352,Gujarat,Amreli,24,439,lgd,Gujarat,Amreli,24,439,lgd
+auto,code,1.000,District LGD code already matches.,807,Jammu And Kashmir,Anantnag,1,1,lgd,Jammu And Kashmir,Anantnag,1,1,lgd
+auto,code,1.000,District LGD code already matches.,190,Andhra Pradesh,Annamayya,28,753,lgd,Andhra Pradesh,Annamayya,28,753,lgd
+auto,code,1.000,District LGD code already matches.,241,Assam,Baksa,18,616,lgd,Assam,Baksa,18,616,lgd
+auto,code,1.000,District LGD code already matches.,554,Odisha,Baleshwar,21,346,lgd,Odisha,Baleshwar,21,346,lgd
+auto,code,1.000,District LGD code already matches.,122,Uttar Pradesh,Ballia,9,126,lgd,Uttar Pradesh,Ballia,9,126,lgd
+auto,code,1.000,District LGD code already matches.,315,Chhattisgarh,Balodabazar-Bhatapara,22,644,lgd,Chhattisgarh,Balodabazar-Bhatapara,22,644,lgd
+auto,code,1.000,District LGD code already matches.,124,Uttar Pradesh,Banda,9,128,lgd,Uttar Pradesh,Banda,9,128,lgd
+auto,code,1.000,District LGD code already matches.,278,Bihar,Banka,10,190,lgd,Bihar,Banka,10,190,lgd
+auto,code,1.000,District LGD code already matches.,762,West Bengal,Bankura,19,305,lgd,West Bengal,Bankura,19,305,lgd
+auto,code,1.000,District LGD code already matches.,809,Jammu And Kashmir,Baramulla,1,3,lgd,Jammu And Kashmir,Baramulla,1,3,lgd
+auto,code,1.000,District LGD code already matches.,126,Uttar Pradesh,Bareilly,9,130,lgd,Uttar Pradesh,Bareilly,9,130,lgd
+auto,code,1.000,District LGD code already matches.,60,Madhya Pradesh,Barwani,23,393,lgd,Madhya Pradesh,Barwani,23,393,lgd
+auto,code,1.000,District LGD code already matches.,585,Punjab,Bathinda,3,28,lgd,Punjab,Bathinda,3,28,lgd
+auto,code,1.000,District LGD code already matches.,279,Bihar,Begusarai,10,191,lgd,Bihar,Begusarai,10,191,lgd
+auto,code,1.000,District LGD code already matches.,448,Karnataka,Belagavi,29,527,lgd,Karnataka,Belagavi,29,527,lgd
+auto,code,1.000,District LGD code already matches.,280,Bihar,Bhagalpur,10,192,lgd,Bihar,Bhagalpur,10,192,lgd
+auto,code,1.000,District LGD code already matches.,320,Chhattisgarh,Bilaspur,22,375,lgd,Chhattisgarh,Bilaspur,22,375,lgd
+auto,code,1.000,District LGD code already matches.,493,Manipur,Bishnupur,14,252,lgd,Manipur,Bishnupur,14,252,lgd
+auto,code,1.000,District LGD code already matches.,243,Assam,Biswanath,18,705,lgd,Assam,Biswanath,18,705,lgd
+auto,code,1.000,District LGD code already matches.,119,Uttar Pradesh,Budaun,9,133,lgd,Uttar Pradesh,Budaun,9,133,lgd
+auto,code,1.000,District LGD code already matches.,130,Uttar Pradesh,Bulandshahr,9,134,lgd,Uttar Pradesh,Bulandshahr,9,134,lgd
+auto,code,1.000,District LGD code already matches.,618,Rajasthan,Bundi,8,94,lgd,Rajasthan,Bundi,8,94,lgd
+auto,code,1.000,District LGD code already matches.,245,Assam,Cachar,18,282,lgd,Assam,Cachar,18,282,lgd
+auto,code,1.000,District LGD code already matches.,452,Karnataka,Chamarajanagara,29,531,lgd,Karnataka,Chamarajanagara,29,531,lgd
+auto,code,1.000,District LGD code already matches.,750,Uttarakhand,Champawat,5,48,lgd,Uttarakhand,Champawat,5,48,lgd
+auto,code,1.000,District LGD code already matches.,246,Assam,Charaideo,18,708,lgd,Assam,Charaideo,18,708,lgd
+auto,code,1.000,District LGD code already matches.,667,Tamil Nadu,Chennai,33,568,lgd,Tamil Nadu,Chennai,33,568,lgd
+auto,code,1.000,District LGD code already matches.,247,Assam,Chirang,18,612,lgd,Assam,Chirang,18,612,lgd
+auto,code,1.000,District LGD code already matches.,668,Tamil Nadu,Coimbatore,33,569,lgd,Tamil Nadu,Coimbatore,33,569,lgd
+auto,code,1.000,District LGD code already matches.,68,Madhya Pradesh,Datia,23,401,lgd,Madhya Pradesh,Datia,23,401,lgd
+auto,code,1.000,District LGD code already matches.,424,Jharkhand,Dhanbad,20,325,lgd,Jharkhand,Dhanbad,20,325,lgd
+auto,code,1.000,District LGD code already matches.,670,Tamil Nadu,Dharmapuri,33,571,lgd,Tamil Nadu,Dharmapuri,33,571,lgd
+auto,code,1.000,District LGD code already matches.,458,Karnataka,Dharwad,29,536,lgd,Karnataka,Dharwad,29,536,lgd
+auto,code,1.000,District LGD code already matches.,623,Rajasthan,Dholpur,8,98,lgd,Rajasthan,Dholpur,8,98,lgd
+auto,code,1.000,District LGD code already matches.,251,Assam,Dibrugarh,18,286,lgd,Assam,Dibrugarh,18,286,lgd
+auto,code,1.000,District LGD code already matches.,323,Chhattisgarh,Durg,22,378,lgd,Chhattisgarh,Durg,22,378,lgd
+auto,code,1.000,District LGD code already matches.,510,Meghalaya,East Garo Hills,17,273,lgd,Meghalaya,East Garo Hills,17,273,lgd
+auto,code,1.000,District LGD code already matches.,586,Punjab,Faridkot,3,29,lgd,Punjab,Faridkot,3,29,lgd
+auto,code,1.000,District LGD code already matches.,587,Punjab,Fatehgarh Sahib,3,30,lgd,Punjab,Fatehgarh Sahib,3,30,lgd
+auto,code,1.000,District LGD code already matches.,562,Odisha,Ganjam,21,354,lgd,Odisha,Ganjam,21,354,lgd
+auto,code,1.000,District LGD code already matches.,139,Uttar Pradesh,Gautam Buddha Nagar,9,144,lgd,Uttar Pradesh,Gautam Buddha Nagar,9,144,lgd
+auto,code,1.000,District LGD code already matches.,141,Uttar Pradesh,Ghazipur,9,146,lgd,Uttar Pradesh,Ghazipur,9,146,lgd
+auto,code,1.000,District LGD code already matches.,429,Jharkhand,Godda,20,330,lgd,Jharkhand,Godda,20,330,lgd
+auto,code,1.000,District LGD code already matches.,390,Haryana,Gurugram,6,62,lgd,Haryana,Gurugram,6,62,lgd
+auto,code,1.000,District LGD code already matches.,145,Uttar Pradesh,Hapur,9,661,lgd,Uttar Pradesh,Hapur,9,661,lgd
+auto,code,1.000,District LGD code already matches.,147,Uttar Pradesh,Hathras,9,163,lgd,Uttar Pradesh,Hathras,9,163,lgd
+auto,code,1.000,District LGD code already matches.,461,Karnataka,Haveri,29,540,lgd,Karnataka,Haveri,29,540,lgd
+auto,code,1.000,District LGD code already matches.,391,Haryana,Hisar,6,63,lgd,Haryana,Hisar,6,63,lgd
+auto,code,1.000,District LGD code already matches.,525,Mizoram,Hnahthial,15,726,lgd,Mizoram,Hnahthial,15,726,lgd
+auto,code,1.000,District LGD code already matches.,707,Telangana,Hyderabad,36,507,lgd,Telangana,Hyderabad,36,507,lgd
+auto,code,1.000,District LGD code already matches.,148,Uttar Pradesh,Jalaun,9,151,lgd,Uttar Pradesh,Jalaun,9,151,lgd
+auto,code,1.000,District LGD code already matches.,33,Maharashtra,Jalna,27,479,lgd,Maharashtra,Jalna,27,479,lgd
+auto,code,1.000,District LGD code already matches.,365,Gujarat,Jamnagar,24,447,lgd,Gujarat,Jamnagar,24,447,lgd
+auto,code,1.000,District LGD code already matches.,327,Chhattisgarh,Jashpur,22,380,lgd,Chhattisgarh,Jashpur,22,380,lgd
+auto,code,1.000,District LGD code already matches.,78,Madhya Pradesh,Jhabua,23,412,lgd,Madhya Pradesh,Jhabua,23,412,lgd
+auto,code,1.000,District LGD code already matches.,393,Haryana,Jind,6,65,lgd,Haryana,Jind,6,65,lgd
+auto,code,1.000,District LGD code already matches.,498,Manipur,Jiribam,14,713,lgd,Manipur,Jiribam,14,713,lgd
+auto,code,1.000,District LGD code already matches.,636,Rajasthan,Jodhpur,8,107,lgd,Rajasthan,Jodhpur,8,107,lgd
+auto,code,1.000,District LGD code already matches.,637,Rajasthan,Jodhpur (Gramin),8,778,lgd,Rajasthan,Jodhpur (Gramin),8,778,lgd
+auto,code,1.000,District LGD code already matches.,257,Assam,Jorhat,18,290,lgd,Assam,Jorhat,18,290,lgd
+auto,code,1.000,District LGD code already matches.,368,Gujarat,Kachchh,24,449,lgd,Gujarat,Kachchh,24,449,lgd
+auto,code,1.000,District LGD code already matches.,196,Andhra Pradesh,Kakinada,28,746,lgd,Andhra Pradesh,Kakinada,28,746,lgd
+auto,code,1.000,District LGD code already matches.,566,Odisha,Kalahandi,21,358,lgd,Odisha,Kalahandi,21,358,lgd
+auto,code,1.000,District LGD code already matches.,673,Tamil Nadu,Kallakurichi,33,729,lgd,Tamil Nadu,Kallakurichi,33,729,lgd
+auto,code,1.000,District LGD code already matches.,712,Telangana,Kamareddy,36,685,lgd,Telangana,Kamareddy,36,685,lgd
+auto,code,1.000,District LGD code already matches.,259,Assam,Kamrup Metro,18,618,lgd,Assam,Kamrup Metro,18,618,lgd
+auto,code,1.000,District LGD code already matches.,481,Kerala,Kannur,32,557,lgd,Kerala,Kannur,32,557,lgd
+auto,code,1.000,District LGD code already matches.,153,Uttar Pradesh,Kanpur Nagar,9,157,lgd,Uttar Pradesh,Kanpur Nagar,9,157,lgd
+auto,code,1.000,District LGD code already matches.,593,Punjab,Kapurthala,3,35,lgd,Punjab,Kapurthala,3,35,lgd
+auto,code,1.000,District LGD code already matches.,828,Ladakh,Kargil,37,6,lgd,Ladakh,Kargil,37,6,lgd
+auto,code,1.000,District LGD code already matches.,676,Tamil Nadu,Karur,33,576,lgd,Tamil Nadu,Karur,33,576,lgd
+auto,code,1.000,District LGD code already matches.,814,Jammu And Kashmir,Kathua,1,7,lgd,Jammu And Kashmir,Kathua,1,7,lgd
+auto,code,1.000,District LGD code already matches.,640,Rajasthan,Khairthal-Tijara,8,770,lgd,Rajasthan,Khairthal-Tijara,8,770,lgd
+auto,code,1.000,District LGD code already matches.,80,Madhya Pradesh,Khandwa (East Nimar),23,405,lgd,Madhya Pradesh,Khandwa (East Nimar),23,405,lgd
+auto,code,1.000,District LGD code already matches.,464,Karnataka,Kolar,29,542,lgd,Karnataka,Kolar,29,542,lgd
+auto,code,1.000,District LGD code already matches.,715,Telangana,Kumuram Bheem Asifabad,36,699,lgd,Telangana,Kumuram Bheem Asifabad,36,699,lgd
+auto,code,1.000,District LGD code already matches.,528,Mizoram,Lawngtlai,15,264,lgd,Mizoram,Lawngtlai,15,264,lgd
+auto,code,1.000,District LGD code already matches.,436,Jharkhand,Lohardaga,20,336,lgd,Jharkhand,Lohardaga,20,336,lgd
+auto,code,1.000,District LGD code already matches.,226,Arunachal Pradesh,Lower Dibang Valley,12,235,lgd,Arunachal Pradesh,Lower Dibang Valley,12,235,lgd
+auto,code,1.000,District LGD code already matches.,227,Arunachal Pradesh,Lower Siang,12,719,lgd,Arunachal Pradesh,Lower Siang,12,719,lgd
+auto,code,1.000,District LGD code already matches.,161,Uttar Pradesh,Mahoba,9,165,lgd,Uttar Pradesh,Mahoba,9,165,lgd
+auto,code,1.000,District LGD code already matches.,83,Madhya Pradesh,Mandla,23,415,lgd,Madhya Pradesh,Mandla,23,415,lgd
+auto,code,1.000,District LGD code already matches.,679,Tamil Nadu,Mayiladuthurai,33,735,lgd,Tamil Nadu,Mayiladuthurai,33,735,lgd
+auto,code,1.000,District LGD code already matches.,719,Telangana,Medak,36,513,lgd,Telangana,Medak,36,513,lgd
+auto,code,1.000,District LGD code already matches.,166,Uttar Pradesh,Mirzapur,9,170,lgd,Uttar Pradesh,Mirzapur,9,170,lgd
+auto,code,1.000,District LGD code already matches.,540,Nagaland,Mokokchung,13,246,lgd,Nagaland,Mokokchung,13,246,lgd
+auto,code,1.000,District LGD code already matches.,167,Uttar Pradesh,Moradabad,9,171,lgd,Uttar Pradesh,Moradabad,9,171,lgd
+auto,code,1.000,District LGD code already matches.,371,Gujarat,Morbi,24,673,lgd,Gujarat,Morbi,24,673,lgd
+auto,code,1.000,District LGD code already matches.,36,Maharashtra,Mumbai,27,482,lgd,Maharashtra,Mumbai,27,482,lgd
+auto,code,1.000,District LGD code already matches.,37,Maharashtra,Mumbai Suburban,27,483,lgd,Maharashtra,Mumbai Suburban,27,483,lgd
+auto,code,1.000,District LGD code already matches.,722,Telangana,Nagarkurnool,36,694,lgd,Telangana,Nagarkurnool,36,694,lgd
+auto,code,1.000,District LGD code already matches.,298,Bihar,Nalanda,10,209,lgd,Bihar,Nalanda,10,209,lgd
+auto,code,1.000,District LGD code already matches.,723,Telangana,Nalgonda,36,514,lgd,Telangana,Nalgonda,36,514,lgd
+auto,code,1.000,District LGD code already matches.,299,Bihar,Nawada,10,210,lgd,Bihar,Nawada,10,210,lgd
+auto,code,1.000,District LGD code already matches.,798,Delhi,North,7,80,lgd,Delhi,North,7,80,lgd
+auto,code,1.000,District LGD code already matches.,800,Delhi,North West,7,82,lgd,Delhi,North West,7,82,lgd
+auto,code,1.000,District LGD code already matches.,231,Arunachal Pradesh,Papum Pare,12,237,lgd,Arunachal Pradesh,Papum Pare,12,237,lgd
+auto,code,1.000,District LGD code already matches.,488,Kerala,Pathanamthitta,32,564,lgd,Kerala,Pathanamthitta,32,564,lgd
+auto,code,1.000,District LGD code already matches.,376,Gujarat,Porbandar,24,456,lgd,Gujarat,Porbandar,24,456,lgd
+auto,code,1.000,District LGD code already matches.,171,Uttar Pradesh,Prayagraj,9,120,lgd,Uttar Pradesh,Prayagraj,9,120,lgd
+auto,code,1.000,District LGD code already matches.,172,Uttar Pradesh,Rae Bareli,9,175,lgd,Uttar Pradesh,Rae Bareli,9,175,lgd
+auto,code,1.000,District LGD code already matches.,468,Karnataka,Raichur,29,546,lgd,Karnataka,Raichur,29,546,lgd
+auto,code,1.000,District LGD code already matches.,728,Telangana,Rajanna Sircilla,36,683,lgd,Telangana,Rajanna Sircilla,36,683,lgd
+auto,code,1.000,District LGD code already matches.,821,Jammu And Kashmir,Ramban,1,621,lgd,Jammu And Kashmir,Ramban,1,621,lgd
+auto,code,1.000,District LGD code already matches.,94,Madhya Pradesh,Ratlam,23,423,lgd,Madhya Pradesh,Ratlam,23,423,lgd
+auto,code,1.000,District LGD code already matches.,402,Haryana,Rewari,6,72,lgd,Haryana,Rewari,6,72,lgd
+auto,code,1.000,District LGD code already matches.,514,Meghalaya,Ri Bhoi,17,276,lgd,Meghalaya,Ri Bhoi,17,276,lgd
+auto,code,1.000,District LGD code already matches.,403,Haryana,Rohtak,6,73,lgd,Haryana,Rohtak,6,73,lgd
+auto,code,1.000,District LGD code already matches.,823,Jammu And Kashmir,Samba,1,624,lgd,Jammu And Kashmir,Samba,1,624,lgd
+auto,code,1.000,District LGD code already matches.,579,Odisha,Sambalpur,21,371,lgd,Odisha,Sambalpur,21,371,lgd
+auto,code,1.000,District LGD code already matches.,46,Maharashtra,Sangli,27,493,lgd,Maharashtra,Sangli,27,493,lgd
+auto,code,1.000,District LGD code already matches.,98,Madhya Pradesh,Sehore,23,427,lgd,Madhya Pradesh,Sehore,23,427,lgd
+auto,code,1.000,District LGD code already matches.,504,Manipur,Senapati,14,257,lgd,Manipur,Senapati,14,257,lgd
+auto,code,1.000,District LGD code already matches.,652,Rajasthan,Shahpura,8,780,lgd,Rajasthan,Shahpura,8,780,lgd
+auto,code,1.000,District LGD code already matches.,306,Bihar,Sheikhpura,10,219,lgd,Bihar,Sheikhpura,10,219,lgd
+auto,code,1.000,District LGD code already matches.,233,Arunachal Pradesh,Siang,12,679,lgd,Arunachal Pradesh,Siang,12,679,lgd
+auto,code,1.000,District LGD code already matches.,731,Telangana,Siddipet,36,692,lgd,Telangana,Siddipet,36,692,lgd
+auto,code,1.000,District LGD code already matches.,417,Himachal Pradesh,Sirmaur,2,24,lgd,Himachal Pradesh,Sirmaur,2,24,lgd
+auto,code,1.000,District LGD code already matches.,268,Assam,Sivasagar,18,300,lgd,Assam,Sivasagar,18,300,lgd
+auto,code,1.000,District LGD code already matches.,269,Assam,Sonitpur,18,301,lgd,Assam,Sonitpur,18,301,lgd
+auto,code,1.000,District LGD code already matches.,743,Tripura,South Tripura,16,271,lgd,Tripura,South Tripura,16,271,lgd
+auto,code,1.000,District LGD code already matches.,183,Uttar Pradesh,Sultanpur,9,185,lgd,Uttar Pradesh,Sultanpur,9,185,lgd
+auto,code,1.000,District LGD code already matches.,581,Odisha,Sundargarh,21,373,lgd,Odisha,Sundargarh,21,373,lgd
+auto,code,1.000,District LGD code already matches.,379,Gujarat,Surat,24,459,lgd,Gujarat,Surat,24,459,lgd
+auto,code,1.000,District LGD code already matches.,380,Gujarat,Surendranagar,24,460,lgd,Gujarat,Surendranagar,24,460,lgd
+auto,code,1.000,District LGD code already matches.,692,Tamil Nadu,Thoothukkudi,33,594,lgd,Tamil Nadu,Thoothukkudi,33,594,lgd
+auto,code,1.000,District LGD code already matches.,490,Kerala,Thrissur,32,566,lgd,Kerala,Thrissur,32,566,lgd
+auto,code,1.000,District LGD code already matches.,208,Andhra Pradesh,Tirupati,28,752,lgd,Andhra Pradesh,Tirupati,28,752,lgd
+auto,code,1.000,District LGD code already matches.,547,Nagaland,Tuensang,13,249,lgd,Nagaland,Tuensang,13,249,lgd
+auto,code,1.000,District LGD code already matches.,758,Uttarakhand,Udam Singh Nagar,5,56,lgd,Uttarakhand,Udam Singh Nagar,5,56,lgd
+auto,code,1.000,District LGD code already matches.,826,Jammu And Kashmir,Udhampur,1,14,lgd,Jammu And Kashmir,Udhampur,1,14,lgd
+auto,code,1.000,District LGD code already matches.,107,Madhya Pradesh,Ujjain,23,435,lgd,Madhya Pradesh,Ujjain,23,435,lgd
+auto,code,1.000,District LGD code already matches.,184,Uttar Pradesh,Unnao,9,186,lgd,Uttar Pradesh,Unnao,9,186,lgd
+auto,code,1.000,District LGD code already matches.,783,West Bengal,Uttar Dinajpur,19,311,lgd,West Bengal,Uttar Dinajpur,19,311,lgd
+auto,code,1.000,District LGD code already matches.,700,Tamil Nadu,Vellore,33,595,lgd,Tamil Nadu,Vellore,33,595,lgd
+auto,code,1.000,District LGD code already matches.,734,Telangana,Wanaparthy,36,693,lgd,Telangana,Wanaparthy,36,693,lgd
+auto,code,1.000,District LGD code already matches.,211,Andhra Pradesh,West Godavari,28,523,lgd,Andhra Pradesh,West Godavari,28,523,lgd
+auto,code,1.000,District LGD code already matches.,238,Arunachal Pradesh,West Kameng,12,242,lgd,Arunachal Pradesh,West Kameng,12,242,lgd
+auto,code,1.000,District LGD code already matches.,406,Haryana,Yamunanagar,6,76,lgd,Haryana,Yamunanagar,6,76,lgd
+auto,code,1.000,District LGD code already matches.,53,Maharashtra,Yavatmal,27,500,lgd,Maharashtra,Yavatmal,27,500,lgd
+auto,code,1.000,District LGD code already matches.,8,Maharashtra,Ahmednagar,27,466,lgd,Maharashtra,Ahmednagar,27,466,lgd
+auto,code,1.000,District LGD code already matches.,187,Andhra Pradesh,Alluri Sitharama Raju,28,745,lgd,Andhra Pradesh,Alluri Sitharama Raju,28,745,lgd
+auto,code,1.000,District LGD code already matches.,115,Uttar Pradesh,Amroha,9,154,lgd,Uttar Pradesh,Amroha,9,154,lgd
+auto,code,1.000,District LGD code already matches.,188,Andhra Pradesh,Anakapalli,28,744,lgd,Andhra Pradesh,Anakapalli,28,744,lgd
+auto,code,1.000,District LGD code already matches.,214,Arunachal Pradesh,Anjaw,12,628,lgd,Arunachal Pradesh,Anjaw,12,628,lgd
+auto,code,1.000,District LGD code already matches.,609,Rajasthan,Anupgarh,8,776,lgd,Rajasthan,Anupgarh,8,776,lgd
+auto,code,1.000,District LGD code already matches.,116,Uttar Pradesh,Auraiya,9,122,lgd,Uttar Pradesh,Auraiya,9,122,lgd
+auto,code,1.000,District LGD code already matches.,117,Uttar Pradesh,Ayodhya,9,140,lgd,Uttar Pradesh,Ayodhya,9,140,lgd
+missing_in_db,none,0.667,No safe candidate above review threshold.,,,,,,,Assam,Bajali,18,739,lgd
+auto,code,1.000,District LGD code already matches.,553,Odisha,Balangir,21,345,lgd,Odisha,Balangir,21,345,lgd
+auto,code,1.000,District LGD code already matches.,125,Uttar Pradesh,Bara Banki,9,129,lgd,Uttar Pradesh,Bara Banki,9,129,lgd
+auto,code,1.000,District LGD code already matches.,705,Telangana,Bhadradri Kothagudem,36,690,lgd,Telangana,Bhadradri Kothagudem,36,690,lgd
+auto,code,1.000,District LGD code already matches.,615,Rajasthan,Bharatpur,8,91,lgd,Rajasthan,Bharatpur,8,91,lgd
+auto,code,1.000,District LGD code already matches.,281,Bihar,Bhojpur,10,193,lgd,Bihar,Bhojpur,10,193,lgd
+auto,code,1.000,District LGD code already matches.,617,Rajasthan,Bikaner,8,93,lgd,Rajasthan,Bikaner,8,93,lgd
+auto,code,1.000,District LGD code already matches.,763,West Bengal,Birbhum,19,307,lgd,West Bengal,Birbhum,19,307,lgd
+auto,code,1.000,District LGD code already matches.,387,Haryana,Charki Dadri,6,701,lgd,Haryana,Charki Dadri,6,701,lgd
+auto,code,1.000,District LGD code already matches.,453,Karnataka,Chikkaballapura,29,630,lgd,Karnataka,Chikkaballapura,29,630,lgd
+auto,code,1.000,District LGD code already matches.,192,Andhra Pradesh,Chittoor,28,503,lgd,Andhra Pradesh,Chittoor,28,503,lgd
+auto,code,1.000,District LGD code already matches.,321,Chhattisgarh,Dakshin Bastar Dantewada,22,376,lgd,Chhattisgarh,Dakshin Bastar Dantewada,22,376,lgd
+auto,code,1.000,District LGD code already matches.,248,Assam,Darrang,18,283,lgd,Assam,Darrang,18,283,lgd
+auto,code,1.000,District LGD code already matches.,751,Uttarakhand,Dehradun,5,49,lgd,Uttarakhand,Dehradun,5,49,lgd
+auto,code,1.000,District LGD code already matches.,559,Odisha,Deogarh,21,351,lgd,Odisha,Deogarh,21,351,lgd
+auto,code,1.000,District LGD code already matches.,249,Assam,Dhemaji,18,284,lgd,Assam,Dhemaji,18,284,lgd
+auto,code,1.000,District LGD code already matches.,250,Assam,Dhubri,18,285,lgd,Assam,Dhubri,18,285,lgd
+auto,code,1.000,District LGD code already matches.,216,Arunachal Pradesh,Dibang Valley,12,230,lgd,Arunachal Pradesh,Dibang Valley,12,230,lgd
+auto,code,1.000,District LGD code already matches.,624,Rajasthan,Didwana-Kuchaman,8,768,lgd,Rajasthan,Didwana-Kuchaman,8,768,lgd
+auto,code,1.000,District LGD code already matches.,536,Nagaland,Dimapur,13,244,lgd,Nagaland,Dimapur,13,244,lgd
+auto,code,1.000,District LGD code already matches.,671,Tamil Nadu,Dindigul,33,572,lgd,Tamil Nadu,Dindigul,33,572,lgd
+auto,code,1.000,District LGD code already matches.,793,The Dadra And Nagar Haveli And Daman And Diu,Diu,38,464,lgd,The Dadra And Nagar Haveli And Daman And Diu,Diu,38,464,lgd
+auto,code,1.000,District LGD code already matches.,811,Jammu And Kashmir,Doda,1,4,lgd,Jammu And Kashmir,Doda,1,4,lgd
+auto,code,1.000,District LGD code already matches.,626,Rajasthan,Dungarpur,8,99,lgd,Rajasthan,Dungarpur,8,99,lgd
+auto,code,1.000,District LGD code already matches.,218,Arunachal Pradesh,East Siang,12,232,lgd,Arunachal Pradesh,East Siang,12,232,lgd
+auto,code,1.000,District LGD code already matches.,479,Kerala,Ernakulam,32,555,lgd,Kerala,Ernakulam,32,555,lgd
+auto,code,1.000,District LGD code already matches.,134,Uttar Pradesh,Etah,9,138,lgd,Uttar Pradesh,Etah,9,138,lgd
+auto,code,1.000,District LGD code already matches.,136,Uttar Pradesh,Farrukhabad,9,141,lgd,Uttar Pradesh,Farrukhabad,9,141,lgd
+auto,code,1.000,District LGD code already matches.,389,Haryana,Fatehabad,6,61,lgd,Haryana,Fatehabad,6,61,lgd
+auto,code,1.000,District LGD code already matches.,137,Uttar Pradesh,Fatehpur,9,142,lgd,Uttar Pradesh,Fatehpur,9,142,lgd
+auto,code,1.000,District LGD code already matches.,459,Karnataka,Gadag,29,537,lgd,Karnataka,Gadag,29,537,lgd
+auto,code,1.000,District LGD code already matches.,628,Rajasthan,Gangapurcity,8,771,lgd,Rajasthan,Gangapurcity,8,771,lgd
+auto,code,1.000,District LGD code already matches.,658,Sikkim,Gangtok,11,225,lgd,Sikkim,Gangtok,11,225,lgd
+auto,code,1.000,District LGD code already matches.,140,Uttar Pradesh,Ghaziabad,9,145,lgd,Uttar Pradesh,Ghaziabad,9,145,lgd
+auto,code,1.000,District LGD code already matches.,142,Uttar Pradesh,Gonda,9,147,lgd,Uttar Pradesh,Gonda,9,147,lgd
+auto,code,1.000,District LGD code already matches.,286,Bihar,Gopalganj,10,197,lgd,Bihar,Gopalganj,10,197,lgd
+auto,code,1.000,District LGD code already matches.,590,Punjab,Gurdaspur,3,32,lgd,Punjab,Gurdaspur,3,32,lgd
+auto,code,1.000,District LGD code already matches.,73,Madhya Pradesh,Gwalior,23,407,lgd,Madhya Pradesh,Gwalior,23,407,lgd
+auto,code,1.000,District LGD code already matches.,255,Assam,Hailakandi,18,289,lgd,Assam,Hailakandi,18,289,lgd
+auto,code,1.000,District LGD code already matches.,629,Rajasthan,Hanumangarh,8,101,lgd,Rajasthan,Hanumangarh,8,101,lgd
+auto,code,1.000,District LGD code already matches.,146,Uttar Pradesh,Hardoi,9,150,lgd,Uttar Pradesh,Hardoi,9,150,lgd
+auto,code,1.000,District LGD code already matches.,431,Jharkhand,Hazaribagh,20,332,lgd,Jharkhand,Hazaribagh,20,332,lgd
+auto,code,1.000,District LGD code already matches.,31,Maharashtra,Hingoli,27,477,lgd,Maharashtra,Hingoli,27,477,lgd
+auto,code,1.000,District LGD code already matches.,708,Telangana,Jagitial,36,681,lgd,Telangana,Jagitial,36,681,lgd
+auto,code,1.000,District LGD code already matches.,564,Odisha,Jajapur,21,356,lgd,Odisha,Jajapur,21,356,lgd
+auto,code,1.000,District LGD code already matches.,432,Jharkhand,Jamtara,20,333,lgd,Jharkhand,Jamtara,20,333,lgd
+auto,code,1.000,District LGD code already matches.,287,Bihar,Jamui,10,198,lgd,Bihar,Jamui,10,198,lgd
+auto,code,1.000,District LGD code already matches.,326,Chhattisgarh,Janjgir-Champa,22,379,lgd,Chhattisgarh,Janjgir-Champa,22,379,lgd
+auto,code,1.000,District LGD code already matches.,288,Bihar,Jehanabad,10,199,lgd,Bihar,Jehanabad,10,199,lgd
+auto,code,1.000,District LGD code already matches.,770,West Bengal,Jhargram,19,703,lgd,West Bengal,Jhargram,19,703,lgd
+auto,code,1.000,District LGD code already matches.,289,Bihar,Kaimur (Bhabua),10,200,lgd,Bihar,Kaimur (Bhabua),10,200,lgd
+auto,code,1.000,District LGD code already matches.,674,Tamil Nadu,Kancheepuram,33,574,lgd,Tamil Nadu,Kancheepuram,33,574,lgd
+auto,code,1.000,District LGD code already matches.,567,Odisha,Kandhamal,21,359,lgd,Odisha,Kandhamal,21,359,lgd
+auto,code,1.000,District LGD code already matches.,411,Himachal Pradesh,Kangra,2,18,lgd,Himachal Pradesh,Kangra,2,18,lgd
+auto,code,1.000,District LGD code already matches.,151,Uttar Pradesh,Kannauj,9,155,lgd,Uttar Pradesh,Kannauj,9,155,lgd
+auto,code,1.000,District LGD code already matches.,395,Haryana,Karnal,6,67,lgd,Haryana,Karnal,6,67,lgd
+auto,code,1.000,District LGD code already matches.,154,Uttar Pradesh,Kasganj,9,633,lgd,Uttar Pradesh,Kasganj,9,633,lgd
+auto,code,1.000,District LGD code already matches.,79,Madhya Pradesh,Katni,23,413,lgd,Madhya Pradesh,Katni,23,413,lgd
+auto,code,1.000,District LGD code already matches.,291,Bihar,Khagaria,10,202,lgd,Bihar,Khagaria,10,202,lgd
+auto,code,1.000,District LGD code already matches.,412,Himachal Pradesh,Kinnaur,2,19,lgd,Himachal Pradesh,Kinnaur,2,19,lgd
+auto,code,1.000,District LGD code already matches.,537,Nagaland,Kiphire,13,614,lgd,Nagaland,Kiphire,13,614,lgd
+auto,code,1.000,District LGD code already matches.,292,Bihar,Kishanganj,10,203,lgd,Bihar,Kishanganj,10,203,lgd
+auto,code,1.000,District LGD code already matches.,434,Jharkhand,Koderma,20,334,lgd,Jharkhand,Koderma,20,334,lgd
+auto,code,1.000,District LGD code already matches.,465,Karnataka,Koppal,29,543,lgd,Karnataka,Koppal,29,543,lgd
+auto,code,1.000,District LGD code already matches.,642,Rajasthan,Kotputli-Behror,8,782,lgd,Rajasthan,Kotputli-Behror,8,782,lgd
+auto,code,1.000,District LGD code already matches.,484,Kerala,Kottayam,32,560,lgd,Kerala,Kottayam,32,560,lgd
+auto,code,1.000,District LGD code already matches.,485,Kerala,Kozhikode,32,561,lgd,Kerala,Kozhikode,32,561,lgd
+auto,code,1.000,District LGD code already matches.,198,Andhra Pradesh,Krishna,28,510,lgd,Andhra Pradesh,Krishna,28,510,lgd
+auto,code,1.000,District LGD code already matches.,816,Jammu And Kashmir,Kulgam,1,622,lgd,Jammu And Kashmir,Kulgam,1,622,lgd
+auto,code,1.000,District LGD code already matches.,817,Jammu And Kashmir,Kupwara,1,8,lgd,Jammu And Kashmir,Kupwara,1,8,lgd
+auto,code,1.000,District LGD code already matches.,199,Andhra Pradesh,Kurnool,28,511,lgd,Andhra Pradesh,Kurnool,28,511,lgd
+auto,code,1.000,District LGD code already matches.,293,Bihar,Lakhisarai,10,204,lgd,Bihar,Lakhisarai,10,204,lgd
+auto,code,1.000,District LGD code already matches.,35,Maharashtra,Latur,27,481,lgd,Maharashtra,Latur,27,481,lgd
+auto,code,1.000,District LGD code already matches.,529,Mizoram,Lunglei,15,265,lgd,Mizoram,Lunglei,15,265,lgd
+auto,code,1.000,District LGD code already matches.,716,Telangana,Mahabubabad,36,688,lgd,Telangana,Mahabubabad,36,688,lgd
+auto,code,1.000,District LGD code already matches.,370,Gujarat,Mahesana,24,451,lgd,Gujarat,Mahesana,24,451,lgd
+auto,code,1.000,District LGD code already matches.,160,Uttar Pradesh,Mahrajganj,9,164,lgd,Uttar Pradesh,Mahrajganj,9,164,lgd
+auto,code,1.000,District LGD code already matches.,530,Mizoram,Mamit,15,266,lgd,Mizoram,Mamit,15,266,lgd
+auto,code,1.000,District LGD code already matches.,415,Himachal Pradesh,Mandi,2,22,lgd,Himachal Pradesh,Mandi,2,22,lgd
+auto,code,1.000,District LGD code already matches.,334,Chhattisgarh,Manendragarh-Chirmiri-Bharatpur(M C B),22,760,lgd,Chhattisgarh,Manendragarh-Chirmiri-Bharatpur(M C B),22,760,lgd
+auto,code,1.000,District LGD code already matches.,573,Odisha,Mayurbhanj,21,365,lgd,Odisha,Mayurbhanj,21,365,lgd
+auto,code,1.000,District LGD code already matches.,720,Telangana,Medchal Malkajgiri,36,700,lgd,Telangana,Medchal Malkajgiri,36,700,lgd
+auto,code,1.000,District LGD code already matches.,86,Madhya Pradesh,Morena,23,417,lgd,Madhya Pradesh,Morena,23,417,lgd
+auto,code,1.000,District LGD code already matches.,774,West Bengal,Murshidabad,19,319,lgd,West Bengal,Murshidabad,19,319,lgd
+auto,code,1.000,District LGD code already matches.,574,Odisha,Nabarangpur,21,366,lgd,Odisha,Nabarangpur,21,366,lgd
+auto,code,1.000,District LGD code already matches.,775,West Bengal,Nadia,19,320,lgd,West Bengal,Nadia,19,320,lgd
+auto,code,1.000,District LGD code already matches.,39,Maharashtra,Nanded,27,485,lgd,Maharashtra,Nanded,27,485,lgd
+auto,code,1.000,District LGD code already matches.,40,Maharashtra,Nandurbar,27,486,lgd,Maharashtra,Nandurbar,27,486,lgd
+auto,code,1.000,District LGD code already matches.,724,Telangana,Narayanpet,36,721,lgd,Telangana,Narayanpet,36,721,lgd
+auto,code,1.000,District LGD code already matches.,87,Madhya Pradesh,Narsimhapur,23,418,lgd,Madhya Pradesh,Narsimhapur,23,418,lgd
+auto,code,1.000,District LGD code already matches.,88,Madhya Pradesh,Neemuch,23,419,lgd,Madhya Pradesh,Neemuch,23,419,lgd
+auto,code,1.000,District LGD code already matches.,785,Andaman And Nicobar Islands,Nicobars,35,603,lgd,Andaman And Nicobar Islands,Nicobars,35,603,lgd
+auto,code,1.000,District LGD code already matches.,725,Telangana,Nirmal,36,680,lgd,Telangana,Nirmal,36,680,lgd
+auto,code,1.000,District LGD code already matches.,89,Madhya Pradesh,Niwari,23,722,lgd,Madhya Pradesh,Niwari,23,722,lgd
+auto,code,1.000,District LGD code already matches.,726,Telangana,Nizamabad,36,516,lgd,Telangana,Nizamabad,36,516,lgd
+auto,code,1.000,District LGD code already matches.,543,Nagaland,Noklak,13,736,lgd,Nagaland,Noklak,13,736,lgd
+auto,code,1.000,District LGD code already matches.,348,Goa,North Goa,30,551,lgd,Goa,North Goa,30,551,lgd
+auto,code,1.000,District LGD code already matches.,230,Arunachal Pradesh,Pakke Kessang,12,723,lgd,Arunachal Pradesh,Pakke Kessang,12,723,lgd
+auto,code,1.000,District LGD code already matches.,437,Jharkhand,Pakur,20,337,lgd,Jharkhand,Pakur,20,337,lgd
+auto,code,1.000,District LGD code already matches.,90,Madhya Pradesh,Pandhurna,23,785,lgd,Madhya Pradesh,Pandhurna,23,785,lgd
+auto,code,1.000,District LGD code already matches.,43,Maharashtra,Parbhani,27,489,lgd,Maharashtra,Parbhani,27,489,lgd
+auto,code,1.000,District LGD code already matches.,777,West Bengal,Paschim Bardhaman,19,704,lgd,West Bengal,Paschim Bardhaman,19,704,lgd
+auto,code,1.000,District LGD code already matches.,778,West Bengal,Paschim Medinipur,19,318,lgd,West Bengal,Paschim Medinipur,19,318,lgd
+auto,code,1.000,District LGD code already matches.,601,Punjab,Patiala,3,41,lgd,Punjab,Patiala,3,41,lgd
+auto,code,1.000,District LGD code already matches.,300,Bihar,Patna,10,212,lgd,Bihar,Patna,10,212,lgd
+auto,code,1.000,District LGD code already matches.,727,Telangana,Peddapalli,36,682,lgd,Telangana,Peddapalli,36,682,lgd
+auto,code,1.000,District LGD code already matches.,818,Jammu And Kashmir,Poonch,1,10,lgd,Jammu And Kashmir,Poonch,1,10,lgd
+auto,code,1.000,District LGD code already matches.,170,Uttar Pradesh,Pratapgarh,9,174,lgd,Uttar Pradesh,Pratapgarh,9,174,lgd
+auto,code,1.000,District LGD code already matches.,835,Puducherry,Puducherry,34,600,lgd,Puducherry,Puducherry,34,600,lgd
+auto,code,1.000,District LGD code already matches.,819,Jammu And Kashmir,Pulwama,1,11,lgd,Jammu And Kashmir,Pulwama,1,11,lgd
+auto,code,1.000,District LGD code already matches.,2,Maharashtra,Pune,27,490,lgd,Maharashtra,Pune,27,490,lgd
+auto,code,1.000,District LGD code already matches.,44,Maharashtra,Raigad,27,491,lgd,Maharashtra,Raigad,27,491,lgd
+auto,code,1.000,District LGD code already matches.,338,Chhattisgarh,Raigarh,22,386,lgd,Chhattisgarh,Raigarh,22,386,lgd
+auto,code,1.000,District LGD code already matches.,339,Chhattisgarh,Raipur,22,387,lgd,Chhattisgarh,Raipur,22,387,lgd
+auto,code,1.000,District LGD code already matches.,93,Madhya Pradesh,Rajgarh,23,422,lgd,Madhya Pradesh,Rajgarh,23,422,lgd
+auto,code,1.000,District LGD code already matches.,820,Jammu And Kashmir,Rajouri,1,12,lgd,Jammu And Kashmir,Rajouri,1,12,lgd
+auto,code,1.000,District LGD code already matches.,756,Uttarakhand,Rudra Prayag,5,54,lgd,Uttarakhand,Rudra Prayag,5,54,lgd
+auto,code,1.000,District LGD code already matches.,378,Gujarat,Sabar Kantha,24,458,lgd,Gujarat,Sabar Kantha,24,458,lgd
+auto,code,1.000,District LGD code already matches.,174,Uttar Pradesh,Saharanpur,9,177,lgd,Uttar Pradesh,Saharanpur,9,177,lgd
+auto,code,1.000,District LGD code already matches.,532,Mizoram,Saitual,15,727,lgd,Mizoram,Saitual,15,727,lgd
+auto,code,1.000,District LGD code already matches.,687,Tamil Nadu,Salem,33,584,lgd,Tamil Nadu,Salem,33,584,lgd
+auto,code,1.000,District LGD code already matches.,649,Rajasthan,Salumbar,8,777,lgd,Rajasthan,Salumbar,8,777,lgd
+auto,code,1.000,District LGD code already matches.,175,Uttar Pradesh,Sambhal,9,659,lgd,Uttar Pradesh,Sambhal,9,659,lgd
+auto,code,1.000,District LGD code already matches.,730,Telangana,Sangareddy,36,691,lgd,Telangana,Sangareddy,36,691,lgd
+auto,code,1.000,District LGD code already matches.,305,Bihar,Saran,10,218,lgd,Bihar,Saran,10,218,lgd
+auto,code,1.000,District LGD code already matches.,343,Chhattisgarh,Sarangarh-Bilaigarh,22,763,lgd,Chhattisgarh,Sarangarh-Bilaigarh,22,763,lgd
+auto,code,1.000,District LGD code already matches.,97,Madhya Pradesh,Satna,23,426,lgd,Madhya Pradesh,Satna,23,426,lgd
+auto,code,1.000,District LGD code already matches.,801,Delhi,Shahdara,7,671,lgd,Delhi,Shahdara,7,671,lgd
+auto,code,1.000,District LGD code already matches.,546,Nagaland,Shamator,13,765,lgd,Nagaland,Shamator,13,765,lgd
+auto,code,1.000,District LGD code already matches.,178,Uttar Pradesh,Shamli,9,660,lgd,Uttar Pradesh,Shamli,9,660,lgd
+auto,code,1.000,District LGD code already matches.,416,Himachal Pradesh,Shimla,2,23,lgd,Himachal Pradesh,Shimla,2,23,lgd
+auto,code,1.000,District LGD code already matches.,470,Karnataka,Shivamogga,29,547,lgd,Karnataka,Shivamogga,29,547,lgd
+auto,code,1.000,District LGD code already matches.,232,Arunachal Pradesh,Shi Yomi,12,725,lgd,Arunachal Pradesh,Shi Yomi,12,725,lgd
+auto,code,1.000,District LGD code already matches.,531,Mizoram,Siaha,15,267,lgd,Mizoram,Siaha,15,267,lgd
+auto,code,1.000,District LGD code already matches.,308,Bihar,Sitamarhi,10,221,lgd,Bihar,Sitamarhi,10,221,lgd
+auto,code,1.000,District LGD code already matches.,405,Haryana,Sonipat,6,75,lgd,Haryana,Sonipat,6,75,lgd
+auto,code,1.000,District LGD code already matches.,787,Andaman And Nicobar Islands,South Andamans,35,602,lgd,Andaman And Nicobar Islands,South Andamans,35,602,lgd
+auto,code,1.000,District LGD code already matches.,515,Meghalaya,South Garo Hills,17,277,lgd,Meghalaya,South Garo Hills,17,277,lgd
+auto,code,1.000,District LGD code already matches.,517,Meghalaya,South West Khasi Hills,17,658,lgd,Meghalaya,South West Khasi Hills,17,658,lgd
+auto,code,1.000,District LGD code already matches.,598,Punjab,Sri Muktsar Sahib,3,39,lgd,Punjab,Sri Muktsar Sahib,3,39,lgd
+auto,code,1.000,District LGD code already matches.,825,Jammu And Kashmir,Srinagar,1,13,lgd,Jammu And Kashmir,Srinagar,1,13,lgd
+auto,code,1.000,District LGD code already matches.,205,Andhra Pradesh,Sri Potti Sriramulu Nellore,28,515,lgd,Andhra Pradesh,Sri Potti Sriramulu Nellore,28,515,lgd
+auto,code,1.000,District LGD code already matches.,206,Andhra Pradesh,Sri Sathya Sai,28,754,lgd,Andhra Pradesh,Sri Sathya Sai,28,754,lgd
+auto,code,1.000,District LGD code already matches.,381,Gujarat,Tapi,24,641,lgd,Gujarat,Tapi,24,641,lgd
+auto,code,1.000,District LGD code already matches.,697,Tamil Nadu,Thiruvallur,33,589,lgd,Tamil Nadu,Thiruvallur,33,589,lgd
+auto,code,1.000,District LGD code already matches.,507,Manipur,Thoubal,14,259,lgd,Manipur,Thoubal,14,259,lgd
+auto,code,1.000,District LGD code already matches.,694,Tamil Nadu,Tirunelveli,33,592,lgd,Tamil Nadu,Tirunelveli,33,592,lgd
+auto,code,1.000,District LGD code already matches.,548,Nagaland,Tseminyu,13,757,lgd,Nagaland,Tseminyu,13,757,lgd
+auto,code,1.000,District LGD code already matches.,471,Karnataka,Tumakuru,29,548,lgd,Karnataka,Tumakuru,29,548,lgd
+auto,code,1.000,District LGD code already matches.,108,Madhya Pradesh,Umaria,23,436,lgd,Madhya Pradesh,Umaria,23,436,lgd
+auto,code,1.000,District LGD code already matches.,382,Gujarat,Vadodara,24,461,lgd,Gujarat,Vadodara,24,461,lgd
+auto,code,1.000,District LGD code already matches.,311,Bihar,Vaishali,10,224,lgd,Bihar,Vaishali,10,224,lgd
+auto,code,1.000,District LGD code already matches.,383,Gujarat,Valsad,24,462,lgd,Gujarat,Valsad,24,462,lgd
+auto,code,1.000,District LGD code already matches.,701,Tamil Nadu,Viluppuram,33,596,lgd,Tamil Nadu,Viluppuram,33,596,lgd
+auto,code,1.000,District LGD code already matches.,209,Andhra Pradesh,Visakhapatnam,28,520,lgd,Andhra Pradesh,Visakhapatnam,28,520,lgd
+auto,code,1.000,District LGD code already matches.,210,Andhra Pradesh,Vizianagaram,28,521,lgd,Andhra Pradesh,Vizianagaram,28,521,lgd
+auto,code,1.000,District LGD code already matches.,805,Delhi,West,7,85,lgd,Delhi,West,7,85,lgd
+auto,code,1.000,District LGD code already matches.,353,Gujarat,Anand,24,440,lgd,Gujarat,Anand,24,440,lgd
+auto,code,1.000,District LGD code already matches.,189,Andhra Pradesh,Ananthapuramu,28,502,lgd,Andhra Pradesh,Ananthapuramu,28,502,lgd
+auto,code,1.000,District LGD code already matches.,552,Odisha,Anugul,21,344,lgd,Odisha,Anugul,21,344,lgd
+auto,code,1.000,District LGD code already matches.,57,Madhya Pradesh,Anuppur,23,390,lgd,Madhya Pradesh,Anuppur,23,390,lgd
+auto,code,1.000,District LGD code already matches.,275,Bihar,Araria,10,188,lgd,Bihar,Araria,10,188,lgd
+auto,code,1.000,District LGD code already matches.,665,Tamil Nadu,Ariyalur,33,610,lgd,Tamil Nadu,Ariyalur,33,610,lgd
+auto,code,1.000,District LGD code already matches.,58,Madhya Pradesh,Ashoknagar,23,391,lgd,Madhya Pradesh,Ashoknagar,23,391,lgd
+auto,code,1.000,District LGD code already matches.,120,Uttar Pradesh,Baghpat,9,124,lgd,Uttar Pradesh,Baghpat,9,124,lgd
+auto,code,1.000,District LGD code already matches.,59,Madhya Pradesh,Balaghat,23,392,lgd,Madhya Pradesh,Balaghat,23,392,lgd
+auto,code,1.000,District LGD code already matches.,610,Rajasthan,Balotra,8,775,lgd,Rajasthan,Balotra,8,775,lgd
+auto,code,1.000,District LGD code already matches.,355,Gujarat,Banas Kantha,24,441,lgd,Gujarat,Banas Kantha,24,441,lgd
+auto,code,1.000,District LGD code already matches.,611,Rajasthan,Banswara,8,88,lgd,Rajasthan,Banswara,8,88,lgd
+auto,code,1.000,District LGD code already matches.,612,Rajasthan,Baran,8,89,lgd,Rajasthan,Baran,8,89,lgd
+auto,code,1.000,District LGD code already matches.,555,Odisha,Bargarh,21,347,lgd,Odisha,Bargarh,21,347,lgd
+auto,code,1.000,District LGD code already matches.,127,Uttar Pradesh,Basti,9,131,lgd,Uttar Pradesh,Basti,9,131,lgd
+auto,code,1.000,District LGD code already matches.,614,Rajasthan,Beawar,8,774,lgd,Rajasthan,Beawar,8,774,lgd
+auto,code,1.000,District LGD code already matches.,449,Karnataka,Bengaluru Rural,29,526,lgd,Karnataka,Bengaluru Rural,29,526,lgd
+auto,code,1.000,District LGD code already matches.,356,Gujarat,Bharuch,24,442,lgd,Gujarat,Bharuch,24,442,lgd
+auto,code,1.000,District LGD code already matches.,63,Madhya Pradesh,Bhopal,23,396,lgd,Madhya Pradesh,Bhopal,23,396,lgd
+auto,code,1.000,District LGD code already matches.,557,Odisha,Boudh,21,349,lgd,Odisha,Boudh,21,349,lgd
+auto,code,1.000,District LGD code already matches.,26,Maharashtra,Buldhana,27,472,lgd,Maharashtra,Buldhana,27,472,lgd
+auto,code,1.000,District LGD code already matches.,64,Madhya Pradesh,Burhanpur,23,397,lgd,Madhya Pradesh,Burhanpur,23,397,lgd
+auto,code,1.000,District LGD code already matches.,215,Arunachal Pradesh,Changlang,12,229,lgd,Arunachal Pradesh,Changlang,12,229,lgd
+auto,code,1.000,District LGD code already matches.,422,Jharkhand,Chatra,20,323,lgd,Jharkhand,Chatra,20,323,lgd
+auto,code,1.000,District LGD code already matches.,454,Karnataka,Chikkamagaluru,29,532,lgd,Karnataka,Chikkamagaluru,29,532,lgd
+auto,code,1.000,District LGD code already matches.,455,Karnataka,Chitradurga,29,533,lgd,Karnataka,Chitradurga,29,533,lgd
+auto,code,1.000,District LGD code already matches.,619,Rajasthan,Chittorgarh,8,95,lgd,Rajasthan,Chittorgarh,8,95,lgd
+auto,code,1.000,District LGD code already matches.,535,Nagaland,Chumoukedima,13,758,lgd,Nagaland,Chumoukedima,13,758,lgd
+auto,code,1.000,District LGD code already matches.,620,Rajasthan,Churu,8,96,lgd,Rajasthan,Churu,8,96,lgd
+auto,code,1.000,District LGD code already matches.,764,West Bengal,Cooch Behar,19,308,lgd,West Bengal,Cooch Behar,19,308,lgd
+auto,code,1.000,District LGD code already matches.,791,The Dadra And Nagar Haveli And Daman And Diu,Dadra And Nagar Haveli,38,465,lgd,The Dadra And Nagar Haveli And Daman And Diu,Dadra And Nagar Haveli,38,465,lgd
+auto,code,1.000,District LGD code already matches.,423,Jharkhand,Deoghar,20,324,lgd,Jharkhand,Deoghar,20,324,lgd
+auto,code,1.000,District LGD code already matches.,362,Gujarat,Devbhumi Dwarka,24,674,lgd,Gujarat,Devbhumi Dwarka,24,674,lgd
+auto,code,1.000,District LGD code already matches.,322,Chhattisgarh,Dhamtari,22,377,lgd,Chhattisgarh,Dhamtari,22,377,lgd
+auto,code,1.000,District LGD code already matches.,252,Assam,Dima Hasao,18,299,lgd,Assam,Dima Hasao,18,299,lgd
+auto,code,1.000,District LGD code already matches.,425,Jharkhand,Dumka,20,326,lgd,Jharkhand,Dumka,20,326,lgd
+auto,code,1.000,District LGD code already matches.,796,Delhi,East,7,78,lgd,Delhi,East,7,78,lgd
+auto,code,1.000,District LGD code already matches.,521,Meghalaya,Eastern West Khasi Hills,17,740,lgd,Meghalaya,Eastern West Khasi Hills,17,740,lgd
+auto,code,1.000,District LGD code already matches.,193,Andhra Pradesh,East Godavari,28,505,lgd,Andhra Pradesh,East Godavari,28,505,lgd
+auto,code,1.000,District LGD code already matches.,512,Meghalaya,East Khasi Hills,17,274,lgd,Meghalaya,East Khasi Hills,17,274,lgd
+auto,code,1.000,District LGD code already matches.,426,Jharkhand,East Singhbum,20,327,lgd,Jharkhand,East Singhbum,20,327,lgd
+auto,code,1.000,District LGD code already matches.,29,Maharashtra,Gadchiroli,27,475,lgd,Maharashtra,Gadchiroli,27,475,lgd
+auto,code,1.000,District LGD code already matches.,561,Odisha,Gajapati,21,353,lgd,Odisha,Gajapati,21,353,lgd
+auto,code,1.000,District LGD code already matches.,812,Jammu And Kashmir,Ganderbal,1,626,lgd,Jammu And Kashmir,Ganderbal,1,626,lgd
+auto,code,1.000,District LGD code already matches.,325,Chhattisgarh,Gaurela-Pendra-Marwahi,22,734,lgd,Chhattisgarh,Gaurela-Pendra-Marwahi,22,734,lgd
+auto,code,1.000,District LGD code already matches.,428,Jharkhand,Giridih,20,329,lgd,Jharkhand,Giridih,20,329,lgd
+auto,code,1.000,District LGD code already matches.,364,Gujarat,Gir Somnath,24,675,lgd,Gujarat,Gir Somnath,24,675,lgd
+auto,code,1.000,District LGD code already matches.,253,Assam,Goalpara,18,287,lgd,Assam,Goalpara,18,287,lgd
+auto,code,1.000,District LGD code already matches.,30,Maharashtra,Gondia,27,476,lgd,Maharashtra,Gondia,27,476,lgd
+auto,code,1.000,District LGD code already matches.,195,Andhra Pradesh,Guntur,28,506,lgd,Andhra Pradesh,Guntur,28,506,lgd
+auto,code,1.000,District LGD code already matches.,256,Assam,Hojai,18,709,lgd,Assam,Hojai,18,709,lgd
+auto,code,1.000,District LGD code already matches.,767,West Bengal,Hooghly,19,312,lgd,West Bengal,Hooghly,19,312,lgd
+auto,code,1.000,District LGD code already matches.,591,Punjab,Hoshiarpur,3,33,lgd,Punjab,Hoshiarpur,3,33,lgd
+auto,code,1.000,District LGD code already matches.,768,West Bengal,Howrah,19,313,lgd,West Bengal,Howrah,19,313,lgd
+auto,code,1.000,District LGD code already matches.,497,Manipur,Imphal West,14,256,lgd,Manipur,Imphal West,14,256,lgd
+auto,code,1.000,District LGD code already matches.,77,Madhya Pradesh,Jabalpur,23,411,lgd,Madhya Pradesh,Jabalpur,23,411,lgd
+auto,code,1.000,District LGD code already matches.,592,Punjab,Jalandhar,3,34,lgd,Punjab,Jalandhar,3,34,lgd
+auto,code,1.000,District LGD code already matches.,32,Maharashtra,Jalgaon,27,478,lgd,Maharashtra,Jalgaon,27,478,lgd
+auto,code,1.000,District LGD code already matches.,813,Jammu And Kashmir,Jammu,1,5,lgd,Jammu And Kashmir,Jammu,1,5,lgd
+auto,code,1.000,District LGD code already matches.,635,Rajasthan,Jhunjhunu,8,106,lgd,Rajasthan,Jhunjhunu,8,106,lgd
+auto,code,1.000,District LGD code already matches.,711,Telangana,Jogulamba Gadwal,36,695,lgd,Telangana,Jogulamba Gadwal,36,695,lgd
+auto,code,1.000,District LGD code already matches.,499,Manipur,Kakching,14,711,lgd,Manipur,Kakching,14,711,lgd
+auto,code,1.000,District LGD code already matches.,462,Karnataka,Kalaburagi,29,538,lgd,Karnataka,Kalaburagi,29,538,lgd
+auto,code,1.000,District LGD code already matches.,500,Manipur,Kamjong,14,717,lgd,Manipur,Kamjong,14,717,lgd
+auto,code,1.000,District LGD code already matches.,258,Assam,Kamrup,18,291,lgd,Assam,Kamrup,18,291,lgd
+auto,code,1.000,District LGD code already matches.,501,Manipur,Kangpokpi,14,712,lgd,Manipur,Kangpokpi,14,712,lgd
+auto,code,1.000,District LGD code already matches.,260,Assam,Karbi Anglong,18,292,lgd,Assam,Karbi Anglong,18,292,lgd
+auto,code,1.000,District LGD code already matches.,482,Kerala,Kasaragod,32,558,lgd,Kerala,Kasaragod,32,558,lgd
+auto,code,1.000,District LGD code already matches.,714,Telangana,Khammam,36,509,lgd,Telangana,Khammam,36,509,lgd
+auto,code,1.000,District LGD code already matches.,526,Mizoram,Khawzawl,15,728,lgd,Mizoram,Khawzawl,15,728,lgd
+auto,code,1.000,District LGD code already matches.,570,Odisha,Khordha,21,362,lgd,Odisha,Khordha,21,362,lgd
+auto,code,1.000,District LGD code already matches.,463,Karnataka,Kodagu,29,541,lgd,Karnataka,Kodagu,29,541,lgd
+auto,code,1.000,District LGD code already matches.,571,Odisha,Koraput,21,363,lgd,Odisha,Koraput,21,363,lgd
+auto,code,1.000,District LGD code already matches.,331,Chhattisgarh,Korba,22,383,lgd,Chhattisgarh,Korba,22,383,lgd
+auto,code,1.000,District LGD code already matches.,332,Chhattisgarh,Korea,22,384,lgd,Chhattisgarh,Korea,22,384,lgd
+auto,code,1.000,District LGD code already matches.,221,Arunachal Pradesh,Kra Daadi,12,677,lgd,Arunachal Pradesh,Kra Daadi,12,677,lgd
+auto,code,1.000,District LGD code already matches.,677,Tamil Nadu,Krishnagiri,33,577,lgd,Tamil Nadu,Krishnagiri,33,577,lgd
+auto,code,1.000,District LGD code already matches.,396,Haryana,Kurukshetra,6,68,lgd,Haryana,Kurukshetra,6,68,lgd
+auto,code,1.000,District LGD code already matches.,414,Himachal Pradesh,Lahaul And Spiti,2,21,lgd,Himachal Pradesh,Lahaul And Spiti,2,21,lgd
+auto,code,1.000,District LGD code already matches.,263,Assam,Lakhimpur,18,295,lgd,Assam,Lakhimpur,18,295,lgd
+auto,code,1.000,District LGD code already matches.,223,Arunachal Pradesh,Leparada,12,724,lgd,Arunachal Pradesh,Leparada,12,724,lgd
+auto,code,1.000,District LGD code already matches.,225,Arunachal Pradesh,Longding,12,666,lgd,Arunachal Pradesh,Longding,12,666,lgd
+auto,code,1.000,District LGD code already matches.,228,Arunachal Pradesh,Lower Subansiri,12,236,lgd,Arunachal Pradesh,Lower Subansiri,12,236,lgd
+auto,code,1.000,District LGD code already matches.,594,Punjab,Ludhiana,3,36,lgd,Punjab,Ludhiana,3,36,lgd
+auto,code,1.000,District LGD code already matches.,717,Telangana,Mahabubnagar,36,512,lgd,Telangana,Mahabubnagar,36,512,lgd
+auto,code,1.000,District LGD code already matches.,333,Chhattisgarh,Mahasamund,22,385,lgd,Chhattisgarh,Mahasamund,22,385,lgd
+auto,code,1.000,District LGD code already matches.,834,Puducherry,Mahe,34,599,lgd,Puducherry,Mahe,34,599,lgd
+auto,code,1.000,District LGD code already matches.,84,Madhya Pradesh,Mandsaur,23,416,lgd,Madhya Pradesh,Mandsaur,23,416,lgd
+auto,code,1.000,District LGD code already matches.,466,Karnataka,Mandya,29,544,lgd,Karnataka,Mandya,29,544,lgd
+auto,code,1.000,District LGD code already matches.,85,Madhya Pradesh,MAUGANJ,23,766,lgd,Madhya Pradesh,MAUGANJ,23,766,lgd
+auto,code,1.000,District LGD code already matches.,335,Chhattisgarh,Mohla-Manpur-Ambagarh Chouki,22,761,lgd,Chhattisgarh,Mohla-Manpur-Ambagarh Chouki,22,761,lgd
+auto,code,1.000,District LGD code already matches.,266,Assam,Nagaon,18,297,lgd,Assam,Nagaon,18,297,lgd
+auto,code,1.000,District LGD code already matches.,267,Assam,Nalbari,18,298,lgd,Assam,Nalbari,18,298,lgd
+auto,code,1.000,District LGD code already matches.,681,Tamil Nadu,Namakkal,33,580,lgd,Tamil Nadu,Namakkal,33,580,lgd
+auto,code,1.000,District LGD code already matches.,229,Arunachal Pradesh,Namsai,12,678,lgd,Arunachal Pradesh,Namsai,12,678,lgd
+auto,code,1.000,District LGD code already matches.,200,Andhra Pradesh,Nandyal,28,755,lgd,Andhra Pradesh,Nandyal,28,755,lgd
+auto,code,1.000,District LGD code already matches.,644,Rajasthan,Neem Ka Thana,8,773,lgd,Rajasthan,Neem Ka Thana,8,773,lgd
+auto,code,1.000,District LGD code already matches.,797,Delhi,New Delhi,7,79,lgd,Delhi,New Delhi,7,79,lgd
+auto,code,1.000,District LGD code already matches.,576,Odisha,Nuapada,21,368,lgd,Odisha,Nuapada,21,368,lgd
+auto,code,1.000,District LGD code already matches.,374,Gujarat,Panch Mahals,24,454,lgd,Gujarat,Panch Mahals,24,454,lgd
+auto,code,1.000,District LGD code already matches.,312,Bihar,Pashchim Champaran,10,211,lgd,Bihar,Pashchim Champaran,10,211,lgd
+auto,code,1.000,District LGD code already matches.,375,Gujarat,Patan,24,455,lgd,Gujarat,Patan,24,455,lgd
+auto,code,1.000,District LGD code already matches.,683,Tamil Nadu,Perambalur,33,581,lgd,Tamil Nadu,Perambalur,33,581,lgd
+auto,code,1.000,District LGD code already matches.,544,Nagaland,Peren,13,613,lgd,Nagaland,Peren,13,613,lgd
+auto,code,1.000,District LGD code already matches.,545,Nagaland,Phek,13,248,lgd,Nagaland,Phek,13,248,lgd
+auto,code,1.000,District LGD code already matches.,503,Manipur,Pherzawl,14,715,lgd,Manipur,Pherzawl,14,715,lgd
+auto,code,1.000,District LGD code already matches.,204,Andhra Pradesh,Prakasam,28,517,lgd,Andhra Pradesh,Prakasam,28,517,lgd
+auto,code,1.000,District LGD code already matches.,647,Rajasthan,Pratapgarh,8,629,lgd,Rajasthan,Pratapgarh,8,629,lgd
+auto,code,1.000,District LGD code already matches.,684,Tamil Nadu,Pudukkottai,33,582,lgd,Tamil Nadu,Pudukkottai,33,582,lgd
+auto,code,1.000,District LGD code already matches.,780,West Bengal,Purba Medinipur,19,317,lgd,West Bengal,Purba Medinipur,19,317,lgd
+auto,code,1.000,District LGD code already matches.,301,Bihar,Purnia,10,214,lgd,Bihar,Purnia,10,214,lgd
+auto,code,1.000,District LGD code already matches.,781,West Bengal,Purulia,19,321,lgd,West Bengal,Purulia,19,321,lgd
+auto,code,1.000,District LGD code already matches.,340,Chhattisgarh,Rajnandgaon,22,388,lgd,Chhattisgarh,Rajnandgaon,22,388,lgd
+auto,code,1.000,District LGD code already matches.,648,Rajasthan,Rajsamand,8,112,lgd,Rajasthan,Rajsamand,8,112,lgd
+auto,code,1.000,District LGD code already matches.,685,Tamil Nadu,Ramanathapuram,33,583,lgd,Tamil Nadu,Ramanathapuram,33,583,lgd
+auto,code,1.000,District LGD code already matches.,440,Jharkhand,Ranchi,20,339,lgd,Jharkhand,Ranchi,20,339,lgd
+auto,code,1.000,District LGD code already matches.,45,Maharashtra,Ratnagiri,27,492,lgd,Maharashtra,Ratnagiri,27,492,lgd
+auto,code,1.000,District LGD code already matches.,578,Odisha,Rayagada,21,370,lgd,Odisha,Rayagada,21,370,lgd
+auto,code,1.000,District LGD code already matches.,303,Bihar,Saharsa,10,216,lgd,Bihar,Saharsa,10,216,lgd
+auto,code,1.000,District LGD code already matches.,441,Jharkhand,Sahebganj,20,340,lgd,Jharkhand,Sahebganj,20,340,lgd
+auto,code,1.000,District LGD code already matches.,342,Chhattisgarh,Sakti,22,762,lgd,Chhattisgarh,Sakti,22,762,lgd
+auto,code,1.000,District LGD code already matches.,176,Uttar Pradesh,Sant Kabir Nagar,9,178,lgd,Uttar Pradesh,Sant Kabir Nagar,9,178,lgd
+auto,code,1.000,District LGD code already matches.,442,Jharkhand,Saraikela Kharsawan,20,341,lgd,Jharkhand,Saraikela Kharsawan,20,341,lgd
+auto,code,1.000,District LGD code already matches.,651,Rajasthan,Sawai Madhopur,8,113,lgd,Rajasthan,Sawai Madhopur,8,113,lgd
+auto,code,1.000,District LGD code already matches.,742,Tripura,Sepahijala,16,653,lgd,Tripura,Sepahijala,16,653,lgd
+auto,code,1.000,District LGD code already matches.,533,Mizoram,Serchhip,15,268,lgd,Mizoram,Serchhip,15,268,lgd
+auto,code,1.000,District LGD code already matches.,100,Madhya Pradesh,Shahdol,23,429,lgd,Madhya Pradesh,Shahdol,23,429,lgd
+auto,code,1.000,District LGD code already matches.,307,Bihar,Sheohar,10,220,lgd,Bihar,Sheohar,10,220,lgd
+auto,code,1.000,District LGD code already matches.,179,Uttar Pradesh,Shrawasti,9,181,lgd,Uttar Pradesh,Shrawasti,9,181,lgd
+auto,code,1.000,District LGD code already matches.,443,Jharkhand,Simdega,20,342,lgd,Jharkhand,Simdega,20,342,lgd
+auto,code,1.000,District LGD code already matches.,309,Bihar,Siwan,10,222,lgd,Bihar,Siwan,10,222,lgd
+auto,code,1.000,District LGD code already matches.,418,Himachal Pradesh,Solan,2,25,lgd,Himachal Pradesh,Solan,2,25,lgd
+auto,code,1.000,District LGD code already matches.,803,Delhi,South East,7,670,lgd,Delhi,South East,7,670,lgd
+auto,code,1.000,District LGD code already matches.,804,Delhi,South West,7,84,lgd,Delhi,South West,7,84,lgd
+auto,code,1.000,District LGD code already matches.,345,Chhattisgarh,Surajpur,22,648,lgd,Chhattisgarh,Surajpur,22,648,lgd
+auto,code,1.000,District LGD code already matches.,346,Chhattisgarh,Surguja,22,389,lgd,Chhattisgarh,Surguja,22,389,lgd
+auto,code,1.000,District LGD code already matches.,505,Manipur,Tamenglong,14,258,lgd,Manipur,Tamenglong,14,258,lgd
+auto,code,1.000,District LGD code already matches.,605,Punjab,Tarn Taran,3,609,lgd,Punjab,Tarn Taran,3,609,lgd
+auto,code,1.000,District LGD code already matches.,234,Arunachal Pradesh,Tawang,12,238,lgd,Arunachal Pradesh,Tawang,12,238,lgd
+auto,code,1.000,District LGD code already matches.,689,Tamil Nadu,Tenkasi,33,733,lgd,Tamil Nadu,Tenkasi,33,733,lgd
+auto,code,1.000,District LGD code already matches.,690,Tamil Nadu,Thanjavur,33,586,lgd,Tamil Nadu,Thanjavur,33,586,lgd
+auto,code,1.000,District LGD code already matches.,682,Tamil Nadu,The Nilgiris,33,587,lgd,Tamil Nadu,The Nilgiris,33,587,lgd
+auto,code,1.000,District LGD code already matches.,271,Assam,Tinsukia,18,302,lgd,Assam,Tinsukia,18,302,lgd
+auto,code,1.000,District LGD code already matches.,235,Arunachal Pradesh,Tirap,12,239,lgd,Arunachal Pradesh,Tirap,12,239,lgd
+auto,code,1.000,District LGD code already matches.,695,Tamil Nadu,Tirupathur,33,732,lgd,Tamil Nadu,Tirupathur,33,732,lgd
+auto,code,1.000,District LGD code already matches.,655,Rajasthan,Tonk,8,116,lgd,Rajasthan,Tonk,8,116,lgd
+auto,code,1.000,District LGD code already matches.,472,Karnataka,Udupi,29,549,lgd,Karnataka,Udupi,29,549,lgd
+auto,code,1.000,District LGD code already matches.,508,Manipur,Ukhrul,14,260,lgd,Manipur,Ukhrul,14,260,lgd
+auto,code,1.000,District LGD code already matches.,419,Himachal Pradesh,Una,2,26,lgd,Himachal Pradesh,Una,2,26,lgd
+auto,code,1.000,District LGD code already matches.,329,Chhattisgarh,Uttar Bastar Kanker,22,381,lgd,Chhattisgarh,Uttar Bastar Kanker,22,381,lgd
+auto,code,1.000,District LGD code already matches.,109,Madhya Pradesh,Vidisha,23,437,lgd,Madhya Pradesh,Vidisha,23,437,lgd
+auto,code,1.000,District LGD code already matches.,476,Karnataka,Vijayanagar,29,738,lgd,Karnataka,Vijayanagar,29,738,lgd
+auto,code,1.000,District LGD code already matches.,474,Karnataka,Vijayapura,29,530,lgd,Karnataka,Vijayapura,29,530,lgd
+auto,code,1.000,District LGD code already matches.,733,Telangana,Vikarabad,36,698,lgd,Telangana,Vikarabad,36,698,lgd
+auto,code,1.000,District LGD code already matches.,52,Maharashtra,Washim,27,499,lgd,Maharashtra,Washim,27,499,lgd
+auto,code,1.000,District LGD code already matches.,273,Assam,West Karbi Anglong,18,710,lgd,Assam,West Karbi Anglong,18,710,lgd
+auto,code,1.000,District LGD code already matches.,549,Nagaland,Wokha,13,250,lgd,Nagaland,Wokha,13,250,lgd
+auto,code,1.000,District LGD code already matches.,704,Telangana,Adilabad,36,501,lgd,Telangana,Adilabad,36,501,lgd
+auto,code,1.000,District LGD code already matches.,351,Gujarat,Ahmedabad,24,438,lgd,Gujarat,Ahmedabad,24,438,lgd
+auto,code,1.000,District LGD code already matches.,523,Mizoram,Aizawl,15,261,lgd,Mizoram,Aizawl,15,261,lgd
+auto,code,1.000,District LGD code already matches.,22,Maharashtra,Akola,27,467,lgd,Maharashtra,Akola,27,467,lgd
+auto,code,1.000,District LGD code already matches.,112,Uttar Pradesh,Aligarh,9,119,lgd,Uttar Pradesh,Aligarh,9,119,lgd
+auto,code,1.000,District LGD code already matches.,56,Madhya Pradesh,Alirajpur,23,639,lgd,Madhya Pradesh,Alirajpur,23,639,lgd
+auto,code,1.000,District LGD code already matches.,608,Rajasthan,Alwar,8,87,lgd,Rajasthan,Alwar,8,87,lgd
+auto,code,1.000,District LGD code already matches.,114,Uttar Pradesh,Amethi,9,640,lgd,Uttar Pradesh,Amethi,9,640,lgd
+auto,code,1.000,District LGD code already matches.,118,Uttar Pradesh,Azamgarh,9,123,lgd,Uttar Pradesh,Azamgarh,9,123,lgd
+auto,code,1.000,District LGD code already matches.,446,Karnataka,Bagalkote,29,524,lgd,Karnataka,Bagalkote,29,524,lgd
+auto,code,1.000,District LGD code already matches.,748,Uttarakhand,Bageshwar,5,46,lgd,Uttarakhand,Bageshwar,5,46,lgd
+auto,code,1.000,District LGD code already matches.,447,Karnataka,Ballari,29,528,lgd,Karnataka,Ballari,29,528,lgd
+auto,code,1.000,District LGD code already matches.,191,Andhra Pradesh,Bapatla,28,750,lgd,Andhra Pradesh,Bapatla,28,750,lgd
+auto,code,1.000,District LGD code already matches.,613,Rajasthan,Barmer,8,90,lgd,Rajasthan,Barmer,8,90,lgd
+auto,code,1.000,District LGD code already matches.,584,Punjab,Barnala,3,605,lgd,Punjab,Barnala,3,605,lgd
+auto,code,1.000,District LGD code already matches.,242,Assam,Barpeta,18,280,lgd,Assam,Barpeta,18,280,lgd
+auto,code,1.000,District LGD code already matches.,317,Chhattisgarh,Bastar,22,374,lgd,Chhattisgarh,Bastar,22,374,lgd
+auto,code,1.000,District LGD code already matches.,61,Madhya Pradesh,Betul,23,394,lgd,Madhya Pradesh,Betul,23,394,lgd
+auto,code,1.000,District LGD code already matches.,556,Odisha,Bhadrak,21,348,lgd,Odisha,Bhadrak,21,348,lgd
+auto,code,1.000,District LGD code already matches.,357,Gujarat,Bhavnagar,24,443,lgd,Gujarat,Bhavnagar,24,443,lgd
+auto,code,1.000,District LGD code already matches.,616,Rajasthan,Bhilwara,8,92,lgd,Rajasthan,Bhilwara,8,92,lgd
+auto,code,1.000,District LGD code already matches.,386,Haryana,Bhiwani,6,59,lgd,Haryana,Bhiwani,6,59,lgd
+auto,code,1.000,District LGD code already matches.,451,Karnataka,Bidar,29,529,lgd,Karnataka,Bidar,29,529,lgd
+auto,code,1.000,District LGD code already matches.,129,Uttar Pradesh,Bijnor,9,132,lgd,Uttar Pradesh,Bijnor,9,132,lgd
+auto,code,1.000,District LGD code already matches.,408,Himachal Pradesh,Bilaspur,2,15,lgd,Himachal Pradesh,Bilaspur,2,15,lgd
+auto,code,1.000,District LGD code already matches.,421,Jharkhand,Bokaro,20,322,lgd,Jharkhand,Bokaro,20,322,lgd
+auto,code,1.000,District LGD code already matches.,244,Assam,Bongaigaon,18,281,lgd,Assam,Bongaigaon,18,281,lgd
+auto,code,1.000,District LGD code already matches.,810,Jammu And Kashmir,Budgam,1,2,lgd,Jammu And Kashmir,Budgam,1,2,lgd
+auto,code,1.000,District LGD code already matches.,282,Bihar,Buxar,10,194,lgd,Bihar,Buxar,10,194,lgd
+auto,code,1.000,District LGD code already matches.,795,Delhi,Central,7,77,lgd,Delhi,Central,7,77,lgd
+auto,code,1.000,District LGD code already matches.,409,Himachal Pradesh,Chamba,2,16,lgd,Himachal Pradesh,Chamba,2,16,lgd
+auto,code,1.000,District LGD code already matches.,524,Mizoram,Champhai,15,262,lgd,Mizoram,Champhai,15,262,lgd
+auto,code,1.000,District LGD code already matches.,789,Chandigarh,Chandigarh,4,44,lgd,Chandigarh,Chandigarh,4,44,lgd
+auto,code,1.000,District LGD code already matches.,666,Tamil Nadu,Chengalpattu,33,730,lgd,Tamil Nadu,Chengalpattu,33,730,lgd
+auto,code,1.000,District LGD code already matches.,7,Maharashtra,Chhatrapati Sambhajinagar,27,469,lgd,Maharashtra,Chhatrapati Sambhajinagar,27,469,lgd
+auto,code,1.000,District LGD code already matches.,66,Madhya Pradesh,Chhindwara,23,399,lgd,Madhya Pradesh,Chhindwara,23,399,lgd
+auto,code,1.000,District LGD code already matches.,132,Uttar Pradesh,Chitrakoot,9,136,lgd,Uttar Pradesh,Chitrakoot,9,136,lgd
+auto,code,1.000,District LGD code already matches.,495,Manipur,Churachandpur,14,254,lgd,Manipur,Churachandpur,14,254,lgd
+auto,code,1.000,District LGD code already matches.,669,Tamil Nadu,Cuddalore,33,570,lgd,Tamil Nadu,Cuddalore,33,570,lgd
+auto,code,1.000,District LGD code already matches.,558,Odisha,Cuttack,21,350,lgd,Odisha,Cuttack,21,350,lgd
+auto,code,1.000,District LGD code already matches.,456,Karnataka,Dakshina Kannada,29,534,lgd,Karnataka,Dakshina Kannada,29,534,lgd
+auto,code,1.000,District LGD code already matches.,792,The Dadra And Nagar Haveli And Daman And Diu,Daman,38,463,lgd,The Dadra And Nagar Haveli And Daman And Diu,Daman,38,463,lgd
+auto,code,1.000,District LGD code already matches.,283,Bihar,Darbhanga,10,195,lgd,Bihar,Darbhanga,10,195,lgd
+auto,code,1.000,District LGD code already matches.,621,Rajasthan,Dausa,8,97,lgd,Rajasthan,Dausa,8,97,lgd
+auto,code,1.000,District LGD code already matches.,622,Rajasthan,Deeg,8,767,lgd,Rajasthan,Deeg,8,767,lgd
+auto,code,1.000,District LGD code already matches.,133,Uttar Pradesh,Deoria,9,137,lgd,Uttar Pradesh,Deoria,9,137,lgd
+auto,code,1.000,District LGD code already matches.,69,Madhya Pradesh,Dewas,23,402,lgd,Madhya Pradesh,Dewas,23,402,lgd
+auto,code,1.000,District LGD code already matches.,70,Madhya Pradesh,Dhar,23,403,lgd,Madhya Pradesh,Dhar,23,403,lgd
+auto,code,1.000,District LGD code already matches.,41,Maharashtra,Dharashiv,27,488,lgd,Maharashtra,Dharashiv,27,488,lgd
+auto,code,1.000,District LGD code already matches.,28,Maharashtra,Dhule,27,474,lgd,Maharashtra,Dhule,27,474,lgd
+auto,code,1.000,District LGD code already matches.,197,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,28,747,lgd,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,28,747,lgd
+auto,code,1.000,District LGD code already matches.,217,Arunachal Pradesh,East Kameng,12,231,lgd,Arunachal Pradesh,East Kameng,12,231,lgd
+auto,code,1.000,District LGD code already matches.,135,Uttar Pradesh,Etawah,9,139,lgd,Uttar Pradesh,Etawah,9,139,lgd
+auto,code,1.000,District LGD code already matches.,388,Haryana,Faridabad,6,60,lgd,Haryana,Faridabad,6,60,lgd
+auto,code,1.000,District LGD code already matches.,138,Uttar Pradesh,Firozabad,9,143,lgd,Uttar Pradesh,Firozabad,9,143,lgd
+auto,code,1.000,District LGD code already matches.,627,Rajasthan,Ganganagar,8,100,lgd,Rajasthan,Ganganagar,8,100,lgd
+auto,code,1.000,District LGD code already matches.,254,Assam,Golaghat,18,288,lgd,Assam,Golaghat,18,288,lgd
+auto,code,1.000,District LGD code already matches.,143,Uttar Pradesh,Gorakhpur,9,148,lgd,Uttar Pradesh,Gorakhpur,9,148,lgd
+auto,code,1.000,District LGD code already matches.,72,Madhya Pradesh,Guna,23,406,lgd,Madhya Pradesh,Guna,23,406,lgd
+auto,code,1.000,District LGD code already matches.,659,Sikkim,Gyalshing,11,228,lgd,Sikkim,Gyalshing,11,228,lgd
+auto,code,1.000,District LGD code already matches.,144,Uttar Pradesh,Hamirpur,9,149,lgd,Uttar Pradesh,Hamirpur,9,149,lgd
+auto,code,1.000,District LGD code already matches.,480,Kerala,Idukki,32,556,lgd,Kerala,Idukki,32,556,lgd
+auto,code,1.000,District LGD code already matches.,496,Manipur,Imphal East,14,255,lgd,Manipur,Imphal East,14,255,lgd
+auto,code,1.000,District LGD code already matches.,76,Madhya Pradesh,Indore,23,410,lgd,Madhya Pradesh,Indore,23,410,lgd
+auto,code,1.000,District LGD code already matches.,631,Rajasthan,Jaipur (Gramin),8,783,lgd,Rajasthan,Jaipur (Gramin),8,783,lgd
+auto,code,1.000,District LGD code already matches.,632,Rajasthan,Jaisalmer,8,103,lgd,Rajasthan,Jaisalmer,8,103,lgd
+auto,code,1.000,District LGD code already matches.,709,Telangana,Jangoan,36,689,lgd,Telangana,Jangoan,36,689,lgd
+auto,code,1.000,District LGD code already matches.,149,Uttar Pradesh,Jaunpur,9,152,lgd,Uttar Pradesh,Jaunpur,9,152,lgd
+auto,code,1.000,District LGD code already matches.,392,Haryana,Jhajjar,6,64,lgd,Haryana,Jhajjar,6,64,lgd
+auto,code,1.000,District LGD code already matches.,366,Gujarat,Junagadh,24,448,lgd,Gujarat,Junagadh,24,448,lgd
+auto,code,1.000,District LGD code already matches.,394,Haryana,Kaithal,6,66,lgd,Haryana,Kaithal,6,66,lgd
+auto,code,1.000,District LGD code already matches.,220,Arunachal Pradesh,Kamle,12,718,lgd,Arunachal Pradesh,Kamle,12,718,lgd
+auto,code,1.000,District LGD code already matches.,675,Tamil Nadu,Kanniyakumari,33,575,lgd,Tamil Nadu,Kanniyakumari,33,575,lgd
+auto,code,1.000,District LGD code already matches.,833,Puducherry,Karaikal,34,598,lgd,Puducherry,Karaikal,34,598,lgd
+auto,code,1.000,District LGD code already matches.,261,Assam,Karimganj,18,293,lgd,Assam,Karimganj,18,293,lgd
+auto,code,1.000,District LGD code already matches.,155,Uttar Pradesh,Kaushambi,9,158,lgd,Uttar Pradesh,Kaushambi,9,158,lgd
+auto,code,1.000,District LGD code already matches.,639,Rajasthan,Kekri,8,781,lgd,Rajasthan,Kekri,8,781,lgd
+auto,code,1.000,District LGD code already matches.,569,Odisha,Kendujhar,21,361,lgd,Odisha,Kendujhar,21,361,lgd
+auto,code,1.000,District LGD code already matches.,341,Chhattisgarh,Khairagarh-Chhuikhadan-Gandai,22,759,lgd,Chhattisgarh,Khairagarh-Chhuikhadan-Gandai,22,759,lgd
+auto,code,1.000,District LGD code already matches.,538,Nagaland,Kohima,13,245,lgd,Nagaland,Kohima,13,245,lgd
+auto,code,1.000,District LGD code already matches.,262,Assam,Kokrajhar,18,294,lgd,Assam,Kokrajhar,18,294,lgd
+auto,code,1.000,District LGD code already matches.,34,Maharashtra,Kolhapur,27,480,lgd,Maharashtra,Kolhapur,27,480,lgd
+auto,code,1.000,District LGD code already matches.,330,Chhattisgarh,Kondagaon,22,643,lgd,Chhattisgarh,Kondagaon,22,643,lgd
+auto,code,1.000,District LGD code already matches.,413,Himachal Pradesh,Kullu,2,20,lgd,Himachal Pradesh,Kullu,2,20,lgd
+auto,code,1.000,District LGD code already matches.,222,Arunachal Pradesh,Kurung Kumey,12,233,lgd,Arunachal Pradesh,Kurung Kumey,12,233,lgd
+auto,code,1.000,District LGD code already matches.,829,Ladakh,Leh Ladakh,37,9,lgd,Ladakh,Leh Ladakh,37,9,lgd
+auto,code,1.000,District LGD code already matches.,159,Uttar Pradesh,Lucknow,9,162,lgd,Uttar Pradesh,Lucknow,9,162,lgd
+auto,code,1.000,District LGD code already matches.,294,Bihar,Madhepura,10,205,lgd,Bihar,Madhepura,10,205,lgd
+auto,code,1.000,District LGD code already matches.,595,Punjab,Malerkotla,3,737,lgd,Punjab,Malerkotla,3,737,lgd
+auto,code,1.000,District LGD code already matches.,660,Sikkim,Mangan,11,226,lgd,Sikkim,Mangan,11,226,lgd
+auto,code,1.000,District LGD code already matches.,596,Punjab,Mansa,3,37,lgd,Punjab,Mansa,3,37,lgd
+auto,code,1.000,District LGD code already matches.,265,Assam,Marigaon,18,296,lgd,Assam,Marigaon,18,296,lgd
+auto,code,1.000,District LGD code already matches.,163,Uttar Pradesh,Mathura,9,167,lgd,Uttar Pradesh,Mathura,9,167,lgd
+auto,code,1.000,District LGD code already matches.,165,Uttar Pradesh,Meerut,9,169,lgd,Uttar Pradesh,Meerut,9,169,lgd
+auto,code,1.000,District LGD code already matches.,597,Punjab,Moga,3,38,lgd,Punjab,Moga,3,38,lgd
+auto,code,1.000,District LGD code already matches.,336,Chhattisgarh,Mungeli,22,647,lgd,Chhattisgarh,Mungeli,22,647,lgd
+auto,code,1.000,District LGD code already matches.,168,Uttar Pradesh,Muzaffarnagar,9,172,lgd,Uttar Pradesh,Muzaffarnagar,9,172,lgd
+auto,code,1.000,District LGD code already matches.,297,Bihar,Muzaffarpur,10,208,lgd,Bihar,Muzaffarpur,10,208,lgd
+auto,code,1.000,District LGD code already matches.,643,Rajasthan,Nagaur,8,110,lgd,Rajasthan,Nagaur,8,110,lgd
+auto,code,1.000,District LGD code already matches.,661,Sikkim,Namchi,11,227,lgd,Sikkim,Namchi,11,227,lgd
+auto,code,1.000,District LGD code already matches.,337,Chhattisgarh,Narayanpur,22,637,lgd,Chhattisgarh,Narayanpur,22,637,lgd
+auto,code,1.000,District LGD code already matches.,372,Gujarat,Narmada,24,452,lgd,Gujarat,Narmada,24,452,lgd
+auto,code,1.000,District LGD code already matches.,575,Odisha,Nayagarh,21,367,lgd,Odisha,Nayagarh,21,367,lgd
+auto,code,1.000,District LGD code already matches.,542,Nagaland,Niuland,13,764,lgd,Nagaland,Niuland,13,764,lgd
+auto,code,1.000,District LGD code already matches.,776,West Bengal,North 24 Parganas,19,303,lgd,West Bengal,North 24 Parganas,19,303,lgd
+auto,code,1.000,District LGD code already matches.,786,Andaman And Nicobar Islands,North And Middle Andaman,35,632,lgd,Andaman And Nicobar Islands,North And Middle Andaman,35,632,lgd
+auto,code,1.000,District LGD code already matches.,513,Meghalaya,North Garo Hills,17,656,lgd,Meghalaya,North Garo Hills,17,656,lgd
+auto,code,1.000,District LGD code already matches.,398,Haryana,Nuh,6,604,lgd,Haryana,Nuh,6,604,lgd
+auto,code,1.000,District LGD code already matches.,662,Sikkim,Pakyong,11,741,lgd,Sikkim,Pakyong,11,741,lgd
+auto,code,1.000,District LGD code already matches.,645,Rajasthan,Pali,8,111,lgd,Rajasthan,Pali,8,111,lgd
+auto,code,1.000,District LGD code already matches.,202,Andhra Pradesh,Palnadu,28,751,lgd,Andhra Pradesh,Palnadu,28,751,lgd
+auto,code,1.000,District LGD code already matches.,399,Haryana,Palwal,6,619,lgd,Haryana,Palwal,6,619,lgd
+auto,code,1.000,District LGD code already matches.,91,Madhya Pradesh,Panna,23,420,lgd,Madhya Pradesh,Panna,23,420,lgd
+auto,code,1.000,District LGD code already matches.,754,Uttarakhand,Pauri Garhwal,5,52,lgd,Uttarakhand,Pauri Garhwal,5,52,lgd
+auto,code,1.000,District LGD code already matches.,646,Rajasthan,Phalodi,8,772,lgd,Rajasthan,Phalodi,8,772,lgd
+auto,code,1.000,District LGD code already matches.,169,Uttar Pradesh,Pilibhit,9,173,lgd,Uttar Pradesh,Pilibhit,9,173,lgd
+auto,code,1.000,District LGD code already matches.,779,West Bengal,Purba Bardhaman,19,306,lgd,West Bengal,Purba Bardhaman,19,306,lgd
+auto,code,1.000,District LGD code already matches.,377,Gujarat,Rajkot,24,457,lgd,Gujarat,Rajkot,24,457,lgd
+auto,code,1.000,District LGD code already matches.,469,Karnataka,Ramanagara,29,631,lgd,Karnataka,Ramanagara,29,631,lgd
+auto,code,1.000,District LGD code already matches.,439,Jharkhand,Ramgarh,20,607,lgd,Jharkhand,Ramgarh,20,607,lgd
+auto,code,1.000,District LGD code already matches.,173,Uttar Pradesh,Rampur,9,176,lgd,Uttar Pradesh,Rampur,9,176,lgd
+auto,code,1.000,District LGD code already matches.,686,Tamil Nadu,Ranipet,33,731,lgd,Tamil Nadu,Ranipet,33,731,lgd
+auto,code,1.000,District LGD code already matches.,95,Madhya Pradesh,Rewa,23,424,lgd,Madhya Pradesh,Rewa,23,424,lgd
+auto,code,1.000,District LGD code already matches.,302,Bihar,Rohtas,10,215,lgd,Bihar,Rohtas,10,215,lgd
+auto,code,1.000,District LGD code already matches.,602,Punjab,Rupnagar,3,42,lgd,Punjab,Rupnagar,3,42,lgd
+auto,code,1.000,District LGD code already matches.,650,Rajasthan,Sanchore,8,779,lgd,Rajasthan,Sanchore,8,779,lgd
+auto,code,1.000,District LGD code already matches.,47,Maharashtra,Satara,27,494,lgd,Maharashtra,Satara,27,494,lgd
+auto,code,1.000,District LGD code already matches.,99,Madhya Pradesh,Seoni,23,428,lgd,Madhya Pradesh,Seoni,23,428,lgd
+auto,code,1.000,District LGD code already matches.,177,Uttar Pradesh,Shahjahanpur,9,180,lgd,Uttar Pradesh,Shahjahanpur,9,180,lgd
+auto,code,1.000,District LGD code already matches.,101,Madhya Pradesh,Shajapur,23,430,lgd,Madhya Pradesh,Shajapur,23,430,lgd
+auto,code,1.000,District LGD code already matches.,102,Madhya Pradesh,Sheopur,23,431,lgd,Madhya Pradesh,Sheopur,23,431,lgd
+auto,code,1.000,District LGD code already matches.,103,Madhya Pradesh,Shivpuri,23,432,lgd,Madhya Pradesh,Shivpuri,23,432,lgd
+auto,code,1.000,District LGD code already matches.,824,Jammu And Kashmir,Shopian,1,625,lgd,Jammu And Kashmir,Shopian,1,625,lgd
+auto,code,1.000,District LGD code already matches.,104,Madhya Pradesh,Sidhi,23,433,lgd,Madhya Pradesh,Sidhi,23,433,lgd
+auto,code,1.000,District LGD code already matches.,105,Madhya Pradesh,Singrauli,23,638,lgd,Madhya Pradesh,Singrauli,23,638,lgd
+auto,code,1.000,District LGD code already matches.,181,Uttar Pradesh,Sitapur,9,183,lgd,Uttar Pradesh,Sitapur,9,183,lgd
+auto,code,1.000,District LGD code already matches.,49,Maharashtra,Solapur,27,496,lgd,Maharashtra,Solapur,27,496,lgd
+auto,code,1.000,District LGD code already matches.,663,Sikkim,Soreng,11,742,lgd,Sikkim,Soreng,11,742,lgd
+auto,code,1.000,District LGD code already matches.,802,Delhi,South,7,83,lgd,Delhi,South,7,83,lgd
+auto,code,1.000,District LGD code already matches.,270,Assam,South Salmara Mancachar,18,707,lgd,Assam,South Salmara Mancachar,18,707,lgd
+auto,code,1.000,District LGD code already matches.,516,Meghalaya,South West Garo Hills,17,663,lgd,Meghalaya,South West Garo Hills,17,663,lgd
+auto,code,1.000,District LGD code already matches.,207,Andhra Pradesh,Srikakulam,28,519,lgd,Andhra Pradesh,Srikakulam,28,519,lgd
+auto,code,1.000,District LGD code already matches.,344,Chhattisgarh,Sukma,22,642,lgd,Chhattisgarh,Sukma,22,642,lgd
+auto,code,1.000,District LGD code already matches.,310,Bihar,Supaul,10,223,lgd,Bihar,Supaul,10,223,lgd
+missing_in_db,none,0.588,No safe candidate above review threshold.,,,,,,,Assam,Tamulpur,18,756,lgd
+auto,code,1.000,District LGD code already matches.,757,Uttarakhand,Tehri Garhwal,5,55,lgd,Uttarakhand,Tehri Garhwal,5,55,lgd
+auto,code,1.000,District LGD code already matches.,50,Maharashtra,Thane,27,497,lgd,Maharashtra,Thane,27,497,lgd
+auto,code,1.000,District LGD code already matches.,489,Kerala,Thiruvananthapuram,32,565,lgd,Kerala,Thiruvananthapuram,32,565,lgd
+auto,code,1.000,District LGD code already matches.,693,Tamil Nadu,Tiruchirappalli,33,591,lgd,Tamil Nadu,Tiruchirappalli,33,591,lgd
+auto,code,1.000,District LGD code already matches.,696,Tamil Nadu,Tiruppur,33,634,lgd,Tamil Nadu,Tiruppur,33,634,lgd
+auto,code,1.000,District LGD code already matches.,698,Tamil Nadu,Tiruvannamalai,33,593,lgd,Tamil Nadu,Tiruvannamalai,33,593,lgd
+auto,code,1.000,District LGD code already matches.,656,Rajasthan,Udaipur,8,117,lgd,Rajasthan,Udaipur,8,117,lgd
+auto,code,1.000,District LGD code already matches.,272,Assam,Udalguri,18,617,lgd,Assam,Udalguri,18,617,lgd
+auto,code,1.000,District LGD code already matches.,236,Arunachal Pradesh,Upper Siang,12,240,lgd,Arunachal Pradesh,Upper Siang,12,240,lgd
+auto,code,1.000,District LGD code already matches.,473,Karnataka,Uttara Kannada,29,550,lgd,Karnataka,Uttara Kannada,29,550,lgd
+auto,code,1.000,District LGD code already matches.,759,Uttarakhand,Uttar Kashi,5,57,lgd,Uttarakhand,Uttar Kashi,5,57,lgd
+auto,code,1.000,District LGD code already matches.,735,Telangana,Warangal,36,522,lgd,Telangana,Warangal,36,522,lgd
+auto,code,1.000,District LGD code already matches.,491,Kerala,Wayanad,32,567,lgd,Kerala,Wayanad,32,567,lgd
+auto,code,1.000,District LGD code already matches.,518,Meghalaya,West Garo Hills,17,278,lgd,Meghalaya,West Garo Hills,17,278,lgd
+auto,code,1.000,District LGD code already matches.,519,Meghalaya,West Jaintia Hills,17,275,lgd,Meghalaya,West Jaintia Hills,17,275,lgd
+auto,code,1.000,District LGD code already matches.,239,Arunachal Pradesh,West Siang,12,243,lgd,Arunachal Pradesh,West Siang,12,243,lgd
+auto,code,1.000,District LGD code already matches.,444,Jharkhand,West Singhbhum,20,343,lgd,Jharkhand,West Singhbhum,20,343,lgd
+auto,code,1.000,District LGD code already matches.,736,Telangana,Yadadri Bhuvanagiri,36,697,lgd,Telangana,Yadadri Bhuvanagiri,36,697,lgd
+auto,code,1.000,District LGD code already matches.,475,Karnataka,Yadgir,29,635,lgd,Karnataka,Yadgir,29,635,lgd
+auto,code,1.000,District LGD code already matches.,836,Puducherry,Yanam,34,601,lgd,Puducherry,Yanam,34,601,lgd
+auto,code,1.000,District LGD code already matches.,550,Nagaland,Zunheboto,13,251,lgd,Nagaland,Zunheboto,13,251,lgd
+db_only,none,0.000,Existing DB district did not match an LGD district.,219,Arunachal Pradesh,Itanagar Capital Complex,,,manual_pilot,,,,,

@@ -13,6 +13,7 @@ from shiva_discovery.places_client import (
 from shiva_discovery.repositories import (
     complete_task,
     fetch_and_mark_pending_tasks,
+    record_candidate_discovery_event,
     upsert_candidate,
 )
 
@@ -72,7 +73,7 @@ def main() -> int:
                 )
                 deduped = deduplicate_places(places)
                 with conn.transaction():
-                    for place in deduped.unique_places:
+                    for result_position, place in enumerate(deduped.unique_places, start=1):
                         candidate = place_to_candidate(
                             place,
                             source_query=str(task["search_query"]),
@@ -81,7 +82,14 @@ def main() -> int:
                             district=task.get("district_name"),
                         )
                         if candidate["google_place_id"]:
-                            upsert_candidate(conn, candidate)
+                            candidate_id = upsert_candidate(conn, candidate)
+                            record_candidate_discovery_event(
+                                conn,
+                                candidate_id=candidate_id,
+                                candidate=candidate,
+                                task=task,
+                                result_position=result_position,
+                            )
                     complete_task(
                         conn,
                         task_id=task_id,

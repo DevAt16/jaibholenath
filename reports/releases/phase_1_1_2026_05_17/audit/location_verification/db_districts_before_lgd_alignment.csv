@@ -1,0 +1,785 @@
+id,name,normalized_name,location_type,parent_id,state_name,district_name,sub_district_name,state_lgd_code,district_lgd_code,sub_district_lgd_code,village_lgd_code,source,full_path,search_priority,is_active,created_at,updated_at
+2,Pune,pune,district,1,Maharashtra,Pune,,,,,,manual_pilot,Maharashtra > Pune,20,True,2026-05-05 13:23:21.984310+05:30,2026-05-07 20:18:55.862663+05:30
+6,Nashik,nashik,district,1,Maharashtra,Nashik,,,,,,manual_pilot,Maharashtra > Nashik,20,True,2026-05-05 15:11:04.431538+05:30,2026-05-07 20:18:55.862663+05:30
+7,Aurangabad,aurangabad,district,1,Maharashtra,Aurangabad,,,,,,manual_pilot,Maharashtra > Aurangabad,20,True,2026-05-05 15:11:04.431538+05:30,2026-05-07 20:18:55.862663+05:30
+8,Ahmednagar,ahmednagar,district,1,Maharashtra,Ahmednagar,,,,,,manual_pilot,Maharashtra > Ahmednagar,20,True,2026-05-05 15:11:04.431538+05:30,2026-05-07 20:18:55.862663+05:30
+22,Akola,akola,district,1,Maharashtra,Akola,,,,,,manual_pilot,Maharashtra > Akola,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+23,Amravati,amravati,district,1,Maharashtra,Amravati,,,,,,manual_pilot,Maharashtra > Amravati,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+24,Beed,beed,district,1,Maharashtra,Beed,,,,,,manual_pilot,Maharashtra > Beed,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+25,Bhandara,bhandara,district,1,Maharashtra,Bhandara,,,,,,manual_pilot,Maharashtra > Bhandara,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+26,Buldhana,buldhana,district,1,Maharashtra,Buldhana,,,,,,manual_pilot,Maharashtra > Buldhana,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+27,Chandrapur,chandrapur,district,1,Maharashtra,Chandrapur,,,,,,manual_pilot,Maharashtra > Chandrapur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+28,Dhule,dhule,district,1,Maharashtra,Dhule,,,,,,manual_pilot,Maharashtra > Dhule,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+29,Gadchiroli,gadchiroli,district,1,Maharashtra,Gadchiroli,,,,,,manual_pilot,Maharashtra > Gadchiroli,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+30,Gondia,gondia,district,1,Maharashtra,Gondia,,,,,,manual_pilot,Maharashtra > Gondia,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+31,Hingoli,hingoli,district,1,Maharashtra,Hingoli,,,,,,manual_pilot,Maharashtra > Hingoli,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+32,Jalgaon,jalgaon,district,1,Maharashtra,Jalgaon,,,,,,manual_pilot,Maharashtra > Jalgaon,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+33,Jalna,jalna,district,1,Maharashtra,Jalna,,,,,,manual_pilot,Maharashtra > Jalna,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+34,Kolhapur,kolhapur,district,1,Maharashtra,Kolhapur,,,,,,manual_pilot,Maharashtra > Kolhapur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+35,Latur,latur,district,1,Maharashtra,Latur,,,,,,manual_pilot,Maharashtra > Latur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+36,Mumbai City,mumbai city,district,1,Maharashtra,Mumbai City,,,,,,manual_pilot,Maharashtra > Mumbai City,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+37,Mumbai Suburban,mumbai suburban,district,1,Maharashtra,Mumbai Suburban,,,,,,manual_pilot,Maharashtra > Mumbai Suburban,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+38,Nagpur,nagpur,district,1,Maharashtra,Nagpur,,,,,,manual_pilot,Maharashtra > Nagpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+39,Nanded,nanded,district,1,Maharashtra,Nanded,,,,,,manual_pilot,Maharashtra > Nanded,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+40,Nandurbar,nandurbar,district,1,Maharashtra,Nandurbar,,,,,,manual_pilot,Maharashtra > Nandurbar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+41,Osmanabad,osmanabad,district,1,Maharashtra,Osmanabad,,,,,,manual_pilot,Maharashtra > Osmanabad,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+42,Palghar,palghar,district,1,Maharashtra,Palghar,,,,,,manual_pilot,Maharashtra > Palghar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+43,Parbhani,parbhani,district,1,Maharashtra,Parbhani,,,,,,manual_pilot,Maharashtra > Parbhani,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+44,Raigad,raigad,district,1,Maharashtra,Raigad,,,,,,manual_pilot,Maharashtra > Raigad,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+45,Ratnagiri,ratnagiri,district,1,Maharashtra,Ratnagiri,,,,,,manual_pilot,Maharashtra > Ratnagiri,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+46,Sangli,sangli,district,1,Maharashtra,Sangli,,,,,,manual_pilot,Maharashtra > Sangli,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+47,Satara,satara,district,1,Maharashtra,Satara,,,,,,manual_pilot,Maharashtra > Satara,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+48,Sindhudurg,sindhudurg,district,1,Maharashtra,Sindhudurg,,,,,,manual_pilot,Maharashtra > Sindhudurg,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+49,Solapur,solapur,district,1,Maharashtra,Solapur,,,,,,manual_pilot,Maharashtra > Solapur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+50,Thane,thane,district,1,Maharashtra,Thane,,,,,,manual_pilot,Maharashtra > Thane,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+51,Wardha,wardha,district,1,Maharashtra,Wardha,,,,,,manual_pilot,Maharashtra > Wardha,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+52,Washim,washim,district,1,Maharashtra,Washim,,,,,,manual_pilot,Maharashtra > Washim,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+53,Yavatmal,yavatmal,district,1,Maharashtra,Yavatmal,,,,,,manual_pilot,Maharashtra > Yavatmal,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+55,Agar Malwa,agar malwa,district,54,Madhya Pradesh,Agar Malwa,,,,,,manual_pilot,Madhya Pradesh > Agar Malwa,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+56,Alirajpur,alirajpur,district,54,Madhya Pradesh,Alirajpur,,,,,,manual_pilot,Madhya Pradesh > Alirajpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+57,Anuppur,anuppur,district,54,Madhya Pradesh,Anuppur,,,,,,manual_pilot,Madhya Pradesh > Anuppur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+58,Ashoknagar,ashoknagar,district,54,Madhya Pradesh,Ashoknagar,,,,,,manual_pilot,Madhya Pradesh > Ashoknagar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+59,Balaghat,balaghat,district,54,Madhya Pradesh,Balaghat,,,,,,manual_pilot,Madhya Pradesh > Balaghat,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+60,Barwani,barwani,district,54,Madhya Pradesh,Barwani,,,,,,manual_pilot,Madhya Pradesh > Barwani,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+61,Betul,betul,district,54,Madhya Pradesh,Betul,,,,,,manual_pilot,Madhya Pradesh > Betul,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+62,Bhind,bhind,district,54,Madhya Pradesh,Bhind,,,,,,manual_pilot,Madhya Pradesh > Bhind,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+63,Bhopal,bhopal,district,54,Madhya Pradesh,Bhopal,,,,,,manual_pilot,Madhya Pradesh > Bhopal,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+64,Burhanpur,burhanpur,district,54,Madhya Pradesh,Burhanpur,,,,,,manual_pilot,Madhya Pradesh > Burhanpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+65,Chhatarpur,chhatarpur,district,54,Madhya Pradesh,Chhatarpur,,,,,,manual_pilot,Madhya Pradesh > Chhatarpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+66,Chhindwara,chhindwara,district,54,Madhya Pradesh,Chhindwara,,,,,,manual_pilot,Madhya Pradesh > Chhindwara,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+67,Damoh,damoh,district,54,Madhya Pradesh,Damoh,,,,,,manual_pilot,Madhya Pradesh > Damoh,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+68,Datia,datia,district,54,Madhya Pradesh,Datia,,,,,,manual_pilot,Madhya Pradesh > Datia,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+69,Dewas,dewas,district,54,Madhya Pradesh,Dewas,,,,,,manual_pilot,Madhya Pradesh > Dewas,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+70,Dhar,dhar,district,54,Madhya Pradesh,Dhar,,,,,,manual_pilot,Madhya Pradesh > Dhar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+71,Dindori,dindori,district,54,Madhya Pradesh,Dindori,,,,,,manual_pilot,Madhya Pradesh > Dindori,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+72,Guna,guna,district,54,Madhya Pradesh,Guna,,,,,,manual_pilot,Madhya Pradesh > Guna,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+73,Gwalior,gwalior,district,54,Madhya Pradesh,Gwalior,,,,,,manual_pilot,Madhya Pradesh > Gwalior,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+74,Harda,harda,district,54,Madhya Pradesh,Harda,,,,,,manual_pilot,Madhya Pradesh > Harda,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+75,Narmadapuram,narmadapuram,district,54,Madhya Pradesh,Narmadapuram,,,,,,manual_pilot,Madhya Pradesh > Narmadapuram,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+76,Indore,indore,district,54,Madhya Pradesh,Indore,,,,,,manual_pilot,Madhya Pradesh > Indore,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+77,Jabalpur,jabalpur,district,54,Madhya Pradesh,Jabalpur,,,,,,manual_pilot,Madhya Pradesh > Jabalpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+78,Jhabua,jhabua,district,54,Madhya Pradesh,Jhabua,,,,,,manual_pilot,Madhya Pradesh > Jhabua,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+79,Katni,katni,district,54,Madhya Pradesh,Katni,,,,,,manual_pilot,Madhya Pradesh > Katni,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+80,Khandwa,khandwa,district,54,Madhya Pradesh,Khandwa,,,,,,manual_pilot,Madhya Pradesh > Khandwa,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+81,Khargone,khargone,district,54,Madhya Pradesh,Khargone,,,,,,manual_pilot,Madhya Pradesh > Khargone,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+82,Maihar,maihar,district,54,Madhya Pradesh,Maihar,,,,,,manual_pilot,Madhya Pradesh > Maihar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+83,Mandla,mandla,district,54,Madhya Pradesh,Mandla,,,,,,manual_pilot,Madhya Pradesh > Mandla,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+84,Mandsaur,mandsaur,district,54,Madhya Pradesh,Mandsaur,,,,,,manual_pilot,Madhya Pradesh > Mandsaur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+85,Mauganj,mauganj,district,54,Madhya Pradesh,Mauganj,,,,,,manual_pilot,Madhya Pradesh > Mauganj,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+86,Morena,morena,district,54,Madhya Pradesh,Morena,,,,,,manual_pilot,Madhya Pradesh > Morena,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+87,Narsinghpur,narsinghpur,district,54,Madhya Pradesh,Narsinghpur,,,,,,manual_pilot,Madhya Pradesh > Narsinghpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+88,Neemuch,neemuch,district,54,Madhya Pradesh,Neemuch,,,,,,manual_pilot,Madhya Pradesh > Neemuch,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+89,Niwari,niwari,district,54,Madhya Pradesh,Niwari,,,,,,manual_pilot,Madhya Pradesh > Niwari,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+90,Pandhurna,pandhurna,district,54,Madhya Pradesh,Pandhurna,,,,,,manual_pilot,Madhya Pradesh > Pandhurna,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+91,Panna,panna,district,54,Madhya Pradesh,Panna,,,,,,manual_pilot,Madhya Pradesh > Panna,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+92,Raisen,raisen,district,54,Madhya Pradesh,Raisen,,,,,,manual_pilot,Madhya Pradesh > Raisen,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+93,Rajgarh,rajgarh,district,54,Madhya Pradesh,Rajgarh,,,,,,manual_pilot,Madhya Pradesh > Rajgarh,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+94,Ratlam,ratlam,district,54,Madhya Pradesh,Ratlam,,,,,,manual_pilot,Madhya Pradesh > Ratlam,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+95,Rewa,rewa,district,54,Madhya Pradesh,Rewa,,,,,,manual_pilot,Madhya Pradesh > Rewa,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+96,Sagar,sagar,district,54,Madhya Pradesh,Sagar,,,,,,manual_pilot,Madhya Pradesh > Sagar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+97,Satna,satna,district,54,Madhya Pradesh,Satna,,,,,,manual_pilot,Madhya Pradesh > Satna,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+98,Sehore,sehore,district,54,Madhya Pradesh,Sehore,,,,,,manual_pilot,Madhya Pradesh > Sehore,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+99,Seoni,seoni,district,54,Madhya Pradesh,Seoni,,,,,,manual_pilot,Madhya Pradesh > Seoni,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+100,Shahdol,shahdol,district,54,Madhya Pradesh,Shahdol,,,,,,manual_pilot,Madhya Pradesh > Shahdol,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+101,Shajapur,shajapur,district,54,Madhya Pradesh,Shajapur,,,,,,manual_pilot,Madhya Pradesh > Shajapur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+102,Sheopur,sheopur,district,54,Madhya Pradesh,Sheopur,,,,,,manual_pilot,Madhya Pradesh > Sheopur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+103,Shivpuri,shivpuri,district,54,Madhya Pradesh,Shivpuri,,,,,,manual_pilot,Madhya Pradesh > Shivpuri,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+104,Sidhi,sidhi,district,54,Madhya Pradesh,Sidhi,,,,,,manual_pilot,Madhya Pradesh > Sidhi,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+105,Singrauli,singrauli,district,54,Madhya Pradesh,Singrauli,,,,,,manual_pilot,Madhya Pradesh > Singrauli,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+106,Tikamgarh,tikamgarh,district,54,Madhya Pradesh,Tikamgarh,,,,,,manual_pilot,Madhya Pradesh > Tikamgarh,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+107,Ujjain,ujjain,district,54,Madhya Pradesh,Ujjain,,,,,,manual_pilot,Madhya Pradesh > Ujjain,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+108,Umaria,umaria,district,54,Madhya Pradesh,Umaria,,,,,,manual_pilot,Madhya Pradesh > Umaria,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+109,Vidisha,vidisha,district,54,Madhya Pradesh,Vidisha,,,,,,manual_pilot,Madhya Pradesh > Vidisha,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+111,Agra,agra,district,110,Uttar Pradesh,Agra,,,,,,manual_pilot,Uttar Pradesh > Agra,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+112,Aligarh,aligarh,district,110,Uttar Pradesh,Aligarh,,,,,,manual_pilot,Uttar Pradesh > Aligarh,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+113,Ambedkar Nagar,ambedkar nagar,district,110,Uttar Pradesh,Ambedkar Nagar,,,,,,manual_pilot,Uttar Pradesh > Ambedkar Nagar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+114,Amethi,amethi,district,110,Uttar Pradesh,Amethi,,,,,,manual_pilot,Uttar Pradesh > Amethi,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+115,Amroha,amroha,district,110,Uttar Pradesh,Amroha,,,,,,manual_pilot,Uttar Pradesh > Amroha,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+116,Auraiya,auraiya,district,110,Uttar Pradesh,Auraiya,,,,,,manual_pilot,Uttar Pradesh > Auraiya,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+117,Ayodhya,ayodhya,district,110,Uttar Pradesh,Ayodhya,,,,,,manual_pilot,Uttar Pradesh > Ayodhya,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+118,Azamgarh,azamgarh,district,110,Uttar Pradesh,Azamgarh,,,,,,manual_pilot,Uttar Pradesh > Azamgarh,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+119,Badaun,badaun,district,110,Uttar Pradesh,Badaun,,,,,,manual_pilot,Uttar Pradesh > Badaun,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+120,Bagpat,bagpat,district,110,Uttar Pradesh,Bagpat,,,,,,manual_pilot,Uttar Pradesh > Bagpat,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+121,Bahraich,bahraich,district,110,Uttar Pradesh,Bahraich,,,,,,manual_pilot,Uttar Pradesh > Bahraich,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+122,Ballia,ballia,district,110,Uttar Pradesh,Ballia,,,,,,manual_pilot,Uttar Pradesh > Ballia,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+123,Balrampur,balrampur,district,110,Uttar Pradesh,Balrampur,,,,,,manual_pilot,Uttar Pradesh > Balrampur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+124,Banda,banda,district,110,Uttar Pradesh,Banda,,,,,,manual_pilot,Uttar Pradesh > Banda,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+125,Barabanki,barabanki,district,110,Uttar Pradesh,Barabanki,,,,,,manual_pilot,Uttar Pradesh > Barabanki,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+126,Bareilly,bareilly,district,110,Uttar Pradesh,Bareilly,,,,,,manual_pilot,Uttar Pradesh > Bareilly,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+127,Basti,basti,district,110,Uttar Pradesh,Basti,,,,,,manual_pilot,Uttar Pradesh > Basti,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+128,Bhadohi,bhadohi,district,110,Uttar Pradesh,Bhadohi,,,,,,manual_pilot,Uttar Pradesh > Bhadohi,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+129,Bijnor,bijnor,district,110,Uttar Pradesh,Bijnor,,,,,,manual_pilot,Uttar Pradesh > Bijnor,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+130,Bulandshahr,bulandshahr,district,110,Uttar Pradesh,Bulandshahr,,,,,,manual_pilot,Uttar Pradesh > Bulandshahr,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+131,Chandauli,chandauli,district,110,Uttar Pradesh,Chandauli,,,,,,manual_pilot,Uttar Pradesh > Chandauli,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+132,Chitrakoot,chitrakoot,district,110,Uttar Pradesh,Chitrakoot,,,,,,manual_pilot,Uttar Pradesh > Chitrakoot,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+133,Deoria,deoria,district,110,Uttar Pradesh,Deoria,,,,,,manual_pilot,Uttar Pradesh > Deoria,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+134,Etah,etah,district,110,Uttar Pradesh,Etah,,,,,,manual_pilot,Uttar Pradesh > Etah,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+135,Etawah,etawah,district,110,Uttar Pradesh,Etawah,,,,,,manual_pilot,Uttar Pradesh > Etawah,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+136,Farrukhabad,farrukhabad,district,110,Uttar Pradesh,Farrukhabad,,,,,,manual_pilot,Uttar Pradesh > Farrukhabad,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+137,Fatehpur,fatehpur,district,110,Uttar Pradesh,Fatehpur,,,,,,manual_pilot,Uttar Pradesh > Fatehpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+138,Firozabad,firozabad,district,110,Uttar Pradesh,Firozabad,,,,,,manual_pilot,Uttar Pradesh > Firozabad,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+139,Gautam Buddha Nagar,gautam buddha nagar,district,110,Uttar Pradesh,Gautam Buddha Nagar,,,,,,manual_pilot,Uttar Pradesh > Gautam Buddha Nagar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+140,Ghaziabad,ghaziabad,district,110,Uttar Pradesh,Ghaziabad,,,,,,manual_pilot,Uttar Pradesh > Ghaziabad,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+141,Ghazipur,ghazipur,district,110,Uttar Pradesh,Ghazipur,,,,,,manual_pilot,Uttar Pradesh > Ghazipur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+142,Gonda,gonda,district,110,Uttar Pradesh,Gonda,,,,,,manual_pilot,Uttar Pradesh > Gonda,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+143,Gorakhpur,gorakhpur,district,110,Uttar Pradesh,Gorakhpur,,,,,,manual_pilot,Uttar Pradesh > Gorakhpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+144,Hamirpur,hamirpur,district,110,Uttar Pradesh,Hamirpur,,,,,,manual_pilot,Uttar Pradesh > Hamirpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+145,Hapur,hapur,district,110,Uttar Pradesh,Hapur,,,,,,manual_pilot,Uttar Pradesh > Hapur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+146,Hardoi,hardoi,district,110,Uttar Pradesh,Hardoi,,,,,,manual_pilot,Uttar Pradesh > Hardoi,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+147,Hathras,hathras,district,110,Uttar Pradesh,Hathras,,,,,,manual_pilot,Uttar Pradesh > Hathras,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+148,Jalaun,jalaun,district,110,Uttar Pradesh,Jalaun,,,,,,manual_pilot,Uttar Pradesh > Jalaun,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+149,Jaunpur,jaunpur,district,110,Uttar Pradesh,Jaunpur,,,,,,manual_pilot,Uttar Pradesh > Jaunpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+150,Jhansi,jhansi,district,110,Uttar Pradesh,Jhansi,,,,,,manual_pilot,Uttar Pradesh > Jhansi,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+151,Kannauj,kannauj,district,110,Uttar Pradesh,Kannauj,,,,,,manual_pilot,Uttar Pradesh > Kannauj,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+152,Kanpur Dehat,kanpur dehat,district,110,Uttar Pradesh,Kanpur Dehat,,,,,,manual_pilot,Uttar Pradesh > Kanpur Dehat,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+153,Kanpur Nagar,kanpur nagar,district,110,Uttar Pradesh,Kanpur Nagar,,,,,,manual_pilot,Uttar Pradesh > Kanpur Nagar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+154,Kasganj,kasganj,district,110,Uttar Pradesh,Kasganj,,,,,,manual_pilot,Uttar Pradesh > Kasganj,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+155,Kaushambi,kaushambi,district,110,Uttar Pradesh,Kaushambi,,,,,,manual_pilot,Uttar Pradesh > Kaushambi,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+156,Kushinagar,kushinagar,district,110,Uttar Pradesh,Kushinagar,,,,,,manual_pilot,Uttar Pradesh > Kushinagar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+157,Lakhimpur Kheri,lakhimpur kheri,district,110,Uttar Pradesh,Lakhimpur Kheri,,,,,,manual_pilot,Uttar Pradesh > Lakhimpur Kheri,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+158,Lalitpur,lalitpur,district,110,Uttar Pradesh,Lalitpur,,,,,,manual_pilot,Uttar Pradesh > Lalitpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+159,Lucknow,lucknow,district,110,Uttar Pradesh,Lucknow,,,,,,manual_pilot,Uttar Pradesh > Lucknow,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+160,Maharajganj,maharajganj,district,110,Uttar Pradesh,Maharajganj,,,,,,manual_pilot,Uttar Pradesh > Maharajganj,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+161,Mahoba,mahoba,district,110,Uttar Pradesh,Mahoba,,,,,,manual_pilot,Uttar Pradesh > Mahoba,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+162,Mainpuri,mainpuri,district,110,Uttar Pradesh,Mainpuri,,,,,,manual_pilot,Uttar Pradesh > Mainpuri,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+163,Mathura,mathura,district,110,Uttar Pradesh,Mathura,,,,,,manual_pilot,Uttar Pradesh > Mathura,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+164,Mau,mau,district,110,Uttar Pradesh,Mau,,,,,,manual_pilot,Uttar Pradesh > Mau,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+165,Meerut,meerut,district,110,Uttar Pradesh,Meerut,,,,,,manual_pilot,Uttar Pradesh > Meerut,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+166,Mirzapur,mirzapur,district,110,Uttar Pradesh,Mirzapur,,,,,,manual_pilot,Uttar Pradesh > Mirzapur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+167,Moradabad,moradabad,district,110,Uttar Pradesh,Moradabad,,,,,,manual_pilot,Uttar Pradesh > Moradabad,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+168,Muzaffarnagar,muzaffarnagar,district,110,Uttar Pradesh,Muzaffarnagar,,,,,,manual_pilot,Uttar Pradesh > Muzaffarnagar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+169,Pilibhit,pilibhit,district,110,Uttar Pradesh,Pilibhit,,,,,,manual_pilot,Uttar Pradesh > Pilibhit,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+170,Pratapgarh,pratapgarh,district,110,Uttar Pradesh,Pratapgarh,,,,,,manual_pilot,Uttar Pradesh > Pratapgarh,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+171,Prayagraj,prayagraj,district,110,Uttar Pradesh,Prayagraj,,,,,,manual_pilot,Uttar Pradesh > Prayagraj,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+172,Rae Bareli,rae bareli,district,110,Uttar Pradesh,Rae Bareli,,,,,,manual_pilot,Uttar Pradesh > Rae Bareli,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+173,Rampur,rampur,district,110,Uttar Pradesh,Rampur,,,,,,manual_pilot,Uttar Pradesh > Rampur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+174,Saharanpur,saharanpur,district,110,Uttar Pradesh,Saharanpur,,,,,,manual_pilot,Uttar Pradesh > Saharanpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+175,Sambhal,sambhal,district,110,Uttar Pradesh,Sambhal,,,,,,manual_pilot,Uttar Pradesh > Sambhal,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+176,Sant Kabir Nagar,sant kabir nagar,district,110,Uttar Pradesh,Sant Kabir Nagar,,,,,,manual_pilot,Uttar Pradesh > Sant Kabir Nagar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+177,Shahjahanpur,shahjahanpur,district,110,Uttar Pradesh,Shahjahanpur,,,,,,manual_pilot,Uttar Pradesh > Shahjahanpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+178,Shamli,shamli,district,110,Uttar Pradesh,Shamli,,,,,,manual_pilot,Uttar Pradesh > Shamli,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+179,Shravasti,shravasti,district,110,Uttar Pradesh,Shravasti,,,,,,manual_pilot,Uttar Pradesh > Shravasti,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+180,Siddharthnagar,siddharthnagar,district,110,Uttar Pradesh,Siddharthnagar,,,,,,manual_pilot,Uttar Pradesh > Siddharthnagar,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+181,Sitapur,sitapur,district,110,Uttar Pradesh,Sitapur,,,,,,manual_pilot,Uttar Pradesh > Sitapur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+182,Sonbhadra,sonbhadra,district,110,Uttar Pradesh,Sonbhadra,,,,,,manual_pilot,Uttar Pradesh > Sonbhadra,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+183,Sultanpur,sultanpur,district,110,Uttar Pradesh,Sultanpur,,,,,,manual_pilot,Uttar Pradesh > Sultanpur,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+184,Unnao,unnao,district,110,Uttar Pradesh,Unnao,,,,,,manual_pilot,Uttar Pradesh > Unnao,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+185,Varanasi,varanasi,district,110,Uttar Pradesh,Varanasi,,,,,,manual_pilot,Uttar Pradesh > Varanasi,20,True,2026-05-05 16:21:10.141099+05:30,2026-05-07 20:18:55.862663+05:30
+187,Alluri Sitharama Raju,alluri sitharama raju,district,186,Andhra Pradesh,Alluri Sitharama Raju,,,,,,manual_pilot,Andhra Pradesh > Alluri Sitharama Raju,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+188,Anakapalli,anakapalli,district,186,Andhra Pradesh,Anakapalli,,,,,,manual_pilot,Andhra Pradesh > Anakapalli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+189,Anantapur,anantapur,district,186,Andhra Pradesh,Anantapur,,,,,,manual_pilot,Andhra Pradesh > Anantapur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+190,Annamayya,annamayya,district,186,Andhra Pradesh,Annamayya,,,,,,manual_pilot,Andhra Pradesh > Annamayya,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+191,Bapatla,bapatla,district,186,Andhra Pradesh,Bapatla,,,,,,manual_pilot,Andhra Pradesh > Bapatla,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+192,Chittoor,chittoor,district,186,Andhra Pradesh,Chittoor,,,,,,manual_pilot,Andhra Pradesh > Chittoor,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+193,East Godavari,east godavari,district,186,Andhra Pradesh,East Godavari,,,,,,manual_pilot,Andhra Pradesh > East Godavari,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+194,Eluru,eluru,district,186,Andhra Pradesh,Eluru,,,,,,manual_pilot,Andhra Pradesh > Eluru,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+195,Guntur,guntur,district,186,Andhra Pradesh,Guntur,,,,,,manual_pilot,Andhra Pradesh > Guntur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+196,Kakinada,kakinada,district,186,Andhra Pradesh,Kakinada,,,,,,manual_pilot,Andhra Pradesh > Kakinada,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+197,Konaseema,konaseema,district,186,Andhra Pradesh,Konaseema,,,,,,manual_pilot,Andhra Pradesh > Konaseema,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+198,Krishna,krishna,district,186,Andhra Pradesh,Krishna,,,,,,manual_pilot,Andhra Pradesh > Krishna,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+199,Kurnool,kurnool,district,186,Andhra Pradesh,Kurnool,,,,,,manual_pilot,Andhra Pradesh > Kurnool,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+200,Nandyal,nandyal,district,186,Andhra Pradesh,Nandyal,,,,,,manual_pilot,Andhra Pradesh > Nandyal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+201,NTR,ntr,district,186,Andhra Pradesh,NTR,,,,,,manual_pilot,Andhra Pradesh > NTR,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+202,Palnadu,palnadu,district,186,Andhra Pradesh,Palnadu,,,,,,manual_pilot,Andhra Pradesh > Palnadu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+203,Parvathipuram Manyam,parvathipuram manyam,district,186,Andhra Pradesh,Parvathipuram Manyam,,,,,,manual_pilot,Andhra Pradesh > Parvathipuram Manyam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+204,Prakasam,prakasam,district,186,Andhra Pradesh,Prakasam,,,,,,manual_pilot,Andhra Pradesh > Prakasam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+205,Sri Potti Sriramulu Nellore,sri potti sriramulu nellore,district,186,Andhra Pradesh,Sri Potti Sriramulu Nellore,,,,,,manual_pilot,Andhra Pradesh > Sri Potti Sriramulu Nellore,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+206,Sri Sathya Sai,sri sathya sai,district,186,Andhra Pradesh,Sri Sathya Sai,,,,,,manual_pilot,Andhra Pradesh > Sri Sathya Sai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+207,Srikakulam,srikakulam,district,186,Andhra Pradesh,Srikakulam,,,,,,manual_pilot,Andhra Pradesh > Srikakulam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+208,Tirupati,tirupati,district,186,Andhra Pradesh,Tirupati,,,,,,manual_pilot,Andhra Pradesh > Tirupati,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+209,Visakhapatnam,visakhapatnam,district,186,Andhra Pradesh,Visakhapatnam,,,,,,manual_pilot,Andhra Pradesh > Visakhapatnam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+210,Vizianagaram,vizianagaram,district,186,Andhra Pradesh,Vizianagaram,,,,,,manual_pilot,Andhra Pradesh > Vizianagaram,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+211,West Godavari,west godavari,district,186,Andhra Pradesh,West Godavari,,,,,,manual_pilot,Andhra Pradesh > West Godavari,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+212,Y.S.R. Kadapa,y s r kadapa,district,186,Andhra Pradesh,Y.S.R. Kadapa,,,,,,manual_pilot,Andhra Pradesh > Y.S.R. Kadapa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+214,Anjaw,anjaw,district,213,Arunachal Pradesh,Anjaw,,,,,,manual_pilot,Arunachal Pradesh > Anjaw,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+215,Changlang,changlang,district,213,Arunachal Pradesh,Changlang,,,,,,manual_pilot,Arunachal Pradesh > Changlang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+216,Dibang Valley,dibang valley,district,213,Arunachal Pradesh,Dibang Valley,,,,,,manual_pilot,Arunachal Pradesh > Dibang Valley,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+217,East Kameng,east kameng,district,213,Arunachal Pradesh,East Kameng,,,,,,manual_pilot,Arunachal Pradesh > East Kameng,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+218,East Siang,east siang,district,213,Arunachal Pradesh,East Siang,,,,,,manual_pilot,Arunachal Pradesh > East Siang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+219,Itanagar Capital Complex,itanagar capital complex,district,213,Arunachal Pradesh,Itanagar Capital Complex,,,,,,manual_pilot,Arunachal Pradesh > Itanagar Capital Complex,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+220,Kamle,kamle,district,213,Arunachal Pradesh,Kamle,,,,,,manual_pilot,Arunachal Pradesh > Kamle,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+221,Kra Daadi,kra daadi,district,213,Arunachal Pradesh,Kra Daadi,,,,,,manual_pilot,Arunachal Pradesh > Kra Daadi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+222,Kurung Kumey,kurung kumey,district,213,Arunachal Pradesh,Kurung Kumey,,,,,,manual_pilot,Arunachal Pradesh > Kurung Kumey,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+223,Lepa Rada,lepa rada,district,213,Arunachal Pradesh,Lepa Rada,,,,,,manual_pilot,Arunachal Pradesh > Lepa Rada,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+224,Lohit,lohit,district,213,Arunachal Pradesh,Lohit,,,,,,manual_pilot,Arunachal Pradesh > Lohit,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+225,Longding,longding,district,213,Arunachal Pradesh,Longding,,,,,,manual_pilot,Arunachal Pradesh > Longding,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+226,Lower Dibang Valley,lower dibang valley,district,213,Arunachal Pradesh,Lower Dibang Valley,,,,,,manual_pilot,Arunachal Pradesh > Lower Dibang Valley,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+227,Lower Siang,lower siang,district,213,Arunachal Pradesh,Lower Siang,,,,,,manual_pilot,Arunachal Pradesh > Lower Siang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+228,Lower Subansiri,lower subansiri,district,213,Arunachal Pradesh,Lower Subansiri,,,,,,manual_pilot,Arunachal Pradesh > Lower Subansiri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+229,Namsai,namsai,district,213,Arunachal Pradesh,Namsai,,,,,,manual_pilot,Arunachal Pradesh > Namsai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+230,Pakke Kessang,pakke kessang,district,213,Arunachal Pradesh,Pakke Kessang,,,,,,manual_pilot,Arunachal Pradesh > Pakke Kessang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+231,Papum Pare,papum pare,district,213,Arunachal Pradesh,Papum Pare,,,,,,manual_pilot,Arunachal Pradesh > Papum Pare,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+232,Shi Yomi,shi yomi,district,213,Arunachal Pradesh,Shi Yomi,,,,,,manual_pilot,Arunachal Pradesh > Shi Yomi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+233,Siang,siang,district,213,Arunachal Pradesh,Siang,,,,,,manual_pilot,Arunachal Pradesh > Siang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+234,Tawang,tawang,district,213,Arunachal Pradesh,Tawang,,,,,,manual_pilot,Arunachal Pradesh > Tawang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+235,Tirap,tirap,district,213,Arunachal Pradesh,Tirap,,,,,,manual_pilot,Arunachal Pradesh > Tirap,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+236,Upper Siang,upper siang,district,213,Arunachal Pradesh,Upper Siang,,,,,,manual_pilot,Arunachal Pradesh > Upper Siang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+237,Upper Subansiri,upper subansiri,district,213,Arunachal Pradesh,Upper Subansiri,,,,,,manual_pilot,Arunachal Pradesh > Upper Subansiri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+238,West Kameng,west kameng,district,213,Arunachal Pradesh,West Kameng,,,,,,manual_pilot,Arunachal Pradesh > West Kameng,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+239,West Siang,west siang,district,213,Arunachal Pradesh,West Siang,,,,,,manual_pilot,Arunachal Pradesh > West Siang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+241,Baksa,baksa,district,240,Assam,Baksa,,,,,,manual_pilot,Assam > Baksa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+242,Barpeta,barpeta,district,240,Assam,Barpeta,,,,,,manual_pilot,Assam > Barpeta,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+243,Biswanath,biswanath,district,240,Assam,Biswanath,,,,,,manual_pilot,Assam > Biswanath,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+244,Bongaigaon,bongaigaon,district,240,Assam,Bongaigaon,,,,,,manual_pilot,Assam > Bongaigaon,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+245,Cachar,cachar,district,240,Assam,Cachar,,,,,,manual_pilot,Assam > Cachar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+246,Charaideo,charaideo,district,240,Assam,Charaideo,,,,,,manual_pilot,Assam > Charaideo,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+247,Chirang,chirang,district,240,Assam,Chirang,,,,,,manual_pilot,Assam > Chirang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+248,Darrang,darrang,district,240,Assam,Darrang,,,,,,manual_pilot,Assam > Darrang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+249,Dhemaji,dhemaji,district,240,Assam,Dhemaji,,,,,,manual_pilot,Assam > Dhemaji,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+250,Dhubri,dhubri,district,240,Assam,Dhubri,,,,,,manual_pilot,Assam > Dhubri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+251,Dibrugarh,dibrugarh,district,240,Assam,Dibrugarh,,,,,,manual_pilot,Assam > Dibrugarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+252,Dima Hasao,dima hasao,district,240,Assam,Dima Hasao,,,,,,manual_pilot,Assam > Dima Hasao,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+253,Goalpara,goalpara,district,240,Assam,Goalpara,,,,,,manual_pilot,Assam > Goalpara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+254,Golaghat,golaghat,district,240,Assam,Golaghat,,,,,,manual_pilot,Assam > Golaghat,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+255,Hailakandi,hailakandi,district,240,Assam,Hailakandi,,,,,,manual_pilot,Assam > Hailakandi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+256,Hojai,hojai,district,240,Assam,Hojai,,,,,,manual_pilot,Assam > Hojai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+257,Jorhat,jorhat,district,240,Assam,Jorhat,,,,,,manual_pilot,Assam > Jorhat,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+258,Kamrup,kamrup,district,240,Assam,Kamrup,,,,,,manual_pilot,Assam > Kamrup,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+259,Kamrup Metropolitan,kamrup metropolitan,district,240,Assam,Kamrup Metropolitan,,,,,,manual_pilot,Assam > Kamrup Metropolitan,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+260,Karbi Anglong,karbi anglong,district,240,Assam,Karbi Anglong,,,,,,manual_pilot,Assam > Karbi Anglong,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+261,Karimganj,karimganj,district,240,Assam,Karimganj,,,,,,manual_pilot,Assam > Karimganj,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+262,Kokrajhar,kokrajhar,district,240,Assam,Kokrajhar,,,,,,manual_pilot,Assam > Kokrajhar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+263,Lakhimpur,lakhimpur,district,240,Assam,Lakhimpur,,,,,,manual_pilot,Assam > Lakhimpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+264,Majuli,majuli,district,240,Assam,Majuli,,,,,,manual_pilot,Assam > Majuli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+265,Morigaon,morigaon,district,240,Assam,Morigaon,,,,,,manual_pilot,Assam > Morigaon,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+266,Nagaon,nagaon,district,240,Assam,Nagaon,,,,,,manual_pilot,Assam > Nagaon,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+267,Nalbari,nalbari,district,240,Assam,Nalbari,,,,,,manual_pilot,Assam > Nalbari,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+268,Sivasagar,sivasagar,district,240,Assam,Sivasagar,,,,,,manual_pilot,Assam > Sivasagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+269,Sonitpur,sonitpur,district,240,Assam,Sonitpur,,,,,,manual_pilot,Assam > Sonitpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+270,South Salmara-Mankachar,south salmara mankachar,district,240,Assam,South Salmara-Mankachar,,,,,,manual_pilot,Assam > South Salmara-Mankachar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+271,Tinsukia,tinsukia,district,240,Assam,Tinsukia,,,,,,manual_pilot,Assam > Tinsukia,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+272,Udalguri,udalguri,district,240,Assam,Udalguri,,,,,,manual_pilot,Assam > Udalguri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+273,West Karbi Anglong,west karbi anglong,district,240,Assam,West Karbi Anglong,,,,,,manual_pilot,Assam > West Karbi Anglong,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+275,Araria,araria,district,274,Bihar,Araria,,,,,,manual_pilot,Bihar > Araria,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+276,Arwal,arwal,district,274,Bihar,Arwal,,,,,,manual_pilot,Bihar > Arwal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+277,Aurangabad,aurangabad,district,274,Bihar,Aurangabad,,,,,,manual_pilot,Bihar > Aurangabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+278,Banka,banka,district,274,Bihar,Banka,,,,,,manual_pilot,Bihar > Banka,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+279,Begusarai,begusarai,district,274,Bihar,Begusarai,,,,,,manual_pilot,Bihar > Begusarai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+280,Bhagalpur,bhagalpur,district,274,Bihar,Bhagalpur,,,,,,manual_pilot,Bihar > Bhagalpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+281,Bhojpur,bhojpur,district,274,Bihar,Bhojpur,,,,,,manual_pilot,Bihar > Bhojpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+282,Buxar,buxar,district,274,Bihar,Buxar,,,,,,manual_pilot,Bihar > Buxar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+283,Darbhanga,darbhanga,district,274,Bihar,Darbhanga,,,,,,manual_pilot,Bihar > Darbhanga,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+284,East Champaran,east champaran,district,274,Bihar,East Champaran,,,,,,manual_pilot,Bihar > East Champaran,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+285,Gaya,gaya,district,274,Bihar,Gaya,,,,,,manual_pilot,Bihar > Gaya,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+286,Gopalganj,gopalganj,district,274,Bihar,Gopalganj,,,,,,manual_pilot,Bihar > Gopalganj,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+287,Jamui,jamui,district,274,Bihar,Jamui,,,,,,manual_pilot,Bihar > Jamui,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+288,Jehanabad,jehanabad,district,274,Bihar,Jehanabad,,,,,,manual_pilot,Bihar > Jehanabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+289,Kaimur,kaimur,district,274,Bihar,Kaimur,,,,,,manual_pilot,Bihar > Kaimur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+290,Katihar,katihar,district,274,Bihar,Katihar,,,,,,manual_pilot,Bihar > Katihar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+291,Khagaria,khagaria,district,274,Bihar,Khagaria,,,,,,manual_pilot,Bihar > Khagaria,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+292,Kishanganj,kishanganj,district,274,Bihar,Kishanganj,,,,,,manual_pilot,Bihar > Kishanganj,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+293,Lakhisarai,lakhisarai,district,274,Bihar,Lakhisarai,,,,,,manual_pilot,Bihar > Lakhisarai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+294,Madhepura,madhepura,district,274,Bihar,Madhepura,,,,,,manual_pilot,Bihar > Madhepura,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+295,Madhubani,madhubani,district,274,Bihar,Madhubani,,,,,,manual_pilot,Bihar > Madhubani,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+296,Munger,munger,district,274,Bihar,Munger,,,,,,manual_pilot,Bihar > Munger,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+297,Muzaffarpur,muzaffarpur,district,274,Bihar,Muzaffarpur,,,,,,manual_pilot,Bihar > Muzaffarpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+298,Nalanda,nalanda,district,274,Bihar,Nalanda,,,,,,manual_pilot,Bihar > Nalanda,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+299,Nawada,nawada,district,274,Bihar,Nawada,,,,,,manual_pilot,Bihar > Nawada,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+300,Patna,patna,district,274,Bihar,Patna,,,,,,manual_pilot,Bihar > Patna,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+301,Purnia,purnia,district,274,Bihar,Purnia,,,,,,manual_pilot,Bihar > Purnia,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+302,Rohtas,rohtas,district,274,Bihar,Rohtas,,,,,,manual_pilot,Bihar > Rohtas,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+303,Saharsa,saharsa,district,274,Bihar,Saharsa,,,,,,manual_pilot,Bihar > Saharsa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+304,Samastipur,samastipur,district,274,Bihar,Samastipur,,,,,,manual_pilot,Bihar > Samastipur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+305,Saran,saran,district,274,Bihar,Saran,,,,,,manual_pilot,Bihar > Saran,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+306,Sheikhpura,sheikhpura,district,274,Bihar,Sheikhpura,,,,,,manual_pilot,Bihar > Sheikhpura,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+307,Sheohar,sheohar,district,274,Bihar,Sheohar,,,,,,manual_pilot,Bihar > Sheohar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+308,Sitamarhi,sitamarhi,district,274,Bihar,Sitamarhi,,,,,,manual_pilot,Bihar > Sitamarhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+309,Siwan,siwan,district,274,Bihar,Siwan,,,,,,manual_pilot,Bihar > Siwan,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+310,Supaul,supaul,district,274,Bihar,Supaul,,,,,,manual_pilot,Bihar > Supaul,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+311,Vaishali,vaishali,district,274,Bihar,Vaishali,,,,,,manual_pilot,Bihar > Vaishali,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+312,West Champaran,west champaran,district,274,Bihar,West Champaran,,,,,,manual_pilot,Bihar > West Champaran,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+314,Balod,balod,district,313,Chhattisgarh,Balod,,,,,,manual_pilot,Chhattisgarh > Balod,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+315,Baloda Bazar,baloda bazar,district,313,Chhattisgarh,Baloda Bazar,,,,,,manual_pilot,Chhattisgarh > Baloda Bazar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+316,Balrampur,balrampur,district,313,Chhattisgarh,Balrampur,,,,,,manual_pilot,Chhattisgarh > Balrampur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+317,Bastar,bastar,district,313,Chhattisgarh,Bastar,,,,,,manual_pilot,Chhattisgarh > Bastar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+318,Bemetara,bemetara,district,313,Chhattisgarh,Bemetara,,,,,,manual_pilot,Chhattisgarh > Bemetara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+319,Bijapur,bijapur,district,313,Chhattisgarh,Bijapur,,,,,,manual_pilot,Chhattisgarh > Bijapur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+320,Bilaspur,bilaspur,district,313,Chhattisgarh,Bilaspur,,,,,,manual_pilot,Chhattisgarh > Bilaspur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+321,Dantewada,dantewada,district,313,Chhattisgarh,Dantewada,,,,,,manual_pilot,Chhattisgarh > Dantewada,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+322,Dhamtari,dhamtari,district,313,Chhattisgarh,Dhamtari,,,,,,manual_pilot,Chhattisgarh > Dhamtari,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+323,Durg,durg,district,313,Chhattisgarh,Durg,,,,,,manual_pilot,Chhattisgarh > Durg,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+324,Gariaband,gariaband,district,313,Chhattisgarh,Gariaband,,,,,,manual_pilot,Chhattisgarh > Gariaband,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+325,Gaurella-Pendra-Marwahi,gaurella pendra marwahi,district,313,Chhattisgarh,Gaurella-Pendra-Marwahi,,,,,,manual_pilot,Chhattisgarh > Gaurella-Pendra-Marwahi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+326,Janjgir-Champa,janjgir champa,district,313,Chhattisgarh,Janjgir-Champa,,,,,,manual_pilot,Chhattisgarh > Janjgir-Champa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+327,Jashpur,jashpur,district,313,Chhattisgarh,Jashpur,,,,,,manual_pilot,Chhattisgarh > Jashpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+328,Kabirdham,kabirdham,district,313,Chhattisgarh,Kabirdham,,,,,,manual_pilot,Chhattisgarh > Kabirdham,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+329,Kanker,kanker,district,313,Chhattisgarh,Kanker,,,,,,manual_pilot,Chhattisgarh > Kanker,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+330,Kondagaon,kondagaon,district,313,Chhattisgarh,Kondagaon,,,,,,manual_pilot,Chhattisgarh > Kondagaon,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+331,Korba,korba,district,313,Chhattisgarh,Korba,,,,,,manual_pilot,Chhattisgarh > Korba,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+332,Koriya,koriya,district,313,Chhattisgarh,Koriya,,,,,,manual_pilot,Chhattisgarh > Koriya,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+333,Mahasamund,mahasamund,district,313,Chhattisgarh,Mahasamund,,,,,,manual_pilot,Chhattisgarh > Mahasamund,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+334,Manendragarh-Chirmiri-Bharatpur,manendragarh chirmiri bharatpur,district,313,Chhattisgarh,Manendragarh-Chirmiri-Bharatpur,,,,,,manual_pilot,Chhattisgarh > Manendragarh-Chirmiri-Bharatpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+335,Mohla-Manpur-Ambagarh Chowki,mohla manpur ambagarh chowki,district,313,Chhattisgarh,Mohla-Manpur-Ambagarh Chowki,,,,,,manual_pilot,Chhattisgarh > Mohla-Manpur-Ambagarh Chowki,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+336,Mungeli,mungeli,district,313,Chhattisgarh,Mungeli,,,,,,manual_pilot,Chhattisgarh > Mungeli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+337,Narayanpur,narayanpur,district,313,Chhattisgarh,Narayanpur,,,,,,manual_pilot,Chhattisgarh > Narayanpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+338,Raigarh,raigarh,district,313,Chhattisgarh,Raigarh,,,,,,manual_pilot,Chhattisgarh > Raigarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+339,Raipur,raipur,district,313,Chhattisgarh,Raipur,,,,,,manual_pilot,Chhattisgarh > Raipur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+340,Rajnandgaon,rajnandgaon,district,313,Chhattisgarh,Rajnandgaon,,,,,,manual_pilot,Chhattisgarh > Rajnandgaon,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+341,Khairagarh-Chhuikhadan-Gandai,khairagarh chhuikhadan gandai,district,313,Chhattisgarh,Khairagarh-Chhuikhadan-Gandai,,,,,,manual_pilot,Chhattisgarh > Khairagarh-Chhuikhadan-Gandai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+342,Sakti,sakti,district,313,Chhattisgarh,Sakti,,,,,,manual_pilot,Chhattisgarh > Sakti,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+343,Sarangarh-Bilaigarh,sarangarh bilaigarh,district,313,Chhattisgarh,Sarangarh-Bilaigarh,,,,,,manual_pilot,Chhattisgarh > Sarangarh-Bilaigarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+344,Sukma,sukma,district,313,Chhattisgarh,Sukma,,,,,,manual_pilot,Chhattisgarh > Sukma,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+345,Surajpur,surajpur,district,313,Chhattisgarh,Surajpur,,,,,,manual_pilot,Chhattisgarh > Surajpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+346,Surguja,surguja,district,313,Chhattisgarh,Surguja,,,,,,manual_pilot,Chhattisgarh > Surguja,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+348,North Goa,north goa,district,347,Goa,North Goa,,,,,,manual_pilot,Goa > North Goa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+349,South Goa,south goa,district,347,Goa,South Goa,,,,,,manual_pilot,Goa > South Goa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+351,Ahmedabad,ahmedabad,district,350,Gujarat,Ahmedabad,,,,,,manual_pilot,Gujarat > Ahmedabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+352,Amreli,amreli,district,350,Gujarat,Amreli,,,,,,manual_pilot,Gujarat > Amreli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+353,Anand,anand,district,350,Gujarat,Anand,,,,,,manual_pilot,Gujarat > Anand,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+354,Aravalli,aravalli,district,350,Gujarat,Aravalli,,,,,,manual_pilot,Gujarat > Aravalli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+355,Banaskantha,banaskantha,district,350,Gujarat,Banaskantha,,,,,,manual_pilot,Gujarat > Banaskantha,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+356,Bharuch,bharuch,district,350,Gujarat,Bharuch,,,,,,manual_pilot,Gujarat > Bharuch,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+357,Bhavnagar,bhavnagar,district,350,Gujarat,Bhavnagar,,,,,,manual_pilot,Gujarat > Bhavnagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+358,Botad,botad,district,350,Gujarat,Botad,,,,,,manual_pilot,Gujarat > Botad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+359,Chhota Udaipur,chhota udaipur,district,350,Gujarat,Chhota Udaipur,,,,,,manual_pilot,Gujarat > Chhota Udaipur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+360,Dahod,dahod,district,350,Gujarat,Dahod,,,,,,manual_pilot,Gujarat > Dahod,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+361,Dang,dang,district,350,Gujarat,Dang,,,,,,manual_pilot,Gujarat > Dang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+362,Devbhoomi Dwarka,devbhoomi dwarka,district,350,Gujarat,Devbhoomi Dwarka,,,,,,manual_pilot,Gujarat > Devbhoomi Dwarka,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+363,Gandhinagar,gandhinagar,district,350,Gujarat,Gandhinagar,,,,,,manual_pilot,Gujarat > Gandhinagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+364,Gir Somnath,gir somnath,district,350,Gujarat,Gir Somnath,,,,,,manual_pilot,Gujarat > Gir Somnath,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+365,Jamnagar,jamnagar,district,350,Gujarat,Jamnagar,,,,,,manual_pilot,Gujarat > Jamnagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+366,Junagadh,junagadh,district,350,Gujarat,Junagadh,,,,,,manual_pilot,Gujarat > Junagadh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+367,Kheda,kheda,district,350,Gujarat,Kheda,,,,,,manual_pilot,Gujarat > Kheda,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+368,Kutch,kutch,district,350,Gujarat,Kutch,,,,,,manual_pilot,Gujarat > Kutch,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+369,Mahisagar,mahisagar,district,350,Gujarat,Mahisagar,,,,,,manual_pilot,Gujarat > Mahisagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+370,Mehsana,mehsana,district,350,Gujarat,Mehsana,,,,,,manual_pilot,Gujarat > Mehsana,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+371,Morbi,morbi,district,350,Gujarat,Morbi,,,,,,manual_pilot,Gujarat > Morbi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+372,Narmada,narmada,district,350,Gujarat,Narmada,,,,,,manual_pilot,Gujarat > Narmada,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+373,Navsari,navsari,district,350,Gujarat,Navsari,,,,,,manual_pilot,Gujarat > Navsari,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+374,Panchmahal,panchmahal,district,350,Gujarat,Panchmahal,,,,,,manual_pilot,Gujarat > Panchmahal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+375,Patan,patan,district,350,Gujarat,Patan,,,,,,manual_pilot,Gujarat > Patan,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+376,Porbandar,porbandar,district,350,Gujarat,Porbandar,,,,,,manual_pilot,Gujarat > Porbandar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+377,Rajkot,rajkot,district,350,Gujarat,Rajkot,,,,,,manual_pilot,Gujarat > Rajkot,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+378,Sabarkantha,sabarkantha,district,350,Gujarat,Sabarkantha,,,,,,manual_pilot,Gujarat > Sabarkantha,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+379,Surat,surat,district,350,Gujarat,Surat,,,,,,manual_pilot,Gujarat > Surat,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+380,Surendranagar,surendranagar,district,350,Gujarat,Surendranagar,,,,,,manual_pilot,Gujarat > Surendranagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+381,Tapi,tapi,district,350,Gujarat,Tapi,,,,,,manual_pilot,Gujarat > Tapi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+382,Vadodara,vadodara,district,350,Gujarat,Vadodara,,,,,,manual_pilot,Gujarat > Vadodara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+383,Valsad,valsad,district,350,Gujarat,Valsad,,,,,,manual_pilot,Gujarat > Valsad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+385,Ambala,ambala,district,384,Haryana,Ambala,,,,,,manual_pilot,Haryana > Ambala,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+386,Bhiwani,bhiwani,district,384,Haryana,Bhiwani,,,,,,manual_pilot,Haryana > Bhiwani,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+387,Charkhi Dadri,charkhi dadri,district,384,Haryana,Charkhi Dadri,,,,,,manual_pilot,Haryana > Charkhi Dadri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+388,Faridabad,faridabad,district,384,Haryana,Faridabad,,,,,,manual_pilot,Haryana > Faridabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+389,Fatehabad,fatehabad,district,384,Haryana,Fatehabad,,,,,,manual_pilot,Haryana > Fatehabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+390,Gurugram,gurugram,district,384,Haryana,Gurugram,,,,,,manual_pilot,Haryana > Gurugram,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+391,Hisar,hisar,district,384,Haryana,Hisar,,,,,,manual_pilot,Haryana > Hisar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+392,Jhajjar,jhajjar,district,384,Haryana,Jhajjar,,,,,,manual_pilot,Haryana > Jhajjar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+393,Jind,jind,district,384,Haryana,Jind,,,,,,manual_pilot,Haryana > Jind,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+394,Kaithal,kaithal,district,384,Haryana,Kaithal,,,,,,manual_pilot,Haryana > Kaithal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+395,Karnal,karnal,district,384,Haryana,Karnal,,,,,,manual_pilot,Haryana > Karnal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+396,Kurukshetra,kurukshetra,district,384,Haryana,Kurukshetra,,,,,,manual_pilot,Haryana > Kurukshetra,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+397,Mahendragarh,mahendragarh,district,384,Haryana,Mahendragarh,,,,,,manual_pilot,Haryana > Mahendragarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+398,Nuh,nuh,district,384,Haryana,Nuh,,,,,,manual_pilot,Haryana > Nuh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+399,Palwal,palwal,district,384,Haryana,Palwal,,,,,,manual_pilot,Haryana > Palwal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+400,Panchkula,panchkula,district,384,Haryana,Panchkula,,,,,,manual_pilot,Haryana > Panchkula,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+401,Panipat,panipat,district,384,Haryana,Panipat,,,,,,manual_pilot,Haryana > Panipat,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+402,Rewari,rewari,district,384,Haryana,Rewari,,,,,,manual_pilot,Haryana > Rewari,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+403,Rohtak,rohtak,district,384,Haryana,Rohtak,,,,,,manual_pilot,Haryana > Rohtak,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+404,Sirsa,sirsa,district,384,Haryana,Sirsa,,,,,,manual_pilot,Haryana > Sirsa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+405,Sonipat,sonipat,district,384,Haryana,Sonipat,,,,,,manual_pilot,Haryana > Sonipat,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+406,Yamunanagar,yamunanagar,district,384,Haryana,Yamunanagar,,,,,,manual_pilot,Haryana > Yamunanagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+408,Bilaspur,bilaspur,district,407,Himachal Pradesh,Bilaspur,,,,,,manual_pilot,Himachal Pradesh > Bilaspur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+409,Chamba,chamba,district,407,Himachal Pradesh,Chamba,,,,,,manual_pilot,Himachal Pradesh > Chamba,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+410,Hamirpur,hamirpur,district,407,Himachal Pradesh,Hamirpur,,,,,,manual_pilot,Himachal Pradesh > Hamirpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+411,Kangra,kangra,district,407,Himachal Pradesh,Kangra,,,,,,manual_pilot,Himachal Pradesh > Kangra,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+412,Kinnaur,kinnaur,district,407,Himachal Pradesh,Kinnaur,,,,,,manual_pilot,Himachal Pradesh > Kinnaur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+413,Kullu,kullu,district,407,Himachal Pradesh,Kullu,,,,,,manual_pilot,Himachal Pradesh > Kullu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+414,Lahaul and Spiti,lahaul and spiti,district,407,Himachal Pradesh,Lahaul and Spiti,,,,,,manual_pilot,Himachal Pradesh > Lahaul and Spiti,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+415,Mandi,mandi,district,407,Himachal Pradesh,Mandi,,,,,,manual_pilot,Himachal Pradesh > Mandi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+416,Shimla,shimla,district,407,Himachal Pradesh,Shimla,,,,,,manual_pilot,Himachal Pradesh > Shimla,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+417,Sirmaur,sirmaur,district,407,Himachal Pradesh,Sirmaur,,,,,,manual_pilot,Himachal Pradesh > Sirmaur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+418,Solan,solan,district,407,Himachal Pradesh,Solan,,,,,,manual_pilot,Himachal Pradesh > Solan,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+419,Una,una,district,407,Himachal Pradesh,Una,,,,,,manual_pilot,Himachal Pradesh > Una,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+421,Bokaro,bokaro,district,420,Jharkhand,Bokaro,,,,,,manual_pilot,Jharkhand > Bokaro,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+422,Chatra,chatra,district,420,Jharkhand,Chatra,,,,,,manual_pilot,Jharkhand > Chatra,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+423,Deoghar,deoghar,district,420,Jharkhand,Deoghar,,,,,,manual_pilot,Jharkhand > Deoghar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+424,Dhanbad,dhanbad,district,420,Jharkhand,Dhanbad,,,,,,manual_pilot,Jharkhand > Dhanbad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+425,Dumka,dumka,district,420,Jharkhand,Dumka,,,,,,manual_pilot,Jharkhand > Dumka,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+426,East Singhbhum,east singhbhum,district,420,Jharkhand,East Singhbhum,,,,,,manual_pilot,Jharkhand > East Singhbhum,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+427,Garhwa,garhwa,district,420,Jharkhand,Garhwa,,,,,,manual_pilot,Jharkhand > Garhwa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+428,Giridih,giridih,district,420,Jharkhand,Giridih,,,,,,manual_pilot,Jharkhand > Giridih,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+429,Godda,godda,district,420,Jharkhand,Godda,,,,,,manual_pilot,Jharkhand > Godda,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+430,Gumla,gumla,district,420,Jharkhand,Gumla,,,,,,manual_pilot,Jharkhand > Gumla,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+431,Hazaribagh,hazaribagh,district,420,Jharkhand,Hazaribagh,,,,,,manual_pilot,Jharkhand > Hazaribagh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+432,Jamtara,jamtara,district,420,Jharkhand,Jamtara,,,,,,manual_pilot,Jharkhand > Jamtara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+433,Khunti,khunti,district,420,Jharkhand,Khunti,,,,,,manual_pilot,Jharkhand > Khunti,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+434,Koderma,koderma,district,420,Jharkhand,Koderma,,,,,,manual_pilot,Jharkhand > Koderma,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+435,Latehar,latehar,district,420,Jharkhand,Latehar,,,,,,manual_pilot,Jharkhand > Latehar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+436,Lohardaga,lohardaga,district,420,Jharkhand,Lohardaga,,,,,,manual_pilot,Jharkhand > Lohardaga,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+437,Pakur,pakur,district,420,Jharkhand,Pakur,,,,,,manual_pilot,Jharkhand > Pakur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+438,Palamu,palamu,district,420,Jharkhand,Palamu,,,,,,manual_pilot,Jharkhand > Palamu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+439,Ramgarh,ramgarh,district,420,Jharkhand,Ramgarh,,,,,,manual_pilot,Jharkhand > Ramgarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+440,Ranchi,ranchi,district,420,Jharkhand,Ranchi,,,,,,manual_pilot,Jharkhand > Ranchi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+441,Sahibganj,sahibganj,district,420,Jharkhand,Sahibganj,,,,,,manual_pilot,Jharkhand > Sahibganj,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+442,Seraikela Kharsawan,seraikela kharsawan,district,420,Jharkhand,Seraikela Kharsawan,,,,,,manual_pilot,Jharkhand > Seraikela Kharsawan,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+443,Simdega,simdega,district,420,Jharkhand,Simdega,,,,,,manual_pilot,Jharkhand > Simdega,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+444,West Singhbhum,west singhbhum,district,420,Jharkhand,West Singhbhum,,,,,,manual_pilot,Jharkhand > West Singhbhum,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+446,Bagalkot,bagalkot,district,445,Karnataka,Bagalkot,,,,,,manual_pilot,Karnataka > Bagalkot,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+447,Ballari,ballari,district,445,Karnataka,Ballari,,,,,,manual_pilot,Karnataka > Ballari,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+448,Belagavi,belagavi,district,445,Karnataka,Belagavi,,,,,,manual_pilot,Karnataka > Belagavi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+449,Bengaluru Rural,bengaluru rural,district,445,Karnataka,Bengaluru Rural,,,,,,manual_pilot,Karnataka > Bengaluru Rural,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+450,Bengaluru Urban,bengaluru urban,district,445,Karnataka,Bengaluru Urban,,,,,,manual_pilot,Karnataka > Bengaluru Urban,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+451,Bidar,bidar,district,445,Karnataka,Bidar,,,,,,manual_pilot,Karnataka > Bidar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+452,Chamarajanagar,chamarajanagar,district,445,Karnataka,Chamarajanagar,,,,,,manual_pilot,Karnataka > Chamarajanagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+453,Chikballapur,chikballapur,district,445,Karnataka,Chikballapur,,,,,,manual_pilot,Karnataka > Chikballapur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+454,Chikkamagaluru,chikkamagaluru,district,445,Karnataka,Chikkamagaluru,,,,,,manual_pilot,Karnataka > Chikkamagaluru,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+455,Chitradurga,chitradurga,district,445,Karnataka,Chitradurga,,,,,,manual_pilot,Karnataka > Chitradurga,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+456,Dakshina Kannada,dakshina kannada,district,445,Karnataka,Dakshina Kannada,,,,,,manual_pilot,Karnataka > Dakshina Kannada,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+457,Davangere,davangere,district,445,Karnataka,Davangere,,,,,,manual_pilot,Karnataka > Davangere,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+458,Dharwad,dharwad,district,445,Karnataka,Dharwad,,,,,,manual_pilot,Karnataka > Dharwad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+459,Gadag,gadag,district,445,Karnataka,Gadag,,,,,,manual_pilot,Karnataka > Gadag,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+460,Hassan,hassan,district,445,Karnataka,Hassan,,,,,,manual_pilot,Karnataka > Hassan,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+461,Haveri,haveri,district,445,Karnataka,Haveri,,,,,,manual_pilot,Karnataka > Haveri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+462,Kalaburagi,kalaburagi,district,445,Karnataka,Kalaburagi,,,,,,manual_pilot,Karnataka > Kalaburagi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+463,Kodagu,kodagu,district,445,Karnataka,Kodagu,,,,,,manual_pilot,Karnataka > Kodagu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+464,Kolar,kolar,district,445,Karnataka,Kolar,,,,,,manual_pilot,Karnataka > Kolar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+465,Koppal,koppal,district,445,Karnataka,Koppal,,,,,,manual_pilot,Karnataka > Koppal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+466,Mandya,mandya,district,445,Karnataka,Mandya,,,,,,manual_pilot,Karnataka > Mandya,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+467,Mysuru,mysuru,district,445,Karnataka,Mysuru,,,,,,manual_pilot,Karnataka > Mysuru,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+468,Raichur,raichur,district,445,Karnataka,Raichur,,,,,,manual_pilot,Karnataka > Raichur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+469,Ramanagara,ramanagara,district,445,Karnataka,Ramanagara,,,,,,manual_pilot,Karnataka > Ramanagara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+470,Shivamogga,shivamogga,district,445,Karnataka,Shivamogga,,,,,,manual_pilot,Karnataka > Shivamogga,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+471,Tumakuru,tumakuru,district,445,Karnataka,Tumakuru,,,,,,manual_pilot,Karnataka > Tumakuru,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+472,Udupi,udupi,district,445,Karnataka,Udupi,,,,,,manual_pilot,Karnataka > Udupi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+473,Uttara Kannada,uttara kannada,district,445,Karnataka,Uttara Kannada,,,,,,manual_pilot,Karnataka > Uttara Kannada,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+474,Vijayapura,vijayapura,district,445,Karnataka,Vijayapura,,,,,,manual_pilot,Karnataka > Vijayapura,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+475,Yadgir,yadgir,district,445,Karnataka,Yadgir,,,,,,manual_pilot,Karnataka > Yadgir,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+476,Vijayanagara,vijayanagara,district,445,Karnataka,Vijayanagara,,,,,,manual_pilot,Karnataka > Vijayanagara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+478,Alappuzha,alappuzha,district,477,Kerala,Alappuzha,,,,,,manual_pilot,Kerala > Alappuzha,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+479,Ernakulam,ernakulam,district,477,Kerala,Ernakulam,,,,,,manual_pilot,Kerala > Ernakulam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+480,Idukki,idukki,district,477,Kerala,Idukki,,,,,,manual_pilot,Kerala > Idukki,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+481,Kannur,kannur,district,477,Kerala,Kannur,,,,,,manual_pilot,Kerala > Kannur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+482,Kasaragod,kasaragod,district,477,Kerala,Kasaragod,,,,,,manual_pilot,Kerala > Kasaragod,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+483,Kollam,kollam,district,477,Kerala,Kollam,,,,,,manual_pilot,Kerala > Kollam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+484,Kottayam,kottayam,district,477,Kerala,Kottayam,,,,,,manual_pilot,Kerala > Kottayam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+485,Kozhikode,kozhikode,district,477,Kerala,Kozhikode,,,,,,manual_pilot,Kerala > Kozhikode,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+486,Malappuram,malappuram,district,477,Kerala,Malappuram,,,,,,manual_pilot,Kerala > Malappuram,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+487,Palakkad,palakkad,district,477,Kerala,Palakkad,,,,,,manual_pilot,Kerala > Palakkad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+488,Pathanamthitta,pathanamthitta,district,477,Kerala,Pathanamthitta,,,,,,manual_pilot,Kerala > Pathanamthitta,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+489,Thiruvananthapuram,thiruvananthapuram,district,477,Kerala,Thiruvananthapuram,,,,,,manual_pilot,Kerala > Thiruvananthapuram,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+490,Thrissur,thrissur,district,477,Kerala,Thrissur,,,,,,manual_pilot,Kerala > Thrissur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+491,Wayanad,wayanad,district,477,Kerala,Wayanad,,,,,,manual_pilot,Kerala > Wayanad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+493,Bishnupur,bishnupur,district,492,Manipur,Bishnupur,,,,,,manual_pilot,Manipur > Bishnupur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+494,Chandel,chandel,district,492,Manipur,Chandel,,,,,,manual_pilot,Manipur > Chandel,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+495,Churachandpur,churachandpur,district,492,Manipur,Churachandpur,,,,,,manual_pilot,Manipur > Churachandpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+496,Imphal East,imphal east,district,492,Manipur,Imphal East,,,,,,manual_pilot,Manipur > Imphal East,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+497,Imphal West,imphal west,district,492,Manipur,Imphal West,,,,,,manual_pilot,Manipur > Imphal West,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+498,Jiribam,jiribam,district,492,Manipur,Jiribam,,,,,,manual_pilot,Manipur > Jiribam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+499,Kakching,kakching,district,492,Manipur,Kakching,,,,,,manual_pilot,Manipur > Kakching,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+500,Kamjong,kamjong,district,492,Manipur,Kamjong,,,,,,manual_pilot,Manipur > Kamjong,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+501,Kangpokpi,kangpokpi,district,492,Manipur,Kangpokpi,,,,,,manual_pilot,Manipur > Kangpokpi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+502,Noney,noney,district,492,Manipur,Noney,,,,,,manual_pilot,Manipur > Noney,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+503,Pherzawl,pherzawl,district,492,Manipur,Pherzawl,,,,,,manual_pilot,Manipur > Pherzawl,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+504,Senapati,senapati,district,492,Manipur,Senapati,,,,,,manual_pilot,Manipur > Senapati,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+505,Tamenglong,tamenglong,district,492,Manipur,Tamenglong,,,,,,manual_pilot,Manipur > Tamenglong,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+506,Tengnoupal,tengnoupal,district,492,Manipur,Tengnoupal,,,,,,manual_pilot,Manipur > Tengnoupal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+507,Thoubal,thoubal,district,492,Manipur,Thoubal,,,,,,manual_pilot,Manipur > Thoubal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+508,Ukhrul,ukhrul,district,492,Manipur,Ukhrul,,,,,,manual_pilot,Manipur > Ukhrul,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+510,East Garo Hills,east garo hills,district,509,Meghalaya,East Garo Hills,,,,,,manual_pilot,Meghalaya > East Garo Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+511,East Jaintia Hills,east jaintia hills,district,509,Meghalaya,East Jaintia Hills,,,,,,manual_pilot,Meghalaya > East Jaintia Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+512,East Khasi Hills,east khasi hills,district,509,Meghalaya,East Khasi Hills,,,,,,manual_pilot,Meghalaya > East Khasi Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+513,North Garo Hills,north garo hills,district,509,Meghalaya,North Garo Hills,,,,,,manual_pilot,Meghalaya > North Garo Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+514,Ri Bhoi,ri bhoi,district,509,Meghalaya,Ri Bhoi,,,,,,manual_pilot,Meghalaya > Ri Bhoi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+515,South Garo Hills,south garo hills,district,509,Meghalaya,South Garo Hills,,,,,,manual_pilot,Meghalaya > South Garo Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+516,South West Garo Hills,south west garo hills,district,509,Meghalaya,South West Garo Hills,,,,,,manual_pilot,Meghalaya > South West Garo Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+517,South West Khasi Hills,south west khasi hills,district,509,Meghalaya,South West Khasi Hills,,,,,,manual_pilot,Meghalaya > South West Khasi Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+518,West Garo Hills,west garo hills,district,509,Meghalaya,West Garo Hills,,,,,,manual_pilot,Meghalaya > West Garo Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+519,West Jaintia Hills,west jaintia hills,district,509,Meghalaya,West Jaintia Hills,,,,,,manual_pilot,Meghalaya > West Jaintia Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+520,West Khasi Hills,west khasi hills,district,509,Meghalaya,West Khasi Hills,,,,,,manual_pilot,Meghalaya > West Khasi Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+521,Eastern West Khasi Hills,eastern west khasi hills,district,509,Meghalaya,Eastern West Khasi Hills,,,,,,manual_pilot,Meghalaya > Eastern West Khasi Hills,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+523,Aizawl,aizawl,district,522,Mizoram,Aizawl,,,,,,manual_pilot,Mizoram > Aizawl,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+524,Champhai,champhai,district,522,Mizoram,Champhai,,,,,,manual_pilot,Mizoram > Champhai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+525,Hnahthial,hnahthial,district,522,Mizoram,Hnahthial,,,,,,manual_pilot,Mizoram > Hnahthial,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+526,Khawzawl,khawzawl,district,522,Mizoram,Khawzawl,,,,,,manual_pilot,Mizoram > Khawzawl,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+527,Kolasib,kolasib,district,522,Mizoram,Kolasib,,,,,,manual_pilot,Mizoram > Kolasib,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+528,Lawngtlai,lawngtlai,district,522,Mizoram,Lawngtlai,,,,,,manual_pilot,Mizoram > Lawngtlai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+529,Lunglei,lunglei,district,522,Mizoram,Lunglei,,,,,,manual_pilot,Mizoram > Lunglei,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+530,Mamit,mamit,district,522,Mizoram,Mamit,,,,,,manual_pilot,Mizoram > Mamit,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+531,Saiha,saiha,district,522,Mizoram,Saiha,,,,,,manual_pilot,Mizoram > Saiha,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+532,Saitual,saitual,district,522,Mizoram,Saitual,,,,,,manual_pilot,Mizoram > Saitual,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+533,Serchhip,serchhip,district,522,Mizoram,Serchhip,,,,,,manual_pilot,Mizoram > Serchhip,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+535,Chümoukedima,chumoukedima,district,534,Nagaland,Chümoukedima,,,,,,manual_pilot,Nagaland > Chümoukedima,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+536,Dimapur,dimapur,district,534,Nagaland,Dimapur,,,,,,manual_pilot,Nagaland > Dimapur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+537,Kiphire,kiphire,district,534,Nagaland,Kiphire,,,,,,manual_pilot,Nagaland > Kiphire,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+538,Kohima,kohima,district,534,Nagaland,Kohima,,,,,,manual_pilot,Nagaland > Kohima,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+539,Longleng,longleng,district,534,Nagaland,Longleng,,,,,,manual_pilot,Nagaland > Longleng,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+540,Mokokchung,mokokchung,district,534,Nagaland,Mokokchung,,,,,,manual_pilot,Nagaland > Mokokchung,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+541,Mon,mon,district,534,Nagaland,Mon,,,,,,manual_pilot,Nagaland > Mon,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+542,Niuland,niuland,district,534,Nagaland,Niuland,,,,,,manual_pilot,Nagaland > Niuland,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+543,Noklak,noklak,district,534,Nagaland,Noklak,,,,,,manual_pilot,Nagaland > Noklak,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+544,Peren,peren,district,534,Nagaland,Peren,,,,,,manual_pilot,Nagaland > Peren,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+545,Phek,phek,district,534,Nagaland,Phek,,,,,,manual_pilot,Nagaland > Phek,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+546,Shamator,shamator,district,534,Nagaland,Shamator,,,,,,manual_pilot,Nagaland > Shamator,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+547,Tuensang,tuensang,district,534,Nagaland,Tuensang,,,,,,manual_pilot,Nagaland > Tuensang,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+548,Tseminyu,tseminyu,district,534,Nagaland,Tseminyu,,,,,,manual_pilot,Nagaland > Tseminyu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+549,Wokha,wokha,district,534,Nagaland,Wokha,,,,,,manual_pilot,Nagaland > Wokha,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+550,Zunheboto,zunheboto,district,534,Nagaland,Zunheboto,,,,,,manual_pilot,Nagaland > Zunheboto,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+552,Angul,angul,district,551,Odisha,Angul,,,,,,manual_pilot,Odisha > Angul,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+553,Balangir,balangir,district,551,Odisha,Balangir,,,,,,manual_pilot,Odisha > Balangir,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+554,Balasore,balasore,district,551,Odisha,Balasore,,,,,,manual_pilot,Odisha > Balasore,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+555,Bargarh,bargarh,district,551,Odisha,Bargarh,,,,,,manual_pilot,Odisha > Bargarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+556,Bhadrak,bhadrak,district,551,Odisha,Bhadrak,,,,,,manual_pilot,Odisha > Bhadrak,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+557,Boudh,boudh,district,551,Odisha,Boudh,,,,,,manual_pilot,Odisha > Boudh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+558,Cuttack,cuttack,district,551,Odisha,Cuttack,,,,,,manual_pilot,Odisha > Cuttack,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+559,Deogarh,deogarh,district,551,Odisha,Deogarh,,,,,,manual_pilot,Odisha > Deogarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+560,Dhenkanal,dhenkanal,district,551,Odisha,Dhenkanal,,,,,,manual_pilot,Odisha > Dhenkanal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+561,Gajapati,gajapati,district,551,Odisha,Gajapati,,,,,,manual_pilot,Odisha > Gajapati,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+562,Ganjam,ganjam,district,551,Odisha,Ganjam,,,,,,manual_pilot,Odisha > Ganjam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+563,Jagatsinghpur,jagatsinghpur,district,551,Odisha,Jagatsinghpur,,,,,,manual_pilot,Odisha > Jagatsinghpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+564,Jajpur,jajpur,district,551,Odisha,Jajpur,,,,,,manual_pilot,Odisha > Jajpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+565,Jharsuguda,jharsuguda,district,551,Odisha,Jharsuguda,,,,,,manual_pilot,Odisha > Jharsuguda,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+566,Kalahandi,kalahandi,district,551,Odisha,Kalahandi,,,,,,manual_pilot,Odisha > Kalahandi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+567,Kandhamal,kandhamal,district,551,Odisha,Kandhamal,,,,,,manual_pilot,Odisha > Kandhamal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+568,Kendrapara,kendrapara,district,551,Odisha,Kendrapara,,,,,,manual_pilot,Odisha > Kendrapara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+569,Kendujhar,kendujhar,district,551,Odisha,Kendujhar,,,,,,manual_pilot,Odisha > Kendujhar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+570,Khordha,khordha,district,551,Odisha,Khordha,,,,,,manual_pilot,Odisha > Khordha,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+571,Koraput,koraput,district,551,Odisha,Koraput,,,,,,manual_pilot,Odisha > Koraput,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+572,Malkangiri,malkangiri,district,551,Odisha,Malkangiri,,,,,,manual_pilot,Odisha > Malkangiri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+573,Mayurbhanj,mayurbhanj,district,551,Odisha,Mayurbhanj,,,,,,manual_pilot,Odisha > Mayurbhanj,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+574,Nabarangpur,nabarangpur,district,551,Odisha,Nabarangpur,,,,,,manual_pilot,Odisha > Nabarangpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+575,Nayagarh,nayagarh,district,551,Odisha,Nayagarh,,,,,,manual_pilot,Odisha > Nayagarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+576,Nuapada,nuapada,district,551,Odisha,Nuapada,,,,,,manual_pilot,Odisha > Nuapada,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+577,Puri,puri,district,551,Odisha,Puri,,,,,,manual_pilot,Odisha > Puri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+578,Rayagada,rayagada,district,551,Odisha,Rayagada,,,,,,manual_pilot,Odisha > Rayagada,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+579,Sambalpur,sambalpur,district,551,Odisha,Sambalpur,,,,,,manual_pilot,Odisha > Sambalpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+580,Subarnapur,subarnapur,district,551,Odisha,Subarnapur,,,,,,manual_pilot,Odisha > Subarnapur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+581,Sundargarh,sundargarh,district,551,Odisha,Sundargarh,,,,,,manual_pilot,Odisha > Sundargarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+583,Amritsar,amritsar,district,582,Punjab,Amritsar,,,,,,manual_pilot,Punjab > Amritsar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+584,Barnala,barnala,district,582,Punjab,Barnala,,,,,,manual_pilot,Punjab > Barnala,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+585,Bathinda,bathinda,district,582,Punjab,Bathinda,,,,,,manual_pilot,Punjab > Bathinda,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+586,Faridkot,faridkot,district,582,Punjab,Faridkot,,,,,,manual_pilot,Punjab > Faridkot,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+587,Fatehgarh Sahib,fatehgarh sahib,district,582,Punjab,Fatehgarh Sahib,,,,,,manual_pilot,Punjab > Fatehgarh Sahib,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+588,Fazilka,fazilka,district,582,Punjab,Fazilka,,,,,,manual_pilot,Punjab > Fazilka,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+589,Ferozepur,ferozepur,district,582,Punjab,Ferozepur,,,,,,manual_pilot,Punjab > Ferozepur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+590,Gurdaspur,gurdaspur,district,582,Punjab,Gurdaspur,,,,,,manual_pilot,Punjab > Gurdaspur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+591,Hoshiarpur,hoshiarpur,district,582,Punjab,Hoshiarpur,,,,,,manual_pilot,Punjab > Hoshiarpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+592,Jalandhar,jalandhar,district,582,Punjab,Jalandhar,,,,,,manual_pilot,Punjab > Jalandhar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+593,Kapurthala,kapurthala,district,582,Punjab,Kapurthala,,,,,,manual_pilot,Punjab > Kapurthala,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+594,Ludhiana,ludhiana,district,582,Punjab,Ludhiana,,,,,,manual_pilot,Punjab > Ludhiana,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+595,Malerkotla,malerkotla,district,582,Punjab,Malerkotla,,,,,,manual_pilot,Punjab > Malerkotla,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+596,Mansa,mansa,district,582,Punjab,Mansa,,,,,,manual_pilot,Punjab > Mansa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+597,Moga,moga,district,582,Punjab,Moga,,,,,,manual_pilot,Punjab > Moga,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+598,Muktsar,muktsar,district,582,Punjab,Muktsar,,,,,,manual_pilot,Punjab > Muktsar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+599,Nawanshahr,nawanshahr,district,582,Punjab,Nawanshahr,,,,,,manual_pilot,Punjab > Nawanshahr,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+600,Pathankot,pathankot,district,582,Punjab,Pathankot,,,,,,manual_pilot,Punjab > Pathankot,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+601,Patiala,patiala,district,582,Punjab,Patiala,,,,,,manual_pilot,Punjab > Patiala,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+602,Rupnagar,rupnagar,district,582,Punjab,Rupnagar,,,,,,manual_pilot,Punjab > Rupnagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+603,Sahibzada Ajit Singh Nagar,sahibzada ajit singh nagar,district,582,Punjab,Sahibzada Ajit Singh Nagar,,,,,,manual_pilot,Punjab > Sahibzada Ajit Singh Nagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+604,Sangrur,sangrur,district,582,Punjab,Sangrur,,,,,,manual_pilot,Punjab > Sangrur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+605,Tarn Taran,tarn taran,district,582,Punjab,Tarn Taran,,,,,,manual_pilot,Punjab > Tarn Taran,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+607,Ajmer,ajmer,district,606,Rajasthan,Ajmer,,,,,,manual_pilot,Rajasthan > Ajmer,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+608,Alwar,alwar,district,606,Rajasthan,Alwar,,,,,,manual_pilot,Rajasthan > Alwar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+609,Anupgarh,anupgarh,district,606,Rajasthan,Anupgarh,,,,,,manual_pilot,Rajasthan > Anupgarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+610,Balotra,balotra,district,606,Rajasthan,Balotra,,,,,,manual_pilot,Rajasthan > Balotra,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+611,Banswara,banswara,district,606,Rajasthan,Banswara,,,,,,manual_pilot,Rajasthan > Banswara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+612,Baran,baran,district,606,Rajasthan,Baran,,,,,,manual_pilot,Rajasthan > Baran,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+613,Barmer,barmer,district,606,Rajasthan,Barmer,,,,,,manual_pilot,Rajasthan > Barmer,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+614,Beawar,beawar,district,606,Rajasthan,Beawar,,,,,,manual_pilot,Rajasthan > Beawar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+615,Bharatpur,bharatpur,district,606,Rajasthan,Bharatpur,,,,,,manual_pilot,Rajasthan > Bharatpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+616,Bhilwara,bhilwara,district,606,Rajasthan,Bhilwara,,,,,,manual_pilot,Rajasthan > Bhilwara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+617,Bikaner,bikaner,district,606,Rajasthan,Bikaner,,,,,,manual_pilot,Rajasthan > Bikaner,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+618,Bundi,bundi,district,606,Rajasthan,Bundi,,,,,,manual_pilot,Rajasthan > Bundi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+619,Chittorgarh,chittorgarh,district,606,Rajasthan,Chittorgarh,,,,,,manual_pilot,Rajasthan > Chittorgarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+620,Churu,churu,district,606,Rajasthan,Churu,,,,,,manual_pilot,Rajasthan > Churu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+621,Dausa,dausa,district,606,Rajasthan,Dausa,,,,,,manual_pilot,Rajasthan > Dausa,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+622,Deeg,deeg,district,606,Rajasthan,Deeg,,,,,,manual_pilot,Rajasthan > Deeg,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+623,Dholpur,dholpur,district,606,Rajasthan,Dholpur,,,,,,manual_pilot,Rajasthan > Dholpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+624,Didwana-Kuchaman,didwana kuchaman,district,606,Rajasthan,Didwana-Kuchaman,,,,,,manual_pilot,Rajasthan > Didwana-Kuchaman,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+625,Dudu,dudu,district,606,Rajasthan,Dudu,,,,,,manual_pilot,Rajasthan > Dudu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+626,Dungarpur,dungarpur,district,606,Rajasthan,Dungarpur,,,,,,manual_pilot,Rajasthan > Dungarpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+627,Ganganagar,ganganagar,district,606,Rajasthan,Ganganagar,,,,,,manual_pilot,Rajasthan > Ganganagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+628,Gangapur City,gangapur city,district,606,Rajasthan,Gangapur City,,,,,,manual_pilot,Rajasthan > Gangapur City,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+629,Hanumangarh,hanumangarh,district,606,Rajasthan,Hanumangarh,,,,,,manual_pilot,Rajasthan > Hanumangarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+630,Jaipur,jaipur,district,606,Rajasthan,Jaipur,,,,,,manual_pilot,Rajasthan > Jaipur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+631,Jaipur Rural,jaipur rural,district,606,Rajasthan,Jaipur Rural,,,,,,manual_pilot,Rajasthan > Jaipur Rural,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+632,Jaisalmer,jaisalmer,district,606,Rajasthan,Jaisalmer,,,,,,manual_pilot,Rajasthan > Jaisalmer,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+633,Jalore,jalore,district,606,Rajasthan,Jalore,,,,,,manual_pilot,Rajasthan > Jalore,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+634,Jhalawar,jhalawar,district,606,Rajasthan,Jhalawar,,,,,,manual_pilot,Rajasthan > Jhalawar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+635,Jhunjhunu,jhunjhunu,district,606,Rajasthan,Jhunjhunu,,,,,,manual_pilot,Rajasthan > Jhunjhunu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+636,Jodhpur,jodhpur,district,606,Rajasthan,Jodhpur,,,,,,manual_pilot,Rajasthan > Jodhpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+637,Jodhpur Rural,jodhpur rural,district,606,Rajasthan,Jodhpur Rural,,,,,,manual_pilot,Rajasthan > Jodhpur Rural,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+638,Karauli,karauli,district,606,Rajasthan,Karauli,,,,,,manual_pilot,Rajasthan > Karauli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+639,Kekri,kekri,district,606,Rajasthan,Kekri,,,,,,manual_pilot,Rajasthan > Kekri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+640,Khairthal-Tijara,khairthal tijara,district,606,Rajasthan,Khairthal-Tijara,,,,,,manual_pilot,Rajasthan > Khairthal-Tijara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+641,Kota,kota,district,606,Rajasthan,Kota,,,,,,manual_pilot,Rajasthan > Kota,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+642,Kotputli-Behror,kotputli behror,district,606,Rajasthan,Kotputli-Behror,,,,,,manual_pilot,Rajasthan > Kotputli-Behror,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+643,Nagaur,nagaur,district,606,Rajasthan,Nagaur,,,,,,manual_pilot,Rajasthan > Nagaur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+644,Neem Ka Thana,neem ka thana,district,606,Rajasthan,Neem Ka Thana,,,,,,manual_pilot,Rajasthan > Neem Ka Thana,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+645,Pali,pali,district,606,Rajasthan,Pali,,,,,,manual_pilot,Rajasthan > Pali,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+646,Phalodi,phalodi,district,606,Rajasthan,Phalodi,,,,,,manual_pilot,Rajasthan > Phalodi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+647,Pratapgarh,pratapgarh,district,606,Rajasthan,Pratapgarh,,,,,,manual_pilot,Rajasthan > Pratapgarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+648,Rajsamand,rajsamand,district,606,Rajasthan,Rajsamand,,,,,,manual_pilot,Rajasthan > Rajsamand,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+649,Salumbar,salumbar,district,606,Rajasthan,Salumbar,,,,,,manual_pilot,Rajasthan > Salumbar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+650,Sanchore,sanchore,district,606,Rajasthan,Sanchore,,,,,,manual_pilot,Rajasthan > Sanchore,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+651,Sawai Madhopur,sawai madhopur,district,606,Rajasthan,Sawai Madhopur,,,,,,manual_pilot,Rajasthan > Sawai Madhopur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+652,Shahpura,shahpura,district,606,Rajasthan,Shahpura,,,,,,manual_pilot,Rajasthan > Shahpura,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+653,Sikar,sikar,district,606,Rajasthan,Sikar,,,,,,manual_pilot,Rajasthan > Sikar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+654,Sirohi,sirohi,district,606,Rajasthan,Sirohi,,,,,,manual_pilot,Rajasthan > Sirohi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+655,Tonk,tonk,district,606,Rajasthan,Tonk,,,,,,manual_pilot,Rajasthan > Tonk,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+656,Udaipur,udaipur,district,606,Rajasthan,Udaipur,,,,,,manual_pilot,Rajasthan > Udaipur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+658,Gangtok,gangtok,district,657,Sikkim,Gangtok,,,,,,manual_pilot,Sikkim > Gangtok,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+659,Gyalshing,gyalshing,district,657,Sikkim,Gyalshing,,,,,,manual_pilot,Sikkim > Gyalshing,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+660,Mangan,mangan,district,657,Sikkim,Mangan,,,,,,manual_pilot,Sikkim > Mangan,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+661,Namchi,namchi,district,657,Sikkim,Namchi,,,,,,manual_pilot,Sikkim > Namchi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+662,Pakyong,pakyong,district,657,Sikkim,Pakyong,,,,,,manual_pilot,Sikkim > Pakyong,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+663,Soreng,soreng,district,657,Sikkim,Soreng,,,,,,manual_pilot,Sikkim > Soreng,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+665,Ariyalur,ariyalur,district,664,Tamil Nadu,Ariyalur,,,,,,manual_pilot,Tamil Nadu > Ariyalur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+666,Chengalpattu,chengalpattu,district,664,Tamil Nadu,Chengalpattu,,,,,,manual_pilot,Tamil Nadu > Chengalpattu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+667,Chennai,chennai,district,664,Tamil Nadu,Chennai,,,,,,manual_pilot,Tamil Nadu > Chennai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+668,Coimbatore,coimbatore,district,664,Tamil Nadu,Coimbatore,,,,,,manual_pilot,Tamil Nadu > Coimbatore,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+669,Cuddalore,cuddalore,district,664,Tamil Nadu,Cuddalore,,,,,,manual_pilot,Tamil Nadu > Cuddalore,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+670,Dharmapuri,dharmapuri,district,664,Tamil Nadu,Dharmapuri,,,,,,manual_pilot,Tamil Nadu > Dharmapuri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+671,Dindigul,dindigul,district,664,Tamil Nadu,Dindigul,,,,,,manual_pilot,Tamil Nadu > Dindigul,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+672,Erode,erode,district,664,Tamil Nadu,Erode,,,,,,manual_pilot,Tamil Nadu > Erode,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+673,Kallakurichi,kallakurichi,district,664,Tamil Nadu,Kallakurichi,,,,,,manual_pilot,Tamil Nadu > Kallakurichi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+674,Kanchipuram,kanchipuram,district,664,Tamil Nadu,Kanchipuram,,,,,,manual_pilot,Tamil Nadu > Kanchipuram,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+675,Kanyakumari,kanyakumari,district,664,Tamil Nadu,Kanyakumari,,,,,,manual_pilot,Tamil Nadu > Kanyakumari,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+676,Karur,karur,district,664,Tamil Nadu,Karur,,,,,,manual_pilot,Tamil Nadu > Karur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+677,Krishnagiri,krishnagiri,district,664,Tamil Nadu,Krishnagiri,,,,,,manual_pilot,Tamil Nadu > Krishnagiri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+678,Madurai,madurai,district,664,Tamil Nadu,Madurai,,,,,,manual_pilot,Tamil Nadu > Madurai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+679,Mayiladuthurai,mayiladuthurai,district,664,Tamil Nadu,Mayiladuthurai,,,,,,manual_pilot,Tamil Nadu > Mayiladuthurai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+680,Nagapattinam,nagapattinam,district,664,Tamil Nadu,Nagapattinam,,,,,,manual_pilot,Tamil Nadu > Nagapattinam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+681,Namakkal,namakkal,district,664,Tamil Nadu,Namakkal,,,,,,manual_pilot,Tamil Nadu > Namakkal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+682,Nilgiris,nilgiris,district,664,Tamil Nadu,Nilgiris,,,,,,manual_pilot,Tamil Nadu > Nilgiris,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+683,Perambalur,perambalur,district,664,Tamil Nadu,Perambalur,,,,,,manual_pilot,Tamil Nadu > Perambalur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+684,Pudukkottai,pudukkottai,district,664,Tamil Nadu,Pudukkottai,,,,,,manual_pilot,Tamil Nadu > Pudukkottai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+685,Ramanathapuram,ramanathapuram,district,664,Tamil Nadu,Ramanathapuram,,,,,,manual_pilot,Tamil Nadu > Ramanathapuram,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+686,Ranipet,ranipet,district,664,Tamil Nadu,Ranipet,,,,,,manual_pilot,Tamil Nadu > Ranipet,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+687,Salem,salem,district,664,Tamil Nadu,Salem,,,,,,manual_pilot,Tamil Nadu > Salem,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+688,Sivaganga,sivaganga,district,664,Tamil Nadu,Sivaganga,,,,,,manual_pilot,Tamil Nadu > Sivaganga,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+689,Tenkasi,tenkasi,district,664,Tamil Nadu,Tenkasi,,,,,,manual_pilot,Tamil Nadu > Tenkasi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+690,Thanjavur,thanjavur,district,664,Tamil Nadu,Thanjavur,,,,,,manual_pilot,Tamil Nadu > Thanjavur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+691,Theni,theni,district,664,Tamil Nadu,Theni,,,,,,manual_pilot,Tamil Nadu > Theni,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+692,Thoothukudi,thoothukudi,district,664,Tamil Nadu,Thoothukudi,,,,,,manual_pilot,Tamil Nadu > Thoothukudi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+693,Tiruchirappalli,tiruchirappalli,district,664,Tamil Nadu,Tiruchirappalli,,,,,,manual_pilot,Tamil Nadu > Tiruchirappalli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+694,Tirunelveli,tirunelveli,district,664,Tamil Nadu,Tirunelveli,,,,,,manual_pilot,Tamil Nadu > Tirunelveli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+695,Tirupathur,tirupathur,district,664,Tamil Nadu,Tirupathur,,,,,,manual_pilot,Tamil Nadu > Tirupathur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+696,Tiruppur,tiruppur,district,664,Tamil Nadu,Tiruppur,,,,,,manual_pilot,Tamil Nadu > Tiruppur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+697,Tiruvallur,tiruvallur,district,664,Tamil Nadu,Tiruvallur,,,,,,manual_pilot,Tamil Nadu > Tiruvallur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+698,Tiruvannamalai,tiruvannamalai,district,664,Tamil Nadu,Tiruvannamalai,,,,,,manual_pilot,Tamil Nadu > Tiruvannamalai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+699,Tiruvarur,tiruvarur,district,664,Tamil Nadu,Tiruvarur,,,,,,manual_pilot,Tamil Nadu > Tiruvarur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+700,Vellore,vellore,district,664,Tamil Nadu,Vellore,,,,,,manual_pilot,Tamil Nadu > Vellore,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+701,Viluppuram,viluppuram,district,664,Tamil Nadu,Viluppuram,,,,,,manual_pilot,Tamil Nadu > Viluppuram,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+702,Virudhunagar,virudhunagar,district,664,Tamil Nadu,Virudhunagar,,,,,,manual_pilot,Tamil Nadu > Virudhunagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+704,Adilabad,adilabad,district,703,Telangana,Adilabad,,,,,,manual_pilot,Telangana > Adilabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+705,Bhadradri Kothagudem,bhadradri kothagudem,district,703,Telangana,Bhadradri Kothagudem,,,,,,manual_pilot,Telangana > Bhadradri Kothagudem,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+706,Hanumakonda,hanumakonda,district,703,Telangana,Hanumakonda,,,,,,manual_pilot,Telangana > Hanumakonda,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+707,Hyderabad,hyderabad,district,703,Telangana,Hyderabad,,,,,,manual_pilot,Telangana > Hyderabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+708,Jagtial,jagtial,district,703,Telangana,Jagtial,,,,,,manual_pilot,Telangana > Jagtial,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+709,Jangaon,jangaon,district,703,Telangana,Jangaon,,,,,,manual_pilot,Telangana > Jangaon,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+710,Jayashankar Bhupalpally,jayashankar bhupalpally,district,703,Telangana,Jayashankar Bhupalpally,,,,,,manual_pilot,Telangana > Jayashankar Bhupalpally,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+711,Jogulamba Gadwal,jogulamba gadwal,district,703,Telangana,Jogulamba Gadwal,,,,,,manual_pilot,Telangana > Jogulamba Gadwal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+712,Kamareddy,kamareddy,district,703,Telangana,Kamareddy,,,,,,manual_pilot,Telangana > Kamareddy,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+713,Karimnagar,karimnagar,district,703,Telangana,Karimnagar,,,,,,manual_pilot,Telangana > Karimnagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+714,Khammam,khammam,district,703,Telangana,Khammam,,,,,,manual_pilot,Telangana > Khammam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+715,Kumuram Bheem,kumuram bheem,district,703,Telangana,Kumuram Bheem,,,,,,manual_pilot,Telangana > Kumuram Bheem,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+716,Mahabubabad,mahabubabad,district,703,Telangana,Mahabubabad,,,,,,manual_pilot,Telangana > Mahabubabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+717,Mahabubnagar,mahabubnagar,district,703,Telangana,Mahabubnagar,,,,,,manual_pilot,Telangana > Mahabubnagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+718,Mancherial,mancherial,district,703,Telangana,Mancherial,,,,,,manual_pilot,Telangana > Mancherial,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+719,Medak,medak,district,703,Telangana,Medak,,,,,,manual_pilot,Telangana > Medak,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+720,Medchal-Malkajgiri,medchal malkajgiri,district,703,Telangana,Medchal-Malkajgiri,,,,,,manual_pilot,Telangana > Medchal-Malkajgiri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+721,Mulugu,mulugu,district,703,Telangana,Mulugu,,,,,,manual_pilot,Telangana > Mulugu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+722,Nagarkurnool,nagarkurnool,district,703,Telangana,Nagarkurnool,,,,,,manual_pilot,Telangana > Nagarkurnool,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+723,Nalgonda,nalgonda,district,703,Telangana,Nalgonda,,,,,,manual_pilot,Telangana > Nalgonda,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+724,Narayanpet,narayanpet,district,703,Telangana,Narayanpet,,,,,,manual_pilot,Telangana > Narayanpet,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+725,Nirmal,nirmal,district,703,Telangana,Nirmal,,,,,,manual_pilot,Telangana > Nirmal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+726,Nizamabad,nizamabad,district,703,Telangana,Nizamabad,,,,,,manual_pilot,Telangana > Nizamabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+727,Peddapalli,peddapalli,district,703,Telangana,Peddapalli,,,,,,manual_pilot,Telangana > Peddapalli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+728,Rajanna Sircilla,rajanna sircilla,district,703,Telangana,Rajanna Sircilla,,,,,,manual_pilot,Telangana > Rajanna Sircilla,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+729,Rangareddy,rangareddy,district,703,Telangana,Rangareddy,,,,,,manual_pilot,Telangana > Rangareddy,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+730,Sangareddy,sangareddy,district,703,Telangana,Sangareddy,,,,,,manual_pilot,Telangana > Sangareddy,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+731,Siddipet,siddipet,district,703,Telangana,Siddipet,,,,,,manual_pilot,Telangana > Siddipet,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+732,Suryapet,suryapet,district,703,Telangana,Suryapet,,,,,,manual_pilot,Telangana > Suryapet,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+733,Vikarabad,vikarabad,district,703,Telangana,Vikarabad,,,,,,manual_pilot,Telangana > Vikarabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+734,Wanaparthy,wanaparthy,district,703,Telangana,Wanaparthy,,,,,,manual_pilot,Telangana > Wanaparthy,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+735,Warangal,warangal,district,703,Telangana,Warangal,,,,,,manual_pilot,Telangana > Warangal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+736,Yadadri Bhuvanagiri,yadadri bhuvanagiri,district,703,Telangana,Yadadri Bhuvanagiri,,,,,,manual_pilot,Telangana > Yadadri Bhuvanagiri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+738,Dhalai,dhalai,district,737,Tripura,Dhalai,,,,,,manual_pilot,Tripura > Dhalai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+739,Gomati,gomati,district,737,Tripura,Gomati,,,,,,manual_pilot,Tripura > Gomati,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+740,Khowai,khowai,district,737,Tripura,Khowai,,,,,,manual_pilot,Tripura > Khowai,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+741,North Tripura,north tripura,district,737,Tripura,North Tripura,,,,,,manual_pilot,Tripura > North Tripura,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+742,Sepahijala,sepahijala,district,737,Tripura,Sepahijala,,,,,,manual_pilot,Tripura > Sepahijala,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+743,South Tripura,south tripura,district,737,Tripura,South Tripura,,,,,,manual_pilot,Tripura > South Tripura,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+744,Unakoti,unakoti,district,737,Tripura,Unakoti,,,,,,manual_pilot,Tripura > Unakoti,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+745,West Tripura,west tripura,district,737,Tripura,West Tripura,,,,,,manual_pilot,Tripura > West Tripura,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+747,Almora,almora,district,746,Uttarakhand,Almora,,,,,,manual_pilot,Uttarakhand > Almora,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+748,Bageshwar,bageshwar,district,746,Uttarakhand,Bageshwar,,,,,,manual_pilot,Uttarakhand > Bageshwar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+749,Chamoli,chamoli,district,746,Uttarakhand,Chamoli,,,,,,manual_pilot,Uttarakhand > Chamoli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+750,Champawat,champawat,district,746,Uttarakhand,Champawat,,,,,,manual_pilot,Uttarakhand > Champawat,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+751,Dehradun,dehradun,district,746,Uttarakhand,Dehradun,,,,,,manual_pilot,Uttarakhand > Dehradun,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+752,Haridwar,haridwar,district,746,Uttarakhand,Haridwar,,,,,,manual_pilot,Uttarakhand > Haridwar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+753,Nainital,nainital,district,746,Uttarakhand,Nainital,,,,,,manual_pilot,Uttarakhand > Nainital,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+754,Pauri Garhwal,pauri garhwal,district,746,Uttarakhand,Pauri Garhwal,,,,,,manual_pilot,Uttarakhand > Pauri Garhwal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+755,Pithoragarh,pithoragarh,district,746,Uttarakhand,Pithoragarh,,,,,,manual_pilot,Uttarakhand > Pithoragarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+756,Rudraprayag,rudraprayag,district,746,Uttarakhand,Rudraprayag,,,,,,manual_pilot,Uttarakhand > Rudraprayag,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+757,Tehri Garhwal,tehri garhwal,district,746,Uttarakhand,Tehri Garhwal,,,,,,manual_pilot,Uttarakhand > Tehri Garhwal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+758,Udham Singh Nagar,udham singh nagar,district,746,Uttarakhand,Udham Singh Nagar,,,,,,manual_pilot,Uttarakhand > Udham Singh Nagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+759,Uttarkashi,uttarkashi,district,746,Uttarakhand,Uttarkashi,,,,,,manual_pilot,Uttarakhand > Uttarkashi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+761,Alipurduar,alipurduar,district,760,West Bengal,Alipurduar,,,,,,manual_pilot,West Bengal > Alipurduar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+762,Bankura,bankura,district,760,West Bengal,Bankura,,,,,,manual_pilot,West Bengal > Bankura,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+763,Birbhum,birbhum,district,760,West Bengal,Birbhum,,,,,,manual_pilot,West Bengal > Birbhum,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+764,Cooch Behar,cooch behar,district,760,West Bengal,Cooch Behar,,,,,,manual_pilot,West Bengal > Cooch Behar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+765,Dakshin Dinajpur,dakshin dinajpur,district,760,West Bengal,Dakshin Dinajpur,,,,,,manual_pilot,West Bengal > Dakshin Dinajpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+766,Darjeeling,darjeeling,district,760,West Bengal,Darjeeling,,,,,,manual_pilot,West Bengal > Darjeeling,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+767,Hooghly,hooghly,district,760,West Bengal,Hooghly,,,,,,manual_pilot,West Bengal > Hooghly,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+768,Howrah,howrah,district,760,West Bengal,Howrah,,,,,,manual_pilot,West Bengal > Howrah,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+769,Jalpaiguri,jalpaiguri,district,760,West Bengal,Jalpaiguri,,,,,,manual_pilot,West Bengal > Jalpaiguri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+770,Jhargram,jhargram,district,760,West Bengal,Jhargram,,,,,,manual_pilot,West Bengal > Jhargram,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+771,Kalimpong,kalimpong,district,760,West Bengal,Kalimpong,,,,,,manual_pilot,West Bengal > Kalimpong,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+772,Kolkata,kolkata,district,760,West Bengal,Kolkata,,,,,,manual_pilot,West Bengal > Kolkata,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+773,Malda,malda,district,760,West Bengal,Malda,,,,,,manual_pilot,West Bengal > Malda,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+774,Murshidabad,murshidabad,district,760,West Bengal,Murshidabad,,,,,,manual_pilot,West Bengal > Murshidabad,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+775,Nadia,nadia,district,760,West Bengal,Nadia,,,,,,manual_pilot,West Bengal > Nadia,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+776,North 24 Parganas,north 24 parganas,district,760,West Bengal,North 24 Parganas,,,,,,manual_pilot,West Bengal > North 24 Parganas,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+777,Paschim Bardhaman,paschim bardhaman,district,760,West Bengal,Paschim Bardhaman,,,,,,manual_pilot,West Bengal > Paschim Bardhaman,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+778,Paschim Medinipur,paschim medinipur,district,760,West Bengal,Paschim Medinipur,,,,,,manual_pilot,West Bengal > Paschim Medinipur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+779,Purba Bardhaman,purba bardhaman,district,760,West Bengal,Purba Bardhaman,,,,,,manual_pilot,West Bengal > Purba Bardhaman,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+780,Purba Medinipur,purba medinipur,district,760,West Bengal,Purba Medinipur,,,,,,manual_pilot,West Bengal > Purba Medinipur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+781,Purulia,purulia,district,760,West Bengal,Purulia,,,,,,manual_pilot,West Bengal > Purulia,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+782,South 24 Parganas,south 24 parganas,district,760,West Bengal,South 24 Parganas,,,,,,manual_pilot,West Bengal > South 24 Parganas,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+783,Uttar Dinajpur,uttar dinajpur,district,760,West Bengal,Uttar Dinajpur,,,,,,manual_pilot,West Bengal > Uttar Dinajpur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+785,Nicobar,nicobar,district,784,Andaman and Nicobar Islands,Nicobar,,,,,,manual_pilot,Andaman and Nicobar Islands > Nicobar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+786,North and Middle Andaman,north and middle andaman,district,784,Andaman and Nicobar Islands,North and Middle Andaman,,,,,,manual_pilot,Andaman and Nicobar Islands > North and Middle Andaman,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+787,South Andaman,south andaman,district,784,Andaman and Nicobar Islands,South Andaman,,,,,,manual_pilot,Andaman and Nicobar Islands > South Andaman,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+789,Chandigarh,chandigarh,district,788,Chandigarh,Chandigarh,,,,,,manual_pilot,Chandigarh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+791,Dadra and Nagar Haveli,dadra and nagar haveli,district,790,Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli,,,,,,manual_pilot,Dadra and Nagar Haveli and Daman and Diu > Dadra and Nagar Haveli,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+792,Daman,daman,district,790,Dadra and Nagar Haveli and Daman and Diu,Daman,,,,,,manual_pilot,Dadra and Nagar Haveli and Daman and Diu > Daman,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+793,Diu,diu,district,790,Dadra and Nagar Haveli and Daman and Diu,Diu,,,,,,manual_pilot,Dadra and Nagar Haveli and Daman and Diu > Diu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+795,Central Delhi,central delhi,district,794,Delhi,Central Delhi,,,,,,manual_pilot,Delhi > Central Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+796,East Delhi,east delhi,district,794,Delhi,East Delhi,,,,,,manual_pilot,Delhi > East Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+797,New Delhi,new delhi,district,794,Delhi,New Delhi,,,,,,manual_pilot,Delhi > New Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+798,North Delhi,north delhi,district,794,Delhi,North Delhi,,,,,,manual_pilot,Delhi > North Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+799,North East Delhi,north east delhi,district,794,Delhi,North East Delhi,,,,,,manual_pilot,Delhi > North East Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+800,North West Delhi,north west delhi,district,794,Delhi,North West Delhi,,,,,,manual_pilot,Delhi > North West Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+801,Shahdara,shahdara,district,794,Delhi,Shahdara,,,,,,manual_pilot,Delhi > Shahdara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+802,South Delhi,south delhi,district,794,Delhi,South Delhi,,,,,,manual_pilot,Delhi > South Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+803,South East Delhi,south east delhi,district,794,Delhi,South East Delhi,,,,,,manual_pilot,Delhi > South East Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+804,South West Delhi,south west delhi,district,794,Delhi,South West Delhi,,,,,,manual_pilot,Delhi > South West Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+805,West Delhi,west delhi,district,794,Delhi,West Delhi,,,,,,manual_pilot,Delhi > West Delhi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+807,Anantnag,anantnag,district,806,Jammu and Kashmir,Anantnag,,,,,,manual_pilot,Jammu and Kashmir > Anantnag,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+808,Bandipora,bandipora,district,806,Jammu and Kashmir,Bandipora,,,,,,manual_pilot,Jammu and Kashmir > Bandipora,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+809,Baramulla,baramulla,district,806,Jammu and Kashmir,Baramulla,,,,,,manual_pilot,Jammu and Kashmir > Baramulla,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+810,Budgam,budgam,district,806,Jammu and Kashmir,Budgam,,,,,,manual_pilot,Jammu and Kashmir > Budgam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+811,Doda,doda,district,806,Jammu and Kashmir,Doda,,,,,,manual_pilot,Jammu and Kashmir > Doda,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+812,Ganderbal,ganderbal,district,806,Jammu and Kashmir,Ganderbal,,,,,,manual_pilot,Jammu and Kashmir > Ganderbal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+813,Jammu,jammu,district,806,Jammu and Kashmir,Jammu,,,,,,manual_pilot,Jammu and Kashmir > Jammu,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+814,Kathua,kathua,district,806,Jammu and Kashmir,Kathua,,,,,,manual_pilot,Jammu and Kashmir > Kathua,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+815,Kishtwar,kishtwar,district,806,Jammu and Kashmir,Kishtwar,,,,,,manual_pilot,Jammu and Kashmir > Kishtwar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+816,Kulgam,kulgam,district,806,Jammu and Kashmir,Kulgam,,,,,,manual_pilot,Jammu and Kashmir > Kulgam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+817,Kupwara,kupwara,district,806,Jammu and Kashmir,Kupwara,,,,,,manual_pilot,Jammu and Kashmir > Kupwara,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+818,Poonch,poonch,district,806,Jammu and Kashmir,Poonch,,,,,,manual_pilot,Jammu and Kashmir > Poonch,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+819,Pulwama,pulwama,district,806,Jammu and Kashmir,Pulwama,,,,,,manual_pilot,Jammu and Kashmir > Pulwama,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+820,Rajouri,rajouri,district,806,Jammu and Kashmir,Rajouri,,,,,,manual_pilot,Jammu and Kashmir > Rajouri,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+821,Ramban,ramban,district,806,Jammu and Kashmir,Ramban,,,,,,manual_pilot,Jammu and Kashmir > Ramban,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+822,Reasi,reasi,district,806,Jammu and Kashmir,Reasi,,,,,,manual_pilot,Jammu and Kashmir > Reasi,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+823,Samba,samba,district,806,Jammu and Kashmir,Samba,,,,,,manual_pilot,Jammu and Kashmir > Samba,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+824,Shopian,shopian,district,806,Jammu and Kashmir,Shopian,,,,,,manual_pilot,Jammu and Kashmir > Shopian,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+825,Srinagar,srinagar,district,806,Jammu and Kashmir,Srinagar,,,,,,manual_pilot,Jammu and Kashmir > Srinagar,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+826,Udhampur,udhampur,district,806,Jammu and Kashmir,Udhampur,,,,,,manual_pilot,Jammu and Kashmir > Udhampur,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+828,Kargil,kargil,district,827,Ladakh,Kargil,,,,,,manual_pilot,Ladakh > Kargil,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+829,Leh,leh,district,827,Ladakh,Leh,,,,,,manual_pilot,Ladakh > Leh,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+831,Lakshadweep,lakshadweep,district,830,Lakshadweep,Lakshadweep,,,,,,manual_pilot,Lakshadweep,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+833,Karaikal,karaikal,district,832,Puducherry,Karaikal,,,,,,manual_pilot,Puducherry > Karaikal,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+834,Mahe,mahe,district,832,Puducherry,Mahe,,,,,,manual_pilot,Puducherry > Mahe,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+835,Puducherry,puducherry,district,832,Puducherry,Puducherry,,,,,,manual_pilot,Puducherry,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30
+836,Yanam,yanam,district,832,Puducherry,Yanam,,,,,,manual_pilot,Puducherry > Yanam,20,True,2026-05-07 20:18:55.862663+05:30,2026-05-07 20:18:55.862663+05:30

@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Phase 1.1 Consolidated Work Report</title>
+<style>
+@page { size: A4; margin: 15mm 14mm; }
+* { box-sizing: border-box; }
+html { color: #17212b; font-family: Arial, Helvetica, sans-serif; }
+body { margin: 0; background: #fbfaf7; font-size: 10pt; line-height: 1.45; }
+.page { page-break-after: always; min-height: 267mm; }
+.page:last-child { page-break-after: auto; }
+.cover { display: flex; flex-direction: column; justify-content: space-between; }
+.band { height: 12mm; border-radius: 7px; background: linear-gradient(90deg, #bf513b, #d7a23a, #218a6a); margin-bottom: 10mm; }
+.kicker { color: #bf513b; font-weight: 800; font-size: 10pt; letter-spacing: .04em; text-transform: uppercase; }
+h1 { font-size: 34pt; line-height: 1.04; margin: 5mm 0 5mm; letter-spacing: 0; }
+h2 { font-size: 18pt; margin: 0 0 5mm; }
+h3 { font-size: 11.5pt; margin: 0 0 3mm; }
+p { margin: 0 0 3.2mm; }
+.subtitle { font-size: 13pt; color: #607085; max-width: 165mm; }
+.notice { border-left: 4px solid #bf513b; background: #fff4ee; padding: 3mm 4mm; margin: 5mm 0; }
+.source-line { color: #607085; font-size: 8.8pt; }
+.metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin: 6mm 0; }
+.metric-card { background: #ffffff; border: 1px solid #d9e1ea; border-radius: 5px; padding: 4mm; min-height: 27mm; }
+.metric-label { color: #607085; font-size: 8pt; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+.metric-value { font-size: 20pt; font-weight: 800; margin: .7mm 0; }
+.metric-note { color: #607085; font-size: 8.5pt; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; align-items: start; }
+.thirds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+.panel { background: #ffffff; border: 1px solid #d9e1ea; border-radius: 5px; padding: 4mm; margin: 0 0 4mm; break-inside: avoid; }
+.compact { padding: 3mm; }
+ul { margin: 1mm 0 0 5mm; padding-left: 4mm; }
+li { margin-bottom: 1.8mm; }
+table { width: 100%; border-collapse: collapse; background: #fff; font-size: 8.5pt; }
+th { text-align: left; color: #607085; border-bottom: 1px solid #d9e1ea; font-size: 7.5pt; text-transform: uppercase; letter-spacing: .035em; padding: 2mm; }
+td { border-bottom: 1px solid #eef2f6; padding: 1.8mm 2mm; vertical-align: top; }
+td:nth-child(n+2), th:nth-child(n+2) { text-align: right; }
+.left-table td:nth-child(1), .left-table th:nth-child(1), .left-table td:nth-child(2), .left-table th:nth-child(2) { text-align: left; }
+.text-table td, .text-table th { text-align: left !important; }
+.method-step { display: grid; grid-template-columns: 11mm 1fr; gap: 3mm; margin-bottom: 3mm; }
+.step-num { width: 9mm; height: 9mm; border-radius: 50%; background: #17212b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 8pt; font-weight: 800; }
+.muted { color: #607085; }
+.stacked-bar { height: 13mm; display: flex; overflow: hidden; border-radius: 5px; border: 1px solid #d9e1ea; background: #edf2f6; margin: 3mm 0 2mm; }
+.legend { display: flex; gap: 4mm; flex-wrap: wrap; color: #607085; font-size: 8.3pt; }
+.legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; }
+.reference { font-size: 8.8pt; color: #607085; overflow-wrap: anywhere; }
+.quote-box { border-top: 3px solid #d7a23a; padding-top: 3mm; }
+@media screen {
+    body { background: #e8edf2; padding: 18px 0 36px; }
+    .page { width: min(210mm, calc(100% - 32px)); min-height: 297mm; margin: 24px auto; padding: 16mm 15mm; background: #fbfaf7; border: 1px solid #d4dce6; border-radius: 6px; box-shadow: 0 18px 55px rgba(23,33,43,.13); page-break-after: auto; }
+}
+@media screen and (max-width: 760px) {
+    .page { width: calc(100% - 20px); min-height: auto; padding: 8mm 5mm; }
+    .metric-grid, .split, .thirds { grid-template-columns: 1fr; }
+    h1 { font-size: 28pt; }
+}
+</style>
+</head>
+<body>
+<section class="page cover">
+    <div>
+        <div class="band"></div>
+        <div class="kicker">Phase 1.1 Consolidated Work Report</div>
+        <h1>District Baseline<br>Research Methodology</h1>
+        <p class="subtitle">A work report documenting the goal, source authority, cleanup decisions, validation gates, discovery protocol, deduplication logic, and research limitations behind the district-only Shiva temple discovery baseline.</p>
+        <div class="notice"><strong>Boundary statement:</strong> this is a discovery baseline built from official district data and Google Places observations. It is not an exact count of all Shiva temples and not an official temple census.</div>
+    </div>
+    <div>
+        <div class="metric-grid">
+            
+        <div class="metric-card">
+            <div class="metric-label">Active LGD Districts</div>
+            <div class="metric-value">785</div>
+            <div class="metric-note">District-only administrative baseline</div>
+        </div>
+    
+            
+        <div class="metric-card">
+            <div class="metric-label">Search Tasks</div>
+            <div class="metric-value">7,065</div>
+            <div class="metric-note">9 Shiva-related queries per district</div>
+        </div>
+    
+            
+        <div class="metric-card">
+            <div class="metric-label">Unique Candidates</div>
+            <div class="metric-value">74,117</div>
+            <div class="metric-note">Current district-attributed Google Place IDs</div>
+        </div>
+    
+        </div>
+        <p class="source-line">Generated: May 17, 2026 02:24 PM | Report status: district_level_discovery_count_not_final_cultural_count</p>
+    </div>
+</section>
+
+<section class="page">
+    <h2>1. Goal And Research Frame</h2>
+    <div class="panel">
+        <h3>Goal Of Phase 1.1</h3>
+        <p>Phase 1.1 establishes a clean, national, district-level discovery baseline for likely Shiva temple candidates in India. The purpose is to create a comparable administrative starting point before adding towns, urban local bodies, sub-districts, or villages.</p>
+        <p>The working research question is: <strong>using official district geography and a bounded Google Places discovery protocol, where do Shiva-related temple candidates appear, and how strong is the name-based Shiva signal?</strong></p>
+    </div>
+    <div class="metric-grid">
+        
+        <div class="metric-card">
+            <div class="metric-label">Prepared LGD Rows</div>
+            <div class="metric-value">785</div>
+            <div class="metric-note">Normalized from LGD district source</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Districts With LGD Codes</div>
+            <div class="metric-value">785</div>
+            <div class="metric-note">Active district rows carrying LGD district code</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Inactive Audit Rows</div>
+            <div class="metric-value">1</div>
+            <div class="metric-note">Retained for history, excluded from Phase 1.1</div>
+        </div>
+    
+    </div>
+    <div class="split">
+        <div class="panel quote-box">
+            <h3>Why District-Only First</h3>
+            <ul>
+                <li>Districts are official, recognizable units for research and government communication.</li>
+                <li>A district layer prevents early mixing of towns, ULBs, tehsils, villages, and legacy pilot rows.</li>
+                <li>The task volume is controlled: 785 districts times 9 keywords.</li>
+                <li>It creates a national benchmark before deeper local expansion.</li>
+            </ul>
+        </div>
+        <div class="panel quote-box">
+            <h3>What This Work Can Support</h3>
+            <ul>
+                <li>District-level prioritization for manual review.</li>
+                <li>Evidence packs for academic or government conversations.</li>
+                <li>A repeatable pipeline for later location layers.</li>
+                <li>An audit trail for administrative naming decisions.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="page">
+    <h2>2. Source Authority</h2>
+    <div class="panel">
+        <h3>Source Of Truth Decisions</h3>
+        <table class="text-table"><thead><tr><th>Entity</th><th>Phase 1.1 Source</th><th>How It Was Treated</th></tr></thead><tbody><tr><td>District names and codes</td><td>Data.gov.in LGD district data from Ministry of Panchayati Raj</td><td>Administrative source of truth for district rows and LGD district codes.</td></tr><tr><td>Location hierarchy</td><td>LGD district/state columns</td><td>Normalized into india_locations with active district scope.</td></tr><tr><td>Temple candidate names</td><td>Google Places displayName</td><td>Discovery observation only, not canonical temple name truth.</td></tr><tr><td>Unique candidate identity</td><td>Google Place ID</td><td>Operational dedupe key for API results.</td></tr><tr><td>Shiva relevance</td><td>Configured high and medium Shiva term lexicon</td><td>Name-based confidence classification for triage and review.</td></tr></tbody></table>
+    </div>
+    <div class="split">
+        <div class="panel">
+            <h3>District Names</h3>
+            <p>The district layer uses Local Government Directory data as the administrative reference. The Ministry of Panchayati Raj describes LGD as a directory for land/revenue regions and local governments, with unique LGD codes assigned to government bodies and administrative entities.</p>
+            <p class="reference">https://panchayat.gov.in/en/lgd/</p>
+        </div>
+        <div class="panel">
+            <h3>Temple Names</h3>
+            <p>There is no final temple-name source of truth in Phase 1.1. Google Places names are treated as discovered field signals. A future verification phase should triangulate candidates against temple trusts, state religious/endowment departments, gazetteers, tourism boards, ASI/state archaeology sources, local records, and manual review.</p>
+        </div>
+    </div>
+    <div class="panel">
+        <h3>External Source Notes</h3>
+        <ul>
+            <li>Data.gov's LGD catalog is attributed to the Ministry of Panchayati Raj and is released through the Open Government Data platform. The catalog page observed on May 12, 2026 showed Published On 22/07/2022 and Updated On 10/05/2026.</li>
+            <li>Google Places Text Search returns place objects based on a text query and selected field mask. The API documentation notes that result lists are not guaranteed to be identical for repeated requests and that pagination is bounded.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="page">
+    <h2>3. Data Cleanup And Validation</h2>
+    <div class="panel">
+        <h3>Administrative Baseline Workflow</h3>
+        <div class="method-step"><div class="step-num">1</div><div><strong>Normalize LGD file.</strong><br><span class="muted">CSV headers and codes were mapped into the project's standard location schema.</span></div></div>
+        <div class="method-step"><div class="step-num">2</div><div><strong>Compare LGD to database.</strong><br><span class="muted">Districts were compared by LGD code, exact normalized name, canonical name, and high-similarity fuzzy match within the same state.</span></div></div>
+        <div class="method-step"><div class="step-num">3</div><div><strong>Resolve naming differences.</strong><br><span class="muted">Known administrative spelling and rename variants were captured as canonical aliases, then rechecked.</span></div></div>
+        <div class="method-step"><div class="step-num">4</div><div><strong>Handle manual exceptions.</strong><br><span class="muted">Bajali and Tamulpur were inserted from LGD. Itanagar Capital Complex was retained inactive as a pilot/audit row outside the LGD district baseline.</span></div></div>
+        <div class="method-step"><div class="step-num">5</div><div><strong>Lock Phase 1.1 scope.</strong><br><span class="muted">Only active district rows were used for task generation and scoped reporting.</span></div></div>
+    </div>
+    <div class="panel">
+        <h3>Alignment Funnel</h3>
+        <table class=""><thead><tr><th>Validation pass</th><th>Auto</th><th>Review</th><th>Missing in DB</th><th>DB only</th></tr></thead><tbody><tr><td>Initial LGD vs DB review</td><td>737</td><td>27</td><td>21</td><td>22</td></tr><tr><td>After canonical aliases</td><td>783</td><td>0</td><td>2</td><td>1</td></tr><tr><td>After manual exceptions</td><td>785</td><td>0</td><td>0</td><td>1</td></tr></tbody></table>
+    </div>
+    <div class="thirds">
+        
+        <div class="panel compact">
+            <h3>Initial Review</h3>
+            <table class=""><thead><tr><th>Status</th><th>Rows</th></tr></thead><tbody><tr><td>auto</td><td>737</td></tr><tr><td>db_only</td><td>22</td></tr><tr><td>missing_in_db</td><td>21</td></tr><tr><td>review</td><td>27</td></tr></tbody></table>
+        </div>
+    
+        
+        <div class="panel compact">
+            <h3>After Aliases</h3>
+            <table class=""><thead><tr><th>Status</th><th>Rows</th></tr></thead><tbody><tr><td>auto</td><td>783</td></tr><tr><td>db_only</td><td>1</td></tr><tr><td>missing_in_db</td><td>2</td></tr></tbody></table>
+        </div>
+    
+        
+        <div class="panel compact">
+            <h3>Final Review</h3>
+            <table class=""><thead><tr><th>Status</th><th>Rows</th></tr></thead><tbody><tr><td>auto</td><td>785</td></tr><tr><td>db_only</td><td>1</td></tr></tbody></table>
+        </div>
+    
+    </div>
+</section>
+
+<section class="page">
+    <h2>4. Discovery Protocol</h2>
+    <div class="split">
+        <div class="panel">
+            <h3>Search Design</h3>
+            <ul>
+                <li>Each active district received the same keyword set for comparability.</li>
+                <li>Queries used the pattern: <strong>keyword in district, state, India</strong>.</li>
+                <li>The run used Google Places Text Search with <strong>includedType: hindu_temple</strong>, <strong>strictTypeFiltering: true</strong>, <strong>regionCode: IN</strong>, and <strong>languageCode: en</strong>.</li>
+                <li>Fields were limited to the needed result attributes, including ID, display name, address, location, type, and Maps URI.</li>
+            </ul>
+        </div>
+        <div class="panel">
+            <h3>Keyword Set</h3>
+            <table class="left-table"><thead><tr><th>Keyword</th></tr></thead><tbody><tr><td>Shiva temple</td></tr><tr><td>Shiv Mandir</td></tr><tr><td>Mahadev temple</td></tr><tr><td>Mahadev Mandir</td></tr><tr><td>Shankar Mandir</td></tr><tr><td>Someshwar temple</td></tr><tr><td>Vishwanath temple</td></tr><tr><td>Lingeshwar temple</td></tr><tr><td>Rudreshwar temple</td></tr></tbody></table>
+        </div>
+    </div>
+    <div class="metric-grid">
+        
+        <div class="metric-card">
+            <div class="metric-label">Done Tasks</div>
+            <div class="metric-value">7,065</div>
+            <div class="metric-note">100.0% of district tasks</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Failed Tasks</div>
+            <div class="metric-value">0</div>
+            <div class="metric-note">Retained for audit and rerun</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Raw Occurrences</div>
+            <div class="metric-value">229,495</div>
+            <div class="metric-note">Sum of completed district task result counts</div>
+        </div>
+    
+    </div>
+    <div class="panel">
+        <h3>Task Completion</h3>
+        <div class="stacked-bar"><div title="Done: 7,065" style="width:100.0000%; background:#218a6a;"></div><div title="Failed: 0" style="width:0.0000%; background:#bf513b;"></div></div><div class="legend"><span><i style="background:#218a6a;"></i>Done 7,065 (100.0%)</span><span><i style="background:#bf513b;"></i>Failed 0 (0.0%)</span></div>
+    </div>
+</section>
+
+<section class="page">
+    <h2>5. Deduplication And Classification</h2>
+    <div class="split">
+        <div class="panel">
+            <h3>Dedupe Method</h3>
+            <p>Within each API response, repeated Google Place IDs were collapsed. During database writes, candidates were upserted by <strong>google_place_id</strong>, so rediscovery through another query updated the same candidate instead of creating a second candidate row.</p>
+            <p>This is an operational dedupe method. It avoids repeated API hits becoming repeated candidate records, but it does not prove canonical cultural identity where Google itself has split or merged place records.</p>
+        </div>
+        <div class="panel">
+            <h3>Classification Method</h3>
+            <p>Candidate confidence is based on the discovered name only. High-confidence terms include direct Shiva variants such as Shiva, Shiv, Mahadev, Vishwanath, Somnath, Kedarnath, Omkareshwar, Lingeshwar, linga, and lingam. Medium-confidence terms include Shankar, Ishwar/Eshwar, Nath, Rudra, Someshwar, and Bholenath.</p>
+            <p>Low confidence means no configured Shiva-specific term matched the discovered name. It does not mean the candidate is not a Shiva temple.</p>
+        </div>
+    </div>
+    <div class="metric-grid">
+        
+        <div class="metric-card">
+            <div class="metric-label">Unique Place IDs</div>
+            <div class="metric-value">74,117</div>
+            <div class="metric-note">Deduped current district-attributed candidates</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Duplicates Removed</div>
+            <div class="metric-value">155,378</div>
+            <div class="metric-note">67.7% of raw occurrences</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">High + Medium Signal</div>
+            <div class="metric-value">51,243</div>
+            <div class="metric-note">69.1% of unique candidates</div>
+        </div>
+    
+    </div>
+    <div class="metric-grid">
+        
+        <div class="metric-card">
+            <div class="metric-label">Discovery Events</div>
+            <div class="metric-value">74,137</div>
+            <div class="metric-note">Query-to-place attribution records</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Events Linked To Tasks</div>
+            <div class="metric-value">74,137</div>
+            <div class="metric-note">Backfilled or newly observed task links</div>
+        </div>
+    
+        
+        <div class="metric-card">
+            <div class="metric-label">Districts With Events</div>
+            <div class="metric-value">772</div>
+            <div class="metric-note">District locations with at least one candidate event</div>
+        </div>
+    
+    </div>
+    <div class="panel">
+        <h3>Confidence Mix</h3>
+        <div class="stacked-bar"><div title="High: 43,877" style="width:59.1996%; background:#218a6a;"></div><div title="Medium: 7,366" style="width:9.9383%; background:#d7a23a;"></div><div title="Low: 22,874" style="width:30.8620%; background:#4f6fa9;"></div></div><div class="legend"><span><i style="background:#218a6a;"></i>High 43,877 (59.2%)</span><span><i style="background:#d7a23a;"></i>Medium 7,366 (9.9%)</span><span><i style="background:#4f6fa9;"></i>Low 22,874 (30.9%)</span></div>
+    </div>
+</section>
+
+<section class="page">
+    <h2>6. Research Findings Snapshot</h2>
+    <div class="split">
+        <div class="panel">
+            <h3>Top States By Unique Candidate Volume</h3>
+            <table class=""><thead><tr><th>State / UT</th><th>Unique</th><th>High</th><th>High+Medium Share</th></tr></thead><tbody><tr><td>Uttar Pradesh</td><td>8,493</td><td>5,727</td><td>77.9%</td></tr><tr><td>Rajasthan</td><td>5,345</td><td>3,640</td><td>72.6%</td></tr><tr><td>Bihar</td><td>5,241</td><td>3,394</td><td>74.6%</td></tr><tr><td>Maharashtra</td><td>4,784</td><td>2,936</td><td>79.9%</td></tr><tr><td>Gujarat</td><td>4,341</td><td>3,135</td><td>78.7%</td></tr><tr><td>Tamil Nadu</td><td>4,029</td><td>962</td><td>40.1%</td></tr><tr><td>Karnataka</td><td>3,704</td><td>1,454</td><td>74.5%</td></tr><tr><td>Odisha</td><td>3,371</td><td>2,096</td><td>70.8%</td></tr></tbody></table>
+        </div>
+        <div class="panel">
+            <h3>Top Districts By Unique Candidate Volume</h3>
+            <table class="left-table"><thead><tr><th>State</th><th>District</th><th>Unique</th><th>High</th><th>High+Medium Share</th></tr></thead><tbody><tr><td>Karnataka</td><td>Uttara Kannada</td><td>237</td><td>107</td><td>92.4%</td></tr><tr><td>West Bengal</td><td>South 24 Parganas</td><td>229</td><td>144</td><td>75.5%</td></tr><tr><td>Gujarat</td><td>Surendranagar</td><td>225</td><td>142</td><td>79.6%</td></tr><tr><td>Bihar</td><td>Saran</td><td>217</td><td>139</td><td>79.3%</td></tr><tr><td>Uttar Pradesh</td><td>Jaunpur</td><td>211</td><td>144</td><td>81.5%</td></tr><tr><td>Bihar</td><td>Samastipur</td><td>209</td><td>140</td><td>79.9%</td></tr><tr><td>Tamil Nadu</td><td>Krishnagiri</td><td>206</td><td>81</td><td>67.5%</td></tr><tr><td>Andhra Pradesh</td><td>West Godavari</td><td>205</td><td>67</td><td>39.0%</td></tr><tr><td>Karnataka</td><td>Tumakuru</td><td>204</td><td>72</td><td>76.0%</td></tr><tr><td>Rajasthan</td><td>Nagaur</td><td>202</td><td>109</td><td>62.4%</td></tr></tbody></table>
+        </div>
+    </div>
+    <div class="panel">
+        <h3>Keyword Signal In Candidate Rows</h3>
+        <table class=""><thead><tr><th>Latest source keyword</th><th>Candidate rows</th><th>Share</th></tr></thead><tbody><tr><td>Mahadev Mandir</td><td>21,571</td><td>29.1%</td></tr><tr><td>Shankar Mandir</td><td>10,189</td><td>13.7%</td></tr><tr><td>Shiva temple</td><td>10,140</td><td>13.7%</td></tr><tr><td>Mahadev temple</td><td>9,972</td><td>13.5%</td></tr><tr><td>Shiv Mandir</td><td>7,935</td><td>10.7%</td></tr><tr><td>Rudreshwar temple</td><td>6,695</td><td>9.0%</td></tr><tr><td>Lingeshwar temple</td><td>2,932</td><td>4.0%</td></tr><tr><td>Someshwar temple</td><td>2,348</td><td>3.2%</td></tr><tr><td>Vishwanath temple</td><td>2,335</td><td>3.2%</td></tr></tbody></table>
+        <p class="muted">Keyword signal is based on each candidate row's latest stored source query. It is useful for triage, but not a full attribution history across every rediscovery.</p>
+    </div>
+</section>
+
+<section class="page">
+    <h2>7. Challenges And Research Controls</h2>
+    <div class="split">
+        <div class="panel">
+            <h3>Challenges Encountered</h3>
+            <ul>
+                <li>Some downloaded files were not what their filenames suggested. One "towns" file was actually Uttar Pradesh sub-district data.</li>
+                <li>LGD local body data was valuable, but mixing it into Phase 1.1 would have blurred the district baseline.</li>
+                <li>Administrative names vary across sources: spelling variants, renames, parenthetical labels, and legacy district names needed careful alignment.</li>
+                <li>Two Assam districts were present in LGD but missing in the database, while one Arunachal pilot row sat outside the LGD district baseline.</li>
+                <li>Google Places returns discovery evidence, not a canonical temple registry, so counts must remain uncertainty-aware.</li>
+                <li>Repeated discoveries across keywords created heavy duplication, making stable place-ID dedupe essential.</li>
+            </ul>
+        </div>
+        <div class="panel">
+            <h3>Controls Applied</h3>
+            <ul>
+                <li>Phase 1.1 was explicitly restricted to active district rows.</li>
+                <li>LGD district codes were preserved as administrative identifiers.</li>
+                <li>Alignment output was written to review CSVs before applying changes.</li>
+                <li>Manual exceptions were documented and retained in the audit trail.</li>
+                <li>Google Places calls used bounded limits and a narrow field mask.</li>
+                <li>Reports state discovery counts rather than final real-world temple counts.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel">
+        <h3>Known Limitations</h3>
+        <ul>
+            <li>Candidate names are Google Places display names, not verified canonical temple names.</li>
+            <li>Some real temples may not be in Google Places, may be typed differently, or may not match the selected keywords.</li>
+            <li>Some candidates may be non-Shiva temples whose names contain overlapping terms, or Shiva temples whose names do not contain configured terms.</li>
+            <li>The candidate-discovery event ledger now records query-to-place attribution. Historical backfill captures each candidate's latest known source attribution; future discovery runs record new observations automatically.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="page">
+    <h2>8. Path Forward</h2>
+    <div class="panel">
+        <h3>Immediate Next Research Steps</h3>
+        <ul>
+            <li>Rerun or inspect the one failed district task and document the outcome.</li>
+            <li>Sample high, medium, and low confidence candidates across top and low-volume districts.</li>
+            <li>Use the candidate-discovery event ledger to analyze repeated discoveries across keywords, districts, towns, and future location layers.</li>
+            <li>Create a manual review protocol with fields for canonical name, deity verification, source URL, verifier, and confidence notes.</li>
+            <li>Keep Phase 1.2 town and ULB expansion as a separate scoped report, not mixed into Phase 1.1.</li>
+        </ul>
+    </div>
+    <div class="panel">
+        <h3>Suggested External Positioning</h3>
+        <p><strong>Use:</strong> An uncertainty-aware district-level discovery baseline of likely Shiva temple candidates in India, generated from official Indian district data and Google Places discovery results.</p>
+        <p><strong>Avoid:</strong> exact number of Shiva temples, official census of temples, complete temple database.</p>
+    </div>
+    <div class="panel">
+        <h3>References</h3>
+        <p class="reference">Data.gov.in LGD catalog: https://www.data.gov.in/catalog/local-government-directory-lgd</p>
+        <p class="reference">Ministry of Panchayati Raj LGD overview: https://panchayat.gov.in/en/lgd/</p>
+        <p class="reference">Google Places Text Search documentation: https://developers.google.com/maps/documentation/places/web-service/text-search</p>
+        <p class="reference">Local project evidence: data/prepared_locations_lgd_districts.csv, reports/location_verification/*.csv, reports/phase_1_1_district_baseline/*.csv.</p>
+    </div>
+</section>
+</body>
+</html>
