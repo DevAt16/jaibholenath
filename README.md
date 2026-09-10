@@ -277,18 +277,60 @@ npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite. The dashboard starts with sample report CSVs
-on the Discovery Search page. Use the `Insights` button to open the analysis
-dashboard, which can load generated files from `reports/`:
+Open the local URL printed by Vite. The workspace loads the Phase 1.1 baseline
+from `frontend/public/real-reports/`, falling back to sample reports with a notice
+when baseline files are unavailable. It has four views:
+
+- **Overview:** an introduction to the discovery story, a state/district selector
+  with a dynamic confidence summary and links to its loaded records, report
+  insights, confidence distribution, geographic shortcuts and methodology.
+  District labels describe search locations, not verified district boundaries;
+  summary totals remain distinct from partial candidate extracts.
+- **Release information:** the footer shows the portal package version and Preview
+  stage. A bottom-left Footprints icon reveals the shared visit counter on hover,
+  keyboard focus or tap. It stays unconnected until its API is configured; see
+  [portal hosting and visitor counter setup](docs/PORTAL_HOSTING.md).
+- **Candidates:** search by name/location, exact state and district filters,
+  confidence filtering, sorting, pagination and export of all matching results.
+- **Geography:** state rankings and a paginated district breakdown. Selecting a
+  location opens Candidates with the corresponding state/district filters.
+- **Reports:** import/export reports and explicitly switch to baseline or sample data.
+
+Select a candidate to open its full name, address, classification evidence, source
+query, observation dates, Place ID and Maps link in a detail panel. Escape closes
+the panel; Previous/Next moves through the filtered results. Press `/` in the
+Candidates view to focus search. Navigation preserves candidate filters and page
+size. Clear filters only resets the filters, without replacing the dataset.
+
+The Reports view accepts generated files from `reports/`:
 
 - `reports/national_summary.csv`
 - `reports/state_counts.csv`
 - `reports/district_counts.csv`
 - `reports/candidate_review.csv`
 
-Candidate rows include `google_maps_uri` when Google returns it, and the UI
+Imports replace the current dataset for the browser session and do not upload
+files to a server. Refreshing reloads the baseline. Import up to four CSVs (100 MB
+per file); malformed files are rejected before the loaded dataset changes.
+Candidate-only imports deduplicate by Place ID and derive summary counts. A
+summary-only import does not retain candidates from another dataset. Provided
+summary reports can cover more records than an accompanying candidate extract.
+
+Candidate records include `google_maps_uri` when Google returns it, and the UI
 shows it as an external Maps link. `google_place_id` remains the stable external
 reference for deduplication.
+
+Validate the frontend:
+
+```powershell
+cd frontend
+npm test
+npm run build
+```
+
+Frontend tests cover exact geographic filtering, search, sorting, pagination,
+CSV round trips and validation, import replacement, deduplication, report loading,
+Maps links, and rendering with populated or empty datasets.
 
 ## Tests
 

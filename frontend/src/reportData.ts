@@ -48,58 +48,132 @@ export type ReportData = {
 
 type CsvRow = Record<string, string>;
 
-function parseCsvLine(line: string): string[] {
-  const values: string[] = [];
-  let current = "";
-  let inQuotes = false;
-
-  for (let index = 0; index < line.length; index += 1) {
-    const char = line[index];
-    const next = line[index + 1];
-
-    if (char === '"' && inQuotes && next === '"') {
-      current += '"';
-      index += 1;
-      continue;
-    }
-
+export function parseCsv(text: string): CsvRow[] {
+  const records: string[][] = [];
+  let record: string[] = [];
+  let value = "";
+  let quoted = false;
+  const input = text.replace(/^\uFEFF/, "");
+  for (let index = 0; index < input.length; index += 1) {
+    const char = input[index];
     if (char === '"') {
-      inQuotes = !inQuotes;
-      continue;
-    }
-
-    if (char === "," && !inQuotes) {
-      values.push(current);
-      current = "";
-      continue;
-    }
-
-    current += char;
+      if (quoted && input[index + 1] === '"') {
+        value += '"';
+        index += 1;
+      } else if (quoted || !value.trim()) quoted = !quoted;
+      else value += char;
+    } else if (char === "," && !quoted) {
+      record.push(value.trim());
+      value = "";
+    } else if ((char === "\n" || char === "\r") && !quoted) {
+      record.push(value.trim());
+      if (record.some(Boolean)) records.push(record);
+      record = [];
+      value = "";
+      if (char === "\r" && input[index + 1] === "\n") index += 1;
+    } else value += char;
   }
-
-  values.push(current);
-  return values.map((value) => value.trim());
+  if (quoted) throw new Error("The CSV contains an unclosed quoted field.");
+  record.push(value.trim());
+  if (record.some(Boolean)) records.push(record);
+  if (records.length < 2) return [];
+  const [headers, ...rows] = records;
+  if (
+    new Set(headers).size !== headers.length ||
+    headers.some((header) => !header)
+  ) {
+    throw new Error("CSV column names must be unique and non-empty.");
+  }
+  return rows.map((values, index) => {
+    if (values.length !== headers.length)
+      throw new Error(
+        `CSV row ${index + 2} has an unexpected number of columns.`,
+      );
+    return Object.fromEntries(
+      headers.map((header, column) => [header, values[column] ?? ""]),
+    );
+  });
 }
 
-export function parseCsv(text: string): CsvRow[] {
-  const lines = text
-    .replace(/\r\n/g, "\n")
-    .replace(/\r/g, "\n")
-    .split("\n")
-    .filter((line) => line.trim().length > 0);
-
-  if (lines.length < 2) {
-    return [];
-  }
-
-  const headers = parseCsvLine(lines[0]);
-  return lines.slice(1).map((line) => {
-    const values = parseCsvLine(line);
-    return headers.reduce<CsvRow>((row, header, index) => {
-      row[header] = values[index] ?? "";
-      return row;
-    }, {});
+export function validateReportRows(
+  type: keyof ReportData,
+  rows: CsvRow[],
+): void {
+  const required: Record<keyof ReportData, string[]> = {
+    candidates: [
+      "google_place_id",
+      "discovered_name",
+      "state",
+      "district",
+      "confidence",
+      "confidence_score",
+    ],
+    national: [
+      "total_discovered_candidates",
+      "unique_google_place_ids",
+      "high_confidence_shiva",
+      "medium_confidence_shiva_candidates",
+      "low_confidence_possible_temples",
+      "duplicates_removed",
+    ],
+    states: [
+      "state",
+      "unique_google_place_ids",
+      "high_confidence_shiva",
+      "medium_confidence_shiva_candidates",
+      "low_confidence_possible_temples",
+    ],
+    districts: [
+      "state",
+      "district",
+      "unique_google_place_ids",
+      "high_confidence_shiva",
+      "medium_confidence_shiva_candidates",
+      "low_confidence_possible_temples",
+    ],
+  };
+  if (!rows.length) throw new Error("The report has no data rows.");
+  if (type === "national" && rows.length !== 1)
+    throw new Error("A national summary must contain one data row.");
+  const missing = required[type].filter((key) => !(key in rows[0]));
+  if (missing.length)
+    throw new Error(`Missing columns: ${missing.join(", ")}.`);
+  rows.forEach((row, index) => {
+    if (required[type].some((key) => !row[key]?.trim()))
+      throw new Error(`Required values are missing on row ${index + 2}.`);
+    if (type === "candidates") {
+      if (
+        !["high", "medium", "low"].includes(row.confidence) ||
+        !Number.isFinite(Number(row.confidence_score)) ||
+        Number(row.confidence_score) < 0 ||
+        Number(row.confidence_score) > 1
+      ) {
+        throw new Error(`Invalid confidence or score on row ${index + 2}.`);
+      }
+    } else {
+      const numeric = required[type].filter(
+        (key) => !["state", "district"].includes(key),
+      );
+      if (
+        numeric.some(
+          (key) =>
+            !Number.isSafeInteger(Number(row[key])) || Number(row[key]) < 0,
+        )
+      )
+        throw new Error(`Invalid count on row ${index + 2}.`);
+    }
   });
+}
+
+async function fetchReport(
+  path: string,
+  type: keyof ReportData,
+): Promise<string> {
+  const response = await fetch(path);
+  if (!response.ok) throw new Error("A report file is unavailable.");
+  const text = await response.text();
+  validateReportRows(type, parseCsv(text));
+  return text;
 }
 
 function numberValue(row: CsvRow, key: string): number {
@@ -112,14 +186,20 @@ export function toNationalSummary(row: CsvRow): NationalSummary {
   return {
     country: row.country || "India",
     source: row.source || "Google Places API",
-    total_discovered_candidates: numberValue(row, "total_discovered_candidates"),
+    total_discovered_candidates: numberValue(
+      row,
+      "total_discovered_candidates",
+    ),
     unique_google_place_ids: numberValue(row, "unique_google_place_ids"),
     high_confidence_shiva: numberValue(row, "high_confidence_shiva"),
     medium_confidence_shiva_candidates: numberValue(
       row,
       "medium_confidence_shiva_candidates",
     ),
-    low_confidence_possible_temples: numberValue(row, "low_confidence_possible_temples"),
+    low_confidence_possible_temples: numberValue(
+      row,
+      "low_confidence_possible_temples",
+    ),
     duplicates_removed: numberValue(row, "duplicates_removed"),
     status: row.status || "discovery_count_not_final_cultural_count",
   };
@@ -134,7 +214,10 @@ export function toStateCount(row: CsvRow): StateCount {
       row,
       "medium_confidence_shiva_candidates",
     ),
-    low_confidence_possible_temples: numberValue(row, "low_confidence_possible_temples"),
+    low_confidence_possible_temples: numberValue(
+      row,
+      "low_confidence_possible_temples",
+    ),
   };
 }
 
@@ -164,20 +247,17 @@ export function toCandidate(row: CsvRow): Candidate {
   };
 }
 
-export async function loadSampleReports(): Promise<ReportData> {
-  const [nationalText, stateText, districtText, candidateText] = await Promise.all([
-    fetch("/sample-reports/sample_national_summary.csv").then((response) =>
-      response.text(),
-    ),
-    fetch("/sample-reports/sample_state_counts.csv").then((response) => response.text()),
-    fetch("/sample-reports/sample_district_counts.csv").then((response) =>
-      response.text(),
-    ),
-    fetch("/sample-reports/sample_candidate_review.csv").then((response) =>
-      response.text(),
-    ),
-  ]);
-
+async function loadReportSet(
+  directory: string,
+  prefix = "",
+): Promise<ReportData> {
+  const [nationalText, stateText, districtText, candidateText] =
+    await Promise.all([
+      fetchReport(`${directory}/${prefix}national_summary.csv`, "national"),
+      fetchReport(`${directory}/${prefix}state_counts.csv`, "states"),
+      fetchReport(`${directory}/${prefix}district_counts.csv`, "districts"),
+      fetchReport(`${directory}/${prefix}candidate_review.csv`, "candidates"),
+    ]);
   return {
     national: parseCsv(nationalText).map(toNationalSummary)[0] ?? null,
     states: parseCsv(stateText).map(toStateCount),
@@ -186,7 +266,18 @@ export async function loadSampleReports(): Promise<ReportData> {
   };
 }
 
-export function classifyReportFile(fileName: string, rows: CsvRow[]): keyof ReportData | null {
+export function loadSampleReports(): Promise<ReportData> {
+  return loadReportSet("/sample-reports", "sample_");
+}
+
+export function loadRealReports(): Promise<ReportData> {
+  return loadReportSet("/real-reports");
+}
+
+export function classifyReportFile(
+  fileName: string,
+  rows: CsvRow[],
+): keyof ReportData | null {
   const name = fileName.toLowerCase();
   const headers = rows[0] ? Object.keys(rows[0]) : [];
 
@@ -196,7 +287,10 @@ export function classifyReportFile(fileName: string, rows: CsvRow[]): keyof Repo
   ) {
     return "candidates";
   }
-  if (name.includes("national") || headers.includes("total_discovered_candidates")) {
+  if (
+    name.includes("national") ||
+    headers.includes("total_discovered_candidates")
+  ) {
     return "national";
   }
   if (name.includes("district") || headers.includes("district")) {
