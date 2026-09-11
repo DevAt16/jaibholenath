@@ -10,7 +10,7 @@ Implement Phase 1 only: automated discovery of likely Shiva temple candidates fr
 - Do not build the final website yet.
 - Do not claim exact real-world temple counts.
 - Treat Google Places as a discovery source, not the final source of truth.
-- Use MySQL for discovery and visitor counts. Keep the backend in Python.
+- Use MySQL for discovery and visitor counts. Keep discovery scripts in Python; use Express/Node.js for the hosted visitor API.
 - Use Python scripts.
 - Use environment variables for all secrets.
 - Keep scripts runnable with safe limits.

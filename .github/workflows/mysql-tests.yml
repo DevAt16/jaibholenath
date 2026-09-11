@@ -25,3 +25,14 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -e '.[dev]'
       - run: python -m pytest
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: visitor-api/package-lock.json
+      - run: npm ci
+        working-directory: visitor-api
+      - run: npm test
+        working-directory: visitor-api
+      - run: npm run build
+        working-directory: visitor-api

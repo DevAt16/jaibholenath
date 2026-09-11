@@ -1,5 +1,10 @@
 # Portal release and visitor counter
 
+**Current Hostinger setup:** use the [Express visitor API](../visitor-api/README.md)
+on `api.jaibholenath.com` with MySQL. Python remains the discovery runtime.
+The Python visitor-service instructions below are an alternative for existing
+Python deployments, not a requirement for the Express service.
+
 The portal remains local until deployment is requested. Its footer shows the
 version from `frontend/package.json`; changing that value and rebuilding updates
 the displayed version. `Preview` describes the current portal release stage,

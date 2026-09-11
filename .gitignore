@@ -16,3 +16,5 @@ reports/candidate_review.csv
 
 # Local Python package build metadata.
 *.egg-info/
+
+visitor-api/dist/

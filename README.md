@@ -355,3 +355,5 @@ Read `docs/DATA_POLICY.md` before publishing or interpreting any report output. 
 For the command-by-command pipeline, read `docs/FUNCTIONAL_FLOW.md`.
 
 Database switch and existing data: [MySQL migration guide](docs/MYSQL_MIGRATION.md).
+
+Hosted visitor counter: [Express + MySQL deployment](visitor-api/README.md).

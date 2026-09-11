@@ -1,6 +1,7 @@
 # Switching discovery and portal visits to MySQL
 
-Both Python database paths now use PyMySQL. The frontend still reads the same
+Python database paths use PyMySQL. The hosted visitor API now also has an
+Express/mysql2 implementation; see [its deployment guide](../visitor-api/README.md). The frontend still reads the same
 CSV exports and uses the same visitor API JSON contract. No PHP is needed.
 
 ## New databases
@@ -58,6 +59,6 @@ visitor retries and preservation of totals. They make no Google Places calls.
 ## Hosting
 
 MySQL storage does not supply a Python runtime. Keep Python scripts on your
-computer or a suitable server, and run the public WSGI API on a Python-capable
-host. For a remote MySQL server, allow only the client server's IP and configure
+computer or a suitable server, and use the Express visitor API on Hostinger Node.js hosting, or the
+alternative WSGI visitor API on a Python-capable host. For a remote MySQL server, allow only the client server's IP and configure
 verified TLS with the provider CA using MYSQL_SSL_CA / VISITS_MYSQL_SSL_CA.
