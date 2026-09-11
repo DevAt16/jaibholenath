@@ -1,8 +1,8 @@
 CREATE TABLE IF NOT EXISTS india_locations (
-    id BIGSERIAL PRIMARY KEY,
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
     name TEXT NOT NULL,
     normalized_name TEXT NOT NULL,
-    location_type TEXT NOT NULL CHECK (
+    location_type VARCHAR(255) NOT NULL CHECK (
         location_type IN (
             'state',
             'district',
@@ -13,52 +13,44 @@ CREATE TABLE IF NOT EXISTS india_locations (
             'urban_local_body'
         )
     ),
-    parent_id BIGINT REFERENCES india_locations(id) ON DELETE SET NULL,
-    state_name TEXT,
-    district_name TEXT,
+    parent_id BIGINT,
+    state_name VARCHAR(255),
+    district_name VARCHAR(255),
     sub_district_name TEXT,
-    state_lgd_code TEXT,
-    district_lgd_code TEXT,
-    sub_district_lgd_code TEXT,
-    village_lgd_code TEXT,
-    source TEXT NOT NULL DEFAULT 'unknown',
+    state_lgd_code VARCHAR(32),
+    district_lgd_code VARCHAR(32),
+    sub_district_lgd_code VARCHAR(32),
+    village_lgd_code VARCHAR(32),
+    source VARCHAR(255) NOT NULL DEFAULT 'unknown',
     full_path TEXT,
     search_priority INTEGER NOT NULL DEFAULT 100,
     is_active BOOLEAN NOT NULL DEFAULT TRUE,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
-CREATE INDEX IF NOT EXISTS idx_india_locations_type_active
-    ON india_locations(location_type, is_active, search_priority);
-
-CREATE INDEX IF NOT EXISTS idx_india_locations_parent
-    ON india_locations(parent_id);
-
-CREATE INDEX IF NOT EXISTS idx_india_locations_state_district
-    ON india_locations(state_name, district_name);
-
-CREATE INDEX IF NOT EXISTS idx_india_locations_lgd_codes
-    ON india_locations(state_lgd_code, district_lgd_code, sub_district_lgd_code, village_lgd_code);
+    created_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+    updated_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+    KEY idx_india_locations_type_active (location_type, is_active, search_priority),
+    KEY idx_india_locations_parent (parent_id),
+    KEY idx_india_locations_state_district (state_name, district_name),
+    KEY idx_india_locations_lgd_codes (state_lgd_code, district_lgd_code, sub_district_lgd_code, village_lgd_code),
+    FOREIGN KEY (parent_id) REFERENCES india_locations(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 CREATE TABLE IF NOT EXISTS location_aliases (
-    id BIGSERIAL PRIMARY KEY,
-    location_id BIGINT NOT NULL REFERENCES india_locations(id) ON DELETE CASCADE,
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    location_id BIGINT NOT NULL,
     alias TEXT NOT NULL,
-    normalized_alias TEXT NOT NULL,
-    source TEXT NOT NULL DEFAULT 'manual',
-    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
-CREATE UNIQUE INDEX IF NOT EXISTS idx_location_aliases_unique
-    ON location_aliases(location_id, normalized_alias);
+    normalized_alias VARCHAR(255) NOT NULL,
+    source VARCHAR(255) NOT NULL DEFAULT 'manual',
+    created_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+    UNIQUE KEY idx_location_aliases_unique (location_id, normalized_alias),
+    FOREIGN KEY (location_id) REFERENCES india_locations(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 CREATE TABLE IF NOT EXISTS temple_search_tasks (
-    id BIGSERIAL PRIMARY KEY,
-    location_id BIGINT NOT NULL REFERENCES india_locations(id) ON DELETE CASCADE,
-    keyword TEXT NOT NULL,
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    location_id BIGINT NOT NULL,
+    keyword VARCHAR(255) NOT NULL,
     search_query TEXT NOT NULL,
-    search_level TEXT NOT NULL CHECK (
+    search_level VARCHAR(255) NOT NULL CHECK (
         search_level IN (
             'state',
             'district',
@@ -69,65 +61,39 @@ CREATE TABLE IF NOT EXISTS temple_search_tasks (
             'urban_local_body'
         )
     ),
-    status TEXT NOT NULL DEFAULT 'pending' CHECK (
+    status VARCHAR(255) NOT NULL DEFAULT 'pending' CHECK (
         status IN ('pending', 'running', 'done', 'failed', 'skipped')
     ),
     attempts INTEGER NOT NULL DEFAULT 0,
     result_count INTEGER NOT NULL DEFAULT 0,
     last_error TEXT,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
-CREATE UNIQUE INDEX IF NOT EXISTS idx_temple_search_tasks_location_keyword
-    ON temple_search_tasks(location_id, keyword);
-
-CREATE INDEX IF NOT EXISTS idx_temple_search_tasks_pending
-    ON temple_search_tasks(status, created_at, id);
+    created_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+    updated_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+    UNIQUE KEY idx_temple_search_tasks_location_keyword (location_id, keyword),
+    KEY idx_temple_search_tasks_pending (status, created_at, id),
+    FOREIGN KEY (location_id) REFERENCES india_locations(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 CREATE TABLE IF NOT EXISTS temple_candidates (
-    id BIGSERIAL PRIMARY KEY,
-    google_place_id TEXT NOT NULL UNIQUE,
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    google_place_id VARCHAR(255) NOT NULL UNIQUE,
     discovered_name TEXT NOT NULL,
     discovered_address TEXT,
     latitude DOUBLE PRECISION,
     longitude DOUBLE PRECISION,
-    state TEXT,
-    district TEXT,
+    state VARCHAR(255),
+    district VARCHAR(255),
     source_query TEXT,
-    source_location_id BIGINT REFERENCES india_locations(id) ON DELETE SET NULL,
-    confidence TEXT NOT NULL CHECK (confidence IN ('high', 'medium', 'low')),
+    source_location_id BIGINT,
+    confidence VARCHAR(255) NOT NULL CHECK (confidence IN ('high', 'medium', 'low')),
     confidence_score NUMERIC(4, 2) NOT NULL CHECK (
         confidence_score >= 0 AND confidence_score <= 1
     ),
     classification_reason TEXT NOT NULL,
-    first_seen_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    last_seen_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
-CREATE INDEX IF NOT EXISTS idx_temple_candidates_confidence
-    ON temple_candidates(confidence);
-
-CREATE INDEX IF NOT EXISTS idx_temple_candidates_state_district
-    ON temple_candidates(state, district);
-
-CREATE INDEX IF NOT EXISTS idx_temple_candidates_source_location
-    ON temple_candidates(source_location_id);
-
-CREATE OR REPLACE FUNCTION set_updated_at()
-RETURNS TRIGGER AS $$
-BEGIN
-    NEW.updated_at = NOW();
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-DROP TRIGGER IF EXISTS trg_india_locations_updated_at ON india_locations;
-CREATE TRIGGER trg_india_locations_updated_at
-BEFORE UPDATE ON india_locations
-FOR EACH ROW EXECUTE FUNCTION set_updated_at();
-
-DROP TRIGGER IF EXISTS trg_temple_search_tasks_updated_at ON temple_search_tasks;
-CREATE TRIGGER trg_temple_search_tasks_updated_at
-BEFORE UPDATE ON temple_search_tasks
-FOR EACH ROW EXECUTE FUNCTION set_updated_at();
+    first_seen_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+    last_seen_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+    KEY idx_temple_candidates_confidence (confidence),
+    KEY idx_temple_candidates_state_district (state, district),
+    KEY idx_temple_candidates_source_location (source_location_id),
+    FOREIGN KEY (source_location_id) REFERENCES india_locations(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;

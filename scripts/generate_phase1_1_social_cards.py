@@ -107,15 +107,13 @@ def _fetch_db_stats(fallback_districts: int) -> dict[str, int]:
                 cursor.execute(
                     """
                     SELECT
-                        COUNT(*) FILTER (
-                            WHERE is_active = TRUE AND location_type = 'district'
-                        ),
-                        COUNT(*) FILTER (
-                            WHERE is_active = TRUE
+                        COUNT(CASE WHEN is_active = TRUE AND location_type = 'district'
+                         THEN 1 END),
+                        COUNT(CASE WHEN is_active = TRUE
                               AND location_type = 'district'
                               AND district_lgd_code IS NOT NULL
                               AND district_lgd_code <> ''
-                        )
+                         THEN 1 END)
                     FROM india_locations;
                     """
                 )

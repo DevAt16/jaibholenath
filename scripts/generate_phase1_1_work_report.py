@@ -137,18 +137,15 @@ def _fetch_db_stats() -> dict[str, Any]:
                 cursor.execute(
                     """
                     SELECT
-                        COUNT(*) FILTER (
-                            WHERE is_active = TRUE AND location_type = 'district'
-                        ) AS active_districts,
-                        COUNT(*) FILTER (
-                            WHERE is_active = TRUE
+                        COUNT(CASE WHEN is_active = TRUE AND location_type = 'district'
+                         THEN 1 END) AS active_districts,
+                        COUNT(CASE WHEN is_active = TRUE
                               AND location_type = 'district'
                               AND district_lgd_code IS NOT NULL
                               AND district_lgd_code <> ''
-                        ) AS active_districts_with_lgd_code,
-                        COUNT(*) FILTER (
-                            WHERE is_active = FALSE AND location_type = 'district'
-                        ) AS inactive_districts
+                         THEN 1 END) AS active_districts_with_lgd_code,
+                        COUNT(CASE WHEN is_active = FALSE AND location_type = 'district'
+                         THEN 1 END) AS inactive_districts
                     FROM india_locations;
                     """
                 )
@@ -188,7 +185,7 @@ def _fetch_db_stats() -> dict[str, Any]:
                     """
                     SELECT
                         COUNT(*),
-                        COUNT(*) FILTER (WHERE search_task_id IS NOT NULL),
+                        COUNT(CASE WHEN search_task_id IS NOT NULL THEN 1 END),
                         COUNT(DISTINCT source_location_id)
                     FROM candidate_discovery_events
                     WHERE search_level = 'district';

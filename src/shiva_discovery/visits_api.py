@@ -7,36 +7,35 @@ import os
 from uuid import UUID
 
 
-class PostgresVisitStore:
+class MySQLVisitStore:
     def total(self, session_hash=None):
-        import psycopg
+        from .db import connect
 
-        # A dedicated role/database keeps the public API separate from discovery.
+        # A separate runtime account keeps the public API out of discovery data.
         dsn = os.environ.get("VISITS_DATABASE_URL")
         if not dsn:
             raise RuntimeError("Visit database is not configured")
-        with psycopg.connect(dsn, connect_timeout=5, options="-c statement_timeout=5000") as conn:
-            with conn.cursor() as cursor:
-                if session_hash:
-                    cursor.execute(
-                        "INSERT INTO portal_visit_sessions (session_hash) VALUES (%s) "
-                        "ON CONFLICT (session_hash) DO NOTHING RETURNING session_hash",
-                        (session_hash,),
-                    )
-                    if cursor.fetchone():
-                        cursor.execute(
-                            "UPDATE portal_visit_totals SET total = total + 1 "
-                            "WHERE singleton = TRUE"
-                        )
-                cursor.execute("SELECT total FROM portal_visit_totals WHERE singleton = TRUE")
-                row = cursor.fetchone()
-                if row is None:
-                    raise RuntimeError("Visit counter migration has not been applied")
-                return row[0]
+        with connect(dsn, prefix="VISITS_MYSQL") as conn:
+            with conn.transaction():
+                with conn.cursor() as cursor:
+                    # Serialize registrations before checking the token. The session
+                    # insert and total update commit together, including on retries.
+                    cursor.execute("SELECT total FROM portal_visit_totals WHERE singleton = 1 FOR UPDATE")
+                    row = cursor.fetchone()
+                    if row is None:
+                        raise RuntimeError("Visit counter migration has not been applied")
+                    total = int(row[0])
+                    if session_hash:
+                        cursor.execute("SELECT session_hash FROM portal_visit_sessions WHERE session_hash = %s", (session_hash,))
+                        if cursor.fetchone() is None:
+                            cursor.execute("INSERT INTO portal_visit_sessions (session_hash) VALUES (%s)", (session_hash,))
+                            cursor.execute("UPDATE portal_visit_totals SET total = total + 1 WHERE singleton = 1")
+                            total += 1
+                    return total
 
 
 def create_app(store=None, allowed_origin=None):
-    store = store if store is not None else PostgresVisitStore()
+    store = store if store is not None else MySQLVisitStore()
     allowed_origin = allowed_origin or os.environ.get("VISITS_ALLOWED_ORIGIN", "").rstrip("/")
 
     def application(environ, start_response):

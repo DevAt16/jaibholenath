@@ -13,3 +13,6 @@ reports/national_summary.csv
 reports/state_counts.csv
 reports/district_counts.csv
 reports/candidate_review.csv
+
+# Local Python package build metadata.
+*.egg-info/

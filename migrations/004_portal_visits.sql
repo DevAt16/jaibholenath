@@ -1,12 +1,11 @@
--- Separate from discovery data. Tokens are random session hashes, not identities.
+-- MySQL 8.0.16+ / MariaDB 10.6+, independent of discovery tables.
 CREATE TABLE IF NOT EXISTS portal_visit_sessions (
-    session_hash TEXT PRIMARY KEY,
-    recorded_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
+    session_hash CHAR(64) CHARACTER SET ascii COLLATE ascii_bin PRIMARY KEY,
+    recorded_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+) ENGINE=InnoDB;
 CREATE TABLE IF NOT EXISTS portal_visit_totals (
-    singleton BOOLEAN PRIMARY KEY DEFAULT TRUE CHECK (singleton),
+    singleton TINYINT PRIMARY KEY DEFAULT 1 CHECK (singleton = 1),
     total BIGINT NOT NULL DEFAULT 0 CHECK (total >= 0)
-);
-INSERT INTO portal_visit_totals (singleton, total) VALUES (TRUE, 0)
-ON CONFLICT (singleton) DO NOTHING;
+) ENGINE=InnoDB;
+INSERT INTO portal_visit_totals (singleton, total) VALUES (1, 0)
+ON DUPLICATE KEY UPDATE singleton = 1;

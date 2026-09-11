@@ -58,6 +58,26 @@ def _backfill(conn, *, location_type: str | None, limit: int | None) -> int:
     with conn.cursor() as cursor:
         cursor.execute(
             f"""
+            INSERT INTO candidate_discovery_events (
+                candidate_id,
+                google_place_id,
+                search_task_id,
+                source_location_id,
+                source_location_type,
+                source_location_name,
+                state_name,
+                district_name,
+                keyword,
+                search_query,
+                search_level,
+                result_position,
+                discovered_name,
+                discovered_address,
+                latitude,
+                longitude,
+                google_maps_uri,
+                observed_at
+            )
             WITH candidate_rows AS (
                 SELECT
                     candidate.id AS candidate_id,
@@ -93,26 +113,6 @@ def _backfill(conn, *, location_type: str | None, limit: int | None) -> int:
                 ORDER BY candidate.id
                 {limit_sql}
             )
-            INSERT INTO candidate_discovery_events (
-                candidate_id,
-                google_place_id,
-                search_task_id,
-                source_location_id,
-                source_location_type,
-                source_location_name,
-                state_name,
-                district_name,
-                keyword,
-                search_query,
-                search_level,
-                result_position,
-                discovered_name,
-                discovered_address,
-                latitude,
-                longitude,
-                google_maps_uri,
-                observed_at
-            )
             SELECT
                 candidate_id,
                 google_place_id,
@@ -133,27 +133,24 @@ def _backfill(conn, *, location_type: str | None, limit: int | None) -> int:
                 google_maps_uri,
                 observed_at
             FROM candidate_rows
-            ON CONFLICT (search_task_id, google_place_id)
-                WHERE search_task_id IS NOT NULL
-            DO UPDATE
-            SET candidate_id = EXCLUDED.candidate_id,
-                source_location_id = EXCLUDED.source_location_id,
-                source_location_type = EXCLUDED.source_location_type,
-                source_location_name = EXCLUDED.source_location_name,
-                state_name = EXCLUDED.state_name,
-                district_name = EXCLUDED.district_name,
-                keyword = EXCLUDED.keyword,
-                search_query = EXCLUDED.search_query,
-                search_level = EXCLUDED.search_level,
-                discovered_name = EXCLUDED.discovered_name,
-                discovered_address = EXCLUDED.discovered_address,
-                latitude = EXCLUDED.latitude,
-                longitude = EXCLUDED.longitude,
+            ON DUPLICATE KEY UPDATE candidate_id = VALUES(candidate_id),
+                source_location_id = VALUES(source_location_id),
+                source_location_type = VALUES(source_location_type),
+                source_location_name = VALUES(source_location_name),
+                state_name = VALUES(state_name),
+                district_name = VALUES(district_name),
+                keyword = VALUES(keyword),
+                search_query = VALUES(search_query),
+                search_level = VALUES(search_level),
+                discovered_name = VALUES(discovered_name),
+                discovered_address = VALUES(discovered_address),
+                latitude = VALUES(latitude),
+                longitude = VALUES(longitude),
                 google_maps_uri = COALESCE(
-                    EXCLUDED.google_maps_uri,
+                    VALUES(google_maps_uri),
                     candidate_discovery_events.google_maps_uri
                 ),
-                observed_at = EXCLUDED.observed_at;
+                observed_at = VALUES(observed_at);
             """,
             tuple(params),
         )

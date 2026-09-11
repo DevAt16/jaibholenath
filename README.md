@@ -6,7 +6,7 @@ This phase does not build the final website and does not claim exact real-world 
 
 ## Phase 1 Scope
 
-- Maintain a PostgreSQL master location table for Indian states, districts, sub-districts, cities, towns, villages, and urban local bodies.
+- Maintain a MySQL master location table for Indian states, districts, sub-districts, cities, towns, villages, and urban local bodies.
 - Generate search tasks from district, town, and urban local body locations by default.
 - Optionally include city or village tasks with explicit flags.
 - Call Google Places Text Search with safe limits.
@@ -17,7 +17,7 @@ This phase does not build the final website and does not claim exact real-world 
 ## Requirements
 
 - Python 3.10+
-- PostgreSQL
+- MySQL 8.0.16+ (8.4 recommended)
 - Google Places API key with Places API enabled
 
 Install Python dependencies:
@@ -35,7 +35,7 @@ Copy `.env.example` to `.env` or export equivalent environment variables in your
 Required for database scripts:
 
 ```text
-DATABASE_URL=postgresql://postgres:change-me@localhost:5432/shiva_temple_discovery
+DATABASE_URL=mysql://shiva:change-me@localhost:3306/shiva_temple_discovery
 ```
 
 Required only for discovery:
@@ -44,14 +44,14 @@ Required only for discovery:
 GOOGLE_PLACES_API_KEY=your-google-places-api-key
 ```
 
-The scripts also support `PGHOST`, `PGPORT`, `PGDATABASE`, `PGUSER`, and `PGPASSWORD` if `DATABASE_URL` is not set.
+The scripts also support `MYSQL_HOST`, `MYSQL_PORT`, `MYSQL_DATABASE`, `MYSQL_USER`, and `MYSQL_PASSWORD` if `DATABASE_URL` is not set.
 
 ## Database Setup
 
 Create the database, then apply migrations:
 
 ```powershell
-createdb shiva_temple_discovery
+mysql -u root -p -e "CREATE DATABASE shiva_temple_discovery CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;"
 python scripts/init_db.py
 ```
 
@@ -353,3 +353,5 @@ Covered areas:
 Read `docs/DATA_POLICY.md` before publishing or interpreting any report output. Google Places is a discovery source, and final temple knowledge should be verified later from multiple sources.
 
 For the command-by-command pipeline, read `docs/FUNCTIONAL_FLOW.md`.
+
+Database switch and existing data: [MySQL migration guide](docs/MYSQL_MIGRATION.md).

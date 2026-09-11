@@ -25,9 +25,9 @@ WITH task_totals AS (
 candidate_totals AS (
     SELECT
         COUNT(*) AS unique_google_place_ids,
-        COUNT(*) FILTER (WHERE confidence = 'high') AS high_confidence_shiva,
-        COUNT(*) FILTER (WHERE confidence = 'medium') AS medium_confidence_shiva_candidates,
-        COUNT(*) FILTER (WHERE confidence = 'low') AS low_confidence_possible_temples
+        COUNT(CASE WHEN confidence = 'high' THEN 1 END) AS high_confidence_shiva,
+        COUNT(CASE WHEN confidence = 'medium' THEN 1 END) AS medium_confidence_shiva_candidates,
+        COUNT(CASE WHEN confidence = 'low' THEN 1 END) AS low_confidence_possible_temples
     FROM temple_candidates
 )
 SELECT
@@ -52,9 +52,9 @@ STATE_COUNTS_SQL = """
 SELECT
     COALESCE(state, 'Unknown') AS state,
     COUNT(*) AS unique_google_place_ids,
-    COUNT(*) FILTER (WHERE confidence = 'high') AS high_confidence_shiva,
-    COUNT(*) FILTER (WHERE confidence = 'medium') AS medium_confidence_shiva_candidates,
-    COUNT(*) FILTER (WHERE confidence = 'low') AS low_confidence_possible_temples
+    COUNT(CASE WHEN confidence = 'high' THEN 1 END) AS high_confidence_shiva,
+    COUNT(CASE WHEN confidence = 'medium' THEN 1 END) AS medium_confidence_shiva_candidates,
+    COUNT(CASE WHEN confidence = 'low' THEN 1 END) AS low_confidence_possible_temples
 FROM temple_candidates
 GROUP BY COALESCE(state, 'Unknown')
 ORDER BY state;
@@ -65,9 +65,9 @@ SELECT
     COALESCE(state, 'Unknown') AS state,
     COALESCE(district, 'Unknown') AS district,
     COUNT(*) AS unique_google_place_ids,
-    COUNT(*) FILTER (WHERE confidence = 'high') AS high_confidence_shiva,
-    COUNT(*) FILTER (WHERE confidence = 'medium') AS medium_confidence_shiva_candidates,
-    COUNT(*) FILTER (WHERE confidence = 'low') AS low_confidence_possible_temples
+    COUNT(CASE WHEN confidence = 'high' THEN 1 END) AS high_confidence_shiva,
+    COUNT(CASE WHEN confidence = 'medium' THEN 1 END) AS medium_confidence_shiva_candidates,
+    COUNT(CASE WHEN confidence = 'low' THEN 1 END) AS low_confidence_possible_temples
 FROM temple_candidates
 GROUP BY COALESCE(state, 'Unknown'), COALESCE(district, 'Unknown')
 ORDER BY state, district;
@@ -159,9 +159,9 @@ WITH task_totals AS (
 candidate_totals AS (
     SELECT
         COUNT(*) AS unique_google_place_ids,
-        COUNT(*) FILTER (WHERE candidate.confidence = 'high') AS high_confidence_shiva,
-        COUNT(*) FILTER (WHERE candidate.confidence = 'medium') AS medium_confidence_shiva_candidates,
-        COUNT(*) FILTER (WHERE candidate.confidence = 'low') AS low_confidence_possible_temples
+        COUNT(CASE WHEN candidate.confidence = 'high' THEN 1 END) AS high_confidence_shiva,
+        COUNT(CASE WHEN candidate.confidence = 'medium' THEN 1 END) AS medium_confidence_shiva_candidates,
+        COUNT(CASE WHEN candidate.confidence = 'low' THEN 1 END) AS low_confidence_possible_temples
     FROM {_candidate_from_sql(location_type)}
 )
 SELECT
@@ -189,9 +189,9 @@ def state_counts_sql(location_type: str | None = None) -> str:
 SELECT
     COALESCE(candidate.state, 'Unknown') AS state,
     COUNT(*) AS unique_google_place_ids,
-    COUNT(*) FILTER (WHERE candidate.confidence = 'high') AS high_confidence_shiva,
-    COUNT(*) FILTER (WHERE candidate.confidence = 'medium') AS medium_confidence_shiva_candidates,
-    COUNT(*) FILTER (WHERE candidate.confidence = 'low') AS low_confidence_possible_temples
+    COUNT(CASE WHEN candidate.confidence = 'high' THEN 1 END) AS high_confidence_shiva,
+    COUNT(CASE WHEN candidate.confidence = 'medium' THEN 1 END) AS medium_confidence_shiva_candidates,
+    COUNT(CASE WHEN candidate.confidence = 'low' THEN 1 END) AS low_confidence_possible_temples
 FROM {_candidate_from_sql(location_type)}
 GROUP BY COALESCE(candidate.state, 'Unknown')
 ORDER BY state;
@@ -205,9 +205,9 @@ SELECT
     COALESCE(candidate.state, 'Unknown') AS state,
     COALESCE(candidate.district, 'Unknown') AS district,
     COUNT(*) AS unique_google_place_ids,
-    COUNT(*) FILTER (WHERE candidate.confidence = 'high') AS high_confidence_shiva,
-    COUNT(*) FILTER (WHERE candidate.confidence = 'medium') AS medium_confidence_shiva_candidates,
-    COUNT(*) FILTER (WHERE candidate.confidence = 'low') AS low_confidence_possible_temples
+    COUNT(CASE WHEN candidate.confidence = 'high' THEN 1 END) AS high_confidence_shiva,
+    COUNT(CASE WHEN candidate.confidence = 'medium' THEN 1 END) AS medium_confidence_shiva_candidates,
+    COUNT(CASE WHEN candidate.confidence = 'low' THEN 1 END) AS low_confidence_possible_temples
 FROM {_candidate_from_sql(location_type)}
 GROUP BY COALESCE(candidate.state, 'Unknown'), COALESCE(candidate.district, 'Unknown')
 ORDER BY state, district;

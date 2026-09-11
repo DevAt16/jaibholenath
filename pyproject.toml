@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Phase 1 discovery tooling for likely Shiva temple candidates in India."
 requires-python = ">=3.10"
 dependencies = [
-    "psycopg[binary]>=3.1",
+    "PyMySQL[rsa]>=1.1.1,<2",
 ]
 
 [project.optional-dependencies]

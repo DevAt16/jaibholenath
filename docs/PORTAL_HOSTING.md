@@ -39,10 +39,10 @@ Keep the endpoint empty in local development to avoid inflating production total
 
 ## Counter backend setup (before enabling collection)
 
-Use Python 3.10+ and PostgreSQL. On the API host:
+Use Python 3.10+ and MySQL 8.0.16+ (8.4 recommended). On the API host:
 
 1. Install this project (`python -m pip install -e .`) and Gunicorn in its virtual
-   environment. Configure a dedicated PostgreSQL database and restricted API role.
+   environment. Configure a dedicated MySQL database and restricted API role.
 2. Apply **only** `migrations/004_portal_visits.sql` to the counter database as its
    migration/owner role. The runtime role needs SELECT/INSERT on
    `portal_visit_sessions` and SELECT/UPDATE on `portal_visit_totals`. It needs no
@@ -71,7 +71,7 @@ Use Python 3.10+ and PostgreSQL. On the API host:
    retry with that same token does not increment. Test on a staging database so
    test requests are not counted in the production total.
 
-The PostgreSQL insert and total increment commit together in one transaction.
+The MySQL insert and total increment commit together in one transaction.
 A unique session hash prevents concurrent retries from double counting. The
 singleton total is updated atomically, including across multiple server workers.
 Retain the counter tables across deployments; do not reset them when replacing
@@ -81,11 +81,36 @@ static files. Removing old session hashes would change retry behavior.
 
 - Frontend: `npm test` and `npm run build` from `frontend`.
 - API: `python -m pytest tests/test_visits_api.py` from the repository root.
-- PostgreSQL integration: install development dependencies, point
-  `VISITS_TEST_DATABASE_URL` to a disposable test database, and run
-  `python -m pytest tests/test_visits_postgres.py`. The test creates an isolated
-  temporary schema, checks concurrent sessions/retries, then removes that schema.
+- MySQL integration: install development dependencies, point
+  `MYSQL_TEST_DATABASE_URL` to a disposable MySQL server account with CREATE DATABASE permission, and run
+  `python -m pytest tests/test_mysql_integration.py`. The test creates an isolated
+  temporary database, checks migrations, discovery, and concurrent visits, then removes that database.
 
 The actual Hostinger account, domain, and production database still need to be
 configured. Backend request tests use a test store; they do not by themselves
-establish a working PostgreSQL deployment.
+establish a working MySQL deployment.
+
+## MySQL setup on Hostinger
+
+The backend stays Python; there are no PHP endpoints. The Hostinger MySQL
+Database screen alone does not run the API. Host it on a Python-capable service
+or VPS, and allow that server's outbound IP in Hostinger Remote MySQL settings.
+Use the MySQL hostname shown by Hostinger, not localhost, from a different server.
+Use verified TLS with the provider CA via `MYSQL_SSL_CA` / `VISITS_MYSQL_SSL_CA`.
+
+1. Check `SELECT VERSION();`. Discovery targets MySQL 8.0.16+ / 8.4. If the
+   server reports MariaDB, verify compatibility separately before running discovery.
+2. Create the discovery database and a separate portal_visits database/account.
+3. For discovery, set `DATABASE_URL=mysql://USER:PASSWORD@HOST:3306/DATABASE`
+   and run `python scripts/init_db.py` with a schema-owner account.
+4. For visits, select the counter database in phpMyAdmin/DBeaver and execute
+   **the updated** `migrations/004_portal_visits.sql`. It does not reset an
+   existing total. Do not run PostgreSQL copies of this file.
+5. Set `VISITS_DATABASE_URL=mysql://USER:PASSWORD@HOST:3306/COUNTER_DATABASE`
+   and `VISITS_ALLOWED_ORIGIN=https://YOUR_PORTAL_DOMAIN` on the Python API host.
+   Percent-encode URL credentials (for example, @ becomes %40).
+6. Start Gunicorn as a managed service behind HTTPS, using the command above.
+   Set `VITE_VISITS_API_URL=https://YOUR_API_DOMAIN/api/visits` on the frontend
+   deployment and rebuild it. No database credentials belong in VITE variables.
+
+See [MYSQL_MIGRATION.md](MYSQL_MIGRATION.md) for existing-data and migration caveats.

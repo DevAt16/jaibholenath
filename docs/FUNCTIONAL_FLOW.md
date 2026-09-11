@@ -50,7 +50,7 @@ auto-loaded by the script bootstrap, but secrets should not be committed.
 Required for database access:
 
 ```text
-DATABASE_URL=postgresql://postgres:change-me@localhost:5432/shiva_temple_discovery
+DATABASE_URL=mysql://shiva:change-me@localhost:3306/shiva_temple_discovery
 ```
 
 Required only for Google discovery:
@@ -59,14 +59,14 @@ Required only for Google discovery:
 GOOGLE_PLACES_API_KEY=your-google-places-api-key
 ```
 
-Alternative PostgreSQL variables are also supported:
+Alternative MySQL variables are also supported:
 
 ```text
-PGHOST
-PGPORT
-PGDATABASE
-PGUSER
-PGPASSWORD
+MYSQL_HOST
+MYSQL_PORT
+MYSQL_DATABASE
+MYSQL_USER
+MYSQL_PASSWORD
 ```
 
 ## 2. Initialize the Database
@@ -79,7 +79,7 @@ python scripts/init_db.py
 
 What it does:
 
-- Connects to PostgreSQL using `DATABASE_URL` or `PG*` variables.
+- Connects to MySQL using `DATABASE_URL` or `MYSQL_*` variables.
 - Creates `schema_migrations` if needed.
 - Applies SQL files from `migrations/` in filename order.
 - Skips migrations already recorded in `schema_migrations`.
@@ -504,7 +504,7 @@ What it does:
 
 What it does not do:
 
-- It does not connect directly to PostgreSQL.
+- It does not connect directly to MySQL.
 - It does not call Google APIs.
 - It does not update candidates.
 - It is not the final public website.

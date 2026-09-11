@@ -170,23 +170,21 @@ def upsert_location(conn, record: LocationRecord) -> int:
                 f"""
                 UPDATE india_locations
                 SET {assignments}, updated_at = NOW()
-                WHERE id = %s
-                RETURNING id;
+                WHERE id = %s;
                 """,
                 tuple(values[column] for column in LOCATION_COLUMNS) + (existing_id,),
             )
-            return int(cursor.fetchone()[0])
+            return existing_id
 
         placeholders = ", ".join(["%s"] * len(LOCATION_COLUMNS))
         cursor.execute(
             f"""
             INSERT INTO india_locations ({", ".join(LOCATION_COLUMNS)})
-            VALUES ({placeholders})
-            RETURNING id;
+            VALUES ({placeholders});
             """,
             tuple(values[column] for column in LOCATION_COLUMNS),
         )
-        return int(cursor.fetchone()[0])
+        return int(cursor.lastrowid)
 
 
 def fetch_locations_for_tasks(
@@ -227,55 +225,43 @@ def create_search_task(
             """
             INSERT INTO temple_search_tasks (location_id, keyword, search_query, search_level)
             VALUES (%s, %s, %s, %s)
-            ON CONFLICT (location_id, keyword) DO NOTHING
-            RETURNING id;
+            ON DUPLICATE KEY UPDATE id = id;
             """,
             (location_id, keyword, search_query, search_level),
         )
-        return cursor.fetchone() is not None
+        return cursor.rowcount == 1
 
 
 def fetch_and_mark_pending_tasks(conn, *, limit: int) -> list[dict[str, Any]]:
-    with conn.cursor() as cursor:
-        cursor.execute(
-            """
-            WITH picked AS (
-                SELECT id
-                FROM temple_search_tasks
-                WHERE status = 'pending'
-                ORDER BY created_at, id
-                LIMIT %s
-                FOR UPDATE SKIP LOCKED
-            ),
-            updated AS (
-                UPDATE temple_search_tasks AS task
-                SET status = 'running',
-                    attempts = task.attempts + 1,
-                    updated_at = NOW()
-                FROM picked
-                WHERE task.id = picked.id
-                RETURNING
-                    task.id,
-                    task.location_id,
-                    task.keyword,
-                    task.search_query,
-                    task.search_level,
-                    task.attempts
-            )
-            SELECT
-                updated.*,
-                loc.name AS location_name,
-                loc.location_type,
-                loc.state_name,
-                loc.district_name
-            FROM updated
-            LEFT JOIN india_locations AS loc ON loc.id = updated.location_id
-            ORDER BY updated.id;
-            """,
-            (limit,),
-        )
-        columns = [description[0] for description in cursor.description]
-        return [dict(zip(columns, row)) for row in cursor.fetchall()]
+    if limit < 1:
+        raise ValueError("limit must be positive")
+    # The lock and update must remain in the same transaction across workers.
+    with conn.transaction():
+        with conn.cursor() as cursor:
+            cursor.execute("""
+                SELECT id FROM temple_search_tasks
+                WHERE status = 'pending' ORDER BY created_at, id
+                LIMIT %s FOR UPDATE SKIP LOCKED
+            """, (limit,))
+            ids = tuple(row[0] for row in cursor.fetchall())
+            if not ids:
+                return []
+            placeholders = ", ".join(["%s"] * len(ids))
+            cursor.execute(f"""
+                UPDATE temple_search_tasks SET status = 'running',
+                attempts = attempts + 1, updated_at = NOW()
+                WHERE id IN ({placeholders})
+            """, ids)
+            cursor.execute(f"""
+                SELECT task.id, task.location_id, task.keyword, task.search_query,
+                       task.search_level, task.attempts, loc.name AS location_name,
+                       loc.location_type, loc.state_name, loc.district_name
+                FROM temple_search_tasks AS task
+                LEFT JOIN india_locations AS loc ON loc.id = task.location_id
+                WHERE task.id IN ({placeholders}) ORDER BY task.id
+            """, ids)
+            columns = [description[0] for description in cursor.description]
+            return [dict(zip(columns, row)) for row in cursor.fetchall()]
 
 
 def complete_task(
@@ -390,33 +376,29 @@ def record_candidate_discovery_event(
                 %(longitude)s,
                 %(google_maps_uri)s
             )
-            ON CONFLICT (search_task_id, google_place_id)
-                WHERE search_task_id IS NOT NULL
-            DO UPDATE
-            SET candidate_id = EXCLUDED.candidate_id,
-                source_location_id = EXCLUDED.source_location_id,
-                source_location_type = EXCLUDED.source_location_type,
-                source_location_name = EXCLUDED.source_location_name,
-                state_name = EXCLUDED.state_name,
-                district_name = EXCLUDED.district_name,
-                keyword = EXCLUDED.keyword,
-                search_query = EXCLUDED.search_query,
-                search_level = EXCLUDED.search_level,
-                result_position = EXCLUDED.result_position,
-                discovered_name = EXCLUDED.discovered_name,
-                discovered_address = EXCLUDED.discovered_address,
-                latitude = EXCLUDED.latitude,
-                longitude = EXCLUDED.longitude,
+            ON DUPLICATE KEY UPDATE id = LAST_INSERT_ID(id), candidate_id = VALUES(candidate_id),
+                source_location_id = VALUES(source_location_id),
+                source_location_type = VALUES(source_location_type),
+                source_location_name = VALUES(source_location_name),
+                state_name = VALUES(state_name),
+                district_name = VALUES(district_name),
+                keyword = VALUES(keyword),
+                search_query = VALUES(search_query),
+                search_level = VALUES(search_level),
+                result_position = VALUES(result_position),
+                discovered_name = VALUES(discovered_name),
+                discovered_address = VALUES(discovered_address),
+                latitude = VALUES(latitude),
+                longitude = VALUES(longitude),
                 google_maps_uri = COALESCE(
-                    EXCLUDED.google_maps_uri,
+                    VALUES(google_maps_uri),
                     candidate_discovery_events.google_maps_uri
                 ),
-                observed_at = NOW()
-            RETURNING id;
+                observed_at = NOW();
             """,
             event,
         )
-        return int(cursor.fetchone()[0])
+        return int(cursor.lastrowid)
 
 
 def upsert_candidate(conn, candidate: Mapping[str, Any]) -> int:
@@ -470,25 +452,23 @@ def upsert_candidate(conn, candidate: Mapping[str, Any]) -> int:
                 %(confidence_score)s,
                 %(classification_reason)s
             )
-            ON CONFLICT (google_place_id) DO UPDATE
-            SET google_maps_uri = COALESCE(EXCLUDED.google_maps_uri, temple_candidates.google_maps_uri),
-                discovered_name = EXCLUDED.discovered_name,
-                discovered_address = EXCLUDED.discovered_address,
-                latitude = EXCLUDED.latitude,
-                longitude = EXCLUDED.longitude,
-                state = COALESCE(EXCLUDED.state, temple_candidates.state),
-                district = COALESCE(EXCLUDED.district, temple_candidates.district),
-                source_query = EXCLUDED.source_query,
-                source_location_id = EXCLUDED.source_location_id,
-                confidence = EXCLUDED.confidence,
-                confidence_score = EXCLUDED.confidence_score,
-                classification_reason = EXCLUDED.classification_reason,
-                last_seen_at = NOW()
-            RETURNING id;
+            ON DUPLICATE KEY UPDATE id = LAST_INSERT_ID(id), google_maps_uri = COALESCE(VALUES(google_maps_uri), temple_candidates.google_maps_uri),
+                discovered_name = VALUES(discovered_name),
+                discovered_address = VALUES(discovered_address),
+                latitude = VALUES(latitude),
+                longitude = VALUES(longitude),
+                state = COALESCE(VALUES(state), temple_candidates.state),
+                district = COALESCE(VALUES(district), temple_candidates.district),
+                source_query = VALUES(source_query),
+                source_location_id = VALUES(source_location_id),
+                confidence = VALUES(confidence),
+                confidence_score = VALUES(confidence_score),
+                classification_reason = VALUES(classification_reason),
+                last_seen_at = NOW();
             """,
             params,
         )
-        return int(cursor.fetchone()[0])
+        return int(cursor.lastrowid)
 
 
 def update_candidate_classification(conn, candidate_id: int, discovered_name: str) -> None:

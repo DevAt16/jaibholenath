@@ -1,2 +1,1 @@
-ALTER TABLE temple_candidates
-ADD COLUMN IF NOT EXISTS google_maps_uri TEXT;
+ALTER TABLE temple_candidates ADD COLUMN google_maps_uri TEXT;

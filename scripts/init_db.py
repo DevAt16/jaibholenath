@@ -8,7 +8,7 @@ from shiva_discovery.db import apply_migrations, connect
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Apply PostgreSQL schema migrations.")
+    parser = argparse.ArgumentParser(description="Apply MySQL schema migrations.")
     parser.add_argument(
         "--migrations-dir",
         default=str(REPO_ROOT / "migrations"),
