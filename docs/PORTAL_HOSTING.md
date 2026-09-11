@@ -114,3 +114,11 @@ Use verified TLS with the provider CA via `MYSQL_SSL_CA` / `VISITS_MYSQL_SSL_CA`
    deployment and rebuild it. No database credentials belong in VITE variables.
 
 See [MYSQL_MIGRATION.md](MYSQL_MIGRATION.md) for existing-data and migration caveats.
+
+## Public report controls
+
+Every `npm run build` produces a public read-only report UI: About the data,
+source/coverage notes and CSV downloads. CSV import and sample-data switching
+are enabled only by the local Vite development server (`npm run dev`). No
+Hostinger environment variable is required. A failed production baseline load
+shows an error with a retry action; it never substitutes sample reports.

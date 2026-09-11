@@ -1,3 +1,4 @@
+import { localDataTools } from "./dataTools";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import {
@@ -1206,26 +1207,29 @@ function Reports({
   busy,
   onUpload,
   onLoad,
+  allowDataTools = localDataTools,
 }: {
   reports: ReportData;
   source: string;
   busy: boolean;
   onUpload: () => void;
   onLoad: (sample: boolean) => void;
+  allowDataTools?: boolean;
 }) {
   return (
     <>
       <div className="page-heading">
         <div>
-          <span className="eyebrow">YOUR DATA, IN CONTEXT</span>
+          <span className="eyebrow">ABOUT THE DATA</span>
           <h1>Reports & data</h1>
-          <p>Manage the discovery reports behind this workspace.</p>
+          <p>Understand the source and coverage of this discovery dataset, and download the published reports.</p>
         </div>
-        <button className="button primary" disabled={busy} onClick={onUpload}>
+        {allowDataTools && <button className="button primary" disabled={busy} onClick={onUpload}>
           <Upload size={17} />
           Import CSV reports
-        </button>
+        </button>}
       </div>
+      <DataScopeNote reports={reports} />
       <section className="dataset-banner">
         <span className="dataset-icon">
           <Database size={25} strokeWidth={1.5} />
@@ -1238,7 +1242,7 @@ function Reports({
             available for browsing
           </p>
         </div>
-        <span className="local-badge">Local workspace</span>
+        <span className="local-badge">{allowDataTools ? "Local workspace" : "Published dataset"}</span>
       </section>
       <section className="panel report-files">
         <div className="panel-heading">
@@ -1280,7 +1284,7 @@ function Reports({
           );
         })}
       </section>
-      <div className="report-help-grid">
+      {allowDataTools && <div className="report-help-grid">
         <section className="panel">
           <FolderOpen size={23} className="accent-icon" />
           <h2>Bring your own reports</h2>
@@ -1328,8 +1332,12 @@ function Reports({
             </button>
           </div>
         </section>
-      </div>
-      <DataScopeNote reports={reports} />
+      </div>}
+      {!allowDataTools && !reports.national && reports.candidates.length === 0 && (
+        <button className="button secondary" disabled={busy} onClick={() => onLoad(false)}>
+          Retry loading published reports
+        </button>
+      )}
     </>
   );
 }
@@ -1367,9 +1375,10 @@ export default function App() {
     let active = true;
     initialLoad ??= loadRealReports()
       .then((data) => ({ reports: data, sample: false }))
-      .catch(() =>
-        loadSampleReports().then((data) => ({ reports: data, sample: true })),
-      );
+      .catch((error) => {
+        if (!localDataTools) throw error;
+        return loadSampleReports().then((data) => ({ reports: data, sample: true }));
+      });
     initialLoad
       .then((data) => {
         if (!active) return;
@@ -1387,7 +1396,9 @@ export default function App() {
           setSource("No reports loaded");
           setNotice({
             message:
-              "Reports could not be loaded. Open Reports to import CSV files or retry the baseline.",
+              localDataTools
+                ? "Reports could not be loaded. Open Reports to import CSV files or retry the baseline."
+                : "Published reports could not be loaded. Open Reports to retry.",
             error: true,
           });
         }
@@ -1459,6 +1470,7 @@ export default function App() {
     setSelected(null);
   }
   async function load(sample: boolean) {
+    if (sample && !localDataTools) return;
     setBusy(true);
     setNotice(null);
     try {
@@ -1479,7 +1491,7 @@ export default function App() {
     }
   }
   async function importFiles(files: FileList | null) {
-    if (!files?.length) return;
+    if (!localDataTools || !files?.length) return;
     setBusy(true);
     setNotice(null);
     try {
@@ -1575,16 +1587,16 @@ export default function App() {
             </span>
             <button
               className="button secondary import-button"
-              disabled={busy}
-              onClick={() => inputRef.current?.click()}
+              disabled={localDataTools && busy}
+              onClick={() => localDataTools ? inputRef.current?.click() : go("reports")}
             >
-              <Upload size={15} />
-              <span>Import reports</span>
+              {localDataTools ? <Upload size={15} /> : <Info size={15} />}
+              <span>{localDataTools ? "Import reports" : "About the data"}</span>
             </button>
           </div>
         </header>
         <main id="main-content" tabIndex={-1}>
-          <input
+          {localDataTools && <input
             type="file"
             ref={inputRef}
             className="file-input"
@@ -1592,7 +1604,7 @@ export default function App() {
             accept=".csv,text/csv"
             multiple
             onChange={(event) => importFiles(event.target.files)}
-          />
+          />}
           {notice && (
             <div
               className={`notice ${notice.error ? "notice-error" : ""}`}

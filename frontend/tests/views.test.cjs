@@ -160,3 +160,17 @@ test("detail panel includes complete evidence and accessible close/navigation co
   assert.match(html, /query_place_id=id-0/);
   assert.match(html, /class="mark-dot"/);
 });
+
+test("published reports keep downloads and source notes without dataset-changing controls", () => {
+  const props = { reports, source: "Phase 1.1 district baseline", busy: false, onUpload: noop, onLoad: noop };
+  const publicHtml = render(Reports, props);
+  assert.match(publicHtml, /Published dataset/);
+  assert.match(publicHtml, /About these counts/);
+  assert.match(publicHtml, /Download CSV/);
+  assert.doesNotMatch(publicHtml, /Import CSV|Choose CSV|Load sample|Switch datasets|Local workspace/);
+  const localHtml = render(Reports, { ...props, allowDataTools: true });
+  assert.match(localHtml, /Import CSV reports/);
+  assert.match(localHtml, /Load sample data/);
+  const failedHtml = render(Reports, { ...props, reports: empty });
+  assert.match(failedHtml, /Retry loading published reports/);
+});
