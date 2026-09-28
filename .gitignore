@@ -18,3 +18,6 @@ reports/candidate_review.csv
 *.egg-info/
 
 visitor-api/dist/
+admin-workspace/.local-owner-password
+admin-workspace/private-backups/
+.local-mysql/

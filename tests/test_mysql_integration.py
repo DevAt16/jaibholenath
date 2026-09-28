@@ -34,7 +34,9 @@ def database(monkeypatch):
         try:
             monkeypatch.setenv('VISITS_DATABASE_URL', test_url)
             with connect(test_url) as conn:
-                assert len(apply_migrations(conn, ROOT / 'migrations')) == 4
+                assert apply_migrations(conn, ROOT / 'migrations') == [
+                    path.name for path in sorted((ROOT / 'migrations').glob('*.sql'))
+                ]
                 assert apply_migrations(conn, ROOT / 'migrations') == []
             yield test_url
         finally:

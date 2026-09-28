@@ -357,3 +357,7 @@ For the command-by-command pipeline, read `docs/FUNCTIONAL_FLOW.md`.
 Database switch and existing data: [MySQL migration guide](docs/MYSQL_MIGRATION.md).
 
 Hosted visitor counter: [Express + MySQL deployment](visitor-api/README.md).
+
+Next pilot increment: [Admin & Research Workspace specification](docs/ADMIN_WORKSPACE_SPEC.md).
+
+Local admin app: [Research workspace setup and delivered scope](admin-workspace/README.md).
