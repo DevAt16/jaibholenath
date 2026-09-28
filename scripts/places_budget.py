@@ -3,10 +3,9 @@ from __future__ import annotations
 import argparse
 from datetime import datetime
 import json
-import os
 import _bootstrap  # noqa: F401
 from shiva_discovery.db import connect
-from shiva_discovery.request_budget import RequestBudget, BudgetBlocked
+from shiva_discovery.request_budget import RequestBudget, BudgetBlocked, budget_scope_from_env
 
 
 def main():
@@ -25,7 +24,7 @@ def main():
     args = parser.parse_args()
     try:
         with connect() as conn:
-            budget = RequestBudget(conn, os.getenv('GOOGLE_MAPS_BILLING_ACCOUNT_ID', ''))
+            budget = RequestBudget(conn, budget_scope_from_env())
             if args.command == 'configure':
                 result = budget.configure(month=args.month, observed_usage=args.observed_account_usage,
                     external_reserve=args.external_reserve, ceiling=args.ceiling,

@@ -1,11 +1,10 @@
 from __future__ import annotations
 
 import argparse
-import os
 import _bootstrap  # noqa: F401
 from shiva_discovery.db import connect
 from shiva_discovery.places_client import GooglePlacesClient
-from shiva_discovery.request_budget import RequestBudget, BudgetBlocked
+from shiva_discovery.request_budget import RequestBudget, BudgetBlocked, budget_scope_from_env
 from shiva_discovery.discovery_runner import process_task
 from shiva_discovery.repositories import fetch_and_mark_pending_tasks
 
@@ -36,7 +35,7 @@ def main() -> int:
     processed = failed = 0
     try:
         with connect() as conn:
-            budget = RequestBudget(conn, os.getenv('GOOGLE_MAPS_BILLING_ACCOUNT_ID', ''), max_requests=args.max_requests)
+            budget = RequestBudget(conn, budget_scope_from_env(), max_requests=args.max_requests)
             status = budget.status()  # fail closed before claiming any tasks
             print(f"Monthly requests remaining: {status['remaining_requests']}; per-run maximum: {args.max_requests}.")
             if args.dry_run:

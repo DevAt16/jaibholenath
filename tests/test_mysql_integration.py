@@ -141,10 +141,10 @@ def test_location_import_backfill_and_interrupted_migration_retry(database, monk
         assert apply_migrations(conn, ROOT / 'migrations') == []
 
 
-def test_request_budget_concurrent_workers_and_reconfiguration_cannot_overspend(database):
+@pytest.mark.parametrize('account', ['AAAAAA-BBBBBB-CCCCCC', 'local:shiva-discovery'])
+def test_request_budget_concurrent_workers_and_reconfiguration_cannot_overspend(database, account):
     from shiva_discovery.request_budget import RequestBudget, BudgetBlocked, billing_month
     now = datetime.now(timezone.utc)
-    account = 'AAAAAA-BBBBBB-CCCCCC'
     with connect(database) as conn:
         budget = RequestBudget(conn, account)
         with pytest.raises(BudgetBlocked):
@@ -219,13 +219,13 @@ def test_budget_stop_keeps_received_page_and_pending_task_without_double_inserti
             assert cursor.fetchone()[0] == 2
 
 
-def test_budget_audit_failure_rolls_back_reservation_and_dry_run_never_claims(database, monkeypatch, capsys):
+@pytest.mark.parametrize('account', ['AAAAAA-BBBBBB-CCCCCC', 'local:shiva-discovery'])
+def test_budget_audit_failure_rolls_back_reservation_and_dry_run_never_claims(database, monkeypatch, capsys, account):
     import runpy
     import sys
     import types
     from shiva_discovery.request_budget import RequestBudget, billing_month, BudgetBlocked
     now = datetime.now(timezone.utc)
-    account = 'AAAAAA-BBBBBB-CCCCCC'
     with connect(database) as conn:
         budget = RequestBudget(conn, account)
         with pytest.raises(BudgetBlocked):
@@ -248,7 +248,9 @@ def test_budget_audit_failure_rolls_back_reservation_and_dry_run_never_claims(da
         create_search_task(conn, location_id=loc, keyword='Shiva', search_query='Shiva Pune', search_level='district')
     monkeypatch.setitem(sys.modules, '_bootstrap', types.ModuleType('_bootstrap'))
     monkeypatch.setenv('DATABASE_URL', database)
-    monkeypatch.setenv('GOOGLE_MAPS_BILLING_ACCOUNT_ID', account)
+    monkeypatch.delenv('GOOGLE_MAPS_BUDGET_SCOPE', raising=False)
+    monkeypatch.delenv('GOOGLE_MAPS_BILLING_ACCOUNT_ID', raising=False)
+    monkeypatch.setenv('GOOGLE_MAPS_BUDGET_SCOPE' if account.startswith('local:') else 'GOOGLE_MAPS_BILLING_ACCOUNT_ID', account)
     monkeypatch.delenv('GOOGLE_PLACES_API_KEY', raising=False)
     monkeypatch.setattr('urllib.request.urlopen', lambda *a, **kw: pytest.fail('Dry run sent HTTP'))
     monkeypatch.setattr(sys, 'argv', ['run_discovery.py', '--dry-run', '--state', 'Maharashtra'])

@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta, timezone
 import pytest
-from shiva_discovery.request_budget import billing_month, remaining, account_key, BudgetBlocked
+from shiva_discovery.request_budget import billing_month, remaining, account_key, BudgetBlocked, budget_scope_from_env
 
 
 @pytest.mark.parametrize('stamp,month', [
@@ -32,3 +32,19 @@ def test_account_identity_is_required_and_hashed():
     for value in ['', 'some-project', 'key-secret']:
         with pytest.raises(ValueError):
             account_key(value)
+
+
+def test_local_scope_is_stable_and_survives_adding_account_id():
+    env = {'GOOGLE_MAPS_BUDGET_SCOPE': 'local:shiva-discovery'}
+    key = account_key(budget_scope_from_env(env))
+    env['GOOGLE_MAPS_BILLING_ACCOUNT_ID'] = 'AAAAAA-BBBBBB-CCCCCC'
+    assert account_key(budget_scope_from_env(env)) == key
+    assert key != account_key(env['GOOGLE_MAPS_BILLING_ACCOUNT_ID'])
+    del env['GOOGLE_MAPS_BUDGET_SCOPE']
+    assert budget_scope_from_env(env) == env['GOOGLE_MAPS_BILLING_ACCOUNT_ID']
+
+
+@pytest.mark.parametrize('scope', ['', 'local:', 'local:MixedCase', 'local:has space', 'local:' + 'a' * 65])
+def test_invalid_local_scope_fails_closed(scope):
+    with pytest.raises(ValueError):
+        budget_scope_from_env({'GOOGLE_MAPS_BUDGET_SCOPE': scope})

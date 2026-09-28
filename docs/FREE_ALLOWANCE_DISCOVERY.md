@@ -18,7 +18,7 @@ key's project. Searching Indian places does not establish account eligibility.
 - [Cost controls: budget alerts do not stop spending](https://developers.google.com/maps/billing-and-pricing/manage-costs)
 
 This ledger is not connected to Cloud Billing. Every cooperating discovery
-worker for the same billing account must share ONE database and account ID.
+worker for the same billing account must share ONE database and budget scope.
 Separate databases, other projects and other software cannot be constrained by
 this runner. Check total usage across all projects and reserve headroom for other
 consumers. Billing reports can lag; an inaccurate usage observation or unexpected
@@ -34,8 +34,17 @@ candidate storage/export design has not been certified as compliant by this work
 
 Apply the checked-in migrations to the intended discovery database using the
 existing migration process. Migration 006 adds only budget and reservation tables.
-Then set `GOOGLE_MAPS_BILLING_ACCOUNT_ID` in the environment alongside the existing
-database URL and API key. No real account ID or usage values are committed.
+Then set either `GOOGLE_MAPS_BILLING_ACCOUNT_ID` or a stable local name such as
+`GOOGLE_MAPS_BUDGET_SCOPE=local:shiva-discovery` in the environment alongside the
+existing database URL and API key. A billing-account ID is not required for Places
+requests. The local name identifies this ledger only; it does not access billing
+or verify eligibility. All workers for the same account must use the same name
+and database. No real account ID or usage values are committed.
+
+An explicit budget scope takes precedence over the account ID. Keep that scope
+even if you later supply the real account ID: switching names creates a separate
+ledger and must not be used to reset counters. Existing account-ID configurations
+continue using their original counters without migration.
 
 ```sh
 python scripts/init_db.py
@@ -53,6 +62,10 @@ accepts ISO 8601 with a timezone, for example `2026-09-28T12:00:00+05:30`. The
 check must be in the current Pacific billing month, not in the future, and no
 older than 24 hours. The explicit confirmation flag is an operator attestation;
 it does not ask Google to verify eligibility. Use `--ceiling` for a lower cap.
+For the proposed 50-location pilot, use `--ceiling 1350`; this limits the whole
+ledger to at most 1,350 attempts, including pagination, failures and restarts.
+This setting takes effect only when the configure command succeeds against the
+intended discovery database. The offline plan alone does not activate it.
 
 On first configuration, console usage becomes the already-used allowance. Later
 observations can increase accounted usage but never erase reservations or reduce

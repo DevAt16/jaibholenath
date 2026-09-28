@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
 import hashlib
+import os
 import re
 from uuid import uuid4
 from zoneinfo import ZoneInfo
@@ -30,9 +31,22 @@ def billing_month(now: datetime) -> str:
 
 
 def account_key(account: str) -> str:
-    if not re.fullmatch(r'[A-Z0-9]{6}-[A-Z0-9]{6}-[A-Z0-9]{6}', account):
-        raise ValueError('Set GOOGLE_MAPS_BILLING_ACCOUNT_ID to the billing account ID from Google Cloud.')
+    if not (re.fullmatch(r'[A-Z0-9]{6}-[A-Z0-9]{6}-[A-Z0-9]{6}', account)
+            or re.fullmatch(r'local:[a-z0-9][a-z0-9_-]{0,63}', account)):
+        raise ValueError('Set GOOGLE_MAPS_BUDGET_SCOPE to a stable local:name, or set GOOGLE_MAPS_BILLING_ACCOUNT_ID.')
     return hashlib.sha256(account.encode()).hexdigest()
+
+
+def budget_scope_from_env(env=None) -> str:
+    """Explicit local scope wins so adding an account ID cannot reset its ledger.
+
+    Keep the same scope and database for all cooperating workers. Neither this
+    name nor an account ID grants Cloud Billing access or verifies free usage.
+    """
+    env = os.environ if env is None else env
+    scope = env.get('GOOGLE_MAPS_BUDGET_SCOPE') or env.get('GOOGLE_MAPS_BILLING_ACCOUNT_ID', '')
+    account_key(scope)
+    return scope
 
 
 def validate_observation(month, checked_at, now):
