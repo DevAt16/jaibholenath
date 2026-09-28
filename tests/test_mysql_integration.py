@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 from uuid import uuid4
 import pytest
+from datetime import datetime, timezone, timedelta
 from shiva_discovery.db import apply_migrations, connect
 from shiva_discovery.csv_import import LocationRecord
 from shiva_discovery.repositories import (
@@ -138,3 +139,124 @@ def test_location_import_backfill_and_interrupted_migration_retry(database, monk
             cur.execute("DELETE FROM schema_migrations WHERE version = '002_add_google_maps_uri.sql'")
         assert apply_migrations(conn, ROOT / 'migrations') == ['002_add_google_maps_uri.sql']
         assert apply_migrations(conn, ROOT / 'migrations') == []
+
+
+def test_request_budget_concurrent_workers_and_reconfiguration_cannot_overspend(database):
+    from shiva_discovery.request_budget import RequestBudget, BudgetBlocked, billing_month
+    now = datetime.now(timezone.utc)
+    account = 'AAAAAA-BBBBBB-CCCCCC'
+    with connect(database) as conn:
+        budget = RequestBudget(conn, account)
+        with pytest.raises(BudgetBlocked):
+            budget.reserve()
+        budget.configure(month=billing_month(now), observed_usage=29990, external_reserve=3,
+                         ceiling=30000, checked_at=now, india_pricing_confirmed=True)
+    def attempt(_):
+        with connect(database) as conn:
+            try:
+                RequestBudget(conn, account).reserve()
+                return True
+            except BudgetBlocked:
+                return False
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        assert sum(pool.map(attempt, range(30))) == 7
+    with connect(database) as conn:
+        budget = RequestBudget(conn, account)
+        assert budget.status()['remaining_requests'] == 0
+        with conn.cursor() as cursor:
+            cursor.execute('SELECT COUNT(*) FROM places_request_reservations')
+            assert cursor.fetchone()[0] == 7
+        # A lagged/incorrectly lower console observation must not erase usage.
+        budget.configure(month=billing_month(now), observed_usage=0, external_reserve=3,
+                         ceiling=30000, checked_at=now, india_pricing_confirmed=True)
+        assert budget.status()['remaining_requests'] == 0
+        with pytest.raises(BudgetBlocked):
+            RequestBudget(conn, account, clock=lambda: now + timedelta(hours=25)).reserve()
+        with conn.transaction(), pytest.raises(RuntimeError):
+            budget.reserve()
+
+
+def test_budget_stop_keeps_received_page_and_pending_task_without_double_inserting(database, monkeypatch):
+    import io
+    import json
+    from shiva_discovery.places_client import GooglePlacesClient
+    from shiva_discovery.request_budget import RequestBudget, billing_month
+    from shiva_discovery.discovery_runner import process_task
+    now = datetime.now(timezone.utc)
+    calls = []
+    def send(request, **kwargs):
+        payload = json.loads(request.data)
+        calls.append(payload)
+        if payload.get('pageToken'):
+            result = {'places': [{'id': 'second', 'displayName': {'text': 'Mahadev temple'}}]}
+        else:
+            result = {'places': [{'id': 'first', 'displayName': {'text': 'Shiva temple'}}], 'nextPageToken': 'page2'}
+        return io.BytesIO(json.dumps(result).encode())
+    monkeypatch.setattr('urllib.request.urlopen', send)
+    with connect(database) as conn:
+        loc = location(conn)
+        create_search_task(conn, location_id=loc, keyword='Shiva', search_query='Shiva Pune', search_level='district')
+        # Scope filters must not consume unrelated pending work.
+        assert fetch_and_mark_pending_tasks(conn, limit=1, state='Other') == []
+        assert fetch_and_mark_pending_tasks(conn, limit=1, location_type='town') == []
+        task = fetch_and_mark_pending_tasks(conn, limit=1, state='Maharashtra', location_type='district')[0]
+        budget = RequestBudget(conn, 'AAAAAA-BBBBBB-CCCCCC', max_requests=1)
+        budget.configure(month=billing_month(now), observed_usage=0, external_reserve=0,
+                         ceiling=3, checked_at=now, india_pricing_confirmed=True)
+        client = GooglePlacesClient('test-only', before_request=lambda: budget.reserve(task['id']))
+        assert process_task(conn, client, task, page_size=20, max_pages=3) == ('paused', 1, 1)
+        assert len(calls) == 1
+        assert run_report_queries(conn)['national_summary'][0]['unique_google_place_ids'] == 1
+        task = fetch_and_mark_pending_tasks(conn, limit=1)[0]
+        budget = RequestBudget(conn, 'AAAAAA-BBBBBB-CCCCCC', max_requests=2)
+        client = GooglePlacesClient('test-only', before_request=lambda: budget.reserve(task['id']))
+        assert process_task(conn, client, task, page_size=20, max_pages=3) == ('done', 2, 2)
+        assert len(calls) == 3  # restart from page 1 intentionally counts again
+        assert budget.status()['remaining_requests'] == 0
+        assert run_report_queries(conn)['national_summary'][0]['unique_google_place_ids'] == 2
+        with conn.cursor() as cursor:
+            cursor.execute('SELECT COUNT(*) FROM candidate_discovery_events')
+            assert cursor.fetchone()[0] == 2
+
+
+def test_budget_audit_failure_rolls_back_reservation_and_dry_run_never_claims(database, monkeypatch, capsys):
+    import runpy
+    import sys
+    import types
+    from shiva_discovery.request_budget import RequestBudget, billing_month, BudgetBlocked
+    now = datetime.now(timezone.utc)
+    account = 'AAAAAA-BBBBBB-CCCCCC'
+    with connect(database) as conn:
+        budget = RequestBudget(conn, account)
+        with pytest.raises(BudgetBlocked):
+            budget.configure(month=billing_month(now), observed_usage=0, external_reserve=0,
+                             ceiling=10, checked_at=now, india_pricing_confirmed=False)
+        with pytest.raises(ValueError):
+            budget.configure(month=billing_month(now), observed_usage=0, external_reserve=0,
+                             ceiling=35000, checked_at=now, india_pricing_confirmed=True)
+        budget.configure(month=billing_month(now), observed_usage=0, external_reserve=0,
+                         ceiling=10, checked_at=now, india_pricing_confirmed=True)
+        with conn.cursor() as cursor:
+            cursor.execute("CREATE TRIGGER fail_budget_audit BEFORE INSERT ON places_request_reservations FOR EACH ROW SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'audit unavailable'")
+        with pytest.raises(Exception, match='audit unavailable'):
+            budget.reserve()
+        assert budget.status()['remaining_requests'] == 10
+        assert budget.requests == 0
+        with conn.cursor() as cursor:
+            cursor.execute('DROP TRIGGER fail_budget_audit')
+        loc = location(conn)
+        create_search_task(conn, location_id=loc, keyword='Shiva', search_query='Shiva Pune', search_level='district')
+    monkeypatch.setitem(sys.modules, '_bootstrap', types.ModuleType('_bootstrap'))
+    monkeypatch.setenv('DATABASE_URL', database)
+    monkeypatch.setenv('GOOGLE_MAPS_BILLING_ACCOUNT_ID', account)
+    monkeypatch.delenv('GOOGLE_PLACES_API_KEY', raising=False)
+    monkeypatch.setattr('urllib.request.urlopen', lambda *a, **kw: pytest.fail('Dry run sent HTTP'))
+    monkeypatch.setattr(sys, 'argv', ['run_discovery.py', '--dry-run', '--state', 'Maharashtra'])
+    main = runpy.run_path(str(ROOT / 'scripts/run_discovery.py'))['main']
+    assert main() == 0
+    assert 'Matching pending tasks: 1' in capsys.readouterr().out
+    with connect(database) as conn, conn.cursor() as cursor:
+        cursor.execute('SELECT status, attempts FROM temple_search_tasks')
+        assert cursor.fetchone() == ('pending', 0)
+        cursor.execute('SELECT COUNT(*) FROM places_request_reservations')
+        assert cursor.fetchone()[0] == 0

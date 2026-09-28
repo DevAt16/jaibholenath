@@ -232,17 +232,26 @@ def create_search_task(
         return cursor.rowcount == 1
 
 
-def fetch_and_mark_pending_tasks(conn, *, limit: int) -> list[dict[str, Any]]:
+def fetch_and_mark_pending_tasks(conn, *, limit: int, state: str | None = None,
+                                 location_type: str | None = None) -> list[dict[str, Any]]:
     if limit < 1:
         raise ValueError("limit must be positive")
     # The lock and update must remain in the same transaction across workers.
     with conn.transaction():
         with conn.cursor() as cursor:
-            cursor.execute("""
+            clauses = ["status = 'pending'", 'location_id IN (SELECT id FROM india_locations WHERE is_active = TRUE)']
+            params: list[object] = []
+            if state is not None:
+                clauses.append('location_id IN (SELECT id FROM india_locations WHERE state_name = %s AND is_active = TRUE)')
+                params.append(state)
+            if location_type is not None:
+                clauses.append('search_level = %s')
+                params.append(location_type)
+            cursor.execute(f"""
                 SELECT id FROM temple_search_tasks
-                WHERE status = 'pending' ORDER BY created_at, id
+                WHERE {' AND '.join(clauses)} ORDER BY created_at, id
                 LIMIT %s FOR UPDATE SKIP LOCKED
-            """, (limit,))
+            """, (*params, limit))
             ids = tuple(row[0] for row in cursor.fetchall())
             if not ids:
                 return []

@@ -148,6 +148,13 @@ Phase 1 keywords:
 
 ## Run Discovery
 
+Live requests now require a confirmed monthly billing-account allowance, stored
+in MySQL. See [free-allowance setup and safe execution](docs/FREE_ALLOWANCE_DISCOVERY.md)
+before running the commands below. Each page consumes a request reservation;
+missing or stale usage confirmation blocks all Google requests. `--max-requests`
+defaults to 10 independently of the task limit. Preview the next expansion with
+the [Phase 1.2 offline plan](docs/PHASE_1_2_FREE_ALLOWANCE_PLAN.md).
+
 Discovery is bounded by `--limit`, which defaults to 10 tasks. The script refuses limits above 100 unless `--allow-large-limit` is provided.
 
 ```powershell
