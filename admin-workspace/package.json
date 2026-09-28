@@ -15,7 +15,9 @@
     "backup": "node --env-file-if-exists=.env scripts/backup.js backup",
     "restore-check": "node --env-file-if-exists=.env scripts/backup.js restore-check",
     "restore": "node --env-file-if-exists=.env scripts/backup.js restore",
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "research:preview": "node --env-file-if-exists=.env scripts/record-pilot-research.js",
+    "research:apply": "node --env-file-if-exists=.env scripts/record-pilot-research.js --apply"
   },
   "dependencies": {
     "express": "^5.2.1",

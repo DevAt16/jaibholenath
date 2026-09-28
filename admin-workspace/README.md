@@ -151,3 +151,14 @@ UTC audit timestamps, transaction rollback, filtering and logout. CI runs both.
 Earlier local browser QA covered login, search, blocked verification, evidence saving
 and history retrieval using a disposable fixture, which was then removed. No
 pilot candidate was substantively reviewed by QA.
+
+## Six-record research checkpoint
+
+On 28 September 2026, six AI-assisted desk reviews were saved as `needs_evidence`
+with revisions and audit events. No candidates were marked owner verified. See
+the [checkpoint and remaining evidence gaps](../docs/pilot-research/CHECKPOINT_2026_09_28.md).
+Use `npm run research:preview` to inspect the fixed six-record batch;
+`npm run research:apply` saves pending records after a private backup. It refuses
+changed snapshots or different existing reviews and skips identical saved
+documents on retry. The original research manifest is never sent directly to
+the review API. These scripts are limited to the development workspace.

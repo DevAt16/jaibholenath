@@ -1,0 +1,97 @@
+{
+  "schema": "pilot-followup-v1",
+  "reviewed_on": "2026-09-28",
+  "prepared_by": "AI-assisted desk research at owner request; no owner verification, outreach or field observation",
+  "scope": "Bounded follow-up of the same six candidates; preserve unresolved checks. Original evidence access dates remain unchanged.",
+  "records": [
+    {
+      "dossier_id": "U01",
+      "queries": [
+        "site.ujjain.nic.in \"अनर्केश्वर\"",
+        "\"अनर्केश्वर\" \"इंदिरा\"",
+        "\"Anarkeshwar\" \"INTACH\""
+      ],
+      "assessment": "The Amar Ujala article still contains the Anarkeshwar/Anandeshwar inconsistency. The original INTACH URL failed with a redirect loop; an alternate INTACH inventory URL is indexed with entry 363 but its direct fetch timed out. Neither resolves a current checked pin.",
+      "references": [
+        {
+          "origin": "Amar Ujala",
+          "url": "https://www.amarujala.com/madhya-pradesh/ujjain/anarkeshwar-mahadev-ujjain-gives-freedom-from-hell-just-by-seeing-27th-place-in-84-mahadev-2023-08-05",
+          "access": "Article opened; locality and naming inconsistency rechecked"
+        },
+        {
+          "origin": "INTACH",
+          "url": "https://chapter.intach.org/pdf/10Monuments%28Unprotected%29BuildingPrecinctsstructuresUjjainMadhyaPradesh1987R.pdf",
+          "access": "Search-index entry 363 only; direct fetch timed out; same origin as the original INTACH inventory"
+        }
+      ]
+    },
+    {
+      "dossier_id": "U02",
+      "queries": [
+        "site.ujjain.nic.in \"बिल्वेश्वर\"",
+        "\"बिल्वेश्वर\" \"अंबोदिया\""
+      ],
+      "assessment": "Webdunia names shrine 83 and Ambodia village. It adds a locality lead, but the village alias match, independent institutional or firsthand evidence and checked pin remain unresolved.",
+      "references": [
+        {
+          "origin": "Webdunia",
+          "url": "https://hindi.webdunia.com/84-mahadev-ujjain/bilweshwar-mahadev-116021100025_1.html",
+          "access": "Article opened; locality lead only, underlying independence unresolved"
+        }
+      ]
+    },
+    {
+      "dossier_id": "K01",
+      "queries": [
+        "\"Mankameshwar\" \"Narmada Nagar\" temple",
+        "\"मनकामेश्वर\" \"नर्मदा नगर\" मंदिर"
+      ],
+      "assessment": "This bounded follow-up still found no acceptable independent exact-site evidence. Sehore and other namesakes were excluded. Absence of a search match is not evidence of nonexistence.",
+      "references": []
+    },
+    {
+      "dossier_id": "K02",
+      "queries": [
+        "\"Dariyanath\" \"Sihada\"",
+        "\"दरियानाथ\" \"सिहाड़ा\"",
+        "\"Dariyanath\" \"Sihada\" temple"
+      ],
+      "assessment": "OneFiveNine indexes a Shri Dariyanath Mandir in Sihada. Its direct page could not be fetched. This is an additional directory lead, not demonstrated independent site or deity verification.",
+      "references": [
+        {
+          "origin": "OneFiveNine",
+          "url": "https://www.onefivenine.com/india/Places/checkin/shri-dariyanath-mandir",
+          "access": "Search-index only; direct fetch failed; provenance unresolved"
+        }
+      ]
+    },
+    {
+      "dossier_id": "G01",
+      "queries": [
+        "\"Goleshwar Mahadev\" \"Karhiya\""
+      ],
+      "assessment": "Temples of India repeats the Karhiya locality but says it lacks temple details. Directory repetitions do not resolve source independence, deity evidence, exact pin or possible namesakes.",
+      "references": [
+        {
+          "origin": "Temples of India",
+          "url": "https://templesofindia.org/temple-view/goleshwar-mahadev-gwalior-madhya-pradesh-705rdc",
+          "access": "Page opened; sparse directory listing with no detailed temple evidence"
+        }
+      ]
+    },
+    {
+      "dossier_id": "G02",
+      "queries": [
+        "\"Sarveshwar Maha Dev Mandir\" \"Gwalior\""
+      ],
+      "assessment": "Trip.com again indexes the temple as a nearby attraction of 7 Hills Resort. The repeated hotel listing is the same origin and does not establish a checked temple pin or independent deity evidence.",
+      "references": [
+        {
+          "origin": "Trip.com",
+          "url": "https://in.trip.com/hotels/gwalior-hotel-detail-123449218/7-hills-resort/",
+          "access": "Search-index only; indirect nearby-attraction lead from the existing origin"
+        }
+      ]
+    }
+  ]
+}

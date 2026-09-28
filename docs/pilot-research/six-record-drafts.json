@@ -1,0 +1,398 @@
+{
+  "schema": "pilot-research-drafts-v1",
+  "researched_on": "2026-09-16",
+  "prepared_by": "AI-assisted desk research; pending owner review",
+  "methodology": "pilot-v1-proposed",
+  "database_written": false,
+  "source_csv": "frontend/public/real-reports/candidate_review.csv",
+  "source_sha256": "3f3c1fb852809f5b8763fb38835fcc25df57bdfd046e146108912377c8061476",
+  "source_row_count": 74117,
+  "selection": "Two existing candidates per district, selected before research for identifiable names and varied urban/rural evidence challenges; not a representative sample. No substitution for easier famous sites.",
+  "sources": {
+    "intach": {
+      "title": "INTACH: Ujjain structures listed for conservation (1987), PDF page 14, entry 363",
+      "url": "https://chapter.intach.org/pdf/13.Monuments%28Unprotected%29BuildingPrecinctsandtherStructuresinUjjainListedforConservationMadhyaPradesh1987.pdf",
+      "origin": "INTACH",
+      "kind": "institutional inventory",
+      "access": "PDF downloaded; relevant entry visually inspected; title page text checked",
+      "finding": "The inventory includes Anarkeshwar Mahadev 27/84. This supports the named shrine and circuit identity, not a current pin, present condition or statutory protection.",
+      "limits": "The 1987 date belongs to the inventory. It is not a construction date. The document describes unprotected structures; listing is not ASI protection.",
+      "accessed": "2026-09-16",
+      "reuse_rights": "Unknown; citation and brief original paraphrase only; no image or article republication"
+    },
+    "amar": {
+      "title": "Amar Ujala: Anarkeshwar Mahadev, 5 August 2023",
+      "url": "https://www.amarujala.com/madhya-pradesh/ujjain/anarkeshwar-mahadev-ujjain-gives-freedom-from-hell-just-by-seeing-27th-place-in-84-mahadev-2023-08-05",
+      "origin": "Amar Ujala",
+      "kind": "news report",
+      "access": "Article text opened",
+      "finding": "The report identifies the shrine near Indira Nagar and associates it with position 27 in the 84 Mahadev circuit.",
+      "limits": "An internal passage uses Anandeshwar despite the Anarkeshwar title. Treat that inconsistency explicitly; devotional statements are reported beliefs, not verified historical facts.",
+      "accessed": "2026-09-16",
+      "reuse_rights": "Unknown; citation and brief original paraphrase only; no image or article republication"
+    },
+    "fpj": {
+      "title": "Free Press Journal: Citizens to get regular potable water supply from Sept 8, 7 September 2025",
+      "url": "https://nsearchives.nseindia.com/corporate/AGROPHOS_07092025231502_Intimation_newspaperpublication.pdf",
+      "origin": "Free Press Journal / FP News Service; clipping hosted in an NSE corporate filing",
+      "kind": "news report (archived clipping)",
+      "access": "PDF extracted text opened: PDF page 3, printed newspaper page 4; visual fetch unavailable",
+      "finding": "A municipal-water-supply report places a Bilkeshwar Mahadev temple in Ambodia village and describes a visit by public representatives.",
+      "limits": "NSE hosting does not turn journalism into an institutional temple record. The clipping does not establish the Google pin or circuit number. Match the village spelling before accepting it as the same site.",
+      "accessed": "2026-09-16",
+      "reuse_rights": "Unknown; citation and brief original paraphrase only; no image or article republication"
+    },
+    "myadhyatm": {
+      "title": "MyAdhyatm: Bilveshwar/Bilkeshwar, Amodiya–Kantharkhedi, 28 September 2024",
+      "url": "https://myadhyatm.com/bilveshwar-bilkeshwar-mahadev-mandir-83-84-amodiya-kantharkhedi-ujjain-madhya-pradesh/",
+      "origin": "MyAdhyatm",
+      "kind": "devotional secondary account",
+      "access": "Page text opened",
+      "finding": "The page connects the Bilveshwar/Bilkeshwar names with an Ambodiya-area shrine and the 83/84 designation.",
+      "limits": "Underlying provenance is not established. Similar legends on other sites may be copied; they cannot be counted as independent evidence. Do not treat the legend as a dated history.",
+      "accessed": "2026-09-16",
+      "reuse_rights": "Unknown; citation and brief original paraphrase only; no image or article republication"
+    },
+    "justdial": {
+      "title": "Justdial: Khandwa temples, page 7",
+      "url": "https://www.justdial.com/Khandwa/Temples/nct-10475644/page-7",
+      "origin": "Justdial",
+      "kind": "commercial directory",
+      "access": "Page text opened",
+      "finding": "The directory lists Shree Dariyanath Mahadev in Sihada, Khandwa.",
+      "limits": "The listing provides no inspected original field evidence or verified pin. Other Justdial locality/category pages repeat the same listing and count as one origin.",
+      "accessed": "2026-09-16",
+      "reuse_rights": "Unknown; citation and brief original paraphrase only; no image or article republication"
+    },
+    "karhiya": {
+      "title": "OneFiveNine: Karhiya, Bhitarwar, Gwalior",
+      "url": "https://www.onefivenine.com/india/villages/Gwalior/Bhitarwar/Karhiya",
+      "origin": "OneFiveNine / contributor-edited village directory",
+      "kind": "directory and user-contributed overview",
+      "access": "Page text opened",
+      "finding": "The page associates Karhiya with Bhitarwar/Gwalior and lists Goleshwar Mahadev among nearby temples.",
+      "limits": "Not an official boundary record. Listing distance and contributor statements do not establish the precise temple site or independently prove the Shiva association.",
+      "accessed": "2026-09-16",
+      "reuse_rights": "Unknown; citation and brief original paraphrase only; no image or article republication"
+    },
+    "goleshwar-trip": {
+      "title": "Trip.com: Goleshwar Mahadev",
+      "url": "https://www.trip.com/travel-guide/attraction/gwalior/goleshwar-mahadev-141852167?poiType=3&scene=gsDestination",
+      "origin": "Trip.com",
+      "kind": "commercial attraction listing",
+      "access": "Search-index page content reviewed",
+      "finding": "The listing repeats the candidate address VXPR+6CF, Karhiya, 475220.",
+      "limits": "The identical address could originate from a shared listing feed. Independence from Google Places is unproven; do not treat it as a second verified observation.",
+      "accessed": "2026-09-16",
+      "reuse_rights": "Unknown; citation and brief original paraphrase only; no image or article republication"
+    },
+    "sarveshwar-trip": {
+      "title": "Trip.com: 7 Hills Resort, Gwalior – nearby attractions",
+      "url": "https://www.trip.com/hotels/urhana-hotel-detail-123449218/7-hills-resort/",
+      "origin": "Trip.com",
+      "kind": "commercial hotel page / nearby-attraction list",
+      "access": "Search-index page content reviewed; direct page open failed",
+      "finding": "The nearby-attraction list names Sarveshwar Maha Dev Mandir beside a hotel described in the IT Park / IIITM / Agra–Mumbai Highway area.",
+      "limits": "This is an indirect locality lead. The relative distance is not a checked temple coordinate or proof of deity. Multiple Trip.com recommendation pages count as one origin.",
+      "accessed": "2026-09-16",
+      "reuse_rights": "Unknown; citation and brief original paraphrase only; no image or article republication"
+    },
+    "mankameshwar-false": {
+      "title": "Sri Mandir: Omkareshwar puja page with Mankameshwar wording",
+      "url": "https://www.srimandir.com/epuja/rin-mukti-1stjuly?lang=en",
+      "origin": "Sri Mandir",
+      "kind": "commercial puja page; excluded match",
+      "access": "Search-index page content reviewed",
+      "finding": "The page mixes an Omkareshwar heading with Mankameshwar text.",
+      "limits": "No reliable match to the Narmada Nagar candidate. Excluded from supporting evidence; illustrates why shared names must not be merged.",
+      "accessed": "2026-09-16",
+      "reuse_rights": "Unknown; citation and brief original paraphrase only; no image or article republication"
+    }
+  },
+  "records": [
+    {
+      "dossier_id": "U01",
+      "google_place_id": "ChIJW3Q-Xh50YzkRdJWLe8FdxSs",
+      "discovery_snapshot": {
+        "google_place_id": "ChIJW3Q-Xh50YzkRdJWLe8FdxSs",
+        "google_maps_uri": "https://maps.google.com/?cid=3154030199625717108&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "discovered_name": "Anarkeshwar Mahadev (27/84)",
+        "discovered_address": "6Q3Q+H5J, Indira Nagar, Ujjain, Madhya Pradesh 456001",
+        "latitude": "23.2039722",
+        "longitude": "75.7878834",
+        "state": "Madhya Pradesh",
+        "district": "Ujjain",
+        "source_query": "Mahadev temple in Ujjain district, Madhya Pradesh, India",
+        "confidence": "high",
+        "confidence_score": "0.88",
+        "classification_reason": "Matched high-confidence Shiva terms: mahadev",
+        "first_seen_at": "2026-05-06 10:44:17.918622+05:30",
+        "last_seen_at": "2026-05-06 10:44:17.918622+05:30"
+      },
+      "research_state": "draft",
+      "suggested_review_status": "needs_evidence",
+      "evidence_summary": "Strong named-identity lead; precise site unresolved",
+      "assessment": "The name and 27/84 designation align across the candidate and INTACH. The news report provides locality corroboration. These are plausibly different origins, but the article contains a naming inconsistency and neither source fixes the exact candidate pin.",
+      "source_ids": [
+        "intach",
+        "amar"
+      ],
+      "excluded_source_ids": [],
+      "next_checks": [
+        "Ask for the INTACH inventory sheet behind entry 363 or an authoritative current site record.",
+        "Resolve the Anandeshwar/Anarkeshwar wording with the shrine signboard or management.",
+        "Obtain a dated location observation identifying the sanctum and coordinates."
+      ],
+      "queries": [
+        "\"Anarkeshwar\" Ujjain temple",
+        "INTACH Anarkeshwar Mahadev 27/84"
+      ],
+      "editorial_note": "Preferred name remains Anarkeshwar Mahadev (27/84). No historical date or legal designation proposed.",
+      "checked_coordinates": null,
+      "actual_district_confirmed": false,
+      "duplicate_check_completed": false,
+      "nearby_candidate_screen": {
+        "radius_m": 250,
+        "matches": [],
+        "limitation": "Discovery coordinates only; no nearby record is not proof of uniqueness."
+      }
+    },
+    {
+      "dossier_id": "U02",
+      "google_place_id": "ChIJI-yJRHedYzkRb1Te1MTe1VU",
+      "discovery_snapshot": {
+        "google_place_id": "ChIJI-yJRHedYzkRb1Te1MTe1VU",
+        "google_maps_uri": "https://maps.google.com/?cid=6185094600229540975&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "discovered_name": "Bilkeshwar Mahadev Mandir (83/84)",
+        "discovered_address": "Bilkeshwar Mahadev(83/84), Amodiya, Kantharkhedi, Madhya Pradesh 456006",
+        "latitude": "23.202012800000002",
+        "longitude": "75.639584",
+        "state": "Madhya Pradesh",
+        "district": "Ujjain",
+        "source_query": "Mahadev temple in Ujjain district, Madhya Pradesh, India",
+        "confidence": "high",
+        "confidence_score": "0.88",
+        "classification_reason": "Matched high-confidence Shiva terms: mahadev",
+        "first_seen_at": "2026-05-06 10:44:13.210375+05:30",
+        "last_seen_at": "2026-05-06 10:44:17.918622+05:30"
+      },
+      "research_state": "draft",
+      "suggested_review_status": "needs_evidence",
+      "evidence_summary": "Plausible village-level match; names and pin unresolved",
+      "assessment": "The newspaper supports a Bilkeshwar shrine at Ambodia. The devotional account links similar village/name spellings and the circuit designation. These are useful leads, but equivalence of Amodiya, Ambodiya and Ambodia has not been independently established for this exact candidate.",
+      "source_ids": [
+        "fpj",
+        "myadhyatm"
+      ],
+      "excluded_source_ids": [],
+      "next_checks": [
+        "Confirm the village spelling and administrative location from a local-government record.",
+        "Obtain an institutional temple reference or documented firsthand confirmation.",
+        "Check the actual pin and whether 83/84 identifies this shrine rather than another similarly named temple."
+      ],
+      "queries": [
+        "\"Bilkeshwar\" Ujjain temple",
+        "site.freepressjournal.in \"Bilkeshwar\" \"September\" \"2025\""
+      ],
+      "editorial_note": "Bilveshwar is a possible alias, not an approved replacement. Do not merge with Bilpank/Ratlam or Haridwar namesakes.",
+      "checked_coordinates": null,
+      "actual_district_confirmed": false,
+      "duplicate_check_completed": false,
+      "nearby_candidate_screen": {
+        "radius_m": 250,
+        "matches": [],
+        "limitation": "Discovery coordinates only; no nearby record is not proof of uniqueness."
+      }
+    },
+    {
+      "dossier_id": "K01",
+      "google_place_id": "ChIJKQHPqGJNfTkR_VlgIqmApVs",
+      "discovery_snapshot": {
+        "google_place_id": "ChIJKQHPqGJNfTkR_VlgIqmApVs",
+        "google_maps_uri": "https://maps.google.com/?cid=6603825892523268605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "discovered_name": "Mankameshwar Mahadev Temple",
+        "discovered_address": "7FG7+XXX, Narmada Nagar, Khandwa, Madhya Pradesh 450119",
+        "latitude": "22.2774875",
+        "longitude": "76.4649847",
+        "state": "Madhya Pradesh",
+        "district": "Khandwa",
+        "source_query": "Mahadev temple in Khandwa district, Madhya Pradesh, India",
+        "confidence": "high",
+        "confidence_score": "0.88",
+        "classification_reason": "Matched high-confidence Shiva terms: mahadev",
+        "first_seen_at": "2026-05-06 08:28:20.517655+05:30",
+        "last_seen_at": "2026-05-06 08:28:20.517655+05:30"
+      },
+      "research_state": "draft",
+      "suggested_review_status": "needs_evidence",
+      "evidence_summary": "No usable independent exact-site match found in this search pass",
+      "assessment": "The candidate remains a Google Places discovery lead at Narmada Nagar. English and Hindi searches did not locate an independently attributable source for this exact site. Results referring to Omkareshwar, Agra or Sehore must not be transferred to it.",
+      "source_ids": [],
+      "excluded_source_ids": [
+        "mankameshwar-false"
+      ],
+      "next_checks": [
+        "Confirm the temple name and locality through a signboard photograph or documented local observation.",
+        "Seek a panchayat, municipal or temple-management reference naming this specific site.",
+        "Record actual district and checked coordinates only after the identity match is established."
+      ],
+      "queries": [
+        "\"Mankameshwar Mahadev Temple\" \"Khandwa\"",
+        "\"Mankameshwar\" \"Narmada Nagar\"",
+        "\"मनकामेश्वर\" \"नर्मदानगर\"",
+        "\"मनकामेश्वर\" \"नर्मदा नगर\" मंदिर",
+        "\"Mankameshwar\" \"7FG7\""
+      ],
+      "editorial_note": "No editorial corrections proposed. Lack of a search match is not evidence of nonexistence.",
+      "checked_coordinates": null,
+      "actual_district_confirmed": false,
+      "duplicate_check_completed": false,
+      "nearby_candidate_screen": {
+        "radius_m": 250,
+        "matches": [],
+        "limitation": "Discovery coordinates only; no nearby record is not proof of uniqueness."
+      }
+    },
+    {
+      "dossier_id": "K02",
+      "google_place_id": "ChIJwWbtxWsD2DsRXWoBk0Saaqs",
+      "discovery_snapshot": {
+        "google_place_id": "ChIJwWbtxWsD2DsRXWoBk0Saaqs",
+        "google_maps_uri": "https://maps.google.com/?cid=12351854547331803741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "discovered_name": "Shree dariyanath mahadev",
+        "discovered_address": "Sihada, Madhya Pradesh 450001",
+        "latitude": "21.8778589",
+        "longitude": "76.39151849999999",
+        "state": "Madhya Pradesh",
+        "district": "Khandwa",
+        "source_query": "Mahadev Mandir in Khandwa district, Madhya Pradesh, India",
+        "confidence": "high",
+        "confidence_score": "0.88",
+        "classification_reason": "Matched high-confidence Shiva terms: mahadev",
+        "first_seen_at": "2026-05-06 08:28:22.587594+05:30",
+        "last_seen_at": "2026-05-06 08:28:22.587594+05:30"
+      },
+      "research_state": "draft",
+      "suggested_review_status": "needs_evidence",
+      "evidence_summary": "Directory corroboration only",
+      "assessment": "The listing matches the Dariyanath name and Sihada locality. Repeated category pages are the same source, with no demonstrated independence from the discovery listing. No primary temple evidence or checked coordinates were located in this pass.",
+      "source_ids": [
+        "justdial"
+      ],
+      "excluded_source_ids": [],
+      "next_checks": [
+        "Confirm the local spelling and Shiva association with management or dated firsthand documentation.",
+        "Obtain an independently originated institutional/local source.",
+        "Resolve the temple pin and present administrative district."
+      ],
+      "queries": [
+        "\"Dariyanath\" \"Sihada\"",
+        "\"दरियानाथ\" \"सिहाड़ा\"",
+        "\"दरियानाथ महादेव\" खंडवा"
+      ],
+      "editorial_note": "Preserve Shree dariyanath mahadev as discovered; normalize spelling only after confirmation.",
+      "checked_coordinates": null,
+      "actual_district_confirmed": false,
+      "duplicate_check_completed": false,
+      "nearby_candidate_screen": {
+        "radius_m": 250,
+        "matches": [],
+        "limitation": "Discovery coordinates only; no nearby record is not proof of uniqueness."
+      }
+    },
+    {
+      "dossier_id": "G01",
+      "google_place_id": "ChIJQUX9f0YqdzkRKslNKZ2Mukk",
+      "discovery_snapshot": {
+        "google_place_id": "ChIJQUX9f0YqdzkRKslNKZ2Mukk",
+        "google_maps_uri": "https://maps.google.com/?cid=5312713317067639082&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "discovered_name": "Goleshwar Mahadev",
+        "discovered_address": "VXPR+6CF, Karhiya, Madhya Pradesh 475220",
+        "latitude": "25.885562099999998",
+        "longitude": "77.99104249999999",
+        "state": "Madhya Pradesh",
+        "district": "Gwalior",
+        "source_query": "Mahadev temple in Gwalior district, Madhya Pradesh, India",
+        "confidence": "high",
+        "confidence_score": "0.88",
+        "classification_reason": "Matched high-confidence Shiva terms: mahadev",
+        "first_seen_at": "2026-05-06 08:26:15.301965+05:30",
+        "last_seen_at": "2026-05-06 08:26:15.301965+05:30"
+      },
+      "research_state": "draft",
+      "suggested_review_status": "needs_evidence",
+      "evidence_summary": "Matching locality listings; source independence unresolved",
+      "assessment": "The village directory and attraction listing align with Karhiya. They do not establish two independent observations. A search result for a similarly named Bhitarwar town tender must not be assumed to refer to this Karhiya site.",
+      "source_ids": [
+        "karhiya",
+        "goleshwar-trip"
+      ],
+      "excluded_source_ids": [],
+      "next_checks": [
+        "Check Karhiya administrative identifiers against an official record.",
+        "Obtain site-specific deity/name evidence and a dated pin observation.",
+        "Resolve any relationship to the Bhitarwar-town namesake before merging records."
+      ],
+      "queries": [
+        "\"Goleshwar Mahadev\" Karhiya"
+      ],
+      "editorial_note": "No identity merge proposed. Do not use Goleshwar reports from Kanpur as evidence for this candidate.",
+      "checked_coordinates": null,
+      "actual_district_confirmed": false,
+      "duplicate_check_completed": false,
+      "nearby_candidate_screen": {
+        "radius_m": 250,
+        "matches": [],
+        "limitation": "Discovery coordinates only; no nearby record is not proof of uniqueness."
+      }
+    },
+    {
+      "dossier_id": "G02",
+      "google_place_id": "ChIJN0Dg2arHdjkR2XaEZGyPjyk",
+      "discovery_snapshot": {
+        "google_place_id": "ChIJN0Dg2arHdjkR2XaEZGyPjyk",
+        "google_maps_uri": "https://maps.google.com/?cid=2994769972930311897&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "discovered_name": "Sarveshwar Maha Dev Mandir",
+        "discovered_address": "Near Software Technology Park, 7553+4GH, AB Road & Morena Link Road, Gwalior, Madhya Pradesh 474010",
+        "latitude": "26.2578119",
+        "longitude": "78.1538659",
+        "state": "Madhya Pradesh",
+        "district": "Gwalior",
+        "source_query": "Shiva temple in Gwalior district, Madhya Pradesh, India",
+        "confidence": "medium",
+        "confidence_score": "0.58",
+        "classification_reason": "Matched medium-confidence Shiva terms: eshwar",
+        "first_seen_at": "2026-05-06 08:26:09.201569+05:30",
+        "last_seen_at": "2026-05-06 08:26:09.201569+05:30"
+      },
+      "research_state": "draft",
+      "suggested_review_status": "needs_evidence",
+      "evidence_summary": "Indirect locality lead only",
+      "assessment": "A hotel attractions list supplies a plausible local-name lead near the highway/IT Park area. It does not independently establish the specific shrine, deity or location. The Ujjain/Sandipani Ashram Sarveshwar namesake is a different lead and must not supply this record’s history.",
+      "source_ids": [
+        "sarveshwar-trip"
+      ],
+      "excluded_source_ids": [],
+      "next_checks": [
+        "Locate an original temple-management, institutional or firsthand reference.",
+        "Match the local name, entrance and coordinates near the Software Technology Park.",
+        "Confirm district boundaries and resolve any same-name candidates before approval."
+      ],
+      "queries": [
+        "\"Sarveshwar\" \"Gwalior\" temple",
+        "\"Sarveshwar Maha Dev Mandir\" Gwalior",
+        "\"Sarveshwar Maha Dev Mandir\" \"7553\"",
+        "\"सर्वेश्वर\" \"ग्वालियर\" \"मंदिर\""
+      ],
+      "editorial_note": "Retain the original medium discovery score. Human research does not justify changing it to a verification score.",
+      "checked_coordinates": null,
+      "actual_district_confirmed": false,
+      "duplicate_check_completed": false,
+      "nearby_candidate_screen": {
+        "radius_m": 250,
+        "matches": [],
+        "limitation": "Discovery coordinates only; no nearby record is not proof of uniqueness."
+      }
+    }
+  ]
+}
