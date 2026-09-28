@@ -21,3 +21,4 @@ visitor-api/dist/
 admin-workspace/.local-owner-password
 admin-workspace/private-backups/
 .local-mysql/
+reports/phase_1_2/*_plan.json
