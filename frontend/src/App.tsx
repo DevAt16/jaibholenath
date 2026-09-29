@@ -263,10 +263,18 @@ function StateRanking({
 function CandidateRows({
   candidates,
   onSelect,
+  observedSort,
 }: {
   candidates: Candidate[];
   onSelect: (candidate: Candidate) => void;
+  observedSort?: CandidateFilters["sort"];
 }) {
+  const observedField = observedSort?.startsWith("first_") ? "first_seen_at" : "last_seen_at";
+  const observedLabel = observedField === "first_seen_at" ? "First observed" : "Last observed";
+  const showObserved = observedSort && ["recent", "last_oldest", "first_newest", "first_oldest"].includes(observedSort);
+  const displayDate = (value: string) => Number.isFinite(Date.parse(value))
+    ? new Intl.DateTimeFormat("en-IN", { dateStyle: "medium", timeZone: "Asia/Kolkata" }).format(new Date(value))
+    : "Not recorded";
   return (
     <div className="candidate-list">
       <div className="candidate-columns" aria-hidden="true">
@@ -288,7 +296,7 @@ function CandidateRows({
             <span className="place-icon">
               <Building2 size={18} strokeWidth={1.4} />
             </span>
-            <span className="candidate-name">{candidate.discovered_name}</span>
+            <span className="candidate-name-group"><span className="candidate-name">{candidate.discovered_name}</span>{showObserved && <small>{observedLabel}: {displayDate(candidate[observedField])}</small>}</span>
           </span>
           <span className="candidate-location">
             <span>{candidate.district}</span>
@@ -966,7 +974,10 @@ function Candidates({
               >
                 <option value="confidence">Highest confidence</option>
                 <option value="name">Name A–Z</option>
-                <option value="recent">Last observed</option>
+                <option value="recent">Last observed · newest first</option>
+                <option value="last_oldest">Last observed · oldest first</option>
+                <option value="first_newest">First observed · newest first</option>
+                <option value="first_oldest">First observed · oldest first</option>
               </select>
             </label>
           </div>
@@ -1018,7 +1029,7 @@ function Candidates({
           </label>
         </div>
         {paged.rows.length ? (
-          <CandidateRows candidates={paged.rows} onSelect={onSelect} />
+          <CandidateRows candidates={paged.rows} onSelect={onSelect} observedSort={filters.sort} />
         ) : (
           <EmptyState
             title={

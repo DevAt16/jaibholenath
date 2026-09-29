@@ -58,6 +58,21 @@ test('real MySQL: login, CSRF, private routes, version conflict, audit rollback 
     const pageTwo = (await agent.get('/api/candidates?page=2').expect(200)).body;
     assert.equal(pageTwo.total, 1);
     assert.equal(pageTwo.rows.length, 0);
+    for (const [placeId, first, last] of [
+      ['early', '2026-01-01T00:00:00+00:00', '2026-06-01T00:00:00+00:00'],
+      ['late', '2026-02-01T00:00:00+00:00', '2026-05-01T00:00:00+00:00'],
+    ]) await pool.execute('INSERT INTO admin_candidates (google_place_id, name, source_state, source_district, confidence, snapshot, snapshot_sha256) VALUES (?, ?, ?, ?, ?, ?, ?)', [placeId, placeId, 'Madhya Pradesh', 'Ujjain', 'high', JSON.stringify({ first_seen_at: first, last_seen_at: last }), 'b'.repeat(64)]);
+    for (const [sort, expected] of [
+      ['first_newest', ['late', 'early', 'Pilot temple']],
+      ['first_oldest', ['early', 'late', 'Pilot temple']],
+      ['last_newest', ['early', 'late', 'Pilot temple']],
+      ['last_oldest', ['late', 'early', 'Pilot temple']],
+    ]) {
+      const queue = (await agent.get('/api/candidates?sort=' + sort).expect(200)).body;
+      assert.deepEqual(queue.rows.map(row => row.name), expected);
+      assert.equal(queue.rows[2].first_observed, null);
+    }
+    await agent.get('/api/candidates?sort=id%20DESC').expect(400);
     assert.equal((await agent.get('/api/candidates?search=%27%20OR%201%3D1--').expect(200)).body.total, 0);
     await agent.post('/api/logout').set('Origin', origin).set('X-CSRF-Token', csrf).send({}).expect(200);
     await agent.get('/api/candidates/1').expect(401);

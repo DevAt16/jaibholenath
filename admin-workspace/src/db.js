@@ -11,6 +11,18 @@ export function databaseOptions(env = process.env) {
 export const createPool = (env) => mysql.createPool(databaseOptions(env));
 // MySQL decodes JSON natively; MariaDB exposes its JSON alias as text.
 export const jsonDocument = value => typeof value === 'string' ? JSON.parse(value) : value;
+const observed = field => `NULLIF(JSON_UNQUOTE(JSON_EXTRACT(snapshot, '$.${field}')), '')`;
+const SORT_ORDERS = Object.freeze({
+  record: 'id ASC',
+  last_newest: `${observed('last_seen_at')} DESC, id DESC`,
+  last_oldest: `(${observed('last_seen_at')} IS NULL) ASC, ${observed('last_seen_at')} ASC, id ASC`,
+  first_newest: `${observed('first_seen_at')} DESC, id DESC`,
+  first_oldest: `(${observed('first_seen_at')} IS NULL) ASC, ${observed('first_seen_at')} ASC, id ASC`,
+});
+export function candidateSortOrder(sort) {
+  if (!Object.hasOwn(SORT_ORDERS, sort)) throw new InputError('Invalid candidate sort order.');
+  return SORT_ORDERS[sort];
+}
 export async function migrate(pool) {
   const sql = readFileSync(new URL('../../migrations/005_admin_workspace.sql', import.meta.url), 'utf8');
   for (const statement of sql.split(';').map(s => s.trim()).filter(Boolean)) await pool.query(statement);
@@ -35,8 +47,9 @@ export class Store {
   async dashboard() {
     return this.query('SELECT source_district AS district, status, COUNT(*) AS total FROM admin_candidates GROUP BY source_district, status ORDER BY source_district, status');
   }
-  async candidates({ district = '', status = '', search = '', page = '1' }) {
+  async candidates({ district = '', status = '', search = '', page = '1', sort = 'record' }) {
     const p = Math.max(1, Math.min(10000, Number.parseInt(page) || 1));
+    const order = candidateSortOrder(sort);
     // Compare bound values directly with columns. Parameter-to-empty-literal
     // comparisons can have incompatible coercible collations on MariaDB.
     const clauses = [];
@@ -45,7 +58,9 @@ export class Store {
     if (status) { clauses.push('status = ?'); params.push(status); }
     if (search) { clauses.push('name LIKE ?'); params.push(`%${search}%`); }
     const where = clauses.length ? `WHERE ${clauses.join(' AND ')}` : '';
-    const rows = await this.query(`SELECT id, name, source_district, confidence, status, revision, updated_at FROM admin_candidates ${where} ORDER BY id LIMIT 20 OFFSET ${(p - 1) * 20}`, params);
+    const rows = await this.query(`SELECT id, name, source_district, confidence, status, revision,
+      ${observed('first_seen_at')} AS first_observed, ${observed('last_seen_at')} AS last_observed
+      FROM admin_candidates ${where} ORDER BY ${order} LIMIT 20 OFFSET ${(p - 1) * 20}`, params);
     const [{ total }] = await this.query(`SELECT COUNT(*) AS total FROM admin_candidates ${where}`, params);
     return { rows, total: Number(total), page: p };
   }

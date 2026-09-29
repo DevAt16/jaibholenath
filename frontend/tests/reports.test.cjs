@@ -188,6 +188,19 @@ test("recent sort orders valid observations before missing dates", () => {
     "b",
   );
 });
+test("first and last observed sorts support both directions and leave missing dates last", () => {
+  const rows = [
+    candidate({ google_place_id: "missing", first_seen_at: "", last_seen_at: "" }),
+    candidate({ google_place_id: "early", first_seen_at: "2026-01-01T00:00:00Z", last_seen_at: "2026-06-01T00:00:00Z" }),
+    candidate({ google_place_id: "late", first_seen_at: "2026-02-01T00:00:00Z", last_seen_at: "2026-05-01T00:00:00Z" }),
+  ];
+  const ids = sort => filterCandidates(rows, { ...defaultFilters, sort }).map(row => row.google_place_id);
+  assert.deepEqual(ids("first_newest"), ["late", "early", "missing"]);
+  assert.deepEqual(ids("first_oldest"), ["early", "late", "missing"]);
+  assert.deepEqual(ids("recent"), ["early", "late", "missing"]);
+  assert.deepEqual(ids("last_oldest"), ["late", "early", "missing"]);
+  assert.equal(rows[0].google_place_id, "missing");
+});
 test("every match is accessible through bounded pages, including the last partial page", () => {
   const rows = Array.from({ length: 61 }, (_, i) => i);
   const retrieved = [1, 2, 3].flatMap((page) => paginate(rows, page, 25).rows);

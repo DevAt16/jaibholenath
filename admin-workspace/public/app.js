@@ -2,9 +2,12 @@ const root = document.querySelector('#app');
 const escape = value => String(value ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 const labels = { unreviewed: 'Unreviewed', in_review: 'In review', needs_evidence: 'Needs evidence', verified: 'Owner verified', rejected: 'Rejected' };
 const badge = status => `<span class="status ${escape(status)}">${escape(labels[status] || status)}</span>`;
+const observedDate = value => value && Number.isFinite(Date.parse(value))
+  ? new Intl.DateTimeFormat('en-IN', { dateStyle: 'medium', timeZone: 'Asia/Kolkata' }).format(new Date(value))
+  : 'Not recorded';
 const brand = '<div class="brand"><span class="brand-mark" aria-hidden="true">ॐ</span><div><strong>Jai Bholenath</strong><small>RESEARCH WORKSPACE</small></div></div>';
 let session, dirty = false, selected, message = '', view = 'dashboard';
-let filters = { district: '', status: '', search: '', page: 1 };
+let filters = { district: '', status: '', search: '', sort: 'record', page: 1 };
 async function api(path, body) {
   const response = await fetch(`/api${path}`, { credentials: 'same-origin', ...(body !== undefined ? { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': session?.csrf || '' }, body: JSON.stringify(body) } : {}) });
   const data = await response.json();
@@ -55,7 +58,20 @@ async function dashboard() {
 }
 async function queue() {
   const data = await api(`/candidates?${new URLSearchParams(filters)}`);
-  document.querySelector('#content').innerHTML = `<div class="page-head"><div><div class="eyebrow">Research desk</div><h1>Review queue</h1><p class="muted">Discovery confidence is a name signal. Review status records your evidence-based decision.</p></div></div><form id="filters" class="filters"><input name="search" aria-label="Search candidate names" placeholder="Search candidate names…" value="${escape(filters.search)}"><select name="district" aria-label="Source district"><option value="">All pilot districts</option>${['Ujjain', 'Khandwa', 'Gwalior'].map(value => `<option ${filters.district === value ? 'selected' : ''}>${value}</option>`).join('')}</select><select name="status" aria-label="Review status"><option value="">All review states</option>${Object.entries(labels).map(([value, label]) => `<option value="${value}" ${filters.status === value ? 'selected' : ''}>${label}</option>`).join('')}</select><button>Apply filters</button></form><div class="table-wrap"><table><thead><tr><th>Candidate</th><th>Source district</th><th>Discovery confidence</th><th>Human review</th><th><span class="muted">Action</span></th></tr></thead><tbody>${data.rows.map(row => `<tr><td><strong>${escape(row.name)}</strong><br><small>Record ${escape(row.id)} · revision ${row.revision}</small></td><td>${escape(row.source_district)}</td><td>${escape(row.confidence)}</td><td>${badge(row.status)}</td><td><button data-review="${escape(row.id)}" aria-label="Review ${escape(row.name)}">Review →</button></td></tr>`).join('')}</tbody></table>${!data.rows.length ? '<div class="empty">No candidates match these filters. Try another district or review state.</div>' : ''}</div><div class="pagination"><span>${data.total} matching candidates · page ${data.page} of ${Math.max(1, Math.ceil(data.total / 20))}</span><div><button id="previous" ${data.page === 1 ? 'disabled' : ''}>Previous</button> <button id="next" ${data.page * 20 >= data.total ? 'disabled' : ''}>Next</button></div></div>`;
+  document.querySelector('#content').innerHTML = `<div class="page-head"><div><div class="eyebrow">Research desk</div><h1>Review queue</h1><p class="muted">Discovery confidence is a name signal. Review status records your evidence-based decision.</p></div></div>
+    <form id="filters" class="filters">
+      <input name="search" aria-label="Search candidate names" placeholder="Search candidate names…" value="${escape(filters.search)}">
+      <select name="district" aria-label="Source district"><option value="">All pilot districts</option>${['Ujjain', 'Khandwa', 'Gwalior'].map(value => `<option ${filters.district === value ? 'selected' : ''}>${value}</option>`).join('')}</select>
+      <select name="status" aria-label="Review status"><option value="">All review states</option>${Object.entries(labels).map(([value, label]) => `<option value="${value}" ${filters.status === value ? 'selected' : ''}>${label}</option>`).join('')}</select>
+      <select name="sort" aria-label="Sort candidates">${[
+        ['record', 'Record order'], ['last_newest', 'Last observed · newest first'],
+        ['last_oldest', 'Last observed · oldest first'], ['first_newest', 'First observed · newest first'],
+        ['first_oldest', 'First observed · oldest first'],
+      ].map(([value, label]) => `<option value="${value}" ${filters.sort === value ? 'selected' : ''}>${label}</option>`).join('')}</select>
+      <button>Apply filters</button>
+    </form>
+    <div class="table-wrap"><table><thead><tr><th>Candidate</th><th>Source district</th><th>First observed</th><th>Last observed</th><th>Discovery confidence</th><th>Human review</th><th><span class="muted">Action</span></th></tr></thead><tbody>${data.rows.map(row => `<tr><td><strong>${escape(row.name)}</strong><br><small>Record ${escape(row.id)} · revision ${row.revision}</small></td><td>${escape(row.source_district)}</td><td>${escape(observedDate(row.first_observed))}</td><td>${escape(observedDate(row.last_observed))}</td><td>${escape(row.confidence)}</td><td>${badge(row.status)}</td><td><button data-review="${escape(row.id)}" aria-label="Review ${escape(row.name)}">Review →</button></td></tr>`).join('')}</tbody></table>${!data.rows.length ? '<div class="empty">No candidates match these filters. Try another district or review state.</div>' : ''}</div>
+    <div class="pagination"><span>${data.total} matching candidates · page ${data.page} of ${Math.max(1, Math.ceil(data.total / 20))}</span><div><button id="previous" ${data.page === 1 ? 'disabled' : ''}>Previous</button> <button id="next" ${data.page * 20 >= data.total ? 'disabled' : ''}>Next</button></div></div>`;
   document.querySelector('#filters').onsubmit = event => { event.preventDefault(); filters = { ...Object.fromEntries(new FormData(event.currentTarget)), page: 1 }; navigate('queue'); };
   document.querySelector('#previous').onclick = () => { filters.page--; navigate('queue'); };
   document.querySelector('#next').onclick = () => { filters.page++; navigate('queue'); };

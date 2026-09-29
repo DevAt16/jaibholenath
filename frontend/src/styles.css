@@ -920,6 +920,8 @@ main:focus {
   font-weight: 500;
   overflow-wrap: anywhere;
 }
+.candidate-name-group { display: grid; gap: 2px; min-width: 0; }
+.candidate-name-group small { color: var(--muted); font-size: 0.72rem; font-weight: 400; }
 .candidate-location {
   display: grid;
   gap: 5px;

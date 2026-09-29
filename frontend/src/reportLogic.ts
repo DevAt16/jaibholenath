@@ -19,7 +19,7 @@ export type CandidateFilters = {
   state: string;
   district: string;
   confidence: string;
-  sort: "confidence" | "name" | "recent";
+  sort: "confidence" | "name" | "recent" | "last_oldest" | "first_newest" | "first_oldest";
 };
 
 export const defaultFilters: CandidateFilters = {
@@ -115,10 +115,15 @@ export function filterCandidates(
     .sort((a, b) => {
       if (filters.sort === "name")
         return a.discovered_name.localeCompare(b.discovered_name);
-      if (filters.sort === "recent") {
-        const timeA = Date.parse(a.last_seen_at) || 0;
-        const timeB = Date.parse(b.last_seen_at) || 0;
-        if (timeA !== timeB) return timeB - timeA;
+      if (["recent", "last_oldest", "first_newest", "first_oldest"].includes(filters.sort)) {
+        const first = filters.sort.startsWith("first_");
+        const timeA = Date.parse(first ? a.first_seen_at : a.last_seen_at);
+        const timeB = Date.parse(first ? b.first_seen_at : b.last_seen_at);
+        const validA = Number.isFinite(timeA);
+        const validB = Number.isFinite(timeB);
+        if (validA !== validB) return validA ? -1 : 1;
+        if (validA && timeA !== timeB)
+          return filters.sort.endsWith("oldest") ? timeA - timeB : timeB - timeA;
       }
       return (
         (ranks[a.confidence] ?? 3) - (ranks[b.confidence] ?? 3) ||
