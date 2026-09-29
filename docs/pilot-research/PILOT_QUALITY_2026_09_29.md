@@ -14,11 +14,11 @@ The classifier change affects nine saved pilot rows:
 | Low | High | 6 | Hindi शिव/महादेव names and the `Siv mandir` spelling |
 | High | Low | 3 | `Shiva house/home` names without a temple word |
 
-If applied to these same 206 rows, the name-only confidence totals become 144
-high, 15 medium and 47 low. The exported CSV and live database still contain the
-original classifications; the revised totals are a preview until a controlled
-reclassification is applied. No further Google calls are required for this
-classification change.
+The nine audited rows were updated in the live discovery database after their
+names and previous classifications were checked. Its name-only confidence totals
+are now 144 high, 15 medium and 47 low. The previous values are backed up in
+`tmp/phase_1_2_pilot/before_reclassification_20260929T064728Z.json`; the first
+pilot export remains a historical snapshot. No further Google calls were needed.
 
 The reproducible [audit JSON](../../tmp/phase_1_2_pilot/quality_audit_2026_09_29.json)
 records each changed Place ID, both CSV SHA-256 hashes and the transition counts.
