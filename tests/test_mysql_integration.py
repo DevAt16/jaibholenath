@@ -4,6 +4,7 @@ MYSQL_TEST_DATABASE_URL must allow CREATE DATABASE. Each test uses and removes
 only its own random database; no existing discovery/visitor tables are touched.
 """
 import hashlib
+import json
 import os
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -50,6 +51,116 @@ def location(conn):
         cur.execute("""INSERT INTO india_locations (name, normalized_name, location_type, state_name, district_name)
                        VALUES ('पुणे', 'पुणे', 'district', 'Maharashtra', 'Pune')""")
         return cur.lastrowid
+
+
+def expansion_tasks(conn, count=3):
+    from shiva_discovery.queries import build_search_query
+    from shiva_discovery.repositories import create_search_task
+    with conn.cursor() as cur:
+        for index in range(count):
+            name = f'Pilot Town {index}'
+            cur.execute("INSERT INTO india_locations (name, normalized_name, location_type, state_name, district_name) VALUES (%s,%s,'urban_local_body','Uttar Pradesh','Agra')", (name, name.lower()))
+            location_id = cur.lastrowid
+            for keyword in ('Shiva temple', 'Shiv Mandir'):
+                query = build_search_query(keyword, dict(name=name, state_name='Uttar Pradesh',
+                    district_name='Agra', location_type='urban_local_body'))
+                create_search_task(conn, location_id=location_id, keyword=keyword,
+                    search_query=query, search_level='urban_local_body')
+
+
+def test_expansion_daily_idempotency_page_limits_export_and_lock(database, tmp_path):
+    from shiva_discovery.expansion import expansion_lock, run_daily_discovery, export_snapshot
+    from shiva_discovery.request_budget import RequestBudget, BudgetBlocked, billing_month
+    now = datetime.now(timezone.utc)
+    calls = []
+    class Client:
+        def __init__(self, before_request):
+            self.before_request = before_request
+        def iter_text_pages(self, query, **kwargs):
+            for page in range(2):
+                self.before_request()
+                calls.append(query)
+                yield [dict(id=f'place-{page}', displayName={'text':'Shiva temple'},
+                            formattedAddress='Pilot Town 0, Uttar Pradesh, India',
+                            location={'latitude':27.1, 'longitude':78.1})]
+    with connect(database) as conn:
+        expansion_tasks(conn)
+        RequestBudget(conn, 'local:test').configure(month=billing_month(now), observed_usage=0,
+            external_reserve=0, ceiling=30, checked_at=now, india_pricing_confirmed=True)
+        with expansion_lock(conn):
+            with connect(database) as second:
+                with pytest.raises(BudgetBlocked, match='Another'):
+                    with expansion_lock(second):
+                        pass
+            result = run_daily_discovery(conn, 'local:test', max_requests=3, client_factory=Client)
+            assert result['requests'] == 2
+            assert result['completed'] == 1
+            assert result['stop_reason'] == 'request_limit'
+            again = run_daily_discovery(conn, 'local:test', client_factory=Client)
+            assert again['status'] == 'already_ran'
+            assert again['requests'] == 0
+            assert len(calls) == 2
+            baseline = [dict(google_place_id='place-0', discovered_name='Old Shiva temple',
+                confidence='high', confidence_score=0.9, first_seen_at='2025-01-01', last_seen_at='2025-01-02')]
+            manifest = export_snapshot(conn, baseline, tmp_path, {'Uttar Pradesh'})
+            assert manifest['combined_candidates'] == 2
+            assert manifest['added_since_baseline'] == manifest['overlapping_place_ids'] == 1
+            snapshot = json.loads((tmp_path/'snapshots'/f"{manifest['snapshot_id']}.json").read_text())
+            assert snapshot['reports']['candidates'][0]['first_seen_at'].startswith('2025-01-01')
+            assert export_snapshot(conn, baseline, tmp_path, {'Uttar Pradesh'}) == manifest
+            with pytest.raises(ValueError):
+                export_snapshot(conn, baseline * 2, tmp_path, {'Uttar Pradesh'})
+            assert json.loads((tmp_path/'latest.json').read_text()) == manifest
+
+
+def test_expansion_failure_stops_after_one_request_and_does_not_retry_same_day(database):
+    from shiva_discovery.expansion import expansion_lock, run_daily_discovery
+    from shiva_discovery.request_budget import RequestBudget, billing_month
+    from shiva_discovery.places_client import GooglePlacesError
+    now = datetime.now(timezone.utc)
+    class FailingClient:
+        def __init__(self, before_request):
+            self.before_request = before_request
+        def iter_text_pages(self, *args, **kwargs):
+            self.before_request()
+            raise GooglePlacesError('HTTP 403')
+            yield []
+    with connect(database) as conn, expansion_lock(conn):
+        expansion_tasks(conn)
+        RequestBudget(conn, 'local:test').configure(month=billing_month(now), observed_usage=0,
+            external_reserve=0, ceiling=30, checked_at=now, india_pricing_confirmed=True)
+        result = run_daily_discovery(conn, 'local:test', client_factory=FailingClient)
+        assert result['status'] == 'failed'
+        assert result['requests'] == 1
+        assert result['failed'] == 1
+        assert run_daily_discovery(conn, 'local:test', client_factory=FailingClient)['status'] == 'needs_review'
+        assert RequestBudget(conn, 'local:test').status()['reserved_requests'] == 1
+
+
+def test_expansion_unconfirmed_budget_claims_nothing_and_never_creates_client(database):
+    from shiva_discovery.expansion import expansion_lock, run_daily_discovery
+    from shiva_discovery.request_budget import BudgetBlocked
+    def forbidden(**kwargs):
+        pytest.fail('Client must not be constructed without a confirmed budget')
+    with connect(database) as conn, expansion_lock(conn):
+        expansion_tasks(conn)
+        with pytest.raises(BudgetBlocked):
+            run_daily_discovery(conn, 'local:test', client_factory=forbidden)
+        with conn.cursor() as cur:
+            cur.execute('SELECT COUNT(*) FROM discovery_expansion_batches')
+            assert cur.fetchone()[0] == 0
+            cur.execute("SELECT COUNT(*) FROM temple_search_tasks WHERE status != 'pending'")
+            assert cur.fetchone()[0] == 0
+
+
+def test_expansion_interrupted_previous_day_blocks_new_spending(database):
+    from shiva_discovery.expansion import expansion_lock, run_daily_discovery
+    from shiva_discovery.request_budget import BudgetBlocked
+    with connect(database) as conn, expansion_lock(conn):
+        with conn.cursor() as cur:
+            cur.execute("INSERT INTO discovery_expansion_batches (run_date,budget_run_id,status) VALUES ('2020-01-01',%s,'running')", (str(uuid4()),))
+        with pytest.raises(BudgetBlocked, match='interrupted'):
+            run_daily_discovery(conn, 'local:test')
 
 
 def test_counter_concurrent_retries_and_migration_preserve_total(database):

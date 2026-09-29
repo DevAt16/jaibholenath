@@ -9,6 +9,11 @@ development server only; it is not included in the public build. The offline
 [pilot geography audit](docs/pilot-research/GEOGRAPHY_AUDIT_2026_09_29.md)
 flags uncertain query-location attribution before further expansion.
 
+The [daily expansion batch](docs/AUTOMATED_DISCOVERY.md) now runs a bounded
+discovery batch and atomically refreshes a combined local portal dataset. Use
+`python scripts/run_expansion_batch.py --export-only` to load already-saved
+discoveries, or `--dry-run` to check the queue and request budget without writes.
+
 This phase does not build the final website and does not claim exact real-world temple counts. Counts are discovery counts from Google Places API and are meant for later verification.
 
 ## Phase 1 Scope

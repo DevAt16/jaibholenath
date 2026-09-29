@@ -24,6 +24,8 @@ import {
   X,
 } from "lucide-react";
 import { loadLocalPilotReports, loadRealReports, loadSampleReports } from "./reportData";
+import { loadExpandedReports } from "./expansionData";
+import type { ExpansionManifest } from "./expansionData";
 import { portalVersion } from "./portalVersion";
 import { VisitCounter } from "./VisitCounter";
 import type { Candidate, ReportData, StateCount } from "./reportData";
@@ -1219,6 +1221,8 @@ function Reports({
   onUpload,
   onLoad,
   onLoadPilot,
+  onLoadExpanded,
+  expansion,
   allowDataTools = localDataTools,
 }: {
   reports: ReportData;
@@ -1227,6 +1231,8 @@ function Reports({
   onUpload: () => void;
   onLoad: (sample: boolean) => void;
   onLoadPilot?: () => void;
+  onLoadExpanded?: () => void;
+  expansion?: ExpansionManifest | null;
   allowDataTools?: boolean;
 }) {
   return (
@@ -1243,6 +1249,12 @@ function Reports({
         </button>}
       </div>
       <DataScopeNote reports={reports} />
+      {expansion && <section className="panel" aria-label="Expansion progress">
+        <h2>Discovery expansion</h2>
+        <p><strong>{formatNumber(expansion.added_since_baseline)}</strong> candidates added since the baseline · {formatNumber(expansion.overlapping_place_ids)} overlapping Place IDs merged.</p>
+        <p>Last updated: {new Date(expansion.generated_at).toLocaleString()} · Checks for new results every minute.</p>
+        <p>{formatNumber(expansion.geography_high_priority)} expansion candidates flagged for geography review. These are discovery candidates; state and district labels describe search locations.</p>
+      </section>}
       <section className="dataset-banner">
         <span className="dataset-icon">
           <Database size={25} strokeWidth={1.5} />
@@ -1328,6 +1340,9 @@ function Reports({
             Switching datasets clears filters and closes candidate details.
           </p>
           <div className="dataset-actions">
+            <button className="button primary" disabled={busy || !onLoadExpanded} onClick={onLoadExpanded}>
+              Load latest expanded dataset
+            </button>
             <button
               className="button secondary"
               disabled={busy}
@@ -1362,11 +1377,13 @@ function Reports({
   );
 }
 
-let initialLoad: Promise<{ reports: ReportData; sample: boolean }> | undefined;
+let initialLoad: Promise<{ reports: ReportData; sample: boolean; expansion?: ExpansionManifest }> | undefined;
 export default function App() {
   const [view, setView] = useState<View>(getView);
   const [reports, setReports] = useState<ReportData>(emptyReports);
   const [source, setSource] = useState("Loading reports");
+  const [expansion, setExpansion] = useState<ExpansionManifest | null>(null);
+  const expansionActive = useRef(false);
   const [busy, setBusy] = useState(true);
   const [notice, setNotice] = useState<{
     message: string;
@@ -1393,8 +1410,13 @@ export default function App() {
     selectedIndex >= 0 ? detailCandidates[selectedIndex] : null;
   useEffect(() => {
     let active = true;
-    initialLoad ??= loadRealReports()
-      .then((data) => ({ reports: data, sample: false }))
+    initialLoad ??= (async () => {
+      if (localDataTools) {
+        const expanded = await loadExpandedReports().catch(() => null);
+        if (expanded) return { reports: expanded.reports, sample: false, expansion: expanded.manifest };
+      }
+      return { reports: await loadRealReports(), sample: false };
+    })()
       .catch((error) => {
         if (!localDataTools) throw error;
         return loadSampleReports().then((data) => ({ reports: data, sample: true }));
@@ -1403,8 +1425,10 @@ export default function App() {
       .then((data) => {
         if (!active) return;
         setReports(data.reports);
+        setExpansion(data.expansion ?? null);
+        expansionActive.current = Boolean(data.expansion);
         setSource(
-          data.sample ? "Sample reports" : "Phase 1.1 district baseline",
+          data.expansion ? "Expanded discovery dataset" : data.sample ? "Sample reports" : "Phase 1.1 district baseline",
         );
         if (data.sample)
           setNotice({
@@ -1430,6 +1454,27 @@ export default function App() {
       active = false;
     };
   }, []);
+  useEffect(() => {
+    if (!localDataTools || !expansion) return;
+    let cancelled = false;
+    let pending = false;
+    const timer = window.setInterval(async () => {
+      if (pending || !expansionActive.current) return;
+      pending = true;
+      try {
+        const latest = await loadExpandedReports(expansion.snapshot_id);
+        if (latest && !cancelled && expansionActive.current) {
+          setReports(latest.reports);
+          setExpansion(latest.manifest);
+          setPage(1);
+          setNotice({ message: 'New discovery results are available. The expanded dataset has been refreshed.' });
+        }
+      } catch {
+        if (!cancelled && expansionActive.current) setNotice({ message: 'The latest discovery update could not be loaded. Showing the last successful dataset.', error: true });
+      } finally { pending = false; }
+    }, 60_000);
+    return () => { cancelled = true; window.clearInterval(timer); };
+  }, [expansion]);
   useEffect(() => {
     const update = () => {
       setView(getView());
@@ -1483,6 +1528,8 @@ export default function App() {
     setSelected(null);
   }
   function install(data: ReportData, label: string) {
+    expansionActive.current = false;
+    setExpansion(null);
     setReports(data);
     setSource(label);
     setFilters(defaultFilters);
@@ -1490,6 +1537,7 @@ export default function App() {
     setSelected(null);
   }
   async function load(sample: boolean) {
+    expansionActive.current = false;
     if (sample && !localDataTools) return;
     setBusy(true);
     setNotice(null);
@@ -1502,6 +1550,7 @@ export default function App() {
         message: `${sample ? "Sample data" : "Baseline reports"} loaded.`,
       });
     } catch (error) {
+      expansionActive.current = Boolean(expansion);
       setNotice({
         message: `Could not load ${sample ? "sample" : "baseline"} reports. The current dataset was kept. ${error instanceof Error ? error.message : "Please try again."}`,
         error: true,
@@ -1512,12 +1561,14 @@ export default function App() {
   }
   async function loadPilot() {
     if (!localDataTools) return;
+    expansionActive.current = false;
     setBusy(true);
     setNotice(null);
     try {
       install(await loadLocalPilotReports(), "Phase 1.2 Uttar Pradesh pilot");
       setNotice({ message: "The separate Uttar Pradesh pilot is loaded. The district baseline remains unchanged." });
     } catch (error) {
+      expansionActive.current = Boolean(expansion);
       setNotice({
         message: `Could not load the local pilot. The current dataset was kept. ${error instanceof Error ? error.message : "Regenerate its reports and try again."}`,
         error: true,
@@ -1526,8 +1577,25 @@ export default function App() {
       setBusy(false);
     }
   }
+  async function loadExpanded() {
+    if (!localDataTools) return;
+    expansionActive.current = false;
+    setBusy(true);
+    setNotice(null);
+    try {
+      const latest = await loadExpandedReports();
+      if (!latest) throw new Error('Run the expansion batch with --export-only to create its first snapshot.');
+      install(latest.reports, 'Expanded discovery dataset');
+      setExpansion(latest.manifest);
+      expansionActive.current = true;
+    } catch (error) {
+      expansionActive.current = Boolean(expansion);
+      setNotice({ message: error instanceof Error ? error.message : 'The expanded dataset is unavailable.', error: true });
+    } finally { setBusy(false); }
+  }
   async function importFiles(files: FileList | null) {
     if (!localDataTools || !files?.length) return;
+    expansionActive.current = false;
     setBusy(true);
     setNotice(null);
     try {
@@ -1537,6 +1605,7 @@ export default function App() {
         message: `Imported ${imported.imported.map((key) => reportNames[key].toLowerCase()).join(", ")}. This dataset is available for the current session.`,
       });
     } catch (error) {
+      expansionActive.current = Boolean(expansion);
       setNotice({
         message: `Import failed. ${error instanceof Error ? error.message : "Please check the CSV files."} The current dataset was kept.`,
         error: true,
@@ -1701,6 +1770,8 @@ export default function App() {
                   onUpload={() => inputRef.current?.click()}
                   onLoad={load}
                   onLoadPilot={loadPilot}
+                  onLoadExpanded={loadExpanded}
+                  expansion={expansion}
                 />
               )}
             </>

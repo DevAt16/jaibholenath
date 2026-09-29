@@ -7,12 +7,27 @@ const pilotFiles = new Set([
   "national_summary.csv", "state_counts.csv", "district_counts.csv", "candidate_review.csv",
 ]);
 const pilotDirectory = new URL("../tmp/phase_1_2_pilot/reclassified_results/", import.meta.url);
+const expansionDirectory = new URL("../reports/expansion/", import.meta.url);
 const pilotReports = {
   name: "local-up-pilot-reports",
   configureServer(server: { middlewares: { use: (handler: (req: { url?: string }, res: { statusCode: number; setHeader: (key: string, value: string) => void; end: (body?: string) => void }, next: () => void) => void) => void } }) {
     server.middlewares.use((req, res, next) => {
       const prefix = "/local-up-pilot/";
       const path = req.url?.split("?", 1)[0] || "";
+      if (path.startsWith('/local-expansion/')) {
+        const file = path.slice('/local-expansion/'.length);
+        if (file !== 'latest.json' && !/^snapshots\/[a-f0-9]{64}\.json$/.test(file)) {
+          res.statusCode = 404; res.end(); return;
+        }
+        readFile(new URL(file, expansionDirectory), 'utf8')
+          .then(content => {
+            res.setHeader('Content-Type', 'application/json; charset=utf-8');
+            res.setHeader('Cache-Control', file === 'latest.json' ? 'no-store' : 'private, max-age=31536000, immutable');
+            res.end(content);
+          })
+          .catch(() => { res.statusCode = 404; res.end(); });
+        return;
+      }
       if (!path.startsWith(prefix)) return next();
       const file = path.slice(prefix.length);
       if (!pilotFiles.has(file)) { res.statusCode = 404; res.end(); return; }
