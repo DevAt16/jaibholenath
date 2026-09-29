@@ -1,0 +1,51 @@
+location_type,name,state_name,district_name,sub_district_name,state_lgd_code,district_lgd_code,sub_district_lgd_code,village_lgd_code,source
+urban_local_body,Achhnera,Uttar Pradesh,Agra,Kiraoli,9,118,767,,lgd
+urban_local_body,Bah,Uttar Pradesh,Agra,Bah,9,118,770,,lgd
+urban_local_body,Dayalbagh,Uttar Pradesh,Agra,Agra,9,118,766,,lgd
+urban_local_body,Etmadpur,Uttar Pradesh,Agra,Etmadpur,9,118,765,,lgd
+urban_local_body,Fatehabad,Uttar Pradesh,Agra,Fatehabad,9,118,769,,lgd
+urban_local_body,Fatehpur Sikri,Uttar Pradesh,Agra,Kiraoli,9,118,767,,lgd
+urban_local_body,Jagner,Uttar Pradesh,Agra,Kheragarh,9,118,768,,lgd
+urban_local_body,Khairragarh,Uttar Pradesh,Agra,,9,118,,,lgd
+urban_local_body,Kiraoli,Uttar Pradesh,Agra,,9,118,,,lgd
+urban_local_body,Pinahat,Uttar Pradesh,Agra,Bah,9,118,770,,lgd
+urban_local_body,Shamsabad,Uttar Pradesh,Agra,Fatehabad,9,118,769,,lgd
+urban_local_body,Swamibagh,Uttar Pradesh,Agra,Agra,9,118,766,,lgd
+urban_local_body,Atrauli,Uttar Pradesh,Aligarh,Atrauli,9,119,754,,lgd
+urban_local_body,Barauli,Uttar Pradesh,Aligarh,,9,119,,,lgd
+urban_local_body,Beswan,Uttar Pradesh,Aligarh,Iglas,9,119,756,,lgd
+urban_local_body,Chandaus,Uttar Pradesh,Aligarh,,9,119,,,lgd
+urban_local_body,Chharra Rafatpur,Uttar Pradesh,Aligarh,Atrauli,9,119,754,,lgd
+urban_local_body,Gabhana,Uttar Pradesh,Aligarh,,9,119,,,lgd
+urban_local_body,Harduaganj,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Iglas,Uttar Pradesh,Aligarh,Iglas,9,119,756,,lgd
+urban_local_body,Jalali,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Jatari,Uttar Pradesh,Aligarh,Khair,9,119,752,,lgd
+urban_local_body,Jawan Sikandpur,Uttar Pradesh,Aligarh,,9,119,,,lgd
+urban_local_body,Kauriaganj,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Khair,Uttar Pradesh,Aligarh,Khair,9,119,752,,lgd
+urban_local_body,Pilkhana,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Vijaigarh,Uttar Pradesh,Aligarh,Koil,9,119,755,,lgd
+urban_local_body,Ashrafpur Kichhauchha,Uttar Pradesh,Ambedkar Nagar,Tanda,9,121,907,,lgd
+urban_local_body,Jalalpur,Uttar Pradesh,Ambedkar Nagar,,9,121,,,lgd
+urban_local_body,Tanda (Ambedkar Nagar),Uttar Pradesh,Ambedkar Nagar,Tanda,9,121,907,,lgd
+urban_local_body,Gauriganj,Uttar Pradesh,Amethi,Gauriganj,9,640,913,,lgd
+urban_local_body,Bachhraon,Uttar Pradesh,Amroha,,9,154,,,lgd
+urban_local_body,Dhanaura,Uttar Pradesh,Amroha,Dhanaura,9,154,729,,lgd
+urban_local_body,Gajralua,Uttar Pradesh,Amroha,,9,154,,,lgd
+urban_local_body,Hasanpur,Uttar Pradesh,Amroha,,9,154,,,lgd
+urban_local_body,Joya,Uttar Pradesh,Amroha,Amroha,9,154,730,,lgd
+urban_local_body,Naugawan Sadat,Uttar Pradesh,Amroha,Amroha,9,154,730,,lgd
+urban_local_body,Ujhari,Uttar Pradesh,Amroha,,9,154,,,lgd
+urban_local_body,Achhalda,Uttar Pradesh,Auraiya,Bidhuna,9,122,841,,lgd
+urban_local_body,Atasu,Uttar Pradesh,Auraiya,Auraiya,9,122,842,,lgd
+urban_local_body,Auraiya,Uttar Pradesh,Auraiya,Auraiya,9,122,842,,lgd
+urban_local_body,Babarpur Ajitmal,Uttar Pradesh,Auraiya,Auraiya,9,122,842,,lgd
+urban_local_body,Bidhuna,Uttar Pradesh,Auraiya,Bidhuna,9,122,841,,lgd
+urban_local_body,Dibiyapur,Uttar Pradesh,Auraiya,Auraiya,9,122,842,,lgd
+urban_local_body,Phaphund,Uttar Pradesh,Auraiya,,9,122,,,lgd
+urban_local_body,Bhadarsa,Uttar Pradesh,Ayodhya,,9,140,,,lgd
+urban_local_body,Bikapur,Uttar Pradesh,Ayodhya,,9,140,,,lgd
+urban_local_body,Gosainganj (Lucknow),Uttar Pradesh,Ayodhya,Faizabad,9,140,905,,lgd
+urban_local_body,Maa Kamakhya,Uttar Pradesh,Ayodhya,,9,140,,,lgd
+urban_local_body,Rudauli,Uttar Pradesh,Ayodhya,,9,140,,,lgd

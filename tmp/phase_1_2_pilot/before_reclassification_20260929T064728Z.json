@@ -1,0 +1,74 @@
+[
+  {
+    "id": 47,
+    "google_place_id": "ChIJMalPuCGPczkRFbrOBtp849c",
+    "discovered_name": "Shiva home",
+    "confidence": "high",
+    "confidence_score": "0.91",
+    "classification_reason": "Matched high-confidence Shiva terms: shiv, shiva"
+  },
+  {
+    "id": 53,
+    "google_place_id": "ChIJ_aUyaACPczkRVDMjLeEIkpY",
+    "discovered_name": "Shiva house golu",
+    "confidence": "high",
+    "confidence_score": "0.91",
+    "classification_reason": "Matched high-confidence Shiva terms: shiv, shiva"
+  },
+  {
+    "id": 4,
+    "google_place_id": "ChIJlex4KQCPczkRXLm9rgDJ500",
+    "discovered_name": "Shiva ka house kiraoli agra",
+    "confidence": "high",
+    "confidence_score": "0.91",
+    "classification_reason": "Matched high-confidence Shiva terms: shiv, shiva"
+  },
+  {
+    "id": 219,
+    "google_place_id": "ChIJd-O8Ey3LczkRn-OBUc7CHPs",
+    "discovered_name": "\"सोमेश्वर महादेव मन्दिर\"",
+    "confidence": "low",
+    "confidence_score": "0.20",
+    "classification_reason": "No configured Shiva-specific terms matched the discovered name."
+  },
+  {
+    "id": 42,
+    "google_place_id": "ChIJV4zkaoiFczkR0zUE6T2YQzU",
+    "discovered_name": "Siv mandir",
+    "confidence": "low",
+    "confidence_score": "0.20",
+    "classification_reason": "No configured Shiva-specific terms matched the discovered name."
+  },
+  {
+    "id": 41,
+    "google_place_id": "ChIJawBQEQCFczkRPHhttR8vJqY",
+    "discovered_name": "प्राचीन महादेव मंदिर",
+    "confidence": "low",
+    "confidence_score": "0.20",
+    "classification_reason": "No configured Shiva-specific terms matched the discovered name."
+  },
+  {
+    "id": 57,
+    "google_place_id": "ChIJ9U_V3KmaczkR1XtB-5YPFaQ",
+    "discovered_name": "वनखंडी शिव मंदिर",
+    "confidence": "low",
+    "confidence_score": "0.20",
+    "classification_reason": "No configured Shiva-specific terms matched the discovered name."
+  },
+  {
+    "id": 1,
+    "google_place_id": "ChIJubghSO-PczkRZSbh6VZ5-H8",
+    "discovered_name": "शिव मंदिर अछनेरा",
+    "confidence": "low",
+    "confidence_score": "0.20",
+    "classification_reason": "No configured Shiva-specific terms matched the discovered name."
+  },
+  {
+    "id": 15,
+    "google_place_id": "ChIJCR9U4OmPczkR8xl6A-gBAF4",
+    "discovered_name": "शिव मंदिर नगला हरीराम",
+    "confidence": "low",
+    "confidence_score": "0.20",
+    "classification_reason": "No configured Shiva-specific terms matched the discovered name."
+  }
+]

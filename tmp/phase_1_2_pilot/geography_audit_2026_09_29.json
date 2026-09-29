@@ -1,0 +1,28 @@
+{
+  "candidate_count": 206,
+  "query_locality_anchors": {
+    "Achhnera": {
+      "address_match_count": 31,
+      "inferred_latitude": 27.1777175,
+      "inferred_longitude": 77.7551529
+    },
+    "Bah": {
+      "address_match_count": 10,
+      "inferred_latitude": 26.87104635,
+      "inferred_longitude": 78.58781125000002
+    }
+  },
+  "priority_counts": {
+    "high": 27,
+    "medium": 140,
+    "routine": 39
+  },
+  "flag_counts": {
+    "over_50km_from_inferred_locality_anchor": 27,
+    "address_does_not_name_query_locality": 165,
+    "over_25km_from_inferred_locality_anchor": 25,
+    "address_names_other_state": 8
+  },
+  "methodology": "Locality anchors are medians of returned coordinates whose addresses name the query locality. Distance thresholds and address state text are triage signals, not administrative boundaries or verified temple locations.",
+  "candidate_csv_sha256": "910981d5988c7b8c56190566414f61f221cbcd9339da26b36c660bca6785f546"
+}

@@ -65,6 +65,12 @@ const reportNames: Record<keyof ReportData, string> = {
   districts: "District counts",
   candidates: "Candidate records",
 };
+const reportDescriptions: Record<keyof ReportData, string> = {
+  national: "Overall discovery and confidence totals",
+  states: "Candidate counts by search state",
+  districts: "Candidate counts by search district",
+  candidates: "Individual records and discovery evidence",
+};
 const confidenceLabels: Record<string, string> = {
   high: "High",
   medium: "Medium",
@@ -281,8 +287,8 @@ function CandidateRows({
     <div className="candidate-list">
       <div className="candidate-columns" aria-hidden="true">
         <span>Candidate</span>
-        <span>Location</span>
-        <span>Confidence</span>
+        <span>Search location</span>
+        <span>Name confidence</span>
         <span />
       </div>
       {candidates.map((candidate) => (
@@ -390,6 +396,7 @@ function CandidateDetail({
             <MapPin size={16} />
             {candidate.district}, {candidate.state}
           </p>
+          <p className="verification-note">Independent verification pending</p>
           <a
             className="button primary maps-button"
             href={mapsUrl(candidate)}
@@ -401,30 +408,40 @@ function CandidateDetail({
           </a>
           <section className="confidence-evidence">
             <div>
-              <h3>Shiva confidence</h3>
+              <h3>Automated name confidence</h3>
               <Badge confidence={candidate.confidence} />
             </div>
             <p>
               Classification score{" "}
               <strong>{candidate.confidence_score.toFixed(2)} / 1.00</strong>
             </p>
-            <div
-              className={`evidence-track confidence-${candidate.confidence}`}
-            >
-              <span
-                style={{
-                  width: `${Math.max(0, Math.min(1, candidate.confidence_score)) * 100}%`,
-                }}
-              />
-            </div>
             <h4>Why this classification?</h4>
             <p>
               {candidate.classification_reason ||
                 "No classification evidence was recorded."}
             </p>
             <small>
-              Automated classification, pending independent verification.
+              This is a name-matching signal, not proof of identity.
             </small>
+          </section>
+          <section className="detail-section">
+            <h3>Discovery evidence</h3>
+            <dl>
+              <dt>Source</dt>
+              <dd>Google Places API</dd>
+              <dt>Search query</dt>
+              <dd className="source-query">{candidate.source_query || "Not recorded"}</dd>
+            </dl>
+            <div className="date-grid">
+              <div>
+                <span>First observed</span>
+                <strong>{date(candidate.first_seen_at)}</strong>
+              </div>
+              <div>
+                <span>Last observed</span>
+                <strong>{date(candidate.last_seen_at)}</strong>
+              </div>
+            </div>
           </section>
           <section className="detail-section">
             <h3>Location</h3>
@@ -438,25 +455,6 @@ function CandidateDetail({
                   : "Not recorded"}
               </dd>
             </dl>
-          </section>
-          <section className="detail-section">
-            <h3>Discovery evidence</h3>
-            <dl>
-              <dt>Source</dt>
-              <dd>Google Places API</dd>
-              <dt>Search query</dt>
-              <dd>{candidate.source_query || "Not recorded"}</dd>
-            </dl>
-            <div className="date-grid">
-              <div>
-                <span>First observed</span>
-                <strong>{date(candidate.first_seen_at)}</strong>
-              </div>
-              <div>
-                <span>Last observed</span>
-                <strong>{date(candidate.last_seen_at)}</strong>
-              </div>
-            </div>
           </section>
           <section className="detail-section">
             <h3>Google Place ID</h3>
@@ -563,13 +561,11 @@ function Overview({
           <span className="eyebrow">THE STORY BEHIND THE DISCOVERY</span>
           <h1 id="story-title">Discovering Shiva temples,<br /> district by district.</h1>
           <p>
-            What can local searches tell us about likely Shiva temples across India?
-            This project brings together Google Places results so you can explore
-            the names, places and evidence behind each discovery.
+            Explore names, places and evidence from Google Places searches across India.
           </p>
           <p className="story-definition">
-            A candidate is a place returned by our searches. Its name is checked
-            for Shiva-related terms; its identity still needs independent verification.
+            A candidate is a place returned by our searches. Name matching guides
+            review; independent verification is still needed.
           </p>
           <button className="button story-browse" onClick={() => onBrowse()}>
             Browse all records <ArrowRight size={17} />
@@ -578,7 +574,6 @@ function Overview({
         <div className="district-story" aria-labelledby="district-story-title">
           <span className="eyebrow">MAKE IT LOCAL</span>
           <h2 id="district-story-title">Explore your district</h2>
-          <p>Choose a district to see what its searches brought into this report.</p>
           {district ? (
             <>
               <div className="story-selectors">
@@ -617,14 +612,12 @@ function Overview({
                   <span className="segment-medium" style={{ flexGrow: district.medium_confidence_shiva_candidates }} />
                   <span className="segment-low" style={{ flexGrow: district.low_confidence_possible_temples }} />
                 </div>
-                <p>
-                  <strong>{formatNumber(district.high_confidence_shiva)}</strong>{" "}
-                  {district.high_confidence_shiva === 1 ? "has" : "have"} strong Shiva name matches;
-                  {" "}<strong>{formatNumber(district.medium_confidence_shiva_candidates)}</strong>{" "}
-                  {district.medium_confidence_shiva_candidates === 1 ? "has" : "have"} medium confidence
-                  and <strong>{formatNumber(district.low_confidence_possible_temples)}</strong>{" "}
-                  {district.low_confidence_possible_temples === 1 ? "has" : "have"} limited Shiva-specific evidence.
-                </p>
+                <ul className="district-legend" aria-label="Shiva name-match evidence">
+                  <li><i className="segment-high" aria-hidden="true" /><strong>{formatNumber(district.high_confidence_shiva)}</strong> strong</li>
+                  <li><i className="segment-medium" aria-hidden="true" /><strong>{formatNumber(district.medium_confidence_shiva_candidates)}</strong> medium</li>
+                  <li><i className="segment-low" aria-hidden="true" /><strong>{formatNumber(district.low_confidence_possible_temples)}</strong> limited</li>
+                </ul>
+                <p className="district-legend-caption">Shiva name-match evidence</p>
               </div>
               <button
                 className="button primary"
@@ -647,8 +640,8 @@ function Overview({
         </div>
         <p className="story-location-note">
           <Info size={16} aria-hidden="true" />
-          District labels come from the search location. They have not been checked
-          against district boundaries. These are discovery counts, not a verified temple census.
+          District labels come from the search location, not verified boundaries.
+          These are discovery counts, not a verified temple census.
         </p>
       </section>
       <div className="metrics-grid">
@@ -710,7 +703,7 @@ function Overview({
             <span className="story-chapter">01 / REACH</span>
             <h3>A broad starting point</h3>
             <p>{story.districts.length
-              ? `The loaded report groups discoveries under ${formatNumber(story.districts.length)} districts. Each group opens a different set of places to investigate.`
+              ? `Explore discoveries grouped under ${formatNumber(story.districts.length)} search districts. Each is a starting point for investigation.`
               : "District summaries will show how discoveries are distributed across search locations."}</p>
             <button className="text-button" onClick={onGeography}>Explore the geography <ArrowRight size={16} /></button>
           </article>
@@ -718,15 +711,14 @@ function Overview({
             <span className="story-chapter">02 / EVIDENCE</span>
             <h3>Names offer clues</h3>
             <p>{hasSummary && summary.unique_google_place_ids > 0
-              ? `${percent(summary.high_confidence_shiva, summary.unique_google_place_ids)}% of candidate records have strong Shiva name matches. This measures an automated naming signal, not the chance that a temple is verified.`
+              ? `${percent(summary.high_confidence_shiva, summary.unique_google_place_ids)}% of records have strong Shiva name matches. This is an automated signal, not independent verification.`
               : "Confidence describes how strongly a place name matches Shiva-related terms. It does not verify the place."}</p>
             <button className="text-button" onClick={() => onBrowse({ confidence: "high" })}>Inspect strong matches <ArrowRight size={16} /></button>
           </article>
           <article>
             <span className="story-chapter">03 / INTERPRETATION</span>
             <h3>Fewer results leave questions</h3>
-            <p>A smaller district count does not establish that it has fewer temples. Search wording, available listings and result limits can affect what is discovered.</p>
-            <p className="story-insight-takeaway">Use these patterns to guide further investigation.</p>
+            <p>Fewer records do not mean fewer temples. Search wording, available listings and result limits shape what is discovered.</p>
           </article>
         </div>
       </section>
@@ -751,7 +743,7 @@ function Overview({
           <div className="panel-heading">
             <div>
               <h2>Confidence at a glance</h2>
-              <p>How the candidate names were classified</p>
+              <p>Automated name matching</p>
             </div>
             <ShieldCheck size={19} />
           </div>
@@ -801,8 +793,7 @@ function Overview({
           <div className="panel-note">
             <Info size={15} />
             <span>
-              Confidence indicates a likely match. It does not confirm a
-              temple’s identity.
+              Name confidence is not independent verification.
             </span>
           </div>
         </section>
@@ -894,10 +885,10 @@ function Candidates({
           <h1>
             Candidates
             <span className="heading-count">
-              {formatNumber(reports.candidates.length)}
+              {formatNumber(reports.candidates.length)} total
             </span>
           </h1>
-          <p>Find likely Shiva temples and inspect their discovery evidence.</p>
+          <p>Explore candidate records and their discovery evidence.</p>
         </div>
         <button
           className="button secondary"
@@ -1107,13 +1098,14 @@ function Geography({
         <div>
           <span className="eyebrow">FOLLOW THE GEOGRAPHY</span>
           <h1>Geographic discovery</h1>
-          <p>Explore where candidates appear in the loaded reports.</p>
+          <p>Compare discovery records by assigned search location.</p>
         </div>
         <span className="quiet-label">
           <MapPin size={16} />
           {formatNumber(reports.districts.length)} district records
         </span>
       </div>
+      <p className="coverage-note"><Info size={16} />Discovery volume reflects search coverage, not the number of temples in a region.</p>
       <div className="geography-grid">
         <section className="panel">
           <div className="panel-heading">
@@ -1132,7 +1124,7 @@ function Geography({
           <div className="panel-heading">
             <div>
               <h2>District breakdown</h2>
-              <p>Ranked by unique discovery candidates</p>
+              <p>Candidates grouped by search district</p>
             </div>
           </div>
           <div className="district-filters">
@@ -1169,7 +1161,7 @@ function Geography({
           <div className="district-list">
             <div className="district-columns">
               <span>District</span>
-              <span>Unique</span>
+              <span>Candidates</span>
               <span>High confidence</span>
               <span />
             </div>
@@ -1207,8 +1199,7 @@ function Geography({
       </div>
       <p className="workspace-footnote">
         <Info size={14} />
-        Discovery volume reflects the search coverage in this report, not the
-        total number of temples in a region.
+        District labels reflect search locations; boundaries have not been independently checked.
       </p>
     </>
   );
@@ -1235,20 +1226,20 @@ function Reports({
   expansion?: ExpansionManifest | null;
   allowDataTools?: boolean;
 }) {
+  const observed = useMemo(() => observedWindow(reports.candidates), [reports.candidates]);
   return (
     <>
       <div className="page-heading">
         <div>
           <span className="eyebrow">ABOUT THE DATA</span>
           <h1>Reports & data</h1>
-          <p>Understand the source and coverage of this discovery dataset, and download the published reports.</p>
+          <p>Understand the dataset and download the published discovery reports.</p>
         </div>
         {allowDataTools && <button className="button primary" disabled={busy} onClick={onUpload}>
           <Upload size={17} />
           Import CSV reports
         </button>}
       </div>
-      <DataScopeNote reports={reports} />
       {expansion && <section className="panel" aria-label="Expansion progress">
         <h2>Discovery expansion</h2>
         <p><strong>{formatNumber(expansion.added_since_baseline)}</strong> candidates added since the baseline · {formatNumber(expansion.overlapping_place_ids)} overlapping Place IDs merged.</p>
@@ -1256,24 +1247,31 @@ function Reports({
         <p>{formatNumber(expansion.geography_high_priority)} expansion candidates flagged for geography review. These are discovery candidates; state and district labels describe search locations.</p>
       </section>}
       <section className="dataset-banner">
-        <span className="dataset-icon">
-          <Database size={25} strokeWidth={1.5} />
-        </span>
-        <div>
-          <span className="eyebrow">CURRENT DATASET</span>
-          <h2>{source}</h2>
-          <p>
-            {formatNumber(reports.candidates.length)} candidate records
-            available for browsing
-          </p>
+        <div className="dataset-banner-heading">
+          <span className="dataset-icon">
+            <Database size={25} strokeWidth={1.5} />
+          </span>
+          <div>
+            <span className="eyebrow">CURRENT DATASET</span>
+            <h2>{source}</h2>
+            <p>
+              {formatNumber(reports.candidates.length)} candidate records
+              available for browsing
+            </p>
+          </div>
+          <span className="local-badge">{allowDataTools ? "Local workspace" : "Published dataset"}</span>
         </div>
-        <span className="local-badge">{allowDataTools ? "Local workspace" : "Published dataset"}</span>
+        <dl className="dataset-facts">
+          <div><dt>Candidate records</dt><dd>{formatNumber(reports.candidates.length)}</dd></div>
+          <div><dt>Data observed</dt><dd>{observed}</dd></div>
+          <div><dt>Source</dt><dd>{reports.national?.source || (reports.candidates.length ? "Google Places API" : "Not recorded")}</dd></div>
+        </dl>
       </section>
       <section className="panel report-files">
         <div className="panel-heading">
           <div>
-            <h2>Loaded reports</h2>
-            <p>Download a snapshot of the current data</p>
+            <h2>Download reports</h2>
+            <p>CSV snapshots of the current dataset</p>
           </div>
         </div>
         {(Object.keys(reportNames) as (keyof ReportData)[]).map((key) => {
@@ -1290,12 +1288,13 @@ function Reports({
               </span>
               <div>
                 <strong>{reportNames[key]}</strong>
-                <span>
-                  {rows.length
-                    ? `${formatNumber(rows.length)} ${key === "national" ? "summary" : "rows"}`
-                    : "Not loaded"}
-                </span>
+                <span>{reportDescriptions[key]}</span>
               </div>
+              <span className="report-row-count">
+                {rows.length
+                  ? `${formatNumber(rows.length)} ${key === "national" ? "summary" : "rows"}`
+                  : "Not loaded"}
+              </span>
               <button
                 className="button secondary"
                 disabled={!rows.length}
@@ -1308,6 +1307,16 @@ function Reports({
             </div>
           );
         })}
+      </section>
+      <section className="report-guidance" aria-label="About these counts">
+        <div>
+          <Info size={19} aria-hidden="true" />
+          <div><h2>About these counts</h2><p>Google Places is a discovery source. Records are deduplicated by Place ID. Name confidence is automated.</p></div>
+        </div>
+        <div>
+          <Info size={19} aria-hidden="true" />
+          <div><h2>What these counts cannot establish</h2><p>These are not verified temple totals. Search coverage and wording influence the results. District labels reflect search locations.</p></div>
+        </div>
       </section>
       {allowDataTools && <div className="report-help-grid">
         <section className="panel">

@@ -1,0 +1,101 @@
+{
+  "baseline_unique_place_ids": 74117,
+  "pilot_unique_place_ids": 206,
+  "pilot_already_in_baseline": 4,
+  "pilot_new_to_baseline": 202,
+  "confidence_transitions": [
+    {
+      "from": "high",
+      "to": "high",
+      "count": 138
+    },
+    {
+      "from": "high",
+      "to": "low",
+      "count": 3
+    },
+    {
+      "from": "low",
+      "to": "high",
+      "count": 6
+    },
+    {
+      "from": "low",
+      "to": "low",
+      "count": 44
+    },
+    {
+      "from": "medium",
+      "to": "medium",
+      "count": 15
+    }
+  ],
+  "changed_candidates": [
+    {
+      "google_place_id": "ChIJMalPuCGPczkRFbrOBtp849c",
+      "name": "Shiva home",
+      "previous_confidence": "high",
+      "revised_confidence": "low",
+      "revised_reason": "Name identifies a non-temple venue; needs manual review."
+    },
+    {
+      "google_place_id": "ChIJ_aUyaACPczkRVDMjLeEIkpY",
+      "name": "Shiva house golu",
+      "previous_confidence": "high",
+      "revised_confidence": "low",
+      "revised_reason": "Name identifies a non-temple venue; needs manual review."
+    },
+    {
+      "google_place_id": "ChIJlex4KQCPczkRXLm9rgDJ500",
+      "name": "Shiva ka house kiraoli agra",
+      "previous_confidence": "high",
+      "revised_confidence": "low",
+      "revised_reason": "Name identifies a non-temple venue; needs manual review."
+    },
+    {
+      "google_place_id": "ChIJd-O8Ey3LczkRn-OBUc7CHPs",
+      "name": "\"सोमेश्वर महादेव मन्दिर\"",
+      "previous_confidence": "low",
+      "revised_confidence": "high",
+      "revised_reason": "Matched high-confidence Shiva terms: महादेव"
+    },
+    {
+      "google_place_id": "ChIJV4zkaoiFczkR0zUE6T2YQzU",
+      "name": "Siv mandir",
+      "previous_confidence": "low",
+      "revised_confidence": "high",
+      "revised_reason": "Matched high-confidence Shiva terms: siv"
+    },
+    {
+      "google_place_id": "ChIJawBQEQCFczkRPHhttR8vJqY",
+      "name": "प्राचीन महादेव मंदिर",
+      "previous_confidence": "low",
+      "revised_confidence": "high",
+      "revised_reason": "Matched high-confidence Shiva terms: महादेव"
+    },
+    {
+      "google_place_id": "ChIJ9U_V3KmaczkR1XtB-5YPFaQ",
+      "name": "वनखंडी शिव मंदिर",
+      "previous_confidence": "low",
+      "revised_confidence": "high",
+      "revised_reason": "Matched high-confidence Shiva terms: शिव"
+    },
+    {
+      "google_place_id": "ChIJubghSO-PczkRZSbh6VZ5-H8",
+      "name": "शिव मंदिर अछनेरा",
+      "previous_confidence": "low",
+      "revised_confidence": "high",
+      "revised_reason": "Matched high-confidence Shiva terms: शिव"
+    },
+    {
+      "google_place_id": "ChIJCR9U4OmPczkR8xl6A-gBAF4",
+      "name": "शिव मंदिर नगला हरीराम",
+      "previous_confidence": "low",
+      "revised_confidence": "high",
+      "revised_reason": "Matched high-confidence Shiva terms: शिव"
+    }
+  ],
+  "baseline_sha256": "3f3c1fb852809f5b8763fb38835fcc25df57bdfd046e146108912377c8061476",
+  "pilot_sha256": "748292f459f431252ef0131039ad79e951ade410b44fbcac372c80fde9963f69",
+  "note": "Overlap compares saved Google Place IDs only. Confidence is a name-only candidate signal; query geography and temple identity still require review."
+}
