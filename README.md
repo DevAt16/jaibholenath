@@ -2,6 +2,13 @@
 
 Phase 1 is a backend-only discovery system for likely Shiva temple candidates in India. It imports Indian location records, generates bounded Google Places Text Search tasks, stores deduplicated candidates by Google Place ID, classifies Shiva confidence from discovered names, and exports discovery count reports.
 
+The local analysis UI's Reports & data view can switch between the frozen Phase
+1.1 district baseline and the saved Phase 1.2 Uttar Pradesh pilot. The pilot
+choice reads `tmp/phase_1_2_pilot/reclassified_results/` through the local Vite
+development server only; it is not included in the public build. The offline
+[pilot geography audit](docs/pilot-research/GEOGRAPHY_AUDIT_2026_09_29.md)
+flags uncertain query-location attribution before further expansion.
+
 This phase does not build the final website and does not claim exact real-world temple counts. Counts are discovery counts from Google Places API and are meant for later verification.
 
 ## Phase 1 Scope

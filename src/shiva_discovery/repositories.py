@@ -233,7 +233,8 @@ def create_search_task(
 
 
 def fetch_and_mark_pending_tasks(conn, *, limit: int, state: str | None = None,
-                                 location_type: str | None = None) -> list[dict[str, Any]]:
+                                 location_type: str | None = None,
+                                 keyword: str | None = None) -> list[dict[str, Any]]:
     if limit < 1:
         raise ValueError("limit must be positive")
     # The lock and update must remain in the same transaction across workers.
@@ -247,6 +248,9 @@ def fetch_and_mark_pending_tasks(conn, *, limit: int, state: str | None = None,
             if location_type is not None:
                 clauses.append('search_level = %s')
                 params.append(location_type)
+            if keyword is not None:
+                clauses.append('keyword = %s')
+                params.append(keyword)
             cursor.execute(f"""
                 SELECT id FROM temple_search_tasks
                 WHERE {' AND '.join(clauses)} ORDER BY created_at, id

@@ -171,6 +171,7 @@ test("published reports keep downloads and source notes without dataset-changing
   const localHtml = render(Reports, { ...props, allowDataTools: true });
   assert.match(localHtml, /Import CSV reports/);
   assert.match(localHtml, /Load sample data/);
+  assert.match(localHtml, /Load Uttar Pradesh pilot/);
   const failedHtml = render(Reports, { ...props, reports: empty });
   assert.match(failedHtml, /Retry loading published reports/);
 });

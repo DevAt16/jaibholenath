@@ -19,6 +19,7 @@ const {
   toCandidate,
   validateReportRows,
   loadRealReports,
+  loadLocalPilotReports,
   loadSampleReports,
 } = require(join(process.env.SHIVA_UI_TEST_BUILD, "reportData.js"));
 const candidate = (changes = {}) =>
@@ -356,12 +357,32 @@ test("both report loaders detect missing files and HTML fallback responses", asy
   try {
     global.fetch = async () => ({ ok: false });
     await assert.rejects(loadRealReports(), /unavailable/);
+    await assert.rejects(loadLocalPilotReports(), /unavailable/);
     await assert.rejects(loadSampleReports(), /unavailable/);
     global.fetch = async () => ({
       ok: true,
       text: async () => "<!doctype html><html></html>",
     });
     await assert.rejects(loadRealReports(), /no data rows/);
+  } finally {
+    global.fetch = original;
+  }
+});
+test("local Uttar Pradesh pilot loader reads its separate report set", async () => {
+  const original = global.fetch;
+  const requested = [];
+  try {
+    global.fetch = async (url) => {
+      requested.push(url);
+      const name = String(url).split("/").pop().replace(".csv", "");
+      return { ok: true, text: async () => sample(name) };
+    };
+    const result = await loadLocalPilotReports();
+    assert.ok(result.candidates.length > 0);
+    assert.deepEqual(requested.sort(), [
+      "/local-up-pilot/candidate_review.csv", "/local-up-pilot/district_counts.csv",
+      "/local-up-pilot/national_summary.csv", "/local-up-pilot/state_counts.csv",
+    ]);
   } finally {
     global.fetch = original;
   }

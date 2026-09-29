@@ -274,6 +274,10 @@ export function loadRealReports(): Promise<ReportData> {
   return loadReportSet("/real-reports");
 }
 
+export function loadLocalPilotReports(): Promise<ReportData> {
+  return loadReportSet("/local-up-pilot");
+}
+
 export function classifyReportFile(
   fileName: string,
   rows: CsvRow[],

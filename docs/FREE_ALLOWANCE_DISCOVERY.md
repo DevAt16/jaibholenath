@@ -113,6 +113,12 @@ python scripts/run_discovery.py --state 'Uttar Pradesh' \
   --max-requests 30 --dry-run
 ```
 
+To sample one `Shiva temple` query per location across ten different pending
+towns or urban local bodies, also pass `--keyword 'Shiva temple'`. The keyword
+is restricted to the configured Phase 1 search terms and is applied to both
+dry-run counts and live task claims. Keep the same `--max-requests` cap when
+switching from dry run to live execution.
+
 The dry run reads budget status and matching pending-task count, without claims,
 Google requests or writes. Removing `--dry-run` executes only existing pending
 tasks matching the selected state/type. It does not import source locations or

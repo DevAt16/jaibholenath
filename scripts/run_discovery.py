@@ -4,6 +4,7 @@ import argparse
 import _bootstrap  # noqa: F401
 from shiva_discovery.db import connect
 from shiva_discovery.places_client import GooglePlacesClient
+from shiva_discovery.keywords import PHASE1_KEYWORDS
 from shiva_discovery.request_budget import RequestBudget, BudgetBlocked, budget_scope_from_env
 from shiva_discovery.discovery_runner import process_task
 from shiva_discovery.repositories import fetch_and_mark_pending_tasks
@@ -27,6 +28,8 @@ def main() -> int:
     parser.add_argument('--dry-run', action='store_true', help='Read budget/queue only; no claims or Google calls.')
     parser.add_argument('--state', help='Restrict claims to an exact state name.')
     parser.add_argument('--location-type', choices=['district', 'town', 'urban_local_body', 'city', 'sub_district', 'village'])
+    parser.add_argument('--keyword', choices=PHASE1_KEYWORDS,
+                        help='Run one specific search term; useful for sampling distinct locations.')
     args = parser.parse_args()
     if args.limit > 100 and not args.allow_large_limit:
         parser.error('--limit above 100 requires --allow-large-limit.')
@@ -47,6 +50,9 @@ def main() -> int:
                 if args.location_type:
                     clauses.append('t.search_level = %s')
                     params.append(args.location_type)
+                if args.keyword:
+                    clauses.append('t.keyword = %s')
+                    params.append(args.keyword)
                 with conn.cursor() as cursor:
                     cursor.execute(f"SELECT COUNT(*) FROM temple_search_tasks t JOIN india_locations l ON l.id=t.location_id WHERE {' AND '.join(clauses)}", tuple(params))
                     pending = cursor.fetchone()[0]
@@ -59,7 +65,8 @@ def main() -> int:
                 if budget.status()['run_remaining'] < 1:
                     print('Stopped at request allowance; unclaimed tasks remain pending.')
                     break
-                tasks = fetch_and_mark_pending_tasks(conn, limit=1, state=args.state, location_type=args.location_type)
+                tasks = fetch_and_mark_pending_tasks(conn, limit=1, state=args.state,
+                    location_type=args.location_type, keyword=args.keyword)
                 if not tasks:
                     print('No matching pending search tasks.')
                     break

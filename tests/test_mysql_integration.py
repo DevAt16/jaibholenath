@@ -108,6 +108,27 @@ def test_discovery_claims_upserts_reports_and_constraints(database):
             assert cur.fetchone()[0] == 0
 
 
+def test_keyword_scoped_claim_samples_distinct_locations(database):
+    with connect(database) as conn:
+        first = location(conn)
+        with conn.cursor() as cursor:
+            cursor.execute("""INSERT INTO india_locations
+                (name, normalized_name, location_type, state_name, district_name)
+                VALUES ('Other town', 'other town', 'district', 'Maharashtra', 'Other')""")
+            second = cursor.lastrowid
+        for location_id in (first, second):
+            for keyword in ('Shiva temple', 'Mahadev temple'):
+                create_search_task(conn, location_id=location_id, keyword=keyword,
+                    search_query=f'{keyword} at {location_id}', search_level='district')
+        claimed = fetch_and_mark_pending_tasks(conn, limit=2, state='Maharashtra',
+            location_type='district', keyword='Shiva temple')
+        assert {task['location_id'] for task in claimed} == {first, second}
+        assert {task['keyword'] for task in claimed} == {'Shiva temple'}
+        with conn.cursor() as cursor:
+            cursor.execute("SELECT keyword, COUNT(*) FROM temple_search_tasks WHERE status='pending' GROUP BY keyword")
+            assert cursor.fetchall() == (('Mahadev temple', 2),)
+
+
 def test_location_import_backfill_and_interrupted_migration_retry(database, monkeypatch):
     import runpy
     import sys

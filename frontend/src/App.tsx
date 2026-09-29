@@ -23,7 +23,7 @@ import {
   Upload,
   X,
 } from "lucide-react";
-import { loadRealReports, loadSampleReports } from "./reportData";
+import { loadLocalPilotReports, loadRealReports, loadSampleReports } from "./reportData";
 import { portalVersion } from "./portalVersion";
 import { VisitCounter } from "./VisitCounter";
 import type { Candidate, ReportData, StateCount } from "./reportData";
@@ -1218,6 +1218,7 @@ function Reports({
   busy,
   onUpload,
   onLoad,
+  onLoadPilot,
   allowDataTools = localDataTools,
 }: {
   reports: ReportData;
@@ -1225,6 +1226,7 @@ function Reports({
   busy: boolean;
   onUpload: () => void;
   onLoad: (sample: boolean) => void;
+  onLoadPilot?: () => void;
   allowDataTools?: boolean;
 }) {
   return (
@@ -1322,8 +1324,8 @@ function Reports({
           <Database size={23} className="accent-icon" />
           <h2>Switch datasets</h2>
           <p>
-            Return to the district baseline or explore a small sample. Switching
-            datasets clears filters and closes candidate details.
+            Explore the district baseline, Uttar Pradesh pilot, or a small sample.
+            Switching datasets clears filters and closes candidate details.
           </p>
           <div className="dataset-actions">
             <button
@@ -1332,6 +1334,13 @@ function Reports({
               onClick={() => onLoad(false)}
             >
               Load baseline reports
+            </button>
+            <button
+              className="button secondary"
+              disabled={busy || !onLoadPilot}
+              onClick={onLoadPilot}
+            >
+              Load Uttar Pradesh pilot
             </button>
             <button
               className="text-button"
@@ -1495,6 +1504,22 @@ export default function App() {
     } catch (error) {
       setNotice({
         message: `Could not load ${sample ? "sample" : "baseline"} reports. The current dataset was kept. ${error instanceof Error ? error.message : "Please try again."}`,
+        error: true,
+      });
+    } finally {
+      setBusy(false);
+    }
+  }
+  async function loadPilot() {
+    if (!localDataTools) return;
+    setBusy(true);
+    setNotice(null);
+    try {
+      install(await loadLocalPilotReports(), "Phase 1.2 Uttar Pradesh pilot");
+      setNotice({ message: "The separate Uttar Pradesh pilot is loaded. The district baseline remains unchanged." });
+    } catch (error) {
+      setNotice({
+        message: `Could not load the local pilot. The current dataset was kept. ${error instanceof Error ? error.message : "Regenerate its reports and try again."}`,
         error: true,
       });
     } finally {
@@ -1675,6 +1700,7 @@ export default function App() {
                   busy={busy}
                   onUpload={() => inputRef.current?.click()}
                   onLoad={load}
+                  onLoadPilot={loadPilot}
                 />
               )}
             </>
