@@ -16,6 +16,10 @@ discoveries, or `--dry-run` to check the queue and request budget without writes
 
 This phase does not build the final website and does not claim exact real-world temple counts. Counts are discovery counts from Google Places API and are meant for later verification.
 
+The [research charter](docs/RESEARCH_CHARTER.md) connects Phase 1 to the longer-term
+computational Shaiva-heritage research direction. It defines a proposed first
+study, evidence requirements, evaluation limits and concrete research outputs.
+
 ## Phase 1 Scope
 
 - Maintain a MySQL master location table for Indian states, districts, sub-districts, cities, towns, villages, and urban local bodies.

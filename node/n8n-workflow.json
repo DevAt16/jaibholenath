@@ -1,0 +1,98 @@
+{
+  "id": "jbnDailyDiscovery",
+  "name": "Jai Bhole Nath - Daily Discovery",
+  "active": false,
+  "nodes": [
+    {
+      "id": "daily",
+      "name": "Daily 09:00 India",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 9,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "manual",
+      "name": "Manual run",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        220
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "discover",
+      "name": "Bounded discovery",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        320,
+        80
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://jbn-discovery:8787/run",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{}",
+        "options": {
+          "timeout": 3600000
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "jbnDiscoveryToken",
+          "name": "JBN Discovery private control"
+        }
+      },
+      "retryOnFail": false
+    }
+  ],
+  "connections": {
+    "Daily 09:00 India": {
+      "main": [
+        [
+          {
+            "node": "Bounded discovery",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual run": {
+      "main": [
+        [
+          {
+            "node": "Bounded discovery",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata",
+    "saveManualExecutions": true
+  },
+  "pinData": {}
+}

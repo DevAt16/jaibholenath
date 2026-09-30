@@ -2,6 +2,20 @@ import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import { fileURLToPath } from "node:url";
+
+let lastDellSync = 0;
+let dellSyncPending = false;
+function refreshDellReports() {
+  if (dellSyncPending || Date.now() - lastDellSync < 60_000) return;
+  lastDellSync = Date.now();
+  dellSyncPending = true;
+  // Private, read-only sync happens only while the local portal is in use.
+  execFile(fileURLToPath(new URL("../.venv/bin/python", import.meta.url)),
+    [fileURLToPath(new URL("../scripts/sync_dell_reports.py", import.meta.url))],
+    { timeout: 180_000, maxBuffer: 64 * 1024 }, () => { dellSyncPending = false; });
+}
 
 const pilotFiles = new Set([
   "national_summary.csv", "state_counts.csv", "district_counts.csv", "candidate_review.csv",
@@ -19,6 +33,7 @@ const pilotReports = {
         if (file !== 'latest.json' && !/^snapshots\/[a-f0-9]{64}\.json$/.test(file)) {
           res.statusCode = 404; res.end(); return;
         }
+        if (file === 'latest.json') refreshDellReports();
         readFile(new URL(file, expansionDirectory), 'utf8')
           .then(content => {
             res.setHeader('Content-Type', 'application/json; charset=utf-8');
@@ -48,6 +63,7 @@ const { version } = JSON.parse(
 
 export default defineConfig(({ mode, command }) => ({
   plugins: [react(), ...(command === "serve" ? [pilotReports] : [])],
+  server: { fs: { deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "**/.node-access/**"] } },
   define: {
     __LOCAL_DATA_TOOLS__: JSON.stringify(command === "serve"),
     __PORTAL_VERSION__: JSON.stringify(version),

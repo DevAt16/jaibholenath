@@ -23,3 +23,11 @@ admin-workspace/private-backups/
 .local-mysql/
 reports/phase_1_2/*_plan.json
 reports/expansion/
+
+# Private Dell administration keys and report-sync configuration.
+/.node-access/
+
+# Private Docker worker configuration.
+/worker.env
+/control-token.txt
+/node/n8n-credentials.json

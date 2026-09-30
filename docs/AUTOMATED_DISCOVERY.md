@@ -91,11 +91,19 @@ again. The Reports page shows the update time and additions since baseline.
 
 ## Scheduling and remaining setup
 
-The active daily Codex task, `daily-shiva-discovery-expansion`, runs the single
-bounded command in this workspace at 09:00 Asia/Kolkata. It
-reports new results, failures or a changed blocker, and stays quiet when the
-state is unchanged. A local task depends on this machine and the app being
-available; it is not an always-on hosted worker.
+The published Dell n8n workflow, **Jai Bhole Nath - Daily Discovery**
+(`jbnDailyDiscovery`), invokes the same bounded worker at 09:00 Asia/Kolkata.
+The former Mac automation `daily-shiva-discovery-expansion` is paused. The
+existing remote MySQL database, budget scope, reviewed queue and daily journal
+remain authoritative. See [the Dell deployment runbook](DELL_DISCOVERY_NODE.md)
+for private control endpoints, startup, validation and rollback.
+
+The local Mac portal pulls snapshots over pinned SSH in the background when
+the expansion view checks its manifest, at most once per minute while open.
+It validates the content hash and publishes the snapshot before its pointer;
+offline or failed sync keeps the last successful local dataset. Private SSH
+configuration lives in git-ignored `.node-access/`, excluded from the Vite
+server and Docker build context. No discovery work is scheduled on the Mac.
 
 The current budget ledger still requires a real account-usage observation from
 within 24 hours. The schedule must never stamp yesterday's number with today's
