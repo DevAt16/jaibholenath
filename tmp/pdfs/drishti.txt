@@ -1,0 +1,367 @@
+
+===== PAGE 1 =====
+
+01 INTERNAL PROPOSAL / SEPTEMBER 2026
+Project
+Drishti 2026
+Public DataIntelligence for India
+A proposal for turning fragmented public datasets into connected, reproducible and
+explainable intelligence.
+
+===== PAGE 2 =====
+
+PROJECT
+DRISHTI THE THESIS 02
+THE OPPORTUNITY
+The data already exists.Drishti makes it intelligible.India has a large public-data surface. The harder
+problem is connecting datasets that were published by
+different agencies, at different times, with different
+schemas, identifiers and geographic assumptions.
+Data -> meaning -> relationships -> analysis ->
+evidence -> insight
+354,777RESOURCES
+12,519CATALOGS
+182,923APIs
+47 .33MPORTAL VIEWS
+data.gov.in figures shown on the portal, last updated 04 Sep 2026. The portal spans economy, education,
+environment, health, labour and other public domains.
+POLICY CONTEXT
+India's National Data Sharing and Accessibility Policy explicitly identifies interoperability
+as a challenge because public data is generated across organizations without one
+standardized format.
+Source: data.gov.in; Department of Science & Technology, NDSAP Project Drishti / Proposal v0.1
+
+===== PAGE 3 =====
+
+PROJECT
+DRISHTI THE PROBLEM 03
+02Government data isaccessible.Analysis is still expensive.A cross-domain question often requires manual discovery, schema
+interpretation, geography reconciliation, time alignment, unit normalization,
+joins, validation, code and provenance tracking.
+The bottleneck is not only access. It is the semantic and analytical work required before
+datasets can safely work together.
+Rainfall
+District/day measurements, climate baselines, missing
+periods
+Agriculture
+Crop, season, area, production, yield, changing
+classifications
+Rural employment
+Financial-year measures, person-days, households,
+programme definitions
+Irrigation
+Source-specific measures, coverage, scheme and asset
+data
+-> Resolve district identities and boundary history
+-> Align calendar years, financial years and crop seasons
+-> Normalize units, definitions, missingness and revisions
+-> Preserve evidence for every number and analytical claim
+Problem statement Project Drishti / Proposal v0.1
+
+===== PAGE 4 =====
+
+PROJECT
+DRISHTI THE PROPOSAL 04
+WHAT WE BUILD
+An intelligence layer over publicdata.
+Drishti should connect meaning, identity, computation and
+provenance - then make that layer explorable through
+natural language, maps and analytical views.
+Discover Connect Analyze Explain Trace
+01 / DISCOVER
+Find the right evidence
+Semantic search across datasets, metadata, publishers,
+geography, time and domain.
+02 / CONNECT
+Resolve shared entities
+Canonical districts, states, schemes, organizations,
+indicators and temporal concepts.
+03 / ANALYZE
+Run deterministic computation
+SQL, Python, statistics and graph traversal - not
+arithmetic hallucinated by an LLM.
+04 / EXPLAIN
+Translate analysis to insight
+Clear findings, context, caveats, alternative explanations
+and confidence signals.
+05 / TRACE
+Show how it was derived
+Claim -> analysis -> observation -> transformation ->
+authoritative source.
+06 / EXTEND
+Add domains without rebuilding
+A stable semantic layer turns new indicators into
+mappings, not bespoke applications.
+Core product proposition Project Drishti / Proposal v0.1
+
+===== PAGE 5 =====
+
+PROJECT
+DRISHTI NORTH-STAR EXPERIENCE 05
+ASK A QUESTION
+Which districts repeatedly experience rainfallstress yet maintain resilient crop production?
+Drishti identifies the right datasets, resolves districts, aligns periods, executes the
+analysis and packages evidence before the language model explains the result.
+The answer is useful only when the user can
+inspect the evidence behind it.
+Answer Evidence Method Caveats Trace
+DRISHTI / ANALYSIS
+QUESTION
+Rainfall stress vs. production resilience, district level
+FINDING
+12 districts meet the current resilience
+filter across the selected period.
+Illustrative prototype output - not a real analytical
+result.
+EVIDENCE PACKAGE
+-> Rainfall deviation / district / period
+-> Crop production and yield / season
+-> Comparison group and robustness checks
+TRACE
+CLAIM
+RUN
+METHOD
+OBS
+OBS
+OBS
+SOURCE
+North-star product experience Project Drishti / Proposal v0.1
+
+===== PAGE 6 =====
+
+PROJECT
+DRISHTI REFERENCE ARCHITECTURE 06
+Use different systems for different jobs.Measurements belong in analytical storage. Identity and relationships belong in a semantic layer. Original evidence belongs in
+immutable source storage. The LLM sits above deterministic analysis.
+data.gov.in
+Other public sources
+Ingestion connectors
+Immutable raw store
+Analytical store
+Parquet / SQL / OLAP
+Semantic layer
+Ontology / graph / identity
+Analysis engine
+Normalization +
+entity resolution
+Evidence graph
+Drishti AI
+plan / explain / interact
+Evaluation harness
+Architecture principle
+AI is the analyst and interface - not the
+source of truth.
+Conceptual reference architecture Project Drishti / Proposal v0.1
+
+===== PAGE 7 =====
+
+PROJECT
+DRISHTI SEMANTIC MODEL 07
+THE FOUNDATIONAL OBJECT
+Observation
+A normalized measurement tied explicitly to an
+indicator, entity, geography, time period, unit and
+source.
+EXAMPLE
+Indicator: Crop production
+Crop: Wheat
+Geography: Meerut district
+Period: Rabi 2024-25
+Unit: Tonnes
+Publisher: Ministry / agency source
+AdministrativeArea Organization Dataset Resource Scheme Crop Facility
+Survey
+INDICATOR
+ENTITY
+GEOGRAPHY
+TIME PERIOD
+UNIT + DIMENSIONS
+METHODOLOGY
+PROVENANCE
+OBSERVATION
+the common analytical contract
+Ontology direction / v0.1 Project Drishti / Proposal v0.1
+
+===== PAGE 8 =====
+
+PROJECT
+DRISHTI TRUST MODEL 08
+Every claim should carry its derivation.Drishti's credibility should come from a machine-readable evidence chain. The user should be able to move from narrative insight back to
+the exact source records and versions used.
+Claim -> Analysis run -> Query / code ->
+Normalized observations -> Transformations -> Source resources ->
+Publisher Version + checksum Retrieval timestamp
+FACTS
+Directly computed or read from evidence.
+ANALYSIS
+Statistics, comparisons and relationships produced by explicit methods.
+HYPOTHESES
+Possible explanations, clearly labeled and never presented as causal fact.
+Trace is a product feature, not a debugging screen. Project Drishti / Proposal v0.1
+
+===== PAGE 9 =====
+
+PROJECT
+DRISHTI V0.1 PILOT 09
+START NARROW
+Agriculture x Climate x RuralEmployment
+Do not ingest everything. Prove that Drishti can connect a
+small set of heterogeneous datasets reliably and answer
+one question that is genuinely difficult today.
+PILOT ENVELOPE
+10-20RESOURCES
+3DOMAINS
+1SEMANTIC MODEL
+FLAGSHIP QUESTION
+Which districts repeatedly experience rainfall stress yet
+show unusually resilient agricultural production, and what
+observable factors distinguish them?
+Rainfall
+Observed rainfall, deviation, temporal aggregation
+Crop outcomes
+Area, production, yield, crop, season
+Employment
+MGNREGA households, person-days, financial year
+Context
+Irrigation and other measurable explanatory variables
+-> Second question: where does MGNREGA activity change unusually after rainfall conditions deteriorate?
+The pilot should detect, quantify and expose relationships. It should not assert causal explanations without a defensible causal design.
+Initial domain recommendation Project Drishti / Proposal v0.1
+
+===== PAGE 10 =====
+
+PROJECT
+DRISHTI DELIVERY PLAN 10
+An illustrative 12-week path to a credible prototype.Timing is a planning assumption, not a commitment. The sequencing is more important than the exact calendar.
+WEEKS 1-3
+Foundation
+Define observation contract, source metadata, district
+identity model, pilot datasets and reference analytical
+questions.
+WEEKS 4-6
+Integration
+Build ingestion, profiling, normalization, temporal
+alignment, geography resolution and immutable
+versioning.
+WEEKS 7-9
+Insight engine
+Implement analytical primitives, evidence graph,
+reproducible runs and evaluation against known-good
+answers.
+WEEKS 10-12
+Product shell
+Ship Ask, Explore, Compare and Trace flows around
+the flagship question with provenance visible by
+default.
+LEAN CORE TEAM
+Data / platform engineer Backend / systems engineer
+Applied AI engineer Product + data analyst
+Add geospatial/domain expertise as needed for boundary history and statistical validation.
+PROTOTYPE DELIVERABLES
++ Canonical data + provenance model
++ 10-20 integrated resources
++ Reference analyses + evaluation harness
++ Working Ask / Explore / Compare / Trace experience
+Illustrative implementation plan Project Drishti / Proposal v0.1
+
+===== PAGE 11 =====
+
+PROJECT
+DRISHTI SUCCESS + GUARDRAILS 11
+SUCCESS MEANS RELIABILITY
+What v0.1 must prove
+1 Integration: at least 10 heterogeneous resources mapped into one semantic model.
+2 Identity: canonical district/state resolution across the pilot set.
+3 Reproducibility: reference questions return the same numerical result against the same data version.
+4 Provenance: every displayed number can be traced to source evidence.
+5 AI discipline: the LLM cannot introduce unsupported numerical claims.
+6 Extensibility: a compatible new indicator requires mapping and validation, not a rebuild.
+EXPLICIT NON-GOALS
+What Drishti is not
+Not a portal replacement
+data.gov.in remains a source and public access
+layer.
+Not a dashboard factory
+Charts are outputs, not the core system.
+Not a CSV chatbot
+Reliable joins come before conversational polish.
+Not surveillance
+No individual citizen profiling as a product
+objective.
+Not causal by default
+Correlation is labeled as correlation.
+Not a Palantir clone
+The focus is a narrow India public-data
+intelligence layer.
+Scope discipline protects trust and speed. Project Drishti / Proposal v0.1
+
+===== PAGE 12 =====
+
+PROJECT
+DRISHTI WHY THIS CAN COMPOUND 12
+THE MOAT IS NOT CHAT
+The valuable asset isaccumulated semanticknowledge.
+As models improve, conversational interfaces will
+commoditize. Drishti becomes more defensible as its
+ontology, mappings, lineage and evaluation corpus
+improve.
+OntologyA living semantic model of Indian public data and
+administrative concepts.
+Entity mappingsNames, aliases, codes, hierarchies, boundaries and
+effective dates.
+Dataset mappingsWhat fields mean, how units work and where definitions
+change.
+Provenance graphLineage from evidence to transformations, analysis runs
+and claims.
+Analytical primitivesReusable definitions for growth, baselines, anomalies,
+comparisons and cohorts.
+Evaluation corpusKnown-good analytical questions that continuously test
+system reliability.
+Build semantic quality before dataset quantity.3 datasets -> 10 -> 100 -> 1,000 -> ecosystem
+Compounding assets Project Drishti / Proposal v0.1
+
+===== PAGE 13 =====
+
+PROJECT
+DRISHTI DECISION 13
+RECOMMENDED NEXT STEP
+Build the smallest versionthat can prove cross-dataset intelligence.Lock the V0.1 observation schema, select the first 10-20 resources,
+define three known-good reference analyses, then build the ingestion
+and provenance spine before investing in a broad UI.
+Schema Sources Entity resolution Evidence Evaluation UX
+THE DRISHTI TEST
+Does this make it easier to turn
+fragmented public data into connected,
+reproducible and explainable insight?
+If not, it probably does not belong in V0.1.
+The data already exists.
+Drishti makes it intelligible.
+Internal proposal / Project Drishti End
+
+===== PAGE 14 =====
+
+PROJECT
+DRISHTI SOURCES + DESIGN NOTE 14
+PRIMARY SOURCES
+Public references used in this proposal
+Open Government Data Platform India
+https://data.gov.in/
+Portal resource, catalog and API counts; domain overview. Portal states last updated 04/09/2026.
+Department of Science & Technology - National Data Sharing and Accessibility Policy
+https://dst.gov.in/node/1053
+Background on public-data sharing and interoperability challenges.
+NDSAP Gazette Notification
+https://dst.gov.in/sites/default/files/nsdi_gazette_0.pdf
+Policy language on metadata, accessibility, reuse, organization and analysis tools.
+VISUAL DIRECTION
+Original Drishti layout, influenced by a monochromeenterprise aesthetic
+The proposal intentionally uses a restrained black / off-white palette, thin grid lines, oversized
+sans-serif typography, rounded information panels and diagram-led storytelling. This visual
+language is inspired by the general design character of Palantir's public website and investor
+materials, but uses original graphics, layouts and the Project Drishti identity.
+Typography: Inter / Inter Display, selected as a clean, neutral system-style sans serif. Palantir marks, logos and
+proprietary assets are not used.
+STATUS
+Internal concept proposal. Architecture, timelines, staffing and pilot scope are planning
+hypotheses for discussion and validation.
+Prepared for internal discussion Project Drishti / Proposal v0.1

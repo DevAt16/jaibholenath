@@ -29,10 +29,16 @@ jobs:
         with:
           node-version: '24'
           cache: npm
-          cache-dependency-path: visitor-api/package-lock.json
+          cache-dependency-path: |
+            visitor-api/package-lock.json
+            admin-workspace/package-lock.json
       - run: npm ci
         working-directory: visitor-api
       - run: npm test
         working-directory: visitor-api
       - run: npm run build
         working-directory: visitor-api
+      - run: npm ci
+        working-directory: admin-workspace
+      - run: npm test
+        working-directory: admin-workspace

@@ -16,6 +16,7 @@ PHASE1_KEYWORDS: tuple[str, ...] = (
 HIGH_CONFIDENCE_TERMS: tuple[str, ...] = (
     "shiva",
     "shiv",
+    "siv",
     "mahadev",
     "mahadeva",
     "mahakal",

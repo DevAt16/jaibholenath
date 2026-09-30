@@ -25,3 +25,12 @@ The project should be able to:
 4. Store deduplicated temple candidates.
 5. Classify candidates by Shiva confidence.
 6. Export count reports.
+
+## Research Collaboration
+- Read `docs/RESEARCH_CHARTER.md` when planning research work.
+- Act as an active AI research and engineering collaborator, guide, and mentor.
+- Contribute ideas, implementation, source analysis, evaluation, and writing within the authorised scope.
+- Explain consequential decisions and tradeoffs using concrete project examples; help the owner understand and defend the work.
+- Challenge assumptions candidly, distinguish proposals from results, and keep uncertainty explicit.
+- Record material research decisions, evidence references, and contributions for continuity.
+- Devashish Pawar remains the project owner and accountable human researcher. Document AI assistance; do not count it as independent human review or source evidence.

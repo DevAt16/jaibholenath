@@ -2,7 +2,23 @@
 
 Phase 1 is a backend-only discovery system for likely Shiva temple candidates in India. It imports Indian location records, generates bounded Google Places Text Search tasks, stores deduplicated candidates by Google Place ID, classifies Shiva confidence from discovered names, and exports discovery count reports.
 
+The local analysis UI's Reports & data view can switch between the frozen Phase
+1.1 district baseline and the saved Phase 1.2 Uttar Pradesh pilot. The pilot
+choice reads `tmp/phase_1_2_pilot/reclassified_results/` through the local Vite
+development server only; it is not included in the public build. The offline
+[pilot geography audit](docs/pilot-research/GEOGRAPHY_AUDIT_2026_09_29.md)
+flags uncertain query-location attribution before further expansion.
+
+The [daily expansion batch](docs/AUTOMATED_DISCOVERY.md) now runs a bounded
+discovery batch and atomically refreshes a combined local portal dataset. Use
+`python scripts/run_expansion_batch.py --export-only` to load already-saved
+discoveries, or `--dry-run` to check the queue and request budget without writes.
+
 This phase does not build the final website and does not claim exact real-world temple counts. Counts are discovery counts from Google Places API and are meant for later verification.
+
+The [research charter](docs/RESEARCH_CHARTER.md) connects Phase 1 to the longer-term
+computational Shaiva-heritage research direction. It defines a proposed first
+study, evidence requirements, evaluation limits and concrete research outputs.
 
 ## Phase 1 Scope
 
@@ -147,6 +163,13 @@ Phase 1 keywords:
 - Rudreshwar temple
 
 ## Run Discovery
+
+Live requests now require a confirmed monthly billing-account allowance, stored
+in MySQL. See [free-allowance setup and safe execution](docs/FREE_ALLOWANCE_DISCOVERY.md)
+before running the commands below. Each page consumes a request reservation;
+missing or stale usage confirmation blocks all Google requests. `--max-requests`
+defaults to 10 independently of the task limit. Preview the next expansion with
+the [Phase 1.2 offline plan](docs/PHASE_1_2_FREE_ALLOWANCE_PLAN.md).
 
 Discovery is bounded by `--limit`, which defaults to 10 tasks. The script refuses limits above 100 unless `--allow-large-limit` is provided.
 
@@ -357,3 +380,7 @@ For the command-by-command pipeline, read `docs/FUNCTIONAL_FLOW.md`.
 Database switch and existing data: [MySQL migration guide](docs/MYSQL_MIGRATION.md).
 
 Hosted visitor counter: [Express + MySQL deployment](visitor-api/README.md).
+
+Next pilot increment: [Admin & Research Workspace specification](docs/ADMIN_WORKSPACE_SPEC.md).
+
+Local admin app: [Research workspace setup and delivered scope](admin-workspace/README.md).

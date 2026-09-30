@@ -1,0 +1,80 @@
+{
+  "budget": {
+    "billing_month": "2026-09",
+    "request_ceiling": 1350,
+    "accounted_external_usage": 0,
+    "external_reserve": 0,
+    "reserved_requests": 19,
+    "usage_checked_at": "2026-09-28 11:06:00.431096+00:00",
+    "sku": "places-text-search-pro-india",
+    "remaining_requests": 1331,
+    "run_remaining": 10
+  },
+  "tasks": {
+    "done": 10,
+    "pending": 440
+  },
+  "completed_queries": [
+    [
+      1,
+      "Shiva temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India",
+      60
+    ],
+    [
+      2,
+      "Shiv Mandir in Achhnera, Kiraoli, Agra, Uttar Pradesh, India",
+      60
+    ],
+    [
+      3,
+      "Mahadev temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India",
+      60
+    ],
+    [
+      4,
+      "Mahadev Mandir in Achhnera, Kiraoli, Agra, Uttar Pradesh, India",
+      21
+    ],
+    [
+      5,
+      "Shankar Mandir in Achhnera, Kiraoli, Agra, Uttar Pradesh, India",
+      3
+    ],
+    [
+      6,
+      "Someshwar temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India",
+      16
+    ],
+    [
+      7,
+      "Vishwanath temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India",
+      22
+    ],
+    [
+      8,
+      "Lingeshwar temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India",
+      18
+    ],
+    [
+      9,
+      "Rudreshwar temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India",
+      12
+    ],
+    [
+      10,
+      "Shiva temple in Bah, Agra, Uttar Pradesh, India",
+      22
+    ]
+  ],
+  "confidence": {
+    "high": 141,
+    "low": 50,
+    "medium": 15
+  },
+  "unique_candidates": 206,
+  "discovery_events": 294,
+  "returned_occurrences": "294",
+  "visitor_total": 47,
+  "billing_basis": "User-declared India allowance: 35000 remaining; not independently verified against Cloud Billing.",
+  "classification_caveat": "Name-only heuristic; sample includes Hindi Shiva names classified low and a house listing classified high. Geography is query attribution, not verified result geography."
+}

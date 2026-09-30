@@ -1,0 +1,29 @@
+{
+  "name": "jai-bholenath-admin",
+  "version": "0.2.0-preview",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env src/server.js",
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "migrate": "node --env-file-if-exists=.env scripts/setup.js migrate",
+    "owner": "node --env-file-if-exists=.env scripts/setup.js owner",
+    "seed": "python3 scripts/pilot_snapshot.py | node --env-file-if-exists=.env scripts/setup.js seed",
+    "backup": "node --env-file-if-exists=.env scripts/backup.js backup",
+    "restore-check": "node --env-file-if-exists=.env scripts/backup.js restore-check",
+    "restore": "node --env-file-if-exists=.env scripts/backup.js restore",
+    "test": "node --test tests/*.test.js",
+    "research:preview": "node --env-file-if-exists=.env scripts/record-pilot-research.js",
+    "research:apply": "node --env-file-if-exists=.env scripts/record-pilot-research.js --apply"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.24.4"
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2"
+  }
+}

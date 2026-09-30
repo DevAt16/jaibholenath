@@ -5,7 +5,9 @@ import json
 import os
 import urllib.error
 import urllib.request
-from typing import Any
+from typing import Any, Callable, Iterator
+
+from .request_budget import BudgetBlocked
 
 
 TEXT_SEARCH_ENDPOINT = "https://places.googleapis.com/v1/places:searchText"
@@ -21,6 +23,11 @@ FIELD_MASK = ",".join(
         "nextPageToken",
     ]
 )
+# Deliberately independent of FIELD_MASK: future field changes must be reviewed
+# against the budgeted SKU, rather than silently upgrading billing categories.
+PRO_FIELDS = frozenset({'places.id', 'places.displayName', 'places.formattedAddress',
+                       'places.location', 'places.types', 'places.primaryType',
+                       'places.googleMapsUri', 'nextPageToken'})
 
 
 class GooglePlacesError(RuntimeError):
@@ -31,15 +38,20 @@ class GooglePlacesError(RuntimeError):
 class GooglePlacesClient:
     api_key: str
     timeout_seconds: int = 30
+    before_request: Callable[[], None] | None = None
 
     @classmethod
-    def from_env(cls) -> "GooglePlacesClient":
+    def from_env(cls, *, before_request=None) -> "GooglePlacesClient":
         api_key = os.getenv("GOOGLE_PLACES_API_KEY")
         if not api_key:
             raise GooglePlacesError("GOOGLE_PLACES_API_KEY is not set.")
-        return cls(api_key=api_key)
+        return cls(api_key=api_key, before_request=before_request)
 
     def _post(self, payload: dict[str, Any]) -> dict[str, Any]:
+        if self.before_request is None:
+            raise BudgetBlocked('Google requests require a persistent request-budget guard.')
+        if frozenset(FIELD_MASK.split(',')) != PRO_FIELDS:
+            raise BudgetBlocked('Field mask changed; review its billing SKU before running discovery.')
         request = urllib.request.Request(
             TEXT_SEARCH_ENDPOINT,
             data=json.dumps(payload).encode("utf-8"),
@@ -50,24 +62,26 @@ class GooglePlacesClient:
             },
             method="POST",
         )
+        # Reserve and commit before every HTTP attempt, including pagination.
+        # Network failures and uncertain outcomes never refund a reservation.
+        self.before_request()
         try:
             with urllib.request.urlopen(request, timeout=self.timeout_seconds) as response:
                 return json.loads(response.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
-            body = exc.read().decode("utf-8", errors="replace")
             raise GooglePlacesError(
-                f"Google Places request failed with HTTP {exc.code}: {body}"
+                f"Google Places request failed with HTTP {exc.code}."
             ) from exc
         except urllib.error.URLError as exc:
             raise GooglePlacesError(f"Google Places request failed: {exc}") from exc
 
-    def search_text(
+    def iter_text_pages(
         self,
         text_query: str,
         *,
         page_size: int = 20,
         max_pages: int = 1,
-    ) -> list[dict[str, Any]]:
+    ) -> Iterator[list[dict[str, Any]]]:
         if not text_query.strip():
             raise ValueError("text_query is required.")
         if page_size < 1 or page_size > 20:
@@ -84,18 +98,20 @@ class GooglePlacesClient:
             "pageSize": page_size,
         }
 
-        places: list[dict[str, Any]] = []
         page_token: str | None = None
         for _ in range(max_pages):
             if page_token:
                 payload["pageToken"] = page_token
             response = self._post(payload)
-            places.extend(response.get("places", []))
+            yield response.get("places", [])
             page_token = response.get("nextPageToken")
             if not page_token:
                 break
 
-        return places
+    def search_text(self, text_query: str, *, page_size: int = 20,
+                    max_pages: int = 1) -> list[dict[str, Any]]:
+        return [place for page in self.iter_text_pages(text_query, page_size=page_size,
+                                                      max_pages=max_pages) for place in page]
 
 
 def place_to_candidate(

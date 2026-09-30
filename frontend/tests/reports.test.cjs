@@ -19,6 +19,7 @@ const {
   toCandidate,
   validateReportRows,
   loadRealReports,
+  loadLocalPilotReports,
   loadSampleReports,
 } = require(join(process.env.SHIVA_UI_TEST_BUILD, "reportData.js"));
 const candidate = (changes = {}) =>
@@ -188,6 +189,19 @@ test("recent sort orders valid observations before missing dates", () => {
     "b",
   );
 });
+test("first and last observed sorts support both directions and leave missing dates last", () => {
+  const rows = [
+    candidate({ google_place_id: "missing", first_seen_at: "", last_seen_at: "" }),
+    candidate({ google_place_id: "early", first_seen_at: "2026-01-01T00:00:00Z", last_seen_at: "2026-06-01T00:00:00Z" }),
+    candidate({ google_place_id: "late", first_seen_at: "2026-02-01T00:00:00Z", last_seen_at: "2026-05-01T00:00:00Z" }),
+  ];
+  const ids = sort => filterCandidates(rows, { ...defaultFilters, sort }).map(row => row.google_place_id);
+  assert.deepEqual(ids("first_newest"), ["late", "early", "missing"]);
+  assert.deepEqual(ids("first_oldest"), ["early", "late", "missing"]);
+  assert.deepEqual(ids("recent"), ["early", "late", "missing"]);
+  assert.deepEqual(ids("last_oldest"), ["late", "early", "missing"]);
+  assert.equal(rows[0].google_place_id, "missing");
+});
 test("every match is accessible through bounded pages, including the last partial page", () => {
   const rows = Array.from({ length: 61 }, (_, i) => i);
   const retrieved = [1, 2, 3].flatMap((page) => paginate(rows, page, 25).rows);
@@ -343,12 +357,32 @@ test("both report loaders detect missing files and HTML fallback responses", asy
   try {
     global.fetch = async () => ({ ok: false });
     await assert.rejects(loadRealReports(), /unavailable/);
+    await assert.rejects(loadLocalPilotReports(), /unavailable/);
     await assert.rejects(loadSampleReports(), /unavailable/);
     global.fetch = async () => ({
       ok: true,
       text: async () => "<!doctype html><html></html>",
     });
     await assert.rejects(loadRealReports(), /no data rows/);
+  } finally {
+    global.fetch = original;
+  }
+});
+test("local Uttar Pradesh pilot loader reads its separate report set", async () => {
+  const original = global.fetch;
+  const requested = [];
+  try {
+    global.fetch = async (url) => {
+      requested.push(url);
+      const name = String(url).split("/").pop().replace(".csv", "");
+      return { ok: true, text: async () => sample(name) };
+    };
+    const result = await loadLocalPilotReports();
+    assert.ok(result.candidates.length > 0);
+    assert.deepEqual(requested.sort(), [
+      "/local-up-pilot/candidate_review.csv", "/local-up-pilot/district_counts.csv",
+      "/local-up-pilot/national_summary.csv", "/local-up-pilot/state_counts.csv",
+    ]);
   } finally {
     global.fetch = original;
   }

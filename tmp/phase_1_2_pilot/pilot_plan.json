@@ -1,0 +1,3661 @@
+{
+  "mode": "offline-dry-run",
+  "google_requests_sent": 0,
+  "queue_modified": false,
+  "eligible_unique_locations": 768,
+  "selected_locations": 50,
+  "unselected_locations": 718,
+  "duplicate_rows_removed": 0,
+  "withheld_ambiguous_groups": [
+    [
+      {
+        "location_type": "urban_local_body",
+        "name": "Akbarpur",
+        "state_name": "Uttar Pradesh",
+        "district_name": "",
+        "sub_district_name": "Akbarpur",
+        "state_lgd_code": "9",
+        "district_lgd_code": "",
+        "sub_district_lgd_code": "910",
+        "village_lgd_code": "",
+        "source": "lgd"
+      },
+      {
+        "location_type": "urban_local_body",
+        "name": "Akbarpur",
+        "state_name": "Uttar Pradesh",
+        "district_name": "",
+        "sub_district_name": "",
+        "state_lgd_code": "9",
+        "district_lgd_code": "",
+        "sub_district_lgd_code": "",
+        "village_lgd_code": "",
+        "source": "lgd"
+      }
+    ]
+  ],
+  "excluded_rows": 0,
+  "selected_location_types": {
+    "urban_local_body": 50
+  },
+  "locations_without_district": 0,
+  "potential_tasks": 450,
+  "max_pages_per_task": 3,
+  "first_page_requests": 450,
+  "maximum_page_requests": 1350,
+  "assumed_available_requests": 1350,
+  "whole_tasks_fitting_worst_case": 450,
+  "worst_case_months_at_assumed_allowance": 1,
+  "notes": [
+    "Request budget is a planning assumption, not verified billing-account allowance.",
+    "Existing database tasks are not inspected; actual new task count may be lower.",
+    "Retries/restarts consume extra requests beyond this no-retry estimate.",
+    "Result occurrences and unique temple counts cannot be predicted from request counts.",
+    "Source district attribution is not verified temple geography."
+  ],
+  "tasks": [
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhnera",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhnera",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Achhnera, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhnera",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhnera",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Achhnera, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhnera",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Achhnera, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhnera",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhnera",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhnera",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhnera",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Achhnera, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bah",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bah",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bah",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bah",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bah",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bah",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bah",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bah",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bah",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dayalbagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Dayalbagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dayalbagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Dayalbagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dayalbagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Dayalbagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dayalbagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Dayalbagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dayalbagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Dayalbagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dayalbagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Dayalbagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dayalbagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Dayalbagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dayalbagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Dayalbagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dayalbagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Dayalbagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Etmadpur",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Etmadpur, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Etmadpur",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Etmadpur, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Etmadpur",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Etmadpur, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Etmadpur",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Etmadpur, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Etmadpur",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Etmadpur, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Etmadpur",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Etmadpur, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Etmadpur",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Etmadpur, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Etmadpur",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Etmadpur, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Etmadpur",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Etmadpur, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Fatehpur Sikri, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Fatehpur Sikri, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Fatehpur Sikri, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Fatehpur Sikri, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Fatehpur Sikri, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Fatehpur Sikri, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Fatehpur Sikri, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Fatehpur Sikri, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Fatehpur Sikri, Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jagner",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Jagner, Kheragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jagner",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Jagner, Kheragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jagner",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Jagner, Kheragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jagner",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Jagner, Kheragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jagner",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Jagner, Kheragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jagner",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Jagner, Kheragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jagner",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Jagner, Kheragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jagner",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Jagner, Kheragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jagner",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Jagner, Kheragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khairragarh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Khairragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khairragarh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Khairragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khairragarh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Khairragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khairragarh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Khairragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khairragarh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Khairragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khairragarh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Khairragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khairragarh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Khairragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khairragarh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Khairragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khairragarh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Khairragarh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kiraoli",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kiraoli",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kiraoli",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kiraoli",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kiraoli",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kiraoli",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kiraoli",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kiraoli",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kiraoli",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Kiraoli, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pinahat",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Pinahat, Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pinahat",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Pinahat, Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pinahat",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Pinahat, Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pinahat",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Pinahat, Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pinahat",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Pinahat, Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pinahat",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Pinahat, Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pinahat",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Pinahat, Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pinahat",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Pinahat, Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pinahat",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Pinahat, Bah, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Shamsabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Shamsabad, Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Shamsabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Shamsabad, Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Shamsabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Shamsabad, Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Shamsabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Shamsabad, Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Shamsabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Shamsabad, Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Shamsabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Shamsabad, Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Shamsabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Shamsabad, Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Shamsabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Shamsabad, Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Shamsabad",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Shamsabad, Fatehabad, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Swamibagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Swamibagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Swamibagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Swamibagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Swamibagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Swamibagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Swamibagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Swamibagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Swamibagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Swamibagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Swamibagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Swamibagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Swamibagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Swamibagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Swamibagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Swamibagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Swamibagh",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Swamibagh, Agra, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atrauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atrauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atrauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atrauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atrauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atrauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atrauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atrauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atrauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Barauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Barauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Barauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Barauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Barauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Barauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Barauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Barauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Barauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Barauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Barauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Barauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Barauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Barauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Barauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Barauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Barauli",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Barauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Beswan",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Beswan, Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Beswan",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Beswan, Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Beswan",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Beswan, Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Beswan",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Beswan, Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Beswan",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Beswan, Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Beswan",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Beswan, Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Beswan",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Beswan, Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Beswan",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Beswan, Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Beswan",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Beswan, Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chandaus",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Chandaus, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chandaus",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Chandaus, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chandaus",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Chandaus, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chandaus",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Chandaus, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chandaus",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Chandaus, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chandaus",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Chandaus, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chandaus",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Chandaus, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chandaus",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Chandaus, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chandaus",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Chandaus, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chharra Rafatpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Chharra Rafatpur, Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chharra Rafatpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Chharra Rafatpur, Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chharra Rafatpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Chharra Rafatpur, Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chharra Rafatpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Chharra Rafatpur, Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chharra Rafatpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Chharra Rafatpur, Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chharra Rafatpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Chharra Rafatpur, Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chharra Rafatpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Chharra Rafatpur, Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chharra Rafatpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Chharra Rafatpur, Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Chharra Rafatpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Chharra Rafatpur, Atrauli, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gabhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Gabhana, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gabhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Gabhana, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gabhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Gabhana, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gabhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Gabhana, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gabhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Gabhana, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gabhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Gabhana, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gabhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Gabhana, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gabhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Gabhana, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gabhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Gabhana, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Harduaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Harduaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Harduaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Harduaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Harduaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Harduaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Harduaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Harduaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Harduaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Harduaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Harduaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Harduaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Harduaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Harduaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Harduaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Harduaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Harduaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Harduaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Iglas",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Iglas",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Iglas",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Iglas",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Iglas",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Iglas",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Iglas",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Iglas",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Iglas",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Iglas, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalali",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Jalali, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalali",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Jalali, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalali",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Jalali, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalali",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Jalali, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalali",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Jalali, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalali",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Jalali, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalali",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Jalali, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalali",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Jalali, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalali",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Jalali, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jatari",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Jatari, Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jatari",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Jatari, Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jatari",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Jatari, Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jatari",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Jatari, Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jatari",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Jatari, Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jatari",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Jatari, Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jatari",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Jatari, Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jatari",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Jatari, Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jatari",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Jatari, Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jawan Sikandpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Jawan Sikandpur, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jawan Sikandpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Jawan Sikandpur, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jawan Sikandpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Jawan Sikandpur, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jawan Sikandpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Jawan Sikandpur, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jawan Sikandpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Jawan Sikandpur, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jawan Sikandpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Jawan Sikandpur, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jawan Sikandpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Jawan Sikandpur, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jawan Sikandpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Jawan Sikandpur, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jawan Sikandpur",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Jawan Sikandpur, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kauriaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Kauriaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kauriaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Kauriaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kauriaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Kauriaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kauriaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Kauriaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kauriaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Kauriaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kauriaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Kauriaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kauriaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Kauriaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kauriaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Kauriaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Kauriaganj",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Kauriaganj, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khair",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khair",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khair",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khair",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khair",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khair",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khair",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khair",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Khair",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Khair, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pilkhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Pilkhana, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pilkhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Pilkhana, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pilkhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Pilkhana, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pilkhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Pilkhana, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pilkhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Pilkhana, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pilkhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Pilkhana, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pilkhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Pilkhana, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pilkhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Pilkhana, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Pilkhana",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Pilkhana, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Vijaigarh",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Vijaigarh, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Vijaigarh",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Vijaigarh, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Vijaigarh",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Vijaigarh, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Vijaigarh",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Vijaigarh, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Vijaigarh",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Vijaigarh, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Vijaigarh",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Vijaigarh, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Vijaigarh",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Vijaigarh, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Vijaigarh",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Vijaigarh, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Vijaigarh",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Vijaigarh, Koil, Aligarh, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ashrafpur Kichhauchha",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Ashrafpur Kichhauchha, Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ashrafpur Kichhauchha",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Ashrafpur Kichhauchha, Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ashrafpur Kichhauchha",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Ashrafpur Kichhauchha, Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ashrafpur Kichhauchha",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Ashrafpur Kichhauchha, Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ashrafpur Kichhauchha",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Ashrafpur Kichhauchha, Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ashrafpur Kichhauchha",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Ashrafpur Kichhauchha, Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ashrafpur Kichhauchha",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Ashrafpur Kichhauchha, Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ashrafpur Kichhauchha",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Ashrafpur Kichhauchha, Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ashrafpur Kichhauchha",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Ashrafpur Kichhauchha, Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalalpur",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Jalalpur, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalalpur",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Jalalpur, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalalpur",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Jalalpur, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalalpur",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Jalalpur, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalalpur",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Jalalpur, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalalpur",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Jalalpur, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalalpur",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Jalalpur, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalalpur",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Jalalpur, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Jalalpur",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Jalalpur, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Tanda (Ambedkar Nagar)",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Tanda (Ambedkar Nagar), Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Tanda (Ambedkar Nagar)",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Tanda (Ambedkar Nagar), Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Tanda (Ambedkar Nagar)",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Tanda (Ambedkar Nagar), Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Tanda (Ambedkar Nagar)",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Tanda (Ambedkar Nagar), Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Tanda (Ambedkar Nagar)",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Tanda (Ambedkar Nagar), Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Tanda (Ambedkar Nagar)",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Tanda (Ambedkar Nagar), Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Tanda (Ambedkar Nagar)",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Tanda (Ambedkar Nagar), Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Tanda (Ambedkar Nagar)",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Tanda (Ambedkar Nagar), Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Tanda (Ambedkar Nagar)",
+      "state": "Uttar Pradesh",
+      "district": "Ambedkar Nagar",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Tanda (Ambedkar Nagar), Tanda, Ambedkar Nagar, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gauriganj",
+      "state": "Uttar Pradesh",
+      "district": "Amethi",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Gauriganj, Amethi, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gauriganj",
+      "state": "Uttar Pradesh",
+      "district": "Amethi",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Gauriganj, Amethi, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gauriganj",
+      "state": "Uttar Pradesh",
+      "district": "Amethi",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Gauriganj, Amethi, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gauriganj",
+      "state": "Uttar Pradesh",
+      "district": "Amethi",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Gauriganj, Amethi, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gauriganj",
+      "state": "Uttar Pradesh",
+      "district": "Amethi",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Gauriganj, Amethi, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gauriganj",
+      "state": "Uttar Pradesh",
+      "district": "Amethi",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Gauriganj, Amethi, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gauriganj",
+      "state": "Uttar Pradesh",
+      "district": "Amethi",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Gauriganj, Amethi, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gauriganj",
+      "state": "Uttar Pradesh",
+      "district": "Amethi",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Gauriganj, Amethi, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gauriganj",
+      "state": "Uttar Pradesh",
+      "district": "Amethi",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Gauriganj, Amethi, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bachhraon",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Bachhraon, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bachhraon",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Bachhraon, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bachhraon",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Bachhraon, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bachhraon",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Bachhraon, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bachhraon",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Bachhraon, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bachhraon",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Bachhraon, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bachhraon",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Bachhraon, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bachhraon",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Bachhraon, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bachhraon",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Bachhraon, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dhanaura",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Dhanaura, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dhanaura",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Dhanaura, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dhanaura",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Dhanaura, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dhanaura",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Dhanaura, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dhanaura",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Dhanaura, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dhanaura",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Dhanaura, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dhanaura",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Dhanaura, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dhanaura",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Dhanaura, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dhanaura",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Dhanaura, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gajralua",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Gajralua, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gajralua",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Gajralua, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gajralua",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Gajralua, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gajralua",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Gajralua, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gajralua",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Gajralua, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gajralua",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Gajralua, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gajralua",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Gajralua, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gajralua",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Gajralua, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gajralua",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Gajralua, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Hasanpur",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Hasanpur, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Hasanpur",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Hasanpur, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Hasanpur",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Hasanpur, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Hasanpur",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Hasanpur, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Hasanpur",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Hasanpur, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Hasanpur",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Hasanpur, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Hasanpur",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Hasanpur, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Hasanpur",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Hasanpur, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Hasanpur",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Hasanpur, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Joya",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Joya, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Joya",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Joya, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Joya",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Joya, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Joya",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Joya, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Joya",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Joya, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Joya",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Joya, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Joya",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Joya, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Joya",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Joya, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Joya",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Joya, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Naugawan Sadat",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Naugawan Sadat, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Naugawan Sadat",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Naugawan Sadat, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Naugawan Sadat",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Naugawan Sadat, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Naugawan Sadat",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Naugawan Sadat, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Naugawan Sadat",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Naugawan Sadat, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Naugawan Sadat",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Naugawan Sadat, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Naugawan Sadat",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Naugawan Sadat, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Naugawan Sadat",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Naugawan Sadat, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Naugawan Sadat",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Naugawan Sadat, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ujhari",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Ujhari, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ujhari",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Ujhari, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ujhari",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Ujhari, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ujhari",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Ujhari, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ujhari",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Ujhari, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ujhari",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Ujhari, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ujhari",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Ujhari, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ujhari",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Ujhari, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Ujhari",
+      "state": "Uttar Pradesh",
+      "district": "Amroha",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Ujhari, Amroha, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhalda",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Achhalda, Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhalda",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Achhalda, Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhalda",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Achhalda, Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhalda",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Achhalda, Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhalda",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Achhalda, Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhalda",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Achhalda, Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhalda",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Achhalda, Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhalda",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Achhalda, Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Achhalda",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Achhalda, Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atasu",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Atasu, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atasu",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Atasu, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atasu",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Atasu, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atasu",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Atasu, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atasu",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Atasu, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atasu",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Atasu, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atasu",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Atasu, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atasu",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Atasu, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Atasu",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Atasu, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Babarpur Ajitmal",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Babarpur Ajitmal, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Babarpur Ajitmal",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Babarpur Ajitmal, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Babarpur Ajitmal",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Babarpur Ajitmal, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Babarpur Ajitmal",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Babarpur Ajitmal, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Babarpur Ajitmal",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Babarpur Ajitmal, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Babarpur Ajitmal",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Babarpur Ajitmal, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Babarpur Ajitmal",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Babarpur Ajitmal, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Babarpur Ajitmal",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Babarpur Ajitmal, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Babarpur Ajitmal",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Babarpur Ajitmal, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bidhuna",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bidhuna",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bidhuna",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bidhuna",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bidhuna",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bidhuna",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bidhuna",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bidhuna",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bidhuna",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Bidhuna, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dibiyapur",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Dibiyapur, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dibiyapur",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Dibiyapur, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dibiyapur",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Dibiyapur, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dibiyapur",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Dibiyapur, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dibiyapur",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Dibiyapur, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dibiyapur",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Dibiyapur, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dibiyapur",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Dibiyapur, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dibiyapur",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Dibiyapur, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Dibiyapur",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Dibiyapur, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Phaphund",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Phaphund, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Phaphund",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Phaphund, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Phaphund",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Phaphund, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Phaphund",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Phaphund, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Phaphund",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Phaphund, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Phaphund",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Phaphund, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Phaphund",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Phaphund, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Phaphund",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Phaphund, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Phaphund",
+      "state": "Uttar Pradesh",
+      "district": "Auraiya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Phaphund, Auraiya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bhadarsa",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Bhadarsa, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bhadarsa",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Bhadarsa, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bhadarsa",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Bhadarsa, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bhadarsa",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Bhadarsa, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bhadarsa",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Bhadarsa, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bhadarsa",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Bhadarsa, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bhadarsa",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Bhadarsa, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bhadarsa",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Bhadarsa, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bhadarsa",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Bhadarsa, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bikapur",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Bikapur, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bikapur",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Bikapur, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bikapur",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Bikapur, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bikapur",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Bikapur, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bikapur",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Bikapur, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bikapur",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Bikapur, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bikapur",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Bikapur, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bikapur",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Bikapur, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Bikapur",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Bikapur, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gosainganj (Lucknow)",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Gosainganj (Lucknow), Faizabad, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gosainganj (Lucknow)",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Gosainganj (Lucknow), Faizabad, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gosainganj (Lucknow)",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Gosainganj (Lucknow), Faizabad, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gosainganj (Lucknow)",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Gosainganj (Lucknow), Faizabad, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gosainganj (Lucknow)",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Gosainganj (Lucknow), Faizabad, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gosainganj (Lucknow)",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Gosainganj (Lucknow), Faizabad, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gosainganj (Lucknow)",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Gosainganj (Lucknow), Faizabad, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gosainganj (Lucknow)",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Gosainganj (Lucknow), Faizabad, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Gosainganj (Lucknow)",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Gosainganj (Lucknow), Faizabad, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Maa Kamakhya",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Maa Kamakhya, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Maa Kamakhya",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Maa Kamakhya, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Maa Kamakhya",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Maa Kamakhya, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Maa Kamakhya",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Maa Kamakhya, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Maa Kamakhya",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Maa Kamakhya, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Maa Kamakhya",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Maa Kamakhya, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Maa Kamakhya",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Maa Kamakhya, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Maa Kamakhya",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Maa Kamakhya, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Maa Kamakhya",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Maa Kamakhya, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Rudauli",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiva temple",
+      "query": "Shiva temple in Rudauli, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Rudauli",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shiv Mandir",
+      "query": "Shiv Mandir in Rudauli, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Rudauli",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev temple",
+      "query": "Mahadev temple in Rudauli, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Rudauli",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Mahadev Mandir",
+      "query": "Mahadev Mandir in Rudauli, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Rudauli",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Shankar Mandir",
+      "query": "Shankar Mandir in Rudauli, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Rudauli",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Someshwar temple",
+      "query": "Someshwar temple in Rudauli, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Rudauli",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Vishwanath temple",
+      "query": "Vishwanath temple in Rudauli, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Rudauli",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Lingeshwar temple",
+      "query": "Lingeshwar temple in Rudauli, Ayodhya, Uttar Pradesh, India"
+    },
+    {
+      "location_type": "urban_local_body",
+      "name": "Rudauli",
+      "state": "Uttar Pradesh",
+      "district": "Ayodhya",
+      "keyword": "Rudreshwar temple",
+      "query": "Rudreshwar temple in Rudauli, Ayodhya, Uttar Pradesh, India"
+    }
+  ],
+  "source_file": "data/prepared_locations_uttar_pradesh_ulbs.csv",
+  "source_sha256": "332cd03c9b4546b91c48f293ff9d2047c5139a36a3659168bbfe1615e683bcb7",
+  "selected_csv_sha256": "388a48f23b1adaf1d276fd7049120b67a4df8c91ac4405814a589a910a012efa"
+}
